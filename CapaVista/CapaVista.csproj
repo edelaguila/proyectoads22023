@@ -82,7 +82,20 @@
     <Folder Include="Formularios\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Imagenes\anterior.png" />
+    <Content Include="Imagenes\ayuda.png" />
+    <Content Include="Imagenes\buscar.png" />
+    <Content Include="Imagenes\cancelar.png" />
+    <Content Include="Imagenes\eliminar.png" />
+    <Content Include="Imagenes\fin.png" />
+    <Content Include="Imagenes\guardar.png" />
+    <Content Include="Imagenes\imprimir.png" />
     <Content Include="Imagenes\ingresar.png" />
+    <Content Include="Imagenes\inicio.png" />
+    <Content Include="Imagenes\modificar.png" />
+    <Content Include="Imagenes\refrescar.png" />
+    <Content Include="Imagenes\salir.png" />
+    <Content Include="Imagenes\siguiente.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
