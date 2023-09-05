@@ -7,3 +7,16 @@ C:\Users\Usuario\source\repos\ProyectoFinal\CapaVista\obj\Debug\CapaVista.pdb
 C:\Users\Usuario\source\repos\ProyectoFinal\CapaVista\bin\Debug\CapaControlador.dll
 C:\Users\Usuario\source\repos\ProyectoFinal\CapaVista\bin\Debug\CapaControlador.pdb
 C:\Users\Usuario\source\repos\ProyectoFinal\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Debug\CapaVista.csproj.AssemblyReference.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Debug\CapaVista.Componentes.Nav.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Debug\CapaVista.csproj.GenerateResource.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Debug\CapaVista.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\bin\Debug\CapaVista.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\bin\Debug\CapaVista.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\bin\Debug\CapaControlador.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\bin\Debug\CapaControlador.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Debug\CapaVista.Navegador.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Debug\CapaVista.Formularios.Reporte.resources

@@ -1,6 +1,7 @@
-﻿namespace CapaVista.Componentes
+﻿
+namespace CapaVista.Formularios
 {
-    partial class Nav
+    partial class Reporte
     {
         /// <summary>
         /// Required designer variable.
@@ -28,21 +29,34 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.lbl_nombre = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // Nav
+            // lbl_nombre
+            // 
+            this.lbl_nombre.AutoSize = true;
+            this.lbl_nombre.Location = new System.Drawing.Point(449, 118);
+            this.lbl_nombre.Name = "lbl_nombre";
+            this.lbl_nombre.Size = new System.Drawing.Size(59, 13);
+            this.lbl_nombre.TabIndex = 0;
+            this.lbl_nombre.Text = "REPORTE";
+            // 
+            // Reporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(680, 101);
+            this.ClientSize = new System.Drawing.Size(956, 302);
+            this.Controls.Add(this.lbl_nombre);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Nav";
-            this.Text = "Nav";
+            this.Name = "Reporte";
+            this.Text = "Reporte";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lbl_nombre;
     }
 }

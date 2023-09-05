@@ -46,12 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Componentes\Nav.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Componentes\Nav.Designer.cs">
       <DependentUpon>Nav.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reporte.Designer.cs">
+      <DependentUpon>Reporte.cs</DependentUpon>
     </Compile>
     <Compile Include="Navegador.cs">
       <SubType>Form</SubType>
@@ -65,12 +70,13 @@
     <EmbeddedResource Include="Componentes\Nav.resx">
       <DependentUpon>Nav.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reporte.resx">
+      <DependentUpon>Reporte.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Navegador.resx">
       <DependentUpon>Navegador.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Formularios\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -29,41 +29,52 @@ namespace CapaVista
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnl_navegador = new System.Windows.Forms.Panel();
+            this.pnl_contenedor = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // panel1
+            // pnl_navegador
             // 
-            this.panel1.Location = new System.Drawing.Point(22, 127);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(963, 367);
-            this.panel1.TabIndex = 0;
+            this.pnl_navegador.Location = new System.Drawing.Point(22, 12);
+            this.pnl_navegador.Name = "pnl_navegador";
+            this.pnl_navegador.Size = new System.Drawing.Size(972, 101);
+            this.pnl_navegador.TabIndex = 1;
             // 
-            // panel2
+            // pnl_contenedor
             // 
-            this.panel2.Location = new System.Drawing.Point(22, 12);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(963, 88);
-            this.panel2.TabIndex = 1;
+            this.pnl_contenedor.Location = new System.Drawing.Point(22, 146);
+            this.pnl_contenedor.Name = "pnl_contenedor";
+            this.pnl_contenedor.Size = new System.Drawing.Size(972, 341);
+            this.pnl_contenedor.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(31, 130);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "label1";
             // 
             // Navegador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 506);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ClientSize = new System.Drawing.Size(1015, 522);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pnl_navegador);
+            this.Controls.Add(this.pnl_contenedor);
             this.Name = "Navegador";
             this.Text = "Navegador";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Panel pnl_navegador;
+        public System.Windows.Forms.Panel pnl_contenedor;
     }
 }

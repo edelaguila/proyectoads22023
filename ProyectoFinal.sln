@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaModelo", "CapaModelo\Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaControlador", "CapaControlador\CapaControlador.csproj", "{A6119354-7576-487A-A44E-A5C332A20F4A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejecutable", "Ejecutable\Ejecutable.csproj", "{BECFD0FF-C309-4C61-A7DE-D0D2121C77D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{A6119354-7576-487A-A44E-A5C332A20F4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6119354-7576-487A-A44E-A5C332A20F4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6119354-7576-487A-A44E-A5C332A20F4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BECFD0FF-C309-4C61-A7DE-D0D2121C77D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BECFD0FF-C309-4C61-A7DE-D0D2121C77D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BECFD0FF-C309-4C61-A7DE-D0D2121C77D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BECFD0FF-C309-4C61-A7DE-D0D2121C77D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
