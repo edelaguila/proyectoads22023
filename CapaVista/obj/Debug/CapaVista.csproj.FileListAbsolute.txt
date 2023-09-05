@@ -1,0 +1,9 @@
+C:\Users\Usuario\source\repos\ProyectoFinal\CapaVista\bin\Debug\CapaVista.dll
+C:\Users\Usuario\source\repos\ProyectoFinal\CapaVista\bin\Debug\CapaVista.pdb
+C:\Users\Usuario\source\repos\ProyectoFinal\CapaVista\obj\Debug\CapaVista.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\ProyectoFinal\CapaVista\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\ProyectoFinal\CapaVista\obj\Debug\CapaVista.dll
+C:\Users\Usuario\source\repos\ProyectoFinal\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\Usuario\source\repos\ProyectoFinal\CapaVista\bin\Debug\CapaControlador.dll
+C:\Users\Usuario\source\repos\ProyectoFinal\CapaVista\bin\Debug\CapaControlador.pdb
+C:\Users\Usuario\source\repos\ProyectoFinal\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
