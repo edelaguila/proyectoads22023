@@ -195,7 +195,7 @@
             this.btn_inicio.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_inicio.Image = ((System.Drawing.Image)(resources.GetObject("btn_inicio.Image")));
             this.btn_inicio.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_inicio.Location = new System.Drawing.Point(730, 14);
+            this.btn_inicio.Location = new System.Drawing.Point(817, 14);
             this.btn_inicio.Name = "btn_inicio";
             this.btn_inicio.Size = new System.Drawing.Size(84, 65);
             this.btn_inicio.TabIndex = 8;
@@ -210,7 +210,7 @@
             this.btn_anterior.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_anterior.Image = ((System.Drawing.Image)(resources.GetObject("btn_anterior.Image")));
             this.btn_anterior.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_anterior.Location = new System.Drawing.Point(730, 85);
+            this.btn_anterior.Location = new System.Drawing.Point(817, 85);
             this.btn_anterior.Name = "btn_anterior";
             this.btn_anterior.Size = new System.Drawing.Size(84, 65);
             this.btn_anterior.TabIndex = 9;
@@ -225,7 +225,7 @@
             this.btn_siguiente.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_siguiente.Image = ((System.Drawing.Image)(resources.GetObject("btn_siguiente.Image")));
             this.btn_siguiente.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_siguiente.Location = new System.Drawing.Point(820, 85);
+            this.btn_siguiente.Location = new System.Drawing.Point(907, 85);
             this.btn_siguiente.Name = "btn_siguiente";
             this.btn_siguiente.Size = new System.Drawing.Size(84, 65);
             this.btn_siguiente.TabIndex = 10;
@@ -240,7 +240,7 @@
             this.btn_fin.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_fin.Image = ((System.Drawing.Image)(resources.GetObject("btn_fin.Image")));
             this.btn_fin.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_fin.Location = new System.Drawing.Point(820, 14);
+            this.btn_fin.Location = new System.Drawing.Point(907, 14);
             this.btn_fin.Name = "btn_fin";
             this.btn_fin.Size = new System.Drawing.Size(84, 65);
             this.btn_fin.TabIndex = 11;
@@ -255,7 +255,7 @@
             this.btn_ayuda.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ayuda.Image = ((System.Drawing.Image)(resources.GetObject("btn_ayuda.Image")));
             this.btn_ayuda.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_ayuda.Location = new System.Drawing.Point(910, 14);
+            this.btn_ayuda.Location = new System.Drawing.Point(727, 14);
             this.btn_ayuda.Name = "btn_ayuda";
             this.btn_ayuda.Size = new System.Drawing.Size(84, 65);
             this.btn_ayuda.TabIndex = 12;
