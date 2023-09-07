@@ -28,5 +28,10 @@ namespace CapaVista.Componentes
             InitializeComponent();
             this.printControls();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
