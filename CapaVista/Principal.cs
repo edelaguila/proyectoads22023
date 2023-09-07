@@ -12,31 +12,45 @@ using CapaVista.Formularios;
 
 namespace CapaVista
 {
-    public partial class Navegador : Form
+    public partial class Principal : Form
     {
 
         public Form frm_container;
+        public Form current_form;
         public void openFormOnPanel(Panel panel, Form child)
         {
+            if(this.current_form != null)
+            {
+                this.current_form.Close();
+            }
             child.Dock = DockStyle.Fill;
             child.TopLevel = false;
             panel.Controls.Add(child);
             panel.Tag = child;
+            this.current_form = child;
             child.Show();
         }
 
         public void inicializador()
         {
-            Reporte rpt = new Reporte();
-            this.frm_container = rpt;
             this.openFormOnPanel(pnl_navegador, new Nav(this));
-            this.openFormOnPanel(pnl_contenedor, rpt);
         }
 
-        public Navegador()
+        public Principal()
         {
             InitializeComponent();
             this.inicializador();
         }
+
+        private void reservacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.openFormOnPanel(pnl_contenedor, new frmReservacion());
+        }
+
+        private void reportesSemanalesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.openFormOnPanel(pnl_contenedor, new frmReportes());
+        }
+
     }
 }

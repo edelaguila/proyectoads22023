@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Ejecutable
+namespace CapaVista.Formularios
 {
-    public partial class Form1 : Form
+    public partial class frmReportes : Form
     {
-        public Form1()
+        public frmReportes()
         {
             InitializeComponent();
         }

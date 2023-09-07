@@ -14,7 +14,7 @@ namespace CapaVista.Componentes
     public partial class Nav : Form
     {
 
-        public Navegador parent;
+        public Principal parent;
         public void printControls()
         {
             foreach(Control control in this.parent.frm_container.Controls)
@@ -22,11 +22,11 @@ namespace CapaVista.Componentes
                 MessageBox.Show(control.Name);
             }
         }
-        public Nav(Navegador parent)
+        public Nav(Principal parent)
         {
             this.parent = parent;
             InitializeComponent();
-            this.printControls();
+            //this.printControls();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
