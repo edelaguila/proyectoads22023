@@ -1,0 +1,15 @@
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\bin\Release\CapaVista.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\bin\Release\CapaVista.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\bin\Release\CapaControlador.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\bin\Release\CapaControlador.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.AssemblyReference.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.Componentes.Nav.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.Principal.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.Properties.Resources.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.GenerateResource.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.CoreCompileInputs.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.CopyComplete
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmReservacion.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmReportes.resources

@@ -1,0 +1,12 @@
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\bin\Release\Ejecutable.exe.config
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\bin\Release\Ejecutable.exe
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\bin\Release\Ejecutable.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\bin\Release\CapaVista.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\bin\Release\CapaVista.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.AssemblyReference.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\obj\Release\Ejecutable.Properties.Resources.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.GenerateResource.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.CoreCompileInputs.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.CopyComplete
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\obj\Release\Ejecutable.exe
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\obj\Release\Ejecutable.pdb

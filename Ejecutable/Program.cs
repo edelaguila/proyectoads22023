@@ -17,7 +17,7 @@ namespace Ejecutable
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Navegador());
+            Application.Run(new Principal());
         }
     }
 }

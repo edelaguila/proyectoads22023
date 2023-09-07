@@ -46,18 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Componentes\Nav.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Componentes\Nav.Designer.cs">
       <DependentUpon>Nav.cs</DependentUpon>
     </Compile>
-    <Compile Include="Navegador.cs">
+    <Compile Include="Formularios\frmReportes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Navegador.Designer.cs">
-      <DependentUpon>Navegador.cs</DependentUpon>
+    <Compile Include="Formularios\frmReportes.Designer.cs">
+      <DependentUpon>frmReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmReservacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmReservacion.Designer.cs">
+      <DependentUpon>frmReservacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -70,17 +81,21 @@
     <EmbeddedResource Include="Componentes\Nav.resx">
       <DependentUpon>Nav.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Navegador.resx">
-      <DependentUpon>Navegador.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\frmReportes.resx">
+      <DependentUpon>frmReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmReservacion.resx">
+      <DependentUpon>frmReservacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Formularios\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Imagenes\anterior.png" />
     <Content Include="Imagenes\ayuda.png" />
