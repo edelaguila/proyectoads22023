@@ -30,19 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Nav));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_agregar = new System.Windows.Forms.Button();
-            this.btn_modificar = new System.Windows.Forms.Button();
-            this.btn_guardar = new System.Windows.Forms.Button();
-            this.btn_cancelar = new System.Windows.Forms.Button();
-            this.btn_consultar = new System.Windows.Forms.Button();
-            this.btn_eliminar = new System.Windows.Forms.Button();
-            this.btn_imprimir = new System.Windows.Forms.Button();
-            this.btn_refrescar = new System.Windows.Forms.Button();
-            this.btn_inicio = new System.Windows.Forms.Button();
-            this.btn_anterior = new System.Windows.Forms.Button();
-            this.btn_siguiente = new System.Windows.Forms.Button();
-            this.btn_fin = new System.Windows.Forms.Button();
             this.btn_ayuda = new System.Windows.Forms.Button();
+            this.btn_fin = new System.Windows.Forms.Button();
+            this.btn_siguiente = new System.Windows.Forms.Button();
+            this.btn_anterior = new System.Windows.Forms.Button();
+            this.btn_inicio = new System.Windows.Forms.Button();
+            this.btn_refrescar = new System.Windows.Forms.Button();
+            this.btn_imprimir = new System.Windows.Forms.Button();
+            this.btn_eliminar = new System.Windows.Forms.Button();
+            this.btn_consultar = new System.Windows.Forms.Button();
+            this.btn_cancelar = new System.Windows.Forms.Button();
+            this.btn_guardar = new System.Windows.Forms.Button();
+            this.btn_modificar = new System.Windows.Forms.Button();
+            this.btn_agregar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,191 +62,12 @@
             this.panel1.Controls.Add(this.btn_guardar);
             this.panel1.Controls.Add(this.btn_modificar);
             this.panel1.Controls.Add(this.btn_agregar);
-            this.panel1.Location = new System.Drawing.Point(2, 12);
+            this.panel1.Location = new System.Drawing.Point(2, 1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1014, 161);
+            this.panel1.Size = new System.Drawing.Size(751, 78);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // btn_agregar
-            // 
-            this.btn_agregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.btn_agregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_agregar.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_agregar.Image = ((System.Drawing.Image)(resources.GetObject("btn_agregar.Image")));
-            this.btn_agregar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_agregar.Location = new System.Drawing.Point(10, 14);
-            this.btn_agregar.Name = "btn_agregar";
-            this.btn_agregar.Size = new System.Drawing.Size(84, 65);
-            this.btn_agregar.TabIndex = 0;
-            this.btn_agregar.Text = "Agregar";
-            this.btn_agregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_agregar.UseVisualStyleBackColor = false;
-            // 
-            // btn_modificar
-            // 
-            this.btn_modificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.btn_modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_modificar.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_modificar.Image = ((System.Drawing.Image)(resources.GetObject("btn_modificar.Image")));
-            this.btn_modificar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_modificar.Location = new System.Drawing.Point(100, 14);
-            this.btn_modificar.Name = "btn_modificar";
-            this.btn_modificar.Size = new System.Drawing.Size(84, 65);
-            this.btn_modificar.TabIndex = 1;
-            this.btn_modificar.Text = "Modificar";
-            this.btn_modificar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_modificar.UseVisualStyleBackColor = false;
-            // 
-            // btn_guardar
-            // 
-            this.btn_guardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_guardar.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_guardar.Image = ((System.Drawing.Image)(resources.GetObject("btn_guardar.Image")));
-            this.btn_guardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_guardar.Location = new System.Drawing.Point(190, 14);
-            this.btn_guardar.Name = "btn_guardar";
-            this.btn_guardar.Size = new System.Drawing.Size(84, 65);
-            this.btn_guardar.TabIndex = 2;
-            this.btn_guardar.Text = "Guardar";
-            this.btn_guardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_guardar.UseVisualStyleBackColor = false;
-            // 
-            // btn_cancelar
-            // 
-            this.btn_cancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cancelar.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cancelar.Image = ((System.Drawing.Image)(resources.GetObject("btn_cancelar.Image")));
-            this.btn_cancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_cancelar.Location = new System.Drawing.Point(280, 14);
-            this.btn_cancelar.Name = "btn_cancelar";
-            this.btn_cancelar.Size = new System.Drawing.Size(84, 65);
-            this.btn_cancelar.TabIndex = 3;
-            this.btn_cancelar.Text = "Cancelar";
-            this.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_cancelar.UseVisualStyleBackColor = false;
-            // 
-            // btn_consultar
-            // 
-            this.btn_consultar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.btn_consultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_consultar.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_consultar.Image = ((System.Drawing.Image)(resources.GetObject("btn_consultar.Image")));
-            this.btn_consultar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_consultar.Location = new System.Drawing.Point(460, 14);
-            this.btn_consultar.Name = "btn_consultar";
-            this.btn_consultar.Size = new System.Drawing.Size(84, 65);
-            this.btn_consultar.TabIndex = 4;
-            this.btn_consultar.Text = "Consultar";
-            this.btn_consultar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_consultar.UseVisualStyleBackColor = false;
-            // 
-            // btn_eliminar
-            // 
-            this.btn_eliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.btn_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_eliminar.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_eliminar.Image = ((System.Drawing.Image)(resources.GetObject("btn_eliminar.Image")));
-            this.btn_eliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_eliminar.Location = new System.Drawing.Point(370, 14);
-            this.btn_eliminar.Name = "btn_eliminar";
-            this.btn_eliminar.Size = new System.Drawing.Size(84, 65);
-            this.btn_eliminar.TabIndex = 5;
-            this.btn_eliminar.Text = "Eliminar";
-            this.btn_eliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_eliminar.UseVisualStyleBackColor = false;
-            // 
-            // btn_imprimir
-            // 
-            this.btn_imprimir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.btn_imprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_imprimir.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_imprimir.Image = ((System.Drawing.Image)(resources.GetObject("btn_imprimir.Image")));
-            this.btn_imprimir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_imprimir.Location = new System.Drawing.Point(550, 14);
-            this.btn_imprimir.Name = "btn_imprimir";
-            this.btn_imprimir.Size = new System.Drawing.Size(84, 65);
-            this.btn_imprimir.TabIndex = 6;
-            this.btn_imprimir.Text = "Imprimir";
-            this.btn_imprimir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_imprimir.UseVisualStyleBackColor = false;
-            // 
-            // btn_refrescar
-            // 
-            this.btn_refrescar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.btn_refrescar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_refrescar.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_refrescar.Image = ((System.Drawing.Image)(resources.GetObject("btn_refrescar.Image")));
-            this.btn_refrescar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_refrescar.Location = new System.Drawing.Point(640, 14);
-            this.btn_refrescar.Name = "btn_refrescar";
-            this.btn_refrescar.Size = new System.Drawing.Size(84, 65);
-            this.btn_refrescar.TabIndex = 7;
-            this.btn_refrescar.Text = "Refrescar";
-            this.btn_refrescar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_refrescar.UseVisualStyleBackColor = false;
-            // 
-            // btn_inicio
-            // 
-            this.btn_inicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.btn_inicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_inicio.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_inicio.Image = ((System.Drawing.Image)(resources.GetObject("btn_inicio.Image")));
-            this.btn_inicio.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_inicio.Location = new System.Drawing.Point(817, 14);
-            this.btn_inicio.Name = "btn_inicio";
-            this.btn_inicio.Size = new System.Drawing.Size(84, 65);
-            this.btn_inicio.TabIndex = 8;
-            this.btn_inicio.Text = "Inicio";
-            this.btn_inicio.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_inicio.UseVisualStyleBackColor = false;
-            // 
-            // btn_anterior
-            // 
-            this.btn_anterior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.btn_anterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_anterior.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_anterior.Image = ((System.Drawing.Image)(resources.GetObject("btn_anterior.Image")));
-            this.btn_anterior.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_anterior.Location = new System.Drawing.Point(817, 85);
-            this.btn_anterior.Name = "btn_anterior";
-            this.btn_anterior.Size = new System.Drawing.Size(84, 65);
-            this.btn_anterior.TabIndex = 9;
-            this.btn_anterior.Text = "Anterior";
-            this.btn_anterior.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_anterior.UseVisualStyleBackColor = false;
-            // 
-            // btn_siguiente
-            // 
-            this.btn_siguiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.btn_siguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_siguiente.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_siguiente.Image = ((System.Drawing.Image)(resources.GetObject("btn_siguiente.Image")));
-            this.btn_siguiente.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_siguiente.Location = new System.Drawing.Point(907, 85);
-            this.btn_siguiente.Name = "btn_siguiente";
-            this.btn_siguiente.Size = new System.Drawing.Size(84, 65);
-            this.btn_siguiente.TabIndex = 10;
-            this.btn_siguiente.Text = "Siguiente";
-            this.btn_siguiente.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_siguiente.UseVisualStyleBackColor = false;
-            // 
-            // btn_fin
-            // 
-            this.btn_fin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.btn_fin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_fin.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_fin.Image = ((System.Drawing.Image)(resources.GetObject("btn_fin.Image")));
-            this.btn_fin.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_fin.Location = new System.Drawing.Point(907, 14);
-            this.btn_fin.Name = "btn_fin";
-            this.btn_fin.Size = new System.Drawing.Size(84, 65);
-            this.btn_fin.TabIndex = 11;
-            this.btn_fin.Text = "Fin";
-            this.btn_fin.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_fin.UseVisualStyleBackColor = false;
             // 
             // btn_ayuda
             // 
@@ -255,22 +76,207 @@
             this.btn_ayuda.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ayuda.Image = ((System.Drawing.Image)(resources.GetObject("btn_ayuda.Image")));
             this.btn_ayuda.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_ayuda.Location = new System.Drawing.Point(727, 14);
+            this.btn_ayuda.Location = new System.Drawing.Point(593, 10);
+            this.btn_ayuda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_ayuda.Name = "btn_ayuda";
-            this.btn_ayuda.Size = new System.Drawing.Size(84, 65);
+            this.btn_ayuda.Size = new System.Drawing.Size(69, 56);
             this.btn_ayuda.TabIndex = 12;
             this.btn_ayuda.Text = "Ayuda";
             this.btn_ayuda.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_ayuda.UseVisualStyleBackColor = false;
             // 
+            // btn_fin
+            // 
+            this.btn_fin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.btn_fin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_fin.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_fin.Image = ((System.Drawing.Image)(resources.GetObject("btn_fin.Image")));
+            this.btn_fin.Location = new System.Drawing.Point(705, 10);
+            this.btn_fin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_fin.Name = "btn_fin";
+            this.btn_fin.Size = new System.Drawing.Size(35, 27);
+            this.btn_fin.TabIndex = 11;
+            this.btn_fin.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_fin.UseVisualStyleBackColor = false;
+            // 
+            // btn_siguiente
+            // 
+            this.btn_siguiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.btn_siguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_siguiente.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_siguiente.Image = ((System.Drawing.Image)(resources.GetObject("btn_siguiente.Image")));
+            this.btn_siguiente.Location = new System.Drawing.Point(705, 39);
+            this.btn_siguiente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_siguiente.Name = "btn_siguiente";
+            this.btn_siguiente.Size = new System.Drawing.Size(35, 27);
+            this.btn_siguiente.TabIndex = 10;
+            this.btn_siguiente.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_siguiente.UseVisualStyleBackColor = false;
+            // 
+            // btn_anterior
+            // 
+            this.btn_anterior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.btn_anterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_anterior.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_anterior.Image = ((System.Drawing.Image)(resources.GetObject("btn_anterior.Image")));
+            this.btn_anterior.Location = new System.Drawing.Point(666, 39);
+            this.btn_anterior.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_anterior.Name = "btn_anterior";
+            this.btn_anterior.Size = new System.Drawing.Size(35, 27);
+            this.btn_anterior.TabIndex = 9;
+            this.btn_anterior.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_anterior.UseVisualStyleBackColor = false;
+            // 
+            // btn_inicio
+            // 
+            this.btn_inicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.btn_inicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_inicio.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_inicio.Image = ((System.Drawing.Image)(resources.GetObject("btn_inicio.Image")));
+            this.btn_inicio.Location = new System.Drawing.Point(666, 10);
+            this.btn_inicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_inicio.Name = "btn_inicio";
+            this.btn_inicio.Size = new System.Drawing.Size(35, 27);
+            this.btn_inicio.TabIndex = 8;
+            this.btn_inicio.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_inicio.UseVisualStyleBackColor = false;
+            this.btn_inicio.Click += new System.EventHandler(this.btn_inicio_Click);
+            // 
+            // btn_refrescar
+            // 
+            this.btn_refrescar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.btn_refrescar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_refrescar.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_refrescar.Image = ((System.Drawing.Image)(resources.GetObject("btn_refrescar.Image")));
+            this.btn_refrescar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_refrescar.Location = new System.Drawing.Point(520, 11);
+            this.btn_refrescar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_refrescar.Name = "btn_refrescar";
+            this.btn_refrescar.Size = new System.Drawing.Size(69, 55);
+            this.btn_refrescar.TabIndex = 7;
+            this.btn_refrescar.Text = "Refrescar";
+            this.btn_refrescar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_refrescar.UseVisualStyleBackColor = false;
+            // 
+            // btn_imprimir
+            // 
+            this.btn_imprimir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.btn_imprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_imprimir.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_imprimir.Image = ((System.Drawing.Image)(resources.GetObject("btn_imprimir.Image")));
+            this.btn_imprimir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_imprimir.Location = new System.Drawing.Point(447, 11);
+            this.btn_imprimir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_imprimir.Name = "btn_imprimir";
+            this.btn_imprimir.Size = new System.Drawing.Size(69, 55);
+            this.btn_imprimir.TabIndex = 6;
+            this.btn_imprimir.Text = "Imprimir";
+            this.btn_imprimir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_imprimir.UseVisualStyleBackColor = false;
+            // 
+            // btn_eliminar
+            // 
+            this.btn_eliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.btn_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_eliminar.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_eliminar.Image = ((System.Drawing.Image)(resources.GetObject("btn_eliminar.Image")));
+            this.btn_eliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_eliminar.Location = new System.Drawing.Point(301, 11);
+            this.btn_eliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_eliminar.Name = "btn_eliminar";
+            this.btn_eliminar.Size = new System.Drawing.Size(69, 55);
+            this.btn_eliminar.TabIndex = 5;
+            this.btn_eliminar.Text = "Eliminar";
+            this.btn_eliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_eliminar.UseVisualStyleBackColor = false;
+            // 
+            // btn_consultar
+            // 
+            this.btn_consultar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.btn_consultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_consultar.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_consultar.Image = ((System.Drawing.Image)(resources.GetObject("btn_consultar.Image")));
+            this.btn_consultar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_consultar.Location = new System.Drawing.Point(374, 11);
+            this.btn_consultar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_consultar.Name = "btn_consultar";
+            this.btn_consultar.Size = new System.Drawing.Size(69, 55);
+            this.btn_consultar.TabIndex = 4;
+            this.btn_consultar.Text = "Consultar";
+            this.btn_consultar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_consultar.UseVisualStyleBackColor = false;
+            // 
+            // btn_cancelar
+            // 
+            this.btn_cancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cancelar.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancelar.Image = ((System.Drawing.Image)(resources.GetObject("btn_cancelar.Image")));
+            this.btn_cancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_cancelar.Location = new System.Drawing.Point(228, 11);
+            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_cancelar.Name = "btn_cancelar";
+            this.btn_cancelar.Size = new System.Drawing.Size(69, 55);
+            this.btn_cancelar.TabIndex = 3;
+            this.btn_cancelar.Text = "Cancelar";
+            this.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_cancelar.UseVisualStyleBackColor = false;
+            // 
+            // btn_guardar
+            // 
+            this.btn_guardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_guardar.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_guardar.Image = ((System.Drawing.Image)(resources.GetObject("btn_guardar.Image")));
+            this.btn_guardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_guardar.Location = new System.Drawing.Point(155, 11);
+            this.btn_guardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_guardar.Name = "btn_guardar";
+            this.btn_guardar.Size = new System.Drawing.Size(69, 55);
+            this.btn_guardar.TabIndex = 2;
+            this.btn_guardar.Text = "Guardar";
+            this.btn_guardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_guardar.UseVisualStyleBackColor = false;
+            // 
+            // btn_modificar
+            // 
+            this.btn_modificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.btn_modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_modificar.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_modificar.Image = ((System.Drawing.Image)(resources.GetObject("btn_modificar.Image")));
+            this.btn_modificar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_modificar.Location = new System.Drawing.Point(82, 11);
+            this.btn_modificar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_modificar.Name = "btn_modificar";
+            this.btn_modificar.Size = new System.Drawing.Size(69, 55);
+            this.btn_modificar.TabIndex = 1;
+            this.btn_modificar.Text = "Modificar";
+            this.btn_modificar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_modificar.UseVisualStyleBackColor = false;
+            // 
+            // btn_agregar
+            // 
+            this.btn_agregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.btn_agregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_agregar.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_agregar.Image = ((System.Drawing.Image)(resources.GetObject("btn_agregar.Image")));
+            this.btn_agregar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_agregar.Location = new System.Drawing.Point(9, 11);
+            this.btn_agregar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_agregar.Name = "btn_agregar";
+            this.btn_agregar.Size = new System.Drawing.Size(69, 55);
+            this.btn_agregar.TabIndex = 0;
+            this.btn_agregar.Text = "Agregar";
+            this.btn_agregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_agregar.UseVisualStyleBackColor = false;
+            // 
             // Nav
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1021, 176);
+            this.ClientSize = new System.Drawing.Size(756, 81);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Nav";
             this.Text = "Nav";
             this.panel1.ResumeLayout(false);
