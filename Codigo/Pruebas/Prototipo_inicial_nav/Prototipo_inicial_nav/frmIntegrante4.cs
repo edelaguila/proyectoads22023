@@ -16,5 +16,6 @@ namespace Prototipo_inicial_nav
         {
             InitializeComponent();
         }
+
     }
 }

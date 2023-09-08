@@ -20,3 +20,94 @@ C:\Users\Luis\Desktop\lab1 analisis\proyectoads22023\Codigo\Pruebas\Prototipo_in
 C:\Users\Luis\Desktop\lab1 analisis\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.exe
 C:\Users\Luis\Desktop\lab1 analisis\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.pdb
 C:\Users\Luis\Desktop\lab1 analisis\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante2.resources
+C:\Users\Luis\Desktop\dd\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.exe.config
+C:\Users\Luis\Desktop\dd\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.exe
+C:\Users\Luis\Desktop\dd\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.pdb
+C:\Users\Luis\Desktop\dd\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.AssemblyReference.cache
+C:\Users\Luis\Desktop\dd\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante2.resources
+C:\Users\Luis\Desktop\dd\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.MDIbase.resources
+C:\Users\Luis\Desktop\dd\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.Properties.Resources.resources
+C:\Users\Luis\Desktop\dd\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.GenerateResource.cache
+C:\Users\Luis\Desktop\dd\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.CoreCompileInputs.cache
+C:\Users\Luis\Desktop\dd\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.exe
+C:\Users\Luis\Desktop\dd\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.pdb
+D:\Escritorio\Lab en clase\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.exe.config
+D:\Escritorio\Lab en clase\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.exe
+D:\Escritorio\Lab en clase\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.pdb
+D:\Escritorio\Lab en clase\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.AssemblyReference.cache
+D:\Escritorio\Lab en clase\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante2.resources
+D:\Escritorio\Lab en clase\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante4.resources
+D:\Escritorio\Lab en clase\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante7.resources
+D:\Escritorio\Lab en clase\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.MDIbase.resources
+D:\Escritorio\Lab en clase\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.Properties.Resources.resources
+D:\Escritorio\Lab en clase\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.GenerateResource.cache
+D:\Escritorio\Lab en clase\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.CoreCompileInputs.cache
+D:\Escritorio\Lab en clase\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.exe
+D:\Escritorio\Lab en clase\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.pdb
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.exe.config
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.exe
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.pdb
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.AssemblyReference.cache
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante2.resources
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante3.resources
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante4.resources
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante5.resources
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante6.resources
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante7.resources
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.MDIbase.resources
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.Properties.Resources.resources
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.GenerateResource.cache
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.CoreCompileInputs.cache
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.exe
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.pdb
+C:\Users\oteke\OneDrive\Escritorio\labviernes\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.exe.config
+C:\Users\oteke\OneDrive\Escritorio\labviernes\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.exe
+C:\Users\oteke\OneDrive\Escritorio\labviernes\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.pdb
+C:\Users\oteke\OneDrive\Escritorio\labviernes\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.AssemblyReference.cache
+C:\Users\oteke\OneDrive\Escritorio\labviernes\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante2.resources
+C:\Users\oteke\OneDrive\Escritorio\labviernes\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante3.resources
+C:\Users\oteke\OneDrive\Escritorio\labviernes\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante4.resources
+C:\Users\oteke\OneDrive\Escritorio\labviernes\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante5.resources
+C:\Users\oteke\OneDrive\Escritorio\labviernes\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante6.resources
+C:\Users\oteke\OneDrive\Escritorio\labviernes\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante7.resources
+C:\Users\oteke\OneDrive\Escritorio\labviernes\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.MDIbase.resources
+C:\Users\oteke\OneDrive\Escritorio\labviernes\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.Properties.Resources.resources
+C:\Users\oteke\OneDrive\Escritorio\labviernes\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.GenerateResource.cache
+C:\Users\oteke\OneDrive\Escritorio\labviernes\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.CoreCompileInputs.cache
+C:\Users\oteke\OneDrive\Escritorio\labviernes\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.exe
+C:\Users\oteke\OneDrive\Escritorio\labviernes\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.pdb
+C:\Users\oteke\OneDrive\Escritorio\labviernes\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante1.resources
+C:\Users\Luis\Desktop\Lab1Vfinal\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.exe.config
+C:\Users\Luis\Desktop\Lab1Vfinal\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.exe
+C:\Users\Luis\Desktop\Lab1Vfinal\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.pdb
+C:\Users\Luis\Desktop\Lab1Vfinal\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.AssemblyReference.cache
+C:\Users\Luis\Desktop\Lab1Vfinal\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante1.resources
+C:\Users\Luis\Desktop\Lab1Vfinal\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante2.resources
+C:\Users\Luis\Desktop\Lab1Vfinal\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante3.resources
+C:\Users\Luis\Desktop\Lab1Vfinal\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante4.resources
+C:\Users\Luis\Desktop\Lab1Vfinal\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante5.resources
+C:\Users\Luis\Desktop\Lab1Vfinal\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante6.resources
+C:\Users\Luis\Desktop\Lab1Vfinal\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante7.resources
+C:\Users\Luis\Desktop\Lab1Vfinal\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.MDIbase.resources
+C:\Users\Luis\Desktop\Lab1Vfinal\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.Properties.Resources.resources
+C:\Users\Luis\Desktop\Lab1Vfinal\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.GenerateResource.cache
+C:\Users\Luis\Desktop\Lab1Vfinal\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.CoreCompileInputs.cache
+C:\Users\Luis\Desktop\Lab1Vfinal\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.exe
+C:\Users\Luis\Desktop\Lab1Vfinal\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.pdb
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.exe.config
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.exe
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.pdb
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.AssemblyReference.cache
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante1.resources
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante2.resources
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante3.resources
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante4.resources
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante5.resources
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante6.resources
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante7.resources
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.MDIbase.resources
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.Properties.Resources.resources
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.GenerateResource.cache
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.CoreCompileInputs.cache
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.exe
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.pdb

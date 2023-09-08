@@ -16,5 +16,10 @@ namespace Prototipo_inicial_nav
         {
             InitializeComponent();
         }
+
+        private void frmIntegrante7_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

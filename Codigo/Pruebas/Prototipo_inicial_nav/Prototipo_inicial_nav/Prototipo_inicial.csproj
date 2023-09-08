@@ -96,8 +96,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmIntegrante1.resx">
+      <DependentUpon>frmIntegrante1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmIntegrante2.resx">
       <DependentUpon>frmIntegrante2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIntegrante3.resx">
+      <DependentUpon>frmIntegrante3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIntegrante4.resx">
+      <DependentUpon>frmIntegrante4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIntegrante5.resx">
+      <DependentUpon>frmIntegrante5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIntegrante6.resx">
+      <DependentUpon>frmIntegrante6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIntegrante7.resx">
+      <DependentUpon>frmIntegrante7.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDIbase.resx">
       <DependentUpon>MDIbase.cs</DependentUpon>

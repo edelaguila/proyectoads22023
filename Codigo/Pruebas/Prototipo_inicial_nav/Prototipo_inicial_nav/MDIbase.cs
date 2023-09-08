@@ -37,7 +37,6 @@ namespace Prototipo_inicial_nav
         }
 
 
-
         private void MDIbase_Load(object sender, EventArgs e)
         {
 
@@ -48,6 +47,43 @@ namespace Prototipo_inicial_nav
             frmIntegrante2 formIntegrante2 = new frmIntegrante2();
             formIntegrante2.MdiParent = this;
             formIntegrante2.Show();
+        }
+
+        private void integrante4ToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            frmIntegrante4 formIntegrante4 = new frmIntegrante4();
+            formIntegrante4.MdiParent = this;
+            formIntegrante4.Show();
+        }
+
+       
+
+        private void integrante6ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmIntegrante6 formIntegrante6 = new frmIntegrante6();
+            formIntegrante6.MdiParent = this;
+            formIntegrante6.Show();
+        }
+
+        private void integrante7ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmIntegrante7 formIntegrante7 = new frmIntegrante7();
+            formIntegrante7.MdiParent = this;
+            formIntegrante7.Show();
+        }
+
+        private void integrante3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmIntegrante3 formIntegrante3 = new frmIntegrante3();
+            formIntegrante3.MdiParent = this;
+            formIntegrante3.Show();
+        }
+
+        private void integrante5ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmIntegrante5 formIntegrante5 = new frmIntegrante5();
+            formIntegrante5.MdiParent = this;
+            formIntegrante5.Show();
         }
     }
 }
