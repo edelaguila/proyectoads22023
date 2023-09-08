@@ -76,3 +76,4 @@ C:\Users\oteke\OneDrive\Escritorio\labviernes\Codigo\Pruebas\Prototipo_inicial_n
 C:\Users\oteke\OneDrive\Escritorio\labviernes\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.CoreCompileInputs.cache
 C:\Users\oteke\OneDrive\Escritorio\labviernes\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.exe
 C:\Users\oteke\OneDrive\Escritorio\labviernes\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.pdb
+C:\Users\oteke\OneDrive\Escritorio\labviernes\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante1.resources

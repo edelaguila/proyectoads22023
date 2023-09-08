@@ -96,6 +96,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmIntegrante1.resx">
+      <DependentUpon>frmIntegrante1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmIntegrante2.resx">
       <DependentUpon>frmIntegrante2.cs</DependentUpon>
     </EmbeddedResource>
