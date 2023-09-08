@@ -36,9 +36,18 @@ namespace Prototipo_inicial_nav
             formIntegrante1.Show();
         }
 
+
+
         private void MDIbase_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void integrante2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmIntegrante2 formIntegrante2 = new frmIntegrante2();
+            formIntegrante2.MdiParent = this;
+            formIntegrante2.Show();
         }
     }
 }

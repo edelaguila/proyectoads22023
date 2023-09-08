@@ -30,8 +30,8 @@ namespace Prototipo_inicial_nav
         private void InitializeComponent()
         {
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.integrantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.integrante1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.integrante2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,6 +50,13 @@ namespace Prototipo_inicial_nav
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
+            // salirToolStripMenuItem1
+            // 
+            this.salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
+            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(121, 26);
+            this.salirToolStripMenuItem1.Text = "Salir";
+            this.salirToolStripMenuItem1.Click += new System.EventHandler(this.salirToolStripMenuItem1_Click);
+            // 
             // menuStrip1
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -61,13 +68,6 @@ namespace Prototipo_inicial_nav
             this.menuStrip1.Size = new System.Drawing.Size(703, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // salirToolStripMenuItem1
-            // 
-            this.salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
-            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.salirToolStripMenuItem1.Text = "Salir";
-            this.salirToolStripMenuItem1.Click += new System.EventHandler(this.salirToolStripMenuItem1_Click);
             // 
             // integrantesToolStripMenuItem
             // 
@@ -93,6 +93,7 @@ namespace Prototipo_inicial_nav
             this.integrante2ToolStripMenuItem.Name = "integrante2ToolStripMenuItem";
             this.integrante2ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.integrante2ToolStripMenuItem.Text = "Integrante2";
+            this.integrante2ToolStripMenuItem.Click += new System.EventHandler(this.integrante2ToolStripMenuItem_Click);
             // 
             // integrante3ToolStripMenuItem
             // 
