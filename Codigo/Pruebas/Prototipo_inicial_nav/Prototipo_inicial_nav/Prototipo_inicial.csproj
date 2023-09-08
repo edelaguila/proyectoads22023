@@ -99,6 +99,9 @@
     <EmbeddedResource Include="frmIntegrante2.resx">
       <DependentUpon>frmIntegrante2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmIntegrante3.resx">
+      <DependentUpon>frmIntegrante3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmIntegrante4.resx">
       <DependentUpon>frmIntegrante4.cs</DependentUpon>
     </EmbeddedResource>
