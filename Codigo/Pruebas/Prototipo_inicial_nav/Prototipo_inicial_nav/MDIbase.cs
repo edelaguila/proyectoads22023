@@ -37,7 +37,6 @@ namespace Prototipo_inicial_nav
         }
 
 
-
         private void MDIbase_Load(object sender, EventArgs e)
         {
 
@@ -55,6 +54,13 @@ namespace Prototipo_inicial_nav
             frmIntegrante4 formIntegrante4 = new frmIntegrante4();
             formIntegrante4.MdiParent = this;
             formIntegrante4.Show();
+        }
+
+        private void integrante5ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmIntegrante5 formIntegrante5 = new frmIntegrante5();
+            formIntegrante5.MdiParent = this;
+            formIntegrante5.Show();
         }
     }
 }
