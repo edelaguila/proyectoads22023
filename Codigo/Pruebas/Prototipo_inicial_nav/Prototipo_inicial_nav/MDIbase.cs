@@ -56,6 +56,29 @@ namespace Prototipo_inicial_nav
             formIntegrante4.Show();
         }
 
+       
+
+        private void integrante6ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmIntegrante6 formIntegrante6 = new frmIntegrante6();
+            formIntegrante6.MdiParent = this;
+            formIntegrante6.Show();
+        }
+
+        private void integrante7ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmIntegrante7 formIntegrante7 = new frmIntegrante7();
+            formIntegrante7.MdiParent = this;
+            formIntegrante7.Show();
+        }
+
+        private void integrante3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmIntegrante3 formIntegrante3 = new frmIntegrante3();
+            formIntegrante3.MdiParent = this;
+            formIntegrante3.Show();
+        }
+
         private void integrante5ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmIntegrante5 formIntegrante5 = new frmIntegrante5();
