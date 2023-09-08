@@ -21,5 +21,10 @@ namespace Prototipo_inicial_nav
         {
             label1.Text = "Luis Alberto Franco Moran";
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

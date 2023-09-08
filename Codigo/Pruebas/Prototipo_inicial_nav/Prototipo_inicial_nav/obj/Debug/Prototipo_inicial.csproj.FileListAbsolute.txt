@@ -94,3 +94,20 @@ C:\Users\Luis\Desktop\Lab1Vfinal\proyectoads22023\Codigo\Pruebas\Prototipo_inici
 C:\Users\Luis\Desktop\Lab1Vfinal\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.CoreCompileInputs.cache
 C:\Users\Luis\Desktop\Lab1Vfinal\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.exe
 C:\Users\Luis\Desktop\Lab1Vfinal\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.pdb
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.exe.config
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.exe
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.pdb
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.AssemblyReference.cache
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante1.resources
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante2.resources
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante3.resources
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante4.resources
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante5.resources
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante6.resources
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante7.resources
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.MDIbase.resources
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.Properties.Resources.resources
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.GenerateResource.cache
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.CoreCompileInputs.cache
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.exe
+C:\Users\Luis\Desktop\8vo semestre\Analisis 2\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.pdb
