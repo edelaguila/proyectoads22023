@@ -31,3 +31,16 @@ C:\Users\Luis\Desktop\dd\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\P
 C:\Users\Luis\Desktop\dd\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.CoreCompileInputs.cache
 C:\Users\Luis\Desktop\dd\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.exe
 C:\Users\Luis\Desktop\dd\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.pdb
+D:\Escritorio\Lab en clase\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.exe.config
+D:\Escritorio\Lab en clase\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.exe
+D:\Escritorio\Lab en clase\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.pdb
+D:\Escritorio\Lab en clase\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.AssemblyReference.cache
+D:\Escritorio\Lab en clase\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante2.resources
+D:\Escritorio\Lab en clase\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante4.resources
+D:\Escritorio\Lab en clase\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante7.resources
+D:\Escritorio\Lab en clase\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.MDIbase.resources
+D:\Escritorio\Lab en clase\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.Properties.Resources.resources
+D:\Escritorio\Lab en clase\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.GenerateResource.cache
+D:\Escritorio\Lab en clase\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.CoreCompileInputs.cache
+D:\Escritorio\Lab en clase\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.exe
+D:\Escritorio\Lab en clase\proyectoads22023\Codigo\Pruebas\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.pdb

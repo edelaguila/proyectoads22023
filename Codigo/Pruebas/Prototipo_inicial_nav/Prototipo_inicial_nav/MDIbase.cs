@@ -49,5 +49,12 @@ namespace Prototipo_inicial_nav
             formIntegrante2.MdiParent = this;
             formIntegrante2.Show();
         }
+
+        private void integrante4ToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            frmIntegrante4 formIntegrante4 = new frmIntegrante4();
+            formIntegrante4.MdiParent = this;
+            formIntegrante4.Show();
+        }
     }
 }
