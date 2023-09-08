@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaControlador;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,12 @@ namespace CapaVista.Formularios
 {
     public partial class frmReservacion : Form
     {
+
+        private ControladorNavegador ctrlNav;
         public frmReservacion()
         {
             InitializeComponent();
         }
+
     }
 }

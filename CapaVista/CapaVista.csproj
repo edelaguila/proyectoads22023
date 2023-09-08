@@ -31,9 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CapaControlador">
-      <HintPath>..\CapaControlador\bin\Debug\CapaControlador.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -52,6 +49,8 @@
     <Compile Include="Componentes\Nav.Designer.cs">
       <DependentUpon>Nav.cs</DependentUpon>
     </Compile>
+    <Compile Include="Componentes\Utilidades\utilidadesConsultasI.cs" />
+    <Compile Include="Componentes\Utilidades\utilidadesReporte.cs" />
     <Compile Include="Formularios\frmReportes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,7 +94,12 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CapaControlador\CapaControlador.csproj">
+      <Project>{a6119354-7576-487a-a44e-a5c332a20f4a}</Project>
+      <Name>CapaControlador</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Imagenes\anterior.png" />
     <Content Include="Imagenes\ayuda.png" />

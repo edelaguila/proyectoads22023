@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CapaModelo
+namespace CapaVista.Componentes.Utilidades
 {
-    public class Class1
+    internal class utilidadesReporte
     {
     }
 }

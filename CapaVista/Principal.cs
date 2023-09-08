@@ -17,9 +17,9 @@ namespace CapaVista
 
         public Form frm_container;
         public Form current_form;
-        public void openFormOnPanel(Panel panel, Form child)
+        public void openFormOnPanel(Panel panel, Form child, bool isNav)
         {
-            if(this.current_form != null)
+            if (this.current_form != null && isNav == false)
             {
                 this.current_form.Close();
             }
@@ -33,7 +33,8 @@ namespace CapaVista
 
         public void inicializador()
         {
-            this.openFormOnPanel(pnl_navegador, new Nav(this));
+            this.openFormOnPanel(pnl_navegador, new Nav(this), true);
+            this.current_form = null;
         }
 
         public Principal()
@@ -44,12 +45,12 @@ namespace CapaVista
 
         private void reservacionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.openFormOnPanel(pnl_contenedor, new frmReservacion());
+            this.openFormOnPanel(pnl_contenedor, new frmReservacion(), false);
         }
 
         private void reportesSemanalesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.openFormOnPanel(pnl_contenedor, new frmReportes());
+            this.openFormOnPanel(pnl_contenedor, new frmReportes(), false);
         }
 
     }
