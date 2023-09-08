@@ -30,14 +30,16 @@ namespace Prototipo_inicial_nav
         private void InitializeComponent()
         {
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.integrantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.integrante1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.integrante2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.integrante3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.integrante4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.integrante5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.integrante6ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.integrante7ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,6 +52,13 @@ namespace Prototipo_inicial_nav
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
+            // salirToolStripMenuItem1
+            // 
+            this.salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
+            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(121, 26);
+            this.salirToolStripMenuItem1.Text = "Salir";
+            this.salirToolStripMenuItem1.Click += new System.EventHandler(this.salirToolStripMenuItem1_Click);
+            // 
             // menuStrip1
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -58,16 +67,10 @@ namespace Prototipo_inicial_nav
             this.integrantesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
             this.menuStrip1.Size = new System.Drawing.Size(703, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // salirToolStripMenuItem1
-            // 
-            this.salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
-            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.salirToolStripMenuItem1.Text = "Salir";
-            this.salirToolStripMenuItem1.Click += new System.EventHandler(this.salirToolStripMenuItem1_Click);
             // 
             // integrantesToolStripMenuItem
             // 
@@ -76,7 +79,9 @@ namespace Prototipo_inicial_nav
             this.integrante2ToolStripMenuItem,
             this.integrante3ToolStripMenuItem,
             this.integrante4ToolStripMenuItem,
-            this.integrante5ToolStripMenuItem});
+            this.integrante5ToolStripMenuItem,
+            this.integrante6ToolStripMenuItem,
+            this.integrante7ToolStripMenuItem});
             this.integrantesToolStripMenuItem.Name = "integrantesToolStripMenuItem";
             this.integrantesToolStripMenuItem.Size = new System.Drawing.Size(97, 24);
             this.integrantesToolStripMenuItem.Text = "Integrantes";
@@ -93,24 +98,42 @@ namespace Prototipo_inicial_nav
             this.integrante2ToolStripMenuItem.Name = "integrante2ToolStripMenuItem";
             this.integrante2ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.integrante2ToolStripMenuItem.Text = "Integrante2";
+            this.integrante2ToolStripMenuItem.Click += new System.EventHandler(this.integrante2ToolStripMenuItem_Click);
             // 
             // integrante3ToolStripMenuItem
             // 
             this.integrante3ToolStripMenuItem.Name = "integrante3ToolStripMenuItem";
             this.integrante3ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.integrante3ToolStripMenuItem.Text = "Integrante3";
+            this.integrante3ToolStripMenuItem.Click += new System.EventHandler(this.integrante3ToolStripMenuItem_Click);
             // 
             // integrante4ToolStripMenuItem
             // 
             this.integrante4ToolStripMenuItem.Name = "integrante4ToolStripMenuItem";
             this.integrante4ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.integrante4ToolStripMenuItem.Text = "Integrante4";
+            this.integrante4ToolStripMenuItem.Click += new System.EventHandler(this.integrante4ToolStripMenuItem_Click_1);
             // 
             // integrante5ToolStripMenuItem
             // 
             this.integrante5ToolStripMenuItem.Name = "integrante5ToolStripMenuItem";
             this.integrante5ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.integrante5ToolStripMenuItem.Text = "Integrante5";
+            this.integrante5ToolStripMenuItem.Click += new System.EventHandler(this.integrante5ToolStripMenuItem_Click);
+            // 
+            // integrante6ToolStripMenuItem
+            // 
+            this.integrante6ToolStripMenuItem.Name = "integrante6ToolStripMenuItem";
+            this.integrante6ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.integrante6ToolStripMenuItem.Text = "Integrante6";
+            this.integrante6ToolStripMenuItem.Click += new System.EventHandler(this.integrante6ToolStripMenuItem_Click);
+            // 
+            // integrante7ToolStripMenuItem
+            // 
+            this.integrante7ToolStripMenuItem.Name = "integrante7ToolStripMenuItem";
+            this.integrante7ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.integrante7ToolStripMenuItem.Text = "Integrante7";
+            this.integrante7ToolStripMenuItem.Click += new System.EventHandler(this.integrante7ToolStripMenuItem_Click);
             // 
             // MDIbase
             // 
@@ -120,6 +143,7 @@ namespace Prototipo_inicial_nav
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MDIbase";
             this.Text = "Contenedor";
             this.Load += new System.EventHandler(this.MDIbase_Load);
@@ -140,6 +164,8 @@ namespace Prototipo_inicial_nav
         private System.Windows.Forms.ToolStripMenuItem integrante3ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem integrante4ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem integrante5ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem integrante6ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem integrante7ToolStripMenuItem;
     }
 }
 

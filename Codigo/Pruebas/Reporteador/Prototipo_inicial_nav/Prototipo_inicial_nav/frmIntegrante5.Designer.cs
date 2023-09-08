@@ -1,7 +1,6 @@
-﻿
-namespace Prototipo_inicial_nav
+﻿namespace Prototipo_inicial_nav
 {
-    partial class frmIntegrante1
+    partial class frmIntegrante5
     {
         /// <summary>
         /// Required designer variable.
@@ -36,30 +35,30 @@ namespace Prototipo_inicial_nav
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(290, 125);
+            this.label1.Location = new System.Drawing.Point(86, 75);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(177, 17);
+            this.label1.Size = new System.Drawing.Size(198, 17);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Otto Adrian Lopez Ventura";
+            this.label1.Text = "María Jimena Tobías Vásquez";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(293, 184);
+            this.label2.Location = new System.Drawing.Point(89, 112);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 17);
+            this.label2.Size = new System.Drawing.Size(106, 17);
             this.label2.TabIndex = 1;
-            this.label2.Text = "0901-20-1069";
+            this.label2.Text = "0901-20-13641";
             // 
-            // frmIntegrante1
+            // frmIntegrante5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "frmIntegrante1";
-            this.Text = "Integrante1";
+            this.Name = "frmIntegrante5";
+            this.Text = "frmIntegrante5";
             this.ResumeLayout(false);
             this.PerformLayout();
 
