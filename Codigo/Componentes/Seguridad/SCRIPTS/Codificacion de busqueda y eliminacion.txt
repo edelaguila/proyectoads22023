@@ -1,0 +1,57 @@
+//-utilizando la misma conexion que en las capacitacionnes-//
+
+//busqueda//
+
+ void Buscar(string filtro)
+        {
+            string consulta = $"SELECT * FROM "tabla" WHERE "campo deseado" = '{filtro}'";
+
+            OdbcDataAdapter datos = new OdbcDataAdapter(consulta, cn.conexion());
+
+            DataTable dt = new DataTable();
+
+            datos.Fill(dt);
+
+            "nombre del datagridview".DataSource = dt;
+        }
+
+
+//eliminar//
+
+  private void Eliminar(string codigo)
+        {
+            using (OdbcConnection conn = cn.conexion())
+            {
+                
+                string consulta = "DELETE FROM empleados WHERE codigo_empleado = ?";
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("codigo", codigo);
+                    int filasAfectadas = cmd.ExecuteNonQuery();
+                    if (filasAfectadas > 0)
+                    {
+                        MessageBox.Show("Registro eliminado correctamente.");
+                        // actualizar la tabla después de la eliminación
+                        Consultar();
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se pudo eliminar el registro.");
+                    }
+                }
+            }
+        }
+
+
+
+//para llamar a la funcion Buscar//
+
+ string filtro = "nombre del textbox.Text"; 
+            Buscar(filtro);
+
+
+//para llamar a la funcion eliminar//
+
+ string codigo = Busqueda.Text;
+           
+                Eliminar(codigo);
