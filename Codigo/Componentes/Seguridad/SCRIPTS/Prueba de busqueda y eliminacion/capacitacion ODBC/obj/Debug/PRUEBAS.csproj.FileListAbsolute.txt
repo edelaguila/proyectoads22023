@@ -1,0 +1,11 @@
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\SCRIPTS\Prueba de busqueda y eliminacion\capacitacion ODBC\bin\Debug\capacitacion ODBC.exe.config
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\SCRIPTS\Prueba de busqueda y eliminacion\capacitacion ODBC\bin\Debug\capacitacion ODBC.exe
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\SCRIPTS\Prueba de busqueda y eliminacion\capacitacion ODBC\bin\Debug\capacitacion ODBC.pdb
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\SCRIPTS\Prueba de busqueda y eliminacion\capacitacion ODBC\obj\Debug\PRUEBAS.csproj.AssemblyReference.cache
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\SCRIPTS\Prueba de busqueda y eliminacion\capacitacion ODBC\obj\Debug\capacitacion_ODBC.Principal.resources
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\SCRIPTS\Prueba de busqueda y eliminacion\capacitacion ODBC\obj\Debug\capacitacion_ODBC.Registro.resources
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\SCRIPTS\Prueba de busqueda y eliminacion\capacitacion ODBC\obj\Debug\capacitacion_ODBC.Properties.Resources.resources
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\SCRIPTS\Prueba de busqueda y eliminacion\capacitacion ODBC\obj\Debug\PRUEBAS.csproj.GenerateResource.cache
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\SCRIPTS\Prueba de busqueda y eliminacion\capacitacion ODBC\obj\Debug\PRUEBAS.csproj.CoreCompileInputs.cache
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\SCRIPTS\Prueba de busqueda y eliminacion\capacitacion ODBC\obj\Debug\capacitacion ODBC.exe
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\SCRIPTS\Prueba de busqueda y eliminacion\capacitacion ODBC\obj\Debug\capacitacion ODBC.pdb
