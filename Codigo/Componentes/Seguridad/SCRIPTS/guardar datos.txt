@@ -1,0 +1,42 @@
+using System;
+using System.Data;
+using System.Data.Odbc;
+
+public class dato
+{
+    private OdbcConnection cn;
+
+    public dato()
+    {
+        // Debes establecer la cadena de conexión adecuada aquí
+        string connectionString = "tu_cadena_de_conexion";
+        cn = new OdbcConnection(connectionString);
+    }
+
+    public void guardarDato(string value1, string value2, string value3)
+    {
+        try
+        {
+            cn.Open();
+
+            string cadena = "INSERT INTO 'nombre_tabla' (value1, value2, value3) VALUES (?, ?, ?)";
+            
+            OdbcCommand cmd = new OdbcCommand(cadena, cn);
+            
+            cmd.Parameters.Add("nombre", OdbcType.VarChar).Value = value1;
+            cmd.Parameters.Add("apellido", OdbcType.VarChar).Value = value2;
+            cmd.Parameters.Add("cargo", OdbcType.VarChar).Value = value3;
+            
+            cmd.ExecuteNonQuery();
+        }
+        catch (OdbcException ex)
+        {
+            // Manejo de excepciones aquí
+            Console.WriteLine("Error al guardar el dato: " + ex.Message);
+        }
+        finally
+        {
+            cn.Close();
+        }
+    }
+}
