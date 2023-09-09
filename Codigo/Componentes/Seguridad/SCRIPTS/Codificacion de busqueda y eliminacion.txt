@@ -2,9 +2,9 @@
 
 //busqueda//
 
- void Buscar(string filtro)
+  void Buscar(string strfiltro)
         {
-            string consulta = $"SELECT * FROM "tabla" WHERE "campo deseado" = '{filtro}'";
+            string consulta = $"SELECT * FROM empleados WHERE codigo_empleado = '{strfiltro}'";
 
             OdbcDataAdapter datos = new OdbcDataAdapter(consulta, cn.conexion());
 
@@ -12,13 +12,13 @@
 
             datos.Fill(dt);
 
-            "nombre del datagridview".DataSource = dt;
+            dgv_tabla.DataSource = dt;
         }
 
 
 //eliminar//
 
-  private void Eliminar(string codigo)
+  private void Eliminar(string strcodigo)
         {
             using (OdbcConnection conn = cn.conexion())
             {
@@ -26,17 +26,17 @@
                 string consulta = "DELETE FROM empleados WHERE codigo_empleado = ?";
                 using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
                 {
-                    cmd.Parameters.AddWithValue("codigo", codigo);
+                    cmd.Parameters.AddWithValue("strcodigo", strcodigo);
                     int filasAfectadas = cmd.ExecuteNonQuery();
                     if (filasAfectadas > 0)
                     {
                         MessageBox.Show("Registro eliminado correctamente.");
-                        // actualizar la tabla después de la eliminación
+                        // También puedes actualizar la tabla después de la eliminación si es necesario
                         Consultar();
                     }
                     else
                     {
-                        MessageBox.Show("No se pudo eliminar el registro.");
+                        MessageBox.Show("No se pudo eliminar el registro. Verifique el codigo del empleado.");
                     }
                 }
             }
@@ -46,12 +46,12 @@
 
 //para llamar a la funcion Buscar//
 
- string filtro = "nombre del textbox.Text"; 
-            Buscar(filtro);
+ string strfiltro = txt_Busqueda.Text; 
+            Buscar(strfiltro);
 
 
 //para llamar a la funcion eliminar//
 
- string codigo = Busqueda.Text;
+string strcodigo = txt_Busqueda.Text;
            
-                Eliminar(codigo);
+                Eliminar(strcodigo);
