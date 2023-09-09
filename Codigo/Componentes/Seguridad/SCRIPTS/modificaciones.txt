@@ -1,0 +1,197 @@
+// MODIFICACIONES
+//-------------------------------------
+// MODIFICACION DE PERFIL_ENCABEZADO
+//-------------------------------------
+using System;
+using System.Data;
+using System.Data.Odbc;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        string connectionString = "Driver={ODBC Driver 17 for SQL Server};Server=TuServidor;Database=proyectobd122021;Uid=root;Pwd=12345;";
+
+        using (OdbcConnection connection = new OdbcConnection(connectionString))
+        {
+            try
+            {
+                connection.Open();
+
+                string updateQuery = "UPDATE Seguridad.Tbl_Perfil_encabezado SET nombre_perfil = ?, descripcion_perfil = ?, estado_perfil = ? WHERE pk_id_perfil = ?";
+
+                using (OdbcCommand command = new OdbcCommand(updateQuery, connection))
+                {
+                    // Reemplaza los nuevos valores y el identificador del perfil a modificar
+                    command.Parameters.AddWithValue("@nombre_perfil", "NuevoNombrePerfil");
+                    command.Parameters.AddWithValue("@descripcion_perfil", "NuevaDescripción");
+                    command.Parameters.AddWithValue("@estado_perfil", 0); // Cambia esto según sea necesario
+                    command.Parameters.AddWithValue("@pk_id_perfil", 1); // Reemplaza con el identificador del perfil
+
+                    int rowsAffected = command.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        Console.WriteLine("Perfil modificado con éxito.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Ningún perfil modificado. Verifica el identificador.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+        }
+    }
+}
+//-------------------------------------
+// MODIFICACION DE USUARIO_APLICACION
+//-------------------------------------
+using System;
+using System.Data;
+using System.Data.Odbc;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        string connectionString = "Driver={ODBC Driver 17 for SQL Server};Server=TuServidor;Database=proyectobd122021;Uid=root;Pwd=12345;";
+
+        using (OdbcConnection connection = new OdbcConnection(connectionString))
+        {
+            try
+            {
+                connection.Open();
+
+                string updateQuery = "UPDATE Seguridad.Tbl_Usuario_aplicacion SET ingresar = ?, consulta = ?, modificar = ?, eliminar = ?, imprimir = ? WHERE pk_id_usuario = ? AND pk_id_aplicacion = ?";
+
+                using (OdbcCommand command = new OdbcCommand(updateQuery, connection))
+                {
+                    // Reemplaza los nuevos valores, el identificador del usuario y el identificador de la aplicación
+                    command.Parameters.AddWithValue("@ingresar", 1); // Cambia esto según sea necesario
+                    command.Parameters.AddWithValue("@consulta", 0); // Cambia esto según sea necesario
+                    command.Parameters.AddWithValue("@modificar", 1); // Cambia esto según sea necesario
+                    command.Parameters.AddWithValue("@eliminar", 0); // Cambia esto según sea necesario
+                    command.Parameters.AddWithValue("@imprimir", 1); // Cambia esto según sea necesario
+                    command.Parameters.AddWithValue("@pk_id_usuario", "ID_del_Usuario");
+                    command.Parameters.AddWithValue("@pk_id_aplicacion", 1); // Reemplaza con el identificador de la aplicación
+
+                    int rowsAffected = command.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        Console.WriteLine("Permisos de usuario modificados con éxito.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Ningún permiso de usuario modificado. Verifica los identificadores.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+        }
+    }
+}
+//-------------------------------------
+// MODIFICACION DE PERFIL_DETALLE
+//-------------------------------------
+using System;
+using System.Data;
+using System.Data.Odbc;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        string connectionString = "Driver={ODBC Driver 17 for SQL Server};Server=TuServidor;Database=proyectobd122021;Uid=root;Pwd=12345;";
+
+        using (OdbcConnection connection = new OdbcConnection(connectionString))
+        {
+            try
+            {
+                connection.Open();
+
+                string updateQuery = "UPDATE Seguridad.Tbl_Perfil_detalle SET ingresar = ?, consultar = ?, modificar = ?, eliminar = ?, imprimir = ? WHERE pk_id_perfil = ? AND pk_id_aplicacion = ?";
+
+                using (OdbcCommand command = new OdbcCommand(updateQuery, connection))
+                {
+                    // Reemplaza los nuevos valores, el identificador del perfil y el identificador de la aplicación
+                    command.Parameters.AddWithValue("@ingresar", 1); // Cambia esto según sea necesario
+                    command.Parameters.AddWithValue("@consultar", 0); // Cambia esto según sea necesario
+                    command.Parameters.AddWithValue("@modificar", 1); // Cambia esto según sea necesario
+                    command.Parameters.AddWithValue("@eliminar", 0); // Cambia esto según sea necesario
+                    command.Parameters.AddWithValue("@imprimir", 1); // Cambia esto según sea necesario
+                    command.Parameters.AddWithValue("@pk_id_perfil", 1); // Reemplaza con el identificador del perfil
+                    command.Parameters.AddWithValue("@pk_id_aplicacion", 1); // Reemplaza con el identificador de la aplicación
+
+                    int rowsAffected = command.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        Console.WriteLine("Detalle de perfil modificado con éxito.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Ningún detalle de perfil modificado. Verifica los identificadores.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+        }
+    }
+}
+//-------------------------------------
+// MODIFICACION DE APLICACION A MODULO
+//-------------------------------------
+using System;
+using System.Data;
+using System.Data.Odbc;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        string connectionString = "Driver={ODBC Driver 17 for SQL Server};Server=TuServidor;Database=proyectobd122021;Uid=root;Pwd=12345;";
+
+        using (OdbcConnection connection = new OdbcConnection(connectionString))
+        {
+            try
+            {
+                connection.Open();
+
+                string updateQuery = "UPDATE Seguridad.Tbl_Aplicacion_a_modulos SET pk_id_modulo = ? WHERE pk_id_aplicacion = ?";
+
+                using (OdbcCommand command = new OdbcCommand(updateQuery, connection))
+                {
+                    // Reemplaza el nuevo identificador de módulo y el identificador de la aplicación
+                    command.Parameters.AddWithValue("@pk_id_modulo", 2); // Reemplaza con el nuevo identificador de módulo
+                    command.Parameters.AddWithValue("@pk_id_aplicacion", 1); // Reemplaza con el identificador de la aplicación
+
+                    int rowsAffected = command.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        Console.WriteLine("Asociación entre aplicación y módulo modificada con éxito.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Ninguna asociación modificada. Verifica los identificadores.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+        }
+    }
+}
