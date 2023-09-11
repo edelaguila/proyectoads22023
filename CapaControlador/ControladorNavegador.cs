@@ -24,5 +24,10 @@ namespace CapaControlador
         {
             this.snEmpleados.agregarEmpleado(parameters);
         }
+
+        public List<string> getColumns(string tabla)
+        {
+            return this.snEmpleados.getColumns(tabla);
+        }
     }
 }

@@ -11,6 +11,7 @@ namespace CapaModelo
     public class SentenciasEmpleados
     {
         private Conexion conn;
+        private string schema = "controlempleados";
 
         public SentenciasEmpleados()
         {
@@ -44,19 +45,16 @@ namespace CapaModelo
             List<string> columns = this.getColumns("empleados");
             string _columns = this.getColumnsQuery(parameters, columns);
             string sql = "INSERT INTO empleados " + _columns + " VALUES (";
-            foreach (var item in parameters)
+            foreach (string col in columns)
             {
-                if (item.Value != parameters.Values.Last())
+                if (parameters.Keys.Contains(col))
                 {
-                    sql += "'" + item.Value.ToString() + "'" + ",";
-                }
-                else
-                {
-
-                    sql += "'" + item.Value.ToString() + "'";
+                    string str = parameters[col];
+                    sql += "'" + str + "'" + ",";
                 }
             }
             sql += ");";
+            sql = sql.Replace(",)", ")");
             Console.WriteLine("sql: " + sql);
             return sql;
         }
@@ -67,7 +65,7 @@ namespace CapaModelo
             List<string> columns = new List<string>();
             try
             {
-                string query = "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'controlempleados' AND TABLE_NAME='empleados';";
+                string query = "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = '" + schema + "' AND TABLE_NAME='" + tableName + "';";
                 OdbcCommand cmd = new OdbcCommand(query, this.conn.connection());
                 OdbcDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
@@ -87,7 +85,6 @@ namespace CapaModelo
 
         public void agregarEmpleado(Dictionary<string, string> parameters)
         {
-            //string sql = "insert into " + tabla + "";
             string query = this.getQuery(parameters);
             try
             {
