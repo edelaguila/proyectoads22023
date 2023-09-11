@@ -18,10 +18,10 @@ namespace CapaVista.Componentes.Utilidades
         public void guardarReservacion(Form child)
         {
             var cities = new Dictionary<string, string>(){
-    {"nombre", ""},
-    {"puesto", ""},
-    {"departamento", ""}
-};
+                {"nombre_completo", ""},
+                {"puesto", ""},
+                {"departamento", ""}
+            };
             foreach (Control c in child.Controls)
             {
                 if (c is TextBox)
@@ -30,7 +30,7 @@ namespace CapaVista.Componentes.Utilidades
                     cities[tag] = c.Text;
                 }
             }
-            this.ctrNav.agregarEmpleado(cities["nombre"], cities["puesto"], cities["departamento"]);
+            this.ctrNav.agregarEmpleado(cities);
             MessageBox.Show("Empleado creado");
 
         }

@@ -52,7 +52,7 @@ namespace CapaVista.Formularios
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(134, 27);
             this.txtNombre.TabIndex = 1;
-            this.txtNombre.Tag = "nombre";
+            this.txtNombre.Tag = "nombre_completo";
             // 
             // txtPuesto
             // 

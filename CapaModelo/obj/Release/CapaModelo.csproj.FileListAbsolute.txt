@@ -1,0 +1,6 @@
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaModelo\bin\Release\CapaModelo.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaModelo\bin\Release\CapaModelo.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaModelo\obj\Release\CapaModelo.csproj.AssemblyReference.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaModelo\obj\Release\CapaModelo.csproj.CoreCompileInputs.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaModelo\obj\Release\CapaModelo.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaModelo\obj\Release\CapaModelo.pdb

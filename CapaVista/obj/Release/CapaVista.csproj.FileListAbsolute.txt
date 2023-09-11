@@ -13,3 +13,5 @@ C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyect
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmReservacion.resources
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmReportes.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\bin\Release\CapaModelo.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\bin\Release\CapaModelo.pdb
