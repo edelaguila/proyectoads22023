@@ -1,0 +1,13 @@
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\Reporteador\reporteador-diseño\Reporteador\bin\Debug\Reporteador.exe.config
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\Reporteador\reporteador-diseño\Reporteador\bin\Debug\Reporteador.exe
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\Reporteador\reporteador-diseño\Reporteador\bin\Debug\Reporteador.pdb
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\Reporteador\reporteador-diseño\Reporteador\obj\Debug\Reporteador.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\Reporteador\reporteador-diseño\Reporteador\obj\Debug\Reporteador.Properties.Resources.resources
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\Reporteador\reporteador-diseño\Reporteador\obj\Debug\Reporteador.Reportes.resources
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\Reporteador\reporteador-diseño\Reporteador\obj\Debug\Reporteador.csproj.GenerateResource.cache
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\Reporteador\reporteador-diseño\Reporteador\obj\Debug\Reporteador.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\Reporteador\reporteador-diseño\Reporteador\obj\Debug\Reporteador.exe
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\Reporteador\reporteador-diseño\Reporteador\obj\Debug\Reporteador.pdb
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\Reporteador\reporteador-diseño\Reporteador\obj\Debug\Reporteador.MdiParent.resources
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\Reporteador\reporteador-diseño\Reporteador\obj\Debug\Reporteador.Form1.resources
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\Reporteador\reporteador-diseño\Reporteador\obj\Debug\Reporteador.Vista_de_Reportes.resources
