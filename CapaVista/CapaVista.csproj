@@ -51,6 +51,18 @@
     </Compile>
     <Compile Include="Componentes\Utilidades\utilidadesConsultasI.cs" />
     <Compile Include="Componentes\Utilidades\utilidadesReporte.cs" />
+    <Compile Include="Formularios\ConsultasCreacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ConsultasCreacion.Designer.cs">
+      <DependentUpon>ConsultasCreacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ConsultasEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ConsultasEditar.Designer.cs">
+      <DependentUpon>ConsultasEditar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmReportes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +103,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Componentes\Nav.resx">
       <DependentUpon>Nav.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ConsultasCreacion.resx">
+      <DependentUpon>ConsultasCreacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ConsultasEditar.resx">
+      <DependentUpon>ConsultasEditar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmReportes.resx">
       <DependentUpon>frmReportes.cs</DependentUpon>
