@@ -53,6 +53,7 @@ namespace CapaModelo
             }
             sql += ");";
             sql = sql.Replace(",)", ")");
+            Console.WriteLine(sql);
             return sql;
         }
 
