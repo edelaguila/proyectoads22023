@@ -7,3 +7,12 @@ C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyect
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaControlador\obj\Release\CapaControlador.csproj.CopyComplete
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaControlador\obj\Release\CapaControlador.dll
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaControlador\obj\Release\CapaControlador.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaControlador\bin\Release\CapaControlador.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaControlador\bin\Release\CapaControlador.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaControlador\bin\Release\CapaModelo.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaControlador\bin\Release\CapaModelo.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaControlador\obj\Release\CapaControlador.csproj.AssemblyReference.cache
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaControlador\obj\Release\CapaControlador.csproj.CoreCompileInputs.cache
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaControlador\obj\Release\CapaControlador.csproj.CopyComplete
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaControlador\obj\Release\CapaControlador.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaControlador\obj\Release\CapaControlador.pdb
