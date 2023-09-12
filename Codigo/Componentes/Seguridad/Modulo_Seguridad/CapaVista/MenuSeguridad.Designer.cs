@@ -91,28 +91,28 @@ namespace CapaVista
             // usuariosToolStripMenuItem
             // 
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
             this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
             // 
             // aplicacionesToolStripMenuItem
             // 
             this.aplicacionesToolStripMenuItem.Name = "aplicacionesToolStripMenuItem";
-            this.aplicacionesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aplicacionesToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.aplicacionesToolStripMenuItem.Text = "Aplicaciones";
             this.aplicacionesToolStripMenuItem.Click += new System.EventHandler(this.aplicacionesToolStripMenuItem_Click);
             // 
             // modulosToolStripMenuItem
             // 
             this.modulosToolStripMenuItem.Name = "modulosToolStripMenuItem";
-            this.modulosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.modulosToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.modulosToolStripMenuItem.Text = "Modulos";
             this.modulosToolStripMenuItem.Click += new System.EventHandler(this.modulosToolStripMenuItem_Click);
             // 
             // perfilesToolStripMenuItem
             // 
             this.perfilesToolStripMenuItem.Name = "perfilesToolStripMenuItem";
-            this.perfilesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.perfilesToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.perfilesToolStripMenuItem.Text = "Perfiles";
             this.perfilesToolStripMenuItem.Click += new System.EventHandler(this.perfilesToolStripMenuItem_Click);
             // 
@@ -123,8 +123,9 @@ namespace CapaVista
             this.asignacionDePerfilesAUsuariosToolStripMenuItem,
             this.asignacionDePerfilesAAplicacionesToolStripMenuItem});
             this.asignacionesToolStripMenuItem.Name = "asignacionesToolStripMenuItem";
-            this.asignacionesToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
-            this.asignacionesToolStripMenuItem.Text = "Asignaciones";
+            this.asignacionesToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.asignacionesToolStripMenuItem.Text = "Procesos";
+            this.asignacionesToolStripMenuItem.Click += new System.EventHandler(this.asignacionesToolStripMenuItem_Click);
             // 
             // asignacionDeUsuarioAAplicacionesToolStripMenuItem
             // 
@@ -150,15 +151,15 @@ namespace CapaVista
             // cambioDeContrToolStripMenuItem
             // 
             this.cambioDeContrToolStripMenuItem.Name = "cambioDeContrToolStripMenuItem";
-            this.cambioDeContrToolStripMenuItem.Size = new System.Drawing.Size(140, 20);
-            this.cambioDeContrToolStripMenuItem.Text = "Cambio de Contraseña";
+            this.cambioDeContrToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
+            this.cambioDeContrToolStripMenuItem.Text = "Seguridad";
             this.cambioDeContrToolStripMenuItem.Click += new System.EventHandler(this.cambioDeContrToolStripMenuItem_Click);
             // 
             // bitacoraToolStripMenuItem
             // 
             this.bitacoraToolStripMenuItem.Name = "bitacoraToolStripMenuItem";
-            this.bitacoraToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
-            this.bitacoraToolStripMenuItem.Text = "Bitacora";
+            this.bitacoraToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.bitacoraToolStripMenuItem.Text = "Reportes";
             this.bitacoraToolStripMenuItem.Click += new System.EventHandler(this.bitacoraToolStripMenuItem_Click);
             // 
             // ayudaToolStripMenuItem

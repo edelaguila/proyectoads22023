@@ -84,5 +84,10 @@ namespace CapaVista
         {
             Abrir(new Bitacora());
         }
+
+        private void asignacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
