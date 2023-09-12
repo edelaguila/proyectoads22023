@@ -1,0 +1,6 @@
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\Reporteador\Reporteador\CapaModelo\bin\Debug\CapaModelo.dll
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\Reporteador\Reporteador\CapaModelo\bin\Debug\CapaModelo.pdb
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\Reporteador\Reporteador\CapaModelo\obj\Debug\CapaModelo.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\Reporteador\Reporteador\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\Reporteador\Reporteador\CapaModelo\obj\Debug\CapaModelo.dll
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\Reporteador\Reporteador\CapaModelo\obj\Debug\CapaModelo.pdb
