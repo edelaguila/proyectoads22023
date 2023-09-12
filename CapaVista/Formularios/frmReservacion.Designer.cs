@@ -47,7 +47,7 @@ namespace CapaVista.Formularios
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(81, 86);
+            this.txtNombre.Location = new System.Drawing.Point(133, 142);
             this.txtNombre.Multiline = true;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(134, 27);
@@ -56,7 +56,7 @@ namespace CapaVista.Formularios
             // 
             // txtPuesto
             // 
-            this.txtPuesto.Location = new System.Drawing.Point(252, 86);
+            this.txtPuesto.Location = new System.Drawing.Point(304, 142);
             this.txtPuesto.Multiline = true;
             this.txtPuesto.Name = "txtPuesto";
             this.txtPuesto.Size = new System.Drawing.Size(134, 27);
@@ -65,7 +65,7 @@ namespace CapaVista.Formularios
             // 
             // txtDepartamento
             // 
-            this.txtDepartamento.Location = new System.Drawing.Point(431, 86);
+            this.txtDepartamento.Location = new System.Drawing.Point(483, 142);
             this.txtDepartamento.Multiline = true;
             this.txtDepartamento.Name = "txtDepartamento";
             this.txtDepartamento.Size = new System.Drawing.Size(134, 27);
