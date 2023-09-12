@@ -17,7 +17,7 @@ namespace CapaVista.Componentes.Utilidades
         }
         public void guardarReservacion(Form child)
         {
-            var cities = new Dictionary<string, string>();
+            var dictionary = new Dictionary<string, string>();
             List<string> columns = this.ctrNav.getColumns("empleados");
 
             foreach (Control c in child.Controls)
@@ -27,16 +27,13 @@ namespace CapaVista.Componentes.Utilidades
                     string tag = c.Tag.ToString();
                     if (columns.Contains(tag))
                     {
-                        Console.WriteLine(tag + "--" + c.Text);
-                        cities.Add(tag, c.Text);
+                        dictionary.Add(tag, c.Text);
                     }
                     c.Text = "";
                 }
             }
-            Console.WriteLine(cities);
-            this.ctrNav.agregarEmpleado(cities);
+            this.ctrNav.agregarEmpleado(dictionary);
             MessageBox.Show("Empleado creado");
-
         }
 
 
