@@ -42,6 +42,7 @@ namespace CapaModelo
         {
             List<string> columns = this.getColumns(tabla);
             string _columns = this.getColumnsQuery(parameters, columns);
+            //Se deberia cambiar la tabla a usuarios para el ingreso de datos y la creacion de roles
             string sql = "INSERT INTO empleados " + _columns + " VALUES (";
             foreach (string col in columns)
             {
