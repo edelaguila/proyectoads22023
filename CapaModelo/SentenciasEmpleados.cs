@@ -17,8 +17,6 @@ namespace CapaModelo
             this.tabla = "empleados";
         }
 
-
-
         public void agregarEmpleado(Dictionary<string, string> parameters)
         {
             string query = this.getQuery(parameters, tabla);
