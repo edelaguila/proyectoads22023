@@ -4,3 +4,9 @@ C:\Users\PC\source\repos\Proyecto3\CapaModelo\obj\Debug\CapaModelo.csproj.Assemb
 C:\Users\PC\source\repos\Proyecto3\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
 C:\Users\PC\source\repos\Proyecto3\CapaModelo\obj\Debug\CapaModelo.dll
 C:\Users\PC\source\repos\Proyecto3\CapaModelo\obj\Debug\CapaModelo.pdb
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaModelo\bin\Debug\CapaModelo.dll
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaModelo\bin\Debug\CapaModelo.pdb
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaModelo\obj\Debug\CapaModelo.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaModelo\obj\Debug\CapaModelo.dll
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaModelo\obj\Debug\CapaModelo.pdb

@@ -168,9 +168,9 @@ namespace CapaVista.Mantenimiento
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(6, 189);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 13);
+            this.label5.Size = new System.Drawing.Size(63, 13);
             this.label5.TabIndex = 8;
-            this.label5.Text = "ID Aplicacion";
+            this.label5.Text = "Descripcion";
             // 
             // textBox4
             // 
@@ -184,18 +184,18 @@ namespace CapaVista.Mantenimiento
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(6, 140);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 13);
+            this.label4.Size = new System.Drawing.Size(96, 13);
             this.label4.TabIndex = 6;
-            this.label4.Text = "ID Aplicacion";
+            this.label4.Text = "Nombre Aplicacion";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(6, 93);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 13);
+            this.label3.Size = new System.Drawing.Size(61, 13);
             this.label3.TabIndex = 4;
-            this.label3.Text = "ID Aplicacion";
+            this.label3.Text = "ID Modulos";
             // 
             // textBox2
             // 

@@ -138,8 +138,9 @@ namespace CapaVista.Asignaciones
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(890, 29);
             this.label1.TabIndex = 12;
-            this.label1.Text = "ASIGNACION DE APLICACIONES A USUARIOS";
+            this.label1.Text = "ASIGNACION DE APLICACIONES A PERFILES";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // groupBox1
             // 
