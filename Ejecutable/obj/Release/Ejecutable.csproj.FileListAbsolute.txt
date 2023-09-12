@@ -14,3 +14,19 @@ C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyect
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\bin\Release\CapaModelo.dll
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\bin\Release\CapaControlador.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\bin\Release\CapaModelo.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Release\Ejecutable.exe.config
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Release\Ejecutable.exe
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Release\Ejecutable.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Release\CapaVista.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Release\CapaControlador.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Release\CapaModelo.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Release\CapaVista.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Release\CapaControlador.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Release\CapaModelo.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.AssemblyReference.cache
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\obj\Release\Ejecutable.Properties.Resources.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.GenerateResource.cache
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.CoreCompileInputs.cache
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.CopyComplete
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\obj\Release\Ejecutable.exe
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\obj\Release\Ejecutable.pdb

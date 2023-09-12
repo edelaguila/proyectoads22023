@@ -15,3 +15,20 @@ C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyect
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\bin\Debug\CapaControlador.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\bin\Debug\CapaModelo.dll
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\bin\Debug\CapaModelo.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Debug\Ejecutable.exe.config
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Debug\Ejecutable.exe
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Debug\Ejecutable.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Debug\CapaVista.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Debug\CapaControlador.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Debug\CapaModelo.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Debug\CapaVista.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Debug\CapaControlador.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Debug\CapaModelo.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\obj\Debug\Ejecutable.csproj.AssemblyReference.cache
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\obj\Debug\Ejecutable.csproj.SuggestedBindingRedirects.cache
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\obj\Debug\Ejecutable.Properties.Resources.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\obj\Debug\Ejecutable.csproj.GenerateResource.cache
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\obj\Debug\Ejecutable.csproj.CoreCompileInputs.cache
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\obj\Debug\Ejecutable.csproj.CopyComplete
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\obj\Debug\Ejecutable.exe
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\obj\Debug\Ejecutable.pdb
