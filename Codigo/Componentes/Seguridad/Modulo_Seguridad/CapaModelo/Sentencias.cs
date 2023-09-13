@@ -40,6 +40,30 @@ namespace CapaModelo
             }
         }
 
+        public bool Guardar(string tabla, Dictionary<string, object> valores)
+        {
+            using (OdbcConnection conn = con.conexion())
+            {
+                // Construir la consulta SQL para insertar datos
+                string columnas = string.Join(", ", valores.Keys);
+                string parametros = string.Join(", ", valores.Keys.Select(key => "?"));
+                string consulta = $"INSERT INTO {tabla} ({columnas}) VALUES ({parametros})";
+
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    // Agregar parámetros con sus valores correspondientes
+                    foreach (var kvp in valores)
+                    {
+                        cmd.Parameters.AddWithValue(kvp.Key, kvp.Value);
+                    }
+
+                    int filasAfectadas = cmd.ExecuteNonQuery();
+                    return filasAfectadas > 0;
+                }
+            }
+        }
+
+
 
 
         //FUNCIÓN PARA MODIFICAR

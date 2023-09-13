@@ -61,5 +61,23 @@ namespace CapaVista.Mantenimiento
             //carlos enrique
             Buscar();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string tabla = "NombreDeTuTabla";
+            Dictionary<string, object> valores = new Dictionary<string, object>();
+
+            Controlador controlador = new Controlador();
+            bool exito = controlador.GuardarDatos(tabla, valores);
+
+            if (exito)
+            {
+                MessageBox.Show("Los datos se han guardado correctamente.");
+            }
+            else
+            {
+                MessageBox.Show("Error al guardar los datos.");
+            }
+        }
     }
 }
