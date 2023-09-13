@@ -14,18 +14,21 @@ namespace CapaVista
 {
     public partial class Registro : Form
     {
-        private ControladorRegistro ctrReg;
+        ControladorRegistro ctrReg = new ControladorRegistro();
         private utilidadesConsultasI utilConsultasI;
         
         public Registro()
         {
             InitializeComponent();
             this.ctrReg = new ControladorRegistro();
+            utilConsultasI = new utilidadesConsultasI();
         }
         public void identificarFormularioReg(Form child, string operacion)
         {
+            MessageBox.Show("Idenfiticando");
             if (child.Tag.ToString().Equals("fRegistro"))
             {
+                MessageBox.Show("IF");
                 if (operacion.Equals("g")) this.utilConsultasI.guardarUsuario(child);
             }
         }
@@ -37,18 +40,16 @@ namespace CapaVista
 
         private void bt_save_user_Click_1(object sender, EventArgs e)
         {
-            Form child_form = null;
-            foreach (Control control in this.pn_contenedor.Controls)
-            {
-                if (control is Form)
-                {
-                    child_form = (Form)control;
-                    Console.WriteLine(child_form);
-                    break;
-                }
-            }
 
-            this.identificarFormularioReg(child_form, "g");
-        }
+            try
+            {
+             
+             this.identificarFormularioReg(this, "g");
+            }catch(Exception ex)
+            {
+                MessageBox.Show("Empleado creado" + ex);
+
+            }
+            }
     }
 }
