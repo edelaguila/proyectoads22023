@@ -55,3 +55,25 @@ D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\
 D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
 D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.dll
 D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.AssemblyReference.cache
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigAplicaPerfiles.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigAplicaUsuario.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigPerfUsuario.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Bitacora.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.CambioContraseña.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantAplicaciones.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantModulos.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantPerfiles.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.MantUsuario.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.MenuSeguridad.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.GenerateResource.cache
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.dll
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaVista.dll
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaVista.pdb
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaControlador.dll
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaModelo.dll
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaControlador.pdb
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaModelo.pdb
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete

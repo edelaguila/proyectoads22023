@@ -16,3 +16,9 @@ D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\
 D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
 D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaModelo\obj\Debug\CapaModelo.dll
 D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaModelo\obj\Debug\CapaModelo.pdb
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaModelo\bin\Debug\CapaModelo.dll
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaModelo\bin\Debug\CapaModelo.pdb
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaModelo\obj\Debug\CapaModelo.csproj.AssemblyReference.cache
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaModelo\obj\Debug\CapaModelo.dll
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaModelo\obj\Debug\CapaModelo.pdb
