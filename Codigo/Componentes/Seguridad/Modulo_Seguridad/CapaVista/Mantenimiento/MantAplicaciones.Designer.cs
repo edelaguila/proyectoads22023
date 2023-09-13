@@ -60,9 +60,9 @@ namespace CapaVista.Mantenimiento
             this.groupBox4.Controls.Add(this.radioButton2);
             this.groupBox4.Controls.Add(this.radioButton1);
             this.groupBox4.Location = new System.Drawing.Point(228, 490);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox4.Size = new System.Drawing.Size(463, 106);
             this.groupBox4.TabIndex = 19;
             this.groupBox4.TabStop = false;
@@ -72,7 +72,7 @@ namespace CapaVista.Mantenimiento
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(264, 52);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(77, 21);
             this.radioButton2.TabIndex = 1;
@@ -83,7 +83,7 @@ namespace CapaVista.Mantenimiento
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(107, 52);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(67, 21);
             this.radioButton1.TabIndex = 0;
@@ -93,7 +93,7 @@ namespace CapaVista.Mantenimiento
             // button6
             // 
             this.button6.Location = new System.Drawing.Point(873, 407);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(124, 55);
             this.button6.TabIndex = 18;
@@ -103,7 +103,7 @@ namespace CapaVista.Mantenimiento
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(873, 345);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(124, 55);
             this.button5.TabIndex = 17;
@@ -114,7 +114,7 @@ namespace CapaVista.Mantenimiento
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(873, 282);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(124, 55);
             this.button4.TabIndex = 16;
@@ -124,7 +124,7 @@ namespace CapaVista.Mantenimiento
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(873, 219);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(124, 55);
             this.button3.TabIndex = 15;
@@ -134,12 +134,13 @@ namespace CapaVista.Mantenimiento
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(873, 156);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(124, 55);
             this.button2.TabIndex = 14;
             this.button2.Text = "Guardar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // groupBox2
             // 
@@ -152,9 +153,9 @@ namespace CapaVista.Mantenimiento
             this.groupBox2.Controls.Add(this.textBox2);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Location = new System.Drawing.Point(16, 156);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(807, 306);
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
@@ -164,7 +165,7 @@ namespace CapaVista.Mantenimiento
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(212, 111);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(461, 24);
             this.comboBox1.TabIndex = 10;
@@ -172,7 +173,7 @@ namespace CapaVista.Mantenimiento
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(212, 229);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(461, 22);
             this.textBox5.TabIndex = 9;
@@ -190,7 +191,7 @@ namespace CapaVista.Mantenimiento
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(212, 169);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(461, 22);
             this.textBox4.TabIndex = 7;
@@ -218,7 +219,7 @@ namespace CapaVista.Mantenimiento
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(212, 55);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(461, 22);
             this.textBox2.TabIndex = 3;
@@ -239,9 +240,9 @@ namespace CapaVista.Mantenimiento
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(16, 15);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(981, 101);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
@@ -250,7 +251,7 @@ namespace CapaVista.Mantenimiento
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(683, 23);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(124, 55);
             this.button1.TabIndex = 2;
@@ -261,7 +262,7 @@ namespace CapaVista.Mantenimiento
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(176, 37);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(497, 22);
             this.textBox1.TabIndex = 1;
@@ -289,7 +290,7 @@ namespace CapaVista.Mantenimiento
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MantAplicaciones";
             this.Text = "MantAplicaciones";
             this.groupBox4.ResumeLayout(false);

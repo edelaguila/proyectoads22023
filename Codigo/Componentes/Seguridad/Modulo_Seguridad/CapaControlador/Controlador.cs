@@ -24,7 +24,10 @@ namespace CapaControlador
         {
             return sn.Eliminar(tabla, columna, valor);
         }
-
+        public bool GuardarDatos(string tabla, Dictionary<string, object> valores)
+        {
+            return sn.Guardar(tabla, valores);
+        }
 
     }
 }
