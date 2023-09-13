@@ -19,6 +19,12 @@ namespace CapaControlador
            return sn.Buscar(tabla, columna, dato);
         }
 
+        //carlos enrique
+        public bool Eliminar(string tabla, string columna, string valor)
+        {
+            return sn.Eliminar(tabla, columna, valor);
+        }
+
 
     }
 }

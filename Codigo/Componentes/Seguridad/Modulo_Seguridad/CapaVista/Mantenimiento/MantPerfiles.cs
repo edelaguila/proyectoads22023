@@ -28,12 +28,7 @@ namespace CapaVista.Mantenimiento
 
             if (dt.Rows.Count > 0)
             {
-                // Suponiendo que tienes los siguientes controles en tu formulario:
-                // TextBox: txt_IdAplicacion
-                // ComboBox: comboBox_IdModulos
-                // TextBox: txt_NombreAplicacion
-                // RadioButton: radioButton_Activo
-                // RadioButton: radioButton_Inactivo
+             
 
                 DataRow row = dt.Rows[0]; // Tomamos la primera fila (si hay resultados)
 
@@ -63,6 +58,7 @@ namespace CapaVista.Mantenimiento
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //carlos enrique
             Buscar();
         }
     }

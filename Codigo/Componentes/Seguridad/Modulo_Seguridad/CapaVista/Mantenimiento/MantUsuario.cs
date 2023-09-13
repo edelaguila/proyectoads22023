@@ -24,7 +24,7 @@ namespace CapaVista
         {
             string dato = textBox1.Text;
             string tabla = "usuarios";
-            string columna = "id_usuarios";
+            string columna = "id_usuario";
             DataTable dt = cn.Buscar(tabla, columna, dato);
 
             if (dt.Rows.Count > 0)
@@ -56,9 +56,43 @@ namespace CapaVista
                 radioButton2.Checked = false;
             }
         }
+
+        //carlos enrique
+        public void EliminarDato(string tabla, string columna, string valor)
+        {
+            bool eliminado = cn.Eliminar(tabla, columna, valor);
+            if (eliminado)
+            {
+                MessageBox.Show("Registro eliminado correctamente.");
+            }
+            else
+            {
+                MessageBox.Show($"No se pudo eliminar el registro. Verifique el {columna}.");
+            }
+        }
+
+
+
         private void button1_Click(object sender, EventArgs e)
         {
+            //carlos enrique
             Buscar();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //carlos enrique
+            string valor = textBox1.Text;
+
+            // Llama a la función de eliminación pasando los parámetros necesarios
+            string tabla = "usuarios"; // Nombre de la tabla
+            string columna = "id_usuario"; // Nombre de la columna
+            EliminarDato(tabla, columna, valor);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

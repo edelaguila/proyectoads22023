@@ -61,12 +61,36 @@ namespace CapaVista.Mantenimiento
         }
 
 
-
+        // carlos enrique
+        public void EliminarDato(string tabla, string columna, string valor)
+        {
+            bool eliminado = cn.Eliminar(tabla, columna, valor);
+            if (eliminado)
+            {
+                MessageBox.Show("Registro eliminado correctamente.");              
+            }
+            else
+            {
+                MessageBox.Show($"No se pudo eliminar el registro. Verifique el {columna}.");
+            }
+        }
 
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //carlos enrique
             Buscar();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //carlos enrique
+            string valor = textBox1.Text;
+
+            // Llama a la función de eliminación pasando los parámetros necesarios
+            string tabla = "aplicaciones"; // Nombre de la tabla
+            string columna = "id_aplicacion"; // Nombre de la columna
+            EliminarDato(tabla, columna, valor);
         }
     }
 }
