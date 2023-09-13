@@ -16,6 +16,10 @@ namespace CapaVista.Componentes.Utilidades
         {
             this.ctrNav = ctrNav;
         }
+        public utilidadesConsultasI()
+        {
+            
+        }
         public void guardarReservacion(Form child)
         {
             var dictionary = new Dictionary<string, string>();
@@ -40,6 +44,7 @@ namespace CapaVista.Componentes.Utilidades
 
         public void guardarUsuario(Form child)
         {
+            ControladorRegistro ctrol = new ControladorRegistro();
             var dictionary = new Dictionary<string, string>();
             List<string> columns = this.ctrNav.getColumns("usuario");
 
@@ -55,7 +60,7 @@ namespace CapaVista.Componentes.Utilidades
                     c.Text = "";
                 }
             }
-            this.ctrReg.agregarUsuario(dictionary);
+            ctrol.agregarUsuario(dictionary);
             MessageBox.Show("Usuario Creado Correctamente");
         }
 
