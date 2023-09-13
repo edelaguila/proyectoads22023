@@ -11,6 +11,20 @@ namespace CapaControlador
 {
     public class Controlador
     {
+        Sentencias sn = new Sentencias();
+
+        //carlos enrique
+     public DataTable Buscar(string tabla, string columna, string dato)
+        {
+           return sn.Buscar(tabla, columna, dato);
+        }
+
+        //carlos enrique
+        public bool Eliminar(string tabla, string columna, string valor)
+        {
+            return sn.Eliminar(tabla, columna, valor);
+        }
+
 
     }
 }

@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\CapaModelo"
+    "\\CapaModelo",
+    "\\CapaVista"
   ],
-  "SelectedNode": "\\CapaModelo\\Sentencias.cs",
+  "SelectedNode": "\\CapaVista\\MenuSeguridad.cs",
   "PreviewInSolutionExplorer": false
 }
