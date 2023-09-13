@@ -42,13 +42,16 @@ namespace Reporteador
             // 
             // dgv_reportes
             // 
+            this.dgv_reportes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_reportes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_reportes.Location = new System.Drawing.Point(43, 276);
             this.dgv_reportes.Name = "dgv_reportes";
+            this.dgv_reportes.ReadOnly = true;
             this.dgv_reportes.RowHeadersWidth = 51;
             this.dgv_reportes.RowTemplate.Height = 24;
             this.dgv_reportes.Size = new System.Drawing.Size(708, 162);
             this.dgv_reportes.TabIndex = 0;
+            this.dgv_reportes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_reportes_CellContentClick);
             // 
             // btn_eliminar
             // 
@@ -148,6 +151,7 @@ namespace Reporteador
             this.Controls.Add(this.dgv_reportes);
             this.Name = "Reportes";
             this.Text = "Reportes";
+            this.Load += new System.EventHandler(this.Reportes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_reportes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -31,5 +31,10 @@ namespace Reporteador
             // Mostrar el formulario "Vista de Reportes"
             vistaDeReportesForm.Show();
         }
+
+        private void dgv_categorias_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

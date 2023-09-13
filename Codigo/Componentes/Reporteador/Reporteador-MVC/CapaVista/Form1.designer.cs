@@ -109,6 +109,7 @@ namespace Reporteador
             this.dgv_categorias.RowTemplate.Height = 24;
             this.dgv_categorias.Size = new System.Drawing.Size(1023, 178);
             this.dgv_categorias.TabIndex = 5;
+            this.dgv_categorias.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_categorias_CellContentClick);
             // 
             // btn_modificar
             // 

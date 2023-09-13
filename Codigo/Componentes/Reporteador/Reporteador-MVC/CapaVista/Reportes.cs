@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using CapaControlador;
 
 
 namespace Reporteador
@@ -15,12 +16,18 @@ namespace Reporteador
     public partial class Reportes : Form
     {
         private List<string> rutas = new List<string>(); // Lista para almacenar las rutas
-
+        Controlador cn = new Controlador();
+        string rep = "reportes";
         public Reportes()
         {
             InitializeComponent();
         }
+        public void actualizardatagriew()
+        {
+            DataTable dt = cn.llenarTbl(rep);
+            dgv_reportes.DataSource = dt;
 
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -75,6 +82,16 @@ namespace Reporteador
 
             // Mostrar el formulario "Vista de Reportes"
             vistaDeReportesForm.Show();
+        }
+
+        private void Reportes_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgv_reportes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
     }
