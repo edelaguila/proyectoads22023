@@ -40,3 +40,18 @@ C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Segurida
 C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
 C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.dll
 C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.pdb
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.AssemblyReference.cache
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigAplicaPerfiles.resources
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigAplicaUsuario.resources
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigPerfUsuario.resources
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Bitacora.resources
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.CambioContraseña.resources
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantAplicaciones.resources
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantModulos.resources
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantPerfiles.resources
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.MantUsuario.resources
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.MenuSeguridad.resources
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.GenerateResource.cache
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.dll
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.pdb
