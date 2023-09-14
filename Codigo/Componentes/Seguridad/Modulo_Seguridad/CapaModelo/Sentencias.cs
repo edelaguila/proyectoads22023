@@ -222,7 +222,7 @@ namespace CapaModelo
             }
         }
 
-        //MODULO DE ENCRIPTACION SHA256 Jonathan Arriaga
+        //MODULO DE ENCRIPTACION SHA256| Jonathan Arriaga
         public string Encriptacion(string str)
         {
             SHA256 sha256 = SHA256Managed.Create();
