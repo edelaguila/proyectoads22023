@@ -38,7 +38,21 @@ namespace CapaVista
                 string Usuario = row["nbr_username_usuario"].ToString();
                 string Contraseña= row["nbr_password_usuario"].ToString();
 
-
+                if ((Usuario.Equals(textBox1.Text)) && (Contraseña.Equals(textBox2.Text)))
+                {
+                    // Acceso a Menu Principal
+                    MessageBox.Show("Bienvenido");
+                    MenuSeguridad Mens = new MenuSeguridad();
+                    Mens.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    textBox1.Text = string.Empty;
+                    textBox2.Text = string.Empty;
+                    textBox1.Focus();
+                    MessageBox.Show("Usuario y/o contraseña incorrectas");
+                }
 
             }
             else
