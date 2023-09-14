@@ -11,9 +11,14 @@ namespace CapaVista.Componentes.Utilidades
     public class utilidadesConsultasI
     {
         public ControladorNavegador ctrNav = new ControladorNavegador();
+        public ControladorRegistro ctrReg = new ControladorRegistro();
         public utilidadesConsultasI(ControladorNavegador ctrlNav)
         {
             this.ctrNav = ctrNav;
+        }
+        public utilidadesConsultasI()
+        {
+            
         }
         public void guardarReservacion(Form child)
         {
@@ -34,6 +39,29 @@ namespace CapaVista.Componentes.Utilidades
             }
             this.ctrNav.agregarEmpleado(dictionary);
             MessageBox.Show("Empleado creado");
+        }
+
+
+        public void guardarUsuario(Form child)
+        {
+            ControladorRegistro ctrol = new ControladorRegistro();
+            var dictionary = new Dictionary<string, string>();
+            List<string> columns = this.ctrNav.getColumns("usuario");
+
+            foreach (Control c in child.Controls)
+            {
+                if (c is TextBox)
+                {
+                    string tag = c.Tag.ToString();
+                    if (columns.Contains(tag))
+                    {
+                        dictionary.Add(tag, c.Text);
+                    }
+                    c.Text = "";
+                }
+            }
+            ctrol.agregarUsuario(dictionary);
+            MessageBox.Show("Usuario Creado Correctamente");
         }
 
 

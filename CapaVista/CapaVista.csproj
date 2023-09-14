@@ -29,6 +29,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -51,17 +52,11 @@
     </Compile>
     <Compile Include="Componentes\Utilidades\utilidadesConsultasI.cs" />
     <Compile Include="Componentes\Utilidades\utilidadesReporte.cs" />
-    <Compile Include="Formularios\ConsultasCreacion.cs">
+    <Compile Include="Formularios\ConsultasConsultas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\ConsultasCreacion.Designer.cs">
-      <DependentUpon>ConsultasCreacion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\ConsultasEditar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\ConsultasEditar.Designer.cs">
-      <DependentUpon>ConsultasEditar.cs</DependentUpon>
+    <Compile Include="Formularios\ConsultasConsultas.Designer.cs">
+      <DependentUpon>ConsultasConsultas.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmReportes.cs">
       <SubType>Form</SubType>
@@ -104,11 +99,8 @@
     <EmbeddedResource Include="Componentes\Nav.resx">
       <DependentUpon>Nav.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ConsultasCreacion.resx">
-      <DependentUpon>ConsultasCreacion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ConsultasEditar.resx">
-      <DependentUpon>ConsultasEditar.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\ConsultasConsultas.resx">
+      <DependentUpon>ConsultasConsultas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmReportes.resx">
       <DependentUpon>frmReportes.cs</DependentUpon>
