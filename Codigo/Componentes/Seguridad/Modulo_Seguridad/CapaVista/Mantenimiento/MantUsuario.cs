@@ -19,28 +19,28 @@ namespace CapaVista
 
         Controlador cn = new Controlador();
 
-        //carlos enrique
+        //carlos enrique nitido
         public void Buscar()
         {
             string dato = textBox1.Text;
-            string tabla = "usuarios";
-            string columna = "id_usuario";
+            string tabla = "tbl_usuario";
+            string columna = "PK_id_usuario";
             DataTable dt = cn.Buscar(tabla, columna, dato);
 
             if (dt.Rows.Count > 0)
             {
-                
 
+                MessageBox.Show("El dato se encontro correctamente");
                 DataRow row = dt.Rows[0]; // Tomamos la primera fila (si hay resultados)
 
                 // Llenamos los controles con los valores del resultado
-                textBox2.Text = row["id_usuario"].ToString();
-                textBox3.Text = row["contraseña"].ToString();
-                textBox5.Text = row["nombre"].ToString();
-                textBox4.Text = row["apellido"].ToString();
+                textBox2.Text = row["PK_id_usuario"].ToString();
+                textBox3.Text = row["nbr_password_usuario"].ToString();
+                textBox5.Text = row["nbr_nombre_usuario"].ToString();
+                textBox4.Text = row["nbr_apellido_usuario"].ToString();
 
                 // Verificamos el estado y marcamos el RadioButton correspondiente
-                bool estadoActivo = Convert.ToInt32(row["estado"]) == 1;
+                bool estadoActivo = Convert.ToInt32(row["nbr_estado_usuario"]) == 1;
                 radioButton1.Checked = estadoActivo;
                 radioButton2.Checked = !estadoActivo;
             }
@@ -54,6 +54,7 @@ namespace CapaVista
                 textBox3.Text = string.Empty;
                 radioButton1.Checked = false;
                 radioButton2.Checked = false;
+                MessageBox.Show("No se encontro el dato");
             }
         }
 
@@ -97,7 +98,7 @@ namespace CapaVista
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string tabla = "NombreDeTuTabla";
+            string tabla = "tbl_usuario";
             Dictionary<string, object> valores = new Dictionary<string, object>();
 
             Controlador controlador = new Controlador();

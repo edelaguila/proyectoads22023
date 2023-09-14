@@ -76,6 +76,7 @@ namespace CapaVista
             this.seguridadToolStripMenuItem.Name = "seguridadToolStripMenuItem";
             this.seguridadToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.seguridadToolStripMenuItem.Text = "Inicio";
+            this.seguridadToolStripMenuItem.Click += new System.EventHandler(this.seguridadToolStripMenuItem_Click);
             // 
             // mantenimientoToolStripMenuItem
             // 

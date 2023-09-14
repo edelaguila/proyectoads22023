@@ -92,3 +92,26 @@ C:\Users\gazhp\repos\taller_grupo\proyectoads22023\Codigo\Componentes\Seguridad\
 C:\Users\gazhp\repos\taller_grupo\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
 C:\Users\gazhp\repos\taller_grupo\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.dll
 C:\Users\gazhp\repos\taller_grupo\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigAplicaPerfiles.resources
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigAplicaUsuario.resources
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigPerfUsuario.resources
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Bitacora.resources
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.CambioContraseña.resources
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantAplicaciones.resources
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantModulos.resources
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantPerfiles.resources
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.MantUsuario.resources
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.MenuSeguridad.resources
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.dll
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaVista.dll
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaVista.pdb
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaControlador.dll
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaModelo.dll
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaControlador.pdb
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaModelo.pdb
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Login.resources

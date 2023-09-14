@@ -26,10 +26,10 @@ namespace CapaVista.Mantenimiento
         public void Buscar()
         {
             string dato = textBox1.Text;
-            string tabla = "aplicaciones";
-            string columna = "id_aplicacion";
+            string tabla = "tbl_aplicacion";
+            string columna = "PK_id_aplicacion";
             DataTable dt = cn.Buscar(tabla,columna,dato);
-
+            
             if (dt.Rows.Count > 0)
             {
               
@@ -37,7 +37,7 @@ namespace CapaVista.Mantenimiento
                 DataRow row = dt.Rows[0]; // Tomamos la primera fila (si hay resultados)
 
                 // Llenamos los controles con los valores del resultado
-                textBox2.Text = row["id_aplicacion"].ToString();
+                textBox2.Text = row["PK_id_aplicacion"].ToString();
                 comboBox1.SelectedItem = row["id_modulos"].ToString();
                 textBox4.Text = row["nombre_aplicacion"].ToString();
                 textBox5.Text = row["descripcion"].ToString();
