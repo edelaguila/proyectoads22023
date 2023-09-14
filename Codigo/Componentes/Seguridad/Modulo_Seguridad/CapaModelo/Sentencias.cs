@@ -25,6 +25,10 @@ namespace CapaModelo
 
             return dt;
         }
+
+
+
+
         //carlos enrique
         public bool Eliminar(string tabla, string columna, string valor)
         {

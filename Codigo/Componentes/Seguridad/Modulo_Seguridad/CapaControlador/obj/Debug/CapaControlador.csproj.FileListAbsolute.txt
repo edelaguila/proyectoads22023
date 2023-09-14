@@ -29,3 +29,12 @@ C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componen
 C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaControlador\bin\Debug\CapaModelo.dll
 C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaControlador\bin\Debug\CapaModelo.pdb
 C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaControlador\obj\Debug\CapaControlador.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaControlador\obj\Debug\CapaControlador.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaControlador\obj\Debug\CapaControlador.dll
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaControlador\obj\Debug\CapaControlador.pdb
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaControlador\bin\Debug\CapaControlador.dll
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaControlador\bin\Debug\CapaControlador.pdb
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaControlador\bin\Debug\CapaModelo.dll
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaControlador\bin\Debug\CapaModelo.pdb
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete

@@ -89,5 +89,12 @@ namespace CapaVista
         {
 
         }
+
+        private void seguridadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Login Lg = new Login();
+            Lg.Show();
+            this.Hide();
+        }
     }
 }
