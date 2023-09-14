@@ -34,10 +34,10 @@ namespace CapaVista
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasInteligentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reservacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesSemanalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reservacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,6 +82,13 @@ namespace CapaVista
             this.consultasInteligentesToolStripMenuItem.Size = new System.Drawing.Size(135, 20);
             this.consultasInteligentesToolStripMenuItem.Text = "Consultas Inteligentes";
             // 
+            // reservacionesToolStripMenuItem
+            // 
+            this.reservacionesToolStripMenuItem.Name = "reservacionesToolStripMenuItem";
+            this.reservacionesToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.reservacionesToolStripMenuItem.Text = "Reservaciones";
+            this.reservacionesToolStripMenuItem.Click += new System.EventHandler(this.reservacionesToolStripMenuItem_Click);
+            // 
             // seguridadToolStripMenuItem
             // 
             this.seguridadToolStripMenuItem.Name = "seguridadToolStripMenuItem";
@@ -99,16 +106,9 @@ namespace CapaVista
             // reportesSemanalesToolStripMenuItem
             // 
             this.reportesSemanalesToolStripMenuItem.Name = "reportesSemanalesToolStripMenuItem";
-            this.reportesSemanalesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.reportesSemanalesToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.reportesSemanalesToolStripMenuItem.Text = "Reportes Semanales";
             this.reportesSemanalesToolStripMenuItem.Click += new System.EventHandler(this.reportesSemanalesToolStripMenuItem_Click);
-            // 
-            // reservacionesToolStripMenuItem
-            // 
-            this.reservacionesToolStripMenuItem.Name = "reservacionesToolStripMenuItem";
-            this.reservacionesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.reservacionesToolStripMenuItem.Text = "Reservaciones";
-            this.reservacionesToolStripMenuItem.Click += new System.EventHandler(this.reservacionesToolStripMenuItem_Click);
             // 
             // Principal
             // 
