@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -24,11 +25,14 @@ namespace CapaVista
 
         public void LoginIngresar()
         {
+
+            
             string dato = textBox1.Text;
             string tabla = "tbl_usuario";
             string columna = "nbr_username_usuario";
-            DataTable dt = cn.Buscar(tabla, columna, dato);            
+            DataTable dt = cn.Buscar(tabla, columna, dato);
 
+           
 
             if (dt.Rows.Count > 0)
             {
@@ -38,7 +42,7 @@ namespace CapaVista
                 string Usuario = row["nbr_username_usuario"].ToString();
                 string Contraseña= row["nbr_password_usuario"].ToString();
 
-                if ((Usuario.Equals(textBox1.Text)) && (Contraseña.Equals(textBox2.Text)))
+                if ((Usuario.Equals(textBox1.Text)) && (Contraseña.Equals(cn.Encriptacion(textBox2.Text))))
                 {
                     // Acceso a Menu Principal
                     MessageBox.Show("Bienvenido");
@@ -48,6 +52,7 @@ namespace CapaVista
                 }
                 else
                 {
+                    //Limpieza de los controles si condicion no se cumple
                     textBox1.Text = string.Empty;
                     textBox2.Text = string.Empty;
                     textBox1.Focus();

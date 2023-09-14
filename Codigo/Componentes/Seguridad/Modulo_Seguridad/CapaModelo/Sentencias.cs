@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.Odbc;
-
+using System.Security.Cryptography;
 
 namespace CapaModelo
 {
@@ -25,8 +25,6 @@ namespace CapaModelo
 
             return dt;
         }
-
-
 
 
         //carlos enrique
@@ -224,7 +222,16 @@ namespace CapaModelo
             }
         }
 
-
-
+        //MODULO DE ENCRIPTACION SHA256 Jonathan Arriaga
+        public string Encriptacion(string str)
+        {
+            SHA256 sha256 = SHA256Managed.Create();
+            ASCIIEncoding encoding = new ASCIIEncoding();
+            byte[] stream = null;
+            StringBuilder sb = new StringBuilder();
+            stream = sha256.ComputeHash(encoding.GetBytes(str));
+            for (int i = 0; i < stream.Length; i++) sb.AppendFormat("{0:x2}", stream[i]);
+            return sb.ToString();
+        }
     }
 }

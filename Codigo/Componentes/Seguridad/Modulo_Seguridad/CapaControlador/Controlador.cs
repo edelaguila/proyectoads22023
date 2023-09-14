@@ -29,5 +29,12 @@ namespace CapaControlador
             return sn.Guardar(tabla, valores);
         }
 
+        //Jonathan Arriaga
+        public string Encriptacion(string str)
+        {
+            return sn.Encriptacion(str);
+        }
+
+
     }
 }
