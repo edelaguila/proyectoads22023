@@ -86,14 +86,25 @@ namespace CapaVista
             string valor = textBox1.Text;
 
             // Llama a la función de eliminación pasando los parámetros necesarios
-            string tabla = "usuarios"; // Nombre de la tabla
-            string columna = "id_usuario"; // Nombre de la columna
+            string tabla = "tbl_usuario"; // Nombre de la tabla
+            string columna = "PK_id_usuario"; // Nombre de la columna
             EliminarDato(tabla, columna, valor);
+
+            //Limpieza de datos 
+            textBox1.Text = string.Empty;
+            textBox2.Text = string.Empty;
+            textBox5.Text = string.Empty;
+            textBox4.Text = string.Empty;
+            textBox3.Text = string.Empty;
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+            MessageBox.Show("No se encontro el dato");
+
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -112,6 +123,11 @@ namespace CapaVista
             {
                 MessageBox.Show("Error al guardar los datos.");
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

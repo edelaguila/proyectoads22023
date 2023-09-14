@@ -138,3 +138,6 @@ C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads2202
 C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
 C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.dll
 C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaModelo.dll
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaModelo.pdb
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Login.resources
