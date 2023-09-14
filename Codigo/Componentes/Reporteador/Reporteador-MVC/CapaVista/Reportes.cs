@@ -21,6 +21,7 @@ namespace Reporteador
         public Reportes()
         {
             InitializeComponent();
+            actualizardatagriew();
         }
         public void actualizardatagriew()
         {
@@ -43,7 +44,7 @@ namespace Reporteador
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
                 openFileDialog.InitialDirectory = "C:\\"; // Directorio inicial
-                openFileDialog.Filter = "Archivos de texto (*.txt)|*.txt|Todos los archivos (*.*)|*.*";
+                openFileDialog.Filter = "Archivos de texto (*.pdf)|*.pdf|Todos los archivos (*.*)|*.*";
                 openFileDialog.FilterIndex = 1;
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)

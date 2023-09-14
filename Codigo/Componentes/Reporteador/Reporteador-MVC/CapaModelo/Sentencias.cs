@@ -21,5 +21,10 @@ namespace CapaModelo
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, con.conexion()); 
             return dataTable; 
         }
+
+        public OdbcDataAdapter Eliminardata(string tabla, string fila)
+        {
+            string sql ="DELETE fila FROM " + tabla + " ;";
+        }
     }
 }
