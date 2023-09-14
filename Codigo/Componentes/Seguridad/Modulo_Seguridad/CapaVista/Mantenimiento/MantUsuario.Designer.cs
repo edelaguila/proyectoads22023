@@ -51,6 +51,10 @@ namespace CapaVista
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -90,20 +94,22 @@ namespace CapaVista
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label7);
+            this.groupBox3.Controls.Add(this.textBox7);
             this.groupBox3.Controls.Add(this.textBox4);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.textBox5);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Location = new System.Drawing.Point(383, 205);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(368, 113);
+            this.groupBox3.Size = new System.Drawing.Size(368, 138);
             this.groupBox3.TabIndex = 18;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Datos Personales";
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(69, 68);
+            this.textBox4.Location = new System.Drawing.Point(60, 30);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(266, 20);
             this.textBox4.TabIndex = 3;
@@ -119,7 +125,7 @@ namespace CapaVista
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(69, 30);
+            this.textBox5.Location = new System.Drawing.Point(60, 68);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(266, 20);
             this.textBox5.TabIndex = 1;
@@ -135,20 +141,22 @@ namespace CapaVista
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.textBox6);
+            this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.textBox3);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.textBox2);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Location = new System.Drawing.Point(9, 205);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(368, 113);
+            this.groupBox2.Size = new System.Drawing.Size(368, 138);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos Usuario";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(69, 68);
+            this.textBox3.Location = new System.Drawing.Point(69, 64);
             this.textBox3.Name = "textBox3";
             this.textBox3.PasswordChar = '*';
             this.textBox3.Size = new System.Drawing.Size(266, 20);
@@ -157,7 +165,7 @@ namespace CapaVista
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 71);
+            this.label3.Location = new System.Drawing.Point(6, 67);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 13);
             this.label3.TabIndex = 2;
@@ -266,6 +274,38 @@ namespace CapaVista
             this.label1.TabIndex = 0;
             this.label1.Text = "Buscar id";
             // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(95, 99);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(240, 20);
+            this.textBox6.TabIndex = 5;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 102);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(83, 13);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Nombre Usuario";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 105);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(38, 13);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Correo";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(60, 102);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(266, 20);
+            this.textBox7.TabIndex = 4;
+            // 
             // MantUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -318,5 +358,9 @@ namespace CapaVista
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label6;
     }
 }

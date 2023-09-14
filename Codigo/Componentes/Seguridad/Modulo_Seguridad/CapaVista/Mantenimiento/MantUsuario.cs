@@ -36,8 +36,10 @@ namespace CapaVista
                 // Llenamos los controles con los valores del resultado
                 textBox2.Text = row["PK_id_usuario"].ToString();
                 textBox3.Text = row["nbr_password_usuario"].ToString();
-                textBox5.Text = row["nbr_nombre_usuario"].ToString();
-                textBox4.Text = row["nbr_apellido_usuario"].ToString();
+                textBox4.Text = row["nbr_nombre_usuario"].ToString();
+                textBox5.Text = row["nbr_apellido_usuario"].ToString();
+                textBox6.Text = row["nbr_username_usuario"].ToString();
+                textBox7.Text = row["nbr_correo_usuario"].ToString();
 
                 // Verificamos el estado y marcamos el RadioButton correspondiente
                 bool estadoActivo = Convert.ToInt32(row["nbr_estado_usuario"]) == 1;
@@ -47,13 +49,17 @@ namespace CapaVista
             else
             {
                 // Limpiamos los controles si no se encontraron resultados
+                //Limpieza de datos 
                 textBox1.Text = string.Empty;
                 textBox2.Text = string.Empty;
                 textBox5.Text = string.Empty;
                 textBox4.Text = string.Empty;
                 textBox3.Text = string.Empty;
+                textBox6.Text = string.Empty;
+                textBox7.Text = string.Empty;
                 radioButton1.Checked = false;
                 radioButton2.Checked = false;
+                textBox1.Focus();
                 MessageBox.Show("No se encontro el dato");
             }
         }
@@ -96,9 +102,12 @@ namespace CapaVista
             textBox5.Text = string.Empty;
             textBox4.Text = string.Empty;
             textBox3.Text = string.Empty;
+            textBox6.Text = string.Empty;
+            textBox7.Text = string.Empty;
             radioButton1.Checked = false;
             radioButton2.Checked = false;
-            MessageBox.Show("No se encontro el dato");
+            textBox1.Focus();
+            MessageBox.Show("Datos Borrados Correctamente");
 
         }
 
@@ -111,18 +120,53 @@ namespace CapaVista
         {
             string tabla = "tbl_usuario";
             Dictionary<string, object> valores = new Dictionary<string, object>();
-
             Controlador controlador = new Controlador();
+
+            valores.Add("PK_id_usuario", int.Parse(textBox2.Text));
+            valores.Add("nbr_password_usuario", cn.Encriptacion(textBox3.Text));
+            valores.Add("nbr_nombre_usuario", textBox4.Text);
+            valores.Add("nbr_apellido_usuario", textBox5.Text);
+            valores.Add("nbr_username_usuario", textBox6.Text);
+            valores.Add("nbr_correo_usuario", textBox7.Text);
+
+            if (radioButton1.Checked == true)
+            {
+                valores.Add("nbr_estado_usuario", 1);
+            }
+            else if (radioButton2.Checked==true)
+            {
+                valores.Add("nbr_estado_usuario", 0);
+            }
+
+
             bool exito = controlador.GuardarDatos(tabla, valores);
+
+
+            textBox1.Text = string.Empty;
+            textBox2.Text = string.Empty;
+            textBox5.Text = string.Empty;
+            textBox4.Text = string.Empty;
+            textBox3.Text = string.Empty;
+            textBox6.Text = string.Empty;
+            textBox7.Text = string.Empty;
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+            textBox1.Focus();
+
 
             if (exito)
             {
+
                 MessageBox.Show("Los datos se han guardado correctamente.");
             }
             else
             {
                 MessageBox.Show("Error al guardar los datos.");
             }
+
+
+
+
         }
 
         private void button3_Click(object sender, EventArgs e)
