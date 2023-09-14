@@ -1,25 +1,48 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CapaModelo;
 using System.Data;
-using System.Data.Odbc;
+using CapaModelo;
 
 namespace CapaControlador
 {
     public class Controlador
     {
-        Sentencias sn = new Sentencias();
+        private Sentencias sentencias;
 
-        // LLenar una tabla CAPA CONTROLADOR
+        public Controlador()
+        {
+            sentencias = new Sentencias();
+        }
+
+        // Insertar un nuevo registro con archivo de texto
+        public void InsertarReporte(string correlativo, string nombreArchivo, string estado, string rutaArchivo)
+        {
+            sentencias.InsertarReporte(correlativo, nombreArchivo, estado, rutaArchivo);
+        }
+
+        // Obtener todos los reportes
+        public DataTable ObtenerReportes()
+        {
+            return sentencias.ObtenerReportes();
+        }
+
+        // Actualizar un reporte existente
+        public void ActualizarReporte(int idReporte, string correlativo, string nombre, string estado)
+        {
+            sentencias.ActualizarReporte(idReporte, correlativo, nombre, estado);
+        }
+
+        // Eliminar un reporte existente
+        public void EliminarReporte(int idReporte)
+        {
+            sentencias.EliminarReporte(idReporte);
+        }
+
+        // Obtener los datos de una tabla específica (llenarTbl)
         public DataTable llenarTbl(string tabla)
         {
-            OdbcDataAdapter dt = sn.llenarTbl(tabla);
-            DataTable table = new DataTable();
-            dt.Fill(table);
-            return table;
+            return sentencias.llenarTbl(tabla);
         }
     }
 }
+
+

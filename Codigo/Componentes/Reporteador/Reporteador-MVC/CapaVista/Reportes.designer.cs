@@ -37,6 +37,10 @@ namespace Reporteador
             this.btn_ruta = new System.Windows.Forms.Button();
             this.txt_ruta = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.correlativoTextBox = new System.Windows.Forms.TextBox();
+            this.estadoTextBox = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_reportes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,6 +69,7 @@ namespace Reporteador
             this.btn_eliminar.TabIndex = 1;
             this.btn_eliminar.Text = "Eliminar";
             this.btn_eliminar.UseVisualStyleBackColor = false;
+            this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
             // 
             // btn_modificar
             // 
@@ -77,6 +82,7 @@ namespace Reporteador
             this.btn_modificar.TabIndex = 2;
             this.btn_modificar.Text = "Modificar";
             this.btn_modificar.UseVisualStyleBackColor = false;
+            this.btn_modificar.Click += new System.EventHandler(this.btn_modificar_Click);
             // 
             // btn_guardar
             // 
@@ -136,11 +142,50 @@ namespace Reporteador
             this.label1.Text = "Reportes";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // correlativoTextBox
+            // 
+            this.correlativoTextBox.Location = new System.Drawing.Point(170, 124);
+            this.correlativoTextBox.Name = "correlativoTextBox";
+            this.correlativoTextBox.Size = new System.Drawing.Size(332, 22);
+            this.correlativoTextBox.TabIndex = 8;
+            // 
+            // estadoTextBox
+            // 
+            this.estadoTextBox.Location = new System.Drawing.Point(170, 152);
+            this.estadoTextBox.Name = "estadoTextBox";
+            this.estadoTextBox.Size = new System.Drawing.Size(332, 22);
+            this.estadoTextBox.TabIndex = 9;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(54, 127);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(97, 19);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Correlativo";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(54, 153);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 19);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Estado";
+            // 
             // Reportes
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.estadoTextBox);
+            this.Controls.Add(this.correlativoTextBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_ruta);
             this.Controls.Add(this.btn_ruta);
@@ -168,5 +213,9 @@ namespace Reporteador
         private System.Windows.Forms.Button btn_ruta;
         private System.Windows.Forms.TextBox txt_ruta;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox correlativoTextBox;
+        private System.Windows.Forms.TextBox estadoTextBox;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -15,7 +15,7 @@ namespace Reporteador
 {
     public partial class Reportes : Form
     {
-        private List<string> rutas = new List<string>(); // Lista para almacenar las rutas
+        private List<string> ruta = new List<string>(); // Lista para almacenar las rutas
         Controlador cn = new Controlador();
         string rep = "reportes";
         public Reportes()
@@ -44,7 +44,7 @@ namespace Reporteador
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
                 openFileDialog.InitialDirectory = "C:\\"; // Directorio inicial
-                openFileDialog.Filter = "Archivos de texto (*.pdf)|*.pdf|Todos los archivos (*.*)|*.*";
+                openFileDialog.Filter = "Archivos de texto (*.txt)|*.txt|Todos los archivos (*.*)|*.*";
                 openFileDialog.FilterIndex = 1;
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
@@ -57,24 +57,30 @@ namespace Reporteador
 
         private void btn_guardar_Click(object sender, EventArgs e)
         {
-                string ruta = txt_ruta.Text.Trim();
+            string ruta = txt_ruta.Text.Trim();
 
-                if (!string.IsNullOrEmpty(ruta) && File.Exists(ruta))
-                {
-                    // Agregar la ruta a la lista
-                    rutas.Add(ruta);
+            if (!string.IsNullOrEmpty(ruta) && File.Exists(ruta))
+            {
+                // Llamar al Controlador para insertar el reporte en la base de datos
+                cn.InsertarReporte(correlativoTextBox.Text, Path.GetFileName(ruta), estadoTextBox.Text, ruta);
 
-                    // Limpiar el TextBox
-                    txt_ruta.Clear();
+                // Actualizar el DataGridView con los datos actualizados
+                actualizardatagriew();
 
-                    // Mostrar un mensaje de confirmación
-                    MessageBox.Show("Reporte agregado Correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                // Limpiar el TextBox
+                txt_ruta.Clear();
+
+                // Mostrar un mensaje de confirmación
+                MessageBox.Show("Reporte agregado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                correlativoTextBox.Clear();
+                estadoTextBox.Clear();
             }
-                else
-                {
-                    MessageBox.Show("La ruta no es válida o no existe.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+            else
+            {
+                MessageBox.Show("La ruta no es válida o no existe.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
 
         private void btn_ver_Click(object sender, EventArgs e)
         {
@@ -92,9 +98,73 @@ namespace Reporteador
 
         private void dgv_reportes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            // Supongamos que la columna "archivo" tiene un índice específico, por ejemplo, 5.
+            int archivoColumnIndex = 5;
+
+            if (e.ColumnIndex == archivoColumnIndex)
+            {
+                // Si la celda actual pertenece a la columna "archivo", oculta su contenido.
+                dgv_reportes.Columns[archivoColumnIndex].Visible = false;
+            }
+        }
+
+        private void btn_eliminar_Click(object sender, EventArgs e)
+        {
+            if (dgv_reportes.SelectedRows.Count > 0)
+            {
+                // Obtener el ID del reporte seleccionado (asumiendo que la columna de ID se llama "id_reporte")
+                int idReporte = Convert.ToInt32(dgv_reportes.SelectedRows[0].Cells["id_reporte"].Value);
+
+                // Llamar al Controlador para eliminar el reporte de la base de datos
+                cn.EliminarReporte(idReporte);
+
+                // Actualizar el DataGridView con los datos actualizados
+                actualizardatagriew();
+
+                // Mostrar un mensaje de confirmación
+                MessageBox.Show("Reporte eliminado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Por favor, seleccione un reporte para eliminar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                correlativoTextBox.Clear();
+                estadoTextBox.Clear();
+            }
+        }
+
+        private void btn_modificar_Click(object sender, EventArgs e)
+        {
+            if (dgv_reportes.SelectedRows.Count > 0)
+            {
+                // Obtener el ID del reporte seleccionado (asumiendo que la columna de ID se llama "id_reporte")
+                int idReporte = Convert.ToInt32(dgv_reportes.SelectedRows[0].Cells["id_reporte"].Value);
+
+                // Aquí puedes abrir un nuevo formulario o cuadro de diálogo para permitir al usuario editar los datos
+                // Puedes pasar el ID del reporte a ese formulario para cargar los datos actuales y permitir la edición
+
+                // Luego, cuando el usuario guarda los cambios en el formulario de edición, puedes llamar al método
+                // correspondiente del Controlador para actualizar los datos en la base de datos.
+
+                // Actualizar el DataGridView con los datos actualizados
+                actualizardatagriew();
+
+                // Mostrar un mensaje de confirmación
+                MessageBox.Show("Reporte modificado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                correlativoTextBox.Clear();
+                estadoTextBox.Clear();
+            }
+            else
+            {
+                MessageBox.Show("Por favor, seleccione un reporte para modificar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                correlativoTextBox.Clear();
+                estadoTextBox.Clear();
+            }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
 
         }
     }
     }
-
    

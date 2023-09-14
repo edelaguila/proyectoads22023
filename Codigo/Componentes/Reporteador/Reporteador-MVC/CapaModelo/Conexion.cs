@@ -1,40 +1,41 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data.Odbc;
 
 namespace CapaModelo
 {
-class Conexion
+    public class Conexion
     {
-        public OdbcConnection conexion()
+        private string connectionString;
+
+        public Conexion()
         {
-            //creacion de la conexion via ODBC
-            OdbcConnection conn = new OdbcConnection("Dsn=reporteador");
+            // Asignar el nombre de la base de datos directamente
+            string nombreBase = "reporteador";
+            connectionString = $"Dsn={nombreBase}";
+        }
+
+        public OdbcConnection AbrirConexion()
+        {
+            OdbcConnection conn = new OdbcConnection(connectionString);
             try
             {
                 conn.Open();
+                return conn;
             }
-            catch (OdbcException)
+            catch (OdbcException ex)
             {
-                Console.WriteLine("No Conectó");
+                Console.WriteLine($"Error al abrir la conexión: {ex.Message}");
+                return null;
             }
-            return conn;
         }
 
-        //metodo para cerrar la conexion
-        public void desconexion(OdbcConnection conn)
+        public void CerrarConexion(OdbcConnection conn)
         {
-            try
+            if (conn != null && conn.State == System.Data.ConnectionState.Open)
             {
                 conn.Close();
             }
-            catch (OdbcException)
-            {
-                Console.WriteLine("No Conectó");
-            }
-        }
         }
     }
+}
+
