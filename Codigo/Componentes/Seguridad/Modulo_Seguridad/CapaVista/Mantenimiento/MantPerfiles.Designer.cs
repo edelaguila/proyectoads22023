@@ -30,7 +30,7 @@ namespace CapaVista.Mantenimiento
         private void InitializeComponent()
         {
             this.btn_salir = new System.Windows.Forms.Button();
-            this.btn_cancelar = new System.Windows.Forms.Button();
+            this.btn_eliminar = new System.Windows.Forms.Button();
             this.btn_modificar = new System.Windows.Forms.Button();
             this.btn_actualizar = new System.Windows.Forms.Button();
             this.btn_ingresar = new System.Windows.Forms.Button();
@@ -63,14 +63,15 @@ namespace CapaVista.Mantenimiento
             this.btn_salir.Text = "Salir";
             this.btn_salir.UseVisualStyleBackColor = true;
             // 
-            // btn_cancelar
+            // btn_eliminar
             // 
-            this.btn_cancelar.Location = new System.Drawing.Point(655, 331);
-            this.btn_cancelar.Name = "btn_cancelar";
-            this.btn_cancelar.Size = new System.Drawing.Size(93, 30);
-            this.btn_cancelar.TabIndex = 34;
-            this.btn_cancelar.Text = "Cancelar";
-            this.btn_cancelar.UseVisualStyleBackColor = true;
+            this.btn_eliminar.Location = new System.Drawing.Point(655, 331);
+            this.btn_eliminar.Name = "btn_eliminar";
+            this.btn_eliminar.Size = new System.Drawing.Size(93, 30);
+            this.btn_eliminar.TabIndex = 34;
+            this.btn_eliminar.Text = "Eliminar";
+            this.btn_eliminar.UseVisualStyleBackColor = true;
+            this.btn_eliminar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
             // btn_modificar
             // 
@@ -90,6 +91,7 @@ namespace CapaVista.Mantenimiento
             this.btn_actualizar.TabIndex = 32;
             this.btn_actualizar.Text = "Actualizar";
             this.btn_actualizar.UseVisualStyleBackColor = true;
+            this.btn_actualizar.Click += new System.EventHandler(this.btn_actualizar_Click);
             // 
             // btn_ingresar
             // 
@@ -250,7 +252,7 @@ namespace CapaVista.Mantenimiento
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(777, 527);
             this.Controls.Add(this.btn_salir);
-            this.Controls.Add(this.btn_cancelar);
+            this.Controls.Add(this.btn_eliminar);
             this.Controls.Add(this.btn_modificar);
             this.Controls.Add(this.btn_actualizar);
             this.Controls.Add(this.btn_ingresar);
@@ -272,7 +274,7 @@ namespace CapaVista.Mantenimiento
         #endregion
 
         private System.Windows.Forms.Button btn_salir;
-        private System.Windows.Forms.Button btn_cancelar;
+        private System.Windows.Forms.Button btn_eliminar;
         private System.Windows.Forms.Button btn_modificar;
         private System.Windows.Forms.Button btn_actualizar;
         private System.Windows.Forms.Button btn_ingresar;

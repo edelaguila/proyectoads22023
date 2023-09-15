@@ -57,7 +57,7 @@ namespace CapaVista.Mantenimiento
 
         //carlos enrique
 
-        public void modificar() {
+     
 
             public void Modificar()
             {
@@ -66,8 +66,8 @@ namespace CapaVista.Mantenimiento
 
                 // Obtener los nuevos valores de los TextBox
                 nuevosValores["Campo1"] = txt_codigo.Text;
-                nuevosValores["Campo2"] = txt_descripcion.Text;
-                nuevosValores["Campo3"] = txt_nombre.Text;
+                nuevosValores["Campo2"] = txt_nombre.Text;
+                nuevosValores["Campo3"] = txt_descripcion.Text;
                 // Agrega más campos según tu modelo
 
                 // Obtener el valor seleccionado de los radio botones
@@ -97,6 +97,19 @@ namespace CapaVista.Mantenimiento
             }
 
 
+        //carlos enrique
+
+        public void EliminarDato(string tabla, string columna, string valor)
+        {
+            bool eliminado = cn.Eliminar(tabla, columna, valor);
+            if (eliminado)
+            {
+                MessageBox.Show("Registro eliminado correctamente.");
+            }
+            else
+            {
+                MessageBox.Show($"No se pudo eliminar el registro. Verifique el {columna}.");
+            }
         }
 
 
@@ -126,7 +139,24 @@ namespace CapaVista.Mantenimiento
 
         private void btn_modificar_Click(object sender, EventArgs e)
         {
+            //carlos enrique
+            Modificar();
+        }
 
+        private void btn_actualizar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_cancelar_Click(object sender, EventArgs e)
+        {
+            //carlos enrique
+            string valor = txt_busqueda.Text;
+
+            // Llama a la función de eliminación pasando los parámetros necesarios
+            string tabla = "perfil"; // Nombre de la tabla
+            string columna = "id_perfil"; // Nombre de la columna
+            EliminarDato(tabla, columna, valor);
         }
     }
 }
