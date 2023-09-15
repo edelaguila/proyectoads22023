@@ -108,5 +108,30 @@ namespace CapaModelo
             for (int i = 0; i < stream.Length; i++) sb.AppendFormat("{0:x2}", stream[i]);
             return sb.ToString();
         }
+
+
+        //MODULO PARA LLENADO DE COMBOBOX Jonathan Arriaga
+        public List<string> ObtenerDatos()
+        {
+            List<string> datos = new List<string>();
+            try
+            {
+           
+                string consulta = "SELECT nbr_nombre_modulo FROM tbl_modulo";
+               
+                OdbcCommand command = new OdbcCommand(consulta, con.conexion());
+                OdbcDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    string nombre = reader["nbr_nombre_modulo"].ToString();
+                    datos.Add(nombre);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+            return datos;
+        }
     }
 }

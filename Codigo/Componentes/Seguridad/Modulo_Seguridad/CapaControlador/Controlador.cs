@@ -42,6 +42,12 @@ namespace CapaControlador
             return sn.Encriptacion(str);
         }
 
+        //Jonathan Arriaga 
+        public List<string> ObtenerDatos()
+        {
+            return sn.ObtenerDatos();
+        }
+
 
     }
 }
