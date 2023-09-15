@@ -218,11 +218,11 @@ namespace CapaVista
             if (exito)
             {
 
-                MessageBox.Show("Los datos se han guardado correctamente.");
+                MessageBox.Show("Los datos se han modificado correctamente.");
             }
             else
             {
-                MessageBox.Show("Error al guardar los datos.");
+                MessageBox.Show("Error al modificar los datos.");
             }
         }
     }
