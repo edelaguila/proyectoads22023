@@ -34,3 +34,9 @@ C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads2202
 C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
 C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaModelo\obj\Debug\CapaModelo.dll
 C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaModelo\obj\Debug\CapaModelo.pdb
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaModelo\bin\Debug\CapaModelo.dll
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaModelo\bin\Debug\CapaModelo.pdb
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaModelo\obj\Debug\CapaModelo.csproj.AssemblyReference.cache
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaModelo\obj\Debug\CapaModelo.dll
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaModelo\obj\Debug\CapaModelo.pdb

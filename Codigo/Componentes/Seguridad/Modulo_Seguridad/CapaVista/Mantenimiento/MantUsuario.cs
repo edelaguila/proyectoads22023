@@ -171,7 +171,59 @@ namespace CapaVista
 
         private void button3_Click(object sender, EventArgs e)
         {
+            //BOTON NUEVO
+        }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //BOTON MODIFICAR
+            string tabla = "tbl_usuario";
+            Dictionary<string, object> valores = new Dictionary<string, object>();
+            Controlador controlador = new Controlador();
+
+
+            valores.Add("PK_id_usuario", int.Parse(textBox2.Text));
+            valores.Add("nbr_password_usuario", cn.Encriptacion(textBox3.Text));
+            valores.Add("nbr_nombre_usuario", textBox4.Text);
+            valores.Add("nbr_apellido_usuario", textBox5.Text);
+            valores.Add("nbr_username_usuario", textBox6.Text);
+            valores.Add("nbr_correo_usuario", textBox7.Text);
+            string condicion = $"PK_id_usuario = '{int.Parse(textBox2.Text)}'";
+
+            if (radioButton1.Checked == true)
+            {
+                valores.Add("nbr_estado_usuario", 1);
+            }
+            else if (radioButton2.Checked == true)
+            {
+                valores.Add("nbr_estado_usuario", 0);
+            }
+
+
+            bool exito = controlador.Modificar(tabla, valores, condicion);
+
+
+            textBox1.Text = string.Empty;
+            textBox2.Text = string.Empty;
+            textBox5.Text = string.Empty;
+            textBox4.Text = string.Empty;
+            textBox3.Text = string.Empty;
+            textBox6.Text = string.Empty;
+            textBox7.Text = string.Empty;
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+            textBox1.Focus();
+
+
+            if (exito)
+            {
+
+                MessageBox.Show("Los datos se han guardado correctamente.");
+            }
+            else
+            {
+                MessageBox.Show("Error al guardar los datos.");
+            }
         }
     }
 }
