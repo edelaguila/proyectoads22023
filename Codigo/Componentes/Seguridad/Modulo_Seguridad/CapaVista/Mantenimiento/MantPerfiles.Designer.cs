@@ -29,290 +29,270 @@ namespace CapaVista.Mantenimiento
         /// </summary>
         private void InitializeComponent()
         {
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.btn_salir = new System.Windows.Forms.Button();
+            this.btn_eliminar = new System.Windows.Forms.Button();
+            this.btn_modificar = new System.Windows.Forms.Button();
+            this.btn_actualizar = new System.Windows.Forms.Button();
+            this.btn_ingresar = new System.Windows.Forms.Button();
+            this.btn_nuevo = new System.Windows.Forms.Button();
+            this.gpb_datos = new System.Windows.Forms.GroupBox();
+            this.gpb_estado = new System.Windows.Forms.GroupBox();
+            this.rb_inhabilitado = new System.Windows.Forms.RadioButton();
+            this.rb_habilitado = new System.Windows.Forms.RadioButton();
+            this.txt_descripcion = new System.Windows.Forms.TextBox();
+            this.txt_nombre = new System.Windows.Forms.TextBox();
+            this.lbl_descripcion = new System.Windows.Forms.Label();
+            this.lbl_nombre = new System.Windows.Forms.Label();
+            this.txt_codigo = new System.Windows.Forms.TextBox();
+            this.lbl_codigo = new System.Windows.Forms.Label();
+            this.gpb_modificar = new System.Windows.Forms.GroupBox();
+            this.btn_buscar = new System.Windows.Forms.Button();
+            this.txt_busqueda = new System.Windows.Forms.TextBox();
+            this.lbl_buscar = new System.Windows.Forms.Label();
+            this.gpb_datos.SuspendLayout();
+            this.gpb_estado.SuspendLayout();
+            this.gpb_modificar.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button7
+            // btn_salir
             // 
-            this.button7.Location = new System.Drawing.Point(873, 470);
-            this.button7.Margin = new System.Windows.Forms.Padding(4);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(124, 37);
-            this.button7.TabIndex = 35;
-            this.button7.Text = "Salir";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btn_salir.Location = new System.Drawing.Point(655, 382);
+            this.btn_salir.Name = "btn_salir";
+            this.btn_salir.Size = new System.Drawing.Size(93, 30);
+            this.btn_salir.TabIndex = 35;
+            this.btn_salir.Text = "Salir";
+            this.btn_salir.UseVisualStyleBackColor = true;
+            this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
             // 
-            // button6
+            // btn_eliminar
             // 
-            this.button6.Location = new System.Drawing.Point(873, 407);
-            this.button6.Margin = new System.Windows.Forms.Padding(4);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(124, 37);
-            this.button6.TabIndex = 34;
-            this.button6.Text = "Cancelar";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btn_eliminar.Location = new System.Drawing.Point(655, 331);
+            this.btn_eliminar.Name = "btn_eliminar";
+            this.btn_eliminar.Size = new System.Drawing.Size(93, 30);
+            this.btn_eliminar.TabIndex = 34;
+            this.btn_eliminar.Text = "Eliminar";
+            this.btn_eliminar.UseVisualStyleBackColor = true;
+            this.btn_eliminar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
-            // button5
+            // btn_modificar
             // 
-            this.button5.Location = new System.Drawing.Point(873, 345);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(124, 37);
-            this.button5.TabIndex = 33;
-            this.button5.Text = "Modificar";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btn_modificar.Location = new System.Drawing.Point(655, 280);
+            this.btn_modificar.Name = "btn_modificar";
+            this.btn_modificar.Size = new System.Drawing.Size(93, 30);
+            this.btn_modificar.TabIndex = 33;
+            this.btn_modificar.Text = "Modificar";
+            this.btn_modificar.UseVisualStyleBackColor = true;
+            this.btn_modificar.Click += new System.EventHandler(this.btn_modificar_Click);
             // 
-            // button4
+            // btn_actualizar
             // 
-            this.button4.Location = new System.Drawing.Point(873, 282);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(124, 37);
-            this.button4.TabIndex = 32;
-            this.button4.Text = "Actualizar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_actualizar.Location = new System.Drawing.Point(655, 229);
+            this.btn_actualizar.Name = "btn_actualizar";
+            this.btn_actualizar.Size = new System.Drawing.Size(93, 30);
+            this.btn_actualizar.TabIndex = 32;
+            this.btn_actualizar.Text = "Actualizar";
+            this.btn_actualizar.UseVisualStyleBackColor = true;
+            this.btn_actualizar.Click += new System.EventHandler(this.btn_actualizar_Click);
             // 
-            // button3
+            // btn_ingresar
             // 
-            this.button3.Location = new System.Drawing.Point(873, 219);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(124, 37);
-            this.button3.TabIndex = 31;
-            this.button3.Text = "Ingresar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btn_ingresar.Location = new System.Drawing.Point(655, 178);
+            this.btn_ingresar.Name = "btn_ingresar";
+            this.btn_ingresar.Size = new System.Drawing.Size(93, 30);
+            this.btn_ingresar.TabIndex = 31;
+            this.btn_ingresar.Text = "Ingresar";
+            this.btn_ingresar.UseVisualStyleBackColor = true;
+            this.btn_ingresar.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // btn_nuevo
             // 
-            this.button2.Location = new System.Drawing.Point(873, 156);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(124, 37);
-            this.button2.TabIndex = 30;
-            this.button2.Text = "Nuevo";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_nuevo.Location = new System.Drawing.Point(655, 127);
+            this.btn_nuevo.Name = "btn_nuevo";
+            this.btn_nuevo.Size = new System.Drawing.Size(93, 30);
+            this.btn_nuevo.TabIndex = 30;
+            this.btn_nuevo.Text = "Nuevo";
+            this.btn_nuevo.UseVisualStyleBackColor = true;
             // 
-            // groupBox2
+            // gpb_datos
             // 
-            this.groupBox2.Controls.Add(this.groupBox4);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Location = new System.Drawing.Point(16, 156);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(807, 470);
-            this.groupBox2.TabIndex = 29;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Datos";
+            this.gpb_datos.Controls.Add(this.gpb_estado);
+            this.gpb_datos.Controls.Add(this.txt_descripcion);
+            this.gpb_datos.Controls.Add(this.txt_nombre);
+            this.gpb_datos.Controls.Add(this.lbl_descripcion);
+            this.gpb_datos.Controls.Add(this.lbl_nombre);
+            this.gpb_datos.Controls.Add(this.txt_codigo);
+            this.gpb_datos.Controls.Add(this.lbl_codigo);
+            this.gpb_datos.Location = new System.Drawing.Point(12, 127);
+            this.gpb_datos.Name = "gpb_datos";
+            this.gpb_datos.Size = new System.Drawing.Size(605, 382);
+            this.gpb_datos.TabIndex = 29;
+            this.gpb_datos.TabStop = false;
+            this.gpb_datos.Text = "Datos";
             // 
-            // groupBox4
+            // gpb_estado
             // 
-            this.groupBox4.Controls.Add(this.radioButton2);
-            this.groupBox4.Controls.Add(this.radioButton1);
-            this.groupBox4.Location = new System.Drawing.Point(12, 303);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox4.Size = new System.Drawing.Size(787, 106);
-            this.groupBox4.TabIndex = 20;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Estado";
+            this.gpb_estado.Controls.Add(this.rb_inhabilitado);
+            this.gpb_estado.Controls.Add(this.rb_habilitado);
+            this.gpb_estado.Location = new System.Drawing.Point(9, 246);
+            this.gpb_estado.Name = "gpb_estado";
+            this.gpb_estado.Size = new System.Drawing.Size(590, 86);
+            this.gpb_estado.TabIndex = 20;
+            this.gpb_estado.TabStop = false;
+            this.gpb_estado.Text = "Estado";
             // 
-            // radioButton2
+            // rb_inhabilitado
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(429, 57);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(101, 21);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.Text = "Inhabilitado";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rb_inhabilitado.AutoSize = true;
+            this.rb_inhabilitado.Location = new System.Drawing.Point(322, 46);
+            this.rb_inhabilitado.Name = "rb_inhabilitado";
+            this.rb_inhabilitado.Size = new System.Drawing.Size(79, 17);
+            this.rb_inhabilitado.TabIndex = 1;
+            this.rb_inhabilitado.Text = "Inhabilitado";
+            this.rb_inhabilitado.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rb_habilitado
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(272, 57);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(92, 21);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.Text = "Habilitado";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rb_habilitado.AutoSize = true;
+            this.rb_habilitado.Location = new System.Drawing.Point(204, 46);
+            this.rb_habilitado.Name = "rb_habilitado";
+            this.rb_habilitado.Size = new System.Drawing.Size(72, 17);
+            this.rb_habilitado.TabIndex = 0;
+            this.rb_habilitado.Text = "Habilitado";
+            this.rb_habilitado.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // txt_descripcion
             // 
-            this.textBox3.Location = new System.Drawing.Point(212, 169);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(461, 61);
-            this.textBox3.TabIndex = 10;
+            this.txt_descripcion.Location = new System.Drawing.Point(159, 137);
+            this.txt_descripcion.Multiline = true;
+            this.txt_descripcion.Name = "txt_descripcion";
+            this.txt_descripcion.Size = new System.Drawing.Size(347, 50);
+            this.txt_descripcion.TabIndex = 10;
             // 
-            // textBox5
+            // txt_nombre
             // 
-            this.textBox5.Location = new System.Drawing.Point(212, 111);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(461, 22);
-            this.textBox5.TabIndex = 9;
+            this.txt_nombre.Location = new System.Drawing.Point(159, 90);
+            this.txt_nombre.Name = "txt_nombre";
+            this.txt_nombre.Size = new System.Drawing.Size(347, 20);
+            this.txt_nombre.TabIndex = 9;
             // 
-            // label4
+            // lbl_descripcion
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(8, 172);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 17);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Descripcion";
+            this.lbl_descripcion.AutoSize = true;
+            this.lbl_descripcion.Location = new System.Drawing.Point(6, 140);
+            this.lbl_descripcion.Name = "lbl_descripcion";
+            this.lbl_descripcion.Size = new System.Drawing.Size(63, 13);
+            this.lbl_descripcion.TabIndex = 6;
+            this.lbl_descripcion.Text = "Descripcion";
             // 
-            // label3
+            // lbl_nombre
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 114);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 17);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Nombre";
+            this.lbl_nombre.AutoSize = true;
+            this.lbl_nombre.Location = new System.Drawing.Point(6, 93);
+            this.lbl_nombre.Name = "lbl_nombre";
+            this.lbl_nombre.Size = new System.Drawing.Size(44, 13);
+            this.lbl_nombre.TabIndex = 4;
+            this.lbl_nombre.Text = "Nombre";
             // 
-            // textBox2
+            // txt_codigo
             // 
-            this.textBox2.Location = new System.Drawing.Point(212, 55);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(461, 22);
-            this.textBox2.TabIndex = 3;
+            this.txt_codigo.Location = new System.Drawing.Point(159, 45);
+            this.txt_codigo.Name = "txt_codigo";
+            this.txt_codigo.Size = new System.Drawing.Size(347, 20);
+            this.txt_codigo.TabIndex = 3;
             // 
-            // label2
+            // lbl_codigo
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 59);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 17);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Codigo Perfil";
+            this.lbl_codigo.AutoSize = true;
+            this.lbl_codigo.Location = new System.Drawing.Point(6, 48);
+            this.lbl_codigo.Name = "lbl_codigo";
+            this.lbl_codigo.Size = new System.Drawing.Size(66, 13);
+            this.lbl_codigo.TabIndex = 0;
+            this.lbl_codigo.Text = "Codigo Perfil";
             // 
-            // groupBox1
+            // gpb_modificar
             // 
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(16, 15);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(981, 101);
-            this.groupBox1.TabIndex = 28;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Modificar";
+            this.gpb_modificar.Controls.Add(this.btn_buscar);
+            this.gpb_modificar.Controls.Add(this.txt_busqueda);
+            this.gpb_modificar.Controls.Add(this.lbl_buscar);
+            this.gpb_modificar.Location = new System.Drawing.Point(12, 12);
+            this.gpb_modificar.Name = "gpb_modificar";
+            this.gpb_modificar.Size = new System.Drawing.Size(736, 82);
+            this.gpb_modificar.TabIndex = 28;
+            this.gpb_modificar.TabStop = false;
+            this.gpb_modificar.Text = "Modificar";
             // 
-            // button1
+            // btn_buscar
             // 
-            this.button1.Location = new System.Drawing.Point(683, 23);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 55);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_buscar.Location = new System.Drawing.Point(512, 19);
+            this.btn_buscar.Name = "btn_buscar";
+            this.btn_buscar.Size = new System.Drawing.Size(93, 45);
+            this.btn_buscar.TabIndex = 2;
+            this.btn_buscar.Text = "Buscar";
+            this.btn_buscar.UseVisualStyleBackColor = true;
+            this.btn_buscar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // txt_busqueda
             // 
-            this.textBox1.Location = new System.Drawing.Point(176, 37);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(497, 22);
-            this.textBox1.TabIndex = 1;
+            this.txt_busqueda.Location = new System.Drawing.Point(132, 30);
+            this.txt_busqueda.Name = "txt_busqueda";
+            this.txt_busqueda.Size = new System.Drawing.Size(374, 20);
+            this.txt_busqueda.TabIndex = 1;
             // 
-            // label1
+            // lbl_buscar
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(100, 41);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Buscar id";
+            this.lbl_buscar.AutoSize = true;
+            this.lbl_buscar.Location = new System.Drawing.Point(75, 33);
+            this.lbl_buscar.Name = "lbl_buscar";
+            this.lbl_buscar.Size = new System.Drawing.Size(51, 13);
+            this.lbl_buscar.TabIndex = 0;
+            this.lbl_buscar.Text = "Buscar id";
             // 
             // MantPerfiles
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1036, 649);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.ClientSize = new System.Drawing.Size(777, 527);
+            this.Controls.Add(this.btn_salir);
+            this.Controls.Add(this.btn_eliminar);
+            this.Controls.Add(this.btn_modificar);
+            this.Controls.Add(this.btn_actualizar);
+            this.Controls.Add(this.btn_ingresar);
+            this.Controls.Add(this.btn_nuevo);
+            this.Controls.Add(this.gpb_datos);
+            this.Controls.Add(this.gpb_modificar);
             this.Name = "MantPerfiles";
             this.Text = "MantPerfiles";
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gpb_datos.ResumeLayout(false);
+            this.gpb_datos.PerformLayout();
+            this.gpb_estado.ResumeLayout(false);
+            this.gpb_estado.PerformLayout();
+            this.gpb_modificar.ResumeLayout(false);
+            this.gpb_modificar.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_salir;
+        private System.Windows.Forms.Button btn_eliminar;
+        private System.Windows.Forms.Button btn_modificar;
+        private System.Windows.Forms.Button btn_actualizar;
+        private System.Windows.Forms.Button btn_ingresar;
+        private System.Windows.Forms.Button btn_nuevo;
+        private System.Windows.Forms.GroupBox gpb_datos;
+        private System.Windows.Forms.GroupBox gpb_estado;
+        private System.Windows.Forms.RadioButton rb_inhabilitado;
+        private System.Windows.Forms.RadioButton rb_habilitado;
+        private System.Windows.Forms.TextBox txt_descripcion;
+        private System.Windows.Forms.TextBox txt_nombre;
+        private System.Windows.Forms.Label lbl_descripcion;
+        private System.Windows.Forms.Label lbl_nombre;
+        private System.Windows.Forms.TextBox txt_codigo;
+        private System.Windows.Forms.Label lbl_codigo;
+        private System.Windows.Forms.GroupBox gpb_modificar;
+        private System.Windows.Forms.Button btn_buscar;
+        private System.Windows.Forms.TextBox txt_busqueda;
+        private System.Windows.Forms.Label lbl_buscar;
     }
 }

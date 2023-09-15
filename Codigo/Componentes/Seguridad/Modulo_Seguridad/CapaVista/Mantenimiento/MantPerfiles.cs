@@ -21,7 +21,7 @@ namespace CapaVista.Mantenimiento
         //carlos enrique
         public void Buscar()
         {
-            string dato = textBox1.Text;
+            string dato = txt_busqueda.Text;
             string tabla = "perfiles";
             string columna = "id_perfil";
             DataTable dt = cn.Buscar(tabla, columna, dato);
@@ -33,25 +33,82 @@ namespace CapaVista.Mantenimiento
                 DataRow row = dt.Rows[0]; // Tomamos la primera fila (si hay resultados)
 
                 // Llenamos los controles con los valores del resultado
-                textBox2.Text = row["id_perfil"].ToString();
-                textBox5.Text = row["nombre"].ToString();
-                textBox3.Text = row["descripcion"].ToString();
+                txt_codigo.Text = row["id_perfil"].ToString();
+                txt_nombre.Text = row["nombre"].ToString();
+                txt_descripcion.Text = row["descripcion"].ToString();
 
 
                 // Verificamos el estado y marcamos el RadioButton correspondiente
                 bool estadoActivo = Convert.ToInt32(row["estado"]) == 1;
-                radioButton1.Checked = estadoActivo;
-                radioButton2.Checked = !estadoActivo;
+                rb_habilitado.Checked = estadoActivo;
+                rb_inhabilitado.Checked = !estadoActivo;
             }
             else
             {
                 // Limpiamos los controles si no se encontraron resultados
-                textBox1.Text = string.Empty;
-                textBox2.Text = string.Empty;
-                textBox5.Text = string.Empty;
-                textBox3.Text = string.Empty;
-                radioButton1.Checked = false;
-                radioButton2.Checked = false;
+                txt_busqueda.Text = string.Empty;
+                txt_codigo.Text = string.Empty;
+                txt_nombre.Text = string.Empty;
+                txt_descripcion.Text = string.Empty;
+                rb_habilitado.Checked = false;
+                rb_inhabilitado.Checked = false;
+            }
+        }
+
+        //carlos enrique
+
+     
+
+            public void Modificar()
+            {
+                string tabla = "NombreDeTuTabla";
+                Dictionary<string, object> nuevosValores = new Dictionary<string, object>();
+
+                // Obtener los nuevos valores de los TextBox
+                nuevosValores["Campo1"] = txt_codigo.Text;
+                nuevosValores["Campo2"] = txt_nombre.Text;
+                nuevosValores["Campo3"] = txt_descripcion.Text;
+                // Agrega más campos según tu modelo
+
+                // Obtener el valor seleccionado de los radio botones
+                if (rb_habilitado.Checked)
+                {
+                    nuevosValores["campo_estado"] = "1";
+                }
+                else if (rb_inhabilitado.Checked)
+                {
+                    nuevosValores["campo_estado"] = "0";
+                }
+                
+
+                string condicion = "campo_ID = " + txt_busqueda.Text; // Campo ID para identificar el registro a modificar
+
+                Controlador controlador = new Controlador();
+                bool exito = controlador.Modificar(tabla, nuevosValores, condicion);
+
+                if (exito)
+                {
+                    MessageBox.Show("Los datos se han modificado correctamente.");
+                }
+                else
+                {
+                    MessageBox.Show("Error al modificar los datos.");
+                }
+            }
+
+
+        //carlos enrique
+
+        public void EliminarDato(string tabla, string columna, string valor)
+        {
+            bool eliminado = cn.Eliminar(tabla, columna, valor);
+            if (eliminado)
+            {
+                MessageBox.Show("Registro eliminado correctamente.");
+            }
+            else
+            {
+                MessageBox.Show($"No se pudo eliminar el registro. Verifique el {columna}.");
             }
         }
 
@@ -78,6 +135,33 @@ namespace CapaVista.Mantenimiento
             {
                 MessageBox.Show("Error al guardar los datos.");
             }
+        }
+
+        private void btn_modificar_Click(object sender, EventArgs e)
+        {
+            //carlos enrique
+            Modificar();
+        }
+
+        private void btn_actualizar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_cancelar_Click(object sender, EventArgs e)
+        {
+            //carlos enrique
+            string valor = txt_busqueda.Text;
+
+            // Llama a la función de eliminación pasando los parámetros necesarios
+            string tabla = "perfil"; // Nombre de la tabla
+            string columna = "id_perfil"; // Nombre de la columna
+            EliminarDato(tabla, columna, valor);
+        }
+
+        private void btn_salir_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }
