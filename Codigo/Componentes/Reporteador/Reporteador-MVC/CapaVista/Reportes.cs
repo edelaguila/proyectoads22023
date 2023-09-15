@@ -123,12 +123,16 @@ namespace Reporteador
 
                 // Mostrar un mensaje de confirmación
                 MessageBox.Show("Reporte eliminado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                correlativoTextBox.Clear();
+                estadoTextBox.Clear();
+                txt_ruta.Clear();
             }
             else
             {
                 MessageBox.Show("Por favor, seleccione un reporte para eliminar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 correlativoTextBox.Clear();
                 estadoTextBox.Clear();
+                txt_ruta.Clear();
             }
         }
 
@@ -136,35 +140,47 @@ namespace Reporteador
         {
             if (dgv_reportes.SelectedRows.Count > 0)
             {
+                // Obtener el índice de la fila seleccionada
+                int rowIndex = dgv_reportes.SelectedRows[0].Index;
+
                 // Obtener el ID del reporte seleccionado (asumiendo que la columna de ID se llama "id_reporte")
-                int idReporte = Convert.ToInt32(dgv_reportes.SelectedRows[0].Cells["id_reporte"].Value);
+                int idReporte = Convert.ToInt32(dgv_reportes.Rows[rowIndex].Cells["id_reporte"].Value);
 
-                // Aquí puedes abrir un nuevo formulario o cuadro de diálogo para permitir al usuario editar los datos
-                // Puedes pasar el ID del reporte a ese formulario para cargar los datos actuales y permitir la edición
+                // Obtener los nuevos valores de correlativo y estado desde los TextBox
+                string nuevoCorrelativo = correlativoTextBox.Text.Trim();
+                string nuevoEstado = estadoTextBox.Text.Trim();
+                string nombre = txt_ruta.Text.Trim();
 
-                // Luego, cuando el usuario guarda los cambios en el formulario de edición, puedes llamar al método
-                // correspondiente del Controlador para actualizar los datos en la base de datos.
+                // Realizar las validaciones necesarias antes de la actualización
 
-                // Actualizar el DataGridView con los datos actualizados
-                actualizardatagriew();
+                // Luego, actualizar los valores en el DataGridView directamente
+                dgv_reportes.Rows[rowIndex].Cells["correlativo"].Value = nuevoCorrelativo;
+                dgv_reportes.Rows[rowIndex].Cells["estado"].Value = nuevoEstado;
+                dgv_reportes.Rows[rowIndex].Cells["nombre"].Value = nombre;
+                dgv_reportes.Rows[rowIndex].Cells["fechaMod"].Value = DateTime.Now;
+
+                // Actualizar la base de datos con los nuevos valores
+                cn.ActualizarReporte(idReporte, nombre, nuevoCorrelativo, nuevoEstado);
 
                 // Mostrar un mensaje de confirmación
                 MessageBox.Show("Reporte modificado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Limpiar los TextBox después de la modificación
                 correlativoTextBox.Clear();
                 estadoTextBox.Clear();
+                txt_ruta.Clear();
             }
             else
             {
                 MessageBox.Show("Por favor, seleccione un reporte para modificar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 correlativoTextBox.Clear();
                 estadoTextBox.Clear();
+                txt_ruta.Clear();
             }
         }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
     }
+
+
     }
+    
    

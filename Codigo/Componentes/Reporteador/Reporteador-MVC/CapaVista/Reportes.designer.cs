@@ -165,7 +165,7 @@ namespace Reporteador
             this.label4.Size = new System.Drawing.Size(97, 19);
             this.label4.TabIndex = 12;
             this.label4.Text = "Correlativo";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+
             // 
             // label2
             // 

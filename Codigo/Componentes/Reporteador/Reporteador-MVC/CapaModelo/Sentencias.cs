@@ -88,13 +88,15 @@ namespace CapaModelo
                     {
                         try
                         {
-                            string updateQuery = "UPDATE reportes SET correlativo=?, nombre=?, estado=? WHERE id_reporte=?";
+                            string updateQuery = "UPDATE reportes SET correlativo=?, nombre=?, estado=?, fechaMod=? WHERE id_reporte=?";
                             using (OdbcCommand cmd = new OdbcCommand(updateQuery, connection, transaction))
                             {
                                 cmd.Parameters.AddWithValue("@correlativo", correlativo);
                                 cmd.Parameters.AddWithValue("@nombre", nombre);
                                 cmd.Parameters.AddWithValue("@estado", estado);
+                                cmd.Parameters.AddWithValue("@fechaMod", DateTime.Now);
                                 cmd.Parameters.AddWithValue("@id_reporte", idReporte);
+
 
                                 cmd.ExecuteNonQuery();
                             }
@@ -149,7 +151,7 @@ namespace CapaModelo
             {
                 if (connection != null)
                 {
-                    string sql = "SELECT id_reporte, correlativo, nombre, estado, fecha FROM  " + tabla + ";";
+                    string sql = "SELECT id_reporte, correlativo, nombre, estado, fecha, fechaMod FROM  " + tabla + ";";
                     OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, connection);
                     DataTable table = new DataTable();
                     dataTable.Fill(table);
