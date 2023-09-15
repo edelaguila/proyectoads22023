@@ -47,3 +47,12 @@ C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads2202
 C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
 C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaControlador\obj\Debug\CapaControlador.dll
 C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaControlador\obj\Debug\CapaControlador.pdb
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaControlador\bin\Debug\CapaControlador.dll
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaControlador\bin\Debug\CapaControlador.pdb
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaControlador\bin\Debug\CapaModelo.dll
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaControlador\bin\Debug\CapaModelo.pdb
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaControlador\obj\Debug\CapaControlador.csproj.AssemblyReference.cache
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaControlador\obj\Debug\CapaControlador.csproj.CoreCompileInputs.cache
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaControlador\obj\Debug\CapaControlador.dll
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaControlador\obj\Debug\CapaControlador.pdb

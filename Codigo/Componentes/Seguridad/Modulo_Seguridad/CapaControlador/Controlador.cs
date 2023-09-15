@@ -29,6 +29,13 @@ namespace CapaControlador
             return sn.Guardar(tabla, valores);
         }
 
+        //Justin Pennant
+        public bool Modificar(string tabla, Dictionary<string, object> valores, string condicion)
+        {
+            return sn.Modificar(tabla, valores, condicion);
+        }
+
+
         //Jonathan Arriaga
         public string Encriptacion(string str)
         {
