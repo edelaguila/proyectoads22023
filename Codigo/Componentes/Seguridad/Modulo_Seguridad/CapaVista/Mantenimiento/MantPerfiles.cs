@@ -55,6 +55,50 @@ namespace CapaVista.Mantenimiento
             }
         }
 
+        //carlos enrique
+
+        public void modificar() {
+
+            public void Modificar()
+            {
+                string tabla = "NombreDeTuTabla";
+                Dictionary<string, object> nuevosValores = new Dictionary<string, object>();
+
+                // Obtener los nuevos valores de los TextBox
+                nuevosValores["Campo1"] = txt_codigo.Text;
+                nuevosValores["Campo2"] = txt_descripcion.Text;
+                nuevosValores["Campo3"] = txt_nombre.Text;
+                // Agrega más campos según tu modelo
+
+                // Obtener el valor seleccionado de los radio botones
+                if (rb_habilitado.Checked)
+                {
+                    nuevosValores["campo_estado"] = "1";
+                }
+                else if (rb_inhabilitado.Checked)
+                {
+                    nuevosValores["campo_estado"] = "0";
+                }
+                
+
+                string condicion = "campo_ID = " + txt_busqueda.Text; // Campo ID para identificar el registro a modificar
+
+                Controlador controlador = new Controlador();
+                bool exito = controlador.Modificar(tabla, nuevosValores, condicion);
+
+                if (exito)
+                {
+                    MessageBox.Show("Los datos se han modificado correctamente.");
+                }
+                else
+                {
+                    MessageBox.Show("Error al modificar los datos.");
+                }
+            }
+
+
+        }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -78,6 +122,11 @@ namespace CapaVista.Mantenimiento
             {
                 MessageBox.Show("Error al guardar los datos.");
             }
+        }
+
+        private void btn_modificar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
