@@ -2,6 +2,8 @@
 using System.Data.Odbc;
 
 namespace CapaModelo
+/* AUTORES:
+LUIS ALBERTO FRANCO MORAN 0901-20-23979  */
 {
     public class Conexion
     {

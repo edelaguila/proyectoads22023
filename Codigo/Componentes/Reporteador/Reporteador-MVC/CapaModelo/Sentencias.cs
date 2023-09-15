@@ -4,6 +4,9 @@ using System.Data.Odbc;
 using System.IO;
 
 namespace CapaModelo
+    /* AUTORES:
+        LUIS ALBERTO FRANCO MORAN 0901-20-23979
+        OTTO ADRIAN LOPEZ VENTURA 0901-20-1069  */
 {
     public class Sentencias
     {

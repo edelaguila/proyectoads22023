@@ -12,6 +12,12 @@ using CapaControlador;
 
 
 namespace Reporteador
+/* AUTORES:
+LUIS ALBERTO FRANCO MORAN 0901-20-23979
+OTTO ADRIAN LOPEZ VENTURA 0901-20-1069 
+JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
+
+
 {
     public partial class Reportes : Form
     {

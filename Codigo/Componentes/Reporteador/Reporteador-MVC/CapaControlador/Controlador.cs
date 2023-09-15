@@ -3,6 +3,9 @@ using System.Data;
 using CapaModelo;
 
 namespace CapaControlador
+/* AUTORES:
+LUIS ALBERTO FRANCO MORAN 0901-20-23979
+OTTO ADRIAN LOPEZ VENTURA 0901-20-1069  */
 {
     public class Controlador
     {
