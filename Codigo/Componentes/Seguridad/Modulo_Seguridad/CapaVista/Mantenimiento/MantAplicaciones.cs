@@ -16,6 +16,8 @@ namespace CapaVista.Mantenimiento
         public MantAplicaciones()
         {
             InitializeComponent();
+            LlenarCombo();
+
         }
 
         //Erick Ramirez
@@ -35,6 +37,9 @@ namespace CapaVista.Mantenimiento
         public void Buscar()
         {
             //Erick Ramirez
+
+            
+
             string dato = textBox1.Text;
             string tabla = "tbl_aplicacion";
             string columna = "PK_id_aplicacion";
@@ -186,5 +191,20 @@ namespace CapaVista.Mantenimiento
                 MessageBox.Show("Error al modificar los datos.");
             }
         }
+
+
+        public void LlenarCombo()
+        {
+            
+            List<string> datos = cn.ObtenerDatos();
+            comboBox1.Items.Clear();
+            comboBox1.Items.AddRange(datos.ToArray());
+
+
+        }
+
+
+
+
     }
 }
