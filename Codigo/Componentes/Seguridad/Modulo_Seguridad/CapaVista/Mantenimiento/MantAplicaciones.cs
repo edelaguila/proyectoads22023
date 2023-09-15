@@ -18,48 +18,57 @@ namespace CapaVista.Mantenimiento
             InitializeComponent();
         }
 
-
+        //Erick Ramirez
+        public void limpiar()
+        {
+            textBox2.Text = string.Empty;
+            textBox5.Text = string.Empty;
+            textBox4.Text = string.Empty;
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+            textBox1.Focus();
+        }
 
         Controlador cn = new Controlador();
 
         //carlos enrique
         public void Buscar()
         {
+            //Erick Ramirez
             string dato = textBox1.Text;
             string tabla = "tbl_aplicacion";
             string columna = "PK_id_aplicacion";
-            DataTable dt = cn.Buscar(tabla,columna,dato);
-            
+            DataTable dt = cn.Buscar(tabla, columna, dato);
+
+
+
+
             if (dt.Rows.Count > 0)
             {
-              
+
 
                 DataRow row = dt.Rows[0]; // Tomamos la primera fila (si hay resultados)
 
                 // Llenamos los controles con los valores del resultado
+                //Erick Ramirez
                 textBox2.Text = row["PK_id_aplicacion"].ToString();
-                comboBox1.SelectedItem = row["id_modulos"].ToString();
-                textBox4.Text = row["nombre_aplicacion"].ToString();
-                textBox5.Text = row["descripcion"].ToString();
+
+                textBox4.Text = row["nbr_nombre_aplicacion"].ToString();
+                textBox5.Text = row["nbr_descripcion_aplicacion"].ToString();
 
                 // Verificamos el estado y marcamos el RadioButton correspondiente
-                bool estadoActivo = Convert.ToInt32(row["estado"]) == 1;
+                bool estadoActivo = Convert.ToInt32(row["nbr_estado_aplicacion"]) == 1;
                 radioButton1.Checked = estadoActivo;
                 radioButton2.Checked = !estadoActivo;
             }
             else
             {
                 // Limpiamos los controles si no se encontraron resultados
-                textBox1.Text = string.Empty;
-                comboBox1.SelectedItem = null;
-                textBox2.Text = string.Empty;
-                textBox4.Text = string.Empty;
-                textBox5.Text = string.Empty;
-                radioButton1.Checked = false;
-                radioButton2.Checked = false;
+                limpiar();
             }
         }
 
+        
 
         // carlos enrique
         public void EliminarDato(string tabla, string columna, string valor)
@@ -88,26 +97,93 @@ namespace CapaVista.Mantenimiento
             string valor = textBox1.Text;
 
             // Llama a la función de eliminación pasando los parámetros necesarios
-            string tabla = "aplicaciones"; // Nombre de la tabla
-            string columna = "id_aplicacion"; // Nombre de la columna
+            string tabla = "tbl_aplicacion"; // Nombre de la tabla
+            string columna = "PK_Id_aplicacion"; // Nombre de la columna
             EliminarDato(tabla, columna, valor);
+
+            limpiar();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string tabla = "NombreDeTuTabla";
+            //Erick Ramirez
+            string tabla = "tbl_aplicacion";
             Dictionary<string, object> valores = new Dictionary<string, object>();
 
             Controlador controlador = new Controlador();
+
+            valores.Add("PK_Id_aplicacion", int.Parse(textBox2.Text));
+            valores.Add("nbr_nombre_aplicacion", textBox4.Text);
+            valores.Add("nbr_descripcion_aplicacion", textBox5.Text);
+
+            if (radioButton1.Checked == true)
+            {
+                valores.Add("nbr_estado_aplicacion", 1);
+            }
+            else if (radioButton2.Checked == true)
+            {
+                valores.Add("nbr_estado_aplicacion", 0);
+            }
+
             bool exito = controlador.GuardarDatos(tabla, valores);
+
+            limpiar();
+
 
             if (exito)
             {
+
                 MessageBox.Show("Los datos se han guardado correctamente.");
             }
             else
             {
                 MessageBox.Show("Error al guardar los datos.");
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //BOTON MODIFICAR
+            //Erick Ramirez
+            string tabla = "tbl_aplicacion";
+            Dictionary<string, object> valores = new Dictionary<string, object>();
+            Controlador controlador = new Controlador();
+
+            //Erick Ramirez
+            valores.Add("PK_Id_aplicacion", int.Parse(textBox2.Text));
+            valores.Add("nbr_nombre_aplicacion", textBox4.Text);
+            valores.Add("nbr_descripcion_aplicacion", textBox5.Text);
+            string condicion = $"PK_Id_aplicacion = '{int.Parse(textBox2.Text)}'";
+
+            if (radioButton1.Checked == true)
+            {
+                valores.Add("nbr_estado_aplicacion", 1);
+            }
+            else if (radioButton2.Checked == true)
+            {
+                valores.Add("nbr_estado_aplicacion", 0);
+            }
+
+
+            bool exito = controlador.Modificar(tabla, valores, condicion);
+
+
+            limpiar();
+
+
+            if (exito)
+            {
+
+                MessageBox.Show("Los datos se han modificado correctamente.");
+            }
+            else
+            {
+                MessageBox.Show("Error al modificar los datos.");
             }
         }
     }
