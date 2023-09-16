@@ -20,14 +20,24 @@ namespace CapaVista
 
         private void reportesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Reportes nuevo = new Reportes();
-            nuevo.MdiParent = this;
-            nuevo.Show();
+
         }
 
         private void navegadorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form1 nuevo = new Form1();
+            nuevo.MdiParent = this;
+            nuevo.Show();
+        }
+
+        private void reporte1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void reporte2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Reportes nuevo = new Reportes();
             nuevo.MdiParent = this;
             nuevo.Show();
         }

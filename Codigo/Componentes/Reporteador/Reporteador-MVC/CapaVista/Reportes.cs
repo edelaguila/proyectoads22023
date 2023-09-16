@@ -28,6 +28,7 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
         {
             InitializeComponent();
             actualizardatagriew();
+
         }
         public void actualizardatagriew()
         {
@@ -49,6 +50,7 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
+                txt_ruta.Enabled = false;
                 openFileDialog.InitialDirectory = "C:\\"; // Directorio inicial
                 openFileDialog.Filter = "Archivos de texto (*.txt)|*.txt|Todos los archivos (*.*)|*.*";
                 openFileDialog.FilterIndex = 1;
@@ -80,10 +82,15 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
                 MessageBox.Show("Reporte agregado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 correlativoTextBox.Clear();
                 estadoTextBox.Clear();
+                txt_ruta.Enabled = true;
+
             }
             else
             {
                 MessageBox.Show("La ruta no es válida o no existe.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                correlativoTextBox.Clear();
+                estadoTextBox.Clear();
+                txt_ruta.Clear();
             }
         }
 
@@ -187,6 +194,6 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
     }
 
 
-    }
+}
     
    

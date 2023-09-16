@@ -37,6 +37,12 @@ namespace CapaVista
             this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reporte1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reporte2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reporte1ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.reporte2ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.reporte3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reporte4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,8 +98,11 @@ namespace CapaVista
             // 
             // reportesToolStripMenuItem
             // 
+            this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.reporte1ToolStripMenuItem,
+            this.reporte2ToolStripMenuItem});
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(151, 26);
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.reportesToolStripMenuItem.Text = "Reportes";
             this.reportesToolStripMenuItem.Click += new System.EventHandler(this.reportesToolStripMenuItem_Click);
             // 
@@ -102,6 +111,49 @@ namespace CapaVista
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
+            // 
+            // reporte1ToolStripMenuItem
+            // 
+            this.reporte1ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.reporte1ToolStripMenuItem1,
+            this.reporte2ToolStripMenuItem1,
+            this.reporte3ToolStripMenuItem,
+            this.reporte4ToolStripMenuItem});
+            this.reporte1ToolStripMenuItem.Name = "reporte1ToolStripMenuItem";
+            this.reporte1ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.reporte1ToolStripMenuItem.Text = "Plantillas";
+            this.reporte1ToolStripMenuItem.Click += new System.EventHandler(this.reporte1ToolStripMenuItem_Click);
+            // 
+            // reporte2ToolStripMenuItem
+            // 
+            this.reporte2ToolStripMenuItem.Name = "reporte2ToolStripMenuItem";
+            this.reporte2ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.reporte2ToolStripMenuItem.Text = "Reporteador";
+            this.reporte2ToolStripMenuItem.Click += new System.EventHandler(this.reporte2ToolStripMenuItem_Click);
+            // 
+            // reporte1ToolStripMenuItem1
+            // 
+            this.reporte1ToolStripMenuItem1.Name = "reporte1ToolStripMenuItem1";
+            this.reporte1ToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.reporte1ToolStripMenuItem1.Text = "Reporte 1";
+            // 
+            // reporte2ToolStripMenuItem1
+            // 
+            this.reporte2ToolStripMenuItem1.Name = "reporte2ToolStripMenuItem1";
+            this.reporte2ToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.reporte2ToolStripMenuItem1.Text = "Reporte 2";
+            // 
+            // reporte3ToolStripMenuItem
+            // 
+            this.reporte3ToolStripMenuItem.Name = "reporte3ToolStripMenuItem";
+            this.reporte3ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.reporte3ToolStripMenuItem.Text = "Reporte 3";
+            // 
+            // reporte4ToolStripMenuItem
+            // 
+            this.reporte4ToolStripMenuItem.Name = "reporte4ToolStripMenuItem";
+            this.reporte4ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.reporte4ToolStripMenuItem.Text = "Reporte 4";
             // 
             // MdiParent1
             // 
@@ -130,5 +182,11 @@ namespace CapaVista
         private System.Windows.Forms.ToolStripMenuItem herramientasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reporte1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reporte2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reporte1ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem reporte2ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem reporte3ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reporte4ToolStripMenuItem;
     }
 }
