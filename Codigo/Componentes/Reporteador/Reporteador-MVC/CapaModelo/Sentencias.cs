@@ -31,14 +31,14 @@ namespace CapaModelo
                             // Leer el contenido del archivo
                             string contenidoArchivo = File.ReadAllText(rutaArchivo);
 
-                            string insertQuery = "INSERT INTO reportes (correlativo, nombre, estado, fecha, archivo) VALUES (?, ?, ?, ?, ?)";
+                            string insertQuery = "INSERT INTO tbl_reportes (nbr_correlativo, nbr_nombre, fk_estado, nbr_fecha, nbr_archivo) VALUES (?, ?, ?, ?, ?)";
                             using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
                             {
-                                cmd.Parameters.AddWithValue("@correlativo", correlativo);
-                                cmd.Parameters.AddWithValue("@nombre", nombreArchivo);
-                                cmd.Parameters.AddWithValue("@estado", estado);
-                                cmd.Parameters.AddWithValue("@fecha", DateTime.Now);
-                                cmd.Parameters.AddWithValue("@archivo", contenidoArchivo);
+                                cmd.Parameters.AddWithValue("@nbr_correlativo", correlativo);
+                                cmd.Parameters.AddWithValue("@nbr_nombre", nombreArchivo);
+                                cmd.Parameters.AddWithValue("@fk_estado", estado);
+                                cmd.Parameters.AddWithValue("@nbr_fecha", DateTime.Now);
+                                cmd.Parameters.AddWithValue("@nbr_archivo", contenidoArchivo);
 
                                 cmd.ExecuteNonQuery();
                             }
@@ -62,7 +62,7 @@ namespace CapaModelo
             {
                 if (connection != null)
                 {
-                    string selectQuery = "SELECT id_reporte, correlativo, nombre, estado, fecha FROM reportes";
+                    string selectQuery = "SELECT pk_id_reporte, nbr_correlativo, nbr_nombre, fk_estado, nbr_fecha, nbr_fechaMod FROM reportes";
                     using (OdbcCommand cmd = new OdbcCommand(selectQuery, connection))
                     {
                         DataTable dataTable = new DataTable();
@@ -91,14 +91,14 @@ namespace CapaModelo
                     {
                         try
                         {
-                            string updateQuery = "UPDATE reportes SET correlativo=?, nombre=?, estado=?, fechaMod=? WHERE id_reporte=?";
+                            string updateQuery = "UPDATE tbl_reportes SET nbr_correlativo=?, nbr_nombre=?, fk_estado=?, nbr_fechaMod=? WHERE pk_id_reporte=?";
                             using (OdbcCommand cmd = new OdbcCommand(updateQuery, connection, transaction))
                             {
-                                cmd.Parameters.AddWithValue("@correlativo", correlativo);
-                                cmd.Parameters.AddWithValue("@nombre", nombre);
-                                cmd.Parameters.AddWithValue("@estado", estado);
-                                cmd.Parameters.AddWithValue("@fechaMod", DateTime.Now);
-                                cmd.Parameters.AddWithValue("@id_reporte", idReporte);
+                                cmd.Parameters.AddWithValue("@nbr_correlativo", correlativo);
+                                cmd.Parameters.AddWithValue("@nbr_nombre", nombre);
+                                cmd.Parameters.AddWithValue("@fk_estado", estado);
+                                cmd.Parameters.AddWithValue("@nbr_fechaMod", DateTime.Now);
+                                cmd.Parameters.AddWithValue("@pk_id_reporte", idReporte);
 
 
                                 cmd.ExecuteNonQuery();
@@ -127,10 +127,10 @@ namespace CapaModelo
                     {
                         try
                         {
-                            string deleteQuery = "DELETE FROM reportes WHERE id_reporte=?";
+                            string deleteQuery = "DELETE FROM tbl_reportes WHERE pk_id_reporte=?";
                             using (OdbcCommand cmd = new OdbcCommand(deleteQuery, connection, transaction))
                             {
-                                cmd.Parameters.AddWithValue("@id_reporte", idReporte);
+                                cmd.Parameters.AddWithValue("@pk_id_reporte", idReporte);
 
                                 cmd.ExecuteNonQuery();
                             }
@@ -154,7 +154,7 @@ namespace CapaModelo
             {
                 if (connection != null)
                 {
-                    string sql = "SELECT id_reporte, correlativo, nombre, estado, fecha, fechaMod FROM  " + tabla + ";";
+                    string sql = "SELECT pk_id_reporte, nbr_correlativo, nbr_nombre, fk_estado, nbr_fecha, nbr_fechaMod FROM  " + tabla + ";";
                     OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, connection);
                     DataTable table = new DataTable();
                     dataTable.Fill(table);

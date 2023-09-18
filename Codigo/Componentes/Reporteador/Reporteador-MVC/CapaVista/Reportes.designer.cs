@@ -41,6 +41,7 @@ namespace Reporteador
             this.estadoTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_reportes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,6 +55,7 @@ namespace Reporteador
             this.dgv_reportes.ReadOnly = true;
             this.dgv_reportes.RowHeadersWidth = 51;
             this.dgv_reportes.RowTemplate.Height = 24;
+            this.dgv_reportes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_reportes.Size = new System.Drawing.Size(708, 162);
             this.dgv_reportes.TabIndex = 0;
             this.dgv_reportes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_reportes_CellContentClick);
@@ -125,9 +127,9 @@ namespace Reporteador
             // 
             // txt_ruta
             // 
-            this.txt_ruta.Location = new System.Drawing.Point(43, 96);
+            this.txt_ruta.Location = new System.Drawing.Point(170, 96);
             this.txt_ruta.Name = "txt_ruta";
-            this.txt_ruta.Size = new System.Drawing.Size(459, 22);
+            this.txt_ruta.Size = new System.Drawing.Size(332, 22);
             this.txt_ruta.TabIndex = 6;
             this.txt_ruta.TextChanged += new System.EventHandler(this.txt_ruta_TextChanged);
             // 
@@ -165,7 +167,6 @@ namespace Reporteador
             this.label4.Size = new System.Drawing.Size(97, 19);
             this.label4.TabIndex = 12;
             this.label4.Text = "Correlativo";
-
             // 
             // label2
             // 
@@ -177,11 +178,23 @@ namespace Reporteador
             this.label2.TabIndex = 13;
             this.label2.Text = "Estado";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(54, 96);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 19);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Nombre";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
             // Reportes
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.estadoTextBox);
@@ -217,5 +230,6 @@ namespace Reporteador
         private System.Windows.Forms.TextBox estadoTextBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

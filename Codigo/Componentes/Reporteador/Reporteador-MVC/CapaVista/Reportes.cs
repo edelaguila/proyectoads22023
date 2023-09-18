@@ -23,11 +23,17 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
     {
         private List<string> ruta = new List<string>(); // Lista para almacenar las rutas
         Controlador cn = new Controlador();
-        string rep = "reportes";
+        string rep = "tbl_reportes";
         public Reportes()
         {
             InitializeComponent();
             actualizardatagriew();
+            dgv_reportes.Columns[0].HeaderText = "ID";
+            dgv_reportes.Columns[1].HeaderText = "Correlativo";
+            dgv_reportes.Columns[2].HeaderText = "Nombre";
+            dgv_reportes.Columns[3].HeaderText = "Estado";
+            dgv_reportes.Columns[4].HeaderText = "Fecha de ingreso";
+            dgv_reportes.Columns[5].HeaderText = "Fecha de Modificacion";
 
         }
         public void actualizardatagriew()
@@ -126,7 +132,7 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
             if (dgv_reportes.SelectedRows.Count > 0)
             {
                 // Obtener el ID del reporte seleccionado (asumiendo que la columna de ID se llama "id_reporte")
-                int idReporte = Convert.ToInt32(dgv_reportes.SelectedRows[0].Cells["id_reporte"].Value);
+                int idReporte = Convert.ToInt32(dgv_reportes.SelectedRows[0].Cells["pk_id_reporte"].Value);
 
                 // Llamar al Controlador para eliminar el reporte de la base de datos
                 cn.EliminarReporte(idReporte);
@@ -157,7 +163,7 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
                 int rowIndex = dgv_reportes.SelectedRows[0].Index;
 
                 // Obtener el ID del reporte seleccionado (asumiendo que la columna de ID se llama "id_reporte")
-                int idReporte = Convert.ToInt32(dgv_reportes.Rows[rowIndex].Cells["id_reporte"].Value);
+                int idReporte = Convert.ToInt32(dgv_reportes.Rows[rowIndex].Cells["pk_id_reporte"].Value);
 
                 // Obtener los nuevos valores de correlativo y estado desde los TextBox
                 string nuevoCorrelativo = correlativoTextBox.Text.Trim();
@@ -167,13 +173,13 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
                 // Realizar las validaciones necesarias antes de la actualización
 
                 // Luego, actualizar los valores en el DataGridView directamente
-                dgv_reportes.Rows[rowIndex].Cells["correlativo"].Value = nuevoCorrelativo;
-                dgv_reportes.Rows[rowIndex].Cells["estado"].Value = nuevoEstado;
-                dgv_reportes.Rows[rowIndex].Cells["nombre"].Value = nombre;
-                dgv_reportes.Rows[rowIndex].Cells["fechaMod"].Value = DateTime.Now;
+                dgv_reportes.Rows[rowIndex].Cells["nbr_correlativo"].Value = nuevoCorrelativo;
+                dgv_reportes.Rows[rowIndex].Cells["fk_estado"].Value = nuevoEstado;
+                dgv_reportes.Rows[rowIndex].Cells["nbr_nombre"].Value = nombre;
+                dgv_reportes.Rows[rowIndex].Cells["nbr_fechaMod"].Value = DateTime.Now;
 
                 // Actualizar la base de datos con los nuevos valores
-                cn.ActualizarReporte(idReporte, nombre, nuevoCorrelativo, nuevoEstado);
+                cn.ActualizarReporte(idReporte,  nuevoCorrelativo, nombre, nuevoEstado);
 
                 // Mostrar un mensaje de confirmación
                 MessageBox.Show("Reporte modificado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -190,6 +196,11 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
                 estadoTextBox.Clear();
                 txt_ruta.Clear();
             }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 
