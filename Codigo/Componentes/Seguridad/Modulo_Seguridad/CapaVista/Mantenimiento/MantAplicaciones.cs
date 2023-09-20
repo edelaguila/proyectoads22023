@@ -94,6 +94,7 @@ namespace CapaVista.Mantenimiento
         {
             //carlos enrique
             Buscar();
+            //bitacora();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -194,13 +195,10 @@ namespace CapaVista.Mantenimiento
 
 
         public void LlenarCombo()
-        {
-            
-            List<string> datos = cn.ObtenerDatos();
+        {  
+            List<string> datos = cn.ObtenerDatos("nbr_nombre_modulo", "tbl_modulo");
             comboBox1.Items.Clear();
             comboBox1.Items.AddRange(datos.ToArray());
-
-
         }
 
 

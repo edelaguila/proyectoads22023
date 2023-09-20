@@ -43,10 +43,11 @@ namespace CapaControlador
         }
 
         //Jonathan Arriaga 
-        public List<string> ObtenerDatos()
+        public List<string> ObtenerDatos(string columna, string tabla)
         {
-            return sn.ObtenerDatos();
+            return sn.ObtenerDatos(columna, tabla);
         }
+
 
 
     }

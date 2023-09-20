@@ -12,7 +12,7 @@ namespace CapaModelo
        public OdbcConnection conexion()
         {
             //creacion de la conexion via ODBC
-            OdbcConnection conn = new OdbcConnection("dsn=bd_seguridad");//manejar estandarizacion
+            OdbcConnection conn = new OdbcConnection("dsn=HotelSConexion");//manejar estandarizacion
             try
             {
                 conn.Open();

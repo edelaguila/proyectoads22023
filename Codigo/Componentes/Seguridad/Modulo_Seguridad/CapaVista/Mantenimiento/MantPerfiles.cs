@@ -35,12 +35,12 @@ namespace CapaVista.Mantenimiento
 
                 // Llenamos los controles con los valores del resultado
                 txt_codigo.Text = row["PK_id_perfil"].ToString();
-                txt_nombre.Text = row["nombre_perfil"].ToString();
-                txt_descripcion.Text = row["descripcion_perfil"].ToString();
+                txt_nombre.Text = row["nbr_nombre_perfil"].ToString();
+                txt_descripcion.Text = row["nbr_descripcion_perfil"].ToString();
 
 
                 // Verificamos el estado y marcamos el RadioButton correspondiente
-                bool estadoActivo = Convert.ToInt32(row["estado_perfil"]) == 1;
+                bool estadoActivo = Convert.ToInt32(row["nbr_estado_perfil"]) == 1;
                 rb_habilitado.Checked = estadoActivo;
                 rb_inhabilitado.Checked = !estadoActivo;
             }
@@ -90,16 +90,16 @@ namespace CapaVista.Mantenimiento
             Controlador controlador = new Controlador();
 
             valores.Add("PK_id_perfil", int.Parse(txt_codigo.Text));
-            valores.Add("nombre_perfil", txt_nombre.Text);
-            valores.Add("descripcion_perfil", txt_descripcion.Text);
+            valores.Add("nbr_nombre_perfil", txt_nombre.Text);
+            valores.Add("nbr_descripcion_perfil", txt_descripcion.Text);
 
             if (rb_habilitado.Checked == true)
             {
-                valores.Add("estado_perfil", 1);
+                valores.Add("nbr_estado_perfil", 1);
             }
             else if (rb_inhabilitado.Checked == true)
             {
-                valores.Add("estado_perfil", 0);
+                valores.Add("nbr_estado_perfil", 0);
             }
 
 
@@ -138,17 +138,17 @@ namespace CapaVista.Mantenimiento
 
 
             valores.Add("PK_id_perfil", int.Parse(txt_codigo.Text));
-            valores.Add("nombre_perfil", txt_nombre.Text);
-            valores.Add("descripcion_perfil", txt_descripcion.Text);
+            valores.Add("nbr_nombre_perfil", txt_nombre.Text);
+            valores.Add("nbr_descripcion_perfil", txt_descripcion.Text);
             string condicion = $"PK_id_perfil = '{int.Parse(txt_codigo.Text)}'";
 
             if (rb_habilitado.Checked == true)
             {
-                valores.Add("estado_perfil", 1);
+                valores.Add("nbr_estado_perfil", 1);
             }
             else if (rb_inhabilitado.Checked == true)
             {
-                valores.Add("estado_perfil", 0);
+                valores.Add("nbr_estado_perfil", 0);
             }
 
 

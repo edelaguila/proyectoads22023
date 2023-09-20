@@ -22,9 +22,7 @@ C:\Users\PC\source\repos\Proyecto3\CapaVista\obj\Debug\CapaVista.MantUsuario.res
 C:\Users\PC\source\repos\Proyecto3\CapaVista\obj\Debug\CapaVista.MenuSeguridad.resources
 C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaVista.dll
 C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaVista.pdb
-C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaControlador.dll
 C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaControlador.pdb
-C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.AssemblyReference.cache
 C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigAplicaPerfiles.resources
 C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigAplicaUsuario.resources
 C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigPerfUsuario.resources
@@ -187,3 +185,5 @@ C:\Users\gazhp\source\repos\proyectoads22023\Codigo\Componentes\Seguridad\Modulo
 C:\Users\gazhp\source\repos\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaControlador.pdb
 C:\Users\gazhp\source\repos\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaModelo.pdb
 C:\Users\gazhp\source\repos\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaControlador.dll

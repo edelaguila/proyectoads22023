@@ -183,7 +183,19 @@ namespace CapaVista
 
 
             valores.Add("PK_id_usuario", int.Parse(textBox2.Text));
-            valores.Add("nbr_password_usuario", cn.Encriptacion(textBox3.Text));
+
+            if (textBox3.Text.Length == 64)
+            {
+                valores.Add("nbr_password_usuario", textBox3.Text);
+            }
+            else if (textBox3.Text.Length<64)
+            {
+                valores.Add("nbr_password_usuario", cn.Encriptacion(textBox3.Text));
+
+            }
+
+
+            
             valores.Add("nbr_nombre_usuario", textBox4.Text);
             valores.Add("nbr_apellido_usuario", textBox5.Text);
             valores.Add("nbr_username_usuario", textBox6.Text);
