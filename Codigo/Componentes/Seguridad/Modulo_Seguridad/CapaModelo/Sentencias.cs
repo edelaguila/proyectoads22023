@@ -93,6 +93,16 @@ namespace CapaModelo
             }
         }
 
+        //carlos enrique
+        public OdbcDataAdapter llenarTblBitacora(string tabla)// metodo  que obtinene el contenio de una tabla
+        {
+            //consultamos
+            string sql = "SELECT * FROM " + tabla + "  ;";
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, con.conexion());
+            return dataTable;
+        }
+
+
 
         //--------------------------------
 
