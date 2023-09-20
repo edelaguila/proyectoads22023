@@ -83,7 +83,47 @@ namespace CapaVista.Asignaciones
 
         private void button2_Click(object sender, EventArgs e)
         {
+            /*mas tarde para insercion
+            int a = dataGridView1.RowCount;
 
+            for (int i = 1; i <= a; i++)
+            {
+
+            }
+            */
+
+            /* string tabla = "tbl_usuario_aplicacion";
+
+             Dictionary<string, object> valores = new Dictionary<string, object>
+             {
+                 { "Nombre", nombreUsuario },
+                 { "Aplicacion", aplicacion }
+
+             };
+
+             Controlador controlador = new Controlador();
+             bool exito = controlador.GuardarDatos(tabla, valores);
+
+             if (exito)
+             {
+
+                 dataGridView1.Rows.Add(nombreUsuario, aplicacion);
+                 MessageBox.Show("Los datos se han guardado correctamente.");
+             }
+             else
+             {
+                 MessageBox.Show("Error al guardar los datos.");
+             }
+             */
+
+            //int hola = dataGridView1.GetCellCount
+            /*int[] valoresCasillas = new int[2];
+            for (int i = 2; i < 2; i++)
+            {
+                DataGridViewCheckBoxCell casilla = dataGridView1.Rows[0].Cells[i] as DataGridViewCheckBoxCell;
+                valoresCasillas[i] = (Convert.ToBoolean(casilla.Value)) ? 1 : 0;
+                MessageBox.Show("" + valoresCasillas[i]);
+            }*/
         }
     }
 }
