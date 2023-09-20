@@ -54,3 +54,23 @@ D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\obj\Release\CapaVista.csp
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.CopyComplete
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\obj\Release\CapaVista.dll
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\obj\Release\CapaVista.pdb
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\bin\Release\CapaVista.dll
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\bin\Release\CapaVista.pdb
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\bin\Release\CapaControlador.dll
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\bin\Release\CapaModelo.dll
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\bin\Release\CapaControlador.pdb
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\bin\Release\CapaModelo.pdb
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.AssemblyReference.cache
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\obj\Release\CapaVista.Componentes.Nav.resources
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.ConsultasConsultas.resources
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmReportes.resources
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmReservacion.resources
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\obj\Release\CapaVista.Login.resources
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\obj\Release\CapaVista.Principal.resources
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\obj\Release\CapaVista.Properties.Resources.resources
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\obj\Release\CapaVista.Registro.resources
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.GenerateResource.cache
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.CoreCompileInputs.cache
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.CopyComplete
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\obj\Release\CapaVista.dll
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\obj\Release\CapaVista.pdb

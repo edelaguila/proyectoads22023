@@ -59,6 +59,9 @@ namespace CapaVista.Componentes
             this.identificarFormulario(child_form, "g");
         }
 
-
+        private void btn_ayuda_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "Ayudas/AyudaSO2.chm","NavAyuda.html");
+        }
     }
 }
