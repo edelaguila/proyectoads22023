@@ -111,19 +111,19 @@ namespace CapaModelo
 
 
         //MODULO PARA LLENADO DE COMBOBOX Jonathan Arriaga
-        public List<string> ObtenerDatos()
+        public List<string> ObtenerDatos(string columna, string tabla)
         {
             List<string> datos = new List<string>();
             try
             {
-           
-                string consulta = "SELECT nbr_nombre_modulo FROM tbl_modulo";
-               
+
+                string consulta = $"SELECT {columna} FROM {tabla}";
+
                 OdbcCommand command = new OdbcCommand(consulta, con.conexion());
                 OdbcDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    string nombre = reader["nbr_nombre_modulo"].ToString();
+                    string nombre = reader[columna].ToString();
                     datos.Add(nombre);
                 }
             }

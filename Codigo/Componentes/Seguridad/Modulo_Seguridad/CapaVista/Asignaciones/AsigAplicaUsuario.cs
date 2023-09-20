@@ -21,43 +21,22 @@ namespace CapaVista.Asignaciones
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string tabla = "tbl_USUARIOS_APLICACIONES";
-
-            string nombreUsuario = comboBox1.SelectedItem.ToString();
-            string aplicacion = comboBox2.SelectedItem.ToString();
-
-            Dictionary<string, object> valores = new Dictionary<string, object>
-            {
-                { "Nombre", nombreUsuario },
-                { "Aplicacion", aplicacion }
-            };
-
-            Controlador controlador = new Controlador();
-            bool exito = controlador.GuardarDatos(tabla, valores);
-
-            if (exito)
-            {
-
-                dataGridView1.Rows.Add(nombreUsuario, aplicacion);
-                MessageBox.Show("Los datos se han guardado correctamente.");
-            }
-            else
-            {
-                MessageBox.Show("Error al guardar los datos.");
-            }
+            int n = dataGridView1.Rows.Add();
+            dataGridView1.Rows[n].Cells[0].Value = comboBox1.SelectedItem;
+            dataGridView1.Rows[n].Cells[1].Value = comboBox3.SelectedItem; 
         }
 
         public void LlenarCombo()
         {
-
-            List<string> datos = cn.ObtenerDatos();
+            List<string> datos = cn.ObtenerDatos("nbr_username_usuario", "tbl_usuario");
+            List<string> datos2 = cn.ObtenerDatos("nbr_nombre_modulo","tbl_modulo");
+            List<string> datos3 = cn.ObtenerDatos("nbr_nombre_aplicacion", "tbl_aplicacion");
             comboBox1.Items.Clear();
             comboBox1.Items.AddRange(datos.ToArray());
             comboBox2.Items.Clear();
-            comboBox2.Items.AddRange(datos.ToArray());
+            comboBox2.Items.AddRange(datos2.ToArray());
             comboBox3.Items.Clear();
-            comboBox3.Items.AddRange(datos.ToArray());
-
+            comboBox3.Items.AddRange(datos3.ToArray());
 
         }
 
@@ -83,47 +62,72 @@ namespace CapaVista.Asignaciones
 
         private void button2_Click(object sender, EventArgs e)
         {
-            /*mas tarde para insercion
-            int a = dataGridView1.RowCount;
-
-            for (int i = 1; i <= a; i++)
+            bool exito = true;
+            for (int i = 0; i < dataGridView1.Rows.Count; i++)
             {
+                string FK_Usuario = "";
+                string FK_Aplicacion = "";
 
+                //BUSQUEDA USUARIO
+                string dato = Convert.ToString(dataGridView1.Rows[i].Cells["dgv_columna_Usuarios"].Value);
+                string tabla = "tbl_usuario";
+                string columna = "nbr_username_usuario";
+
+
+                DataTable dt = cn.Buscar(tabla, columna, dato);
+
+                if (dt.Rows.Count > 0)
+                {
+                    DataRow row = dt.Rows[0]; // Tomamos la primera fila (si hay resultados)
+                                              // Llenamos los controles con los valores del resultado
+                    FK_Usuario = row["PK_id_usuario"].ToString();
+                }
+
+                //BUSQUEDA APLICACION
+
+                string dato2 = Convert.ToString(dataGridView1.Rows[i].Cells["dgv_columna_Aplicacion"].Value);
+                string tabla2 = "tbl_aplicacion";
+                string columna2 = "nbr_nombre_aplicacion";
+                DataTable dt2 = cn.Buscar(tabla2, columna2, dato2);
+
+                if (dt.Rows.Count > 0)
+                {
+                    DataRow row = dt2.Rows[0]; // Tomamos la primera fila (si hay resultados)
+                                               // Llenamos los controles con los valores del resultado
+                    FK_Aplicacion = row["PK_id_aplicacion"].ToString();
+                }
+
+
+                // INGRESO DE DATOS A TABLA TBL_USUARIO_APLICACION
+                string tabla1 = "tbl_usuario_aplicacion";
+                Dictionary<string, object> valores = new Dictionary<string, object>();
+                Controlador controlador = new Controlador();
+
+                valores.Add("FK_id_usuario", FK_Usuario);
+                valores.Add("FK_id_aplicacion", FK_Aplicacion);
+                valores.Add("nbr_ingresar", Convert.ToInt64(dataGridView1.Rows[i].Cells["dgv_columna_Ingresar"].Value));
+                valores.Add("nbr_consulta", Convert.ToInt64(dataGridView1.Rows[i].Cells["dgv_columna_consultar"].Value));
+                valores.Add("nbr_modificar", Convert.ToInt64(dataGridView1.Rows[i].Cells["dgv_columna_Modificar"].Value));
+                valores.Add("nbr_eliminar", Convert.ToInt64(dataGridView1.Rows[i].Cells["dgv_columna_Eliminar"].Value));
+                valores.Add("nbr_imprimir", Convert.ToInt64(dataGridView1.Rows[i].Cells["dgv_columna_Imprimir"].Value));
+                exito = controlador.GuardarDatos(tabla1, valores);
             }
-            */
 
-            /* string tabla = "tbl_usuario_aplicacion";
-
-             Dictionary<string, object> valores = new Dictionary<string, object>
-             {
-                 { "Nombre", nombreUsuario },
-                 { "Aplicacion", aplicacion }
-
-             };
-
-             Controlador controlador = new Controlador();
-             bool exito = controlador.GuardarDatos(tabla, valores);
-
-             if (exito)
-             {
-
-                 dataGridView1.Rows.Add(nombreUsuario, aplicacion);
-                 MessageBox.Show("Los datos se han guardado correctamente.");
-             }
-             else
-             {
-                 MessageBox.Show("Error al guardar los datos.");
-             }
-             */
-
-            //int hola = dataGridView1.GetCellCount
-            /*int[] valoresCasillas = new int[2];
-            for (int i = 2; i < 2; i++)
+            if (exito == true)
             {
-                DataGridViewCheckBoxCell casilla = dataGridView1.Rows[0].Cells[i] as DataGridViewCheckBoxCell;
-                valoresCasillas[i] = (Convert.ToBoolean(casilla.Value)) ? 1 : 0;
-                MessageBox.Show("" + valoresCasillas[i]);
-            }*/
+                MessageBox.Show("Los datos se han ingresado correctamente");
+            }
+            else
+            {
+                MessageBox.Show("Hubo un problema al ingresar los datos");
+            }
+
         }
+
+            
+          
+
+            
+        
     }
 }
