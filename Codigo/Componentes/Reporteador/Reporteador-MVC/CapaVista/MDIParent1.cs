@@ -49,5 +49,12 @@ namespace CapaVista
             prueba.Show();
 
         }
+
+        private void reporte2ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            prueba2 prueba = new prueba2();
+            prueba.MdiParent = this;
+            prueba.Show();
+        }
     }
 }

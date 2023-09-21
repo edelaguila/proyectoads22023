@@ -52,3 +52,12 @@ C:\Users\Luis\Desktop\Nueva carpeta\proyectoads22023\Codigo\Componentes\Reportea
 C:\Users\Luis\Desktop\Nueva carpeta\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
 C:\Users\Luis\Desktop\Nueva carpeta\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.dll
 C:\Users\Luis\Desktop\Nueva carpeta\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.pdb
+D:\Escritorio\Prueba cambios\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\bin\Debug\CapaControlador.dll
+D:\Escritorio\Prueba cambios\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\bin\Debug\CapaControlador.pdb
+D:\Escritorio\Prueba cambios\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\bin\Debug\CapaModelo.dll
+D:\Escritorio\Prueba cambios\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\bin\Debug\CapaModelo.pdb
+D:\Escritorio\Prueba cambios\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.csproj.AssemblyReference.cache
+D:\Escritorio\Prueba cambios\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.csproj.CoreCompileInputs.cache
+D:\Escritorio\Prueba cambios\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
+D:\Escritorio\Prueba cambios\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.dll
+D:\Escritorio\Prueba cambios\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.pdb
