@@ -47,14 +47,12 @@ namespace CapaControlador
         {
             return sn.ObtenerDatos(columna, tabla);
         }
-        /*//carlos enrique
-        public DataTable llenarTblBitacora(string tabla)
+
+        //Erick Ramirez
+        public DataTable FillBitacora()// 
         {
-            OdbcDataAdapter dt = sn.llenarTblBitacora(tabla);
-            DataTable table = new DataTable();
-            dt.Fill(table);
-            return table;
-        }*/
+            return sn.llenarTblBitacora();
+        }
 
         public DataTable Llenardatagrid(string dato)
         {
