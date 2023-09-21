@@ -18,7 +18,7 @@ namespace CapaVista.Componentes.Utilidades
         }
         public utilidadesConsultasI()
         {
-            
+
         }
         public void guardarReservacion(Form child)
         {
@@ -86,10 +86,10 @@ namespace CapaVista.Componentes.Utilidades
                     string tag = c.Tag.ToString();
                     if (columns.Contains(tag))
                     {
-                     
+
                         DateTimePicker dateTimePicker = c as DateTimePicker;
                         DateTime fechaHora = dateTimePicker.Value;
-                        dictionary.Add(tag, fechaHora.ToString("yyyy-MM-dd"));  
+                        dictionary.Add(tag, fechaHora.ToString("yyyy-MM-dd"));
                     }
                 }
             }
@@ -97,6 +97,27 @@ namespace CapaVista.Componentes.Utilidades
             MessageBox.Show("INVENTARIO GUARDADO");
         }
 
+        public void guardarEmpleado(Form child)
+        {
+            ControladorEmpleado cEmple = new ControladorEmpleado();
+            var dictionary = new Dictionary<string, string>();
+            List<string> columns = this.ctrNav.getColumns("tbl_empleado");
+
+            foreach (Control c in child.Controls)
+            {
+                if (c is TextBox)
+                {
+                    string tag = c.Tag.ToString();
+                    if (columns.Contains(tag))
+                    {
+                        dictionary.Add(tag, c.Text);
+                    }
+                    c.Text = "";
+                }
+            }
+            cEmple.agregarEmpleado(dictionary);
+            MessageBox.Show("Empleado Creado Correctamente");
+        }
 
     }
 }

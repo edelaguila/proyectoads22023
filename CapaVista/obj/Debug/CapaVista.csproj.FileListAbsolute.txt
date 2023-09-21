@@ -67,3 +67,9 @@ C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Debug\C
 C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Debug\CapaVista.Formularios.frmEmpleado.resources
 C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Debug\CapaVista.Formularios.frmInventario.resources
 C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Debug\CapaVista.Formularios.frmVisualizarInventario.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Debug\CapaVista.Formularios.ConsultasConsultas.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Debug\CapaVista.Formularios.frmEmpleado.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Debug\CapaVista.Formularios.frmInventario.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Debug\CapaVista.Formularios.frmVisualizarInventario.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Debug\CapaVista.Login.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Debug\CapaVista.Registro.resources

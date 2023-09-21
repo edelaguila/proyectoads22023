@@ -11,8 +11,9 @@ namespace CapaModelo
     {
         private string tabla;
 
-        public SentenciasInventario(){
-            this.tabla = "tbl_INVENTARIO";
+        public SentenciasInventario()
+        {
+            this.tabla = "tbl_inventario";
 
         }
         Conexion con = new Conexion();

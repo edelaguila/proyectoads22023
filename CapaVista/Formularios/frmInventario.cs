@@ -23,7 +23,7 @@ namespace CapaVista.Formularios
         public frmInventario()
         {
             InitializeComponent();
-            this.ctrInv= new ControladorInventario();
+            this.ctrInv = new ControladorInventario();
             utilConsultasI = new utilidadesConsultasI();
         }
 
@@ -48,7 +48,7 @@ namespace CapaVista.Formularios
             }
         }
 
-        private void btn_guardar_inv_Click(object sender, EventArgs e)
+        public void guardar()
         {
             try
             {
@@ -61,6 +61,11 @@ namespace CapaVista.Formularios
 
             }
         }
+
+        private void btn_guardar_inv_Click(object sender, EventArgs e)
+        {
+
+        }
     }
-    }
+}
 

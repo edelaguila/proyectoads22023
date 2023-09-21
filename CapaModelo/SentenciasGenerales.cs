@@ -11,7 +11,7 @@ namespace CapaModelo
     public class SentenciasGenerales
     {
         protected Conexion conn;
-        private static string baseDatos = "pruebas";
+        private static string baseDatos = "bd_navegador";
         public SentenciasGenerales()
         {
             this.conn = new Conexion();
@@ -41,11 +41,11 @@ namespace CapaModelo
 
         public string getQuery(Dictionary<string, string> parameters, string tabla)
         {
-            
+
             List<string> columns = this.getColumns(tabla);
             string _columns = this.getColumnsQuery(parameters, columns);
             //Se deberia cambiar la tabla a usuarios para el ingreso de datos y la creacion de roles
-            string sql = "INSERT INTO tbl_inventario " + _columns + " VALUES (";
+            string sql = "INSERT INTO " + tabla + " " + _columns + " VALUES (";
             foreach (string col in columns)
             {
                 if (parameters.Keys.Contains(col))

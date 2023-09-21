@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControladorEmpleado.cs" />
     <Compile Include="ControladorInventario.cs" />
     <Compile Include="ControladorLogin.cs" />
     <Compile Include="ControladorNavegador.cs" />
