@@ -56,5 +56,9 @@ namespace CapaControlador
             return table;
         }*/
 
+        public DataTable Llenardatagrid(string dato)
+        {
+            return sn.LlenaDGV(dato);
+        }
     }
 }

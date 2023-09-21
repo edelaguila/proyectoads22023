@@ -143,5 +143,15 @@ namespace CapaModelo
             }
             return datos;
         }
+
+        //BUSQUEDA IDPERFIL
+        public DataTable LlenaDGV(string dato)
+        {
+            string consulta = $"SELECT up.FK_id_perfil AS ID_Perfil_Usuario, pe.nbr_nombre_perfil AS Nombre_Perfil FROM tbl_usuario_perfil AS up INNER JOIN tbl_perfil_encabezado AS pe ON up.FK_id_perfil = pe.PK_id_perfil WHERE up.FK_id_usuario = '{dato}';";
+            OdbcDataAdapter datos = new OdbcDataAdapter(consulta, con.conexion());
+            DataTable dt = new DataTable();
+            datos.Fill(dt);
+            return dt;
+        }
     }
 }
