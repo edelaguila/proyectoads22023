@@ -16,18 +16,22 @@ namespace CapaVista.Asignaciones
         public AsigAplicaUsuario()
         {
             InitializeComponent();
+            //Jonathan Arriaga
             LlenarCombo();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //Jonathan Arriaga
             int n = dataGridView1.Rows.Add();
             dataGridView1.Rows[n].Cells[0].Value = comboBox1.SelectedItem;
             dataGridView1.Rows[n].Cells[1].Value = comboBox3.SelectedItem; 
         }
 
+        //Jonathan Arriaga
         public void LlenarCombo()
         {
+            //Jonathan Arriaga
             List<string> datos = cn.ObtenerDatos("nbr_username_usuario", "tbl_usuario");
             List<string> datos2 = cn.ObtenerDatos("nbr_nombre_modulo","tbl_modulo");
             List<string> datos3 = cn.ObtenerDatos("nbr_nombre_aplicacion", "tbl_aplicacion");
@@ -40,28 +44,18 @@ namespace CapaVista.Asignaciones
 
         }
 
+        ////Jonathan Arriaga
         Controlador cn = new Controlador();
-
-        public void EliminarDato(string tabla, string columna, string valor)
-        {
-            bool eliminado = cn.Eliminar(tabla, columna, valor);
-            if (eliminado)
-            {
-                MessageBox.Show("Registro eliminado correctamente.");
-            }
-            else
-            {
-                MessageBox.Show($"No se pudo eliminar el registro. Verifique el {columna}.");
-            }
-        }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            //Jonathan Arriaga
             this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //Jonathan Arriaga
             bool exito = true;
             for (int i = 0; i < dataGridView1.Rows.Count; i++)
             {
@@ -124,10 +118,9 @@ namespace CapaVista.Asignaciones
 
         }
 
-            
-          
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
-            
-        
+        }
     }
 }

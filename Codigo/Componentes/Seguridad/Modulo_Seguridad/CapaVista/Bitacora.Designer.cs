@@ -54,6 +54,7 @@ namespace CapaVista
             this.dtTabla.Name = "dtTabla";
             this.dtTabla.Size = new System.Drawing.Size(629, 294);
             this.dtTabla.TabIndex = 10;
+            this.dtTabla.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtTabla_CellContentClick);
             // 
             // Bitacora
             // 

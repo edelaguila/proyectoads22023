@@ -15,10 +15,10 @@ namespace CapaVista
         public Bitacora()
         {
             InitializeComponent();
-            actualizardatagriew();
+            //actualizardatagriew();
         }
 
-        string bitacora = "tbl_perfil_encabezado";
+        /*string bitacora = "tbl_perfil_encabezado";
 
         Controlador cn = new Controlador();
         public void actualizardatagriew()
@@ -26,9 +26,14 @@ namespace CapaVista
             DataTable dt = cn.llenarTblBitacora(bitacora);
             dtTabla.DataSource = dt;
 
-        }
+        }*/
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtTabla_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
