@@ -71,6 +71,9 @@ namespace CapaVista.Mantenimiento
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //Erick Ramirez
+            cn.datosBitacora("btn_buscar_MantModulos", "tbl_modulo");
+
             //carlos enrique
             Buscar();
         }
@@ -78,6 +81,9 @@ namespace CapaVista.Mantenimiento
         private void button3_Click(object sender, EventArgs e)
         {
             //BOTON GUARDAR
+            //Erick Ramirez
+            cn.datosBitacora("btn_ingresar_MantModulos", "tbl_modulo");
+
             //Justin Pennant
             string tabla = "tbl_modulo";
             Dictionary<string, object> valores = new Dictionary<string, object>();
@@ -123,16 +129,23 @@ namespace CapaVista.Mantenimiento
         private void button2_Click(object sender, EventArgs e)
         {
             //BOTON NUEVO
+            //Erick Ramirez
+            cn.datosBitacora("btn_nuevo_MantModulos", "tbl_modulo");
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             //BOTON ACTUALIZAR
+            //Erick Ramirez
+            cn.datosBitacora("btn_actualizar_MantModulos", "tbl_modulo");
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             //BOTON MODIFICAR
+            //Erick Ramirez
+            cn.datosBitacora("btn_modificar_MantModulos", "tbl_modulo");
+
             //Justin Pennant
             string tabla = "tbl_modulo";
             Dictionary<string, object> valores = new Dictionary<string, object>();
@@ -182,6 +195,9 @@ namespace CapaVista.Mantenimiento
         private void button6_Click(object sender, EventArgs e)
         {
             //BOTON ELIMINAR
+            //Erick Ramirez
+            cn.datosBitacora("btn_eliminar_MantModulos", "tbl_modulo");
+
             //Justin Pennant
             string valor = textBox1.Text;
 
@@ -204,11 +220,15 @@ namespace CapaVista.Mantenimiento
         private void button7_Click(object sender, EventArgs e)
         {
             //BOTON SALIR
+            //Erick Ramirez
+            cn.datosBitacora("btn_salir_MantModulos", "tbl_modulo");
             this.Hide();
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
+            //Erick Ramirez
+            cn.datosBitacora("btn_ayuda_MantModulos", "tbl_modulo");
             Help.ShowHelp(this, "ComponenteSeguridadAyuda/AyudaSeguridad.chm", "Mantenimiento.html");
         }
     }

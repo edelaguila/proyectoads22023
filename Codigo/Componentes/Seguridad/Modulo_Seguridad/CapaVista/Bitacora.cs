@@ -50,6 +50,8 @@ namespace CapaVista
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //Erick Ramirez
+            cn.datosBitacora("btn_ayuda_Bitacora", "tbl_bitacora");
             //Justin Pennant
             Help.ShowHelp(this, "ComponenteSeguridadAyuda/AyudaSeguridad.chm", "Reportes.html");
             //Help.ShowHelp(this, "C:/Users/rayju/OneDrive/Escritorio/GitHub AnotherWork/proyectoads22023/Codigo/Componentes/Seguridad/Modulo_Seguridad/CapaVista/bin/Debug/ComponenteSeguridadAyuda/AyudaSeguridad.chm", "Ayuda.html");
@@ -57,13 +59,21 @@ namespace CapaVista
 
         private void button2_Click(object sender, EventArgs e)
         {
+            cn.datosBitacora("btn_actualizar_Bitacora", "tbl_bitacora");
             columnBita();
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            cn.datosBitacora("btn_salir_Bitacora", "tbl_bitacora");
             //Erick Ramirez
             this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            cn.datosBitacora("btn_Insertar en bitacora","tbl_bitacora");
         }
     }
 }

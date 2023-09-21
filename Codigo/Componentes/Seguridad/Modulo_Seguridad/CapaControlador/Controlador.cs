@@ -54,9 +54,16 @@ namespace CapaControlador
             return sn.llenarTblBitacora();
         }
 
+        //Erick Ramirez
         public DataTable Llenardatagrid(string dato)
         {
             return sn.LlenaDGV(dato);
+        }
+
+        //Erick Ramirez
+        public bool datosBitacora(string accion, string tabla)
+        {
+            return sn.datosBitacora(accion, tabla);
         }
     }
 }

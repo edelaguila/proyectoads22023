@@ -76,13 +76,16 @@ namespace CapaVista.Mantenimiento
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //Erick Ramirez
+            cn.datosBitacora("btn_buscar_MantPerfiles", "tbl_perfil_encabezado");
             //carlos enrique
             Buscar();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            //Erick Ramirez
+            cn.datosBitacora("btn_ingresar_MantPerfiles", "tbl_perfil_encabezado");
             //BOTON GUARDAR
             //Carlos enrique
             string tabla = "tbl_perfil_encabezado";
@@ -131,6 +134,9 @@ namespace CapaVista.Mantenimiento
 
         private void btn_modificar_Click(object sender, EventArgs e)
         {
+            //Erick Ramirez
+            cn.datosBitacora("btn_modificar_MantPerfiles", "tbl_perfil_encabezado");
+
             //carlos enrique 
             string tabla = "tbl_perfil_encabezado";
             Dictionary<string, object> valores = new Dictionary<string, object>();
@@ -178,11 +184,15 @@ namespace CapaVista.Mantenimiento
 
         private void btn_actualizar_Click(object sender, EventArgs e)
         {
-
+            //Erick Ramirez
+            cn.datosBitacora("btn_actualizar_MantPerfiles", "tbl_perfil_encabezado");
         }
 
         private void btn_cancelar_Click(object sender, EventArgs e)
         {
+            //Erick Ramirez
+            cn.datosBitacora("btn_eliminar_MantPerfiles", "tbl_perfil_encabezado");
+
             //carlos enrique
             string valor = txt_busqueda.Text;
 
@@ -203,12 +213,23 @@ namespace CapaVista.Mantenimiento
 
         private void btn_salir_Click(object sender, EventArgs e)
         {
+            //Erick Ramirez
+            cn.datosBitacora("btn_salir_MantPerfiles", "tbl_perfil_encabezado");
+
             this.Hide();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
+            //Erick Ramirez
+            cn.datosBitacora("btn_ayuda_MantPerfiles", "tbl_perfil_encabezado");
             Help.ShowHelp(this, "ComponenteSeguridadAyuda/AyudaSeguridad.chm", "Mantenimiento.html");
+        }
+
+        private void btn_nuevo_Click(object sender, EventArgs e)
+        {
+            //Erick Ramirez
+            cn.datosBitacora("btn_nuevo_MantPerfiles", "tbl_perfil_encabezado");
         }
     }
 }

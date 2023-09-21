@@ -28,6 +28,8 @@ namespace CapaVista.Asignaciones
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //Erick Ramirez
+            cn.datosBitacora("btn_agregar_AsigAplicaPerfiles", "tbl_perfil_detalle");
             //Erick Ramireez
             int n = dataGridView1.Rows.Add();
             dataGridView1.Rows[n].Cells[0].Value = comboBox1.SelectedItem;
@@ -59,6 +61,9 @@ namespace CapaVista.Asignaciones
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //Erick Ramirez
+            cn.datosBitacora("btn_finalizar_AsigAplicaPerfiles", "tbl_perfil_detalle");
+
             //Erick Ramirez
             bool exito = true;
             for (int i = 0; i < dataGridView1.Rows.Count; i++)
@@ -124,11 +129,15 @@ namespace CapaVista.Asignaciones
         private void button3_Click(object sender, EventArgs e)
         {
             //Erick Ramirez
+            cn.datosBitacora("btn_salir_AsigAplicaPerfiles", "tbl_perfil_detalle");
+            //Erick Ramirez
             this.Hide();
         }
 
         private void button4_Click_1(object sender, EventArgs e)
         {
+            //Erick Ramirez
+            cn.datosBitacora("btn_ayuda_AsigAplicaPerfiles", "tbl_perfil_detalle");
             Help.ShowHelp(this, "ComponenteSeguridadAyuda/AyudaSeguridad.chm", "Procesos.html");
         }
     }

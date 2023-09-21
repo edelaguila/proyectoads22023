@@ -70,12 +70,16 @@ namespace CapaVista
 
         private void button3_Click(object sender, EventArgs e)
         {
+            //Erick Ramirez
+            cn.datosBitacora("btn_ayuda_CambioContra", "tbl_usuario");
             Help.ShowHelp(this, "ComponenteSeguridadAyuda/AyudaSeguridad.chm", "Seguridad.html");
             //Help.ShowHelp(this, "C:/Users/rayju/OneDrive/Escritorio/GitHub AnotherWork/proyectoads22023/Codigo/Componentes/Seguridad/Modulo_Seguridad/CapaVista/bin/Debug/ComponenteSeguridadAyuda/AyudaSeguridad.chm", "Ayuda.html");
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //Erick Ramirez
+            cn.datosBitacora("btn_buscar_CambioContra", "tbl_usuario");
             Buscar();
         }
 
@@ -93,6 +97,8 @@ namespace CapaVista
 
         private void button4_Click(object sender, EventArgs e)
         {
+            //Erick Ramirez
+            cn.datosBitacora("btn_modificar_CambioContra", "tbl_usuario");
             //Erick Ramirez
             //BOTON MODIFICAR
             string tabla = "tbl_usuario";
@@ -129,6 +135,13 @@ namespace CapaVista
             {
                 MessageBox.Show("Error al modificar los datos.");
             }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            //Erick Ramirez
+            cn.datosBitacora("btn_salir_CambioContra", "tbl_usuario");
+            this.Hide();
         }
     }
 }

@@ -82,12 +82,18 @@ namespace CapaVista
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //Erick Ramirez
+            cn.datosBitacora("btn_buscar_MantUsuario", "tbl_usuario");
+
             //carlos enrique
             Buscar();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            //Erick Ramirez
+            cn.datosBitacora("btn_eliminar_MantUsuario", "tbl_usuario");
+
             //carlos enrique
             string valor = textBox1.Text;
 
@@ -113,11 +119,15 @@ namespace CapaVista
 
         private void button6_Click(object sender, EventArgs e)
         {
+            //Erick Ramirez
+            cn.datosBitacora("btn_salir_MantUsuario", "tbl_usuario");
             this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //Erick Ramirez
+            cn.datosBitacora("btn_guardar_MantUsuario", "tbl_usuario");
             string tabla = "tbl_usuario";
             Dictionary<string, object> valores = new Dictionary<string, object>();
             Controlador controlador = new Controlador();
@@ -137,7 +147,6 @@ namespace CapaVista
             {
                 valores.Add("nbr_estado_usuario", 0);
             }
-
 
             bool exito = controlador.GuardarDatos(tabla, valores);
 
@@ -171,11 +180,16 @@ namespace CapaVista
 
         private void button3_Click(object sender, EventArgs e)
         {
+            //Erick Ramirez
+            cn.datosBitacora("btn_nuevo_MantUsuario", "tbl_usuario");
             //BOTON NUEVO
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+            //Erick Ramirez
+            cn.datosBitacora("btn_modificar_MantUsuario", "tbl_usuario");
+
             //BOTON MODIFICAR
             string tabla = "tbl_usuario";
             Dictionary<string, object> valores = new Dictionary<string, object>();
@@ -240,6 +254,8 @@ namespace CapaVista
 
         private void button7_Click(object sender, EventArgs e)
         {
+            //Erick Ramirez
+            cn.datosBitacora("btn_ayuda_MantUsuario", "tbl_usuario");
             Help.ShowHelp(this, "ComponenteSeguridadAyuda/AyudaSeguridad.chm", "Mantenimiento.html");
             //Help.ShowHelp(this, "C:/Users/rayju/OneDrive/Escritorio/GitHub AnotherWork/proyectoads22023/Codigo/Componentes/Seguridad/Modulo_Seguridad/CapaVista/bin/Debug/ComponenteSeguridadAyuda/AyudaSeguridad.chm", "Ayuda.html");
         }
