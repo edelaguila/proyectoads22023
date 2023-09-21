@@ -46,3 +46,19 @@ C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Ejecutable\obj\Release\Ejecut
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.CopyComplete
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Ejecutable\obj\Release\Ejecutable.exe
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Ejecutable\obj\Release\Ejecutable.pdb
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\bin\Release\Ejecutable.exe.config
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\bin\Release\Ejecutable.exe
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\bin\Release\Ejecutable.pdb
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\bin\Release\CapaVista.dll
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\bin\Release\CapaControlador.dll
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\bin\Release\CapaModelo.dll
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\bin\Release\CapaVista.pdb
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\bin\Release\CapaControlador.pdb
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\bin\Release\CapaModelo.pdb
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.AssemblyReference.cache
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\obj\Release\Ejecutable.Properties.Resources.resources
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.GenerateResource.cache
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.CoreCompileInputs.cache
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.CopyComplete
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\obj\Release\Ejecutable.exe
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\obj\Release\Ejecutable.pdb
