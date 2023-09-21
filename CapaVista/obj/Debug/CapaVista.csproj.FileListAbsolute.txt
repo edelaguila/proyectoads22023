@@ -63,3 +63,7 @@ C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Debug\CapaVista
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Debug\CapaVista.dll
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Debug\CapaVista.Formularios.ConsultasConsultas.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Debug\CapaVista.Formularios.frmEmpleado.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Debug\CapaVista.Formularios.frmInventario.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Debug\CapaVista.Formularios.frmVisualizarInventario.resources
