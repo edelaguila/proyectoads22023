@@ -138,12 +138,14 @@ namespace CapaVista
             this.reporte3ToolStripMenuItem.Name = "reporte3ToolStripMenuItem";
             this.reporte3ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.reporte3ToolStripMenuItem.Text = "Reporte 3";
+            this.reporte3ToolStripMenuItem.Click += new System.EventHandler(this.reporte3ToolStripMenuItem_Click);
             // 
             // reporte4ToolStripMenuItem
             // 
             this.reporte4ToolStripMenuItem.Name = "reporte4ToolStripMenuItem";
             this.reporte4ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.reporte4ToolStripMenuItem.Text = "Reporte 4";
+            this.reporte4ToolStripMenuItem.Click += new System.EventHandler(this.reporte4ToolStripMenuItem_Click);
             // 
             // reporte2ToolStripMenuItem
             // 
