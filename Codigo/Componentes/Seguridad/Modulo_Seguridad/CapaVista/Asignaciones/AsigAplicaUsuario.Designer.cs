@@ -32,6 +32,13 @@ namespace CapaVista.Asignaciones
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_columna_Usuarios = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_columna_Aplicacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_columna_Ingresar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dgv_columna_consultar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dgv_columna_Modificar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dgv_columna_Eliminar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dgv_columna_Imprimir = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -41,13 +48,6 @@ namespace CapaVista.Asignaciones
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dgv_columna_Usuarios = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_columna_Aplicacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_columna_Ingresar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dgv_columna_consultar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dgv_columna_Modificar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dgv_columna_Eliminar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dgv_columna_Imprimir = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -89,6 +89,56 @@ namespace CapaVista.Asignaciones
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(803, 270);
             this.dataGridView1.TabIndex = 7;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // dgv_columna_Usuarios
+            // 
+            this.dgv_columna_Usuarios.HeaderText = "Usuarios";
+            this.dgv_columna_Usuarios.MinimumWidth = 6;
+            this.dgv_columna_Usuarios.Name = "dgv_columna_Usuarios";
+            this.dgv_columna_Usuarios.Width = 125;
+            // 
+            // dgv_columna_Aplicacion
+            // 
+            this.dgv_columna_Aplicacion.HeaderText = "Aplicacion";
+            this.dgv_columna_Aplicacion.MinimumWidth = 6;
+            this.dgv_columna_Aplicacion.Name = "dgv_columna_Aplicacion";
+            this.dgv_columna_Aplicacion.Width = 125;
+            // 
+            // dgv_columna_Ingresar
+            // 
+            this.dgv_columna_Ingresar.HeaderText = "Ingresar";
+            this.dgv_columna_Ingresar.MinimumWidth = 6;
+            this.dgv_columna_Ingresar.Name = "dgv_columna_Ingresar";
+            this.dgv_columna_Ingresar.Width = 125;
+            // 
+            // dgv_columna_consultar
+            // 
+            this.dgv_columna_consultar.HeaderText = "Consultar";
+            this.dgv_columna_consultar.MinimumWidth = 6;
+            this.dgv_columna_consultar.Name = "dgv_columna_consultar";
+            this.dgv_columna_consultar.Width = 125;
+            // 
+            // dgv_columna_Modificar
+            // 
+            this.dgv_columna_Modificar.HeaderText = "Modificar";
+            this.dgv_columna_Modificar.MinimumWidth = 6;
+            this.dgv_columna_Modificar.Name = "dgv_columna_Modificar";
+            this.dgv_columna_Modificar.Width = 125;
+            // 
+            // dgv_columna_Eliminar
+            // 
+            this.dgv_columna_Eliminar.HeaderText = "Eliminar";
+            this.dgv_columna_Eliminar.MinimumWidth = 6;
+            this.dgv_columna_Eliminar.Name = "dgv_columna_Eliminar";
+            this.dgv_columna_Eliminar.Width = 125;
+            // 
+            // dgv_columna_Imprimir
+            // 
+            this.dgv_columna_Imprimir.HeaderText = "Imprimir";
+            this.dgv_columna_Imprimir.MinimumWidth = 6;
+            this.dgv_columna_Imprimir.Name = "dgv_columna_Imprimir";
+            this.dgv_columna_Imprimir.Width = 125;
             // 
             // label1
             // 
@@ -178,55 +228,6 @@ namespace CapaVista.Asignaciones
             this.label2.Size = new System.Drawing.Size(48, 13);
             this.label2.TabIndex = 0;
             this.label2.Text = "Usuarios";
-            // 
-            // dgv_columna_Usuarios
-            // 
-            this.dgv_columna_Usuarios.HeaderText = "Usuarios";
-            this.dgv_columna_Usuarios.MinimumWidth = 6;
-            this.dgv_columna_Usuarios.Name = "dgv_columna_Usuarios";
-            this.dgv_columna_Usuarios.Width = 125;
-            // 
-            // dgv_columna_Aplicacion
-            // 
-            this.dgv_columna_Aplicacion.HeaderText = "Aplicacion";
-            this.dgv_columna_Aplicacion.MinimumWidth = 6;
-            this.dgv_columna_Aplicacion.Name = "dgv_columna_Aplicacion";
-            this.dgv_columna_Aplicacion.Width = 125;
-            // 
-            // dgv_columna_Ingresar
-            // 
-            this.dgv_columna_Ingresar.HeaderText = "Ingresar";
-            this.dgv_columna_Ingresar.MinimumWidth = 6;
-            this.dgv_columna_Ingresar.Name = "dgv_columna_Ingresar";
-            this.dgv_columna_Ingresar.Width = 125;
-            // 
-            // dgv_columna_consultar
-            // 
-            this.dgv_columna_consultar.HeaderText = "Consultar";
-            this.dgv_columna_consultar.MinimumWidth = 6;
-            this.dgv_columna_consultar.Name = "dgv_columna_consultar";
-            this.dgv_columna_consultar.Width = 125;
-            // 
-            // dgv_columna_Modificar
-            // 
-            this.dgv_columna_Modificar.HeaderText = "Modificar";
-            this.dgv_columna_Modificar.MinimumWidth = 6;
-            this.dgv_columna_Modificar.Name = "dgv_columna_Modificar";
-            this.dgv_columna_Modificar.Width = 125;
-            // 
-            // dgv_columna_Eliminar
-            // 
-            this.dgv_columna_Eliminar.HeaderText = "Eliminar";
-            this.dgv_columna_Eliminar.MinimumWidth = 6;
-            this.dgv_columna_Eliminar.Name = "dgv_columna_Eliminar";
-            this.dgv_columna_Eliminar.Width = 125;
-            // 
-            // dgv_columna_Imprimir
-            // 
-            this.dgv_columna_Imprimir.HeaderText = "Imprimir";
-            this.dgv_columna_Imprimir.MinimumWidth = 6;
-            this.dgv_columna_Imprimir.Name = "dgv_columna_Imprimir";
-            this.dgv_columna_Imprimir.Width = 125;
             // 
             // AsigAplicaUsuario
             // 
