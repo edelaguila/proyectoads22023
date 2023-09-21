@@ -43,3 +43,4 @@ C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Debug\C
 C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
 C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Debug\CapaVista.dll
 C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Debug\CapaVista.Formularios.ConsultasConsultas.resources
