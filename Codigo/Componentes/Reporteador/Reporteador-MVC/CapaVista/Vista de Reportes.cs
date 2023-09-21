@@ -21,5 +21,20 @@ namespace Reporteador
         {
 
         }
+
+        private void CrystalReport11_InitReport(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Vista_de_Reportes_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CrystalReport11_InitReport_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
