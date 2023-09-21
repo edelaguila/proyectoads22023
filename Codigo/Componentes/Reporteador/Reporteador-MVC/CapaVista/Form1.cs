@@ -26,7 +26,7 @@ namespace Reporteador
         private void btn_imprimir_Click(object sender, EventArgs e)
         {
             // Crear una instancia del formulario "Vista de Reportes"
-            Vista_Reporte_Navegador vistaDeReportesForm = new Vista_Reporte_Navegador();
+            Vista_de_Reportes vistaDeReportesForm = new Vista_de_Reportes();
 
             // Mostrar el formulario "Vista de Reportes"
             vistaDeReportesForm.Show();
