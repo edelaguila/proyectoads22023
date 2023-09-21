@@ -25,6 +25,7 @@ C:\Users\Luis\Desktop\Reporteador\proyectoads22023\Codigo\Componentes\Reporteado
 C:\Users\Luis\Desktop\Reporteador\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
 C:\Users\Luis\Desktop\Reporteador\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.dll
 C:\Users\Luis\Desktop\Reporteador\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.pdb
+<<<<<<< HEAD
 D:\Escritorio\Proyecto\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\bin\Debug\CapaControlador.dll
 D:\Escritorio\Proyecto\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\bin\Debug\CapaControlador.pdb
 D:\Escritorio\Proyecto\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\bin\Debug\CapaModelo.dll
@@ -34,3 +35,23 @@ D:\Escritorio\Proyecto\proyectoads22023\Codigo\Componentes\Reporteador\Reportead
 D:\Escritorio\Proyecto\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
 D:\Escritorio\Proyecto\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.dll
 D:\Escritorio\Proyecto\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.pdb
+=======
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\bin\Debug\CapaControlador.dll
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\bin\Debug\CapaControlador.pdb
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\bin\Debug\CapaModelo.dll
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\bin\Debug\CapaModelo.pdb
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.csproj.AssemblyReference.cache
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.csproj.CoreCompileInputs.cache
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.dll
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.pdb
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\bin\Debug\CapaControlador.dll
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\bin\Debug\CapaControlador.pdb
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\bin\Debug\CapaModelo.dll
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\bin\Debug\CapaModelo.pdb
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.csproj.AssemblyReference.cache
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.csproj.CoreCompileInputs.cache
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.dll
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.pdb
+>>>>>>> 202afcf52c88ad1d13af68f625f8c821564c8633
