@@ -269,6 +269,7 @@
             this.btn_agregar.Text = "Agregar";
             this.btn_agregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_agregar.UseVisualStyleBackColor = false;
+            this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
             // 
             // Nav
             // 
@@ -277,7 +278,7 @@
             this.ClientSize = new System.Drawing.Size(1008, 95);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Nav";
             this.Text = "Nav";
             this.panel1.ResumeLayout(false);

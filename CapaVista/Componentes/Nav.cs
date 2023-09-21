@@ -63,5 +63,10 @@ namespace CapaVista.Componentes
         {
             Help.ShowHelp(this, "Ayudas/AyudaSO2.chm","NavAyuda.html");
         }
+
+        private void btn_agregar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
