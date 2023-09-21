@@ -41,5 +41,13 @@ namespace CapaVista
             nuevo.MdiParent = this;
             nuevo.Show();
         }
+
+        private void reporte1ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            prubacrystal prueba = new prubacrystal();
+            prueba.MdiParent = this;
+            prueba.Show();
+
+        }
     }
 }

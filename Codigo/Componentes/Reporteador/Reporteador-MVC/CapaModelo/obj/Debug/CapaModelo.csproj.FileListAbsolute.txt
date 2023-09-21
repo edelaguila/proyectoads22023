@@ -28,3 +28,9 @@ C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Rep
 C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
 C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaModelo\obj\Debug\CapaModelo.dll
 C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaModelo\obj\Debug\CapaModelo.pdb
+C:\Users\Luis\Desktop\Nueva carpeta\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaModelo\bin\Debug\CapaModelo.dll
+C:\Users\Luis\Desktop\Nueva carpeta\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaModelo\bin\Debug\CapaModelo.pdb
+C:\Users\Luis\Desktop\Nueva carpeta\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaModelo\obj\Debug\CapaModelo.csproj.AssemblyReference.cache
+C:\Users\Luis\Desktop\Nueva carpeta\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
+C:\Users\Luis\Desktop\Nueva carpeta\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaModelo\obj\Debug\CapaModelo.dll
+C:\Users\Luis\Desktop\Nueva carpeta\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaModelo\obj\Debug\CapaModelo.pdb
