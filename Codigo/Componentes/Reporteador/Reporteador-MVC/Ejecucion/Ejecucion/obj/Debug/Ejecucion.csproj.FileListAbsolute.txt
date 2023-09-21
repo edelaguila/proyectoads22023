@@ -30,6 +30,7 @@ C:\Users\Luis\Desktop\Reporteador\proyectoads22023\Codigo\Componentes\Reporteado
 C:\Users\Luis\Desktop\Reporteador\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\obj\Debug\Ejecucion.csproj.CopyComplete
 C:\Users\Luis\Desktop\Reporteador\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\obj\Debug\Ejecucion.exe
 C:\Users\Luis\Desktop\Reporteador\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\obj\Debug\Ejecucion.pdb
+<<<<<<< HEAD
 C:\Users\ixcot\Desktop\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\bin\Debug\Ejecucion.exe.config
 C:\Users\ixcot\Desktop\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\bin\Debug\Ejecucion.exe
 C:\Users\ixcot\Desktop\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\bin\Debug\Ejecucion.pdb
@@ -65,3 +66,37 @@ C:\Users\ixcot\Desktop\proyectoads22023\Codigo\Componentes\Reporteador\Reportead
 C:\Users\ixcot\Desktop\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\bin\Debug\CrystalDecisions.Windows.Forms.dll
 C:\Users\ixcot\Desktop\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\bin\Debug\AxShockwaveFlashObjects.dll
 C:\Users\ixcot\Desktop\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\bin\Debug\ShockwaveFlashObjects.dll
+=======
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\bin\Debug\Ejecucion.exe.config
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\bin\Debug\Ejecucion.exe
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\bin\Debug\Ejecucion.pdb
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\bin\Debug\CapaVista.dll
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\bin\Debug\CapaControlador.dll
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\bin\Debug\CapaModelo.dll
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\bin\Debug\CapaVista.pdb
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\bin\Debug\CapaControlador.pdb
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\bin\Debug\CapaModelo.pdb
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\obj\Debug\Ejecucion.csproj.AssemblyReference.cache
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\obj\Debug\Ejecucion.Properties.Resources.resources
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\obj\Debug\Ejecucion.csproj.GenerateResource.cache
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\obj\Debug\Ejecucion.csproj.CoreCompileInputs.cache
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\obj\Debug\Ejecucion.csproj.CopyComplete
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\obj\Debug\Ejecucion.exe
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\obj\Debug\Ejecucion.pdb
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\bin\Debug\Ejecucion.exe.config
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\bin\Debug\Ejecucion.exe
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\bin\Debug\Ejecucion.pdb
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\bin\Debug\CapaVista.dll
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\bin\Debug\CapaControlador.dll
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\bin\Debug\CapaModelo.dll
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\bin\Debug\CapaVista.pdb
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\bin\Debug\CapaControlador.pdb
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\bin\Debug\CapaModelo.pdb
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\obj\Debug\Ejecucion.csproj.AssemblyReference.cache
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\obj\Debug\Ejecucion.Properties.Resources.resources
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\obj\Debug\Ejecucion.csproj.GenerateResource.cache
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\obj\Debug\Ejecucion.csproj.CoreCompileInputs.cache
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\obj\Debug\Ejecucion.csproj.CopyComplete
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\obj\Debug\Ejecucion.exe
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\Ejecucion\Ejecucion\obj\Debug\Ejecucion.pdb
+>>>>>>> 202afcf52c88ad1d13af68f625f8c821564c8633

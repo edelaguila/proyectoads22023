@@ -46,6 +46,7 @@ C:\Users\Luis\Desktop\Reporteador\proyectoads22023\Codigo\Componentes\Reporteado
 C:\Users\Luis\Desktop\Reporteador\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\bin\Debug\CapaControlador.pdb
 C:\Users\Luis\Desktop\Reporteador\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\bin\Debug\CapaModelo.pdb
 C:\Users\Luis\Desktop\Reporteador\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
+<<<<<<< HEAD
 C:\Users\ixcot\Desktop\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\bin\Debug\CapaVista.dll
 C:\Users\ixcot\Desktop\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\bin\Debug\CapaVista.pdb
 C:\Users\ixcot\Desktop\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\bin\Debug\CapaControlador.dll
@@ -82,3 +83,39 @@ C:\Users\ixcot\Desktop\proyectoads22023\Codigo\Componentes\Reporteador\Reportead
 C:\Users\ixcot\Desktop\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\bin\Debug\stdole.dll
 C:\Users\ixcot\Desktop\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\ixcot\Desktop\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\Reporteador.Vista_Reporte_Navegador.resources
+=======
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\bin\Debug\CapaVista.dll
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\bin\Debug\CapaVista.pdb
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\bin\Debug\CapaControlador.dll
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\bin\Debug\CapaModelo.dll
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\bin\Debug\CapaControlador.pdb
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\bin\Debug\CapaModelo.pdb
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.csproj.AssemblyReference.cache
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\Reporteador.Form1.resources
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.MdiParent1.resources
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\Reporteador.Reportes.resources
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\Reporteador.Vista_de_Reportes.resources
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.csproj.GenerateResource.cache
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.dll
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\jimen\OneDrive\Escritorio\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.Properties.Resources.resources
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\bin\Debug\CapaVista.dll
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\bin\Debug\CapaVista.pdb
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\bin\Debug\CapaControlador.dll
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\bin\Debug\CapaModelo.dll
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\bin\Debug\CapaControlador.pdb
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\bin\Debug\CapaModelo.pdb
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.csproj.AssemblyReference.cache
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\Reporteador.Form1.resources
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.MdiParent1.resources
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.Properties.Resources.resources
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\Reporteador.Reportes.resources
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\Reporteador.Vista_de_Reportes.resources
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.csproj.GenerateResource.cache
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.dll
+C:\Users\Luis\Desktop\Reporteador backup\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.pdb
+>>>>>>> 202afcf52c88ad1d13af68f625f8c821564c8633

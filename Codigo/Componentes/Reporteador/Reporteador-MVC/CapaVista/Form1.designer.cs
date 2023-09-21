@@ -57,37 +57,37 @@ namespace Reporteador
             // lbl_titulo
             // 
             this.lbl_titulo.AutoSize = true;
-            this.lbl_titulo.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold);
-            this.lbl_titulo.Location = new System.Drawing.Point(395, 143);
+            this.lbl_titulo.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_titulo.Location = new System.Drawing.Point(367, 144);
             this.lbl_titulo.Name = "lbl_titulo";
-            this.lbl_titulo.Size = new System.Drawing.Size(249, 29);
+            this.lbl_titulo.Size = new System.Drawing.Size(288, 29);
             this.lbl_titulo.TabIndex = 0;
-            this.lbl_titulo.Text = "Categorias Habitación";
+            this.lbl_titulo.Text = "Categorías Habitación";
             // 
             // lbl_categoria
             // 
             this.lbl_categoria.AutoSize = true;
-            this.lbl_categoria.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.lbl_categoria.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.lbl_categoria.Location = new System.Drawing.Point(31, 198);
             this.lbl_categoria.Name = "lbl_categoria";
-            this.lbl_categoria.Size = new System.Drawing.Size(75, 19);
+            this.lbl_categoria.Size = new System.Drawing.Size(96, 21);
             this.lbl_categoria.TabIndex = 1;
-            this.lbl_categoria.Text = "Categoria";
+            this.lbl_categoria.Text = "Categoría";
             // 
             // lbl_estado
             // 
             this.lbl_estado.AutoSize = true;
-            this.lbl_estado.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.lbl_estado.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.lbl_estado.Location = new System.Drawing.Point(31, 243);
             this.lbl_estado.Name = "lbl_estado";
-            this.lbl_estado.Size = new System.Drawing.Size(55, 19);
+            this.lbl_estado.Size = new System.Drawing.Size(68, 21);
             this.lbl_estado.TabIndex = 2;
             this.lbl_estado.Text = "Estado";
             // 
             // txt_categoria
             // 
             this.txt_categoria.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.txt_categoria.Location = new System.Drawing.Point(128, 198);
+            this.txt_categoria.Location = new System.Drawing.Point(145, 198);
             this.txt_categoria.Name = "txt_categoria";
             this.txt_categoria.Size = new System.Drawing.Size(105, 27);
             this.txt_categoria.TabIndex = 3;
@@ -95,7 +95,7 @@ namespace Reporteador
             // txt_estado
             // 
             this.txt_estado.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.txt_estado.Location = new System.Drawing.Point(128, 243);
+            this.txt_estado.Location = new System.Drawing.Point(145, 243);
             this.txt_estado.Name = "txt_estado";
             this.txt_estado.Size = new System.Drawing.Size(105, 27);
             this.txt_estado.TabIndex = 4;
@@ -113,11 +113,11 @@ namespace Reporteador
             // 
             // btn_modificar
             // 
-            this.btn_modificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.btn_modificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.btn_modificar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_modificar.FlatAppearance.BorderSize = 2;
             this.btn_modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_modificar.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.btn_modificar.Font = new System.Drawing.Font("Century Gothic", 8F);
             this.btn_modificar.Image = ((System.Drawing.Image)(resources.GetObject("btn_modificar.Image")));
             this.btn_modificar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btn_modificar.Location = new System.Drawing.Point(115, 19);
@@ -130,11 +130,11 @@ namespace Reporteador
             // 
             // btn_guardar
             // 
-            this.btn_guardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.btn_guardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.btn_guardar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_guardar.FlatAppearance.BorderSize = 2;
             this.btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_guardar.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.btn_guardar.Font = new System.Drawing.Font("Century Gothic", 8F);
             this.btn_guardar.Image = ((System.Drawing.Image)(resources.GetObject("btn_guardar.Image")));
             this.btn_guardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btn_guardar.Location = new System.Drawing.Point(216, 19);
@@ -147,11 +147,11 @@ namespace Reporteador
             // 
             // btn_cancelar
             // 
-            this.btn_cancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.btn_cancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.btn_cancelar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_cancelar.FlatAppearance.BorderSize = 2;
             this.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cancelar.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.btn_cancelar.Font = new System.Drawing.Font("Century Gothic", 8F);
             this.btn_cancelar.Image = ((System.Drawing.Image)(resources.GetObject("btn_cancelar.Image")));
             this.btn_cancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btn_cancelar.Location = new System.Drawing.Point(317, 19);
@@ -164,11 +164,11 @@ namespace Reporteador
             // 
             // btn_eliminar
             // 
-            this.btn_eliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.btn_eliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.btn_eliminar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_eliminar.FlatAppearance.BorderSize = 2;
             this.btn_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_eliminar.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.btn_eliminar.Font = new System.Drawing.Font("Century Gothic", 8F);
             this.btn_eliminar.Image = ((System.Drawing.Image)(resources.GetObject("btn_eliminar.Image")));
             this.btn_eliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btn_eliminar.Location = new System.Drawing.Point(418, 19);
@@ -181,11 +181,11 @@ namespace Reporteador
             // 
             // btn_consultar
             // 
-            this.btn_consultar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.btn_consultar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.btn_consultar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_consultar.FlatAppearance.BorderSize = 2;
             this.btn_consultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_consultar.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.btn_consultar.Font = new System.Drawing.Font("Century Gothic", 8F);
             this.btn_consultar.Image = ((System.Drawing.Image)(resources.GetObject("btn_consultar.Image")));
             this.btn_consultar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btn_consultar.Location = new System.Drawing.Point(519, 19);
@@ -198,11 +198,11 @@ namespace Reporteador
             // 
             // btn_imprimir
             // 
-            this.btn_imprimir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.btn_imprimir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.btn_imprimir.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_imprimir.FlatAppearance.BorderSize = 2;
             this.btn_imprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_imprimir.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.btn_imprimir.Font = new System.Drawing.Font("Century Gothic", 8F);
             this.btn_imprimir.Image = ((System.Drawing.Image)(resources.GetObject("btn_imprimir.Image")));
             this.btn_imprimir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btn_imprimir.Location = new System.Drawing.Point(620, 19);
@@ -216,11 +216,11 @@ namespace Reporteador
             // 
             // btn_refrescar
             // 
-            this.btn_refrescar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.btn_refrescar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.btn_refrescar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_refrescar.FlatAppearance.BorderSize = 2;
             this.btn_refrescar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_refrescar.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.btn_refrescar.Font = new System.Drawing.Font("Century Gothic", 8F);
             this.btn_refrescar.Image = ((System.Drawing.Image)(resources.GetObject("btn_refrescar.Image")));
             this.btn_refrescar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btn_refrescar.Location = new System.Drawing.Point(721, 19);
@@ -233,7 +233,7 @@ namespace Reporteador
             // 
             // btn_inicio
             // 
-            this.btn_inicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.btn_inicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.btn_inicio.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_inicio.FlatAppearance.BorderSize = 2;
             this.btn_inicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -249,11 +249,11 @@ namespace Reporteador
             // 
             // btn_ayuda
             // 
-            this.btn_ayuda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.btn_ayuda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.btn_ayuda.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_ayuda.FlatAppearance.BorderSize = 2;
             this.btn_ayuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ayuda.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.btn_ayuda.Font = new System.Drawing.Font("Century Gothic", 8F);
             this.btn_ayuda.Image = ((System.Drawing.Image)(resources.GetObject("btn_ayuda.Image")));
             this.btn_ayuda.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btn_ayuda.Location = new System.Drawing.Point(822, 19);
@@ -266,7 +266,7 @@ namespace Reporteador
             // 
             // btn_anterior
             // 
-            this.btn_anterior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.btn_anterior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.btn_anterior.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_anterior.FlatAppearance.BorderSize = 2;
             this.btn_anterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -281,7 +281,7 @@ namespace Reporteador
             // 
             // btn_siguiente
             // 
-            this.btn_siguiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.btn_siguiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.btn_siguiente.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_siguiente.FlatAppearance.BorderSize = 2;
             this.btn_siguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -296,7 +296,7 @@ namespace Reporteador
             // 
             // btn_fin
             // 
-            this.btn_fin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.btn_fin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.btn_fin.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_fin.FlatAppearance.BorderSize = 2;
             this.btn_fin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -332,11 +332,11 @@ namespace Reporteador
             // 
             // btn_agregar
             // 
-            this.btn_agregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.btn_agregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.btn_agregar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_agregar.FlatAppearance.BorderSize = 2;
             this.btn_agregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_agregar.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.btn_agregar.Font = new System.Drawing.Font("Century Gothic", 8F);
             this.btn_agregar.Image = ((System.Drawing.Image)(resources.GetObject("btn_agregar.Image")));
             this.btn_agregar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btn_agregar.Location = new System.Drawing.Point(14, 19);
@@ -351,6 +351,7 @@ namespace Reporteador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
             this.ClientSize = new System.Drawing.Size(1053, 532);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgv_categorias);
