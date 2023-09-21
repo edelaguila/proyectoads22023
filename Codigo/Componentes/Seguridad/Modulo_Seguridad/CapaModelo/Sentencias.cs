@@ -130,7 +130,13 @@ namespace CapaModelo
             return fechaSistema.ToString("dd-MM-yyyy");
         }
 
-        //reutilizar el metodo de Carlos para obtener la informacion de usuario
+        public string ObtenerNombreHost()
+        {
+            string nombreHost = Dns.GetHostName();
+            return nombreHost;
+        }
+
+        //reutilizar el metodo OdbcDataAdapter llenarTblBitacora para obtener la informacion de usuario
 
 
 
