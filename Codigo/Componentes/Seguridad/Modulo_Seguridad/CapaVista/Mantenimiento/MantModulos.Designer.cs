@@ -49,6 +49,7 @@ namespace CapaVista.Mantenimiento
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -230,6 +231,7 @@ namespace CapaVista.Mantenimiento
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button8);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label1);
@@ -270,6 +272,16 @@ namespace CapaVista.Mantenimiento
             this.label1.Size = new System.Drawing.Size(67, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Buscar id";
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(839, 23);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(124, 58);
+            this.button8.TabIndex = 21;
+            this.button8.Text = "Ayuda";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // MantModulos
             // 
@@ -319,5 +331,6 @@ namespace CapaVista.Mantenimiento
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button8;
     }
 }

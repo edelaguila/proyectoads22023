@@ -35,5 +35,11 @@ namespace CapaVista
                 MessageBox.Show("Error al guardar los datos.");
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "ComponenteSeguridadAyuda/AyudaSeguridad.chm", "Seguridad.html");
+            //Help.ShowHelp(this, "C:/Users/rayju/OneDrive/Escritorio/GitHub AnotherWork/proyectoads22023/Codigo/Componentes/Seguridad/Modulo_Seguridad/CapaVista/bin/Debug/ComponenteSeguridadAyuda/AyudaSeguridad.chm", "Ayuda.html");
+        }
     }
 }

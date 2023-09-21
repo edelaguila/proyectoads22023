@@ -139,7 +139,6 @@ C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads2202
 C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaModelo.dll
 C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaModelo.pdb
 C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Login.resources
-C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.AssemblyReference.cache
 C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigAplicaPerfiles.resources
 C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigAplicaUsuario.resources
 C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigPerfUsuario.resources
@@ -157,7 +156,6 @@ C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Co
 C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.pdb
 C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaVista.dll
 C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaVista.pdb
-C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaControlador.dll
 C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaModelo.dll
 C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaControlador.pdb
 C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaModelo.pdb
@@ -187,3 +185,5 @@ C:\Users\gazhp\source\repos\proyectoads22023\Codigo\Componentes\Seguridad\Modulo
 C:\Users\gazhp\source\repos\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
 C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.AssemblyReference.cache
 C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaControlador.dll
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.AssemblyReference.cache
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaControlador.dll

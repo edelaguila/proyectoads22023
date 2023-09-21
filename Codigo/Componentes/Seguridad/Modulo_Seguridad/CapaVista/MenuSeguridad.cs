@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaControlador;
+using System.IO;
+using System.Diagnostics;
 
 namespace CapaVista
 {
@@ -95,6 +97,23 @@ namespace CapaVista
             Login Lg = new Login();
             Lg.Show();
             this.Hide();
+        }
+
+        private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //
+        }
+
+        private void ayudaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "ComponenteSeguridadAyuda/AyudaSeguridad.chm", "Ayuda.html");
+            //Help.ShowHelp(this, "C:/Users/rayju/OneDrive/Escritorio/GitHub AnotherWork/proyectoads22023/Codigo/Componentes/Seguridad/Modulo_Seguridad/CapaVista/bin/Debug/ComponenteSeguridadAyuda/AyudaSeguridad.chm", "Ayuda.html");
+        }
+
+        private void mDIToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "ComponenteSeguridadAyuda/AyudaSeguridad.chm", "MDI.html");
+            //Help.ShowHelp(this, "C:/Users/rayju/OneDrive/Escritorio/GitHub AnotherWork/proyectoads22023/Codigo/Componentes/Seguridad/Modulo_Seguridad/CapaVista/bin/Debug/ComponenteSeguridadAyuda/AyudaSeguridad.chm", "Ayuda.html");
         }
     }
 }

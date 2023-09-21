@@ -206,5 +206,10 @@ namespace CapaVista.Mantenimiento
             //BOTON SALIR
             this.Hide();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "ComponenteSeguridadAyuda/AyudaSeguridad.chm", "Mantenimiento.html");
+        }
     }
 }

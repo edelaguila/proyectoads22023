@@ -237,5 +237,11 @@ namespace CapaVista
                 MessageBox.Show("Error al modificar los datos.");
             }
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "ComponenteSeguridadAyuda/AyudaSeguridad.chm", "Mantenimiento.html");
+            //Help.ShowHelp(this, "C:/Users/rayju/OneDrive/Escritorio/GitHub AnotherWork/proyectoads22023/Codigo/Componentes/Seguridad/Modulo_Seguridad/CapaVista/bin/Debug/ComponenteSeguridadAyuda/AyudaSeguridad.chm", "Ayuda.html");
+        }
     }
 }

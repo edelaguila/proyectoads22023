@@ -40,5 +40,10 @@ namespace CapaVista.Asignaciones
                 MessageBox.Show("Error al guardar los datos.");
             }
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "ComponenteSeguridadAyuda/AyudaSeguridad.chm", "Procesos.html");
+        }
     }
 }

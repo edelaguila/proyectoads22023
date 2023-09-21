@@ -49,6 +49,7 @@ namespace CapaVista.Mantenimiento
             this.btn_buscar = new System.Windows.Forms.Button();
             this.txt_busqueda = new System.Windows.Forms.TextBox();
             this.lbl_buscar = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
             this.gpb_datos.SuspendLayout();
             this.gpb_estado.SuspendLayout();
             this.gpb_modificar.SuspendLayout();
@@ -56,9 +57,10 @@ namespace CapaVista.Mantenimiento
             // 
             // btn_salir
             // 
-            this.btn_salir.Location = new System.Drawing.Point(655, 382);
+            this.btn_salir.Location = new System.Drawing.Point(873, 470);
+            this.btn_salir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_salir.Name = "btn_salir";
-            this.btn_salir.Size = new System.Drawing.Size(93, 30);
+            this.btn_salir.Size = new System.Drawing.Size(124, 37);
             this.btn_salir.TabIndex = 35;
             this.btn_salir.Text = "Salir";
             this.btn_salir.UseVisualStyleBackColor = true;
@@ -66,9 +68,10 @@ namespace CapaVista.Mantenimiento
             // 
             // btn_eliminar
             // 
-            this.btn_eliminar.Location = new System.Drawing.Point(655, 331);
+            this.btn_eliminar.Location = new System.Drawing.Point(873, 407);
+            this.btn_eliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_eliminar.Name = "btn_eliminar";
-            this.btn_eliminar.Size = new System.Drawing.Size(93, 30);
+            this.btn_eliminar.Size = new System.Drawing.Size(124, 37);
             this.btn_eliminar.TabIndex = 34;
             this.btn_eliminar.Text = "Eliminar";
             this.btn_eliminar.UseVisualStyleBackColor = true;
@@ -76,9 +79,10 @@ namespace CapaVista.Mantenimiento
             // 
             // btn_modificar
             // 
-            this.btn_modificar.Location = new System.Drawing.Point(655, 280);
+            this.btn_modificar.Location = new System.Drawing.Point(873, 345);
+            this.btn_modificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_modificar.Name = "btn_modificar";
-            this.btn_modificar.Size = new System.Drawing.Size(93, 30);
+            this.btn_modificar.Size = new System.Drawing.Size(124, 37);
             this.btn_modificar.TabIndex = 33;
             this.btn_modificar.Text = "Modificar";
             this.btn_modificar.UseVisualStyleBackColor = true;
@@ -86,9 +90,10 @@ namespace CapaVista.Mantenimiento
             // 
             // btn_actualizar
             // 
-            this.btn_actualizar.Location = new System.Drawing.Point(655, 229);
+            this.btn_actualizar.Location = new System.Drawing.Point(873, 282);
+            this.btn_actualizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_actualizar.Name = "btn_actualizar";
-            this.btn_actualizar.Size = new System.Drawing.Size(93, 30);
+            this.btn_actualizar.Size = new System.Drawing.Size(124, 37);
             this.btn_actualizar.TabIndex = 32;
             this.btn_actualizar.Text = "Actualizar";
             this.btn_actualizar.UseVisualStyleBackColor = true;
@@ -96,9 +101,10 @@ namespace CapaVista.Mantenimiento
             // 
             // btn_ingresar
             // 
-            this.btn_ingresar.Location = new System.Drawing.Point(655, 178);
+            this.btn_ingresar.Location = new System.Drawing.Point(873, 219);
+            this.btn_ingresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_ingresar.Name = "btn_ingresar";
-            this.btn_ingresar.Size = new System.Drawing.Size(93, 30);
+            this.btn_ingresar.Size = new System.Drawing.Size(124, 37);
             this.btn_ingresar.TabIndex = 31;
             this.btn_ingresar.Text = "Ingresar";
             this.btn_ingresar.UseVisualStyleBackColor = true;
@@ -106,9 +112,10 @@ namespace CapaVista.Mantenimiento
             // 
             // btn_nuevo
             // 
-            this.btn_nuevo.Location = new System.Drawing.Point(655, 127);
+            this.btn_nuevo.Location = new System.Drawing.Point(873, 156);
+            this.btn_nuevo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_nuevo.Name = "btn_nuevo";
-            this.btn_nuevo.Size = new System.Drawing.Size(93, 30);
+            this.btn_nuevo.Size = new System.Drawing.Size(124, 37);
             this.btn_nuevo.TabIndex = 30;
             this.btn_nuevo.Text = "Nuevo";
             this.btn_nuevo.UseVisualStyleBackColor = true;
@@ -122,9 +129,11 @@ namespace CapaVista.Mantenimiento
             this.gpb_datos.Controls.Add(this.lbl_nombre);
             this.gpb_datos.Controls.Add(this.txt_codigo);
             this.gpb_datos.Controls.Add(this.lbl_codigo);
-            this.gpb_datos.Location = new System.Drawing.Point(12, 127);
+            this.gpb_datos.Location = new System.Drawing.Point(16, 156);
+            this.gpb_datos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gpb_datos.Name = "gpb_datos";
-            this.gpb_datos.Size = new System.Drawing.Size(605, 382);
+            this.gpb_datos.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gpb_datos.Size = new System.Drawing.Size(807, 470);
             this.gpb_datos.TabIndex = 29;
             this.gpb_datos.TabStop = false;
             this.gpb_datos.Text = "Datos";
@@ -133,9 +142,11 @@ namespace CapaVista.Mantenimiento
             // 
             this.gpb_estado.Controls.Add(this.rb_inhabilitado);
             this.gpb_estado.Controls.Add(this.rb_habilitado);
-            this.gpb_estado.Location = new System.Drawing.Point(9, 246);
+            this.gpb_estado.Location = new System.Drawing.Point(12, 303);
+            this.gpb_estado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gpb_estado.Name = "gpb_estado";
-            this.gpb_estado.Size = new System.Drawing.Size(590, 86);
+            this.gpb_estado.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gpb_estado.Size = new System.Drawing.Size(787, 106);
             this.gpb_estado.TabIndex = 20;
             this.gpb_estado.TabStop = false;
             this.gpb_estado.Text = "Estado";
@@ -143,9 +154,10 @@ namespace CapaVista.Mantenimiento
             // rb_inhabilitado
             // 
             this.rb_inhabilitado.AutoSize = true;
-            this.rb_inhabilitado.Location = new System.Drawing.Point(322, 46);
+            this.rb_inhabilitado.Location = new System.Drawing.Point(429, 57);
+            this.rb_inhabilitado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rb_inhabilitado.Name = "rb_inhabilitado";
-            this.rb_inhabilitado.Size = new System.Drawing.Size(79, 17);
+            this.rb_inhabilitado.Size = new System.Drawing.Size(101, 21);
             this.rb_inhabilitado.TabIndex = 1;
             this.rb_inhabilitado.Text = "Inhabilitado";
             this.rb_inhabilitado.UseVisualStyleBackColor = true;
@@ -153,79 +165,90 @@ namespace CapaVista.Mantenimiento
             // rb_habilitado
             // 
             this.rb_habilitado.AutoSize = true;
-            this.rb_habilitado.Location = new System.Drawing.Point(204, 46);
+            this.rb_habilitado.Location = new System.Drawing.Point(272, 57);
+            this.rb_habilitado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rb_habilitado.Name = "rb_habilitado";
-            this.rb_habilitado.Size = new System.Drawing.Size(72, 17);
+            this.rb_habilitado.Size = new System.Drawing.Size(92, 21);
             this.rb_habilitado.TabIndex = 0;
             this.rb_habilitado.Text = "Habilitado";
             this.rb_habilitado.UseVisualStyleBackColor = true;
             // 
             // txt_descripcion
             // 
-            this.txt_descripcion.Location = new System.Drawing.Point(159, 137);
+            this.txt_descripcion.Location = new System.Drawing.Point(212, 169);
+            this.txt_descripcion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_descripcion.Multiline = true;
             this.txt_descripcion.Name = "txt_descripcion";
-            this.txt_descripcion.Size = new System.Drawing.Size(347, 50);
+            this.txt_descripcion.Size = new System.Drawing.Size(461, 61);
             this.txt_descripcion.TabIndex = 10;
             // 
             // txt_nombre
             // 
-            this.txt_nombre.Location = new System.Drawing.Point(159, 90);
+            this.txt_nombre.Location = new System.Drawing.Point(212, 111);
+            this.txt_nombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_nombre.Name = "txt_nombre";
-            this.txt_nombre.Size = new System.Drawing.Size(347, 20);
+            this.txt_nombre.Size = new System.Drawing.Size(461, 22);
             this.txt_nombre.TabIndex = 9;
             // 
             // lbl_descripcion
             // 
             this.lbl_descripcion.AutoSize = true;
-            this.lbl_descripcion.Location = new System.Drawing.Point(6, 140);
+            this.lbl_descripcion.Location = new System.Drawing.Point(8, 172);
+            this.lbl_descripcion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_descripcion.Name = "lbl_descripcion";
-            this.lbl_descripcion.Size = new System.Drawing.Size(63, 13);
+            this.lbl_descripcion.Size = new System.Drawing.Size(82, 17);
             this.lbl_descripcion.TabIndex = 6;
             this.lbl_descripcion.Text = "Descripcion";
             // 
             // lbl_nombre
             // 
             this.lbl_nombre.AutoSize = true;
-            this.lbl_nombre.Location = new System.Drawing.Point(6, 93);
+            this.lbl_nombre.Location = new System.Drawing.Point(8, 114);
+            this.lbl_nombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_nombre.Name = "lbl_nombre";
-            this.lbl_nombre.Size = new System.Drawing.Size(44, 13);
+            this.lbl_nombre.Size = new System.Drawing.Size(58, 17);
             this.lbl_nombre.TabIndex = 4;
             this.lbl_nombre.Text = "Nombre";
             // 
             // txt_codigo
             // 
-            this.txt_codigo.Location = new System.Drawing.Point(159, 45);
+            this.txt_codigo.Location = new System.Drawing.Point(212, 55);
+            this.txt_codigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_codigo.Name = "txt_codigo";
-            this.txt_codigo.Size = new System.Drawing.Size(347, 20);
+            this.txt_codigo.Size = new System.Drawing.Size(461, 22);
             this.txt_codigo.TabIndex = 3;
             // 
             // lbl_codigo
             // 
             this.lbl_codigo.AutoSize = true;
-            this.lbl_codigo.Location = new System.Drawing.Point(6, 48);
+            this.lbl_codigo.Location = new System.Drawing.Point(8, 59);
+            this.lbl_codigo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_codigo.Name = "lbl_codigo";
-            this.lbl_codigo.Size = new System.Drawing.Size(66, 13);
+            this.lbl_codigo.Size = new System.Drawing.Size(88, 17);
             this.lbl_codigo.TabIndex = 0;
             this.lbl_codigo.Text = "Codigo Perfil";
             // 
             // gpb_modificar
             // 
+            this.gpb_modificar.Controls.Add(this.button7);
             this.gpb_modificar.Controls.Add(this.btn_buscar);
             this.gpb_modificar.Controls.Add(this.txt_busqueda);
             this.gpb_modificar.Controls.Add(this.lbl_buscar);
-            this.gpb_modificar.Location = new System.Drawing.Point(12, 12);
+            this.gpb_modificar.Location = new System.Drawing.Point(16, 15);
+            this.gpb_modificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gpb_modificar.Name = "gpb_modificar";
-            this.gpb_modificar.Size = new System.Drawing.Size(736, 82);
+            this.gpb_modificar.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gpb_modificar.Size = new System.Drawing.Size(981, 101);
             this.gpb_modificar.TabIndex = 28;
             this.gpb_modificar.TabStop = false;
             this.gpb_modificar.Text = "Modificar";
             // 
             // btn_buscar
             // 
-            this.btn_buscar.Location = new System.Drawing.Point(512, 19);
+            this.btn_buscar.Location = new System.Drawing.Point(683, 23);
+            this.btn_buscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_buscar.Name = "btn_buscar";
-            this.btn_buscar.Size = new System.Drawing.Size(93, 45);
+            this.btn_buscar.Size = new System.Drawing.Size(124, 55);
             this.btn_buscar.TabIndex = 2;
             this.btn_buscar.Text = "Buscar";
             this.btn_buscar.UseVisualStyleBackColor = true;
@@ -233,25 +256,37 @@ namespace CapaVista.Mantenimiento
             // 
             // txt_busqueda
             // 
-            this.txt_busqueda.Location = new System.Drawing.Point(132, 30);
+            this.txt_busqueda.Location = new System.Drawing.Point(176, 37);
+            this.txt_busqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_busqueda.Name = "txt_busqueda";
-            this.txt_busqueda.Size = new System.Drawing.Size(374, 20);
+            this.txt_busqueda.Size = new System.Drawing.Size(497, 22);
             this.txt_busqueda.TabIndex = 1;
             // 
             // lbl_buscar
             // 
             this.lbl_buscar.AutoSize = true;
-            this.lbl_buscar.Location = new System.Drawing.Point(75, 33);
+            this.lbl_buscar.Location = new System.Drawing.Point(100, 41);
+            this.lbl_buscar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_buscar.Name = "lbl_buscar";
-            this.lbl_buscar.Size = new System.Drawing.Size(51, 13);
+            this.lbl_buscar.Size = new System.Drawing.Size(67, 17);
             this.lbl_buscar.TabIndex = 0;
             this.lbl_buscar.Text = "Buscar id";
             // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(829, 23);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(124, 58);
+            this.button7.TabIndex = 21;
+            this.button7.Text = "Ayuda";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // MantPerfiles
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(777, 527);
+            this.ClientSize = new System.Drawing.Size(1036, 649);
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.btn_eliminar);
             this.Controls.Add(this.btn_modificar);
@@ -260,6 +295,7 @@ namespace CapaVista.Mantenimiento
             this.Controls.Add(this.btn_nuevo);
             this.Controls.Add(this.gpb_datos);
             this.Controls.Add(this.gpb_modificar);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MantPerfiles";
             this.Text = "MantPerfiles";
             this.gpb_datos.ResumeLayout(false);
@@ -294,5 +330,6 @@ namespace CapaVista.Mantenimiento
         private System.Windows.Forms.Button btn_buscar;
         private System.Windows.Forms.TextBox txt_busqueda;
         private System.Windows.Forms.Label lbl_buscar;
+        private System.Windows.Forms.Button button7;
     }
 }

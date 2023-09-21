@@ -122,5 +122,10 @@ namespace CapaVista.Asignaciones
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "ComponenteSeguridadAyuda/AyudaSeguridad.chm", "Procesos.html");
+        }
     }
 }

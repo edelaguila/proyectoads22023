@@ -201,8 +201,9 @@ namespace CapaVista.Mantenimiento
             comboBox1.Items.AddRange(datos.ToArray());
         }
 
-
-
-
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "ComponenteSeguridadAyuda/AyudaSeguridad.chm", "Mantenimiento.html");
+        }
     }
 }
