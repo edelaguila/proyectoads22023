@@ -58,7 +58,7 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
             {
                 txt_ruta.Enabled = false;
                 openFileDialog.InitialDirectory = "C:\\"; // Directorio inicial
-                openFileDialog.Filter = "Archivos de texto (*.txt)|*.txt|Todos los archivos (*.*)|*.*";
+                openFileDialog.Filter = "Crystal Reports (*.rpt)|*.rpt|Todos los archivos (*.*)|*.*";
                 openFileDialog.FilterIndex = 1;
 
                 DialogResult result = openFileDialog.ShowDialog();

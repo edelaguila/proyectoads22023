@@ -157,3 +157,6 @@ D:\Escritorio\Prueba cambios\proyectoads22023\Codigo\Componentes\Reporteador\Rep
 D:\Escritorio\Prueba cambios\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.prueba2.resources
 D:\Escritorio\Prueba cambios\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.Plantilla3.resources
 D:\Escritorio\Prueba cambios\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.Plantilla4.resources
+C:\Users\Luis\Desktop\Nueva carpeta\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.Plantilla3.resources
+C:\Users\Luis\Desktop\Nueva carpeta\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.Plantilla4.resources
+C:\Users\Luis\Desktop\Nueva carpeta\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.prueba2.resources
