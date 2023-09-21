@@ -63,11 +63,12 @@ namespace CapaVista.Componentes.Utilidades
             ctrol.agregarUsuario(dictionary);
             MessageBox.Show("Usuario Creado Correctamente");
         }
-        public void guardarEmpleadoNom(Form child)
+
+        public void guardarInventario(Form child)
         {
-            ControladorNomina ctrolnom = new ControladorNomina();
+            ControladorInventario ctriv = new ControladorInventario();
             var dictionary = new Dictionary<string, string>();
-            List<string> columns = this.ctrNav.getColumns("tbl_nomina");
+            List<string> columns = this.ctrNav.getColumns("tbl_INVENTARIO");
 
             foreach (Control c in child.Controls)
             {
@@ -80,33 +81,22 @@ namespace CapaVista.Componentes.Utilidades
                     }
                     c.Text = "";
                 }
-            }
-            ctrolnom.agregarEmpleadoNomina(dictionary);
-            MessageBox.Show("Empleado Agregado a Nomina");
-        }
-
-
-        public void guardarEmpleado(Form child)
-        {
-            ControladorEmpleado cEmple = new ControladorEmpleado();
-            var dictionary = new Dictionary<string, string>();
-            List<string> columns = this.ctrNav.getColumns("tbl_empleado");
-
-            foreach (Control c in child.Controls)
-            {
-                if (c is TextBox)
+                else if (c is DateTimePicker)
                 {
                     string tag = c.Tag.ToString();
                     if (columns.Contains(tag))
                     {
-                        dictionary.Add(tag, c.Text);
+                     
+                        DateTimePicker dateTimePicker = c as DateTimePicker;
+                        DateTime fechaHora = dateTimePicker.Value;
+                        dictionary.Add(tag, fechaHora.ToString("yyyy-MM-dd"));  
                     }
-                    c.Text = "";
                 }
             }
-            cEmple.agregarEmpleado(dictionary);
-            MessageBox.Show("Empleado Creado Correctamente");
+            ctriv.agregarInventario(dictionary);
+            MessageBox.Show("INVENTARIO GUARDADO");
         }
+
 
     }
 }

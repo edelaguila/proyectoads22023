@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaVista;
 using CapaVista.Formularios;
 
 namespace Ejecutable
@@ -17,11 +18,7 @@ namespace Ejecutable
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
-            Application.Run(new frmNomina());
-=======
-            Application.Run(new frmEmpleado());
->>>>>>> b9257d4f671c61b248788afe5587c7624430bc62
+            Application.Run(new frmInventario());
         }
     }
 }

@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,6 +52,7 @@
 >>>>>>> b9257d4f671c61b248788afe5587c7624430bc62
     <Compile Include="SentenciasEmpleados.cs" />
     <Compile Include="SentenciasGenerales.cs" />
+    <Compile Include="SentenciasInventario.cs" />
     <Compile Include="SentenciasRegistros.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
