@@ -41,5 +41,29 @@ namespace CapaVista
             nuevo.MdiParent = this;
             nuevo.Show();
         }
+
+        private void reporte1ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Plantilla1 frm = new Plantilla1();
+            frm.Show();
+        }
+
+        private void reporte2ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Plantilla2 frm = new Plantilla2();
+            frm.Show();
+        }
+
+        private void reporte3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Plantilla3 frm = new Plantilla3();
+            frm.Show();
+        }
+
+        private void reporte4ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Plantilla4 frm = new Plantilla4();
+            frm.Show();
+        }
     }
 }
