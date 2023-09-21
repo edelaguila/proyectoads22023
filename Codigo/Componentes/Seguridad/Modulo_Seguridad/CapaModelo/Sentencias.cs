@@ -92,17 +92,15 @@ namespace CapaModelo
                 }
             }
         }
-
-        /*//carlos enrique
-        public OdbcDataAdapter llenarTblBitacora(string tabla)// metodo  que obtinene el contenio de una tabla
+        //Erick Ramirez
+        public DataTable llenarTblBitacora()// metodo  que obtinene el contenio de una tabla
         {
-            //consultamos
-            string sql = "SELECT * FROM " + tabla + "  ;";
-            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, con.conexion());
-            return dataTable;
-        }*/
-
-
+            string consulta = $"SELECT * FROM tbl_bitacora";
+            OdbcDataAdapter datos = new OdbcDataAdapter(consulta, con.conexion());
+            DataTable dt = new DataTable();
+            datos.Fill(dt);
+            return dt;
+        }
 
         //--------------------------------
 
