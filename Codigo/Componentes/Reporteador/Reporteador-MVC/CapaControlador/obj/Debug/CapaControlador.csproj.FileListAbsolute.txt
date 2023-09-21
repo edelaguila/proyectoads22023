@@ -25,3 +25,12 @@ C:\Users\Luis\Desktop\Reporteador\proyectoads22023\Codigo\Componentes\Reporteado
 C:\Users\Luis\Desktop\Reporteador\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
 C:\Users\Luis\Desktop\Reporteador\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.dll
 C:\Users\Luis\Desktop\Reporteador\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.pdb
+D:\Escritorio\Proyecto\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\bin\Debug\CapaControlador.dll
+D:\Escritorio\Proyecto\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\bin\Debug\CapaControlador.pdb
+D:\Escritorio\Proyecto\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\bin\Debug\CapaModelo.dll
+D:\Escritorio\Proyecto\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\bin\Debug\CapaModelo.pdb
+D:\Escritorio\Proyecto\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.csproj.AssemblyReference.cache
+D:\Escritorio\Proyecto\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.csproj.CoreCompileInputs.cache
+D:\Escritorio\Proyecto\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
+D:\Escritorio\Proyecto\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.dll
+D:\Escritorio\Proyecto\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaControlador\obj\Debug\CapaControlador.pdb
