@@ -44,7 +44,6 @@ namespace CapaVista.Formularios
             this.txt_apellido = new System.Windows.Forms.TextBox();
             this.txt_direccion = new System.Windows.Forms.TextBox();
             this.txt_correo = new System.Windows.Forms.TextBox();
-            this.btn_guardar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -183,22 +182,11 @@ namespace CapaVista.Formularios
             this.txt_correo.TabIndex = 14;
             this.txt_correo.Tag = "nbr_correo_cliente";
             // 
-            // btn_guardar
-            // 
-            this.btn_guardar.Location = new System.Drawing.Point(297, 355);
-            this.btn_guardar.Name = "btn_guardar";
-            this.btn_guardar.Size = new System.Drawing.Size(88, 35);
-            this.btn_guardar.TabIndex = 15;
-            this.btn_guardar.Text = "Guardar";
-            this.btn_guardar.UseVisualStyleBackColor = true;
-            this.btn_guardar.Click += new System.EventHandler(this.btn_guardar_Click);
-            // 
             // frmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(700, 422);
-            this.Controls.Add(this.btn_guardar);
             this.Controls.Add(this.txt_correo);
             this.Controls.Add(this.txt_direccion);
             this.Controls.Add(this.txt_apellido);
@@ -214,8 +202,9 @@ namespace CapaVista.Formularios
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmClientes";
-            this.Tag = "frClientes";
+            this.Tag = "frmClientes";
             this.Text = "frmClientes";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -239,6 +228,5 @@ namespace CapaVista.Formularios
         private System.Windows.Forms.TextBox txt_apellido;
         private System.Windows.Forms.TextBox txt_direccion;
         private System.Windows.Forms.TextBox txt_correo;
-        private System.Windows.Forms.Button btn_guardar;
     }
 }

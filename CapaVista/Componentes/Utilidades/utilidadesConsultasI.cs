@@ -20,6 +20,27 @@ namespace CapaVista.Componentes.Utilidades
         {
 
         }
+        public void guardarCliente(Form child)
+        {
+            ControladorCliente ctrclick = new ControladorCliente();
+            var dictionary = new Dictionary<string, string>();
+            List<string> columns = this.ctrNav.getColumns("tbl_clientes");
+
+            foreach (Control c in child.Controls)
+            {
+                if (c is TextBox)
+                {
+                    string tag = c.Tag.ToString();
+                    if (columns.Contains(tag))
+                    {
+                        dictionary.Add(tag, c.Text);
+                    }
+                    c.Text = "";
+                }
+            }
+            ctrclick.agregarCliente(dictionary);
+            MessageBox.Show("Cliente Creado Correctamente");
+        }
         public void guardarReservacion(Form child)
         {
             var dictionary = new Dictionary<string, string>();
