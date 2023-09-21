@@ -69,7 +69,7 @@ namespace CapaVista
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(594, 23);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 33);
             this.button1.TabIndex = 11;

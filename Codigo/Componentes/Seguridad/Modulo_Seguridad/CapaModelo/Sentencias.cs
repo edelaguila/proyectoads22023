@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.Odbc;
 using System.Security.Cryptography;
+using System.Net;
+using System.Net.Sockets;
 
 namespace CapaModelo
 {
@@ -102,6 +104,90 @@ namespace CapaModelo
             return dt;
         }
 
+        //Erick Ramirez
+        public bool datosBitacora(string accion, string tabla)
+        {
+            // Obtener el nombre del host y la dirección IP
+            string host = ObtenerNombreHost();
+            string ip = ObtenerDireccionIP();
+            string hora = ObtenerHoraSistema();
+            string fecha = ObtenerFechaSistema();
+            string id = "1";
+
+            using (OdbcConnection conn = con.conexion())
+            {
+                // Construir la consulta SQL para insertar datos
+                //string consulta = $"INSERT INTO tbl_bitacora (nbr_host1, nbr_ip, nbr_hora, nbr_fecha, FK_id_Modulo, FK_id_usuario, nbr_accion) VALUES ('"+host+"','"+ip+"','"+hora+"','"+fecha+"','"+id+"','"+id+"'{accion})";
+                string consulta = $"INSERT INTO tbl_bitacora (nbr_host1, nbr_ip, nbr_hora, nbr_fecha, FK_id_Modulo, FK_id_usuario, nbr_accion, nbr_tabla) VALUES ('{host}','{ip}','{hora}','{fecha}','{id}','{id}','{accion}','{tabla}')";
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    // Agregar parámetros con sus valores correspondientes
+                    int filasAfectadas = cmd.ExecuteNonQuery();
+                    return filasAfectadas > 0;
+                }
+            }
+
+            //return datosBitacora();
+
+
+        }
+
+        //Erick Ramirez
+        public string ObtenerHoraSistema()
+        {
+            DateTime horaSistema = DateTime.Now;
+            return horaSistema.ToString("HH:mm:ss");
+        }
+
+        //Erick Ramirez
+        public string ObtenerFechaSistema()
+        {
+            DateTime fechaSistema = DateTime.Now;
+            return fechaSistema.ToString("yyyy-MM-dd");
+        }
+        //Erick Ramirez
+        public string ObtenerNombreHost()
+        {
+            try
+            {
+                string hostName = Dns.GetHostName();
+                return hostName;
+            }
+            catch (Exception ex)
+            {
+                // Manejo de errores
+                Console.WriteLine("Error al obtener el nombre del host: " + ex.Message);
+                return "NombreDeHostDesconocido";
+            }
+        }
+
+        //Erick Ramirez
+        // Función para obtener la dirección IP
+        public string ObtenerDireccionIP()
+        {
+            try
+            {
+                // Obtener todas las direcciones IP asociadas con el nombre del host actual
+                IPAddress[] localIPs = Dns.GetHostAddresses(Dns.GetHostName());
+
+                // Buscar una dirección IPv4 en la lista
+                foreach (IPAddress ip in localIPs)
+                {
+                    if (ip.AddressFamily == AddressFamily.InterNetwork)
+                    {
+                        return ip.ToString();
+                    }
+                }
+
+                return "DirecciónIPv4Desconocida"; // Si no se encuentra una dirección IPv4
+            }
+            catch (Exception ex)
+            {
+                // Manejo de errores
+                Console.WriteLine("Error al obtener la dirección IPv4: " + ex.Message);
+                return "DirecciónIPv4Desconocida";
+            }
+        }
         //--------------------------------
 
 

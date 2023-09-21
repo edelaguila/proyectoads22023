@@ -40,6 +40,8 @@ namespace CapaVista.Asignaciones
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //Erick Ramirez
+            cn.datosBitacora("btn_agregar_AsigPerfUsuario", "tbl_usuario_perfil");
             int n = dataGridView2.Rows.Add();
             dataGridView2.Rows[n].Cells[0].Value = comboBox2.SelectedItem;
             dataGridView2.Rows[n].Cells[1].Value = comboBox3.SelectedItem;
@@ -47,11 +49,15 @@ namespace CapaVista.Asignaciones
 
         private void button5_Click(object sender, EventArgs e)
         {
+            //Erick Ramirez
+            cn.datosBitacora("btn_ayuda_AsigPerfUsuario", "tbl_usuario_perfil");
             Help.ShowHelp(this, "ComponenteSeguridadAyuda/AyudaSeguridad.chm", "Procesos.html");
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+            //Erick Ramirez
+            cn.datosBitacora("btn_finalizar_AsigPerfUsuario", "tbl_usuario_perfil");
             string FK_Usuario = "";
             string FK_Perfil = "";
             bool exito = true;
@@ -120,6 +126,8 @@ namespace CapaVista.Asignaciones
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //Erick Ramirez
+            cn.datosBitacora("combo_AsigPerfUsuario", "tbl_usuario_perfil");
             string id = "";
             string valor = comboBox1.SelectedItem.ToString();
 

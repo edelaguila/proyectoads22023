@@ -72,6 +72,8 @@ namespace CapaVista
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //Erick Ramirez
+            cn.datosBitacora("btn_ingresar_Login", "tbl_usuario");
             LoginIngresar();
         }
     }
