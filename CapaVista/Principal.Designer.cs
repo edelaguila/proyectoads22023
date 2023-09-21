@@ -36,10 +36,10 @@ namespace CapaVista
             this.consultasInteligentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reservacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesSemanalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,22 +89,30 @@ namespace CapaVista
             // reservacionesToolStripMenuItem
             // 
             this.reservacionesToolStripMenuItem.Name = "reservacionesToolStripMenuItem";
-            this.reservacionesToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.reservacionesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.reservacionesToolStripMenuItem.Text = "Reservaciones";
             this.reservacionesToolStripMenuItem.Click += new System.EventHandler(this.reservacionesToolStripMenuItem_Click);
             // 
             // inventarioToolStripMenuItem
             // 
             this.inventarioToolStripMenuItem.Name = "inventarioToolStripMenuItem";
-            this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.inventarioToolStripMenuItem.Text = "Inventario";
             this.inventarioToolStripMenuItem.Click += new System.EventHandler(this.inventarioToolStripMenuItem_Click);
+            // 
+            // empleadosToolStripMenuItem
+            // 
+            this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
+            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.empleadosToolStripMenuItem.Text = "Empleados";
+            this.empleadosToolStripMenuItem.Click += new System.EventHandler(this.empleadosToolStripMenuItem_Click);
             // 
             // seguridadToolStripMenuItem
             // 
             this.seguridadToolStripMenuItem.Name = "seguridadToolStripMenuItem";
-            this.seguridadToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
-            this.seguridadToolStripMenuItem.Text = "Seguridad";
+            this.seguridadToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.seguridadToolStripMenuItem.Text = "Nomina";
+            this.seguridadToolStripMenuItem.Click += new System.EventHandler(this.seguridadToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem
             // 
@@ -120,13 +128,6 @@ namespace CapaVista
             this.reportesSemanalesToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.reportesSemanalesToolStripMenuItem.Text = "Reportes Semanales";
             this.reportesSemanalesToolStripMenuItem.Click += new System.EventHandler(this.reportesSemanalesToolStripMenuItem_Click);
-            // 
-            // empleadosToolStripMenuItem
-            // 
-            this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
-            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.empleadosToolStripMenuItem.Text = "Empleados";
-            this.empleadosToolStripMenuItem.Click += new System.EventHandler(this.empleadosToolStripMenuItem_Click);
             // 
             // Principal
             // 

@@ -70,6 +70,12 @@
     <Compile Include="Formularios\frmInventario.Designer.cs">
       <DependentUpon>frmInventario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frmNomina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmNomina.Designer.cs">
+      <DependentUpon>frmNomina.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmReportes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmInventario.resx">
       <DependentUpon>frmInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmNomina.resx">
+      <DependentUpon>frmNomina.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmReportes.resx">
       <DependentUpon>frmReportes.cs</DependentUpon>

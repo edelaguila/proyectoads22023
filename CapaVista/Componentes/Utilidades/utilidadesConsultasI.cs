@@ -97,6 +97,27 @@ namespace CapaVista.Componentes.Utilidades
             MessageBox.Show("INVENTARIO GUARDADO");
         }
 
+        public void guardarEmpleadoNom(Form child)
+        {
+            ControladorNomina ctrolnom = new ControladorNomina();
+            var dictionary = new Dictionary<string, string>();
+            List<string> columns = this.ctrNav.getColumns("tbl_nomina");
+
+            foreach (Control c in child.Controls)
+            {
+                if (c is TextBox)
+                {
+                    string tag = c.Tag.ToString();
+                    if (columns.Contains(tag))
+                    {
+                        dictionary.Add(tag, c.Text);
+                    }
+                    c.Text = "";
+                }
+            }
+            ctrolnom.agregarEmpleadoNomina(dictionary);
+            MessageBox.Show("Empleado Agregado a Nomina");
+        }
         public void guardarEmpleado(Form child)
         {
             ControladorEmpleado cEmple = new ControladorEmpleado();

@@ -41,7 +41,6 @@ namespace CapaVista.Formularios
             this.txt_fecha = new System.Windows.Forms.TextBox();
             this.txt_salario = new System.Windows.Forms.TextBox();
             this.txt_horas = new System.Windows.Forms.TextBox();
-            this.btn_guardar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_id
@@ -152,24 +151,12 @@ namespace CapaVista.Formularios
             this.txt_horas.TabIndex = 11;
             this.txt_horas.Tag = "nbr_horas_extra";
             // 
-            // btn_guardar
-            // 
-            this.btn_guardar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_guardar.Location = new System.Drawing.Point(309, 353);
-            this.btn_guardar.Name = "btn_guardar";
-            this.btn_guardar.Size = new System.Drawing.Size(110, 54);
-            this.btn_guardar.TabIndex = 12;
-            this.btn_guardar.Text = "Guardar";
-            this.btn_guardar.UseVisualStyleBackColor = true;
-            this.btn_guardar.Click += new System.EventHandler(this.btn_guardar_Click);
-            // 
             // frmNomina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
-            this.ClientSize = new System.Drawing.Size(652, 450);
-            this.Controls.Add(this.btn_guardar);
+            this.ClientSize = new System.Drawing.Size(652, 385);
             this.Controls.Add(this.txt_horas);
             this.Controls.Add(this.txt_salario);
             this.Controls.Add(this.txt_fecha);
@@ -182,8 +169,9 @@ namespace CapaVista.Formularios
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbl_nombre);
             this.Controls.Add(this.lbl_id);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmNomina";
-            this.Tag = "fNomina";
+            this.Tag = "frmNomina";
             this.Text = "frmNomina";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -204,6 +192,5 @@ namespace CapaVista.Formularios
         private System.Windows.Forms.TextBox txt_fecha;
         private System.Windows.Forms.TextBox txt_salario;
         private System.Windows.Forms.TextBox txt_horas;
-        private System.Windows.Forms.Button btn_guardar;
     }
 }

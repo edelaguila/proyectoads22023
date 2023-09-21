@@ -62,5 +62,10 @@ namespace CapaVista
         {
             this.openFormOnPanel(pnl_contenedor, new frmEmpleado(), false);
         }
+
+        private void seguridadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.openFormOnPanel(pnl_contenedor, new frmNomina(), false);
+        }
     }
 }

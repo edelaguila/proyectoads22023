@@ -51,6 +51,10 @@ namespace CapaVista.Componentes
             {
                 if (operacion.Equals("g")) this.utilConsultasI.guardarEmpleado(child);
             }
+            if (child.Tag.ToString().Equals("frmNomina"))
+            {
+                if (operacion.Equals("g")) this.utilConsultasI.guardarEmpleadoNom(child);
+            }
         }
         private void btn_guardar_Click(object sender, EventArgs e)
         {
