@@ -16,5 +16,20 @@ namespace Reporteador
         {
             InitializeComponent();
         }
+
+        private void crystalReportViewer2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void crystalReportViewer1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CrystalReport11_InitReport(object sender, EventArgs e)
+        {
+
+        }
     }
 }

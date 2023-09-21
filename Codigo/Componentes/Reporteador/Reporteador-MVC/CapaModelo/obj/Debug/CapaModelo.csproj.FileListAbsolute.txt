@@ -16,3 +16,9 @@ C:\Users\Luis\Desktop\Reporteador\proyectoads22023\Codigo\Componentes\Reporteado
 C:\Users\Luis\Desktop\Reporteador\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
 C:\Users\Luis\Desktop\Reporteador\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaModelo\obj\Debug\CapaModelo.dll
 C:\Users\Luis\Desktop\Reporteador\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaModelo\obj\Debug\CapaModelo.pdb
+C:\Users\ixcot\Desktop\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaModelo\bin\Debug\CapaModelo.dll
+C:\Users\ixcot\Desktop\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaModelo\bin\Debug\CapaModelo.pdb
+C:\Users\ixcot\Desktop\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaModelo\obj\Debug\CapaModelo.csproj.AssemblyReference.cache
+C:\Users\ixcot\Desktop\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
+C:\Users\ixcot\Desktop\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaModelo\obj\Debug\CapaModelo.dll
+C:\Users\ixcot\Desktop\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaModelo\obj\Debug\CapaModelo.pdb
