@@ -94,3 +94,6 @@ C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVis
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.CopyComplete
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.dll
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.pdb
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmClientes.resources
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmEmpleado.resources
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmNomina.resources
