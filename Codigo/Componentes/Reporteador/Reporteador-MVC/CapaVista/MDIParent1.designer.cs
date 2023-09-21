@@ -57,23 +57,14 @@ namespace CapaVista
             this.ayudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-<<<<<<< HEAD
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(932, 24);
-=======
             this.menuStrip1.Size = new System.Drawing.Size(1242, 30);
->>>>>>> 202afcf52c88ad1d13af68f625f8c821564c8633
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // inicioToolStripMenuItem
             // 
             this.inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
-<<<<<<< HEAD
-            this.inicioToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
-=======
             this.inicioToolStripMenuItem.Size = new System.Drawing.Size(59, 26);
->>>>>>> 202afcf52c88ad1d13af68f625f8c821564c8633
             this.inicioToolStripMenuItem.Text = "Inicio";
             // 
             // mantenimientoToolStripMenuItem
@@ -81,28 +72,20 @@ namespace CapaVista
             this.mantenimientoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.navegadorToolStripMenuItem});
             this.mantenimientoToolStripMenuItem.Name = "mantenimientoToolStripMenuItem";
-<<<<<<< HEAD
-            this.mantenimientoToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
-=======
             this.mantenimientoToolStripMenuItem.Size = new System.Drawing.Size(124, 26);
->>>>>>> 202afcf52c88ad1d13af68f625f8c821564c8633
             this.mantenimientoToolStripMenuItem.Text = "Mantenimiento";
             // 
             // navegadorToolStripMenuItem
             // 
             this.navegadorToolStripMenuItem.Name = "navegadorToolStripMenuItem";
-            this.navegadorToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.navegadorToolStripMenuItem.Size = new System.Drawing.Size(166, 26);
             this.navegadorToolStripMenuItem.Text = "Navegador";
             this.navegadorToolStripMenuItem.Click += new System.EventHandler(this.navegadorToolStripMenuItem_Click);
             // 
             // procesosToolStripMenuItem
             // 
             this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
-<<<<<<< HEAD
-            this.procesosToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-=======
             this.procesosToolStripMenuItem.Size = new System.Drawing.Size(81, 26);
->>>>>>> 202afcf52c88ad1d13af68f625f8c821564c8633
             this.procesosToolStripMenuItem.Text = "Procesos";
             // 
             // herramientasToolStripMenuItem
@@ -110,11 +93,7 @@ namespace CapaVista
             this.herramientasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.reportesToolStripMenuItem});
             this.herramientasToolStripMenuItem.Name = "herramientasToolStripMenuItem";
-<<<<<<< HEAD
-            this.herramientasToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
-=======
             this.herramientasToolStripMenuItem.Size = new System.Drawing.Size(112, 26);
->>>>>>> 202afcf52c88ad1d13af68f625f8c821564c8633
             this.herramientasToolStripMenuItem.Text = "Herramientas";
             // 
             // reportesToolStripMenuItem
@@ -123,11 +102,7 @@ namespace CapaVista
             this.reporte1ToolStripMenuItem,
             this.reporte2ToolStripMenuItem});
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-<<<<<<< HEAD
-            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-=======
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(151, 26);
->>>>>>> 202afcf52c88ad1d13af68f625f8c821564c8633
             this.reportesToolStripMenuItem.Text = "Reportes";
             this.reportesToolStripMenuItem.Click += new System.EventHandler(this.reportesToolStripMenuItem_Click);
             // 
@@ -139,70 +114,33 @@ namespace CapaVista
             this.reporte3ToolStripMenuItem,
             this.reporte4ToolStripMenuItem});
             this.reporte1ToolStripMenuItem.Name = "reporte1ToolStripMenuItem";
-<<<<<<< HEAD
-            this.reporte1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-=======
             this.reporte1ToolStripMenuItem.Size = new System.Drawing.Size(176, 26);
->>>>>>> 202afcf52c88ad1d13af68f625f8c821564c8633
             this.reporte1ToolStripMenuItem.Text = "Plantillas";
             this.reporte1ToolStripMenuItem.Click += new System.EventHandler(this.reporte1ToolStripMenuItem_Click);
             // 
             // reporte1ToolStripMenuItem1
             // 
             this.reporte1ToolStripMenuItem1.Name = "reporte1ToolStripMenuItem1";
-<<<<<<< HEAD
-            this.reporte1ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-=======
             this.reporte1ToolStripMenuItem1.Size = new System.Drawing.Size(157, 26);
->>>>>>> 202afcf52c88ad1d13af68f625f8c821564c8633
             this.reporte1ToolStripMenuItem1.Text = "Reporte 1";
-            this.reporte1ToolStripMenuItem1.Click += new System.EventHandler(this.reporte1ToolStripMenuItem1_Click);
             // 
             // reporte2ToolStripMenuItem1
             // 
             this.reporte2ToolStripMenuItem1.Name = "reporte2ToolStripMenuItem1";
-<<<<<<< HEAD
-            this.reporte2ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-=======
             this.reporte2ToolStripMenuItem1.Size = new System.Drawing.Size(157, 26);
->>>>>>> 202afcf52c88ad1d13af68f625f8c821564c8633
             this.reporte2ToolStripMenuItem1.Text = "Reporte 2";
-            this.reporte2ToolStripMenuItem1.Click += new System.EventHandler(this.reporte2ToolStripMenuItem1_Click);
             // 
             // reporte3ToolStripMenuItem
             // 
             this.reporte3ToolStripMenuItem.Name = "reporte3ToolStripMenuItem";
-<<<<<<< HEAD
-            this.reporte3ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-=======
             this.reporte3ToolStripMenuItem.Size = new System.Drawing.Size(157, 26);
->>>>>>> 202afcf52c88ad1d13af68f625f8c821564c8633
             this.reporte3ToolStripMenuItem.Text = "Reporte 3";
-            this.reporte3ToolStripMenuItem.Click += new System.EventHandler(this.reporte3ToolStripMenuItem_Click);
             // 
             // reporte4ToolStripMenuItem
             // 
             this.reporte4ToolStripMenuItem.Name = "reporte4ToolStripMenuItem";
-<<<<<<< HEAD
-            this.reporte4ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-=======
             this.reporte4ToolStripMenuItem.Size = new System.Drawing.Size(157, 26);
->>>>>>> 202afcf52c88ad1d13af68f625f8c821564c8633
             this.reporte4ToolStripMenuItem.Text = "Reporte 4";
-            this.reporte4ToolStripMenuItem.Click += new System.EventHandler(this.reporte4ToolStripMenuItem_Click);
-            // 
-            // reporte2ToolStripMenuItem
-            // 
-            this.reporte2ToolStripMenuItem.Name = "reporte2ToolStripMenuItem";
-            this.reporte2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.reporte2ToolStripMenuItem.Text = "Reporteador";
-            this.reporte2ToolStripMenuItem.Click += new System.EventHandler(this.reporte2ToolStripMenuItem_Click);
-            // 
-            // ayudaToolStripMenuItem
-            // 
-            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.ayudaToolStripMenuItem.Text = "Ayuda";
             // 
             // reporte2ToolStripMenuItem
             // 
@@ -219,18 +157,13 @@ namespace CapaVista
             // 
             // MdiParent1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(932, 661);
-=======
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(120)))), ((int)(((byte)(81)))));
             this.ClientSize = new System.Drawing.Size(1242, 813);
->>>>>>> 202afcf52c88ad1d13af68f625f8c821564c8633
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MdiParent1";
             this.Text = "MDIParent1";
             this.menuStrip1.ResumeLayout(false);
