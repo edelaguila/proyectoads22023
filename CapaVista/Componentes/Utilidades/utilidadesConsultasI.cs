@@ -65,5 +65,27 @@ namespace CapaVista.Componentes.Utilidades
         }
 
 
+        public void guardarEmpleado(Form child)
+        {
+            ControladorEmpleado cEmple = new ControladorEmpleado();
+            var dictionary = new Dictionary<string, string>();
+            List<string> columns = this.ctrNav.getColumns("tbl_empleado");
+
+            foreach (Control c in child.Controls)
+            {
+                if (c is TextBox)
+                {
+                    string tag = c.Tag.ToString();
+                    if (columns.Contains(tag))
+                    {
+                        dictionary.Add(tag, c.Text);
+                    }
+                    c.Text = "";
+                }
+            }
+            cEmple.agregarEmpleado(dictionary);
+            MessageBox.Show("Empleado Creado Correctamente");
+        }
+
     }
 }

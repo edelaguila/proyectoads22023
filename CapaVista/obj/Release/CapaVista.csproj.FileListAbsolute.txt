@@ -94,3 +94,8 @@ C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVis
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.CopyComplete
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.dll
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.pdb
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmClientes.resources
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmEmpleado.resources
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmInventario.resources
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmNomina.resources
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.Reporte.resources
