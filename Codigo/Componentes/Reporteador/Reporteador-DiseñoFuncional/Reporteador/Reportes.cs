@@ -70,41 +70,12 @@ namespace Reporteador
 
         private void btn_ver_Click(object sender, EventArgs e)
         {
+            // Crear una instancia del formulario "Vista de Reportes"
+            Vista_de_Reportes vistaDeReportesForm = new Vista_de_Reportes();
 
-            // Obtener la ruta del archivo seleccionado
-            string ruta = txt_ruta.Text.Trim();
-
-            // Verificar si la ruta es válida y el archivo existe
-            if (!string.IsNullOrEmpty(ruta) && File.Exists(ruta))
-            {
-                // Crear una instancia del formulario "Vista de Reportes"
-                Vista_de_Reportes vistaDeReportesForm = new Vista_de_Reportes();
-
-                try
-                {
-                    // Leer el contenido del archivo y establecerlo en el formulario "Vista de Reportes"
-                    string contenido = File.ReadAllText(ruta);
-                    vistaDeReportesForm.MostrarContenido(contenido);
-
-                    // Mostrar el formulario "Vista de Reportes"
-                    vistaDeReportesForm.Show();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error al leer el archivo:\n\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            else
-            {
-                MessageBox.Show("La ruta no es válida o el archivo no existe.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            // Mostrar el formulario "Vista de Reportes"
+            vistaDeReportesForm.Show();
         }
-
-        private void dgv_reportes_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
     }
     }
 
