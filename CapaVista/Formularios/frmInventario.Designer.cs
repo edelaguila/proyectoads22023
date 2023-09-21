@@ -39,6 +39,7 @@
             this.txt_unidades = new System.Windows.Forms.TextBox();
             this.lbl_unidades = new System.Windows.Forms.Label();
             this.date_fecha_entrega = new System.Windows.Forms.DateTimePicker();
+            this.btn_guardar_inv = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txt_cod_producto
@@ -142,19 +143,35 @@
             // date_fecha_entrega
             // 
             this.date_fecha_entrega.CalendarFont = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date_fecha_entrega.CustomFormat = "yyyy-MM-dd";
             this.date_fecha_entrega.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date_fecha_entrega.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.date_fecha_entrega.Location = new System.Drawing.Point(286, 407);
+            this.date_fecha_entrega.MaxDate = new System.DateTime(2023, 12, 31, 0, 0, 0, 0);
             this.date_fecha_entrega.Name = "date_fecha_entrega";
             this.date_fecha_entrega.Size = new System.Drawing.Size(282, 32);
             this.date_fecha_entrega.TabIndex = 11;
             this.date_fecha_entrega.Tag = "nbr_fecha_entrega";
+            // 
+            // btn_guardar_inv
+            // 
+            this.btn_guardar_inv.BackColor = System.Drawing.Color.LawnGreen;
+            this.btn_guardar_inv.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_guardar_inv.Location = new System.Drawing.Point(383, 474);
+            this.btn_guardar_inv.Name = "btn_guardar_inv";
+            this.btn_guardar_inv.Size = new System.Drawing.Size(218, 94);
+            this.btn_guardar_inv.TabIndex = 12;
+            this.btn_guardar_inv.Text = "Guardar";
+            this.btn_guardar_inv.UseVisualStyleBackColor = false;
+            this.btn_guardar_inv.Click += new System.EventHandler(this.btn_guardar_inv_Click);
             // 
             // frmInventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(161)))), ((int)(((byte)(116)))));
-            this.ClientSize = new System.Drawing.Size(1043, 542);
+            this.ClientSize = new System.Drawing.Size(1043, 580);
+            this.Controls.Add(this.btn_guardar_inv);
             this.Controls.Add(this.date_fecha_entrega);
             this.Controls.Add(this.lbl_unidades);
             this.Controls.Add(this.txt_unidades);
@@ -167,6 +184,7 @@
             this.Controls.Add(this.lbl_cod_producto);
             this.Controls.Add(this.txt_cod_producto);
             this.Name = "frmInventario";
+            this.Tag = "frINVE";
             this.Text = "frmInventario";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -186,5 +204,6 @@
         private System.Windows.Forms.TextBox txt_unidades;
         private System.Windows.Forms.Label lbl_unidades;
         private System.Windows.Forms.DateTimePicker date_fecha_entrega;
+        private System.Windows.Forms.Button btn_guardar_inv;
     }
 }

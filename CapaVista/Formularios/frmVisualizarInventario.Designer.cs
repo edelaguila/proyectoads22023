@@ -28,67 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Cod_Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre_Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre_Proveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Unidades = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fecha_Entrega = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dt_inv = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dt_inv)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dt_inv
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Cod_Producto,
-            this.Nombre_Producto,
-            this.Nombre_Proveedor,
-            this.Unidades,
-            this.Fecha_Entrega});
-            this.dataGridView1.Location = new System.Drawing.Point(155, 220);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(678, 282);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // Cod_Producto
-            // 
-            this.Cod_Producto.HeaderText = "Cod_Producto";
-            this.Cod_Producto.MinimumWidth = 6;
-            this.Cod_Producto.Name = "Cod_Producto";
-            this.Cod_Producto.Width = 125;
-            // 
-            // Nombre_Producto
-            // 
-            this.Nombre_Producto.HeaderText = "Nombre_Producto";
-            this.Nombre_Producto.MinimumWidth = 6;
-            this.Nombre_Producto.Name = "Nombre_Producto";
-            this.Nombre_Producto.Width = 125;
-            // 
-            // Nombre_Proveedor
-            // 
-            this.Nombre_Proveedor.HeaderText = "Nombre_Proveedor";
-            this.Nombre_Proveedor.MinimumWidth = 6;
-            this.Nombre_Proveedor.Name = "Nombre_Proveedor";
-            this.Nombre_Proveedor.Width = 125;
-            // 
-            // Unidades
-            // 
-            this.Unidades.HeaderText = "Unidades";
-            this.Unidades.MinimumWidth = 6;
-            this.Unidades.Name = "Unidades";
-            this.Unidades.Width = 125;
-            // 
-            // Fecha_Entrega
-            // 
-            this.Fecha_Entrega.HeaderText = "Fecha_Entrega";
-            this.Fecha_Entrega.MinimumWidth = 6;
-            this.Fecha_Entrega.Name = "Fecha_Entrega";
-            this.Fecha_Entrega.Width = 125;
+            this.dt_inv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dt_inv.Location = new System.Drawing.Point(63, 228);
+            this.dt_inv.Name = "dt_inv";
+            this.dt_inv.RowHeadersWidth = 51;
+            this.dt_inv.RowTemplate.Height = 24;
+            this.dt_inv.Size = new System.Drawing.Size(853, 282);
+            this.dt_inv.TabIndex = 0;
+            this.dt_inv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label3
             // 
@@ -107,10 +61,10 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(161)))), ((int)(((byte)(116)))));
             this.ClientSize = new System.Drawing.Size(976, 548);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dt_inv);
             this.Name = "frmVisualizarInventario";
             this.Text = "frmVisualizarInventario";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dt_inv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -118,12 +72,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cod_Producto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre_Producto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre_Proveedor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Unidades;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Fecha_Entrega;
+        private System.Windows.Forms.DataGridView dt_inv;
         private System.Windows.Forms.Label label3;
     }
 }

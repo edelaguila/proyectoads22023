@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaVista;
+using CapaVista.Formularios;
 
 namespace Ejecutable
 {
@@ -17,7 +18,7 @@ namespace Ejecutable
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Principal());
+            Application.Run(new frmInventario());
         }
     }
 }

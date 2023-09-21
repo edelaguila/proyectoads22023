@@ -64,6 +64,39 @@ namespace CapaVista.Componentes.Utilidades
             MessageBox.Show("Usuario Creado Correctamente");
         }
 
+        public void guardarInventario(Form child)
+        {
+            ControladorInventario ctriv = new ControladorInventario();
+            var dictionary = new Dictionary<string, string>();
+            List<string> columns = this.ctrNav.getColumns("tbl_INVENTARIO");
+
+            foreach (Control c in child.Controls)
+            {
+                if (c is TextBox)
+                {
+                    string tag = c.Tag.ToString();
+                    if (columns.Contains(tag))
+                    {
+                        dictionary.Add(tag, c.Text);
+                    }
+                    c.Text = "";
+                }
+                else if (c is DateTimePicker)
+                {
+                    string tag = c.Tag.ToString();
+                    if (columns.Contains(tag))
+                    {
+                     
+                        DateTimePicker dateTimePicker = c as DateTimePicker;
+                        DateTime fechaHora = dateTimePicker.Value;
+                        dictionary.Add(tag, fechaHora.ToString("yyyy-MM-dd"));  
+                    }
+                }
+            }
+            ctriv.agregarInventario(dictionary);
+            MessageBox.Show("INVENTARIO GUARDADO");
+        }
+
 
     }
 }
