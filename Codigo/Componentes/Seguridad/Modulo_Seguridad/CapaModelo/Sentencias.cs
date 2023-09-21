@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.Odbc;
 using System.Security.Cryptography;
+using System.Net;
+using System.IO;
 
 namespace CapaModelo
 {
@@ -101,6 +103,34 @@ namespace CapaModelo
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, con.conexion());
             return dataTable;
         }*/
+
+        public string GetIpPublica()
+        {
+            var request = (HttpWebRequest)WebRequest.Create("https://api.ipify.org/");
+            request.UserAgent = "curl"; string publicIPAddress; request.Method = "GET";
+            using (WebResponse response = request.GetResponse())
+            {
+                using (var reader = new StreamReader(response.GetResponseStream()))
+                {
+                    publicIPAddress = reader.ReadToEnd();
+                }
+            }
+            return publicIPAddress.Replace("\n", "");
+        }
+
+        public string ObtenerHoraSistema()
+        {
+            DateTime horaSistema = DateTime.Now;
+            return horaSistema.ToString("HH:mm:ss");
+        }
+
+        public string ObtenerFechaSistema()
+        {
+            DateTime fechaSistema = DateTime.Now;
+            return fechaSistema.ToString("dd-MM-yyyy");
+        }
+
+        //reutilizar el metodo de Carlos para obtener la informacion de usuario
 
 
 
