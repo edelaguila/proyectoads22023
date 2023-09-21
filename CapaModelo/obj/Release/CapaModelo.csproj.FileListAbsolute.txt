@@ -16,3 +16,9 @@ D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaModelo\obj\Release\CapaModelo.c
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaModelo\obj\Release\CapaModelo.csproj.CoreCompileInputs.cache
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaModelo\obj\Release\CapaModelo.dll
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaModelo\obj\Release\CapaModelo.pdb
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaModelo\bin\Release\CapaModelo.dll
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaModelo\bin\Release\CapaModelo.pdb
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaModelo\obj\Release\CapaModelo.csproj.AssemblyReference.cache
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaModelo\obj\Release\CapaModelo.csproj.CoreCompileInputs.cache
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaModelo\obj\Release\CapaModelo.dll
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaModelo\obj\Release\CapaModelo.pdb

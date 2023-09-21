@@ -74,3 +74,4 @@ C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\obj\R
 C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.CopyComplete
 C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\obj\Release\CapaVista.dll
 C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\obj\Release\CapaVista.pdb
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmClientes.resources
