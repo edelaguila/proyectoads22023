@@ -64,11 +64,11 @@ namespace CapaVista.Componentes.Utilidades
             MessageBox.Show("Usuario Creado Correctamente");
         }
 
-        public void guardarInventario(Form child)
+        public void guardarCliente(Form child)
         {
-            ControladorInventario ctriv = new ControladorInventario();
+            ControladorCliente ctrclick = new ControladorCliente();
             var dictionary = new Dictionary<string, string>();
-            List<string> columns = this.ctrNav.getColumns("tbl_INVENTARIO");
+            List<string> columns = this.ctrNav.getColumns("tbl_clientes");
 
             foreach (Control c in child.Controls)
             {
@@ -81,20 +81,9 @@ namespace CapaVista.Componentes.Utilidades
                     }
                     c.Text = "";
                 }
-                else if (c is DateTimePicker)
-                {
-                    string tag = c.Tag.ToString();
-                    if (columns.Contains(tag))
-                    {
-                     
-                        DateTimePicker dateTimePicker = c as DateTimePicker;
-                        DateTime fechaHora = dateTimePicker.Value;
-                        dictionary.Add(tag, fechaHora.ToString("yyyy-MM-dd"));  
-                    }
-                }
             }
-            ctriv.agregarInventario(dictionary);
-            MessageBox.Show("INVENTARIO GUARDADO");
+            ctrclick.agregarCliente(dictionary);
+            MessageBox.Show("Cliente Creado Correctamente");
         }
 
 

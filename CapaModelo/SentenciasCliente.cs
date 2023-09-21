@@ -3,29 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.Odbc;
 
 namespace CapaModelo
 {
-    public class SentenciasRegistros : SentenciasGenerales
+    public class SentenciasCliente:SentenciasGenerales
     {
         private string tabla;
 
-        public SentenciasRegistros(){
-            this.tabla="usuario";
+        public SentenciasCliente()
+        {
+            this.tabla = "tbl_clientes";
+        }
 
-            }
-
-        public void agregarUsuario(Dictionary<string, string> parameters)
+        public void agregarClientes(Dictionary<string, string> parameters)
         {
             string query = this.getQuery(parameters, tabla);
             this.insertarSQL(query);
 
         }
-
-       
-
-
-
     }
 }
