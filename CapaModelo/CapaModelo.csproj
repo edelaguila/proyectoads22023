@@ -45,6 +45,11 @@
   <ItemGroup>
     <Compile Include="Conexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
+    <Compile Include="SentenciasNomina.cs" />
+=======
+    <Compile Include="SentenciasEmpleado.cs" />
+>>>>>>> b9257d4f671c61b248788afe5587c7624430bc62
     <Compile Include="SentenciasEmpleados.cs" />
     <Compile Include="SentenciasGenerales.cs" />
     <Compile Include="SentenciasInventario.cs" />
