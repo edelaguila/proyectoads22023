@@ -36,7 +36,7 @@
             // dt_inv
             // 
             this.dt_inv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dt_inv.Location = new System.Drawing.Point(63, 228);
+            this.dt_inv.Location = new System.Drawing.Point(76, 228);
             this.dt_inv.Name = "dt_inv";
             this.dt_inv.RowHeadersWidth = 51;
             this.dt_inv.RowTemplate.Height = 24;
