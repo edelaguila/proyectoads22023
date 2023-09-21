@@ -10,7 +10,7 @@ namespace CapaControlador
     public class ControladorRegistro
     {
 
-        private SentenciasRegistros snRegistros;
+        public SentenciasRegistros snRegistros;
 
 
         public ControladorRegistro()

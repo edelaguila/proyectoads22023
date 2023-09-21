@@ -25,12 +25,12 @@ C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaControlador\obj\Release\C
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaControlador\obj\Release\CapaControlador.csproj.CopyComplete
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaControlador\obj\Release\CapaControlador.dll
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaControlador\obj\Release\CapaControlador.pdb
-D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaControlador\bin\Release\CapaControlador.dll
-D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaControlador\bin\Release\CapaControlador.pdb
-D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaControlador\bin\Release\CapaModelo.dll
-D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaControlador\bin\Release\CapaModelo.pdb
-D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaControlador\obj\Release\CapaControlador.csproj.AssemblyReference.cache
-D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaControlador\obj\Release\CapaControlador.csproj.CoreCompileInputs.cache
-D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaControlador\obj\Release\CapaControlador.csproj.CopyComplete
-D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaControlador\obj\Release\CapaControlador.dll
-D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaControlador\obj\Release\CapaControlador.pdb
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaControlador\bin\Release\CapaControlador.dll
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaControlador\bin\Release\CapaControlador.pdb
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaControlador\bin\Release\CapaModelo.dll
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaControlador\bin\Release\CapaModelo.pdb
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaControlador\obj\Release\CapaControlador.csproj.AssemblyReference.cache
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaControlador\obj\Release\CapaControlador.csproj.CoreCompileInputs.cache
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaControlador\obj\Release\CapaControlador.csproj.CopyComplete
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaControlador\obj\Release\CapaControlador.dll
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaControlador\obj\Release\CapaControlador.pdb
