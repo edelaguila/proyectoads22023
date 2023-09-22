@@ -73,7 +73,6 @@ namespace CapaVista.Componentes.Utilidades
                 }
                 ctriv.setTabla(this.tabla);
                 ctriv.guardar(dictionary);
-                //MessageBox.Show("REFRESCADO");
             }
 
         }
