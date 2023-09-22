@@ -12,6 +12,7 @@ namespace CapaVista.Componentes.Utilidades
     {
         public Controlador ctrl;
         public string tabla = "andrea";
+        DataGridViewRow selected = new DataGridViewRow();
         public utilidadesConsultasI()
         {
             this.ctrl = new Controlador();
@@ -62,19 +63,77 @@ namespace CapaVista.Componentes.Utilidades
         public void refrescar(Form child)
         {
             Controlador ctriv = new Controlador();
-            ctriv.setTabla(tabla);
-            var dictionary = new Dictionary<string, string>();
-            List<string> columns = this.ctrl.getColumns(this.tabla);
+            ctriv.setTabla(this.tabla);
             foreach (Control c in child.Controls)
             {
                 if (c is DataGridView)
                 {
+                  //  ((DataGridView)c).Rows.Clear();
                     ((DataGridView)c).DataSource = ctriv.refrescar();
                 }
-                ctriv.setTabla(this.tabla);
-                ctriv.guardar(dictionary);
+                
             }
 
         }
+        public void cargarModificar(Form child, DataGridView dgvname)
+        {
+
+            if (dgvname.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = dgvname.SelectedRows[0];
+                selected = selectedRow;
+                foreach (Control c in child.Controls)
+                {
+                    if (c is TextBox textBox && textBox.Tag != null)
+                    {
+                        string columnName = textBox.Tag.ToString();
+
+                        int columnIndex = dgvname.Columns[columnName].Index;
+
+                        textBox.Text = selectedRow.Cells[columnIndex].Value.ToString();
+                    }
+                }
+            }
+        }
+
+        public void modificar(Form child)
+        {
+            Controlador ctriv = new Controlador();
+            var dictionary = new Dictionary<string, string>();
+            List<string> columns = this.ctrl.getColumns(this.tabla);
+            string pk = selected.Cells[0].OwningColumn.HeaderText;
+            int id = Convert.ToInt32(selected.Cells[0].Value);
+            foreach (Control c in child.Controls)
+            {
+                if (c is TextBox)
+                {
+                    string tag = c.Tag.ToString();
+                    if (columns.Contains(tag))
+                    {
+                        dictionary.Add(tag, c.Text);
+                    }
+                    c.Text = "";
+                }
+                else if (c is DateTimePicker)
+                {
+                    string tag = c.Tag.ToString();
+                    if (columns.Contains(tag))
+                    {
+
+                        DateTimePicker dateTimePicker = c as DateTimePicker;
+                        DateTime fechaHora = dateTimePicker.Value;
+                        dictionary.Add(tag, fechaHora.ToString("yyyy-MM-dd"));
+                    }
+                }
+            }
+            ctriv.setTabla(this.tabla);
+            ctriv.modificar(dictionary, pk, id);
+            MessageBox.Show("MODIFICANDO");
+
+        }
+
+
+
+
     }
 }

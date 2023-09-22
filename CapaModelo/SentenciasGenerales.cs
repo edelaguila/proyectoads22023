@@ -113,5 +113,29 @@ namespace CapaModelo
             return null;
         }
 
+
+        public string getModificarQuery(Dictionary<string, string> parameters, string tabla, string pk, int id)
+        {
+            List<string> columns = this.getColumns(tabla);
+            string sql = "UPDATE " + tabla + " SET ";
+
+            foreach (string col in columns)
+            {
+                if (parameters.Keys.Contains(col))
+                {
+                    string str = parameters[col];
+                    sql += col + " = '" + str + "', ";
+                }
+            }
+
+            sql = sql.TrimEnd(',', ' ');
+            sql += " WHERE " + pk + " = '" + id + "';";
+
+            Console.WriteLine(sql);
+            return sql;
+        }
+
+
+
     }
 }

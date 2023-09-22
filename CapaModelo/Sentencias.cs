@@ -10,7 +10,9 @@ namespace CapaModelo
 {
     public class Sentencias : SentenciasGenerales
     {
-        private string tabla = "carol";
+ 
+        private string tabla = "";
+  
         public Sentencias()
         {
 
@@ -28,6 +30,11 @@ namespace CapaModelo
         public OdbcDataAdapter refrescar()
         {
             return this.refrescarSQL(tabla);
+        }
+        public void modificar(Dictionary<string, string> parameters, string pk, int id)
+        {
+            string query = this.getModificarQuery(parameters, tabla, pk, id);
+            this.insertarSQL(query);
         }
     }
 }
