@@ -25,7 +25,6 @@ C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Debug\
 C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Debug\CapaControlador.pdb
 C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Debug\CapaModelo.pdb
 C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\obj\Debug\Ejecutable.csproj.AssemblyReference.cache
-C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\obj\Debug\Ejecutable.csproj.SuggestedBindingRedirects.cache
 C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\obj\Debug\Ejecutable.Properties.Resources.resources
 C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\obj\Debug\Ejecutable.csproj.GenerateResource.cache
 C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\obj\Debug\Ejecutable.csproj.CoreCompileInputs.cache
@@ -48,3 +47,4 @@ C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Ejecutable\obj\Debug\Ejecutab
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Ejecutable\obj\Debug\Ejecutable.csproj.CopyComplete
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Ejecutable\obj\Debug\Ejecutable.exe
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Ejecutable\obj\Debug\Ejecutable.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\obj\Debug\Ejecutable.visualizar.resources
