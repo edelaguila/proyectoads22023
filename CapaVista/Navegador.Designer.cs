@@ -255,6 +255,7 @@
             this.btn_modificar.Text = "Modificar";
             this.btn_modificar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_modificar.UseVisualStyleBackColor = false;
+            this.btn_modificar.Click += new System.EventHandler(this.btn_modificar_Click);
             // 
             // btn_agregar
             // 
@@ -278,7 +279,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Navegador";
             this.Size = new System.Drawing.Size(1001, 96);
             this.panel.ResumeLayout(false);
