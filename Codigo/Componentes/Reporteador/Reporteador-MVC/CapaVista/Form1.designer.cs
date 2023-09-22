@@ -68,7 +68,7 @@ namespace Reporteador
             // 
             this.lbl_categoria.AutoSize = true;
             this.lbl_categoria.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.lbl_categoria.Location = new System.Drawing.Point(31, 198);
+            this.lbl_categoria.Location = new System.Drawing.Point(181, 224);
             this.lbl_categoria.Name = "lbl_categoria";
             this.lbl_categoria.Size = new System.Drawing.Size(96, 21);
             this.lbl_categoria.TabIndex = 1;
@@ -78,7 +78,7 @@ namespace Reporteador
             // 
             this.lbl_estado.AutoSize = true;
             this.lbl_estado.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.lbl_estado.Location = new System.Drawing.Point(31, 243);
+            this.lbl_estado.Location = new System.Drawing.Point(181, 269);
             this.lbl_estado.Name = "lbl_estado";
             this.lbl_estado.Size = new System.Drawing.Size(68, 21);
             this.lbl_estado.TabIndex = 2;
@@ -87,7 +87,7 @@ namespace Reporteador
             // txt_categoria
             // 
             this.txt_categoria.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.txt_categoria.Location = new System.Drawing.Point(145, 198);
+            this.txt_categoria.Location = new System.Drawing.Point(295, 224);
             this.txt_categoria.Name = "txt_categoria";
             this.txt_categoria.Size = new System.Drawing.Size(105, 27);
             this.txt_categoria.TabIndex = 3;
@@ -95,7 +95,7 @@ namespace Reporteador
             // txt_estado
             // 
             this.txt_estado.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.txt_estado.Location = new System.Drawing.Point(145, 243);
+            this.txt_estado.Location = new System.Drawing.Point(295, 269);
             this.txt_estado.Name = "txt_estado";
             this.txt_estado.Size = new System.Drawing.Size(105, 27);
             this.txt_estado.TabIndex = 4;
@@ -103,11 +103,11 @@ namespace Reporteador
             // dgv_categorias
             // 
             this.dgv_categorias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_categorias.Location = new System.Drawing.Point(14, 336);
+            this.dgv_categorias.Location = new System.Drawing.Point(185, 317);
             this.dgv_categorias.Name = "dgv_categorias";
             this.dgv_categorias.RowHeadersWidth = 51;
             this.dgv_categorias.RowTemplate.Height = 24;
-            this.dgv_categorias.Size = new System.Drawing.Size(1023, 178);
+            this.dgv_categorias.Size = new System.Drawing.Size(706, 178);
             this.dgv_categorias.TabIndex = 5;
             this.dgv_categorias.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_categorias_CellContentClick);
             // 
@@ -361,7 +361,8 @@ namespace Reporteador
             this.Controls.Add(this.lbl_categoria);
             this.Controls.Add(this.lbl_titulo);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Navegador";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_categorias)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

@@ -67,7 +67,7 @@ namespace CapaVista
             this.Controls.Add(this.crystalReportViewer2);
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "prubacrystal";
-            this.Text = "prubacrystal";
+            this.Text = "Reservas Realizadas";
             this.ResumeLayout(false);
 
         }
