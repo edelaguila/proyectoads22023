@@ -42,7 +42,7 @@ namespace CapaModelo
 
         public string getQuery(Dictionary<string, string> parameters, string tabla)
         {
-
+            //MessageBox.Show("query: " + tabla);
             List<string> columns = this.getColumns(tabla);
             string _columns = this.getColumnsQuery(parameters, columns);
             //Se deberia cambiar la tabla a usuarios para el ingreso de datos y la creacion de roles
@@ -64,6 +64,7 @@ namespace CapaModelo
 
         public List<string> getColumns(string tableName)
         {
+            //MessageBox.Show("tabla: " + tableName);
             List<string> columns = new List<string>();
             try
             {

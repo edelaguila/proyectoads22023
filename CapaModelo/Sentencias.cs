@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace CapaModelo
 {
-    public class SentenciasNomina : SentenciasGenerales
+    public class Sentencias : SentenciasGenerales
     {
-        private string tabla;
-        public SentenciasNomina()
+        private string tabla = "carol";
+        public Sentencias()
         {
-            this.tabla = "tbl_nomina";
-
 
         }
-        public void agregarEmpleadoNomina(Dictionary<string, string> parameters)
+        public Sentencias(string tabla)
+        {
+            this.tabla = tabla;
+        }
+        public void guardar(Dictionary<string, string> parameters)
         {
             string query = this.getQuery(parameters, tabla);
             this.insertarSQL(query);
-
         }
-
     }
 }
