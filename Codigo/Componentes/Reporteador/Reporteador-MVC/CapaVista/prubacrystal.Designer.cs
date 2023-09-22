@@ -44,7 +44,7 @@ namespace CapaVista
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
             this.crystalReportViewer1.ReportSource = this.CrystalReport21;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(800, 450);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1619, 1055);
             this.crystalReportViewer1.TabIndex = 0;
             // 
             // crystalReportViewer2
@@ -56,14 +56,14 @@ namespace CapaVista
             this.crystalReportViewer2.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer2.Name = "crystalReportViewer2";
             this.crystalReportViewer2.ReportSource = this.CrystalReport22;
-            this.crystalReportViewer2.Size = new System.Drawing.Size(800, 450);
+            this.crystalReportViewer2.Size = new System.Drawing.Size(1619, 1055);
             this.crystalReportViewer2.TabIndex = 1;
             // 
             // prubacrystal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1619, 1055);
             this.Controls.Add(this.crystalReportViewer2);
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "prubacrystal";
