@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Odbc;
+using System.Data;
 
 namespace CapaModelo
 {
@@ -21,6 +23,11 @@ namespace CapaModelo
         {
             string query = this.getQuery(parameters, tabla);
             this.insertarSQL(query);
+        }
+
+        public OdbcDataAdapter refrescar()
+        {
+            return this.refrescarSQL(tabla);
         }
     }
 }

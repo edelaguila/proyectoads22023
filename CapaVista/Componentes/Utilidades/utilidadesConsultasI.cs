@@ -24,10 +24,6 @@ namespace CapaVista.Componentes.Utilidades
         }
 
 
-
-
-
-
         public void guardar(Form child)
         {
             Controlador ctriv = new Controlador();
@@ -62,5 +58,24 @@ namespace CapaVista.Componentes.Utilidades
             MessageBox.Show("INVENTARIO GUARDADO");
         }
 
+
+        public void refrescar(Form child)
+        {
+            Controlador ctriv = new Controlador();
+            ctriv.setTabla(tabla);
+            var dictionary = new Dictionary<string, string>();
+            List<string> columns = this.ctrl.getColumns(this.tabla);
+            foreach (Control c in child.Controls)
+            {
+                if (c is DataGridView)
+                {
+                    ((DataGridView)c).DataSource = ctriv.refrescar();
+                }
+                ctriv.setTabla(this.tabla);
+                ctriv.guardar(dictionary);
+                //MessageBox.Show("REFRESCADO");
+            }
+
+        }
     }
 }

@@ -98,5 +98,20 @@ namespace CapaModelo
             }
         }
 
+        public OdbcDataAdapter refrescarSQL(string tabla)
+        {
+            try
+            {
+                string query = "SELECT * FROM " + tabla;
+                OdbcDataAdapter dt = new OdbcDataAdapter(query,this.conn.connection());
+                return dt;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            return null;
+        }
+
     }
 }

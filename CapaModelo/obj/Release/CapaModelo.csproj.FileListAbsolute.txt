@@ -22,3 +22,9 @@ C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaModelo\obj\
 C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaModelo\obj\Release\CapaModelo.csproj.CoreCompileInputs.cache
 C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaModelo\obj\Release\CapaModelo.dll
 C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaModelo\obj\Release\CapaModelo.pdb
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaModelo\bin\Release\CapaModelo.dll
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaModelo\bin\Release\CapaModelo.pdb
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaModelo\obj\Release\CapaModelo.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaModelo\obj\Release\CapaModelo.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaModelo\obj\Release\CapaModelo.dll
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaModelo\obj\Release\CapaModelo.pdb

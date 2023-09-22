@@ -1,5 +1,4 @@
-﻿using CapaControlador;
-using CapaVista.Componentes.Utilidades;
+﻿using CapaVista.Componentes.Utilidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -38,6 +37,8 @@ namespace CapaVista
         public void identificarFormulario(Form child, string operacion)
         {
             if (operacion.Equals("g")) this.utilConsultasI.guardar(child);
+
+            if (operacion.Equals("r")) this.utilConsultasI.refrescar(child);
         }
         private void btn_guardar_Click(object sender, EventArgs e)
         {
@@ -98,6 +99,11 @@ namespace CapaVista
         private void btn_ayuda_Click_1(object sender, EventArgs e)
         {
             Help.ShowHelp(this, "Ayudas/AyudaSO2.chm", "NavAyuda.html");
+        }
+
+        private void btn_refrescar_Click(object sender, EventArgs e)
+        {
+            this.identificarFormulario(this.parent, "r");
         }
     }
 }
