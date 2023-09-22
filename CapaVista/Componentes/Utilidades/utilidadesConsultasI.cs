@@ -132,8 +132,35 @@ namespace CapaVista.Componentes.Utilidades
 
         }
 
+        //Carol Chuy
+        public void eliminar(Form child, DataGridView dgvname)
+        {
 
+            if (MessageBox.Show("¿Esta seguro que desea eliminar este registro?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Controlador ctriv = new Controlador();
+            if (dgvname.SelectedRows.Count > 0)
+            {
+                // Obtener la primera fila seleccionada
+                DataGridViewRow selectedRow = dgvname.SelectedRows[0];
 
+                // Obtiene el valor de la primera celda de esa fila y la convierte a entero
+                if (selectedRow.Cells[0].Value != null)
+                {
+                    int llave = Convert.ToInt32(selectedRow.Cells[0].Value);
 
+                    string campo = dgvname.Columns[0].HeaderText;
+                    ctriv.setTabla(this.tabla);
+                    ctriv.eliminar(campo, llave);
+                    MessageBox.Show("Eliminado Exitosamente");
+                }
+            }
+            else
+            {
+                // Manejar el caso en el que no hay filas seleccionadas
+                MessageBox.Show("No hay filas seleccionadas en el DataGridView.");
+            }
+          }   
+        }
     }
 }
