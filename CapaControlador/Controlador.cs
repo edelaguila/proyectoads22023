@@ -27,6 +27,12 @@ namespace CapaControlador
         {
             this.sn.guardar(parameters);
         }
+
+        public void modificar(Dictionary<string, string> parameters, string pk, int id)
+        {
+            this.sn.modificar(parameters, pk, id);
+        }
+
         public List<string> getColumns(string tabla)
         {
             return this.sn.getColumns(tabla);

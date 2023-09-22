@@ -37,11 +37,34 @@ namespace CapaVista
 
         public void identificarFormulario(Form child, string operacion)
         {
+            
+           DataGridView dgvname = GetDGV(child);
+
             if (operacion.Equals("g")) this.utilConsultasI.guardar(child);
+            if (operacion.Equals("m")) this.utilConsultasI.modificar(child); ;
         }
+
+
+
+        public  DataGridView GetDGV(Form child) { 
+         
+             foreach (Control c in child.Controls)
+             {
+          
+
+                 if (c is DataGridView dgv)
+                 {
+
+                    return dgv;
+                 }
+
+             }return null;
+             throw new Exception("No se encontró un DataGridView en elasdas formulario.");
+         }
+
         private void btn_guardar_Click(object sender, EventArgs e)
         {
-            this.identificarFormulario(this.parent, "g");
+            this.identificarFormulario(this.parent, this.operacion);
             this.cambiarEstado(false);
         }
 
@@ -68,6 +91,7 @@ namespace CapaVista
         private void btn_agregar_Click(object sender, EventArgs e)
         {
             this.cambiarEstado(true);
+            this.operacion = "a";
         }
 
         public void limpiarControles()
@@ -98,6 +122,16 @@ namespace CapaVista
         private void btn_ayuda_Click_1(object sender, EventArgs e)
         {
             Help.ShowHelp(this, "Ayudas/AyudaSO2.chm", "NavAyuda.html");
+        }
+
+        private void btn_modificar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("boton de modificar xd");
+            this.utilConsultasI.cargarModificar(this.parent,GetDGV(this.parent));
+            this.operacion = "m";
+            this.cambiarEstado(true);
+      
+            
         }
     }
 }
