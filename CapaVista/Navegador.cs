@@ -14,7 +14,6 @@ namespace CapaVista
 {
     public partial class Navegador : UserControl
     {
-        private ControladorNavegador ctrNav;
         private utilidadesConsultasI utilConsultasI;
         public string operacion = "";
         public string tabla = "";
@@ -24,8 +23,7 @@ namespace CapaVista
         {
             InitializeComponent();
             this.parent = new Form();
-            this.ctrNav = new ControladorNavegador();
-            this.utilConsultasI = new utilidadesConsultasI(this.ctrNav);
+            this.utilConsultasI = new utilidadesConsultasI();
             this.cambiarEstado(false);
         }
 

@@ -12,12 +12,9 @@ namespace CapaVista.Componentes.Utilidades
     {
         public Controlador ctrl;
         public string tabla = "andrea";
-        public utilidadesConsultasI(ControladorNavegador ctrlNav)
-        {
-            this.ctrl = new Controlador();
-        }
         public utilidadesConsultasI()
         {
+            this.ctrl = new Controlador();
         }
 
         public void setTabla(string tabla)
@@ -26,15 +23,12 @@ namespace CapaVista.Componentes.Utilidades
             this.ctrl.setTabla(tabla);
         }
 
+
+
+
+
+
         public void guardar(Form child)
-        {
-            this.guardarInventario(child);
-        }
-
-
-
-
-        public void guardarInventario(Form child)
         {
             Controlador ctriv = new Controlador();
             var dictionary = new Dictionary<string, string>();
