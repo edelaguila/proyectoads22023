@@ -12,7 +12,7 @@ namespace CapaControlador
     public class Controlador
     {
         public Sentencias sn;
-        public string tabla = "david";
+        public string tabla = "tbl_inventario";
 
 
         public Controlador()
@@ -45,6 +45,12 @@ namespace CapaControlador
         public List<string> getColumns(string tabla)
         {
             return this.sn.getColumns(tabla);
+        }
+
+        //Carol Chuy
+        public void eliminar(string campo, int llave)
+        {
+            this.sn.eliminar(campo, llave);
         }
     }
 }

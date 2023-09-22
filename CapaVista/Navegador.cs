@@ -42,6 +42,7 @@ namespace CapaVista
             if (operacion.Equals("g")) this.utilConsultasI.guardar(child);
             if (operacion.Equals("m")) this.utilConsultasI.modificar(child);
             if (operacion.Equals("r")) this.utilConsultasI.refrescar(child);
+            if (operacion.Equals("e")) this.utilConsultasI.eliminar(child, dgvname);
         }
 
 
@@ -56,7 +57,7 @@ namespace CapaVista
                 }
             }
             return null;
-            throw new Exception("No se encontró un DataGridView en elasdas formulario.");
+            throw new Exception("No se encontró un DataGridView en el formulario.");
         }
         private void btn_guardar_Click(object sender, EventArgs e)
         {
@@ -172,6 +173,12 @@ namespace CapaVista
             gd.Rows[gd.Rows.Count - 1].Selected = true;
             gd.FirstDisplayedScrollingRowIndex = gd.Rows.Count - 1;
 
+        }
+
+        //Carol Chuy
+        private void btn_eliminar_Click(object sender, EventArgs e)
+        {   
+            this.identificarFormulario(this.parent, "e");
         }
     }
 }

@@ -11,7 +11,7 @@ namespace CapaModelo
     public class Sentencias : SentenciasGenerales
     {
  
-        private string tabla = "";
+        private string tabla = "tbl_inventario";
   
         public Sentencias()
         {
@@ -34,6 +34,13 @@ namespace CapaModelo
         public void modificar(Dictionary<string, string> parameters, string pk, int id)
         {
             string query = this.getModificarQuery(parameters, tabla, pk, id);
+            this.insertarSQL(query);
+        }
+
+        //Carol Chuy
+        public void eliminar(string campo, int llave)
+        {
+            string query = this.eliminarQuery(tabla, campo, llave);
             this.insertarSQL(query);
         }
     }

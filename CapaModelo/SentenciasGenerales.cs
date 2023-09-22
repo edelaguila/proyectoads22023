@@ -135,7 +135,14 @@ namespace CapaModelo
             return sql;
         }
 
+        //Carol Chuy
 
+        public string eliminarQuery(string tabla, string campo, int llave)
+        {
+            string sql = "DELETE FROM " + tabla + " WHERE " + campo + " = '" + llave + "';";
+            Console.WriteLine(sql);
+            return sql;
+        }
 
     }
 }
