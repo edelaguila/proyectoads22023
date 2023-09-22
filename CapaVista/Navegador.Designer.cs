@@ -156,6 +156,7 @@
             this.btn_refrescar.Text = "Refrescar";
             this.btn_refrescar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_refrescar.UseVisualStyleBackColor = false;
+            this.btn_refrescar.Click += new System.EventHandler(this.btn_refrescar_Click);
             // 
             // btn_imprimir
             // 
