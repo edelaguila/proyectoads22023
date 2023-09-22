@@ -16,6 +16,7 @@ namespace CapaVista
         private utilidadesConsultasI utilConsultasI;
         public string operacion = "";
         public string tabla = "";
+        public int filaActual = 0;
 
         public Form parent;
         public Navegador()
@@ -131,6 +132,46 @@ namespace CapaVista
             this.utilConsultasI.cargarModificar(this.parent, GetDGV(this.parent));
             this.operacion = "m";
             this.cambiarEstado(true);
+        }
+
+        private void btn_anterior_Click(object sender, EventArgs e)
+        {
+            DataGridView gd = GetDGV(this.parent);
+            gd.ClearSelection();
+            if (filaActual > 0)
+            {
+                filaActual--;
+                gd.Rows[filaActual].Selected = true;
+            }
+        }
+
+        private void btn_siguiente_Click(object sender, EventArgs e)
+        {
+            DataGridView gd = GetDGV(this.parent);
+            gd.ClearSelection();
+            if (filaActual < gd.Rows.Count - 1)
+            {
+                filaActual++;
+                gd.Rows[filaActual].Selected = true;
+            }
+        }
+
+        private void btn_inicio_Click(object sender, EventArgs e)
+        {
+            DataGridView gd = GetDGV(this.parent);
+            gd.ClearSelection();
+            gd.Rows[0].Selected = true;
+            gd.FirstDisplayedScrollingRowIndex = 0;
+
+        }
+
+        private void btn_fin_Click(object sender, EventArgs e)
+        {
+            DataGridView gd = GetDGV(this.parent);
+            gd.ClearSelection();
+            gd.Rows[gd.Rows.Count - 1].Selected = true;
+            gd.FirstDisplayedScrollingRowIndex = gd.Rows.Count - 1;
+
         }
     }
 }
