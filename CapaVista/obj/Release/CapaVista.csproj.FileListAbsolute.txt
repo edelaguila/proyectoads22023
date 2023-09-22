@@ -32,14 +32,8 @@ D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\bin\Release\CapaModelo.dl
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\bin\Release\CapaControlador.pdb
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\bin\Release\CapaModelo.pdb
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.AssemblyReference.cache
-D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\obj\Release\CapaVista.Componentes.Nav.resources
-D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.ConsultasConsultas.resources
-D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmReportes.resources
-D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmReservacion.resources
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\obj\Release\CapaVista.Login.resources
-D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\obj\Release\CapaVista.Principal.resources
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\obj\Release\CapaVista.Properties.Resources.resources
-D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\obj\Release\CapaVista.Registro.resources
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.GenerateResource.cache
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.CoreCompileInputs.cache
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.CopyComplete
@@ -83,3 +77,4 @@ C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyect
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.Navegador.resources
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.Navegador.resources
 C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Release\CapaVista.Navegador.resources
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\obj\Release\CapaVista.Navegador.resources
