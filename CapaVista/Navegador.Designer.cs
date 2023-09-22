@@ -83,6 +83,7 @@
             this.btn_ayuda.Text = "Ayuda";
             this.btn_ayuda.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_ayuda.UseVisualStyleBackColor = false;
+            this.btn_ayuda.Click += new System.EventHandler(this.btn_ayuda_Click_1);
             // 
             // btn_fin
             // 

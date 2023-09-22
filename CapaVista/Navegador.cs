@@ -60,10 +60,6 @@ namespace CapaVista
             this.cambiarEstado(false);
         }
 
-        private void btn_ayuda_Click(object sender, EventArgs e)
-        {
-            Help.ShowHelp(this, "Ayudas/AyudaSO2.chm", "NavAyuda.html");
-        }
         public void cambiarEstado(bool estado)
         {
             foreach (Control control in this.panel.Controls)
@@ -112,6 +108,11 @@ namespace CapaVista
         {
             this.limpiarControles();
             this.cambiarEstado(false);
+        }
+
+        private void btn_ayuda_Click_1(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "Ayudas/AyudaSO2.chm", "NavAyuda.html");
         }
     }
 }
