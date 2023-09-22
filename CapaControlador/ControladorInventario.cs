@@ -13,16 +13,17 @@ namespace CapaControlador
     {
         public SentenciasInventario snInventario;
 
-        public ControladorInventario(){
-            this.snInventario = new SentenciasInventario();
+        public ControladorInventario()
+        {
+            //this.snInventario = new SentenciasInventario();
         }
 
 
 
-        public void agregarInventario(Dictionary<string, string> parameters) {
-
+        public void agregarInventario(Dictionary<string, string> parameters)
+        {
             this.snInventario.agregarInventario(parameters);
-        
+
         }
 
         public List<string> getColumns(string tabla)

@@ -14,10 +14,10 @@ namespace CapaVista
 {
     public partial class Navegador : UserControl
     {
-
         private ControladorNavegador ctrNav;
         private utilidadesConsultasI utilConsultasI;
         public string operacion = "";
+        public string tabla = "";
 
         public Form parent;
         public Navegador()
@@ -29,30 +29,17 @@ namespace CapaVista
             this.cambiarEstado(false);
         }
 
+        public void config(string tabla, Form parent)
+        {
+            this.tabla = tabla;
+            this.parent = parent;
+            this.utilConsultasI.setTabla(this.tabla);
+        }
 
 
         public void identificarFormulario(Form child, string operacion)
         {
-            if (child.Tag.ToString().Equals("fReservacion"))
-            {
-                if (operacion.Equals("g")) this.utilConsultasI.guardarReservacion(child);
-            }
-            if (child.Tag.ToString().Equals("frmInventario"))
-            {
-                if (operacion.Equals("g")) this.utilConsultasI.guardarInventario(child);
-            }
-            if (child.Tag.ToString().Equals("frmEmpleado"))
-            {
-                if (operacion.Equals("g")) this.utilConsultasI.guardarEmpleado(child);
-            }
-            if (child.Tag.ToString().Equals("frmNomina"))
-            {
-                if (operacion.Equals("g")) this.utilConsultasI.guardarEmpleadoNom(child);
-            }
-            if (child.Tag.ToString().Equals("frmClientes"))
-            {
-                if (operacion.Equals("g")) this.utilConsultasI.guardarCliente(child);
-            }
+            if (operacion.Equals("g")) this.utilConsultasI.guardar(child);
         }
         private void btn_guardar_Click(object sender, EventArgs e)
         {

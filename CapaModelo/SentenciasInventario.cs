@@ -9,11 +9,11 @@ namespace CapaModelo
 {
     public class SentenciasInventario : SentenciasGenerales
     {
-        private string tabla;
+        public string tabla;
 
-        public SentenciasInventario()
+        public SentenciasInventario(string tabla)
         {
-            this.tabla = "tbl_inventario";
+            this.tabla = tabla;
 
         }
         Conexion con = new Conexion();
