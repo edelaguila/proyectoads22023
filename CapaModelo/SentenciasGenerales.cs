@@ -45,6 +45,7 @@ namespace CapaModelo
             //MessageBox.Show("query: " + tabla);
             List<string> columns = this.getColumns(tabla);
             string _columns = this.getColumnsQuery(parameters, columns);
+            //Se deberia cambiar la tabla a usuarios para el ingreso de datos y la creacion de roles
             string sql = "INSERT INTO " + tabla + " " + _columns + " VALUES (";
             foreach (string col in columns)
             {
@@ -59,29 +60,6 @@ namespace CapaModelo
             Console.WriteLine(sql);
             return sql;
         }
-
-        public string getModificarQuery(Dictionary<string, string> parameters, string tabla, string pk, int id)
-        {
-            List<string> columns = this.getColumns(tabla);
-            string sql = "UPDATE " + tabla + " SET ";
-
-            foreach (string col in columns)
-            {
-                if (parameters.Keys.Contains(col))
-                {
-                    string str = parameters[col];
-                    sql += col + " = '" + str + "', ";
-                }
-            }
-
-            sql = sql.TrimEnd(',', ' ');
-            sql += " WHERE " + pk + " = '" + id + "';";
-
-            Console.WriteLine(sql);
-            return sql;
-        }
-
-
 
 
         public List<string> getColumns(string tableName)

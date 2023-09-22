@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Odbc;
+using System.Data;
 
 namespace CapaModelo
 {
     public class Sentencias : SentenciasGenerales
     {
-        private string tabla = "";
-        private string PK = "";
-        private string x = "";
+        private string tabla = "carol";
         public Sentencias()
         {
 
@@ -24,10 +24,10 @@ namespace CapaModelo
             string query = this.getQuery(parameters, tabla);
             this.insertarSQL(query);
         }
-        public void modificar(Dictionary<string, string> parameters, string pk , int id)
+
+        public OdbcDataAdapter refrescar()
         {
-            string query = this.getModificarQuery(parameters, tabla,pk,id);
-            this.insertarSQL(query);
+            return this.refrescarSQL(tabla);
         }
     }
 }
