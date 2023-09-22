@@ -21,5 +21,10 @@ namespace Reporteador
         {
 
         }
+
+        private void Vista_de_Reportes_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
