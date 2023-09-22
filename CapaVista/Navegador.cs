@@ -1,38 +1,32 @@
-﻿using System;
+﻿using CapaControlador;
+using CapaVista.Componentes.Utilidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CapaControlador;
-using CapaVista.Componentes.Utilidades;
 
-namespace CapaVista.Componentes
+namespace CapaVista
 {
-    public partial class Nav : Form
+    public partial class Navegador : UserControl
     {
+
         private ControladorNavegador ctrNav;
         private utilidadesConsultasI utilConsultasI;
+        public string operacion = "";
 
-        public Principal parent;
-        public void printControls()
+        public Form parent;
+        public Navegador()
         {
-            foreach (Control control in this.parent.frm_container.Controls)
-            {
-                MessageBox.Show(control.Name);
-            }
-        }
-        public Nav(Principal parent)
-        {
+            InitializeComponent();
+            this.parent = new Form();
             this.ctrNav = new ControladorNavegador();
             this.utilConsultasI = new utilidadesConsultasI(this.ctrNav);
-            this.parent = parent;
-            InitializeComponent();
-            //this.printControls();
+            this.cambiarEstado(false);
         }
 
 
@@ -62,32 +56,62 @@ namespace CapaVista.Componentes
         }
         private void btn_guardar_Click(object sender, EventArgs e)
         {
+            this.identificarFormulario(this.parent, "g");
+            this.cambiarEstado(false);
         }
 
         private void btn_ayuda_Click(object sender, EventArgs e)
         {
             Help.ShowHelp(this, "Ayudas/AyudaSO2.chm", "NavAyuda.html");
         }
-
-        private void btn_agregar_Click(object sender, EventArgs e)
+        public void cambiarEstado(bool estado)
         {
-            Form child_form = null;
-            foreach (Control control in this.parent.pnl_contenedor.Controls)
+            foreach (Control control in this.panel.Controls)
             {
-                if (control is Form)
+                if (control is Button)
                 {
-                    child_form = (Form)control;
-                    break;
+                    Button btn = (Button)control;
+                    if (btn.Name.Equals("btn_guardar") || btn.Name.Equals("btn_cancelar"))
+                    {
+                        btn.Enabled = estado;
+                    }
+                    else
+                    {
+                        btn.Enabled = !estado;
+                    }
                 }
             }
 
-            if (child_form == null)
-            {
-                MessageBox.Show("No hay ningun formulario seleccionado");
-                return;
-            }
+        }
 
-            this.identificarFormulario(child_form, "g");
+        private void btn_agregar_Click(object sender, EventArgs e)
+        {
+            this.cambiarEstado(true);
+        }
+
+        public void limpiarControles()
+        {
+            foreach (Control control in this.parent.Controls)
+            {
+                if (control is TextBox)
+                {
+                    ((TextBox)control).Clear();
+                }
+                else if (control is DateTimePicker)
+                {
+                    ((DateTimePicker)control).Value = DateTime.Now;
+                }
+                else if (control is ComboBox)
+                {
+                    ((ComboBox)control).SelectedIndex = 0;
+                }
+            }
+        }
+
+        private void btn_cancelar_Click(object sender, EventArgs e)
+        {
+            this.limpiarControles();
+            this.cambiarEstado(false);
         }
     }
 }

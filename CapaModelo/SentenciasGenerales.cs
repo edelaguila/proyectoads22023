@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.Odbc;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -58,7 +59,6 @@ namespace CapaModelo
             sql = sql.Replace(",)", ")");
             Console.WriteLine(sql);
             return sql;
-
         }
 
 
