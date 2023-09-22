@@ -99,3 +99,11 @@ C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVis
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmInventario.resources
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmNomina.resources
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.Reporte.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.ConsultasConsultas.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmEmpleado.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmInventario.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmVisualizarInventario.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.Login.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmNomina.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmClientes.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.Navegador.resources

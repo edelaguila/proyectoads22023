@@ -186,7 +186,7 @@ namespace CapaVista.Formularios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(693, 371);
+            this.ClientSize = new System.Drawing.Size(700, 422);
             this.Controls.Add(this.txt_correo);
             this.Controls.Add(this.txt_direccion);
             this.Controls.Add(this.txt_apellido);
@@ -202,7 +202,9 @@ namespace CapaVista.Formularios
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmClientes";
+            this.Tag = "frmClientes";
             this.Text = "frmClientes";
             this.ResumeLayout(false);
             this.PerformLayout();

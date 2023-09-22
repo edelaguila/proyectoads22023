@@ -63,3 +63,15 @@ C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Debug\CapaVista
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Debug\CapaVista.dll
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Debug\CapaVista.Formularios.ConsultasConsultas.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Debug\CapaVista.Formularios.frmEmpleado.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Debug\CapaVista.Formularios.frmInventario.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Debug\CapaVista.Formularios.frmVisualizarInventario.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Debug\CapaVista.Formularios.ConsultasConsultas.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Debug\CapaVista.Formularios.frmEmpleado.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Debug\CapaVista.Formularios.frmInventario.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Debug\CapaVista.Formularios.frmVisualizarInventario.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Debug\CapaVista.Login.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Debug\CapaVista.Formularios.frmClientes.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Debug\CapaVista.Formularios.frmNomina.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Debug\CapaVista.Navegador.resources

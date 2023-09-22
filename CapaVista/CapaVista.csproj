@@ -94,17 +94,23 @@
     <Compile Include="Formularios\frmReservacion.Designer.cs">
       <DependentUpon>frmReservacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Reporte.cs">
+    <Compile Include="Formularios\frmVisualizarInventario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Reporte.Designer.cs">
-      <DependentUpon>Reporte.cs</DependentUpon>
+    <Compile Include="Formularios\frmVisualizarInventario.Designer.cs">
+      <DependentUpon>frmVisualizarInventario.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Navegador.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Navegador.Designer.cs">
+      <DependentUpon>Navegador.cs</DependentUpon>
     </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
@@ -117,12 +123,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Registro.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Registro.Designer.cs">
-      <DependentUpon>Registro.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -150,11 +150,14 @@
     <EmbeddedResource Include="Formularios\frmReservacion.resx">
       <DependentUpon>frmReservacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Reporte.resx">
-      <DependentUpon>Reporte.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\frmVisualizarInventario.resx">
+      <DependentUpon>frmVisualizarInventario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Navegador.resx">
+      <DependentUpon>Navegador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
@@ -162,9 +165,6 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Registro.resx">
-      <DependentUpon>Registro.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

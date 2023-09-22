@@ -13,12 +13,19 @@ namespace CapaModelo
 
         public SentenciasRegistros(){
             this.tabla="usuario";
-        }
+
+            }
 
         public void agregarUsuario(Dictionary<string, string> parameters)
         {
             string query = this.getQuery(parameters, tabla);
             this.insertarSQL(query);
+
         }
+
+       
+
+
+
     }
 }

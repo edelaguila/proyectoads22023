@@ -18,7 +18,28 @@ namespace CapaVista.Componentes.Utilidades
         }
         public utilidadesConsultasI()
         {
-            
+
+        }
+        public void guardarCliente(Form child)
+        {
+            ControladorCliente ctrclick = new ControladorCliente();
+            var dictionary = new Dictionary<string, string>();
+            List<string> columns = this.ctrNav.getColumns("tbl_clientes");
+
+            foreach (Control c in child.Controls)
+            {
+                if (c is TextBox)
+                {
+                    string tag = c.Tag.ToString();
+                    if (columns.Contains(tag))
+                    {
+                        dictionary.Add(tag, c.Text);
+                    }
+                    c.Text = "";
+                }
+            }
+            ctrclick.agregarCliente(dictionary);
+            MessageBox.Show("Cliente Creado Correctamente");
         }
         public void guardarReservacion(Form child)
         {
@@ -64,7 +85,60 @@ namespace CapaVista.Componentes.Utilidades
             MessageBox.Show("Usuario Creado Correctamente");
         }
 
+        public void guardarInventario(Form child)
+        {
+            ControladorInventario ctriv = new ControladorInventario();
+            var dictionary = new Dictionary<string, string>();
+            List<string> columns = this.ctrNav.getColumns("tbl_INVENTARIO");
 
+            foreach (Control c in child.Controls)
+            {
+                if (c is TextBox)
+                {
+                    string tag = c.Tag.ToString();
+                    if (columns.Contains(tag))
+                    {
+                        dictionary.Add(tag, c.Text);
+                    }
+                    c.Text = "";
+                }
+                else if (c is DateTimePicker)
+                {
+                    string tag = c.Tag.ToString();
+                    if (columns.Contains(tag))
+                    {
+
+                        DateTimePicker dateTimePicker = c as DateTimePicker;
+                        DateTime fechaHora = dateTimePicker.Value;
+                        dictionary.Add(tag, fechaHora.ToString("yyyy-MM-dd"));
+                    }
+                }
+            }
+            ctriv.agregarInventario(dictionary);
+            MessageBox.Show("INVENTARIO GUARDADO");
+        }
+
+        public void guardarEmpleadoNom(Form child)
+        {
+            ControladorNomina ctrolnom = new ControladorNomina();
+            var dictionary = new Dictionary<string, string>();
+            List<string> columns = this.ctrNav.getColumns("tbl_nomina");
+
+            foreach (Control c in child.Controls)
+            {
+                if (c is TextBox)
+                {
+                    string tag = c.Tag.ToString();
+                    if (columns.Contains(tag))
+                    {
+                        dictionary.Add(tag, c.Text);
+                    }
+                    c.Text = "";
+                }
+            }
+            ctrolnom.agregarEmpleadoNomina(dictionary);
+            MessageBox.Show("Empleado Agregado a Nomina");
+        }
         public void guardarEmpleado(Form child)
         {
             ControladorEmpleado cEmple = new ControladorEmpleado();

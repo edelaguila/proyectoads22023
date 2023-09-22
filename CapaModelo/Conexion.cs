@@ -12,7 +12,7 @@ namespace CapaModelo
 
         public OdbcConnection connection()
         {
-            OdbcConnection conn = new OdbcConnection("Dsn=controlempleadosnube");
+            OdbcConnection conn = new OdbcConnection("Dsn=navegador");
             try
             {
                 conn.Open();

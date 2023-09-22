@@ -53,5 +53,24 @@ namespace CapaVista
             this.openFormOnPanel(pnl_contenedor, new frmReportes(), false);
         }
 
+        private void inventarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.openFormOnPanel(pnl_contenedor, new frmInventario(), false);
+        }
+
+        private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.openFormOnPanel(pnl_contenedor, new frmEmpleado(), false);
+        }
+
+        private void seguridadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.openFormOnPanel(pnl_contenedor, new frmNomina(), false);
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.openFormOnPanel(pnl_contenedor, new frmClientes(), false);
+        }
     }
 }

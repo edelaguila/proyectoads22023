@@ -43,8 +43,33 @@ namespace CapaVista.Componentes
             {
                 if (operacion.Equals("g")) this.utilConsultasI.guardarReservacion(child);
             }
+            if (child.Tag.ToString().Equals("frmInventario"))
+            {
+                if (operacion.Equals("g")) this.utilConsultasI.guardarInventario(child);
+            }
+            if (child.Tag.ToString().Equals("frmEmpleado"))
+            {
+                if (operacion.Equals("g")) this.utilConsultasI.guardarEmpleado(child);
+            }
+            if (child.Tag.ToString().Equals("frmNomina"))
+            {
+                if (operacion.Equals("g")) this.utilConsultasI.guardarEmpleadoNom(child);
+            }
+            if (child.Tag.ToString().Equals("frmClientes"))
+            {
+                if (operacion.Equals("g")) this.utilConsultasI.guardarCliente(child);
+            }
         }
         private void btn_guardar_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btn_ayuda_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "Ayudas/AyudaSO2.chm", "NavAyuda.html");
+        }
+
+        private void btn_agregar_Click(object sender, EventArgs e)
         {
             Form child_form = null;
             foreach (Control control in this.parent.pnl_contenedor.Controls)
@@ -56,17 +81,13 @@ namespace CapaVista.Componentes
                 }
             }
 
+            if (child_form == null)
+            {
+                MessageBox.Show("No hay ningun formulario seleccionado");
+                return;
+            }
+
             this.identificarFormulario(child_form, "g");
-        }
-
-        private void btn_ayuda_Click(object sender, EventArgs e)
-        {
-            Help.ShowHelp(this, "Ayudas/AyudaSO2.chm","NavAyuda.html");
-        }
-
-        private void btn_agregar_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

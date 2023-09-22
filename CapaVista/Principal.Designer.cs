@@ -35,9 +35,12 @@ namespace CapaVista
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasInteligentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reservacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesSemanalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,14 +48,14 @@ namespace CapaVista
             // 
             this.pnl_navegador.Location = new System.Drawing.Point(22, 27);
             this.pnl_navegador.Name = "pnl_navegador";
-            this.pnl_navegador.Size = new System.Drawing.Size(766, 140);
+            this.pnl_navegador.Size = new System.Drawing.Size(893, 140);
             this.pnl_navegador.TabIndex = 1;
             // 
             // pnl_contenedor
             // 
             this.pnl_contenedor.Location = new System.Drawing.Point(22, 184);
             this.pnl_contenedor.Name = "pnl_contenedor";
-            this.pnl_contenedor.Size = new System.Drawing.Size(766, 303);
+            this.pnl_contenedor.Size = new System.Drawing.Size(893, 395);
             this.pnl_contenedor.TabIndex = 0;
             // 
             // menuStrip1
@@ -64,7 +67,7 @@ namespace CapaVista
             this.reportesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(817, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(927, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -77,7 +80,10 @@ namespace CapaVista
             // consultasInteligentesToolStripMenuItem
             // 
             this.consultasInteligentesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.reservacionesToolStripMenuItem});
+            this.reservacionesToolStripMenuItem,
+            this.inventarioToolStripMenuItem,
+            this.empleadosToolStripMenuItem,
+            this.clientesToolStripMenuItem});
             this.consultasInteligentesToolStripMenuItem.Name = "consultasInteligentesToolStripMenuItem";
             this.consultasInteligentesToolStripMenuItem.Size = new System.Drawing.Size(135, 20);
             this.consultasInteligentesToolStripMenuItem.Text = "Consultas Inteligentes";
@@ -85,15 +91,30 @@ namespace CapaVista
             // reservacionesToolStripMenuItem
             // 
             this.reservacionesToolStripMenuItem.Name = "reservacionesToolStripMenuItem";
-            this.reservacionesToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.reservacionesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.reservacionesToolStripMenuItem.Text = "Reservaciones";
             this.reservacionesToolStripMenuItem.Click += new System.EventHandler(this.reservacionesToolStripMenuItem_Click);
+            // 
+            // inventarioToolStripMenuItem
+            // 
+            this.inventarioToolStripMenuItem.Name = "inventarioToolStripMenuItem";
+            this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.inventarioToolStripMenuItem.Text = "Inventario";
+            this.inventarioToolStripMenuItem.Click += new System.EventHandler(this.inventarioToolStripMenuItem_Click);
+            // 
+            // empleadosToolStripMenuItem
+            // 
+            this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
+            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.empleadosToolStripMenuItem.Text = "Empleados";
+            this.empleadosToolStripMenuItem.Click += new System.EventHandler(this.empleadosToolStripMenuItem_Click);
             // 
             // seguridadToolStripMenuItem
             // 
             this.seguridadToolStripMenuItem.Name = "seguridadToolStripMenuItem";
-            this.seguridadToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
-            this.seguridadToolStripMenuItem.Text = "Seguridad";
+            this.seguridadToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.seguridadToolStripMenuItem.Text = "Nomina";
+            this.seguridadToolStripMenuItem.Click += new System.EventHandler(this.seguridadToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem
             // 
@@ -110,11 +131,18 @@ namespace CapaVista
             this.reportesSemanalesToolStripMenuItem.Text = "Reportes Semanales";
             this.reportesSemanalesToolStripMenuItem.Click += new System.EventHandler(this.reportesSemanalesToolStripMenuItem_Click);
             // 
+            // clientesToolStripMenuItem
+            // 
+            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clientesToolStripMenuItem.Text = "Clientes";
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(817, 505);
+            this.ClientSize = new System.Drawing.Size(927, 596);
             this.Controls.Add(this.pnl_navegador);
             this.Controls.Add(this.pnl_contenedor);
             this.Controls.Add(this.menuStrip1);
@@ -138,5 +166,8 @@ namespace CapaVista
         private System.Windows.Forms.ToolStripMenuItem seguridadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportesSemanalesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inventarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem empleadosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
     }
 }
