@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CapaModelo;
+using System.Data.Odbc;
+using System.Data;
 
 namespace CapaControlador
 {
@@ -22,16 +24,20 @@ namespace CapaControlador
             this.tabla = tabla;
             this.sn = new Sentencias(tabla);
         }
-
         public void guardar(Dictionary<string, string> parameters)
         {
             this.sn.guardar(parameters);
         }
 
-        public void modificar(Dictionary<string, string> parameters, string pk, int id)
+       
+        public DataTable refrescar()
         {
-            this.sn.modificar(parameters, pk, id);
+            OdbcDataAdapter dt = sn.refrescar();
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
         }
+
 
         public List<string> getColumns(string tabla)
         {

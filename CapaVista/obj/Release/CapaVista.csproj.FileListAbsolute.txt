@@ -18,8 +18,13 @@ C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\bin\Release
 C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\bin\Release\CapaControlador.pdb
 C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\bin\Release\CapaModelo.pdb
 C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.AssemblyReference.cache
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Release\CapaVista.Componentes.Nav.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmReportes.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmReservacion.resources
 C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Release\CapaVista.Login.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Release\CapaVista.Principal.resources
 C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Release\CapaVista.Properties.Resources.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Release\CapaVista.Registro.resources
 C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.GenerateResource.cache
 C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.CoreCompileInputs.cache
 C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.CopyComplete
@@ -72,24 +77,13 @@ C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\bin\Release\CapaMod
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\bin\Release\CapaControlador.pdb
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\bin\Release\CapaModelo.pdb
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.AssemblyReference.cache
-C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.Componentes.Nav.resources
-C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.ConsultasConsultas.resources
-C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmReportes.resources
-C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmReservacion.resources
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.Login.resources
-C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.Principal.resources
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.Properties.Resources.resources
-C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.Registro.resources
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.GenerateResource.cache
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.CopyComplete
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.dll
 C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.pdb
-C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmClientes.resources
-C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmEmpleado.resources
-C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmInventario.resources
-C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.frmNomina.resources
-C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.Formularios.Reporte.resources
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.Login.resources
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.Navegador.resources
-C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Release\CapaVista.Navegador.resources
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.Navegador.resources
