@@ -153,31 +153,47 @@ namespace CapaVista.Componentes.Utilidades
         public void eliminar(Form child, DataGridView dgvname)
         {
 
-            if (MessageBox.Show("¿Esta seguro que desea eliminar este registro?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (dgvname == null)
             {
+                // Si no existe un datagridview mostrar este mensaje
+                MessageBox.Show("No se puede realizar esta acción en este formulario porque no existe una tabla de datos");
+                return; // Salir del método
+
+            }else{
+                
                 Controlador ctriv = new Controlador();
-            if (dgvname.SelectedRows.Count > 0)
-            {
+                if (dgvname.SelectedRows.Count > 0)
+                {
+                    if(dgvname.SelectedRows.Count > 1)
+                    {
+                        MessageBox.Show("Seleccionar únicamente un fila por favor");
+                        return;
+                    }
+                
                 // Obtener la primera fila seleccionada
                 DataGridViewRow selectedRow = dgvname.SelectedRows[0];
 
                 // Obtiene el valor de la primera celda de esa fila y la convierte a entero
-                if (selectedRow.Cells[0].Value != null)
-                {
-                    int llave = Convert.ToInt32(selectedRow.Cells[0].Value);
-
-                    string campo = dgvname.Columns[0].HeaderText;
-                    ctriv.setTabla(this.tabla);
-                    ctriv.eliminar(campo, llave);
-                    MessageBox.Show("Eliminado Exitosamente");
-                }
+                    if (selectedRow.Cells[0].Value != null)
+                    {
+                        if (MessageBox.Show("¿Esta seguro que desea eliminar este registro?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                        {
+                            int llave = Convert.ToInt32(selectedRow.Cells[0].Value);
+                            string campo = dgvname.Columns[0].HeaderText;
+                            ctriv.setTabla(this.tabla);
+                            ctriv.eliminar(campo, llave);
+                            MessageBox.Show("Registro Eliminado Exitosamente");
+                        }
+                    }else{  
+                            MessageBox.Show("La fila seleccionada está vacía, por favor elegir otra para realizar esta acción");
+                    }
+                }else{
+                     // Manejar el caso en el que no hay filas seleccionadas
+                     MessageBox.Show("No hay ninguna fila seleccionada, por favor seleccionar la fila  del registro que desea eliminar");
+                 }
             }
-            else
-            {
-                // Manejar el caso en el que no hay filas seleccionadas
-                MessageBox.Show("No hay filas seleccionadas en el DataGridView.");
-            }
-          }   
         }
+
+
     }
 }
