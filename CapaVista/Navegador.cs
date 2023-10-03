@@ -129,10 +129,19 @@ namespace CapaVista
 
         private void btn_modificar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("boton de modificar xd");
+            try { 
+            MessageBox.Show(" Modificar");
             this.utilConsultasI.cargarModificar(this.parent, GetDGV(this.parent));
             this.operacion = "m";
             this.cambiarEstado(true);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex);
+                MessageBox.Show("Seleccione una fila valida para modificar");
+            }
+
+
         }
 
         private void btn_anterior_Click(object sender, EventArgs e)
