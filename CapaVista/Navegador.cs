@@ -17,6 +17,7 @@ namespace CapaVista
         public string operacion = "";
         public string tabla = "";
         public int filaActual = 0;
+        public bool gridExiste = true;
 
         public Form parent;
         public Navegador()
@@ -32,7 +33,36 @@ namespace CapaVista
             this.tabla = tabla;
             this.parent = parent;
             this.utilConsultasI.setTabla(this.tabla);
+            DataGridView gd = GetDGV(this.parent);
+            if (gd == null)
+            {
+                gridExiste = false;
+                return;
+
+            }
+            gd.CellClick += this.data_Click;
+
         }
+
+        void verificarDG()
+        {
+            if (!gridExiste)
+            {
+
+                return;
+            }
+
+        }
+
+        private void data_Click(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridView dt = sender as DataGridView;
+            if (dt.SelectedRows.Count > 0)
+            {
+                filaActual = dt.SelectedRows[0].Index;
+            }
+        }
+
 
 
         public void identificarFormulario(Form child, string operacion)
@@ -146,41 +176,92 @@ namespace CapaVista
 
         private void btn_anterior_Click(object sender, EventArgs e)
         {
-            DataGridView gd = GetDGV(this.parent);
-            gd.ClearSelection();
-            if (filaActual > 0)
+            verificarDG();
+            try
             {
-                filaActual--;
-                gd.Rows[filaActual].Selected = true;
+                DataGridView gd = GetDGV(this.parent);
+
+                gd.ClearSelection();
+                if (filaActual > 0)
+                {
+
+                    filaActual--;
+                    gd.Rows[filaActual].Selected = true;
+                }
+                else if (filaActual <= 0)
+                {
+                    MessageBox.Show("No hay filas anteriores para seleccionar la anterior.");
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No hay un DataGridView");
             }
         }
 
         private void btn_siguiente_Click(object sender, EventArgs e)
         {
-            DataGridView gd = GetDGV(this.parent);
-            gd.ClearSelection();
-            if (filaActual < gd.Rows.Count - 1)
+            verificarDG();
+
+            try
             {
-                filaActual++;
-                gd.Rows[filaActual].Selected = true;
+                DataGridView gd = GetDGV(this.parent);
+                gd.ClearSelection();
+                if (filaActual < gd.Rows.Count - 1)
+                {
+                    filaActual++;
+                    gd.Rows[filaActual].Selected = true;
+                }
+                else
+                {
+
+                    MessageBox.Show("No hay filas posteriores para seleccionar la siguiente.");
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No hay un DataGridView");
+            }
+
         }
 
         private void btn_inicio_Click(object sender, EventArgs e)
         {
-            DataGridView gd = GetDGV(this.parent);
-            gd.ClearSelection();
-            gd.Rows[0].Selected = true;
-            gd.FirstDisplayedScrollingRowIndex = 0;
+            verificarDG();
+            try
+            {
+                filaActual = 0;
+                DataGridView gd = GetDGV(this.parent);
+                gd.ClearSelection();
+                gd.Rows[0].Selected = true;
+                gd.FirstDisplayedScrollingRowIndex = 0;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No hay un DataGridView");
+            }
 
         }
 
         private void btn_fin_Click(object sender, EventArgs e)
         {
-            DataGridView gd = GetDGV(this.parent);
-            gd.ClearSelection();
-            gd.Rows[gd.Rows.Count - 1].Selected = true;
-            gd.FirstDisplayedScrollingRowIndex = gd.Rows.Count - 1;
+            verificarDG();
+            try
+            {
+
+                DataGridView gd = GetDGV(this.parent);
+                gd.ClearSelection();
+                gd.Rows[gd.Rows.Count - 1].Selected = true;
+                gd.FirstDisplayedScrollingRowIndex = gd.Rows.Count - 1;
+                filaActual = gd.Rows.Count - 1;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No hay un DataGridView");
+            }
 
         }
 
