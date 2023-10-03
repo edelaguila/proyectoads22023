@@ -109,6 +109,7 @@ namespace CapaModelo
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
+                MessageBox.Show("EN REFRESCARSQL");
             }
             return null;
         }

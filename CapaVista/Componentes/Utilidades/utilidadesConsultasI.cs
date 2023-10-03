@@ -64,17 +64,34 @@ namespace CapaVista.Componentes.Utilidades
         {
             Controlador ctriv = new Controlador();
             ctriv.setTabla(this.tabla);
+
+            bool refrescadoExitosamente = false; // Bandera para saber si se refrescó con éxito
+
             foreach (Control c in child.Controls)
             {
                 if (c is DataGridView)
                 {
-                  //  ((DataGridView)c).Rows.Clear();
-                    ((DataGridView)c).DataSource = ctriv.refrescar();
+                    try
+                    {
+                        ((DataGridView)c).DataSource = ctriv.refrescar();
+                        MessageBox.Show("Refrescado");
+                        refrescadoExitosamente = true; // Si no hubo excepción, se refrescó con éxito
+                    }
+                    catch (Exception ex) // Captura el error
+                    {
+                        // Si llegamos aquí, ocurrió un error durante el refrescamiento
+                        MessageBox.Show("Error al refrescar. Detalles: " + ex.Message);
+                    }
                 }
-                
             }
 
+            // Si no se refrescó con éxito, mostrar el mensaje "No hay tabla"
+            if (!refrescadoExitosamente)
+            {
+                MessageBox.Show("No hay tabla en este formulario");
+            }
         }
+
         public void cargarModificar(Form child, DataGridView dgvname)
         {
 
