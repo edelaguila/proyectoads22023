@@ -35,6 +35,12 @@ namespace CapaVista.Componentes.Utilidades
             {
                 if (c is TextBox)
                 {
+                    if (c.Text.Equals(""))
+                    {
+                        MessageBox.Show("Debe llenar todos los campos para poder guardar");
+                        return;
+                    }
+
                     string tag = c.Tag.ToString();
                     if (columns.Contains(tag))
                     {
@@ -159,21 +165,23 @@ namespace CapaVista.Componentes.Utilidades
                 MessageBox.Show("No se puede realizar esta acción en este formulario porque no existe una tabla de datos");
                 return; // Salir del método
 
-            }else{
-                
+            }
+            else
+            {
+
                 Controlador ctriv = new Controlador();
                 if (dgvname.SelectedRows.Count > 0)
                 {
-                    if(dgvname.SelectedRows.Count > 1)
+                    if (dgvname.SelectedRows.Count > 1)
                     {
                         MessageBox.Show("Seleccionar únicamente un fila por favor");
                         return;
                     }
-                
-                // Obtener la primera fila seleccionada
-                DataGridViewRow selectedRow = dgvname.SelectedRows[0];
 
-                // Obtiene el valor de la primera celda de esa fila y la convierte a entero
+                    // Obtener la primera fila seleccionada
+                    DataGridViewRow selectedRow = dgvname.SelectedRows[0];
+
+                    // Obtiene el valor de la primera celda de esa fila y la convierte a entero
                     if (selectedRow.Cells[0].Value != null)
                     {
                         if (MessageBox.Show("¿Esta seguro que desea eliminar este registro?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
@@ -184,13 +192,17 @@ namespace CapaVista.Componentes.Utilidades
                             ctriv.eliminar(campo, llave);
                             MessageBox.Show("Registro Eliminado Exitosamente");
                         }
-                    }else{  
-                            MessageBox.Show("La fila seleccionada está vacía, por favor elegir otra para realizar esta acción");
                     }
-                }else{
-                     // Manejar el caso en el que no hay filas seleccionadas
-                     MessageBox.Show("No hay ninguna fila seleccionada, por favor seleccionar la fila  del registro que desea eliminar");
-                 }
+                    else
+                    {
+                        MessageBox.Show("La fila seleccionada está vacía, por favor elegir otra para realizar esta acción");
+                    }
+                }
+                else
+                {
+                    // Manejar el caso en el que no hay filas seleccionadas
+                    MessageBox.Show("No hay ninguna fila seleccionada, por favor seleccionar la fila  del registro que desea eliminar");
+                }
             }
         }
 

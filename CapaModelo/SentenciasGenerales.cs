@@ -94,6 +94,7 @@ namespace CapaModelo
             }
             catch (Exception e)
             {
+                MessageBox.Show("Ha ocurrido un error al guardar, verifique que todos sus campos esten llenos correctamente");
                 Console.WriteLine(e.Message);
             }
         }
@@ -103,7 +104,7 @@ namespace CapaModelo
             try
             {
                 string query = "SELECT * FROM " + tabla;
-                OdbcDataAdapter dt = new OdbcDataAdapter(query,this.conn.connection());
+                OdbcDataAdapter dt = new OdbcDataAdapter(query, this.conn.connection());
                 return dt;
             }
             catch (Exception e)
