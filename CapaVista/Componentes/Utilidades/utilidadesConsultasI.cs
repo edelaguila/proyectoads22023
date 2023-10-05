@@ -100,22 +100,37 @@ namespace CapaVista.Componentes.Utilidades
 
         public void cargarModificar(Form child, DataGridView dgvname)
         {
-
-            if (dgvname.SelectedRows.Count > 0)
+            try
             {
-                DataGridViewRow selectedRow = dgvname.SelectedRows[0];
-                selected = selectedRow;
-                foreach (Control c in child.Controls)
+                if (dgvname.SelectedRows.Count > 0)
                 {
-                    if (c is TextBox textBox && textBox.Tag != null)
+                    DataGridViewRow selectedRow = dgvname.SelectedRows[0];
+                    selected = selectedRow;
+                    foreach (Control c in child.Controls)
                     {
-                        string columnName = textBox.Tag.ToString();
+                        if (c is TextBox textBox && textBox.Tag != null)
+                        {
+                            string columnName = textBox.Tag.ToString();
 
-                        int columnIndex = dgvname.Columns[columnName].Index;
+                            int columnIndex = dgvname.Columns[columnName].Index;
 
-                        textBox.Text = selectedRow.Cells[columnIndex].Value.ToString();
+                            textBox.Text = selectedRow.Cells[columnIndex].Value.ToString();
+                        }
+                        if (c is DateTimePicker dateTimePicker && dateTimePicker.Tag != null)
+                        {
+                            string columnName = dateTimePicker.Tag.ToString();
+                            int columnIndex = dgvname.Columns[columnName].Index;
+
+                            DateTime cellValue = (DateTime)selectedRow.Cells[columnIndex].Value;
+                            dateTimePicker.Value = cellValue;
+                        }
                     }
                 }
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex);
+                MessageBox.Show("Fila sin datos o tabla faltante");
             }
         }
 
