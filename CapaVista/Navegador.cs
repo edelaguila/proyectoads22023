@@ -159,6 +159,7 @@ namespace CapaVista
 
         private void btn_modificar_Click(object sender, EventArgs e)
         {
+
             try { 
             MessageBox.Show(" Modificar");
             this.utilConsultasI.cargarModificar(this.parent, GetDGV(this.parent));
@@ -168,8 +169,9 @@ namespace CapaVista
             catch(Exception ex)
             {
                 Console.WriteLine(ex);
-                MessageBox.Show("Seleccione una fila valida para modificar");
+                MessageBox.Show("Error" + ex);
             }
+          
 
 
         }
