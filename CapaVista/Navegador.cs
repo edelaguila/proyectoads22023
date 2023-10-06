@@ -17,7 +17,7 @@ namespace CapaVista
         public string operacion = "";
         public string tabla = "";
         public int filaActual = 0;
-        public bool gridExiste = true;
+        public bool gridExiste = false;
 
         public Form parent;
         public Navegador()
@@ -26,8 +26,6 @@ namespace CapaVista
             this.parent = new Form();
             this.utilConsultasI = new utilidadesConsultasI();
             this.cambiarEstado(false);
-            
-
         }
 
         public void config(string tabla, Form parent)
@@ -36,15 +34,22 @@ namespace CapaVista
             this.parent = parent;
             this.utilConsultasI.setTabla(this.tabla);
             DataGridView gd = GetDGV(this.parent);
-            
-            if (gd == null)
-            {
-                gridExiste = false;
-                return;
 
-            }
+            if (gd == null) return;
+            _config_grid(gd);
+            gridExiste = true;
             gd.CellClick += this.data_Click;
+            this.utilConsultasI.refrescar(this.parent);
+            this.cambiarEstado(false);
+        }
 
+        void _config_grid(DataGridView gd)
+        {
+            gd.ReadOnly = true;
+            gd.RowHeadersVisible = false;
+            gd.RowHeadersWidth = 51;
+            gd.RowTemplate.Height = 24;
+            gd.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
         }
 
         void verificarDG()
@@ -63,6 +68,7 @@ namespace CapaVista
             if (dt.SelectedRows.Count > 0)
             {
                 filaActual = dt.SelectedRows[0].Index;
+                focusData(dt);
             }
         }
 
@@ -94,7 +100,7 @@ namespace CapaVista
         }
         private void btn_guardar_Click(object sender, EventArgs e)
         {
-           
+
             this.identificarFormulario(this.parent, this.operacion);
             this.cambiarEstado(false);
         }
@@ -114,6 +120,20 @@ namespace CapaVista
                     {
                         btn.Enabled = !estado;
                     }
+                }
+            }
+
+            foreach (Control c in this.parent.Controls)
+            {
+                if (c is TextBox)
+                {
+                    TextBox txt = (TextBox)c;
+                    txt.ReadOnly = !estado;
+                }
+                else if (c is DateTimePicker)
+                {
+                    DateTimePicker dtp = (DateTimePicker)c;
+                    dtp.Enabled = estado;
                 }
             }
 
@@ -163,42 +183,53 @@ namespace CapaVista
         private void btn_modificar_Click(object sender, EventArgs e)
         {
 
-            try { 
-            MessageBox.Show(" Modificar");
-            this.utilConsultasI.cargarModificar(this.parent, GetDGV(this.parent));
-            this.operacion = "m";
-            this.cambiarEstado(true);
+            try
+            {
+                MessageBox.Show(" Modificar");
+                this.utilConsultasI.cargarModificar(this.parent, GetDGV(this.parent));
+                this.operacion = "m";
+                this.cambiarEstado(true);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex);
                 MessageBox.Show("Error" + ex);
             }
-          
+
 
 
         }
 
 
-       
-        public void focusData(Dictionary<string, string>rowData)
+
+        public void focusData(DataGridView gd)
         {
-            foreach(Control c in this.parent.Controls)
+            Dictionary<string, string> rowData = new Dictionary<string, string>();
+            DataGridViewRow selectedRow = gd.SelectedRows[0];
+            foreach (DataGridViewColumn column in gd.Columns)
             {
-                if(c is TextBox)
+                string columnName = column.Name;
+                object cellValue = selectedRow.Cells[columnName].Value;
+                rowData[columnName] = cellValue.ToString();
+            }
+            foreach (Control c in this.parent.Controls)
+            {
+                if (c is TextBox)
                 {
                     TextBox txt = (TextBox)c;
-                    if  (rowData.ContainsKey(txt.Tag.ToString())) {
+                    if (rowData.ContainsKey(txt.Tag.ToString()))
+                    {
                         txt.Text = rowData[txt.Tag.ToString()];
                     }
                 }
                 else if (c is DateTimePicker)
                 {
                     DateTimePicker dt = (DateTimePicker)c;
-                    if(rowData.ContainsKey(dt.Tag.ToString())){
+                    if (rowData.ContainsKey(dt.Tag.ToString()))
+                    {
                         DateTime date;
                         string _date_str = rowData[dt.Tag.ToString()];
-                        if(DateTime.TryParse(_date_str, out date))
+                        if (DateTime.TryParse(_date_str, out date))
                         {
                             dt.Value = date;
                         }
@@ -210,88 +241,73 @@ namespace CapaVista
 
         private void btn_anterior_Click(object sender, EventArgs e)
         {
-           
-            verificarDG();
-           
-                DataGridView gd = GetDGV(this.parent);
-                gd.ClearSelection();
-                if (filaActual > 0)
-                {
-                    filaActual--;
-                    gd.Rows[filaActual].Selected = true;
-                    Dictionary<string, string> rowData = new Dictionary<string, string>();
-                    DataGridViewRow selectedRow = gd.SelectedRows[0];
-                    foreach (DataGridViewColumn column in gd.Columns)
-                    {
-                        string columnName = column.Name;
-                        object cellValue = selectedRow.Cells[columnName].Value;
-                        rowData[columnName] = cellValue.ToString();
-                    }
-                    focusData(rowData);
-                }
-                else if (filaActual <= 0)
-                {
-                    MessageBox.Show("No hay filas anteriores para seleccionar la anterior.");
 
-                }
-           
+            verificarDG();
+
+            DataGridView gd = GetDGV(this.parent);
+            gd.ClearSelection();
+            if (filaActual > 0)
+            {
+                filaActual--;
+                gd.Rows[filaActual].Selected = true;
+                focusData(gd);
+            }
+            else if (filaActual <= 0)
+            {
+                MessageBox.Show("No hay filas anteriores para seleccionar la anterior.");
+
+            }
+
         }
 
         private void btn_siguiente_Click(object sender, EventArgs e)
         {
             verificarDG();
 
-           
-                DataGridView gd = GetDGV(this.parent);
-                gd.ClearSelection();
-                if (filaActual < gd.Rows.Count - 1)
-                {
-                    filaActual++;
-                    gd.Rows[filaActual].Selected = true;
-                }
-                else
-                {
 
-                    MessageBox.Show("No hay filas posteriores para seleccionar la siguiente.");
-                }
-            
-           
+            DataGridView gd = GetDGV(this.parent);
+            gd.ClearSelection();
+            if (filaActual < gd.Rows.Count - 1)
+            {
+                filaActual++;
+                gd.Rows[filaActual].Selected = true;
+                focusData(gd);
+            }
+            else
+            {
+                MessageBox.Show("No hay filas posteriores para seleccionar la siguiente.");
+            }
+
+
 
         }
 
         private void btn_inicio_Click(object sender, EventArgs e)
         {
             verificarDG();
-            
-                filaActual = 0;
-                DataGridView gd = GetDGV(this.parent);
-                gd.ClearSelection();
-                gd.Rows[0].Selected = true;
-                gd.FirstDisplayedScrollingRowIndex = 0;
 
-           
-            
-
+            filaActual = 0;
+            DataGridView gd = GetDGV(this.parent);
+            gd.ClearSelection();
+            gd.Rows[0].Selected = true;
+            gd.FirstDisplayedScrollingRowIndex = 0;
+            focusData(gd);
         }
 
         private void btn_fin_Click(object sender, EventArgs e)
         {
             verificarDG();
-            
-
-                DataGridView gd = GetDGV(this.parent);
-                gd.ClearSelection();
-                gd.Rows[gd.Rows.Count - 1].Selected = true;
-                gd.FirstDisplayedScrollingRowIndex = gd.Rows.Count - 1;
-                filaActual = gd.Rows.Count - 1;
-
-           
-
+            DataGridView gd = GetDGV(this.parent);
+            gd.ClearSelection();
+            gd.Rows[gd.Rows.Count - 1].Selected = true;
+            gd.FirstDisplayedScrollingRowIndex = gd.Rows.Count - 1;
+            filaActual = gd.Rows.Count - 1;
+            focusData(gd);
         }
 
         //Carol Chuy
         private void btn_eliminar_Click(object sender, EventArgs e)
-        {   
+        {
             this.identificarFormulario(this.parent, "e");
         }
     }

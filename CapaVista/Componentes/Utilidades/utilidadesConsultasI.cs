@@ -80,7 +80,6 @@ namespace CapaVista.Componentes.Utilidades
                     try
                     {
                         ((DataGridView)c).DataSource = ctriv.refrescar();
-                        MessageBox.Show("Refrescado");
                         refrescadoExitosamente = true; // Si no hubo excepción, se refrescó con éxito
                     }
                     catch (Exception ex) // Captura el error
@@ -127,7 +126,7 @@ namespace CapaVista.Componentes.Utilidades
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex);
                 MessageBox.Show("Fila sin datos o tabla faltante");
@@ -166,8 +165,6 @@ namespace CapaVista.Componentes.Utilidades
             }
             ctriv.setTabla(this.tabla);
             ctriv.modificar(dictionary, pk, id);
-            MessageBox.Show("MODIFICANDO");
-
         }
 
         //Carol Chuy
