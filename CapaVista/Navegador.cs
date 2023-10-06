@@ -141,6 +141,7 @@ namespace CapaVista
 
         private void btn_agregar_Click(object sender, EventArgs e)
         {
+            this.limpiarControles();
             this.cambiarEstado(true);
             this.operacion = "g";
         }
