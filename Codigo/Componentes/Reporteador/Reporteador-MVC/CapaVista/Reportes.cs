@@ -12,17 +12,21 @@ using CapaControlador;
 
 
 namespace Reporteador
-/* AUTORES:
+/* AUTORES DE CODIGO:
 LUIS ALBERTO FRANCO MORAN 0901-20-23979
-OTTO ADRIAN LOPEZ VENTURA 0901-20-1069 
+OTTO ADRIAN LOPEZ VENTURA 0901-20-1069
+JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910
+
+Las siguientes personas se encargaron de hacer el diseño (Desde las bases, estandarizarlo hasta terminarlo):
+MARIA JIMENA TOBIAS VASQUEZ 0901-20-13641
 JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
 
 
 {
-    
+
     public partial class Reportes : Form
     {
-        private List<string> ruta = new List<string>(); // Lista para almacenar las rutas
+        private List<string> ruta = new List<string>(); // Lista para almacenar las rutas JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910
         Controlador cn = new Controlador();
         string rep = "tbl_reportes";
         private string rutaInformeSeleccionado;
@@ -61,13 +65,13 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
                 txt_ruta.Enabled = false;
-                openFileDialog.InitialDirectory = "C:\\"; // Directorio inicial
+                openFileDialog.InitialDirectory = "C:\\"; // Directorio inicial JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910
                 openFileDialog.Filter = "Crystal Reports (*.rpt)|*.rpt|Todos los archivos (*.*)|*.*";
                 openFileDialog.FilterIndex = 1;
 
                 DialogResult result = openFileDialog.ShowDialog();
 
-                if (result == DialogResult.OK)
+                if (result == DialogResult.OK) //OTTO ADRIAN LOPEZ VENTURA 0901-20-1069 
                 {
                     // Preguntar al usuario si desea agregar este archivo
                     result = MessageBox.Show("¿Desea agregar este archivo?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -75,7 +79,7 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
                     if (result == DialogResult.Yes)
                     {
                         // Obtener la ruta del archivo seleccionado y mostrarla en el TextBox
-                        txt_ruta.Text = openFileDialog.FileName;
+                        txt_ruta.Text = openFileDialog.FileName; //LUIS ALBERTO FRANCO MORAN 0901-20-23979
                     }
                     else
                     {
@@ -94,10 +98,11 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
             if (!string.IsNullOrEmpty(rutaArchivo) && File.Exists(rutaArchivo))
             {
                 // Preguntar al usuario si desea guardar el archivo
-                DialogResult result = MessageBox.Show("¿Desea guardar el archivo?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult result = MessageBox.Show("¿Desea guardar el archivo?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question); //OTTO ADRIAN LOPEZ VENTURA 0901-20-1069 
 
-                if (result == DialogResult.Yes)
+                if (result == DialogResult.Yes) //OTTO ADRIAN LOPEZ VENTURA 0901-20-1069 
                 {
+                    //LUIS ALBERTO FRANCO MORAN 0901-20-23979
                     // Llamar al Controlador para insertar el reporte en la base de datos
                     cn.InsertarReporte(correlativoTextBox.Text, Path.GetFileName(rutaArchivo), estadoTextBox.Text, rutaArchivo);
 
@@ -110,22 +115,23 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
                     estadoTextBox.Clear();
 
                     // Mostrar un mensaje de éxito
-                    MessageBox.Show("Reporte agregado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Reporte agregado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);//OTTO ADRIAN LOPEZ VENTURA 0901-20-1069 
                 }
                 else
                 {
+                    //LUIS ALBERTO FRANCO MORAN 0901-20-23979
                     // Limpiar los TextBox si el usuario elige "No"
                     txt_ruta.Clear();
                     correlativoTextBox.Clear();
                     estadoTextBox.Clear();
 
                     // Mostrar un mensaje informativo
-                    MessageBox.Show("No se guardó el archivo.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("No se guardó el archivo.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);//OTTO ADRIAN LOPEZ VENTURA 0901-20-1069 
                 }
             }
             else
             {
-                MessageBox.Show("La ruta no es válida o no existe.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("La ruta no es válida o no existe.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); //OTTO ADRIAN LOPEZ VENTURA 0901 - 20 - 1069
 
                 // Limpiar los TextBox
                 correlativoTextBox.Clear();
@@ -134,7 +140,7 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
             }
         }
 
-
+        //LUIS ALBERTO FRANCO MORAN 0901-20-23979
         private void btn_ver_Click(object sender, EventArgs e)
         {
             if (dgv_reportes.SelectedRows.Count > 0)
@@ -174,17 +180,10 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
         private void dgv_reportes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
-
-            /*la columna "archivo" tiene un índice específo
-            int archivoColumnIndex = 5;
-
-            if (e.ColumnIndex == archivoColumnIndex)
-            {
-                // Si la celda actual pertenece a la columna "archivo", oculta su contenido.
-                dgv_reportes.Columns[archivoColumnIndex].Visible = false;
-            }*/
         }
 
+
+        //OTTO ADRIAN LOPEZ VENTURA 0901-20-1069
         private void btn_eliminar_Click(object sender, EventArgs e)
         {
             if (dgv_reportes.SelectedRows.Count > 0)
@@ -220,6 +219,7 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
             }
         }
 
+        //LUIS ALBERTO FRANCO MORAN 0901-20-23979
         private void btn_modificar_Click(object sender, EventArgs e)
         {
             if (dgv_reportes.SelectedRows.Count > 0)

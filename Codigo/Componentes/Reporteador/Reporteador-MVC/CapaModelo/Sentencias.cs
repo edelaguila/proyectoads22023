@@ -17,7 +17,8 @@ namespace CapaModelo
             con = new Conexion();
         }
 
-        // Insertar un nuevo registro con archivo de texto
+        // LUIS ALBERTO FRANCO MORAN 0901-20-23979
+        // Insertar un nuevo registro con archivo .rpt
         public void InsertarReporte(string correlativo,string nombreArchivo, string estado, string rutaArchivo)
         {
             using (OdbcConnection connection = con.AbrirConexion())
@@ -51,9 +52,10 @@ namespace CapaModelo
                 }
             }
         }
-        
+
 
         // Leer registros existentes
+        //LUIS ALBERTO FRANCO MORAN 0901-20-23979
         public DataTable ObtenerReportes()
         {
             using (OdbcConnection connection = con.AbrirConexion())
@@ -78,6 +80,7 @@ namespace CapaModelo
             }
         }
 
+        //OTTO ADRIAN LOPEZ VENTURA 0901-20-1069
         // Actualizar un registro existente
         public void ActualizarReporte(int idReporte,string nombre, string estado)
         {
@@ -112,6 +115,7 @@ namespace CapaModelo
     }
         }
 
+        //OTTO ADRIAN LOPEZ VENTURA 0901-20-1069
         // Eliminar un registro existente
         public void EliminarReporte(int idReporte)
         {
@@ -142,8 +146,7 @@ namespace CapaModelo
                 }
             }
         }
-
-        // El método llenarTbl que mencionaste previamente
+        // LUIS ALBERTO FRANCO MORAN 0901-20-23979
         public DataTable llenarTbl(string tabla)
         {
             using (OdbcConnection connection = con.AbrirConexion())
