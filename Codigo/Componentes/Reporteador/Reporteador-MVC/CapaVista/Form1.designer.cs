@@ -35,7 +35,7 @@ namespace Reporteador
             this.lbl_estado = new System.Windows.Forms.Label();
             this.txt_categoria = new System.Windows.Forms.TextBox();
             this.txt_estado = new System.Windows.Forms.TextBox();
-            this.dgv_categorias = new System.Windows.Forms.DataGridView();
+            this.dgv_aplicacion = new System.Windows.Forms.DataGridView();
             this.btn_modificar = new System.Windows.Forms.Button();
             this.btn_guardar = new System.Windows.Forms.Button();
             this.btn_cancelar = new System.Windows.Forms.Button();
@@ -50,7 +50,7 @@ namespace Reporteador
             this.btn_fin = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_agregar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_categorias)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_aplicacion)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,9 +70,9 @@ namespace Reporteador
             this.lbl_categoria.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.lbl_categoria.Location = new System.Drawing.Point(181, 224);
             this.lbl_categoria.Name = "lbl_categoria";
-            this.lbl_categoria.Size = new System.Drawing.Size(96, 21);
+            this.lbl_categoria.Size = new System.Drawing.Size(223, 21);
             this.lbl_categoria.TabIndex = 1;
-            this.lbl_categoria.Text = "Categoría";
+            this.lbl_categoria.Text = "Codigo reporte asociado";
             // 
             // lbl_estado
             // 
@@ -100,16 +100,17 @@ namespace Reporteador
             this.txt_estado.Size = new System.Drawing.Size(105, 27);
             this.txt_estado.TabIndex = 4;
             // 
-            // dgv_categorias
+            // dgv_aplicacion
             // 
-            this.dgv_categorias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_categorias.Location = new System.Drawing.Point(185, 317);
-            this.dgv_categorias.Name = "dgv_categorias";
-            this.dgv_categorias.RowHeadersWidth = 51;
-            this.dgv_categorias.RowTemplate.Height = 24;
-            this.dgv_categorias.Size = new System.Drawing.Size(706, 178);
-            this.dgv_categorias.TabIndex = 5;
-            this.dgv_categorias.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_categorias_CellContentClick);
+            this.dgv_aplicacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_aplicacion.Location = new System.Drawing.Point(185, 317);
+            this.dgv_aplicacion.Name = "dgv_aplicacion";
+            this.dgv_aplicacion.RowHeadersWidth = 51;
+            this.dgv_aplicacion.RowTemplate.Height = 24;
+            this.dgv_aplicacion.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_aplicacion.Size = new System.Drawing.Size(706, 178);
+            this.dgv_aplicacion.TabIndex = 5;
+            this.dgv_aplicacion.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_categorias_CellContentClick);
             // 
             // btn_modificar
             // 
@@ -354,7 +355,7 @@ namespace Reporteador
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
             this.ClientSize = new System.Drawing.Size(1053, 532);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dgv_categorias);
+            this.Controls.Add(this.dgv_aplicacion);
             this.Controls.Add(this.txt_estado);
             this.Controls.Add(this.txt_categoria);
             this.Controls.Add(this.lbl_estado);
@@ -363,7 +364,7 @@ namespace Reporteador
             this.Name = "Form1";
             this.Text = "Navegador";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_categorias)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_aplicacion)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -377,7 +378,7 @@ namespace Reporteador
         private System.Windows.Forms.Label lbl_estado;
         private System.Windows.Forms.TextBox txt_categoria;
         private System.Windows.Forms.TextBox txt_estado;
-        private System.Windows.Forms.DataGridView dgv_categorias;
+        private System.Windows.Forms.DataGridView dgv_aplicacion;
         private System.Windows.Forms.Button btn_modificar;
         private System.Windows.Forms.Button btn_guardar;
         private System.Windows.Forms.Button btn_cancelar;

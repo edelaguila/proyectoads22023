@@ -238,7 +238,6 @@ C:\Users\Luis\Desktop\presentacion\proyectoads22023\Codigo\Componentes\Reportead
 C:\Users\Luis\Desktop\presentacion\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.prueba2.resources
 C:\Users\Luis\Desktop\presentacion\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\Reporteador.Reportes.resources
 C:\Users\Luis\Desktop\presentacion\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\Reporteador.Vista_de_Reportes.resources
-C:\Users\Luis\Desktop\presentacion\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.vista_rp_navegador.resources
 C:\Users\Luis\Desktop\presentacion\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.csproj.GenerateResource.cache
 C:\Users\Luis\Desktop\presentacion\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
 C:\Users\Luis\Desktop\presentacion\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
@@ -286,3 +285,4 @@ C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\proyectoads22023\Codigo\Comp
 C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
 C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.dll
 C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\Luis\Desktop\presentacion\proyectoads22023\Codigo\Componentes\Reporteador\Reporteador-MVC\CapaVista\obj\Debug\CapaVista.VistaNav.resources

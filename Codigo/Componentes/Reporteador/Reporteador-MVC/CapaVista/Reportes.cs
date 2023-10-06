@@ -32,6 +32,7 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
         private string rutaInformeSeleccionado;
         public Reportes()
         {
+            
             InitializeComponent();
             actualizardatagriew();
             dgv_reportes.Columns[0].HeaderText = "ID";
@@ -64,6 +65,7 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
+
                 txt_ruta.Enabled = false;
                 openFileDialog.InitialDirectory = "C:\\"; // Directorio inicial JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910
                 openFileDialog.Filter = "Crystal Reports (*.rpt)|*.rpt|Todos los archivos (*.*)|*.*";
@@ -80,6 +82,7 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
                     {
                         // Obtener la ruta del archivo seleccionado y mostrarla en el TextBox
                         txt_ruta.Text = openFileDialog.FileName; //LUIS ALBERTO FRANCO MORAN 0901-20-23979
+                        correlativoTextBox.Enabled = true;
                     }
                     else
                     {
@@ -108,11 +111,14 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
 
                     // Actualizar el DataGridView con los datos actualizados
                     actualizardatagriew();
+                    txt_ruta.Enabled = true;
 
                     // Limpiar los TextBox
                     txt_ruta.Clear();
                     correlativoTextBox.Clear();
                     estadoTextBox.Clear();
+                    correlativoTextBox.Enabled = false;
+                   
 
                     // Mostrar un mensaje de éxito
                     MessageBox.Show("Reporte agregado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);//OTTO ADRIAN LOPEZ VENTURA 0901-20-1069 
@@ -173,7 +179,7 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
 
         private void Reportes_Load(object sender, EventArgs e)
         {
-
+            correlativoTextBox.Enabled = false;
         }
 
         

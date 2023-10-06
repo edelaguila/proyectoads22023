@@ -147,7 +147,7 @@ namespace CapaModelo
             }
         }
         // LUIS ALBERTO FRANCO MORAN 0901-20-23979
-        public DataTable llenarTbl(string tabla)
+        public DataTable llenarTbl(string tabla) //Llenar tabla de reportes
         {
             using (OdbcConnection connection = con.AbrirConexion())
             {
@@ -165,6 +165,34 @@ namespace CapaModelo
                 }
             }
         }
+
+        //Llenar tabla de seguridad (Por cuestiones practicas lo implemento dentro de navegador solo para que se vea como funciona el metodo)
+        //LUIS ALBERTO FRANCO MORAN 0901-20-23979 
+        public DataTable llenarTblapp(string tablaapp)
+        {
+            using (OdbcConnection connection = con.AbrirConexion())
+            {
+                if (connection != null)
+                {
+                    string sql = "SELECT PK_id_aplicacion, nbr_nombre_aplicacion, nbr_descripcion_aplicacion, fk_no_reporteAsociado, nbr_estado_aplicacion FROM  " + tablaapp + ";";
+                    OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, connection);
+                    DataTable table = new DataTable();
+                    dataTable.Fill(table);
+                    return table;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
+
+
+
+
+
+
+        
     }
 }
 

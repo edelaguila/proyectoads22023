@@ -7,17 +7,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaControlador;
 
 
 namespace Reporteador
 {
     public partial class Form1 : Form
     {
+        
+        Controlador cn = new Controlador();
+        string app = "tbl_aplicacion";
+        
         public Form1()
         {
+            
             InitializeComponent();
+            actualizardatagriew();
         }
+        public void actualizardatagriew()
+        {
+            DataTable dt = cn.llenarTblapl(app);
+            dgv_aplicacion.DataSource = dt;
 
+        }
         private void button1_Click(object sender, EventArgs e)
         {
            
@@ -26,11 +38,27 @@ namespace Reporteador
 
         private void btn_imprimir_Click(object sender, EventArgs e)
         {
-            // Crear una instancia del formulario "Vista de Reportes"
-            CapaVista.vista_rp_navegador vistareportenavegador = new CapaVista.vista_rp_navegador();
+            if (dgv_aplicacion.SelectedRows.Count > 0)
+            {
+                int correlativo = Convert.ToInt32(dgv_aplicacion.SelectedRows[0].Cells["fk_no_reporteAsociado"].Value);
 
-            // Mostrar el formulario "Vista de Reportes navegador"
-            vistareportenavegador.Show();
+                string rutaInforme = cn.ObtenerRutaInformePorCorrelativo(correlativo);
+
+                if (!string.IsNullOrEmpty(rutaInforme))
+                {
+                    CapaVista.VistaNav vistaReportesNav = new CapaVista.VistaNav();
+                    vistaReportesNav.CargarInforme(rutaInforme);
+                    vistaReportesNav.Show();
+                }
+                else
+                {
+                    MessageBox.Show("No se encontró la ruta del informe para este correlativo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Por favor, seleccione una aplicación en el DataGridView para ver el informe.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void dgv_categorias_CellContentClick(object sender, DataGridViewCellEventArgs e)
