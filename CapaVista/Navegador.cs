@@ -26,6 +26,8 @@ namespace CapaVista
             this.parent = new Form();
             this.utilConsultasI = new utilidadesConsultasI();
             this.cambiarEstado(false);
+            
+
         }
 
         public void config(string tabla, Form parent)
@@ -34,6 +36,7 @@ namespace CapaVista
             this.parent = parent;
             this.utilConsultasI.setTabla(this.tabla);
             DataGridView gd = GetDGV(this.parent);
+            
             if (gd == null)
             {
                 gridExiste = false;
@@ -176,38 +179,69 @@ namespace CapaVista
 
         }
 
+
+       
+        public void focusData(Dictionary<string, string>rowData)
+        {
+            foreach(Control c in this.parent.Controls)
+            {
+                if(c is TextBox)
+                {
+                    TextBox txt = (TextBox)c;
+                    if  (rowData.ContainsKey(txt.Tag.ToString())) {
+                        txt.Text = rowData[txt.Tag.ToString()];
+                    }
+                }
+                else if (c is DateTimePicker)
+                {
+                    DateTimePicker dt = (DateTimePicker)c;
+                    if(rowData.ContainsKey(dt.Tag.ToString())){
+                        DateTime date;
+                        string _date_str = rowData[dt.Tag.ToString()];
+                        if(DateTime.TryParse(_date_str, out date))
+                        {
+                            dt.Value = date;
+                        }
+                    }
+                }
+            }
+        }
+
+
         private void btn_anterior_Click(object sender, EventArgs e)
         {
+           
             verificarDG();
-            try
-            {
+           
                 DataGridView gd = GetDGV(this.parent);
-
                 gd.ClearSelection();
                 if (filaActual > 0)
                 {
-
                     filaActual--;
                     gd.Rows[filaActual].Selected = true;
+                    Dictionary<string, string> rowData = new Dictionary<string, string>();
+                    DataGridViewRow selectedRow = gd.SelectedRows[0];
+                    foreach (DataGridViewColumn column in gd.Columns)
+                    {
+                        string columnName = column.Name;
+                        object cellValue = selectedRow.Cells[columnName].Value;
+                        rowData[columnName] = cellValue.ToString();
+                    }
+                    focusData(rowData);
                 }
                 else if (filaActual <= 0)
                 {
                     MessageBox.Show("No hay filas anteriores para seleccionar la anterior.");
 
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("No hay un DataGridView");
-            }
+           
         }
 
         private void btn_siguiente_Click(object sender, EventArgs e)
         {
             verificarDG();
 
-            try
-            {
+           
                 DataGridView gd = GetDGV(this.parent);
                 gd.ClearSelection();
                 if (filaActual < gd.Rows.Count - 1)
@@ -220,38 +254,30 @@ namespace CapaVista
 
                     MessageBox.Show("No hay filas posteriores para seleccionar la siguiente.");
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("No hay un DataGridView");
-            }
+            
+           
 
         }
 
         private void btn_inicio_Click(object sender, EventArgs e)
         {
             verificarDG();
-            try
-            {
+            
                 filaActual = 0;
                 DataGridView gd = GetDGV(this.parent);
                 gd.ClearSelection();
                 gd.Rows[0].Selected = true;
                 gd.FirstDisplayedScrollingRowIndex = 0;
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("No hay un DataGridView");
-            }
+           
+            
 
         }
 
         private void btn_fin_Click(object sender, EventArgs e)
         {
             verificarDG();
-            try
-            {
+            
 
                 DataGridView gd = GetDGV(this.parent);
                 gd.ClearSelection();
@@ -259,11 +285,7 @@ namespace CapaVista
                 gd.FirstDisplayedScrollingRowIndex = gd.Rows.Count - 1;
                 filaActual = gd.Rows.Count - 1;
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("No hay un DataGridView");
-            }
+           
 
         }
 
