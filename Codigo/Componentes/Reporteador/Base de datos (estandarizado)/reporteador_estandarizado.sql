@@ -1,3 +1,4 @@
+-- Autores: Jorge García 0901-20-14138, Luis Franco 0901-20-23979, Rodrigo Ixcotoyac 0901-20-4762
 -- Crear la base de datos si no existe
 CREATE DATABASE IF NOT EXISTS BD_reporteador;
 -- LA CONEXION A ODBC DEBE DE IR CON EL NOMBRE "BD_reporteador"
@@ -18,7 +19,7 @@ CREATE TABLE tbl_reportes (
     nbr_nombre VARCHAR(50),
     fk_estado INT,
     nbr_fecha DATETIME,
-    nbr_archivo longblob,
+    nbr_archivo VARCHAR(120),
     nbr_fechaMod datetime,
     FOREIGN KEY (fk_estado) REFERENCES tbl_estados(pk_id_estado)
 );
@@ -28,8 +29,8 @@ insert into `tbl_estados` (`pk_id_estado`, `nbr_info_estado`, `nbr_num_estado`) 
 (1, 'Activo', 1),(2, 'Eliminado', 2), (3, 'Modificado', 3) ;
 
 -- CUANDO YA ESTEN LOS DATOS CREADOS DENTRO DE LA TABLA DE ESTADOS, CREAR LOS DATOS INICIALES PARA LA TABLA REPORTES
-insert into `tbl_reportes` (`pk_id_reporte`, `nbr_correlativo`, `nbr_nombre`, `fk_estado`, `nbr_fecha`) VALUES 
-(2, 2120923, 'planilla.txt', 1, 2023-09-12);
+insert into `tbl_reportes` (`pk_id_reporte`, `nbr_correlativo`, `nbr_nombre`, `fk_estado`) VALUES 
+(10, 10002, 'planilssla.txt', 1);
 
 -- TENIENDO YA TODO CREADO E INGRESADO, HACER EL SELECT DE LA TABLA REPORTES Y YA SE PUEDE TRABAJAR CON EL PROGRAMA EN CONJUNTO
 select * from tbl_reportes;
