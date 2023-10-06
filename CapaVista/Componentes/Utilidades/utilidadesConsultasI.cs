@@ -60,6 +60,15 @@ namespace CapaVista.Componentes.Utilidades
                         dictionary.Add(tag, fechaHora.ToString("yyyy-MM-dd"));
                     }
                 }
+                else if (c is ComboBox)
+                {
+                    string tag = c.Tag.ToString();
+                    if (columns.Contains(tag))
+                    {
+                        ComboBox cmb = (ComboBox)c;
+                        dictionary.Add(tag, cmb.Text);
+                    }
+                }
             }
             ctriv.setTabla(this.tabla);
             if (dictionary.Count != columns.Count)
@@ -76,6 +85,13 @@ namespace CapaVista.Componentes.Utilidades
         {
             Controlador ctriv = new Controlador();
             ctriv.setTabla(this.tabla);
+            return ctriv.refrescar();
+        }
+
+        public DataTable getCMBData(string table)
+        {
+            Controlador ctriv = new Controlador();
+            ctriv.setTabla(table);
             return ctriv.refrescar();
         }
 

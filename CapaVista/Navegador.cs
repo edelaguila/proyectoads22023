@@ -18,6 +18,7 @@ namespace CapaVista
         public string tabla = "";
         public int filaActual = 0;
         public bool gridExiste = false;
+        string tabla_cmb = "";
         DataGridView data_invisible = new DataGridView();
         public DataTable mydata = new DataTable();
 
@@ -30,14 +31,43 @@ namespace CapaVista
             this.cambiarEstado(false);
         }
 
-        public void config(string tabla, Form parent)
+        public void fillCombo()
+        {
+            if (this.tabla_cmb == "") return;
+            ComboBox cmb = null;
+            foreach (Control c in this.parent.Controls)
+            {
+                if (c is ComboBox)
+                {
+                    cmb = (ComboBox)c;
+                }
+            }
+            if (cmb == null) return;
+            DataTable auxDt = this.utilConsultasI.getCMBData(tabla_cmb);
+
+            string tagName = cmb.Tag.ToString();
+            tagName = tagName.Replace("fk", "nbr");
+            if (auxDt.Columns.Contains(tagName))
+            {
+                string[] valoresColumna = new string[auxDt.Rows.Count];
+
+                for (int i = 0; i < auxDt.Rows.Count; i++)
+                {
+                    string valor = auxDt.Rows[i][tagName].ToString();
+                    cmb.Items.Add(valor);
+                }
+            }
+        }
+
+        public void config(string tabla, Form parent, string tabla2)
         {
             this.tabla = tabla;
+            this.tabla_cmb = tabla2;
             this.parent = parent;
             this.utilConsultasI.setTabla(this.tabla);
             DataGridView gd = GetDGV(this.parent);
             this.mydata = this.utilConsultasI.getArrData();
-            //this.data_invisible.Rows[0].Selected = true;
+            this.fillCombo();
             if (gd == null)
             {
                 focusData(this.mydata);
@@ -59,12 +89,10 @@ namespace CapaVista
             gd.RowTemplate.Height = 24;
             gd.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
         }
-
         bool verificarDG()
         {
             return gridExiste;
         }
-
         private void data_Click(object sender, DataGridViewCellEventArgs e)
         {
             DataGridView dt = sender as DataGridView;
@@ -74,9 +102,6 @@ namespace CapaVista
                 focusData((DataTable)dt.DataSource);
             }
         }
-
-
-
         public void identificarFormulario(Form child, string operacion)
         {
             DataGridView dgvname = GetDGV(child);
@@ -86,9 +111,6 @@ namespace CapaVista
             if (operacion.Equals("r")) this.utilConsultasI.refrescar(child);
             if (operacion.Equals("e")) this.utilConsultasI.eliminar(child, dgvname);
         }
-
-
-
         public DataGridView GetDGV(Form child)
         {
             foreach (Control c in child.Controls)
@@ -141,14 +163,12 @@ namespace CapaVista
             }
 
         }
-
         private void btn_agregar_Click(object sender, EventArgs e)
         {
             this.limpiarControles();
             this.cambiarEstado(true);
             this.operacion = "g";
         }
-
         public void limpiarControles()
         {
             foreach (Control control in this.parent.Controls)
@@ -167,23 +187,19 @@ namespace CapaVista
                 }
             }
         }
-
         private void btn_cancelar_Click(object sender, EventArgs e)
         {
             this.limpiarControles();
             this.cambiarEstado(false);
         }
-
         private void btn_ayuda_Click_1(object sender, EventArgs e)
         {
             Help.ShowHelp(this, "Ayudas/AyudaSO2.chm", "NavAyuda.html");
         }
-
         private void btn_refrescar_Click(object sender, EventArgs e)
         {
             this.identificarFormulario(this.parent, "r");
         }
-
         private void btn_modificar_Click(object sender, EventArgs e)
         {
 
@@ -203,45 +219,6 @@ namespace CapaVista
 
 
         }
-
-
-        /*
-        public void focusData(DataGridView gd)
-        {
-            Dictionary<string, string> rowData = new Dictionary<string, string>();
-            DataGridViewRow selectedRow = gd.SelectedRows[0];
-            foreach (DataGridViewColumn column in gd.Columns)
-            {
-                string columnName = column.Name;
-                object cellValue = selectedRow.Cells[columnName].Value;
-                rowData[columnName] = cellValue.ToString();
-            }
-            foreach (Control c in this.parent.Controls)
-            {
-                if (c is TextBox)
-                {
-                    TextBox txt = (TextBox)c;
-                    if (rowData.ContainsKey(txt.Tag.ToString()))
-                    {
-                        txt.Text = rowData[txt.Tag.ToString()];
-                    }
-                }
-                else if (c is DateTimePicker)
-                {
-                    DateTimePicker dt = (DateTimePicker)c;
-                    if (rowData.ContainsKey(dt.Tag.ToString()))
-                    {
-                        DateTime date;
-                        string _date_str = rowData[dt.Tag.ToString()];
-                        if (DateTime.TryParse(_date_str, out date))
-                        {
-                            dt.Value = date;
-                        }
-                    }
-                }
-            }
-        }*/
-
         public void focusData(DataTable dataTable)
         {
             Dictionary<string, string> rowData = new Dictionary<string, string>();
@@ -283,12 +260,8 @@ namespace CapaVista
                 }
             }
         }
-
-
-
         private void btn_anterior_Click(object sender, EventArgs e)
         {
-
             bool call_data = !verificarDG();
             if (call_data)
             {
@@ -316,7 +289,6 @@ namespace CapaVista
             }
 
         }
-
         private void btn_siguiente_Click(object sender, EventArgs e)
         {
             bool call_data = !verificarDG();
@@ -347,7 +319,6 @@ namespace CapaVista
                 MessageBox.Show("No hay filas posteriores para seleccionar la siguiente.");
             }
         }
-
         private void btn_inicio_Click(object sender, EventArgs e)
         {
             bool call_data = !verificarDG();
@@ -364,7 +335,6 @@ namespace CapaVista
             gd.FirstDisplayedScrollingRowIndex = 0;
             focusData((DataTable)gd.DataSource);
         }
-
         private void btn_fin_Click(object sender, EventArgs e)
         {
             bool call_data = !verificarDG();
@@ -381,7 +351,6 @@ namespace CapaVista
             filaActual = gd.Rows.Count - 1;
             focusData((DataTable)gd.DataSource);
         }
-
         //Carol Chuy
         private void btn_eliminar_Click(object sender, EventArgs e)
         {
