@@ -38,11 +38,11 @@ namespace Reporteador
             this.btn_ruta = new System.Windows.Forms.Button();
             this.txt_ruta = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.correlativoTextBox = new System.Windows.Forms.TextBox();
             this.estadoTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.correlativoTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_reportes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -170,13 +170,6 @@ namespace Reporteador
             this.label1.Text = "Reportes";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // correlativoTextBox
-            // 
-            this.correlativoTextBox.Location = new System.Drawing.Point(170, 124);
-            this.correlativoTextBox.Name = "correlativoTextBox";
-            this.correlativoTextBox.Size = new System.Drawing.Size(332, 22);
-            this.correlativoTextBox.TabIndex = 8;
-            // 
             // estadoTextBox
             // 
             this.estadoTextBox.Location = new System.Drawing.Point(170, 152);
@@ -215,6 +208,13 @@ namespace Reporteador
             this.label3.Text = "Nombre";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // correlativoTextBox
+            // 
+            this.correlativoTextBox.Location = new System.Drawing.Point(170, 124);
+            this.correlativoTextBox.Name = "correlativoTextBox";
+            this.correlativoTextBox.Size = new System.Drawing.Size(332, 22);
+            this.correlativoTextBox.TabIndex = 8;
+            // 
             // Reportes
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -252,10 +252,10 @@ namespace Reporteador
         private System.Windows.Forms.Button btn_ruta;
         private System.Windows.Forms.TextBox txt_ruta;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox correlativoTextBox;
         private System.Windows.Forms.TextBox estadoTextBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox correlativoTextBox;
     }
 }

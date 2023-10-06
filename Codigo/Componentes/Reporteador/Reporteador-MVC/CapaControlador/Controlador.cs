@@ -7,6 +7,8 @@ namespace CapaControlador
 LUIS ALBERTO FRANCO MORAN 0901-20-23979
 OTTO ADRIAN LOPEZ VENTURA 0901-20-1069  */
 {
+
+
     public class Controlador
     {
         private Sentencias sentencias;
@@ -29,9 +31,9 @@ OTTO ADRIAN LOPEZ VENTURA 0901-20-1069  */
         }
 
         // Actualizar un reporte existente
-        public void ActualizarReporte(int idReporte, string correlativo, string nombre, string estado)
+        public void ActualizarReporte(int idReporte,  string nombre, string estado)
         {
-            sentencias.ActualizarReporte(idReporte, correlativo, nombre, estado);
+            sentencias.ActualizarReporte(idReporte, nombre, estado);
         }
 
         // Eliminar un reporte existente

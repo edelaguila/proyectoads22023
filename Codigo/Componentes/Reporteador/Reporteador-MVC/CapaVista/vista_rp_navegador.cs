@@ -14,6 +14,7 @@ using CrystalDecisions.Shared;
 using System.IO;
 namespace CapaVista
 {
+    /*AUTOR RODRIGO ALEJANDRO IXCOTOYAC PEREZ 0901-20-4762*/
     public partial class vista_rp_navegador : Form
     {
 
@@ -48,7 +49,7 @@ namespace CapaVista
         private void vista_rp_navegador_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'dataSet1.tbl_reportes' Puede moverla o quitarla según sea necesario.
-            this.tbl_reportesTableAdapter.Fill(this.dataSet1.tbl_reportes);
+           // this.tbl_reportesTableAdapter.Fill(this.dataSet1.tbl_reportes);
 
         }
 

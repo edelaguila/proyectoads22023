@@ -18,7 +18,7 @@ namespace CapaModelo
         }
 
         // Insertar un nuevo registro con archivo de texto
-        public void InsertarReporte(string correlativo, string nombreArchivo, string estado, string rutaArchivo)
+        public void InsertarReporte(string correlativo,string nombreArchivo, string estado, string rutaArchivo)
         {
             using (OdbcConnection connection = con.AbrirConexion())
             {
@@ -28,9 +28,6 @@ namespace CapaModelo
                     {
                         try
                         {
-                            // Leer el contenido del archivo
-                            string contenidoArchivo = File.ReadAllText(rutaArchivo);
-
                             string insertQuery = "INSERT INTO tbl_reportes (nbr_correlativo, nbr_nombre, fk_estado, nbr_fecha, nbr_archivo) VALUES (?, ?, ?, ?, ?)";
                             using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
                             {
@@ -38,7 +35,7 @@ namespace CapaModelo
                                 cmd.Parameters.AddWithValue("@nbr_nombre", nombreArchivo);
                                 cmd.Parameters.AddWithValue("@fk_estado", estado);
                                 cmd.Parameters.AddWithValue("@nbr_fecha", DateTime.Now);
-                                cmd.Parameters.AddWithValue("@nbr_archivo", contenidoArchivo);
+                                cmd.Parameters.AddWithValue("@nbr_archivo", rutaArchivo);
 
                                 cmd.ExecuteNonQuery();
                             }
@@ -54,6 +51,7 @@ namespace CapaModelo
                 }
             }
         }
+        
 
         // Leer registros existentes
         public DataTable ObtenerReportes()
@@ -62,7 +60,7 @@ namespace CapaModelo
             {
                 if (connection != null)
                 {
-                    string selectQuery = "SELECT pk_id_reporte, nbr_correlativo, nbr_nombre, fk_estado, nbr_fecha, nbr_fechaMod FROM reportes";
+                    string selectQuery = "SELECT pk_id_reporte, nbr_correlativo, nbr_nombre, fk_estado, nbr_archivo ,nbr_fecha, nbr_fechaMod FROM reportes";
                     using (OdbcCommand cmd = new OdbcCommand(selectQuery, connection))
                     {
                         DataTable dataTable = new DataTable();
@@ -81,39 +79,37 @@ namespace CapaModelo
         }
 
         // Actualizar un registro existente
-        public void ActualizarReporte(int idReporte, string correlativo, string nombre, string estado)
+        public void ActualizarReporte(int idReporte,string nombre, string estado)
         {
-            using (OdbcConnection connection = con.AbrirConexion())
+    using (OdbcConnection connection = con.AbrirConexion())
+    {
+        if (connection != null)
+        {
+            using (OdbcTransaction transaction = connection.BeginTransaction())
             {
-                if (connection != null)
+                try
                 {
-                    using (OdbcTransaction transaction = connection.BeginTransaction())
+                    string updateQuery = "UPDATE tbl_reportes SET nbr_nombre=?, fk_estado=?, nbr_fechaMod=? WHERE pk_id_reporte=?";
+                    using (OdbcCommand cmd = new OdbcCommand(updateQuery, connection, transaction))
                     {
-                        try
-                        {
-                            string updateQuery = "UPDATE tbl_reportes SET nbr_correlativo=?, nbr_nombre=?, fk_estado=?, nbr_fechaMod=? WHERE pk_id_reporte=?";
-                            using (OdbcCommand cmd = new OdbcCommand(updateQuery, connection, transaction))
-                            {
-                                cmd.Parameters.AddWithValue("@nbr_correlativo", correlativo);
-                                cmd.Parameters.AddWithValue("@nbr_nombre", nombre);
-                                cmd.Parameters.AddWithValue("@fk_estado", estado);
-                                cmd.Parameters.AddWithValue("@nbr_fechaMod", DateTime.Now);
-                                cmd.Parameters.AddWithValue("@pk_id_reporte", idReporte);
+                        cmd.Parameters.AddWithValue("@nbr_nombre", nombre);
+                        cmd.Parameters.AddWithValue("@fk_estado", estado);
+                        cmd.Parameters.AddWithValue("@nbr_fechaMod", DateTime.Now);
+                        cmd.Parameters.AddWithValue("@pk_id_reporte", idReporte);
 
-
-                                cmd.ExecuteNonQuery();
-                            }
-
-                            transaction.Commit();
-                        }
-                        catch (Exception ex)
-                        {
-                            transaction.Rollback();
-                            Console.WriteLine($"Error al actualizar el registro: {ex.Message}");
-                        }
+                        cmd.ExecuteNonQuery();
                     }
+
+                    transaction.Commit();
+                }
+                catch (Exception ex)
+                {
+                    transaction.Rollback();
+                    Console.WriteLine($"Error al actualizar el registro: {ex.Message}");
                 }
             }
+        }
+    }
         }
 
         // Eliminar un registro existente
@@ -154,7 +150,7 @@ namespace CapaModelo
             {
                 if (connection != null)
                 {
-                    string sql = "SELECT pk_id_reporte, nbr_correlativo, nbr_nombre, fk_estado, nbr_fecha, nbr_fechaMod FROM  " + tabla + ";";
+                    string sql = "SELECT pk_id_reporte, nbr_correlativo, nbr_nombre, fk_estado, nbr_archivo ,nbr_fecha, nbr_fechaMod FROM  " + tabla + ";";
                     OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, connection);
                     DataTable table = new DataTable();
                     dataTable.Fill(table);
