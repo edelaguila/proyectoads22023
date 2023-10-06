@@ -67,7 +67,7 @@ namespace CapaVista
             this.utilConsultasI.setTabla(this.tabla);
             DataGridView gd = GetDGV(this.parent);
             this.mydata = this.utilConsultasI.getArrData();
-            this.fillCombo();
+            //this.fillCombo();
             if (gd == null)
             {
                 focusData(this.mydata);
@@ -108,7 +108,11 @@ namespace CapaVista
 
             if (operacion.Equals("g")) this.utilConsultasI.guardar(child);
             if (operacion.Equals("m")) this.utilConsultasI.modificar(child);
-            if (operacion.Equals("r")) this.utilConsultasI.refrescar(child);
+            if (operacion.Equals("r"))
+            {
+                this.utilConsultasI.refrescar(child);
+                this.fillCombo();
+            }
             if (operacion.Equals("e")) this.utilConsultasI.eliminar(child, dgvname);
         }
         public DataGridView GetDGV(Form child)

@@ -122,7 +122,7 @@ namespace CapaVista.Componentes.Utilidades
             // Si no se refrescó con éxito, mostrar el mensaje "No hay tabla"
             if (!refrescadoExitosamente)
             {
-                MessageBox.Show("No hay tabla en este formulario");
+                MessageBox.Show("Actualizado...");
             }
         }
 
