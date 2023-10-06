@@ -1,6 +1,7 @@
 ﻿using CapaControlador;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -70,6 +71,13 @@ namespace CapaVista.Componentes.Utilidades
             MessageBox.Show("INVENTARIO GUARDADO");
         }
 
+
+        public DataTable getArrData()
+        {
+            Controlador ctriv = new Controlador();
+            ctriv.setTabla(this.tabla);
+            return ctriv.refrescar();
+        }
 
         public void refrescar(Form child)
         {
