@@ -12,7 +12,6 @@ C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaModelo\obj\Releas
 C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaModelo\obj\Release\CapaModelo.pdb
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaModelo\bin\Release\CapaModelo.dll
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaModelo\bin\Release\CapaModelo.pdb
-D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaModelo\obj\Release\CapaModelo.csproj.AssemblyReference.cache
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaModelo\obj\Release\CapaModelo.csproj.CoreCompileInputs.cache
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaModelo\obj\Release\CapaModelo.dll
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaModelo\obj\Release\CapaModelo.pdb
