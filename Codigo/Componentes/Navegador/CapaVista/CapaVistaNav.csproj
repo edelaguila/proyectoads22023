@@ -7,8 +7,8 @@
     <ProjectGuid>{5B7D2663-379B-4A72-A65C-357F318B90F2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CapaVista</RootNamespace>
-    <AssemblyName>CapaVista</AssemblyName>
+    <RootNamespace>CapaVistaNav</RootNamespace>
+    <AssemblyName>CapaVistaNav</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
