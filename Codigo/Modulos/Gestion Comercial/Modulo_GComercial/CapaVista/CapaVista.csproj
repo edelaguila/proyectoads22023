@@ -165,6 +165,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Mantenimiento\" />
+    <Folder Include="Recursos\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
