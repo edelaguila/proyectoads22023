@@ -72,6 +72,24 @@
     <Compile Include="Procedimientos\Movimiento Proveedor.Designer.cs">
       <DependentUpon>Movimiento Proveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\Cotizaciones, pedidos y facturas\Cotizaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Cotizaciones, pedidos y facturas\Cotizaciones.Designer.cs">
+      <DependentUpon>Cotizaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Cotizaciones, pedidos y facturas\Factura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Cotizaciones, pedidos y facturas\Factura.Designer.cs">
+      <DependentUpon>Factura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Cotizaciones, pedidos y facturas\Pedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Cotizaciones, pedidos y facturas\Pedidos.Designer.cs">
+      <DependentUpon>Pedidos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -83,6 +101,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Procedimientos\Movimiento Proveedor.resx">
       <DependentUpon>Movimiento Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Cotizaciones, pedidos y facturas\Cotizaciones.resx">
+      <DependentUpon>Cotizaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Cotizaciones, pedidos y facturas\Factura.resx">
+      <DependentUpon>Factura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Cotizaciones, pedidos y facturas\Pedidos.resx">
+      <DependentUpon>Pedidos.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

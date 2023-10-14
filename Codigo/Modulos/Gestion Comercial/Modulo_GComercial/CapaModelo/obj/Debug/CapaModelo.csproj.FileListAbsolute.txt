@@ -51,3 +51,9 @@ D:\Semestre 2 2023\analisis de sistemas 2\Practica P2\Gestios Comercial\Modulo_G
 D:\Semestre 2 2023\analisis de sistemas 2\Practica P2\Gestios Comercial\Modulo_GComercial\CapaModelo\obj\Debug\CapaModelo.pdb
 D:\Semestre 2 2023\analisis de sistemas 2\Practica P2\Gestios Comercial\Modulo_GComercial\CapaModelo\bin\Debug\CapaModelo.dll
 D:\Semestre 2 2023\analisis de sistemas 2\Practica P2\Gestios Comercial\Modulo_GComercial\CapaModelo\bin\Debug\CapaModelo.pdb
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaModelo\bin\Debug\CapaModelo.dll
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaModelo\bin\Debug\CapaModelo.pdb
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaModelo\obj\Debug\CapaModelo.csproj.AssemblyReference.cache
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaModelo\obj\Debug\CapaModelo.dll
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaModelo\obj\Debug\CapaModelo.pdb
