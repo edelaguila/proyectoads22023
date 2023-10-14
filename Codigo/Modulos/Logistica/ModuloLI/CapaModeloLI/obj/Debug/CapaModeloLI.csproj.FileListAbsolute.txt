@@ -4,3 +4,9 @@ D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\C
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaModeloLI\obj\Debug\CapaModeloLI.csproj.CoreCompileInputs.cache
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaModeloLI\obj\Debug\CapaModeloLI.dll
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaModeloLI\obj\Debug\CapaModeloLI.pdb
+C:\Users\linri\Desktop\Proyecto ads logistica 1\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaModeloLI\bin\Debug\CapaModeloLI.dll
+C:\Users\linri\Desktop\Proyecto ads logistica 1\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaModeloLI\bin\Debug\CapaModeloLI.pdb
+C:\Users\linri\Desktop\Proyecto ads logistica 1\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaModeloLI\obj\Debug\CapaModeloLI.csproj.AssemblyReference.cache
+C:\Users\linri\Desktop\Proyecto ads logistica 1\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaModeloLI\obj\Debug\CapaModeloLI.csproj.CoreCompileInputs.cache
+C:\Users\linri\Desktop\Proyecto ads logistica 1\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaModeloLI\obj\Debug\CapaModeloLI.dll
+C:\Users\linri\Desktop\Proyecto ads logistica 1\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaModeloLI\obj\Debug\CapaModeloLI.pdb
