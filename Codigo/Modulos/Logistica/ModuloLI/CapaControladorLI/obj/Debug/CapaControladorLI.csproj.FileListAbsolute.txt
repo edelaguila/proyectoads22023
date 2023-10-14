@@ -1,0 +1,9 @@
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaControladorLI\bin\Debug\CapaControladorLI.dll
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaControladorLI\bin\Debug\CapaControladorLI.pdb
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaControladorLI\obj\Debug\CapaControladorLI.csproj.AssemblyReference.cache
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaControladorLI\obj\Debug\CapaControladorLI.csproj.CoreCompileInputs.cache
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaControladorLI\obj\Debug\CapaControladorLI.dll
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaControladorLI\obj\Debug\CapaControladorLI.pdb
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaControladorLI\bin\Debug\CapaModeloLI.dll
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaControladorLI\bin\Debug\CapaModeloLI.pdb
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaControladorLI\obj\Debug\CapaControladorLI.csproj.CopyComplete

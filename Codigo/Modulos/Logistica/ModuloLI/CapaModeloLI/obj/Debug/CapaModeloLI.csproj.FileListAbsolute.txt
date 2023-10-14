@@ -1,0 +1,6 @@
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaModeloLI\bin\Debug\CapaModeloLI.dll
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaModeloLI\bin\Debug\CapaModeloLI.pdb
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaModeloLI\obj\Debug\CapaModeloLI.csproj.AssemblyReference.cache
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaModeloLI\obj\Debug\CapaModeloLI.csproj.CoreCompileInputs.cache
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaModeloLI\obj\Debug\CapaModeloLI.dll
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaModeloLI\obj\Debug\CapaModeloLI.pdb
