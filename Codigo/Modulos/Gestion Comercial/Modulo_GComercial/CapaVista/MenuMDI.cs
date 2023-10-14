@@ -115,5 +115,20 @@ namespace CapaVista
         {
             //Abrir(new Procedimientos."nombre de la form"());
         }
+
+        private void pedidosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Abrir(new Procesos.Cotizaciones__pedidos_y_facturas.Pedidos());
+        }
+
+        private void cotizacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Abrir(new Procesos.Cotizaciones__pedidos_y_facturas.Cotizaciones());
+        }
+
+        private void facturasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Abrir(new Procesos.Cotizaciones__pedidos_y_facturas.Factura());
+        }
     }
 }
