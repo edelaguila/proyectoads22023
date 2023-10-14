@@ -130,5 +130,15 @@ namespace CapaVista
         {
             Abrir(new Procesos.Cotizaciones__pedidos_y_facturas.Factura());
         }
+
+        private void órdenesDeCompraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Abrir(new Procedimientos.OrdenesdeCompra());
+        }
+
+        private void comprasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Abrir(new Procedimientos.Compras());
+        }
     }
 }
