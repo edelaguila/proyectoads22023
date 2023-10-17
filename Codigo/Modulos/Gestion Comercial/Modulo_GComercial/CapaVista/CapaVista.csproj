@@ -114,11 +114,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Transaccion.cs">
+    <Compile Include="Trasacciones.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Transaccion.Designer.cs">
-      <DependentUpon>Transaccion.cs</DependentUpon>
+    <Compile Include="Trasacciones.Designer.cs">
+      <DependentUpon>Trasacciones.cs</DependentUpon>
     </Compile>
     <Compile Include="Vendedores.cs">
       <SubType>Form</SubType>
@@ -155,6 +155,9 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trasacciones.resx">
+      <DependentUpon>Trasacciones.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

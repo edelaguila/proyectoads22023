@@ -364,3 +364,7 @@ C:\Users\DELL\Desktop\proyecto final analisis\proyectoads22023GESTION_COMERCIAL\
 C:\Users\DELL\Desktop\proyecto final analisis\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
 C:\Users\DELL\Desktop\proyecto final analisis\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.dll
 C:\Users\DELL\Desktop\proyecto final analisis\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\DELL\Desktop\proyecto final analisis\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.Procedimientos.Compras.resources
+C:\Users\DELL\Desktop\proyecto final analisis\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.Procedimientos.OrdenesdeCompra.resources
+C:\Users\DELL\Desktop\proyecto final analisis\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.Properties.Resources.resources
+C:\Users\DELL\Desktop\proyecto final analisis\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.Trasacciones.resources
