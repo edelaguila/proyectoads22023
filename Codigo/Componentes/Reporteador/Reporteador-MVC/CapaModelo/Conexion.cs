@@ -12,7 +12,7 @@ LUIS ALBERTO FRANCO MORAN 0901-20-23979  */
         public Conexion()
         {
             // Asignar el nombre de la base de datos directamente
-            string nombreBase = "bd_reporteador_pruebas";
+            string nombreBase = "BD_reporteador";
             connectionString = $"Dsn={nombreBase}";
         }
 

@@ -24,7 +24,7 @@ namespace CapaModelo
             {
                 if (connection != null)
                 {
-                    string selectQuery = "SELECT nbr_archivo FROM tbl_reportes WHERE nbr_correlativo = ?";
+                    string selectQuery = "SELECT rep_archivo FROM tbl_reportes WHERE rep_correlativo = ?";
                     using (OdbcCommand cmd = new OdbcCommand(selectQuery, connection))
                     {
                         cmd.Parameters.AddWithValue("@correlativo", correlativo);

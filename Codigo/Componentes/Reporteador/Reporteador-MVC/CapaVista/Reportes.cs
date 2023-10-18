@@ -152,7 +152,7 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
             if (dgv_reportes.SelectedRows.Count > 0)
             {
                 // Obtener la ruta del archivo desde la fila seleccionada (la columna "nbr_archivo" debe contener la ruta)
-                string rutaArchivo = dgv_reportes.SelectedRows[0].Cells["nbr_archivo"].Value.ToString();
+                string rutaArchivo = dgv_reportes.SelectedRows[0].Cells["rep_archivo"].Value.ToString();
 
                 // Verificar si el archivo existe en la ruta almacenada en la base de datos
                 if (File.Exists(rutaArchivo))
@@ -246,7 +246,7 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
                 if (result == DialogResult.Yes)
                 {
                     // Actualizar los valores en el DataGridView directamente
-                    dgv_reportes.Rows[rowIndex].Cells["nbr_nombre"].Value = nuevoNombre;
+                    dgv_reportes.Rows[rowIndex].Cells["rep_nombre"].Value = nuevoNombre;
                     dgv_reportes.Rows[rowIndex].Cells["fk_estado"].Value = nuevoEstado;
 
                     // Actualizar la base de datos con los nuevos valores
