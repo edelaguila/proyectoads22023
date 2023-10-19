@@ -1,0 +1,22 @@
+C:\Users\callo\OneDrive\Escritorio\umg\Semestre 2 2023\analisis de sistemas 2\capacitacion ODBC\capacitacion ODBC\bin\Debug\capacitacion ODBC.exe.config
+C:\Users\callo\OneDrive\Escritorio\umg\Semestre 2 2023\analisis de sistemas 2\capacitacion ODBC\capacitacion ODBC\bin\Debug\capacitacion ODBC.exe
+C:\Users\callo\OneDrive\Escritorio\umg\Semestre 2 2023\analisis de sistemas 2\capacitacion ODBC\capacitacion ODBC\bin\Debug\capacitacion ODBC.pdb
+C:\Users\callo\OneDrive\Escritorio\umg\Semestre 2 2023\analisis de sistemas 2\capacitacion ODBC\capacitacion ODBC\obj\Debug\capacitacion ODBC.csproj.AssemblyReference.cache
+C:\Users\callo\OneDrive\Escritorio\umg\Semestre 2 2023\analisis de sistemas 2\capacitacion ODBC\capacitacion ODBC\obj\Debug\capacitacion_ODBC.Properties.Resources.resources
+C:\Users\callo\OneDrive\Escritorio\umg\Semestre 2 2023\analisis de sistemas 2\capacitacion ODBC\capacitacion ODBC\obj\Debug\capacitacion ODBC.csproj.GenerateResource.cache
+C:\Users\callo\OneDrive\Escritorio\umg\Semestre 2 2023\analisis de sistemas 2\capacitacion ODBC\capacitacion ODBC\obj\Debug\capacitacion ODBC.csproj.CoreCompileInputs.cache
+C:\Users\callo\OneDrive\Escritorio\umg\Semestre 2 2023\analisis de sistemas 2\capacitacion ODBC\capacitacion ODBC\obj\Debug\capacitacion ODBC.exe
+C:\Users\callo\OneDrive\Escritorio\umg\Semestre 2 2023\analisis de sistemas 2\capacitacion ODBC\capacitacion ODBC\obj\Debug\capacitacion ODBC.pdb
+C:\Users\callo\OneDrive\Escritorio\umg\Semestre 2 2023\analisis de sistemas 2\capacitacion ODBC\capacitacion ODBC\obj\Debug\capacitacion_ODBC.Principal.resources
+C:\Users\callo\OneDrive\Escritorio\umg\Semestre 2 2023\analisis de sistemas 2\capacitacion ODBC\capacitacion ODBC\obj\Debug\capacitacion_ODBC.Registro.resources
+D:\Semestre 2 2023\analisis de sistemas 2\Capaciciones\capacitacion ODBC\capacitacion ODBC\bin\Debug\capacitacion ODBC.exe.config
+D:\Semestre 2 2023\analisis de sistemas 2\Capaciciones\capacitacion ODBC\capacitacion ODBC\bin\Debug\capacitacion ODBC.exe
+D:\Semestre 2 2023\analisis de sistemas 2\Capaciciones\capacitacion ODBC\capacitacion ODBC\bin\Debug\capacitacion ODBC.pdb
+D:\Semestre 2 2023\analisis de sistemas 2\Capaciciones\capacitacion ODBC\capacitacion ODBC\obj\Debug\capacitacion ODBC.csproj.AssemblyReference.cache
+D:\Semestre 2 2023\analisis de sistemas 2\Capaciciones\capacitacion ODBC\capacitacion ODBC\obj\Debug\capacitacion_ODBC.Principal.resources
+D:\Semestre 2 2023\analisis de sistemas 2\Capaciciones\capacitacion ODBC\capacitacion ODBC\obj\Debug\capacitacion_ODBC.Registro.resources
+D:\Semestre 2 2023\analisis de sistemas 2\Capaciciones\capacitacion ODBC\capacitacion ODBC\obj\Debug\capacitacion_ODBC.Properties.Resources.resources
+D:\Semestre 2 2023\analisis de sistemas 2\Capaciciones\capacitacion ODBC\capacitacion ODBC\obj\Debug\capacitacion ODBC.csproj.GenerateResource.cache
+D:\Semestre 2 2023\analisis de sistemas 2\Capaciciones\capacitacion ODBC\capacitacion ODBC\obj\Debug\capacitacion ODBC.csproj.CoreCompileInputs.cache
+D:\Semestre 2 2023\analisis de sistemas 2\Capaciciones\capacitacion ODBC\capacitacion ODBC\obj\Debug\capacitacion ODBC.exe
+D:\Semestre 2 2023\analisis de sistemas 2\Capaciciones\capacitacion ODBC\capacitacion ODBC\obj\Debug\capacitacion ODBC.pdb

@@ -1,0 +1,57 @@
+//-utilizando la misma conexion que en las capacitacionnes-//
+
+//busqueda//
+
+  void Buscar(string strfiltro)
+        {
+            string consulta = $"SELECT * FROM empleados WHERE codigo_empleado = '{strfiltro}'";
+
+            OdbcDataAdapter datos = new OdbcDataAdapter(consulta, cn.conexion());
+
+            DataTable dt = new DataTable();
+
+            datos.Fill(dt);
+
+            dgv_tabla.DataSource = dt;
+        }
+
+
+//eliminar//
+
+  private void Eliminar(string strcodigo)
+        {
+            using (OdbcConnection conn = cn.conexion())
+            {
+                
+                string consulta = "DELETE FROM empleados WHERE codigo_empleado = ?";
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("strcodigo", strcodigo);
+                    int filasAfectadas = cmd.ExecuteNonQuery();
+                    if (filasAfectadas > 0)
+                    {
+                        MessageBox.Show("Registro eliminado correctamente.");
+                        // También puedes actualizar la tabla después de la eliminación si es necesario
+                        Consultar();
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se pudo eliminar el registro. Verifique el codigo del empleado.");
+                    }
+                }
+            }
+        }
+
+
+
+//para llamar a la funcion Buscar//
+
+ string strfiltro = txt_Busqueda.Text; 
+            Buscar(strfiltro);
+
+
+//para llamar a la funcion eliminar//
+
+string strcodigo = txt_Busqueda.Text;
+           
+                Eliminar(strcodigo);

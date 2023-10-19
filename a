@@ -1,0 +1,254 @@
+[33mcommit 7708c090f659c172d3e905e62ed645dbb5ccd0db[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: JustinPennant <jramosp14@miumg.edu.gt>
+Date:   Tue Sep 12 20:22:17 2023 -0600
+
+    Se añadio a CapaModelo/Sentencias funciones MODIFICAR
+
+[33mcommit 36114cfb743b6d723259c0260ef21e12f7f831ac[m
+Merge: 73f5110 3056057
+Author: JustinPennant <114191915+JustinPennant@users.noreply.github.com>
+Date:   Tue Sep 12 20:06:00 2023 -0600
+
+    Merge pull request #13 from carlosEnriqueGC/carlosEnrique
+    
+    Carlos enrique
+
+[33mcommit 3056057526d6a2d8e7ed8bb18662d3b57341f9cf[m
+Author: carlos enrique guzman cabrera <cguzmanc10@miumg.edu.gt>
+Date:   Tue Sep 12 20:04:35 2023 -0600
+
+    busqueda y eliminacion agregados al proyecto CODIGO REUTILIZABLE
+
+[33mcommit b90ee1df4e7094b10c7682e2e762ea5839f189e5[m
+Author: carlos enrique guzman cabrera <cguzmanc10@miumg.edu.gt>
+Date:   Tue Sep 12 19:42:40 2023 -0600
+
+    busqueda listo en todos los mantenimientos
+
+[33mcommit 78c24455c532979286b1db50d07aed65d6cd165b[m
+Author: carlos enrique guzman cabrera <cguzmanc10@miumg.edu.gt>
+Date:   Tue Sep 12 17:44:36 2023 -0600
+
+    preparando la codificacion de busqueda y eliminacion
+
+[33mcommit 73f5110763169b32277d919223299db9b50f41a8[m
+Merge: b6d6f21 673c29c
+Author: JustinPennant <114191915+JustinPennant@users.noreply.github.com>
+Date:   Tue Sep 12 16:57:12 2023 -0600
+
+    Merge pull request #12 from JonathanArriaga10/main
+    
+    Se realizaron cambios en Menu Principal
+
+[33mcommit 673c29c239a1d4f785310ba96218b888afd4532e[m
+Author: unknown <jarriagac2@miumg.edu.gt>
+Date:   Tue Sep 12 16:53:45 2023 -0600
+
+    Se realizaron cambios en Menu Principal
+
+[33mcommit b6d6f2178b6738c28e8c4eebb9730f6ec7487a39[m
+Author: JustinPennant <jramosp14@miumg.edu.gt>
+Date:   Sat Sep 9 16:40:19 2023 -0600
+
+    Se Añade diagrama y Scripts
+
+[33mcommit e4c51dc7a74a1580eed0dd0f305777292d309853[m
+Author: JustinPennant <jramosp14@miumg.edu.gt>
+Date:   Sat Sep 9 14:52:25 2023 -0600
+
+    Se añaden scripts para MODIFICAR
+
+[33mcommit 888dc3486a748e2128c5fce6e1cc06fe649f193f[m
+Merge: a83b6f9 9330f46
+Author: JustinPennant <114191915+JustinPennant@users.noreply.github.com>
+Date:   Sat Sep 9 12:59:56 2023 -0600
+
+    Merge pull request #11 from GustavoAZepeda/main
+    
+    agregando plantilla guardar datos
+
+[33mcommit 9330f469157f5cc2530ba820c93b14c853610577[m
+Author: GustavoAZepeda <gzepedah2@miumg.edu.gt>
+Date:   Fri Sep 8 21:12:49 2023 -0600
+
+    agregando plantilla guardar datos
+
+[33mcommit a83b6f9d8cfc6d92b28e343dfb47c9458d2cdd87[m
+Merge: 1810e64 a023dc6
+Author: JustinPennant <114191915+JustinPennant@users.noreply.github.com>
+Date:   Fri Sep 8 20:03:34 2023 -0600
+
+    Merge pull request #10 from carlosEnriqueGC/carlosEnrique
+    
+    Carlos enrique
+
+[33mcommit a023dc6ac4417c271c97e7900c1dee48ac7fbb61[m
+Merge: 649800a 1810e64
+Author: carlos enrique guzman cabrera <cguzmanc10@miumg.edu.gt>
+Date:   Fri Sep 8 19:50:12 2023 -0600
+
+    rama actualizada y lista
+
+[33mcommit 649800acabb92f559d76c6f754f701603f751fe7[m
+Author: carlos enrique guzman cabrera <cguzmanc10@miumg.edu.gt>
+Date:   Fri Sep 8 19:47:05 2023 -0600
+
+    script y prueba de buscar y eliminar (funcional)
+
+[33mcommit 61d32feadf2fcdf45a3a8cbf928885bed1d8b70c[m
+Author: carlos enrique guzman cabrera <cguzmanc10@miumg.edu.gt>
+Date:   Fri Sep 8 19:44:10 2023 -0600
+
+    script colocado
+
+[33mcommit cd7ac2e0332f25a6188cfc747cb242a0bf7d920f[m
+Author: carlos enrique guzman cabrera <cguzmanc10@miumg.edu.gt>
+Date:   Fri Sep 8 18:50:01 2023 -0600
+
+    cargando codigo para busqueda y eliminacion
+
+[33mcommit 1810e645d7973448ec99c03b9a2079da636b5a0f[m
+Merge: e0ef675 4af0074
+Author: JustinPennant <114191915+JustinPennant@users.noreply.github.com>
+Date:   Fri Sep 8 18:48:38 2023 -0600
+
+    Merge pull request #8 from Erick-Ramirez-1657/main
+    
+    Se agrego el codigo provisional de conexion
+
+[33mcommit 4af007488becde34c9a03c8dad95b05b270d7602[m
+Author: Erick-Ramirez-1657 <eramirezo3@miumg.edu.gt>
+Date:   Fri Sep 8 18:46:47 2023 -0600
+
+    se agrego el codigo provisional de conexion
+
+[33mcommit e0ef6752771cec4e9ea04668bdfe3db3399bd384[m
+Merge: 9b1678c 5ebb070
+Author: JustinPennant <114191915+JustinPennant@users.noreply.github.com>
+Date:   Fri Sep 8 18:32:45 2023 -0600
+
+    Merge pull request #7 from JonathanArriaga10/main
+    
+    Se agrego carpeta para scripts
+
+[33mcommit 5ebb0709201eaf23af8239d10fab086fb1231ff9[m
+Author: unknown <jarriagac2@miumg.edu.gt>
+Date:   Fri Sep 8 18:30:59 2023 -0600
+
+    Se agrego carpeta para scripts
+
+[33mcommit 9b1678c5c4a13839aebad9748e00f0b7955bc605[m
+Merge: e7ebf4f df3dffb
+Author: JustinPennant <114191915+JustinPennant@users.noreply.github.com>
+Date:   Fri Sep 8 18:29:15 2023 -0600
+
+    Merge pull request #6 from JonathanArriaga10/main
+    
+    Se agrego MVC y prototipo no funcional
+
+[33mcommit df3dffbc849e6ecff5ecdfe293640bfb7881a8b9[m
+Author: unknown <jarriagac2@miumg.edu.gt>
+Date:   Fri Sep 8 18:28:38 2023 -0600
+
+    Se agrego MVC y prototipo no funcional
+
+[33mcommit e7ebf4fd6b9c400b3dff6d1d82409da90268a4d8[m
+Merge: fbd2ad0 7164a8f
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Fri Sep 8 08:18:56 2023 -0600
+
+    Merge pull request #1 from Olstertecn11/main
+    
+    Formularios de grupo agregados
+
+[33mcommit 7164a8f07f60b363709f1126764730d7fcf03e4c[m
+Author: Olstertecn11 <otzunund@miumg.edu.gt>
+Date:   Fri Sep 8 08:16:43 2023 -0600
+
+    agregados todos
+
+[33mcommit ebaf312185f1b0ac1e4f8ae4dee85692ae16dcdd[m
+Merge: 4f1a10f 97a9d1c
+Author: Oliver Tzunun <49626428+Olstertecn11@users.noreply.github.com>
+Date:   Fri Sep 8 08:13:55 2023 -0600
+
+    Merge pull request #11 from DACR-DC/main
+    
+    David Carrillo integrante1
+
+[33mcommit 97a9d1c8261b973abdd0dc77e0a8b23634866a8f[m
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Sep 8 08:13:30 2023 -0600
+
+    David Carrillo integrante1
+
+[33mcommit 4f1a10f9325676477b0c45f50903f1122d6e465b[m
+Author: Olstertecn11 <otzunund@miumg.edu.gt>
+Date:   Fri Sep 8 08:07:49 2023 -0600
+
+    tengo 3
+
+[33mcommit 91bec05662c11667bdbe1b98fb0ba73819d0d2ee[m
+Author: Olstertecn11 <otzunund@miumg.edu.gt>
+Date:   Fri Sep 8 08:06:36 2023 -0600
+
+    Revert "Merge branch 'main' of https://github.com/Olstertecn11/proyectoads22023"
+    
+    This reverts commit 9ef55681ddde277c28411598583471f3f7f61f24, reversing
+    changes made to 05c36e44e3eec10899ac82683f3a1209ec1a8af4.
+
+[33mcommit 9ef55681ddde277c28411598583471f3f7f61f24[m
+Merge: 05c36e4 8eb967f
+Author: Olstertecn11 <otzunund@miumg.edu.gt>
+Date:   Fri Sep 8 08:06:11 2023 -0600
+
+    Merge branch 'main' of https://github.com/Olstertecn11/proyectoads22023
+
+[33mcommit 8eb967f70663e0c0eb339b8cb66f1b79225ddd3d[m
+Merge: 93d98be 73fd06e
+Author: Oliver Tzunun <49626428+Olstertecn11@users.noreply.github.com>
+Date:   Fri Sep 8 08:05:25 2023 -0600
+
+    Merge pull request #10 from DACR-DC/main
+    
+    David Carrillo Integrante1
+
+[33mcommit 05c36e44e3eec10899ac82683f3a1209ec1a8af4[m
+Author: Olstertecn11 <otzunund@miumg.edu.gt>
+Date:   Fri Sep 8 08:05:10 2023 -0600
+
+    recibiendo Danny
+
+[33mcommit 73fd06e72ca742dcda840446371c95d4a7203817[m
+Merge: bda73b5 93d98be
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Sep 8 08:00:23 2023 -0600
+
+    Merge branch 'main' of https://github.com/DACR-DC/proyectoads22023
+
+[33mcommit bda73b555e8f127799b733447ef91503b32553b9[m
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Sep 8 07:59:36 2023 -0600
+
+    Integrante1 David Carrillo
+
+[33mcommit 6f2f498738c9e6483d73a28a60f19406868c2177[m
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Sep 8 07:56:58 2023 -0600
+
+    Integrante1 David Carrillo
+
+[33mcommit 93d98be81399d827565ec66725bbb86e995785ab[m
+Merge: d329d5b ed3c57d
+Author: Olstertecn11 <otzunund@miumg.edu.gt>
+Date:   Fri Sep 8 07:56:39 2023 -0600
+
+    Merge branch 'main' of https://github.com/Olstertecn11/proyectoads22023
+
+[33mcommit d329d5bdeac08cef122cdd505be7082285962139[m
+Author: Olstertecn11 <otzunund@miumg.edu.gt>
+Date:   Fri Sep 8 07:55:50 2023 -0600
+
+    last changes
+
+[33mcommit ed3c57dd1758bfd4e4034084e40f655a539cf5b
