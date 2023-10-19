@@ -45,3 +45,7 @@ C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Codigo\Pruebas\Navega
 C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante1.resources
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante5.resources
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante1.resources
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante2.resources
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante4.resources
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante5.resources

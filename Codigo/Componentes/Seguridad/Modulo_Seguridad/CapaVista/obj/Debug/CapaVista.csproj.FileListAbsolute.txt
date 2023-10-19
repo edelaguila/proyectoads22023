@@ -1,0 +1,189 @@
+C:\Users\PC\source\repos\Proyecto3\CapaVista\bin\Debug\CapaVista.dll
+C:\Users\PC\source\repos\Proyecto3\CapaVista\bin\Debug\CapaVista.pdb
+C:\Users\PC\source\repos\Proyecto3\CapaVista\obj\Debug\CapaVista.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\Proyecto3\CapaVista\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\Proyecto3\CapaVista\obj\Debug\CapaVista.dll
+C:\Users\PC\source\repos\Proyecto3\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\PC\source\repos\Proyecto3\CapaVista\obj\Debug\CapaVista.csproj.GenerateResource.cache
+C:\Users\PC\source\repos\Proyecto3\CapaVista\bin\Debug\CapaControlador.dll
+C:\Users\PC\source\repos\Proyecto3\CapaVista\bin\Debug\CapaControlador.pdb
+C:\Users\PC\source\repos\Proyecto3\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
+C:\Users\PC\source\repos\Proyecto3\CapaVista\bin\Debug\CapaModelo.dll
+C:\Users\PC\source\repos\Proyecto3\CapaVista\bin\Debug\CapaModelo.pdb
+C:\Users\PC\source\repos\Proyecto3\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigAplicaPerfiles.resources
+C:\Users\PC\source\repos\Proyecto3\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigAplicaUsuario.resources
+C:\Users\PC\source\repos\Proyecto3\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigPerfUsuario.resources
+C:\Users\PC\source\repos\Proyecto3\CapaVista\obj\Debug\CapaVista.Bitacora.resources
+C:\Users\PC\source\repos\Proyecto3\CapaVista\obj\Debug\CapaVista.CambioContraseña.resources
+C:\Users\PC\source\repos\Proyecto3\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantAplicaciones.resources
+C:\Users\PC\source\repos\Proyecto3\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantModulos.resources
+C:\Users\PC\source\repos\Proyecto3\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantPerfiles.resources
+C:\Users\PC\source\repos\Proyecto3\CapaVista\obj\Debug\CapaVista.MantUsuario.resources
+C:\Users\PC\source\repos\Proyecto3\CapaVista\obj\Debug\CapaVista.MenuSeguridad.resources
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaVista.dll
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaVista.pdb
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaControlador.pdb
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigAplicaPerfiles.resources
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigAplicaUsuario.resources
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigPerfUsuario.resources
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Bitacora.resources
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.CambioContraseña.resources
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantAplicaciones.resources
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantModulos.resources
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantPerfiles.resources
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.MantUsuario.resources
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.MenuSeguridad.resources
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.dll
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.pdb
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.AssemblyReference.cache
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigAplicaPerfiles.resources
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigAplicaUsuario.resources
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigPerfUsuario.resources
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Bitacora.resources
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.CambioContraseña.resources
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantAplicaciones.resources
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantModulos.resources
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantPerfiles.resources
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.MantUsuario.resources
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.MenuSeguridad.resources
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.GenerateResource.cache
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.dll
+D:\Semestre 2 2023\analisis de sistemas 2\Proyectos GIT\proyectoads22023CarlosN\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.AssemblyReference.cache
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigAplicaPerfiles.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigAplicaUsuario.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigPerfUsuario.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Bitacora.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.CambioContraseña.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantAplicaciones.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantModulos.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantPerfiles.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.MantUsuario.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.MenuSeguridad.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.GenerateResource.cache
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.dll
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaVista.dll
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaVista.pdb
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaControlador.dll
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaModelo.dll
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaControlador.pdb
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaModelo.pdb
+C:\Users\rayju\OneDrive\Escritorio\GitHub Works\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
+C:\Users\gazhp\repos\taller_grupo\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.AssemblyReference.cache
+C:\Users\gazhp\repos\taller_grupo\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigAplicaPerfiles.resources
+C:\Users\gazhp\repos\taller_grupo\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigAplicaUsuario.resources
+C:\Users\gazhp\repos\taller_grupo\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigPerfUsuario.resources
+C:\Users\gazhp\repos\taller_grupo\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Bitacora.resources
+C:\Users\gazhp\repos\taller_grupo\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.CambioContraseña.resources
+C:\Users\gazhp\repos\taller_grupo\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantAplicaciones.resources
+C:\Users\gazhp\repos\taller_grupo\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantModulos.resources
+C:\Users\gazhp\repos\taller_grupo\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantPerfiles.resources
+C:\Users\gazhp\repos\taller_grupo\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.MantUsuario.resources
+C:\Users\gazhp\repos\taller_grupo\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.MenuSeguridad.resources
+C:\Users\gazhp\repos\taller_grupo\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.GenerateResource.cache
+C:\Users\gazhp\repos\taller_grupo\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
+C:\Users\gazhp\repos\taller_grupo\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.dll
+C:\Users\gazhp\repos\taller_grupo\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigAplicaPerfiles.resources
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigAplicaUsuario.resources
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigPerfUsuario.resources
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Bitacora.resources
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.CambioContraseña.resources
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantAplicaciones.resources
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantModulos.resources
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantPerfiles.resources
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.MantUsuario.resources
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.MenuSeguridad.resources
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.dll
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaVista.dll
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaVista.pdb
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaControlador.dll
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaModelo.dll
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaControlador.pdb
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaModelo.pdb
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
+C:\Users\PC\Desktop\SEGURIDAD QUIZA CON ERRORES\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Login.resources
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaVista.dll
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaVista.pdb
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaControlador.dll
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaModelo.dll
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaControlador.pdb
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaModelo.pdb
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.AssemblyReference.cache
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigAplicaPerfiles.resources
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigAplicaUsuario.resources
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigPerfUsuario.resources
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Bitacora.resources
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.CambioContraseña.resources
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Login.resources
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantAplicaciones.resources
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantModulos.resources
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantPerfiles.resources
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.MantUsuario.resources
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.MenuSeguridad.resources
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.GenerateResource.cache
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.dll
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaModelo.dll
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaModelo.pdb
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Login.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.AssemblyReference.cache
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigAplicaPerfiles.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigAplicaUsuario.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigPerfUsuario.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Bitacora.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.CambioContraseña.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Login.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantAplicaciones.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantModulos.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantPerfiles.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.MantUsuario.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.MenuSeguridad.resources
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.GenerateResource.cache
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.dll
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaVista.dll
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaVista.pdb
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaControlador.dll
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaModelo.dll
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaControlador.pdb
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaModelo.pdb
+C:\Users\rayju\OneDrive\Escritorio\GitHub AnotherWork\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
+C:\Users\gazhp\source\repos\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.AssemblyReference.cache
+C:\Users\gazhp\source\repos\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigAplicaPerfiles.resources
+C:\Users\gazhp\source\repos\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigAplicaUsuario.resources
+C:\Users\gazhp\source\repos\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Asignaciones.AsigPerfUsuario.resources
+C:\Users\gazhp\source\repos\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Bitacora.resources
+C:\Users\gazhp\source\repos\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.CambioContraseña.resources
+C:\Users\gazhp\source\repos\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Login.resources
+C:\Users\gazhp\source\repos\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantAplicaciones.resources
+C:\Users\gazhp\source\repos\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantModulos.resources
+C:\Users\gazhp\source\repos\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.Mantenimiento.MantPerfiles.resources
+C:\Users\gazhp\source\repos\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.MantUsuario.resources
+C:\Users\gazhp\source\repos\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.MenuSeguridad.resources
+C:\Users\gazhp\source\repos\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.GenerateResource.cache
+C:\Users\gazhp\source\repos\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
+C:\Users\gazhp\source\repos\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.dll
+C:\Users\gazhp\source\repos\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\gazhp\source\repos\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaVista.dll
+C:\Users\gazhp\source\repos\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaVista.pdb
+C:\Users\gazhp\source\repos\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaControlador.dll
+C:\Users\gazhp\source\repos\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaModelo.dll
+C:\Users\gazhp\source\repos\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaControlador.pdb
+C:\Users\gazhp\source\repos\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaModelo.pdb
+C:\Users\gazhp\source\repos\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\obj\Debug\CapaVista.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\SEGURIDADGITHUB\proyectoads22023\Codigo\Componentes\Seguridad\Modulo_Seguridad\CapaVista\bin\Debug\CapaControlador.dll
