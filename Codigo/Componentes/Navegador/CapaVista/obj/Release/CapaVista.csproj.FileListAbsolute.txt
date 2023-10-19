@@ -1,0 +1,75 @@
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\bin\Release\CapaVista.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\bin\Release\CapaVista.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\bin\Release\CapaControlador.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\bin\Release\CapaControlador.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.AssemblyReference.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.Properties.Resources.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.GenerateResource.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.CoreCompileInputs.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.CopyComplete
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\bin\Release\CapaModelo.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\bin\Release\CapaModelo.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\bin\Release\CapaVista.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\bin\Release\CapaVista.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\bin\Release\CapaControlador.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\bin\Release\CapaModelo.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\bin\Release\CapaControlador.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\bin\Release\CapaModelo.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.AssemblyReference.cache
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Release\CapaVista.Login.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Release\CapaVista.Properties.Resources.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.GenerateResource.cache
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.CoreCompileInputs.cache
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.CopyComplete
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Release\CapaVista.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Release\CapaVista.pdb
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\bin\Release\CapaVista.dll
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\bin\Release\CapaVista.pdb
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\bin\Release\CapaControlador.dll
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\bin\Release\CapaModelo.dll
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\bin\Release\CapaControlador.pdb
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\bin\Release\CapaModelo.pdb
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.AssemblyReference.cache
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\obj\Release\CapaVista.Login.resources
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\obj\Release\CapaVista.Properties.Resources.resources
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.GenerateResource.cache
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.CoreCompileInputs.cache
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.CopyComplete
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\obj\Release\CapaVista.dll
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\obj\Release\CapaVista.pdb
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\bin\Release\CapaVista.dll
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\bin\Release\CapaVista.pdb
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\bin\Release\CapaControlador.dll
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\bin\Release\CapaModelo.dll
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\bin\Release\CapaControlador.pdb
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\bin\Release\CapaModelo.pdb
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.AssemblyReference.cache
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\obj\Release\CapaVista.Login.resources
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\obj\Release\CapaVista.Properties.Resources.resources
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.GenerateResource.cache
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.CoreCompileInputs.cache
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.CopyComplete
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\obj\Release\CapaVista.dll
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\obj\Release\CapaVista.pdb
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\bin\Release\CapaVista.dll
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\bin\Release\CapaVista.pdb
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\bin\Release\CapaControlador.dll
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\bin\Release\CapaModelo.dll
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\bin\Release\CapaControlador.pdb
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\bin\Release\CapaModelo.pdb
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.Login.resources
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.Properties.Resources.resources
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.csproj.CopyComplete
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.dll
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.Login.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\CapaVista\obj\Release\CapaVista.Navegador.resources
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\CapaVista\obj\Release\CapaVista.Navegador.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\CapaVista\obj\Release\CapaVista.Navegador.resources
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\CapaVista\obj\Release\CapaVista.Navegador.resources
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\CapaVista\obj\Release\CapaVista.Navegador.resources
