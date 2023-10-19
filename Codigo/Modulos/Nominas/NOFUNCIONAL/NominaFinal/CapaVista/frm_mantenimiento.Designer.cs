@@ -39,6 +39,8 @@ namespace CapaVista
             this.txt_id_empleado = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btn_buscar = new System.Windows.Forms.Button();
+            this.btn_calcular = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txt_sueldoB_empleado
@@ -131,11 +133,32 @@ namespace CapaVista
             this.textBox1.Size = new System.Drawing.Size(234, 34);
             this.textBox1.TabIndex = 55;
             // 
+            // btn_buscar
+            // 
+            this.btn_buscar.Location = new System.Drawing.Point(422, 34);
+            this.btn_buscar.Name = "btn_buscar";
+            this.btn_buscar.Size = new System.Drawing.Size(101, 34);
+            this.btn_buscar.TabIndex = 106;
+            this.btn_buscar.Text = "Buscar";
+            this.btn_buscar.UseVisualStyleBackColor = true;
+            // 
+            // btn_calcular
+            // 
+            this.btn_calcular.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_calcular.Location = new System.Drawing.Point(203, 303);
+            this.btn_calcular.Name = "btn_calcular";
+            this.btn_calcular.Size = new System.Drawing.Size(213, 65);
+            this.btn_calcular.TabIndex = 107;
+            this.btn_calcular.Text = "Autorizar";
+            this.btn_calcular.UseVisualStyleBackColor = true;
+            // 
             // frm_mantenimiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(696, 329);
+            this.ClientSize = new System.Drawing.Size(596, 401);
+            this.Controls.Add(this.btn_calcular);
+            this.Controls.Add(this.btn_buscar);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txt_sueldoB_empleado);
@@ -165,5 +188,7 @@ namespace CapaVista
         private System.Windows.Forms.TextBox txt_id_empleado;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btn_buscar;
+        private System.Windows.Forms.Button btn_calcular;
     }
 }
