@@ -60,32 +60,33 @@ namespace CapaVista
             this.percepcionesYDeduccionesToolStripMenuItem,
             this.liquidacionesToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(114, 36);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(100, 27);
             this.toolStripMenuItem1.Text = "Nomina";
             // 
             // percepcionesYDeduccionesToolStripMenuItem
             // 
             this.percepcionesYDeduccionesToolStripMenuItem.Name = "percepcionesYDeduccionesToolStripMenuItem";
-            this.percepcionesYDeduccionesToolStripMenuItem.Size = new System.Drawing.Size(406, 36);
+            this.percepcionesYDeduccionesToolStripMenuItem.Size = new System.Drawing.Size(379, 28);
             this.percepcionesYDeduccionesToolStripMenuItem.Text = "Percepciones y Deducciones";
             this.percepcionesYDeduccionesToolStripMenuItem.Click += new System.EventHandler(this.percepcionesYDeduccionesToolStripMenuItem_Click);
             // 
             // liquidacionesToolStripMenuItem
             // 
             this.liquidacionesToolStripMenuItem.Name = "liquidacionesToolStripMenuItem";
-            this.liquidacionesToolStripMenuItem.Size = new System.Drawing.Size(406, 36);
+            this.liquidacionesToolStripMenuItem.Size = new System.Drawing.Size(379, 28);
             this.liquidacionesToolStripMenuItem.Text = "Liquidaciones";
             // 
             // mantenimientoToolStripMenuItem
             // 
             this.mantenimientoToolStripMenuItem.Name = "mantenimientoToolStripMenuItem";
-            this.mantenimientoToolStripMenuItem.Size = new System.Drawing.Size(194, 36);
+            this.mantenimientoToolStripMenuItem.Size = new System.Drawing.Size(169, 27);
             this.mantenimientoToolStripMenuItem.Text = "Mantenimiento";
+            this.mantenimientoToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem
             // 
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(122, 36);
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(110, 27);
             this.reportesToolStripMenuItem.Text = "Reportes";
             // 
             // MDIParent1
