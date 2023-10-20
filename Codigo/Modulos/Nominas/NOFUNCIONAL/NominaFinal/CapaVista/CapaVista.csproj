@@ -64,6 +64,12 @@
     <Compile Include="frm_liquidacion.Designer.cs">
       <DependentUpon>frm_liquidacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_mantenimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_mantenimiento.Designer.cs">
+      <DependentUpon>frm_mantenimiento.cs</DependentUpon>
+    </Compile>
     <Compile Include="frn_percepciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_liquidacion.resx">
       <DependentUpon>frm_liquidacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_mantenimiento.resx">
+      <DependentUpon>frm_mantenimiento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frn_percepciones.resx">
       <DependentUpon>frn_percepciones.cs</DependentUpon>

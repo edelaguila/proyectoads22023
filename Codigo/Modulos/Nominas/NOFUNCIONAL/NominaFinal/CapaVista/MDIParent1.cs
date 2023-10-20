@@ -25,5 +25,12 @@ namespace CapaVista
             dp.Show();
 
         }
+
+        private void mantenimientoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_mantenimiento mn = new frm_mantenimiento();
+            mn.MdiParent = this;
+            mn.Show();
+        }
     }
 }
