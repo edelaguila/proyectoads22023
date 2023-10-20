@@ -31,6 +31,7 @@ namespace CapaVista.Procedimientos
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrdenesdeCompra));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.textBox31 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.textBox30 = new System.Windows.Forms.TextBox();
@@ -40,6 +41,9 @@ namespace CapaVista.Procedimientos
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox11 = new System.Windows.Forms.TextBox();
@@ -51,6 +55,8 @@ namespace CapaVista.Procedimientos
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -70,12 +76,6 @@ namespace CapaVista.Procedimientos
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label19 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -100,6 +100,15 @@ namespace CapaVista.Procedimientos
             this.groupBox3.TabIndex = 27;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Totales";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(625, 37);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(64, 43);
+            this.button4.TabIndex = 13;
+            this.button4.Text = "Enviar Órden";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // textBox31
             // 
@@ -195,6 +204,33 @@ namespace CapaVista.Procedimientos
             this.groupBox2.TabIndex = 26;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Descripción de la órden";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(77, 64);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 24);
+            this.comboBox2.TabIndex = 12;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(105, 39);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(56, 17);
+            this.label19.TabIndex = 11;
+            this.label19.Text = "Nombre";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(612, 64);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(64, 23);
+            this.button3.TabIndex = 10;
+            this.button3.Text = "Eliminar";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -312,6 +348,25 @@ namespace CapaVista.Procedimientos
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de la órden";
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(16, 34);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(45, 17);
+            this.label17.TabIndex = 29;
+            this.label17.Text = "Órden";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(134, 30);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(180, 24);
+            this.comboBox1.TabIndex = 28;
+            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(459, 30);
@@ -332,6 +387,8 @@ namespace CapaVista.Procedimientos
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(291, 71);
@@ -479,61 +536,6 @@ namespace CapaVista.Procedimientos
             this.label5.TabIndex = 4;
             this.label5.Text = "Teléfono";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(134, 30);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(180, 24);
-            this.comboBox1.TabIndex = 28;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(16, 34);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(45, 17);
-            this.label17.TabIndex = 29;
-            this.label17.Text = "Órden";
-            this.label17.Click += new System.EventHandler(this.label17_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(612, 64);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(64, 23);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(105, 39);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(56, 17);
-            this.label19.TabIndex = 11;
-            this.label19.Text = "Nombre";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(77, 64);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
-            this.comboBox2.TabIndex = 12;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(625, 37);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(64, 43);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "Enviar Órden";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // OrdenesdeCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -542,6 +544,7 @@ namespace CapaVista.Procedimientos
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "OrdenesdeCompra";
             this.Text = "OrdenesdeCompra";
             this.groupBox3.ResumeLayout(false);
