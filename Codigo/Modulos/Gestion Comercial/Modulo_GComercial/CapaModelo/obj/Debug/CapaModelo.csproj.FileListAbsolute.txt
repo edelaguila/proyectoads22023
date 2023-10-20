@@ -63,3 +63,9 @@ C:\Users\DELL\Desktop\proyecto final analisis\proyectoads22023GESTION_COMERCIAL\
 C:\Users\DELL\Desktop\proyecto final analisis\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
 C:\Users\DELL\Desktop\proyecto final analisis\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaModelo\obj\Debug\CapaModelo.dll
 C:\Users\DELL\Desktop\proyecto final analisis\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaModelo\obj\Debug\CapaModelo.pdb
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaModelo\bin\Debug\CapaModelo.dll
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaModelo\bin\Debug\CapaModelo.pdb
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaModelo\obj\Debug\CapaModelo.csproj.AssemblyReference.cache
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaModelo\obj\Debug\CapaModelo.dll
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaModelo\obj\Debug\CapaModelo.pdb
