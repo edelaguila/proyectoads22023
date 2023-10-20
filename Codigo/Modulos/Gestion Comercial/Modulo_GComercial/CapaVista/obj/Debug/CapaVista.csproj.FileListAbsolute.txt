@@ -368,3 +368,44 @@ C:\Users\DELL\Desktop\proyecto final analisis\proyectoads22023GESTION_COMERCIAL\
 C:\Users\DELL\Desktop\proyecto final analisis\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.Procedimientos.OrdenesdeCompra.resources
 C:\Users\DELL\Desktop\proyecto final analisis\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.Properties.Resources.resources
 C:\Users\DELL\Desktop\proyecto final analisis\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.Trasacciones.resources
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\bin\Debug\CapaVista.dll
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\bin\Debug\CapaVista.pdb
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\bin\Debug\AxShockwaveFlashObjects.dll
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\bin\Debug\CapaControlador.dll
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\bin\Debug\CapaModelo.dll
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\bin\Debug\stdole.dll
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\bin\Debug\CapaControlador.pdb
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\bin\Debug\CapaModelo.pdb
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.csproj.AssemblyReference.cache
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.MenuMDI.resources
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.Procedimientos.Compras.resources
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.Procedimientos.Movimiento_cliente.resources
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.Procedimientos.Movimiento_Proveedor.resources
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.Procedimientos.OrdenesdeCompra.resources
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.Procesos.Cotizaciones__pedidos_y_facturas.Cotizaciones.resources
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.Procesos.Cotizaciones__pedidos_y_facturas.Factura.resources
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.Procesos.Cotizaciones__pedidos_y_facturas.Pedidos.resources
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.Properties.Resources.resources
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.Trasacciones.resources
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.csproj.GenerateResource.cache
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.dll
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.pdb
