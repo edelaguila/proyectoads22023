@@ -31,6 +31,7 @@ namespace CapaVista.Procedimientos
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Compras));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.textBox31 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.textBox30 = new System.Windows.Forms.TextBox();
@@ -75,7 +76,6 @@ namespace CapaVista.Procedimientos
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -100,6 +100,15 @@ namespace CapaVista.Procedimientos
             this.groupBox3.TabIndex = 30;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Totales";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(612, 35);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(64, 43);
+            this.button4.TabIndex = 29;
+            this.button4.Text = "Enviar Compra";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // textBox31
             // 
@@ -176,8 +185,9 @@ namespace CapaVista.Procedimientos
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(534, 30);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(25, 20);
@@ -522,15 +532,6 @@ namespace CapaVista.Procedimientos
             this.label5.Size = new System.Drawing.Size(59, 17);
             this.label5.TabIndex = 4;
             this.label5.Text = "Teléfono";
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(612, 35);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(64, 43);
-            this.button4.TabIndex = 29;
-            this.button4.Text = "Enviar Compra";
-            this.button4.UseVisualStyleBackColor = true;
             // 
             // Compras
             // 
