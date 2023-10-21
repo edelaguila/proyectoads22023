@@ -16,5 +16,10 @@ namespace CapaVista.Procesos.Cotizaciones__pedidos_y_facturas
         {
             InitializeComponent();
         }
+
+        private void textBox12_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

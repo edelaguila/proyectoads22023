@@ -169,5 +169,11 @@
   <ItemGroup>
     <Folder Include="Mantenimiento\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eliminar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\generar factura.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

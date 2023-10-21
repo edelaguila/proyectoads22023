@@ -450,3 +450,7 @@ C:\Users\Doris\Desktop\Proyecto Gestión Comercial\proyectoads22023GESTION_COMER
 C:\Users\Doris\Desktop\Proyecto Gestión Comercial\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
 C:\Users\Doris\Desktop\Proyecto Gestión Comercial\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.dll
 C:\Users\Doris\Desktop\Proyecto Gestión Comercial\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.Procedimientos.Compras.resources
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.Procedimientos.OrdenesdeCompra.resources
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.Properties.Resources.resources
+C:\Users\Erick\Desktop\Escritorio\Uni\Analisis de sistemas 2\Git\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaVista\obj\Debug\CapaVista.Trasacciones.resources
