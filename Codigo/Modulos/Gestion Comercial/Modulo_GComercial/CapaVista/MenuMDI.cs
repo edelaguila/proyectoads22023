@@ -15,19 +15,40 @@ namespace CapaVista
 {
     public partial class MenuMDI : Form
     {
+        //Carol Chuy
+        private void ocultarMenu()
+        {
+            panelMovSubmenu.Visible = false;
+            panelCotizacionesPedidosFact.Visible = false;
+            panelOrdenesdeCompraCompras.Visible = false;
+            panelMantenimientos.Visible = false;
+        }
 
+        //Carol Chuy
+        private void mostrarsubMenu(Panel submenu)
+        {
+            if (submenu.Visible == false)
+            {
+                ocultarMenu();
+                submenu.Visible = true;
+            }
+            else
+            {
+                submenu.Visible = false;
+            }
+        }
 
 
         private void Abrir(object abrirform)
         {
-            if (this.panel1.Controls.Count > 0)
-                this.panel1.Controls.RemoveAt(0);
+            if (this.panelhijo.Controls.Count > 0)
+                this.panelhijo.Controls.RemoveAt(0);
 
             Form fh = abrirform as Form;
             fh.TopLevel = false;
             fh.Dock = DockStyle.None;
-            this.panel1.Controls.Add(fh);
-            this.panel1.Tag = fh;
+            this.panelhijo.Controls.Add(fh);
+            this.panelhijo.Tag = fh;
             fh.Show();
         }
 
@@ -37,42 +58,10 @@ namespace CapaVista
             InitializeComponent();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-
-
-        private void bitacoraToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-         
-        }
-
-        private void asignacionesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void seguridadToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-     
-        }
-
-        private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-          
-        }
-
-
-        private void mantenimientoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void MenuMDI_Load(object sender, EventArgs e)
         {
-
+            //Carol Chuy
+            ocultarMenu();
         }
 
 
@@ -81,64 +70,64 @@ namespace CapaVista
             //Abrir(new Procedimientos.MantCalificacion());
         }
 
-        private void mDIToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnMovClientesyProveedores_Click(object sender, EventArgs e)
         {
-           
+            mostrarsubMenu(panelMovSubmenu);
         }
 
-        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnCotiPedidoFact_Click(object sender, EventArgs e)
         {
-            // Abrir(new Mantenimiento."nombre de la form"());
+            mostrarsubMenu(panelCotizacionesPedidosFact);
         }
 
-        private void mantenimientoProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnOrdenesyCompras_Click(object sender, EventArgs e)
         {
-            // Abrir(new Mantenimiento."nombre de la form"());
+            mostrarsubMenu(panelOrdenesdeCompraCompras);
         }
 
-        private void movimientoClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnMantenimientos_Click(object sender, EventArgs e)
+        {
+            mostrarsubMenu(panelMantenimientos);
+        }
+
+        private void btnMovClientes_Click(object sender, EventArgs e)
         {
             Abrir(new Procedimientos.Movimiento_cliente());
         }
 
-        private void movimientoProveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnMovProveedores_Click(object sender, EventArgs e)
         {
             Abrir(new Procedimientos.Movimiento_Proveedor());
         }
 
-        private void cotizacionesPedidosYFacturasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //Abrir(new Procedimientos."nombre de la form"());
-        }
-
-        private void ordenesDeCompraYComprasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //Abrir(new Procedimientos."nombre de la form"());
-        }
-
-        private void pedidosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Abrir(new Procesos.Cotizaciones__pedidos_y_facturas.Pedidos());
-        }
-
-        private void cotizacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnCotizaciones_Click(object sender, EventArgs e)
         {
             Abrir(new Procesos.Cotizaciones__pedidos_y_facturas.Cotizaciones());
         }
 
-        private void facturasToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnPedidos_Click(object sender, EventArgs e)
+        {
+            Abrir(new Procesos.Cotizaciones__pedidos_y_facturas.Pedidos());
+        }
+
+        private void btnFacturas_Click(object sender, EventArgs e)
         {
             Abrir(new Procesos.Cotizaciones__pedidos_y_facturas.Factura());
         }
 
-        private void órdenesDeCompraToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnOrdenesCompra_Click(object sender, EventArgs e)
         {
             Abrir(new Procedimientos.OrdenesdeCompra());
         }
 
-        private void comprasToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnCompras_Click(object sender, EventArgs e)
         {
             Abrir(new Procedimientos.Compras());
+        }
+
+        private void btnManteniClientes_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
