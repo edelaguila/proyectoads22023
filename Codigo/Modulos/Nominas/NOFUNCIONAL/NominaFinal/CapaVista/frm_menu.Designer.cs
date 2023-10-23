@@ -33,10 +33,10 @@ namespace CapaVista
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.DeduccionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.liquidacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.percepcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.percepcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,22 +67,30 @@ namespace CapaVista
             // DeduccionesToolStripMenuItem
             // 
             this.DeduccionesToolStripMenuItem.Name = "DeduccionesToolStripMenuItem";
-            this.DeduccionesToolStripMenuItem.Size = new System.Drawing.Size(225, 28);
+            this.DeduccionesToolStripMenuItem.Size = new System.Drawing.Size(227, 28);
             this.DeduccionesToolStripMenuItem.Text = "Deducciones";
             this.DeduccionesToolStripMenuItem.Click += new System.EventHandler(this.DeduccionesToolStripMenuItem_Click);
             // 
             // liquidacionesToolStripMenuItem
             // 
             this.liquidacionesToolStripMenuItem.Name = "liquidacionesToolStripMenuItem";
-            this.liquidacionesToolStripMenuItem.Size = new System.Drawing.Size(225, 28);
+            this.liquidacionesToolStripMenuItem.Size = new System.Drawing.Size(227, 28);
             this.liquidacionesToolStripMenuItem.Text = "Liquidaciones";
             this.liquidacionesToolStripMenuItem.Click += new System.EventHandler(this.liquidacionesToolStripMenuItem_Click);
+            // 
+            // percepcionesToolStripMenuItem
+            // 
+            this.percepcionesToolStripMenuItem.Name = "percepcionesToolStripMenuItem";
+            this.percepcionesToolStripMenuItem.Size = new System.Drawing.Size(227, 28);
+            this.percepcionesToolStripMenuItem.Text = "Percepciones";
+            this.percepcionesToolStripMenuItem.Click += new System.EventHandler(this.percepcionesToolStripMenuItem_Click);
             // 
             // mantenimientoToolStripMenuItem
             // 
             this.mantenimientoToolStripMenuItem.Name = "mantenimientoToolStripMenuItem";
             this.mantenimientoToolStripMenuItem.Size = new System.Drawing.Size(169, 27);
             this.mantenimientoToolStripMenuItem.Text = "Mantenimiento";
+            this.mantenimientoToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem
             // 
@@ -97,13 +105,6 @@ namespace CapaVista
             this.panel1.Size = new System.Drawing.Size(1233, 747);
             this.panel1.TabIndex = 78;
             // 
-            // percepcionesToolStripMenuItem
-            // 
-            this.percepcionesToolStripMenuItem.Name = "percepcionesToolStripMenuItem";
-            this.percepcionesToolStripMenuItem.Size = new System.Drawing.Size(227, 28);
-            this.percepcionesToolStripMenuItem.Text = "Percepciones";
-            this.percepcionesToolStripMenuItem.Click += new System.EventHandler(this.percepcionesToolStripMenuItem_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -112,7 +113,7 @@ namespace CapaVista
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "frm_menu";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

@@ -12,11 +12,11 @@ using CapaVista;
 
 namespace EjecucionNomina
 {
-    public partial class Form1 : Form
+    public partial class frm_Ejecutable : Form
     {
         public Form activeForm;
 
-        public Form1()
+        public frm_Ejecutable()
         {
             InitializeComponent();
             this.openChildFormInPanel(new CapaVista.Form1());

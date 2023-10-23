@@ -33,11 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CapaVista">
-      <HintPath>..\..\NominaFinal\CapaVista\bin\Debug\CapaVista.dll</HintPath>
-    </Reference>
     <Reference Include="CapaVistaNav">
       <HintPath>..\..\..\..\OneDrive\Documentos\GitHub\proyectoads22023\Codigo\Componentes\Navegador\CapaVista\bin\Debug\CapaVistaNav.dll</HintPath>
+    </Reference>
+    <Reference Include="NominaCapaVista">
+      <HintPath>..\..\NominaFinal\CapaVista\bin\Debug\NominaCapaVista.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -52,16 +52,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="frm_Ejecutable.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frm_Ejecutable.Designer.cs">
+      <DependentUpon>frm_Ejecutable.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="frm_Ejecutable.resx">
+      <DependentUpon>frm_Ejecutable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

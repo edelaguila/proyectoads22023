@@ -1,0 +1,9 @@
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaControlador\obj\Debug\NominaCapaControlador.csproj.CoreCompileInputs.cache
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaControlador\bin\Debug\NominaCapaControlador.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaControlador\bin\Debug\NominaCapaControlador.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaControlador\bin\Debug\NominaCapaModelo.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaControlador\bin\Debug\NominaCapaModelo.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaControlador\obj\Debug\NominaCapaControlador.csproj.AssemblyReference.cache
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaControlador\obj\Debug\NominaCapaControlador.csproj.CopyComplete
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaControlador\obj\Debug\NominaCapaControlador.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaControlador\obj\Debug\NominaCapaControlador.pdb

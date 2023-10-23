@@ -1,0 +1,5 @@
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaModelo\bin\Debug\NominaCapaModelo.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaModelo\bin\Debug\NominaCapaModelo.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaModelo\obj\Debug\NominaCapaModelo.csproj.CoreCompileInputs.cache
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaModelo\obj\Debug\NominaCapaModelo.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaModelo\obj\Debug\NominaCapaModelo.pdb
