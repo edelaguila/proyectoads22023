@@ -8,23 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CapaVista.Procedimientos
+namespace CapaVista.Matenimientos
 {
-    public partial class Compras : Form
+    public partial class Proveedores : Form
     {
-        public Compras()
+        public Proveedores()
         {
             InitializeComponent();
-        }
-
-        private void Compras_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

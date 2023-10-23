@@ -8,21 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CapaVista.Procedimientos
+namespace CapaVista.Matenimientos
 {
-    public partial class Compras : Form
+    public partial class Mantenimiento_Clientes : Form
     {
-        public Compras()
+        public Mantenimiento_Clientes()
         {
             InitializeComponent();
         }
 
-        private void Compras_Load(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
