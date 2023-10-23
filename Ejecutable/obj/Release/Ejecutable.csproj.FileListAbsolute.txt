@@ -1,0 +1,80 @@
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\bin\Release\Ejecutable.exe.config
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\bin\Release\Ejecutable.exe
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\bin\Release\Ejecutable.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\bin\Release\CapaVista.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\bin\Release\CapaVista.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.AssemblyReference.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\obj\Release\Ejecutable.Properties.Resources.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.GenerateResource.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.CoreCompileInputs.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.CopyComplete
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\obj\Release\Ejecutable.exe
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\obj\Release\Ejecutable.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\bin\Release\CapaControlador.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\bin\Release\CapaModelo.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\bin\Release\CapaControlador.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Ejecutable\bin\Release\CapaModelo.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Release\Ejecutable.exe.config
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Release\Ejecutable.exe
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Release\Ejecutable.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Release\CapaVista.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Release\CapaControlador.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Release\CapaModelo.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Release\CapaVista.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Release\CapaControlador.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\bin\Release\CapaModelo.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.AssemblyReference.cache
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\obj\Release\Ejecutable.Properties.Resources.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.GenerateResource.cache
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.CoreCompileInputs.cache
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.CopyComplete
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\obj\Release\Ejecutable.exe
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Ejecutable\obj\Release\Ejecutable.pdb
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Ejecutable\bin\Release\Ejecutable.exe.config
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Ejecutable\bin\Release\Ejecutable.exe
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Ejecutable\bin\Release\Ejecutable.pdb
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Ejecutable\bin\Release\CapaVista.dll
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Ejecutable\bin\Release\CapaControlador.dll
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Ejecutable\bin\Release\CapaModelo.dll
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Ejecutable\bin\Release\CapaVista.pdb
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Ejecutable\bin\Release\CapaControlador.pdb
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Ejecutable\bin\Release\CapaModelo.pdb
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Ejecutable\obj\Release\Ejecutable.Properties.Resources.resources
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.CopyComplete
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Ejecutable\obj\Release\Ejecutable.exe
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Ejecutable\obj\Release\Ejecutable.pdb
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\bin\Release\Ejecutable.exe.config
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\bin\Release\Ejecutable.exe
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\bin\Release\Ejecutable.pdb
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\bin\Release\CapaVista.dll
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\bin\Release\CapaControlador.dll
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\bin\Release\CapaModelo.dll
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\bin\Release\CapaVista.pdb
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\bin\Release\CapaControlador.pdb
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\bin\Release\CapaModelo.pdb
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.AssemblyReference.cache
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\obj\Release\Ejecutable.Properties.Resources.resources
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.GenerateResource.cache
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.CoreCompileInputs.cache
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.CopyComplete
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\obj\Release\Ejecutable.exe
+C:\Users\Doris\Desktop\Proyecto Final Análisis\proyectoads22023\Ejecutable\obj\Release\Ejecutable.pdb
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Ejecutable\bin\Release\Ejecutable.exe.config
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Ejecutable\bin\Release\Ejecutable.exe
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Ejecutable\bin\Release\Ejecutable.pdb
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Ejecutable\bin\Release\CapaVista.dll
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Ejecutable\bin\Release\CapaControlador.dll
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Ejecutable\bin\Release\CapaModelo.dll
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Ejecutable\bin\Release\CapaVista.pdb
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Ejecutable\bin\Release\CapaControlador.pdb
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Ejecutable\bin\Release\CapaModelo.pdb
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.AssemblyReference.cache
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Ejecutable\obj\Release\Ejecutable.Properties.Resources.resources
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.GenerateResource.cache
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.CoreCompileInputs.cache
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Ejecutable\obj\Release\Ejecutable.csproj.CopyComplete
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Ejecutable\obj\Release\Ejecutable.exe
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Ejecutable\obj\Release\Ejecutable.pdb

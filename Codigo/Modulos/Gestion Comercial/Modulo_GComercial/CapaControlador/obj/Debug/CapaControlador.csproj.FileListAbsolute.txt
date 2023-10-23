@@ -110,3 +110,12 @@ C:\Users\DELL\Desktop\proyecto final analisis\proyectoads22023GESTION_COMERCIAL\
 C:\Users\DELL\Desktop\proyecto final analisis\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
 C:\Users\DELL\Desktop\proyecto final analisis\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaControlador\obj\Debug\CapaControlador.dll
 C:\Users\DELL\Desktop\proyecto final analisis\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaControlador\obj\Debug\CapaControlador.pdb
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaControlador\bin\Debug\CapaControlador.dll
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaControlador\bin\Debug\CapaControlador.pdb
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaControlador\bin\Debug\CapaModelo.dll
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaControlador\bin\Debug\CapaModelo.pdb
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaControlador\obj\Debug\CapaControlador.csproj.AssemblyReference.cache
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaControlador\obj\Debug\CapaControlador.csproj.CoreCompileInputs.cache
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaControlador\obj\Debug\CapaControlador.dll
+C:\Users\callo\Music\GIT\Proyectos\proyectoads22023GESTION_COMERCIAL\Codigo\Modulos\Gestion Comercial\Modulo_GComercial\CapaControlador\obj\Debug\CapaControlador.pdb

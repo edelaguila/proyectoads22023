@@ -1,0 +1,9 @@
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Componentes\Navegador\CapaControlador\obj\Debug\CapaControladorNav.csproj.AssemblyReference.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Componentes\Navegador\CapaControlador\obj\Debug\CapaControladorNav.csproj.CoreCompileInputs.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Componentes\Navegador\CapaControlador\obj\Debug\CapaControladorNav.csproj.CopyComplete
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Componentes\Navegador\CapaControlador\bin\Debug\CapaControladorNav.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Componentes\Navegador\CapaControlador\bin\Debug\CapaControladorNav.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Componentes\Navegador\CapaControlador\bin\Debug\CapaModeloNav.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Componentes\Navegador\CapaControlador\bin\Debug\CapaModeloNav.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Componentes\Navegador\CapaControlador\obj\Debug\CapaControladorNav.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Componentes\Navegador\CapaControlador\obj\Debug\CapaControladorNav.pdb
