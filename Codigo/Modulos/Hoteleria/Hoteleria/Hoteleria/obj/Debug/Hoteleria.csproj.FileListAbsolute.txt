@@ -1,0 +1,11 @@
+C:\Users\ixcot\Desktop\Modulo Hoteleria\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\Hoteleria\bin\Debug\Hoteleria.exe.config
+C:\Users\ixcot\Desktop\Modulo Hoteleria\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\Hoteleria\bin\Debug\Hoteleria.exe
+C:\Users\ixcot\Desktop\Modulo Hoteleria\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\Hoteleria\bin\Debug\Hoteleria.pdb
+C:\Users\ixcot\Desktop\Modulo Hoteleria\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\Hoteleria\obj\Debug\Hoteleria.csproj.AssemblyReference.cache
+C:\Users\ixcot\Desktop\Modulo Hoteleria\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\Hoteleria\obj\Debug\Hoteleria.Form1.resources
+C:\Users\ixcot\Desktop\Modulo Hoteleria\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\Hoteleria\obj\Debug\Hoteleria.Properties.Resources.resources
+C:\Users\ixcot\Desktop\Modulo Hoteleria\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\Hoteleria\obj\Debug\Hoteleria.Salon.resources
+C:\Users\ixcot\Desktop\Modulo Hoteleria\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\Hoteleria\obj\Debug\Hoteleria.csproj.GenerateResource.cache
+C:\Users\ixcot\Desktop\Modulo Hoteleria\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\Hoteleria\obj\Debug\Hoteleria.csproj.CoreCompileInputs.cache
+C:\Users\ixcot\Desktop\Modulo Hoteleria\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\Hoteleria\obj\Debug\Hoteleria.exe
+C:\Users\ixcot\Desktop\Modulo Hoteleria\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\Hoteleria\obj\Debug\Hoteleria.pdb
