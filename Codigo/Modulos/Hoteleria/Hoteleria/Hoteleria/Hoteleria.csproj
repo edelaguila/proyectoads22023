@@ -101,5 +101,11 @@
   <ItemGroup>
     <None Include="Resources\salon2.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ControladorHoteleria\ControladorHoteleria.csproj">
+      <Project>{29f0db7d-2bb2-4e28-a489-abe51a5476f9}</Project>
+      <Name>ControladorHoteleria</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
