@@ -29,8 +29,6 @@ namespace CapaVistaLI
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mantenimiento));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
@@ -56,23 +54,13 @@ namespace CapaVistaLI
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.navegador1 = new CapaVista.Navegador();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(25, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(751, 74);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
             // 
             // panel1
             // 
@@ -339,16 +327,22 @@ namespace CapaVistaLI
             this.label10.TabIndex = 0;
             this.label10.Text = "Codigo";
             // 
+            // navegador1
+            // 
+            this.navegador1.Location = new System.Drawing.Point(15, 34);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(751, 78);
+            this.navegador1.TabIndex = 3;
+            // 
             // Mantenimiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.panel1);
             this.Name = "Mantenimiento";
             this.Text = "Mantenimiento";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
@@ -363,8 +357,6 @@ namespace CapaVistaLI
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.ComboBox comboBox5;
@@ -390,5 +382,6 @@ namespace CapaVistaLI
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private CapaVista.Navegador navegador1;
     }
 }

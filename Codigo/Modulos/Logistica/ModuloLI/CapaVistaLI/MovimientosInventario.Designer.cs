@@ -29,11 +29,13 @@ namespace CapaVistaLI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MovimientosInventario));
             this.panel7 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -58,11 +60,13 @@ namespace CapaVistaLI
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.dgv_inventario = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.navegador1 = new CapaVista.Navegador();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -73,6 +77,8 @@ namespace CapaVistaLI
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(219)))), ((int)(((byte)(200)))));
+            this.panel7.Controls.Add(this.label16);
+            this.panel7.Controls.Add(this.label15);
             this.panel7.Controls.Add(this.label13);
             this.panel7.Controls.Add(this.label9);
             this.panel7.Location = new System.Drawing.Point(52, 680);
@@ -127,6 +133,20 @@ namespace CapaVistaLI
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(757, 110);
             this.panel5.TabIndex = 16;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(679, 19);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(68, 65);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Aceptar";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // textBox3
             // 
@@ -344,6 +364,20 @@ namespace CapaVistaLI
             this.panel1.Size = new System.Drawing.Size(757, 330);
             this.panel1.TabIndex = 11;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(679, 95);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(68, 65);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "Aceptar";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // dgv_inventario
             // 
             this.dgv_inventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -363,39 +397,37 @@ namespace CapaVistaLI
             // label14
             // 
             this.label14.AllowDrop = true;
-            this.label14.Image = global::CapaVistaLI.Properties.Resources.FotoNav;
             this.label14.Location = new System.Drawing.Point(49, 9);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(763, 88);
             this.label14.TabIndex = 20;
             // 
-            // button1
+            // navegador1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::CapaVistaLI.Properties.Resources.guardar;
-            this.button1.Location = new System.Drawing.Point(679, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(68, 65);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Aceptar";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = false;
+            this.navegador1.Location = new System.Drawing.Point(49, 9);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(751, 78);
+            this.navegador1.TabIndex = 21;
             // 
-            // button2
+            // label15
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::CapaVistaLI.Properties.Resources.eliminar;
-            this.button2.Location = new System.Drawing.Point(679, 95);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(68, 65);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Aceptar";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = false;
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(192, 14);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(25, 21);
+            this.label15.TabIndex = 3;
+            this.label15.Text = "---";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(670, 14);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(25, 21);
+            this.label16.TabIndex = 4;
+            this.label16.Text = "---";
             // 
             // MovimientosInventario
             // 
@@ -403,6 +435,7 @@ namespace CapaVistaLI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
             this.ClientSize = new System.Drawing.Size(865, 752);
+            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel8);
@@ -463,5 +496,8 @@ namespace CapaVistaLI
         private System.Windows.Forms.DataGridView dgv_inventario;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private CapaVista.Navegador navegador1;
     }
 }
