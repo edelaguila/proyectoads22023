@@ -1,7 +1,7 @@
 ﻿
 namespace EjecucionNomina
 {
-    partial class Form1
+    partial class frm_Ejecutable
     {
         /// <summary>
         /// Required designer variable.
@@ -48,15 +48,15 @@ namespace EjecucionNomina
             this.navegador1.Size = new System.Drawing.Size(1045, 101);
             this.navegador1.TabIndex = 1;
             // 
-            // Form1
+            // frm_Ejecutable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 883);
             this.Controls.Add(this.navegador1);
             this.Controls.Add(this.panel1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "frm_Ejecutable";
+            this.Text = "frm_ejecutable";
             this.ResumeLayout(false);
 
         }

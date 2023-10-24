@@ -1,0 +1,16 @@
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaVista\obj\Debug\CapaVista.Form1.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaVista\obj\Debug\CapaVista.frm_deduccion.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaVista\obj\Debug\CapaVista.frm_liquidacion.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaVista\obj\Debug\CapaVista.frm_mantenimiento.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaVista\obj\Debug\CapaVista.frm_percepciones.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaVista\obj\Debug\CapaVista.MDIParent1.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaVista\obj\Debug\NominaCapaVista.csproj.GenerateResource.cache
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaVista\obj\Debug\NominaCapaVista.csproj.CoreCompileInputs.cache
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaVista\bin\Debug\NominaCapaVista.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaVista\bin\Debug\NominaCapaVista.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaVista\obj\Debug\NominaCapaVista.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaVista\obj\Debug\NominaCapaVista.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaVista\bin\Debug\NominaCapaControlador.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaVista\bin\Debug\NominaCapaControlador.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaVista\obj\Debug\NominaCapaVista.csproj.AssemblyReference.cache
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\NominaFinal\CapaVista\obj\Debug\NominaCapaVista.csproj.CopyComplete

@@ -50,5 +50,10 @@ namespace CapaVista
         {
             this.abrirFormDentroDePanel(new frm_percepciones());
         }
+
+        private void mantenimientoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.abrirFormDentroDePanel(new frm_mantenimiento());
+        }
     }
 }
