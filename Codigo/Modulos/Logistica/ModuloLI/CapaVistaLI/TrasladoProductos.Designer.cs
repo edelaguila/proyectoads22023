@@ -87,6 +87,7 @@ namespace CapaVistaLI
             this.navegador1.Name = "navegador1";
             this.navegador1.Size = new System.Drawing.Size(751, 78);
             this.navegador1.TabIndex = 0;
+            this.navegador1.Load += new System.EventHandler(this.navegador1_Load);
             // 
             // panel1
             // 

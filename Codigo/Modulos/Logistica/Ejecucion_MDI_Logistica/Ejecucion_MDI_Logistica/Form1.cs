@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CapaVistaLI
+namespace Ejecucion_MDI_Logistica
 {
-    public partial class Mantenimiento : Form
+    public partial class Form1 : Form
     {
-        public Mantenimiento()
+        public Form1()
         {
             InitializeComponent();
-        }
-
-        private void navegador1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

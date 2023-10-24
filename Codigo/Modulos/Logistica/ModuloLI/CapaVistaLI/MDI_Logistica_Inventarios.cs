@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace CapaVistaLI
 {
-    public partial class Mantenimiento : Form
+    public partial class MDI_Logistica_Inventarios : Form
     {
-        public Mantenimiento()
+        public MDI_Logistica_Inventarios()
         {
             InitializeComponent();
-        }
-
-        private void navegador1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

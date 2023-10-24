@@ -26,5 +26,10 @@ namespace CapaVistaLI
         {
 
         }
+
+        private void navegador1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
