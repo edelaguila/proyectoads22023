@@ -1,7 +1,7 @@
 ﻿
 namespace Hoteleria
 {
-    partial class Gestion_Huespedes
+    partial class GestionHuespedes
     {
         /// <summary>
         /// Required designer variable.

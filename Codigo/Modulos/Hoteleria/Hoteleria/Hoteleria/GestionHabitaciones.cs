@@ -11,10 +11,10 @@ using ControladorHoteleria;
 
 namespace Hoteleria
 {
-    public partial class Form1 : Form
+    public partial class GestionHabitaciones : Form
     {
         public Controlador ctrl;
-        public Form1()
+        public GestionHabitaciones()
         {
             InitializeComponent();
             this.ctrl = new Controlador();

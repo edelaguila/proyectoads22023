@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Hoteleria
 {
-    public partial class Gestion_Huespedes : Form
+    public partial class GestionHuespedes : Form
     {
-        public Gestion_Huespedes()
+        public GestionHuespedes()
         {
             InitializeComponent();
         }
