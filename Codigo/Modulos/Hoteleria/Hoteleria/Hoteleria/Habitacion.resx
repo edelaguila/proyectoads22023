@@ -117,11 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="salon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\salon2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="habitacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\habitacion.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="label2.Text" xml:space="preserve">
+    <value> Noche de Hospedaje mas impuestos + Wifi + Parqueo
+1 Night + Taxes + Wifi + Parking
+Check in: 15:00hrs
+Check out: 13:00hrs
+Uso de Instalaciones / Use of facilities
+No Show: Pagas 1 noche + Impuestos /
+Pay 1 night plus taxes
+</value>
   </data>
 </root>
