@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Hoteleria
 {
-    public partial class Salon : Form
+    public partial class Gestion_Huespedes : Form
     {
-        public Salon()
+        public Gestion_Huespedes()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
