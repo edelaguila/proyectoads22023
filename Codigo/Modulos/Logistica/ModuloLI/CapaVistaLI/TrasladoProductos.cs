@@ -8,13 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CapaVista_TraslaProd
+namespace CapaVistaLI
 {
-    public partial class Form_TraslaProd : Form
+    public partial class TrasladoProductos : Form
     {
-        public Form_TraslaProd()
+        public TrasladoProductos()
         {
             InitializeComponent();
+        }
+
+        private void TrasladoProductos_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox4_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
