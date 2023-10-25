@@ -35,7 +35,7 @@
       <HintPath>..\CapaControladorBancos\bin\Debug\CapaControladorBancos.dll</HintPath>
     </Reference>
     <Reference Include="CapaVistaNav">
-      <HintPath>..\..\..\..\Componentes\Navegador\CapaVista\bin\Debug\CapaVistaNav.dll</HintPath>
+      <HintPath>..\..\..\..\Componentes\Navegador\CapaVista\bin\Release\CapaVistaNav.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
