@@ -393,7 +393,7 @@ namespace CapaVista
             this.Controls.Add(this.txt_id_empleado);
             this.Controls.Add(this.dataGridView1);
             this.Name = "frm_deduccion";
-            this.Text = "frm_deduccion_percepciones";
+            this.Text = "frm_deduccion";
             this.Load += new System.EventHandler(this.frm_deduccion_percepciones_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
