@@ -111,7 +111,7 @@ namespace CapaVista
             if (operacion.Equals("r"))
             {
                 this.utilConsultasI.refrescar(child);
-                this.fillCombo();
+                //this.fillCombo();
             }
             if (operacion.Equals("e")) this.utilConsultasI.eliminar(child, dgvname);
         }

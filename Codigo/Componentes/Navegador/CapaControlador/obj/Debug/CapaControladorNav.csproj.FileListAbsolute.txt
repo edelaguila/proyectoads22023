@@ -7,3 +7,5 @@ C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyect
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Componentes\Navegador\CapaControlador\bin\Debug\CapaModeloNav.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Componentes\Navegador\CapaControlador\obj\Debug\CapaControladorNav.dll
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Componentes\Navegador\CapaControlador\obj\Debug\CapaControladorNav.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Componentes\Navegador\CapaControlador\bin\Debug\CapaVistaNav.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Componentes\Navegador\CapaControlador\bin\Debug\CapaVistaNav.pdb
