@@ -7,8 +7,8 @@
     <ProjectGuid>{AA62C573-AD54-472E-8219-B6F8E05E8FD7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NominaCapaVista</RootNamespace>
-    <AssemblyName>NominaCapaVista</AssemblyName>
+    <RootNamespace>CapaVistaNomina</RootNamespace>
+    <AssemblyName>CapaVistaNomina</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -31,8 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NominaCapaControlador">
-      <HintPath>..\CapaControlador\bin\Debug\NominaCapaControlador.dll</HintPath>
+    <Reference Include="CapaControladorNomina">
+      <HintPath>..\CapaControlador\bin\Debug\CapaControladorNomina.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

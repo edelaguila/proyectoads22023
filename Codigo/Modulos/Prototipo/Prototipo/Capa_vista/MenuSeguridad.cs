@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Seguridad_Controlador;
+using CapaVista;
 
 namespace Vista_PrototipoMenu
 {
@@ -21,11 +22,17 @@ namespace Vista_PrototipoMenu
         {
             InitializeComponent();
             //Control para habilitar opciones del menu
-            //Button[] apps = {btnaplicaciones};
+            //Button[] apps = {btn_deducciones, btn_percepciones, btnaplicaciones};
             //Llamada metodo de libreria Controlador del modulo de Seguridad
             //cn.deshabilitarApps(apps);
             //Llamada metodo de libreria Controlador del modulo de Seguridad
-            //cn.getAccesoApp(1002, apps[0]);
+           // Console.WriteLine(apps);
+            //cn.getAccesoApp(6001, apps[0]);
+            //cn.getAccesoApp(6002, apps[1]);
+           // cn.getAccesoApp(6003, apps[2]);
+
+            
+            
 
         }
         
@@ -97,6 +104,28 @@ namespace Vista_PrototipoMenu
         private void btnayuda_Click(object sender, EventArgs e)
         {
             Help.ShowHelp(this, "umg.chm");            
+        }
+
+        private void MenuSeguridad_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_deducciones_Click(object sender, EventArgs e)
+        {
+            frm_deduccion nomded = new CapaVista.frm_deduccion();
+            nomded.MdiParent = this;
+            nomded.Show();
+            hideSubMenu();
+
+        }
+
+        private void btn_percepciones_Click(object sender, EventArgs e)
+        {
+            frm_percepciones nomperc = new CapaVista.frm_percepciones();
+            nomperc.MdiParent = this;
+            nomperc.Show();
+            hideSubMenu();
         }
     }
 }

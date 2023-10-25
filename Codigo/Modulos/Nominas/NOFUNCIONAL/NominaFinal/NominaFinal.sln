@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.33927.289
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NominaCapaVista", "CapaVista\NominaCapaVista.csproj", "{AA62C573-AD54-472E-8219-B6F8E05E8FD7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaVistaNomina", "CapaVista\CapaVistaNomina.csproj", "{AA62C573-AD54-472E-8219-B6F8E05E8FD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NominaCapaControlador", "CapaControlador\NominaCapaControlador.csproj", "{7BA50A7C-C0B8-4AA5-9E47-2780BF673A4D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaControladorNomina", "CapaControlador\CapaControladorNomina.csproj", "{7BA50A7C-C0B8-4AA5-9E47-2780BF673A4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NominaCapaModelo", "CapaModelo\NominaCapaModelo.csproj", "{59311DF0-F01B-4912-B8CD-2BABAEA16013}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaModeloNomina", "CapaModelo\CapaModeloNomina.csproj", "{59311DF0-F01B-4912-B8CD-2BABAEA16013}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
