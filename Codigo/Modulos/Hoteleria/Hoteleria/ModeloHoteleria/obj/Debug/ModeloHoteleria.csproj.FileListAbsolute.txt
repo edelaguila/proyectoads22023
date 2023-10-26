@@ -8,3 +8,4 @@ C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyect
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\ModeloHoteleria\obj\Debug\ModeloHoteleria.csproj.CoreCompileInputs.cache
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\ModeloHoteleria\obj\Debug\ModeloHoteleria.dll
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\ModeloHoteleria\obj\Debug\ModeloHoteleria.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\ModeloHoteleria\obj\Debug\ModeloHoteleria.csproj.AssemblyReference.cache

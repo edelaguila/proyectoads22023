@@ -34,8 +34,8 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.combo2 = new System.Windows.Forms.ComboBox();
-            this.combo = new System.Windows.Forms.ComboBox();
+            this.comoHabitacion = new System.Windows.Forms.ComboBox();
+            this.comboTipo = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -46,6 +46,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,28 +100,29 @@
             this.comboBox1.Size = new System.Drawing.Size(143, 21);
             this.comboBox1.TabIndex = 40;
             // 
-            // combo2
+            // comoHabitacion
             // 
-            this.combo2.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.combo2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.combo2.FormattingEnabled = true;
-            this.combo2.Location = new System.Drawing.Point(15, 294);
-            this.combo2.Margin = new System.Windows.Forms.Padding(2);
-            this.combo2.Name = "combo2";
-            this.combo2.Size = new System.Drawing.Size(129, 21);
-            this.combo2.TabIndex = 39;
+            this.comoHabitacion.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.comoHabitacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comoHabitacion.FormattingEnabled = true;
+            this.comoHabitacion.Location = new System.Drawing.Point(15, 294);
+            this.comoHabitacion.Margin = new System.Windows.Forms.Padding(2);
+            this.comoHabitacion.Name = "comoHabitacion";
+            this.comoHabitacion.Size = new System.Drawing.Size(129, 21);
+            this.comoHabitacion.TabIndex = 39;
             // 
-            // combo
+            // comboTipo
             // 
-            this.combo.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.combo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.combo.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.combo.FormattingEnabled = true;
-            this.combo.Location = new System.Drawing.Point(173, 295);
-            this.combo.Margin = new System.Windows.Forms.Padding(2);
-            this.combo.Name = "combo";
-            this.combo.Size = new System.Drawing.Size(143, 21);
-            this.combo.TabIndex = 38;
+            this.comboTipo.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.comboTipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboTipo.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboTipo.FormattingEnabled = true;
+            this.comboTipo.Location = new System.Drawing.Point(173, 295);
+            this.comboTipo.Margin = new System.Windows.Forms.Padding(2);
+            this.comboTipo.Name = "comboTipo";
+            this.comboTipo.Size = new System.Drawing.Size(143, 21);
+            this.comboTipo.TabIndex = 38;
+            this.comboTipo.SelectedIndexChanged += new System.EventHandler(this.comboTipo_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -228,11 +231,31 @@
             this.label8.TabIndex = 50;
             this.label8.Text = "Habitación #1";
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(365, 239);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(27, 20);
+            this.textBox2.TabIndex = 51;
+            this.textBox2.Tag = "res_id_cliente";
+            this.textBox2.Visible = false;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(398, 239);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(27, 20);
+            this.textBox3.TabIndex = 52;
+            this.textBox3.Tag = "res_id_empleado";
+            this.textBox3.Visible = false;
+            // 
             // ReservaHabitacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(696, 416);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dateTimePicker2);
@@ -240,8 +263,8 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.combo2);
-            this.Controls.Add(this.combo);
+            this.Controls.Add(this.comoHabitacion);
+            this.Controls.Add(this.comboTipo);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -265,8 +288,8 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox combo2;
-        private System.Windows.Forms.ComboBox combo;
+        private System.Windows.Forms.ComboBox comoHabitacion;
+        private System.Windows.Forms.ComboBox comboTipo;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -277,5 +300,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }

@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CapaVistaNav">
+      <HintPath>..\..\..\..\Componentes\Navegador\CapaVista\bin\Release\CapaVistaNav.dll</HintPath>
+    </Reference>
+    <Reference Include="NavegadorVista">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\..\..\..\Program Files\UMG\Instalador General HSC\NavegadorVista.dll</HintPath>
+    </Reference>
     <Reference Include="Seguridad_Controlador">
       <HintPath>..\..\..\..\..\..\..\..\..\..\..\..\..\..\Program Files\UMG\Instalador General HSC\Seguridad_Controlador.dll</HintPath>
     </Reference>

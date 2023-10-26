@@ -71,11 +71,11 @@ namespace CapaVista.Componentes.Utilidades
                 }
             }
             ctriv.setTabla(this.tabla);
-            if (dictionary.Count != columns.Count)
+            /*if (dictionary.Count != columns.Count)
             {
                 MessageBox.Show("No todos los campos necesarios para la insercion han sido colocados, verifique sus campos para poder realizar la insercion");
                 return;
-            }
+            }*/
             ctriv.guardar(dictionary);
             MessageBox.Show("INVENTARIO GUARDADO");
         }

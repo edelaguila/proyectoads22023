@@ -15,6 +15,8 @@ namespace Hoteleria
         public GestionHuespedes()
         {
             InitializeComponent();
+            this.navegador.config("tbl_cliente", this, "");
+
         }
     }
 }
