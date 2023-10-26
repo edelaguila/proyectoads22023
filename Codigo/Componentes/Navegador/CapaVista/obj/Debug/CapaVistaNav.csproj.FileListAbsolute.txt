@@ -13,3 +13,5 @@ C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyect
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Componentes\Navegador\CapaVista\obj\Debug\CapaVistaNav.Properties.Resources.resources
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Componentes\Navegador\CapaVista\obj\Debug\CapaVistaNav.dll
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Componentes\Navegador\CapaVista\obj\Debug\CapaVistaNav.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Componentes\Navegador\CapaVista\bin\Debug\Seguridad_Controlador.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Componentes\Navegador\CapaVista\bin\Debug\Modelo_Seguridad.dll
