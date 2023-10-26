@@ -1,5 +1,5 @@
 ﻿
-namespace Vista_PrototipoMenu
+namespace CapaVistaNomina
 {
     partial class MenuNomina
     {

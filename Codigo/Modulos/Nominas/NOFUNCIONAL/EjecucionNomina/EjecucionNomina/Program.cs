@@ -17,7 +17,8 @@ namespace EjecucionNomina
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-             Application.Run(new Vista_PrototipoMenu.MenuNomina());
+             Application.Run(new CapaVistaNomina.MenuNomina());
+           // Application.Run(new CapaVistaNomina.MenuNomina());
             //Application.Run(new Form1());
         }
     }
