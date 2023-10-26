@@ -11,7 +11,7 @@ using Seguridad_Controlador;
 using CapaVista;
 
 
-namespace Vista_PrototipoMenu
+namespace CapaVistaNomina
 {
     public partial class MenuNomina : Form
     {
