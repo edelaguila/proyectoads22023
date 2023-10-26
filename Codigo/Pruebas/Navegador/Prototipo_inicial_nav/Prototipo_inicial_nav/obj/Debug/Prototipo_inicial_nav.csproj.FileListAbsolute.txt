@@ -1,0 +1,10 @@
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.exe.config
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.exe
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.pdb
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.csproj.AssemblyReference.cache
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.MDIbase.resources
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.Properties.Resources.resources
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.csproj.GenerateResource.cache
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.csproj.CoreCompileInputs.cache
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.exe
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.pdb

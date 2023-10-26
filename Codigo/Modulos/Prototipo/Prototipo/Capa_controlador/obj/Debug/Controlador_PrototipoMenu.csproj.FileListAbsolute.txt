@@ -1,0 +1,8 @@
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\bin\Debug\Controlador_PrototipoMenu.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\bin\Debug\Controlador_PrototipoMenu.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\bin\Debug\eCryptography.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\obj\Debug\Controlador_PrototipoMenu.csproj.AssemblyReference.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\obj\Debug\Controlador_PrototipoMenu.csproj.CoreCompileInputs.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\obj\Debug\Controlador_PrototipoMenu.csproj.CopyComplete
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\obj\Debug\Controlador_PrototipoMenu.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\obj\Debug\Controlador_PrototipoMenu.pdb

@@ -1,0 +1,47 @@
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.exe.config
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.exe
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.pdb
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.AssemblyReference.cache
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.MDIbase.resources
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.Properties.Resources.resources
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.GenerateResource.cache
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.CoreCompileInputs.cache
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.exe
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.pdb
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.exe.config
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.exe
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.pdb
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante2.resources
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.MDIbase.resources
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.Properties.Resources.resources
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.exe
+C:\Users\Usuario\Desktop\Proyecto\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.exe.config
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.exe
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.AssemblyReference.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante2.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.MDIbase.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.Properties.Resources.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.GenerateResource.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.CoreCompileInputs.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.exe
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante4.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.exe.config
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.exe
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\bin\Debug\Prototipo_inicial_nav.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.AssemblyReference.cache
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante2.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante4.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.MDIbase.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.Properties.Resources.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.GenerateResource.cache
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial.csproj.CoreCompileInputs.cache
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.exe
+C:\Users\d_car\OneDrive\Documentos\GitHub\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante1.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Pruebas\Navegador\Prototipo_inicial_nav\Prototipo_inicial_nav\obj\Debug\Prototipo_inicial_nav.frmIntegrante5.resources
