@@ -7,3 +7,12 @@ C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\proyectoads22023\Codigo\Modu
 C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\ControladorHoteleria\obj\Debug\ControladorHoteleria.csproj.CopyComplete
 C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\ControladorHoteleria\obj\Debug\ControladorHoteleria.dll
 C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\ControladorHoteleria\obj\Debug\ControladorHoteleria.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\ControladorHoteleria\bin\Debug\ControladorHoteleria.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\ControladorHoteleria\bin\Debug\ControladorHoteleria.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\ControladorHoteleria\bin\Debug\ModeloHoteleria.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\ControladorHoteleria\bin\Debug\ModeloHoteleria.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\ControladorHoteleria\obj\Debug\ControladorHoteleria.csproj.AssemblyReference.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\ControladorHoteleria\obj\Debug\ControladorHoteleria.csproj.CoreCompileInputs.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\ControladorHoteleria\obj\Debug\ControladorHoteleria.csproj.CopyComplete
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\ControladorHoteleria\obj\Debug\ControladorHoteleria.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\ControladorHoteleria\obj\Debug\ControladorHoteleria.pdb

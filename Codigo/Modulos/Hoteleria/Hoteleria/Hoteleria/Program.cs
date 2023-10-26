@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Vista_PrototipoMenu;
 
 namespace Hoteleria
 {
@@ -16,7 +17,7 @@ namespace Hoteleria
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GestionHabitaciones());
+            Application.Run(new MDIHoteleria());
         }
     }
 }
