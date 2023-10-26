@@ -31,6 +31,8 @@ namespace CapaVistaLI
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MovimientosInventario));
             this.panel7 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -65,8 +67,6 @@ namespace CapaVistaLI
             this.panel2 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.navegador1 = new CapaVista.Navegador();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -85,6 +85,26 @@ namespace CapaVistaLI
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(757, 54);
             this.panel7.TabIndex = 18;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(670, 14);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(25, 21);
+            this.label16.TabIndex = 4;
+            this.label16.Text = "---";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(192, 14);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(25, 21);
+            this.label15.TabIndex = 3;
+            this.label15.Text = "---";
             // 
             // label13
             // 
@@ -409,26 +429,6 @@ namespace CapaVistaLI
             this.navegador1.Size = new System.Drawing.Size(751, 78);
             this.navegador1.TabIndex = 21;
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(192, 14);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(25, 21);
-            this.label15.TabIndex = 3;
-            this.label15.Text = "---";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(670, 14);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(25, 21);
-            this.label16.TabIndex = 4;
-            this.label16.Text = "---";
-            // 
             // MovimientosInventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -447,7 +447,8 @@ namespace CapaVistaLI
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "MovimientosInventario";
-            this.Text = "MovimientosInventario";
+            this.Text = "Movimientos Inventario";
+            this.Load += new System.EventHandler(this.MovimientosInventario_Load);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel5.ResumeLayout(false);

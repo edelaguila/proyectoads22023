@@ -15,6 +15,12 @@ namespace CapaVistaLI
         public MovimientosInventario()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None;
+        }
+
+        private void MovimientosInventario_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

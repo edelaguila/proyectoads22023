@@ -1,6 +1,5 @@
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaVistaLI\bin\Debug\CapaVistaLI.dll
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaVistaLI\bin\Debug\CapaVistaLI.pdb
-D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaVistaLI\obj\Debug\CapaVistaLI.csproj.AssemblyReference.cache
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaVistaLI\obj\Debug\CapaVistaLI.csproj.CoreCompileInputs.cache
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaVistaLI\obj\Debug\CapaVistaLI.dll
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaVistaLI\obj\Debug\CapaVistaLI.pdb
@@ -28,3 +27,6 @@ D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\C
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaVistaLI\bin\Debug\CapaModeloNav.pdb
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaVistaLI\obj\Debug\CapaVistaLI.Properties.Resources.resources
 D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaVistaLI\obj\Debug\CapaVistaLI.MDI_Logistica_Inventarios.resources
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaVistaLI\obj\Debug\CapaVistaLI.csproj.AssemblyReference.cache
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaVistaLI\bin\Debug\Seguridad_Controlador.dll
+D:\8VO_SEMESTRE\ANALISIS_II\proyectoads22023\Codigo\Modulos\Logistica\ModuloLI\CapaVistaLI\bin\Debug\Modelo_Seguridad.dll
