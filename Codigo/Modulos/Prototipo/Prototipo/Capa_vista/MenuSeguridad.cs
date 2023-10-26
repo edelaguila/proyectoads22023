@@ -98,5 +98,10 @@ namespace Vista_PrototipoMenu
         {
             Help.ShowHelp(this, "umg.chm");            
         }
+
+        private void MenuSeguridad_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
