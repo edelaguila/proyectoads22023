@@ -23,7 +23,6 @@ C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\C
 C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\CapaControladorNav.dll
 C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\CapaModeloNav.dll
 C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\CapaVistaNav.pdb
-C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\NominaCapaVista.pdb
 C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\CapaControladorNav.pdb
 C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\CapaModeloNav.pdb
 C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\obj\Debug\EjecucionNomina.csproj.AssemblyReference.cache
@@ -34,3 +33,11 @@ C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\C
 C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\obj\Debug\EjecucionNomina.csproj.CopyComplete
 C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\obj\Debug\EjecucionNomina.exe
 C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\obj\Debug\EjecucionNomina.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\CapaVistaNomina.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\CapaControladorNomina.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\CapaModeloNomina.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\CapaVistaNomina.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\CapaControladorNomina.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\CapaModeloNomina.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\Seguridad_Controlador.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\GRUPONOMINAS\proyectoads22023NOMINAS\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\Modelo_Seguridad.dll

@@ -8,17 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Seguridad_Controlador;
+using CapaVista;
 
 
 namespace Vista_PrototipoMenu
 {
-    public partial class MenuSeguridad : Form
+    public partial class MenuNomina : Form
     {
 
         Controlador cn = new Controlador();
 
         //Método que guarda en un arreglo de tipo botón los botones que se tienen en el formulario. Se les da permiso a los diferentes botones de acuerdo a la función que realice este
-        public MenuSeguridad()
+        public MenuNomina()
         {
             InitializeComponent();
             //Control para habilitar opciones del menu
@@ -82,12 +83,12 @@ namespace Vista_PrototipoMenu
         }
         //Método que muestra el formulario indicado
         //Método que muestra el formulario indicado
-        private void btnaplicaciones_Click(object sender, EventArgs e)
+        private void btn_mantenimiento_empleados_Click(object sender, EventArgs e)
         {
-            //Aplicacion b = new Aplicacion();
-            //b.MdiParent = this;
-            //b.Show();
-            //hideSubMenu();
+            frm_mantenimiento mant = new frm_mantenimiento();
+            mant.MdiParent = this;
+            mant.Show();
+            hideSubMenu();
         }
         //Método que muestra el formulario indicado
 
@@ -111,8 +112,23 @@ namespace Vista_PrototipoMenu
 
         }
 
-      
+        private void btn_deducciones_Click(object sender, EventArgs e)
+        {
+            frm_deduccion nomded = new CapaVista.frm_deduccion();
+            nomded.MdiParent = this;
+            nomded.Show();
+            hideSubMenu();
 
-     
+            
+
+        }
+
+        private void btn_percepciones_Click(object sender, EventArgs e)
+        {
+            frm_percepciones nomperc = new CapaVista.frm_percepciones();
+            nomperc.MdiParent = this;
+            nomperc.Show();
+            hideSubMenu();
+        }
     }
 }

@@ -36,8 +36,9 @@
     <Reference Include="CapaVistaNav">
       <HintPath>..\..\..\..\OneDrive\Documentos\GitHub\proyectoads22023\Codigo\Componentes\Navegador\CapaVista\bin\Debug\CapaVistaNav.dll</HintPath>
     </Reference>
-    <Reference Include="NominaCapaVista">
-      <HintPath>..\..\NominaFinal\CapaVista\bin\Debug\NominaCapaVista.dll</HintPath>
+    <Reference Include="CapaVistaNomina, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\NominaFinal\CapaVista\bin\Debug\CapaVistaNomina.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
