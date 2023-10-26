@@ -26,6 +26,7 @@ namespace CapaVista
         public DataTable mydata = new DataTable();
         public Seguridad_Controlador.Controlador ctrl_seguridad = new Controlador();
         public Form parent;
+        public string idApp;
         public Navegador()
         {
             InitializeComponent();
@@ -42,7 +43,7 @@ namespace CapaVista
 
         public void loadButtons()
         {
-            int[] arr = this.ctrl_seguridad.getPermisosAplicaion("1000");
+            int[] arr = this.ctrl_seguridad.getPermisosAplicaion(idApp);
             foreach (Control c in this.panel.Controls)
             {
                 if (c is Button)
@@ -146,12 +147,12 @@ namespace CapaVista
 
             if (operacion.Equals("g"))
             {
-                this.ctrl_seguridad.setBtitacora("1000", "Se ha guardado un registro");
+                this.ctrl_seguridad.setBtitacora(idApp, "Se ha guardado un registro");
                 this.utilConsultasI.guardar(child);
             }
             if (operacion.Equals("m"))
             {
-                this.ctrl_seguridad.setBtitacora("1000", "Se ha modificado un registro");
+                this.ctrl_seguridad.setBtitacora(idApp, "Se ha modificado un registro");
                 this.utilConsultasI.modificar(child);
             }
             if (operacion.Equals("r"))
@@ -161,7 +162,7 @@ namespace CapaVista
             if (operacion.Equals("e"))
             {
                 this.utilConsultasI.eliminar(child, dgvname);
-                this.ctrl_seguridad.setBtitacora("1000", "Se ha eliminado un registro");
+                this.ctrl_seguridad.setBtitacora(idApp, "Se ha eliminado un registro");
             }
         }
         public DataGridView GetDGV(Form child)
