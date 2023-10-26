@@ -1,7 +1,7 @@
 ﻿
 namespace Vista_PrototipoMenu
 {
-    partial class MenuSeguridad
+    partial class MenuNomina
     {
         /// <summary>
         /// Required designer variable.
@@ -34,9 +34,12 @@ namespace Vista_PrototipoMenu
             this.btninicio = new System.Windows.Forms.Button();
             this.btnmanteniminetos = new System.Windows.Forms.Button();
             this.panelTranportes = new System.Windows.Forms.Panel();
-            this.btnaplicaciones = new System.Windows.Forms.Button();
+            this.btn_mant_percepciones = new System.Windows.Forms.Button();
+            this.btn_mantenimiento_empleado = new System.Windows.Forms.Button();
             this.btnProcesos = new System.Windows.Forms.Button();
             this.PanelAuditoria = new System.Windows.Forms.Panel();
+            this.btn_percepciones = new System.Windows.Forms.Button();
+            this.btn_deducciones = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
             this.panelseguridad = new System.Windows.Forms.Panel();
             this.btnSeguridad = new System.Windows.Forms.Button();
@@ -47,6 +50,7 @@ namespace Vista_PrototipoMenu
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelTranportes.SuspendLayout();
+            this.PanelAuditoria.SuspendLayout();
             this.panelSideMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -114,7 +118,8 @@ namespace Vista_PrototipoMenu
             // panelTranportes
             // 
             this.panelTranportes.BackColor = System.Drawing.Color.LightSlateGray;
-            this.panelTranportes.Controls.Add(this.btnaplicaciones);
+            this.panelTranportes.Controls.Add(this.btn_mant_percepciones);
+            this.panelTranportes.Controls.Add(this.btn_mantenimiento_empleado);
             this.panelTranportes.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTranportes.Location = new System.Drawing.Point(0, 216);
             this.panelTranportes.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
@@ -123,22 +128,38 @@ namespace Vista_PrototipoMenu
             this.panelTranportes.TabIndex = 3;
             this.panelTranportes.Visible = false;
             // 
-            // btnaplicaciones
+            // btn_mant_percepciones
             // 
-            this.btnaplicaciones.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnaplicaciones.FlatAppearance.BorderSize = 0;
-            this.btnaplicaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnaplicaciones.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnaplicaciones.Location = new System.Drawing.Point(0, 0);
-            this.btnaplicaciones.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.btnaplicaciones.Name = "btnaplicaciones";
-            this.btnaplicaciones.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
-            this.btnaplicaciones.Size = new System.Drawing.Size(348, 46);
-            this.btnaplicaciones.TabIndex = 3;
-            this.btnaplicaciones.Text = "APLICACIONES";
-            this.btnaplicaciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnaplicaciones.UseVisualStyleBackColor = true;
-            this.btnaplicaciones.Click += new System.EventHandler(this.btnaplicaciones_Click);
+            this.btn_mant_percepciones.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_mant_percepciones.FlatAppearance.BorderSize = 0;
+            this.btn_mant_percepciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_mant_percepciones.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_mant_percepciones.Location = new System.Drawing.Point(0, 46);
+            this.btn_mant_percepciones.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.btn_mant_percepciones.Name = "btn_mant_percepciones";
+            this.btn_mant_percepciones.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btn_mant_percepciones.Size = new System.Drawing.Size(348, 46);
+            this.btn_mant_percepciones.TabIndex = 4;
+            this.btn_mant_percepciones.Text = "Percepciones";
+            this.btn_mant_percepciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_mant_percepciones.UseVisualStyleBackColor = true;
+            // 
+            // btn_mantenimiento_empleado
+            // 
+            this.btn_mantenimiento_empleado.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_mantenimiento_empleado.FlatAppearance.BorderSize = 0;
+            this.btn_mantenimiento_empleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_mantenimiento_empleado.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_mantenimiento_empleado.Location = new System.Drawing.Point(0, 0);
+            this.btn_mantenimiento_empleado.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.btn_mantenimiento_empleado.Name = "btn_mantenimiento_empleado";
+            this.btn_mantenimiento_empleado.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btn_mantenimiento_empleado.Size = new System.Drawing.Size(348, 46);
+            this.btn_mantenimiento_empleado.TabIndex = 3;
+            this.btn_mantenimiento_empleado.Text = "Empleados";
+            this.btn_mantenimiento_empleado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_mantenimiento_empleado.UseVisualStyleBackColor = true;
+            this.btn_mantenimiento_empleado.Click += new System.EventHandler(this.btn_mantenimiento_empleados_Click);
             // 
             // btnProcesos
             // 
@@ -163,6 +184,8 @@ namespace Vista_PrototipoMenu
             // PanelAuditoria
             // 
             this.PanelAuditoria.BackColor = System.Drawing.Color.LightSlateGray;
+            this.PanelAuditoria.Controls.Add(this.btn_percepciones);
+            this.PanelAuditoria.Controls.Add(this.btn_deducciones);
             this.PanelAuditoria.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelAuditoria.Location = new System.Drawing.Point(0, 359);
             this.PanelAuditoria.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
@@ -170,6 +193,40 @@ namespace Vista_PrototipoMenu
             this.PanelAuditoria.Size = new System.Drawing.Size(348, 97);
             this.PanelAuditoria.TabIndex = 5;
             this.PanelAuditoria.Visible = false;
+            // 
+            // btn_percepciones
+            // 
+            this.btn_percepciones.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_percepciones.FlatAppearance.BorderSize = 0;
+            this.btn_percepciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_percepciones.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_percepciones.Location = new System.Drawing.Point(0, 46);
+            this.btn_percepciones.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.btn_percepciones.Name = "btn_percepciones";
+            this.btn_percepciones.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btn_percepciones.Size = new System.Drawing.Size(348, 46);
+            this.btn_percepciones.TabIndex = 5;
+            this.btn_percepciones.Text = "Percepciones";
+            this.btn_percepciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_percepciones.UseVisualStyleBackColor = true;
+            this.btn_percepciones.Click += new System.EventHandler(this.btn_percepciones_Click);
+            // 
+            // btn_deducciones
+            // 
+            this.btn_deducciones.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_deducciones.FlatAppearance.BorderSize = 0;
+            this.btn_deducciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_deducciones.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_deducciones.Location = new System.Drawing.Point(0, 0);
+            this.btn_deducciones.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.btn_deducciones.Name = "btn_deducciones";
+            this.btn_deducciones.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btn_deducciones.Size = new System.Drawing.Size(348, 46);
+            this.btn_deducciones.TabIndex = 4;
+            this.btn_deducciones.Text = "Deducciones";
+            this.btn_deducciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_deducciones.UseVisualStyleBackColor = true;
+            this.btn_deducciones.Click += new System.EventHandler(this.btn_deducciones_Click);
             // 
             // btnReportes
             // 
@@ -297,7 +354,7 @@ namespace Vista_PrototipoMenu
             this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
-            // MenuSeguridad
+            // MenuNomina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -306,13 +363,14 @@ namespace Vista_PrototipoMenu
             this.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "MenuSeguridad";
+            this.Name = "MenuNomina";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Menu Prototipo";
+            this.Text = "MenuNomina";
             this.Load += new System.EventHandler(this.MenuSeguridad_Load);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelTranportes.ResumeLayout(false);
+            this.PanelAuditoria.ResumeLayout(false);
             this.panelSideMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -325,7 +383,7 @@ namespace Vista_PrototipoMenu
         private System.Windows.Forms.Button btninicio;
         private System.Windows.Forms.Button btnmanteniminetos;
         private System.Windows.Forms.Panel panelTranportes;
-        private System.Windows.Forms.Button btnaplicaciones;
+        private System.Windows.Forms.Button btn_mantenimiento_empleado;
         private System.Windows.Forms.Button btnProcesos;
         private System.Windows.Forms.Panel PanelAuditoria;
         private System.Windows.Forms.Button btnReportes;
@@ -335,5 +393,8 @@ namespace Vista_PrototipoMenu
         private System.Windows.Forms.Button btnayuda;
         private System.Windows.Forms.Panel panelSideMenu;
         private System.Windows.Forms.Button btnsalir;
+        private System.Windows.Forms.Button btn_mant_percepciones;
+        private System.Windows.Forms.Button btn_percepciones;
+        private System.Windows.Forms.Button btn_deducciones;
     }
 }

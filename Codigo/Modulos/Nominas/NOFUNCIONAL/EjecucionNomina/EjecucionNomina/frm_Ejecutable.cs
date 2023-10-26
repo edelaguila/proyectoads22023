@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 using CapaVista;
 
+
 namespace EjecucionNomina
 {
     public partial class frm_Ejecutable : Form

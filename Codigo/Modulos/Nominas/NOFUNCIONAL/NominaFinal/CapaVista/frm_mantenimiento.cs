@@ -15,6 +15,12 @@ namespace CapaVista
         public frm_mantenimiento()
         {
             InitializeComponent();
+            this.navegador1.config("tbl_empleado", this, "");
+        }
+
+        private void btn_buscar_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

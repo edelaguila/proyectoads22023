@@ -34,6 +34,16 @@
     <Reference Include="CapaControladorNomina">
       <HintPath>..\CapaControlador\bin\Debug\CapaControladorNomina.dll</HintPath>
     </Reference>
+    <Reference Include="CapaModeloNomina, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CapaModelo\bin\Debug\CapaModeloNomina.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaVistaNav">
+      <HintPath>..\..\..\..\..\Componentes\Navegador\CapaVista\bin\Release\CapaVistaNav.dll</HintPath>
+    </Reference>
+    <Reference Include="Seguridad_Controlador">
+      <HintPath>..\..\..\..\Prototipo\Prototipo\Capa_vista\bin\Debug\Seguridad_Controlador.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -82,6 +92,12 @@
     <Compile Include="MDIParent1.Designer.cs">
       <DependentUpon>MDIParent1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuNomina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuNomina.designer.cs">
+      <DependentUpon>MenuNomina.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -102,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MDIParent1.resx">
       <DependentUpon>MDIParent1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuNomina.resx">
+      <DependentUpon>MenuNomina.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -36,8 +36,8 @@ namespace CapaVista
             this.btn_calcular = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.txt_ded_otros = new System.Windows.Forms.TextBox();
-            this.txt_isr = new System.Windows.Forms.TextBox();
-            this.txt_igss = new System.Windows.Forms.TextBox();
+            this.txt_iprestamos_anticipos = new System.Windows.Forms.TextBox();
+            this.txt_impuestos = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -52,13 +52,13 @@ namespace CapaVista
             this.txt_id_empleado = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btn_buscar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_cargo_empleado = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_deduccion = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_seguro_medico = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txt_seguro_pensiones = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -75,9 +75,9 @@ namespace CapaVista
             // 
             this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(143, 309);
+            this.dateTimePicker1.Location = new System.Drawing.Point(258, 307);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(379, 30);
+            this.dateTimePicker1.Size = new System.Drawing.Size(234, 30);
             this.dateTimePicker1.TabIndex = 71;
             // 
             // label18
@@ -86,9 +86,9 @@ namespace CapaVista
             this.label18.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(7, 309);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(88, 30);
+            this.label18.Size = new System.Drawing.Size(229, 30);
             this.label18.TabIndex = 70;
-            this.label18.Text = "Fecha";
+            this.label18.Text = "Fecha Deduccion";
             // 
             // label17
             // 
@@ -108,6 +108,7 @@ namespace CapaVista
             this.btn_calcular.TabIndex = 68;
             this.btn_calcular.Text = "Calcular";
             this.btn_calcular.UseVisualStyleBackColor = true;
+            this.btn_calcular.Click += new System.EventHandler(this.btn_calcular_Click);
             // 
             // label15
             // 
@@ -127,23 +128,22 @@ namespace CapaVista
             this.txt_ded_otros.Size = new System.Drawing.Size(234, 34);
             this.txt_ded_otros.TabIndex = 53;
             // 
-            // txt_isr
+            // txt_iprestamos_anticipos
             // 
-            this.txt_isr.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_isr.Location = new System.Drawing.Point(854, 172);
-            this.txt_isr.Name = "txt_isr";
-            this.txt_isr.ReadOnly = true;
-            this.txt_isr.Size = new System.Drawing.Size(234, 34);
-            this.txt_isr.TabIndex = 52;
+            this.txt_iprestamos_anticipos.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_iprestamos_anticipos.Location = new System.Drawing.Point(854, 172);
+            this.txt_iprestamos_anticipos.Name = "txt_iprestamos_anticipos";
+            this.txt_iprestamos_anticipos.Size = new System.Drawing.Size(234, 34);
+            this.txt_iprestamos_anticipos.TabIndex = 52;
             // 
-            // txt_igss
+            // txt_impuestos
             // 
-            this.txt_igss.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_igss.Location = new System.Drawing.Point(852, 68);
-            this.txt_igss.Name = "txt_igss";
-            this.txt_igss.ReadOnly = true;
-            this.txt_igss.Size = new System.Drawing.Size(234, 34);
-            this.txt_igss.TabIndex = 51;
+            this.txt_impuestos.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_impuestos.Location = new System.Drawing.Point(852, 68);
+            this.txt_impuestos.Name = "txt_impuestos";
+            this.txt_impuestos.ReadOnly = true;
+            this.txt_impuestos.Size = new System.Drawing.Size(234, 34);
+            this.txt_impuestos.TabIndex = 51;
             // 
             // label9
             // 
@@ -189,10 +189,11 @@ namespace CapaVista
             // txt_sueldoB_empleado
             // 
             this.txt_sueldoB_empleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_sueldoB_empleado.Location = new System.Drawing.Point(258, 219);
+            this.txt_sueldoB_empleado.Location = new System.Drawing.Point(258, 259);
             this.txt_sueldoB_empleado.Name = "txt_sueldoB_empleado";
             this.txt_sueldoB_empleado.Size = new System.Drawing.Size(234, 34);
             this.txt_sueldoB_empleado.TabIndex = 45;
+            this.txt_sueldoB_empleado.Tag = "emp_sueldo";
             // 
             // label4
             // 
@@ -211,6 +212,7 @@ namespace CapaVista
             this.txt_apellido_empleado.Name = "txt_apellido_empleado";
             this.txt_apellido_empleado.Size = new System.Drawing.Size(234, 34);
             this.txt_apellido_empleado.TabIndex = 43;
+            this.txt_apellido_empleado.Tag = "emp_apellido";
             // 
             // label3
             // 
@@ -249,6 +251,7 @@ namespace CapaVista
             this.txt_nombre_empleado.Name = "txt_nombre_empleado";
             this.txt_nombre_empleado.Size = new System.Drawing.Size(234, 34);
             this.txt_nombre_empleado.TabIndex = 39;
+            this.txt_nombre_empleado.Tag = "emp_nombre";
             // 
             // txt_id_empleado
             // 
@@ -257,6 +260,7 @@ namespace CapaVista
             this.txt_id_empleado.Name = "txt_id_empleado";
             this.txt_id_empleado.Size = new System.Drawing.Size(127, 34);
             this.txt_id_empleado.TabIndex = 38;
+            this.txt_id_empleado.Tag = "Pk_id_empleado";
             // 
             // dataGridView1
             // 
@@ -278,15 +282,17 @@ namespace CapaVista
             this.btn_buscar.TabIndex = 74;
             this.btn_buscar.Text = "Buscar";
             this.btn_buscar.UseVisualStyleBackColor = true;
+            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
             // 
-            // textBox1
+            // txt_cargo_empleado
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(257, 264);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(234, 34);
-            this.textBox1.TabIndex = 76;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txt_cargo_empleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_cargo_empleado.Location = new System.Drawing.Point(258, 219);
+            this.txt_cargo_empleado.Name = "txt_cargo_empleado";
+            this.txt_cargo_empleado.Size = new System.Drawing.Size(234, 34);
+            this.txt_cargo_empleado.TabIndex = 76;
+            this.txt_cargo_empleado.Tag = "cargo";
+            this.txt_cargo_empleado.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label5
             // 
@@ -299,14 +305,13 @@ namespace CapaVista
             this.label5.Text = "Sueldo Base";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // textBox2
+            // txt_deduccion
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(854, 218);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(234, 34);
-            this.textBox2.TabIndex = 78;
+            this.txt_deduccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_deduccion.Location = new System.Drawing.Point(854, 218);
+            this.txt_deduccion.Name = "txt_deduccion";
+            this.txt_deduccion.Size = new System.Drawing.Size(234, 34);
+            this.txt_deduccion.TabIndex = 78;
             // 
             // label10
             // 
@@ -318,13 +323,13 @@ namespace CapaVista
             this.label10.TabIndex = 77;
             this.label10.Text = "Ded1";
             // 
-            // textBox3
+            // txt_seguro_medico
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(853, 275);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(234, 34);
-            this.textBox3.TabIndex = 80;
+            this.txt_seguro_medico.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_seguro_medico.Location = new System.Drawing.Point(853, 275);
+            this.txt_seguro_medico.Name = "txt_seguro_medico";
+            this.txt_seguro_medico.Size = new System.Drawing.Size(234, 34);
+            this.txt_seguro_medico.TabIndex = 80;
             // 
             // label11
             // 
@@ -336,14 +341,13 @@ namespace CapaVista
             this.label11.TabIndex = 79;
             this.label11.Text = "Seguro Medico";
             // 
-            // textBox4
+            // txt_seguro_pensiones
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(852, 120);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(234, 34);
-            this.textBox4.TabIndex = 82;
+            this.txt_seguro_pensiones.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_seguro_pensiones.Location = new System.Drawing.Point(852, 120);
+            this.txt_seguro_pensiones.Name = "txt_seguro_pensiones";
+            this.txt_seguro_pensiones.Size = new System.Drawing.Size(234, 34);
+            this.txt_seguro_pensiones.TabIndex = 82;
             // 
             // label12
             // 
@@ -361,13 +365,13 @@ namespace CapaVista
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1098, 702);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txt_seguro_pensiones);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txt_seguro_medico);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txt_deduccion);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_cargo_empleado);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btn_buscar);
             this.Controls.Add(this.txt_sueldo_total);
@@ -377,8 +381,8 @@ namespace CapaVista
             this.Controls.Add(this.btn_calcular);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.txt_ded_otros);
-            this.Controls.Add(this.txt_isr);
-            this.Controls.Add(this.txt_igss);
+            this.Controls.Add(this.txt_iprestamos_anticipos);
+            this.Controls.Add(this.txt_impuestos);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -410,8 +414,8 @@ namespace CapaVista
         private System.Windows.Forms.Button btn_calcular;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txt_ded_otros;
-        private System.Windows.Forms.TextBox txt_isr;
-        private System.Windows.Forms.TextBox txt_igss;
+        private System.Windows.Forms.TextBox txt_iprestamos_anticipos;
+        private System.Windows.Forms.TextBox txt_impuestos;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
@@ -426,13 +430,13 @@ namespace CapaVista
         private System.Windows.Forms.TextBox txt_id_empleado;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btn_buscar;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_cargo_empleado;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_deduccion;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_seguro_medico;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txt_seguro_pensiones;
         private System.Windows.Forms.Label label12;
     }
 }
