@@ -14,5 +14,10 @@ namespace CapaVistaBancos
         {
             this.Close();
         }
+
+        private void dgv_vistaTransacciones_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

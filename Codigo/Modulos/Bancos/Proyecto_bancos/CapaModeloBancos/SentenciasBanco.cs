@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace CapaModeloBancos
 {
-    class SentenciasBanco
+    public class SentenciasBanco
     {
+
+       
     }
 }

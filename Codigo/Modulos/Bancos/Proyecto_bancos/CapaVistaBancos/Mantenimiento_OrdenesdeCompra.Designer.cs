@@ -46,7 +46,9 @@ namespace CapaVistaBancos
             this.label7 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.btn_salir_dispo = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -56,7 +58,7 @@ namespace CapaVistaBancos
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(60, 262);
+            this.label1.Location = new System.Drawing.Point(36, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(123, 20);
             this.label1.TabIndex = 0;
@@ -69,7 +71,7 @@ namespace CapaVistaBancos
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(60, 303);
+            this.label2.Location = new System.Drawing.Point(36, 78);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(158, 20);
             this.label2.TabIndex = 1;
@@ -82,7 +84,7 @@ namespace CapaVistaBancos
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(60, 351);
+            this.label3.Location = new System.Drawing.Point(36, 126);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(180, 20);
             this.label3.TabIndex = 2;
@@ -95,7 +97,7 @@ namespace CapaVistaBancos
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(60, 398);
+            this.label4.Location = new System.Drawing.Point(36, 173);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 20);
             this.label4.TabIndex = 3;
@@ -107,7 +109,7 @@ namespace CapaVistaBancos
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_idauto.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_idauto.Location = new System.Drawing.Point(246, 256);
+            this.txt_idauto.Location = new System.Drawing.Point(222, 31);
             this.txt_idauto.Name = "txt_idauto";
             this.txt_idauto.Size = new System.Drawing.Size(177, 26);
             this.txt_idauto.TabIndex = 4;
@@ -118,7 +120,7 @@ namespace CapaVistaBancos
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_nombrecompra.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nombrecompra.Location = new System.Drawing.Point(246, 297);
+            this.txt_nombrecompra.Location = new System.Drawing.Point(222, 72);
             this.txt_nombrecompra.Name = "txt_nombrecompra";
             this.txt_nombrecompra.Size = new System.Drawing.Size(177, 26);
             this.txt_nombrecompra.TabIndex = 5;
@@ -129,7 +131,7 @@ namespace CapaVistaBancos
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_nombrepro.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nombrepro.Location = new System.Drawing.Point(246, 345);
+            this.txt_nombrepro.Location = new System.Drawing.Point(222, 120);
             this.txt_nombrepro.Name = "txt_nombrepro";
             this.txt_nombrepro.Size = new System.Drawing.Size(177, 26);
             this.txt_nombrepro.TabIndex = 6;
@@ -151,7 +153,7 @@ namespace CapaVistaBancos
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(54, 438);
+            this.dataGridView1.Location = new System.Drawing.Point(30, 213);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -163,7 +165,7 @@ namespace CapaVistaBancos
             this.txt_monto.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_monto.Location = new System.Drawing.Point(246, 395);
+            this.txt_monto.Location = new System.Drawing.Point(222, 170);
             this.txt_monto.Name = "txt_monto";
             this.txt_monto.Size = new System.Drawing.Size(177, 22);
             this.txt_monto.TabIndex = 11;
@@ -175,7 +177,7 @@ namespace CapaVistaBancos
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(507, 262);
+            this.label5.Location = new System.Drawing.Point(483, 37);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(100, 20);
             this.label5.TabIndex = 12;
@@ -188,7 +190,7 @@ namespace CapaVistaBancos
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(507, 328);
+            this.label6.Location = new System.Drawing.Point(483, 103);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(127, 20);
             this.label6.TabIndex = 13;
@@ -199,7 +201,7 @@ namespace CapaVistaBancos
             this.txt_descripcion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_descripcion.Location = new System.Drawing.Point(640, 256);
+            this.txt_descripcion.Location = new System.Drawing.Point(616, 31);
             this.txt_descripcion.Multiline = true;
             this.txt_descripcion.Name = "txt_descripcion";
             this.txt_descripcion.Size = new System.Drawing.Size(177, 58);
@@ -210,7 +212,7 @@ namespace CapaVistaBancos
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(641, 328);
+            this.textBox1.Location = new System.Drawing.Point(617, 103);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(176, 22);
             this.textBox1.TabIndex = 15;
@@ -222,7 +224,7 @@ namespace CapaVistaBancos
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(507, 371);
+            this.label7.Location = new System.Drawing.Point(483, 146);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(131, 20);
             this.label7.TabIndex = 16;
@@ -233,7 +235,7 @@ namespace CapaVistaBancos
             this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(640, 371);
+            this.textBox2.Location = new System.Drawing.Point(616, 146);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(176, 22);
             this.textBox2.TabIndex = 17;
@@ -256,35 +258,47 @@ namespace CapaVistaBancos
             this.btn_salir_dispo.UseVisualStyleBackColor = false;
             this.btn_salir_dispo.Click += new System.EventHandler(this.btn_salir_dispo_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txt_idauto);
+            this.groupBox1.Controls.Add(this.txt_descripcion);
+            this.groupBox1.Controls.Add(this.txt_nombrecompra);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.txt_nombrepro);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.txt_monto);
+            this.groupBox1.Location = new System.Drawing.Point(37, 238);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1001, 421);
+            this.groupBox1.TabIndex = 86;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "orden de compra";
+            // 
             // Mantenimiento_OrdenesdeCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(161)))), ((int)(((byte)(116)))));
             this.ClientSize = new System.Drawing.Size(1069, 803);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_salir_dispo);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.txt_descripcion);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.txt_monto);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.navegador1);
-            this.Controls.Add(this.txt_nombrepro);
-            this.Controls.Add(this.txt_nombrecompra);
-            this.Controls.Add(this.txt_idauto);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1069, 803);
             this.MinimumSize = new System.Drawing.Size(888, 659);
             this.Name = "Mantenimiento_OrdenesdeCompra";
             this.Text = "Mantenimiento Ordenes de Compra";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -309,5 +323,6 @@ namespace CapaVistaBancos
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button btn_salir_dispo;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

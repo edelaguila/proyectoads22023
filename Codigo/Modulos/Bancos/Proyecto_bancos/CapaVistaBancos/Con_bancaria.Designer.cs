@@ -52,8 +52,10 @@ namespace CapaVistaBancos
             this.lbl_notransaccion = new System.Windows.Forms.Label();
             this.lbl_titulo = new System.Windows.Forms.Label();
             this.btn_salir_dispo = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txt_saldoinicial
@@ -61,7 +63,7 @@ namespace CapaVistaBancos
             this.txt_saldoinicial.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_saldoinicial.Location = new System.Drawing.Point(181, 80);
+            this.txt_saldoinicial.Location = new System.Drawing.Point(143, 23);
             this.txt_saldoinicial.Margin = new System.Windows.Forms.Padding(4);
             this.txt_saldoinicial.Name = "txt_saldoinicial";
             this.txt_saldoinicial.Size = new System.Drawing.Size(267, 22);
@@ -73,7 +75,7 @@ namespace CapaVistaBancos
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_saldoinicial.AutoSize = true;
-            this.lbl_saldoinicial.Location = new System.Drawing.Point(61, 84);
+            this.lbl_saldoinicial.Location = new System.Drawing.Point(23, 27);
             this.lbl_saldoinicial.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_saldoinicial.Name = "lbl_saldoinicial";
             this.lbl_saldoinicial.Size = new System.Drawing.Size(112, 17);
@@ -156,7 +158,7 @@ namespace CapaVistaBancos
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rb_incorrecta.AutoSize = true;
-            this.rb_incorrecta.Location = new System.Drawing.Point(702, 139);
+            this.rb_incorrecta.Location = new System.Drawing.Point(664, 82);
             this.rb_incorrecta.Margin = new System.Windows.Forms.Padding(4);
             this.rb_incorrecta.Name = "rb_incorrecta";
             this.rb_incorrecta.Size = new System.Drawing.Size(141, 21);
@@ -171,7 +173,7 @@ namespace CapaVistaBancos
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rb_correcta.AutoSize = true;
-            this.rb_correcta.Location = new System.Drawing.Point(526, 139);
+            this.rb_correcta.Location = new System.Drawing.Point(488, 82);
             this.rb_correcta.Margin = new System.Windows.Forms.Padding(4);
             this.rb_correcta.Name = "rb_correcta";
             this.rb_correcta.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -186,7 +188,7 @@ namespace CapaVistaBancos
             this.btn_conciliar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_conciliar.Location = new System.Drawing.Point(526, 168);
+            this.btn_conciliar.Location = new System.Drawing.Point(488, 111);
             this.btn_conciliar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_conciliar.Name = "btn_conciliar";
             this.btn_conciliar.Size = new System.Drawing.Size(341, 43);
@@ -200,7 +202,7 @@ namespace CapaVistaBancos
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_tipopago.AutoSize = true;
-            this.lbl_tipopago.Location = new System.Drawing.Point(522, 96);
+            this.lbl_tipopago.Location = new System.Drawing.Point(484, 39);
             this.lbl_tipopago.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_tipopago.Name = "lbl_tipopago";
             this.lbl_tipopago.Size = new System.Drawing.Size(72, 17);
@@ -213,7 +215,7 @@ namespace CapaVistaBancos
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cbTipoPago.FormattingEnabled = true;
-            this.cbTipoPago.Location = new System.Drawing.Point(604, 93);
+            this.cbTipoPago.Location = new System.Drawing.Point(566, 36);
             this.cbTipoPago.Margin = new System.Windows.Forms.Padding(4);
             this.cbTipoPago.Name = "cbTipoPago";
             this.cbTipoPago.Size = new System.Drawing.Size(262, 24);
@@ -224,7 +226,7 @@ namespace CapaVistaBancos
             this.txt_banco.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_banco.Location = new System.Drawing.Point(181, 215);
+            this.txt_banco.Location = new System.Drawing.Point(143, 158);
             this.txt_banco.Margin = new System.Windows.Forms.Padding(4);
             this.txt_banco.Name = "txt_banco";
             this.txt_banco.Size = new System.Drawing.Size(267, 22);
@@ -236,7 +238,7 @@ namespace CapaVistaBancos
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_banco.AutoSize = true;
-            this.lbl_banco.Location = new System.Drawing.Point(66, 215);
+            this.lbl_banco.Location = new System.Drawing.Point(28, 158);
             this.lbl_banco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_banco.Name = "lbl_banco";
             this.lbl_banco.Size = new System.Drawing.Size(48, 17);
@@ -249,7 +251,7 @@ namespace CapaVistaBancos
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_cuenta.FormattingEnabled = true;
-            this.txt_cuenta.Location = new System.Drawing.Point(181, 178);
+            this.txt_cuenta.Location = new System.Drawing.Point(143, 121);
             this.txt_cuenta.Margin = new System.Windows.Forms.Padding(4);
             this.txt_cuenta.Name = "txt_cuenta";
             this.txt_cuenta.Size = new System.Drawing.Size(267, 24);
@@ -260,7 +262,7 @@ namespace CapaVistaBancos
             this.txt_valor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_valor.Location = new System.Drawing.Point(181, 146);
+            this.txt_valor.Location = new System.Drawing.Point(143, 89);
             this.txt_valor.Margin = new System.Windows.Forms.Padding(4);
             this.txt_valor.Name = "txt_valor";
             this.txt_valor.Size = new System.Drawing.Size(267, 22);
@@ -271,7 +273,7 @@ namespace CapaVistaBancos
             this.txt_transaccion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_transaccion.Location = new System.Drawing.Point(181, 112);
+            this.txt_transaccion.Location = new System.Drawing.Point(143, 55);
             this.txt_transaccion.Margin = new System.Windows.Forms.Padding(4);
             this.txt_transaccion.Name = "txt_transaccion";
             this.txt_transaccion.Size = new System.Drawing.Size(267, 22);
@@ -284,7 +286,7 @@ namespace CapaVistaBancos
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_cuenta.AutoSize = true;
-            this.lbl_cuenta.Location = new System.Drawing.Point(66, 181);
+            this.lbl_cuenta.Location = new System.Drawing.Point(28, 124);
             this.lbl_cuenta.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_cuenta.Name = "lbl_cuenta";
             this.lbl_cuenta.Size = new System.Drawing.Size(53, 17);
@@ -297,7 +299,7 @@ namespace CapaVistaBancos
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_valor.AutoSize = true;
-            this.lbl_valor.Location = new System.Drawing.Point(66, 149);
+            this.lbl_valor.Location = new System.Drawing.Point(28, 92);
             this.lbl_valor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_valor.Name = "lbl_valor";
             this.lbl_valor.Size = new System.Drawing.Size(41, 17);
@@ -310,7 +312,7 @@ namespace CapaVistaBancos
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_notransaccion.AutoSize = true;
-            this.lbl_notransaccion.Location = new System.Drawing.Point(66, 116);
+            this.lbl_notransaccion.Location = new System.Drawing.Point(28, 59);
             this.lbl_notransaccion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_notransaccion.Name = "lbl_notransaccion";
             this.lbl_notransaccion.Size = new System.Drawing.Size(104, 17);
@@ -349,34 +351,45 @@ namespace CapaVistaBancos
             this.btn_salir_dispo.UseVisualStyleBackColor = false;
             this.btn_salir_dispo.Click += new System.EventHandler(this.btn_salir_dispo_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txt_valor);
+            this.groupBox1.Controls.Add(this.lbl_notransaccion);
+            this.groupBox1.Controls.Add(this.txt_saldoinicial);
+            this.groupBox1.Controls.Add(this.lbl_valor);
+            this.groupBox1.Controls.Add(this.lbl_saldoinicial);
+            this.groupBox1.Controls.Add(this.lbl_cuenta);
+            this.groupBox1.Controls.Add(this.txt_transaccion);
+            this.groupBox1.Controls.Add(this.txt_cuenta);
+            this.groupBox1.Controls.Add(this.lbl_banco);
+            this.groupBox1.Controls.Add(this.txt_banco);
+            this.groupBox1.Controls.Add(this.cbTipoPago);
+            this.groupBox1.Controls.Add(this.lbl_tipopago);
+            this.groupBox1.Controls.Add(this.rb_incorrecta);
+            this.groupBox1.Controls.Add(this.btn_conciliar);
+            this.groupBox1.Controls.Add(this.rb_correcta);
+            this.groupBox1.Location = new System.Drawing.Point(103, 68);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(847, 190);
+            this.groupBox1.TabIndex = 86;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Conciliación";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
             // Con_bancaria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(161)))), ((int)(((byte)(116)))));
             this.ClientSize = new System.Drawing.Size(1069, 756);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_salir_dispo);
-            this.Controls.Add(this.txt_saldoinicial);
-            this.Controls.Add(this.lbl_saldoinicial);
             this.Controls.Add(this.lbl_valbanco);
             this.Controls.Add(this.lbl_titulobanco);
             this.Controls.Add(this.lbl_vallibro);
             this.Controls.Add(this.lbl_titulolibbanco);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.rb_incorrecta);
-            this.Controls.Add(this.rb_correcta);
-            this.Controls.Add(this.btn_conciliar);
-            this.Controls.Add(this.lbl_tipopago);
-            this.Controls.Add(this.cbTipoPago);
-            this.Controls.Add(this.txt_banco);
-            this.Controls.Add(this.lbl_banco);
-            this.Controls.Add(this.txt_cuenta);
-            this.Controls.Add(this.txt_valor);
-            this.Controls.Add(this.txt_transaccion);
-            this.Controls.Add(this.lbl_cuenta);
-            this.Controls.Add(this.lbl_valor);
-            this.Controls.Add(this.lbl_notransaccion);
             this.Controls.Add(this.lbl_titulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -387,6 +400,8 @@ namespace CapaVistaBancos
             this.Load += new System.EventHandler(this.Con_bancaria_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -417,5 +432,6 @@ namespace CapaVistaBancos
         private System.Windows.Forms.Label lbl_notransaccion;
         private System.Windows.Forms.Label lbl_titulo;
         private System.Windows.Forms.Button btn_salir_dispo;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

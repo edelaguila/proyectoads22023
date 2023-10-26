@@ -36,7 +36,9 @@ namespace CapaVistaBancos
             this.txt_nombrebanco = new System.Windows.Forms.TextBox();
             this.navegador1 = new CapaVista.Navegador();
             this.btn_salir_dispo = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -46,7 +48,7 @@ namespace CapaVistaBancos
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(370, 269);
+            this.label1.Location = new System.Drawing.Point(20, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 20);
             this.label1.TabIndex = 0;
@@ -59,7 +61,7 @@ namespace CapaVistaBancos
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(370, 313);
+            this.label2.Location = new System.Drawing.Point(20, 65);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(125, 20);
             this.label2.TabIndex = 1;
@@ -72,7 +74,7 @@ namespace CapaVistaBancos
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(362, 360);
+            this.dataGridView1.Location = new System.Drawing.Point(9, 115);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -85,9 +87,9 @@ namespace CapaVistaBancos
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_idbanco.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_idbanco.Location = new System.Drawing.Point(506, 269);
+            this.txt_idbanco.Location = new System.Drawing.Point(156, 21);
             this.txt_idbanco.Name = "txt_idbanco";
-            this.txt_idbanco.Size = new System.Drawing.Size(188, 26);
+            this.txt_idbanco.Size = new System.Drawing.Size(204, 26);
             this.txt_idbanco.TabIndex = 3;
             // 
             // txt_nombrebanco
@@ -96,9 +98,9 @@ namespace CapaVistaBancos
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_nombrebanco.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nombrebanco.Location = new System.Drawing.Point(506, 313);
+            this.txt_nombrebanco.Location = new System.Drawing.Point(156, 65);
             this.txt_nombrebanco.Name = "txt_nombrebanco";
-            this.txt_nombrebanco.Size = new System.Drawing.Size(188, 26);
+            this.txt_nombrebanco.Size = new System.Drawing.Size(204, 26);
             this.txt_nombrebanco.TabIndex = 4;
             // 
             // navegador1
@@ -130,25 +132,37 @@ namespace CapaVistaBancos
             this.btn_salir_dispo.UseVisualStyleBackColor = false;
             this.btn_salir_dispo.Click += new System.EventHandler(this.btn_salir_dispo_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txt_idbanco);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.txt_nombrebanco);
+            this.groupBox1.Location = new System.Drawing.Point(320, 248);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(379, 301);
+            this.groupBox1.TabIndex = 86;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Agregar banco";
+            // 
             // Mantenimiento_Agregar_Bancos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(161)))), ((int)(((byte)(116)))));
             this.ClientSize = new System.Drawing.Size(1069, 756);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_salir_dispo);
             this.Controls.Add(this.navegador1);
-            this.Controls.Add(this.txt_nombrebanco);
-            this.Controls.Add(this.txt_idbanco);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1069, 803);
             this.MinimumSize = new System.Drawing.Size(888, 659);
             this.Name = "Mantenimiento_Agregar_Bancos";
             this.Text = "Mantenimiento Agregar Bancos";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,5 +177,6 @@ namespace CapaVistaBancos
         private System.Windows.Forms.TextBox txt_nombrebanco;
         private CapaVista.Navegador navegador1;
         private System.Windows.Forms.Button btn_salir_dispo;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
