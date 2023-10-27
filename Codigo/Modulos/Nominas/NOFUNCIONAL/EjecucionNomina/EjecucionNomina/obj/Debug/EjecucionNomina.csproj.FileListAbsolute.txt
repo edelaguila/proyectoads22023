@@ -65,3 +65,27 @@ C:\Users\oteke\OneDrive\Escritorio\NOMINAS 4.0\proyectoads22023\Codigo\Modulos\N
 C:\Users\oteke\OneDrive\Escritorio\NOMINAS 4.0\proyectoads22023\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\obj\Debug\EjecucionNomina.exe
 C:\Users\oteke\OneDrive\Escritorio\NOMINAS 4.0\proyectoads22023\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\obj\Debug\EjecucionNomina.pdb
 C:\Users\oteke\OneDrive\Escritorio\NOMINAS 4.0\proyectoads22023\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\Modelo_Seguridad.dll
+C:\Users\oteke\OneDrive\Escritorio\GIT1\proyectoads22023\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\EjecucionNomina.exe.config
+C:\Users\oteke\OneDrive\Escritorio\GIT1\proyectoads22023\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\EjecucionNomina.exe
+C:\Users\oteke\OneDrive\Escritorio\GIT1\proyectoads22023\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\EjecucionNomina.pdb
+C:\Users\oteke\OneDrive\Escritorio\GIT1\proyectoads22023\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\CapaVistaNomina.dll
+C:\Users\oteke\OneDrive\Escritorio\GIT1\proyectoads22023\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\CapaControladorNav.dll
+C:\Users\oteke\OneDrive\Escritorio\GIT1\proyectoads22023\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\Seguridad_Controlador.dll
+C:\Users\oteke\OneDrive\Escritorio\GIT1\proyectoads22023\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\CapaControladorNomina.dll
+C:\Users\oteke\OneDrive\Escritorio\GIT1\proyectoads22023\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\CapaModeloNomina.dll
+C:\Users\oteke\OneDrive\Escritorio\GIT1\proyectoads22023\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\CapaModeloNav.dll
+C:\Users\oteke\OneDrive\Escritorio\GIT1\proyectoads22023\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\Modelo_Seguridad.dll
+C:\Users\oteke\OneDrive\Escritorio\GIT1\proyectoads22023\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\CapaVistaNav.pdb
+C:\Users\oteke\OneDrive\Escritorio\GIT1\proyectoads22023\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\CapaVistaNomina.pdb
+C:\Users\oteke\OneDrive\Escritorio\GIT1\proyectoads22023\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\CapaControladorNav.pdb
+C:\Users\oteke\OneDrive\Escritorio\GIT1\proyectoads22023\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\CapaControladorNomina.pdb
+C:\Users\oteke\OneDrive\Escritorio\GIT1\proyectoads22023\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\CapaModeloNomina.pdb
+C:\Users\oteke\OneDrive\Escritorio\GIT1\proyectoads22023\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\bin\Debug\CapaModeloNav.pdb
+C:\Users\oteke\OneDrive\Escritorio\GIT1\proyectoads22023\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\obj\Debug\EjecucionNomina.csproj.AssemblyReference.cache
+C:\Users\oteke\OneDrive\Escritorio\GIT1\proyectoads22023\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\obj\Debug\EjecucionNomina.frm_Ejecutable.resources
+C:\Users\oteke\OneDrive\Escritorio\GIT1\proyectoads22023\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\obj\Debug\EjecucionNomina.Properties.Resources.resources
+C:\Users\oteke\OneDrive\Escritorio\GIT1\proyectoads22023\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\obj\Debug\EjecucionNomina.csproj.GenerateResource.cache
+C:\Users\oteke\OneDrive\Escritorio\GIT1\proyectoads22023\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\obj\Debug\EjecucionNomina.csproj.CoreCompileInputs.cache
+C:\Users\oteke\OneDrive\Escritorio\GIT1\proyectoads22023\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\obj\Debug\EjecucionNomina.csproj.CopyComplete
+C:\Users\oteke\OneDrive\Escritorio\GIT1\proyectoads22023\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\obj\Debug\EjecucionNomina.exe
+C:\Users\oteke\OneDrive\Escritorio\GIT1\proyectoads22023\Codigo\Modulos\Nominas\NOFUNCIONAL\EjecucionNomina\EjecucionNomina\obj\Debug\EjecucionNomina.pdb
