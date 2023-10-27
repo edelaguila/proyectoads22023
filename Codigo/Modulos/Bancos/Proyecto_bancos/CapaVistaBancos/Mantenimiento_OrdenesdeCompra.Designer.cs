@@ -36,7 +36,6 @@ namespace CapaVistaBancos
             this.txt_idauto = new System.Windows.Forms.TextBox();
             this.txt_nombrecompra = new System.Windows.Forms.TextBox();
             this.txt_nombrepro = new System.Windows.Forms.TextBox();
-            this.navegador1 = new CapaVista.Navegador();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txt_monto = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -138,14 +137,6 @@ namespace CapaVistaBancos
             // 
             // navegador1
             // 
-            this.navegador1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.navegador1.Location = new System.Drawing.Point(23, 135);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1001, 96);
-            this.navegador1.TabIndex = 9;
             // 
             // dataGridView1
             // 
@@ -290,7 +281,6 @@ namespace CapaVistaBancos
             this.ClientSize = new System.Drawing.Size(1069, 803);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_salir_dispo);
-            this.Controls.Add(this.navegador1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1069, 803);
             this.MinimumSize = new System.Drawing.Size(888, 659);
@@ -313,7 +303,6 @@ namespace CapaVistaBancos
         private System.Windows.Forms.TextBox txt_idauto;
         private System.Windows.Forms.TextBox txt_nombrecompra;
         private System.Windows.Forms.TextBox txt_nombrepro;
-        private CapaVista.Navegador navegador1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txt_monto;
         private System.Windows.Forms.Label label5;

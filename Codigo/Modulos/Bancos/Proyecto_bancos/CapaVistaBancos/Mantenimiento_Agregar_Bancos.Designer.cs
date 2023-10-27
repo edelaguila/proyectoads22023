@@ -34,7 +34,6 @@ namespace CapaVistaBancos
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txt_idbanco = new System.Windows.Forms.TextBox();
             this.txt_nombrebanco = new System.Windows.Forms.TextBox();
-            this.navegador1 = new CapaVista.Navegador();
             this.btn_salir_dispo = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -105,14 +104,7 @@ namespace CapaVistaBancos
             // 
             // navegador1
             // 
-            this.navegador1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.navegador1.Location = new System.Drawing.Point(32, 145);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1019, 96);
-            this.navegador1.TabIndex = 5;
+
             // 
             // btn_salir_dispo
             // 
@@ -154,7 +146,6 @@ namespace CapaVistaBancos
             this.ClientSize = new System.Drawing.Size(1069, 756);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_salir_dispo);
-            this.Controls.Add(this.navegador1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1069, 803);
             this.MinimumSize = new System.Drawing.Size(888, 659);
@@ -175,7 +166,6 @@ namespace CapaVistaBancos
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txt_idbanco;
         private System.Windows.Forms.TextBox txt_nombrebanco;
-        private CapaVista.Navegador navegador1;
         private System.Windows.Forms.Button btn_salir_dispo;
         private System.Windows.Forms.GroupBox groupBox1;
     }
