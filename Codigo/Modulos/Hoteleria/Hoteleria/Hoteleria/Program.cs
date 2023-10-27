@@ -14,7 +14,7 @@ namespace Hoteleria
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MDIHoteleria());
+            Application.Run(new TipoHabitacion());
         }
     }
 }

@@ -99,6 +99,12 @@
     <Compile Include="Salon.Designer.cs">
       <DependentUpon>Salon.cs</DependentUpon>
     </Compile>
+    <Compile Include="TipoHabitacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoHabitacion.Designer.cs">
+      <DependentUpon>TipoHabitacion.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="GestionHabitaciones.resx">
       <DependentUpon>GestionHabitaciones.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Salon.resx">
       <DependentUpon>Salon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipoHabitacion.resx">
+      <DependentUpon>TipoHabitacion.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
