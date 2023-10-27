@@ -49,7 +49,7 @@ namespace CapaVistaBancos
         private void Mov_bancarios_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'dataSet3.tbl_mantenimientos_tipo_movimiento' Puede moverla o quitarla según sea necesario.
-            this.tbl_mantenimientos_tipo_movimientoTableAdapter2.Fill(this.dataSet3.tbl_mantenimientos_tipo_movimiento);
+            //this.tbl_mantenimientos_tipo_movimientoTableAdapter2.Fill(this.dataSet3.tbl_mantenimientos_tipo_movimiento);
             // TODO: esta línea de código carga datos en la tabla 'dataSet2.tbl_mantenimientos_tipo_movimiento' Puede moverla o quitarla según sea necesario.
             this.tbl_mantenimientos_tipo_movimientoTableAdapter1.Fill(this.dataSet2.tbl_mantenimientos_tipo_movimiento);
 
