@@ -84,3 +84,4 @@ C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyect
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\Hoteleria\bin\Debug\CapaVistaNav.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\Hoteleria\bin\Debug\CapaControladorNav.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\Hoteleria\bin\Debug\CapaModeloNav.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\Hoteleria\obj\Debug\Hoteleria.csproj.SuggestedBindingRedirects.cache
