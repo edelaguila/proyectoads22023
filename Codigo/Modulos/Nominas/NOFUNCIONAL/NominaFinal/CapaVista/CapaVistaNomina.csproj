@@ -41,8 +41,11 @@
     <Reference Include="CapaVistaNav">
       <HintPath>..\..\..\..\..\Componentes\Navegador\CapaVista\bin\Release\CapaVistaNav.dll</HintPath>
     </Reference>
+    <Reference Include="Modelo_Seguridad">
+      <HintPath>..\..\..\..\..\..\..\..\Modelo_Seguridad.dll</HintPath>
+    </Reference>
     <Reference Include="Seguridad_Controlador">
-      <HintPath>..\..\..\..\Prototipo\Prototipo\Capa_vista\bin\Debug\Seguridad_Controlador.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\Seguridad_Controlador.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -99,6 +102,11 @@
       <DependentUpon>MenuNomina.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frm_menu.resx">
@@ -121,6 +129,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuNomina.resx">
       <DependentUpon>MenuNomina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
