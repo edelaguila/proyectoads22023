@@ -39,7 +39,6 @@ C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyect
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\Hoteleria\obj\Debug\Hoteleria.exe
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\Hoteleria\obj\Debug\Hoteleria.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\Hoteleria\obj\Debug\Vista_PrototipoMenu.MDIHoteleria.resources
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\Hoteleria\bin\Debug\Hoteleria.exe.config
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\Hoteleria\bin\Debug\Hoteleria.exe
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\Hoteleria\bin\Debug\Hoteleria.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Modulos\Hoteleria\Hoteleria\Hoteleria\bin\Debug\ControladorHoteleria.dll

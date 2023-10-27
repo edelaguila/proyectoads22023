@@ -40,7 +40,7 @@ namespace CapaVista
             //MessageBox.Show("Realizando bitacora");
         }
 
-        public void _initSeguridad(string idApp = "1000", string user = "12345", string pass = "admin")
+        public void _initSeguridad(string idApp = "1000", string user = "admin", string pass = "12345")
         {
             this.idApp = idApp;
             string encriptado = this.SetHash(pass);

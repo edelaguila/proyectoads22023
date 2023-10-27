@@ -16,7 +16,7 @@ namespace Hoteleria
         {
             InitializeComponent();
             this.navegador.config("tbl_cliente", this, "");
-
+            this.navegador._initSeguridad();
         }
     }
 }
