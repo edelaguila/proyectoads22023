@@ -11,13 +11,11 @@ using Seguridad_Controlador;
 
 namespace Vista_PrototipoMenu
 {
-    public partial class MenuGestionComercial : Form
+    public partial class MDIComprasyCXP : Form
     {
-
         Controlador cn = new Controlador();
 
-        //Método que guarda en un arreglo de tipo botón los botones que se tienen en el formulario. Se les da permiso a los diferentes botones de acuerdo a la función que realice este
-        public MenuGestionComercial()
+        public MDIComprasyCXP()
         {
             InitializeComponent();
             //Control para habilitar opciones del menu
@@ -26,13 +24,15 @@ namespace Vista_PrototipoMenu
             //cn.deshabilitarApps(apps);
             //Llamada metodo de libreria Controlador del modulo de Seguridad
             //cn.getAccesoApp(1002, apps[0]);
-
         }
+
         
+
+
         //Validaciones que si son visibles los panales los oculta
         private void hideSubMenu()
         {
-            
+
             if (panelTranportes.Visible == true)
                 panelTranportes.Visible = false;
             if (PanelAuditoria.Visible == true)
@@ -54,54 +54,16 @@ namespace Vista_PrototipoMenu
                 subMenu.Visible = false;
         }
         //Método que muestra el panel indicado
-        private void btnmanteniminetos_Click(object sender, EventArgs e)
-        {
-            showSubMenu(panelTranportes);
-        }
-        //Método que muestra el panel indicado
-        private void btnProcesos_Click(object sender, EventArgs e)
-        {
-            showSubMenu(PanelAuditoria);
-        }
-        //Método que muestra el panel indicado
-        private void btnSeguridad_Click(object sender, EventArgs e)
-        {
-            showSubMenu(panelayuda);
-        }
-        //Método que muestra el panel indicado
-        private void btnReportes_Click(object sender, EventArgs e)
-        {
-            showSubMenu(panelseguridad);
-        }
-        //Método que muestra el formulario indicado
-        //Método que muestra el formulario indicado
-        private void btnaplicaciones_Click(object sender, EventArgs e)
-        {
-            //Aplicacion b = new Aplicacion();
-            //b.MdiParent = this;
-            //b.Show();
-            //hideSubMenu();
-        }
-        //Método que muestra el formulario indicado
+
 
         private void btninicio_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-        //Método que oculta el formulario
-        private void btnsalir_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-        //Método que muestra el formulario indicado
-        private void btnayuda_Click(object sender, EventArgs e)
-        {
-            Help.ShowHelp(this, "umg.chm");            
-        }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        private void btnmanteniminetos_Click(object sender, EventArgs e)
         {
-
+            showSubMenu(panelTranportes);
         }
 
         private void btnclientes_Click(object sender, EventArgs e)
@@ -128,6 +90,11 @@ namespace Vista_PrototipoMenu
             //hideSubMenu();
         }
 
+        private void btnProcesos_Click(object sender, EventArgs e)
+        {
+            showSubMenu(PanelAuditoria);
+        }
+
         private void btnmovimientocliente_Click(object sender, EventArgs e)
         {
             //MovimientoCliente b = new MovimientoCliente();
@@ -144,30 +111,6 @@ namespace Vista_PrototipoMenu
             //hideSubMenu();
         }
 
-        private void btncotizaciones_Click(object sender, EventArgs e)
-        {
-            //Cotizaciones b = new Cotizaciones();
-            //b.MdiParent = this;
-            //b.Show();
-            //hideSubMenu();
-        }
-
-        private void btnpedido_Click(object sender, EventArgs e)
-        {
-            //Pedido b = new Pedido();
-            //b.MdiParent = this;
-            //b.Show();
-            //hideSubMenu();
-        }
-
-        private void btnfactura_Click(object sender, EventArgs e)
-        {
-            //Factura b = new Factura();
-            //b.MdiParent = this;
-            //b.Show();
-            //hideSubMenu();
-        }
-
         private void btnordenescompras_Click(object sender, EventArgs e)
         {
             //OrdenesCompras b = new OrdenesCompras();
@@ -178,10 +121,30 @@ namespace Vista_PrototipoMenu
 
         private void btncompra_Click(object sender, EventArgs e)
         {
-            //Compra b = new Compra();
+            //Compras b = new Compras();
             //b.MdiParent = this;
             //b.Show();
             //hideSubMenu();
+        }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelseguridad);
+        }
+
+        private void btnSeguridad_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelayuda);
+        }
+
+        private void btnayuda_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "umg.chm");
+        }
+
+        private void btnsalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
