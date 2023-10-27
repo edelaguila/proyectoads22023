@@ -33,6 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CapaVistaNav">
+      <HintPath>..\..\..\..\Componentes\Navegador\CapaVista\bin\Release\CapaVistaNav.dll</HintPath>
+    </Reference>
+    <Reference Include="NavegadorVista">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\..\..\..\Program Files\UMG\Instalador General HSC\NavegadorVista.dll</HintPath>
+    </Reference>
+    <Reference Include="Seguridad_Controlador">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\..\..\..\Program Files\UMG\Instalador General HSC\Seguridad_Controlador.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,22 +55,61 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="GestionHabitaciones.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="GestionHabitaciones.Designer.cs">
+      <DependentUpon>GestionHabitaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionHuespedes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionHuespedes.Designer.cs">
+      <DependentUpon>GestionHuespedes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Habitacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Habitacion.Designer.cs">
+      <DependentUpon>Habitacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIHoteleria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIHoteleria.designer.cs">
+      <DependentUpon>MDIHoteleria.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReservacionSalon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservacionSalon.Designer.cs">
+      <DependentUpon>ReservacionSalon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReservaHabitacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservaHabitacion.Designer.cs">
+      <DependentUpon>ReservaHabitacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Salon.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Salon.Designer.cs">
       <DependentUpon>Salon.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="GestionHabitaciones.resx">
+      <DependentUpon>GestionHabitaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionHuespedes.resx">
+      <DependentUpon>GestionHuespedes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Habitacion.resx">
+      <DependentUpon>Habitacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIHoteleria.resx">
+      <DependentUpon>MDIHoteleria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -73,6 +121,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReservacionSalon.resx">
+      <DependentUpon>ReservacionSalon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservaHabitacion.resx">
+      <DependentUpon>ReservaHabitacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Salon.resx">
       <DependentUpon>Salon.cs</DependentUpon>
     </EmbeddedResource>
@@ -88,6 +142,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\salon2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ControladorHoteleria\ControladorHoteleria.csproj">
+      <Project>{29f0db7d-2bb2-4e28-a489-abe51a5476f9}</Project>
+      <Name>ControladorHoteleria</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\habitacion.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

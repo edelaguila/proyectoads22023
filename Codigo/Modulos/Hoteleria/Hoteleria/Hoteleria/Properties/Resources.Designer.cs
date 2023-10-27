@@ -63,6 +63,16 @@ namespace Hoteleria.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap habitacion {
+            get {
+                object obj = ResourceManager.GetObject("habitacion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap salon2 {
             get {
                 object obj = ResourceManager.GetObject("salon2", resourceCulture);

@@ -253,7 +253,11 @@ namespace CapaVista
                 }
                 else if (control is ComboBox)
                 {
-                    ((ComboBox)control).SelectedIndex = 0;
+                    ComboBox cmb = ((ComboBox)control);
+                    if (cmb.Items.Count > 0)
+                    {
+                        cmb.SelectedIndex = 0;
+                    }
                 }
             }
         }

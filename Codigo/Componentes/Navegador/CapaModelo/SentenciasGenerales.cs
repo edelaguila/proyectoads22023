@@ -12,7 +12,11 @@ namespace CapaModelo
     public class SentenciasGenerales
     {
         protected Conexion conn;
+<<<<<<< HEAD
         private static string baseDatos = "";
+=======
+        private static string baseDatos;
+>>>>>>> Hoteleria
         public SentenciasGenerales()
         {
             this.conn = new Conexion();

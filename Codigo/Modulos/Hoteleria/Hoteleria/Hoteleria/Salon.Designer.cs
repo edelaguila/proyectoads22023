@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,8 +59,7 @@
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 262);
+            this.label2.Location = new System.Drawing.Point(18, 250);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(239, 91);
             this.label2.TabIndex = 2;
@@ -72,18 +72,31 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(256, 389);
+            this.button1.Location = new System.Drawing.Point(241, 389);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 23);
+            this.button1.Size = new System.Drawing.Size(166, 39);
             this.button1.TabIndex = 15;
-            this.button1.Text = "RESERVAR";
+            this.button1.Text = "IR A RESERVACION";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label4.Location = new System.Drawing.Point(14, 362);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(187, 41);
+            this.label4.TabIndex = 50;
+            this.label4.Text = "Q.1025.75";
             // 
             // Salon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(419, 440);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -102,5 +115,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label4;
     }
 }
