@@ -9,7 +9,7 @@ namespace CapaControladorBancos
 {
     public class ControladorBanco
     {
-        private SentenciasBanco sentencias;
+        private SentenciasBanco sentencias ;
 
         public ControladorBanco()
         {

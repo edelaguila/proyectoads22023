@@ -29,5 +29,17 @@ namespace CapaVistaBancos
         {
             this.Close();
         }
+
+        private void cb_transaexis_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Mantenimiento_tipoMov_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'dataSet7.tbl_mantenimientos_tipo_movimiento' Puede moverla o quitarla según sea necesario.
+            this.tbl_mantenimientos_tipo_movimientoTableAdapter.Fill(this.dataSet7.tbl_mantenimientos_tipo_movimiento);
+
+        }
     }
 }
