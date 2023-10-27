@@ -8,6 +8,7 @@ namespace CapaVistaBancos
         public Mantenimiento_tipoMov()
         {
             InitializeComponent();
+            this.navegador1.config("tbl_mantenimientos_tipo_movimiento", this, "");
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -40,6 +41,15 @@ namespace CapaVistaBancos
             // TODO: esta línea de código carga datos en la tabla 'dataSet7.tbl_mantenimientos_tipo_movimiento' Puede moverla o quitarla según sea necesario.
             this.tbl_mantenimientos_tipo_movimientoTableAdapter.Fill(this.dataSet7.tbl_mantenimientos_tipo_movimiento);
 
+        }
+
+        private void txt_estado_TextChanged(object sender, EventArgs e)
+        {
+            TextBox textBox = (TextBox)sender;
+            if (string.IsNullOrEmpty(textBox.Text))
+            {
+                ((TextBox)sender).Text = "1";
+            }
         }
     }
 }

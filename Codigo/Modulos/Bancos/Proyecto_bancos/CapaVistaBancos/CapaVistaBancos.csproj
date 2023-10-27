@@ -34,6 +34,18 @@
     <Reference Include="CapaControladorBancos">
       <HintPath>..\CapaControladorBancos\bin\Debug\CapaControladorBancos.dll</HintPath>
     </Reference>
+    <Reference Include="CapaControladorNav, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Componentes\Navegador\CapaVista\bin\Debug\CapaControladorNav.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaVistaNav, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Componentes\Navegador\CapaVista\bin\Debug\CapaVistaNav.dll</HintPath>
+    </Reference>
+    <Reference Include="Seguridad_Controlador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Componentes\Navegador\CapaVista\bin\Debug\Seguridad_Controlador.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />

@@ -33,12 +33,13 @@ namespace CapaVista
             this.parent = new Form();
             this.utilConsultasI = new utilidadesConsultasI();
             this.cambiarEstado(false);
-            //string encriptado = this.SetHash("12345");
-            //bool login = ctrl_seguridad.validarLogin("admin", encriptado);
+            string encriptado = this.SetHash("12345");
+            bool login = ctrl_seguridad.validarLogin("admin", encriptado);
             //ctrl_seguridad.setBtitacora("7003", "actualizando");
             //ctrl_seguridad.setBtitacora("1000", "actualizando");
+            idApp = "1000";
             //MessageBox.Show("Realizando bitacora");
-            this.loadButtons();
+           // this.loadButtons();
         }
 
         public void loadButtons()
