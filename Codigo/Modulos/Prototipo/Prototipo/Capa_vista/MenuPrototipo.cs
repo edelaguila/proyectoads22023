@@ -11,21 +11,21 @@ using Seguridad_Controlador;
 
 namespace Vista_PrototipoMenu
 {
-    public partial class MenuSeguridad : Form
+    public partial class MenuPrototipo : Form
     {
 
         Controlador cn = new Controlador();
 
         //Método que guarda en un arreglo de tipo botón los botones que se tienen en el formulario. Se les da permiso a los diferentes botones de acuerdo a la función que realice este
-        public MenuSeguridad()
+        public MenuPrototipo()
         {
             InitializeComponent();
             //Control para habilitar opciones del menu
-            //Button[] apps = {btnaplicaciones};
+            Button[] apps = {btnaplicaciones};
             //Llamada metodo de libreria Controlador del modulo de Seguridad
-            //cn.deshabilitarApps(apps);
+            cn.deshabilitarApps(apps);
             //Llamada metodo de libreria Controlador del modulo de Seguridad
-            //cn.getAccesoApp(1002, apps[0]);
+            cn.getAccesoApp(1002, apps[0]);
 
         }
         
@@ -77,10 +77,10 @@ namespace Vista_PrototipoMenu
         //Método que muestra el formulario indicado
         private void btnaplicaciones_Click(object sender, EventArgs e)
         {
-            //Aplicacion b = new Aplicacion();
-            //b.MdiParent = this;
-            //b.Show();
-            //hideSubMenu();
+            frmAplicaciones form = new frmAplicaciones();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
         }
         //Método que muestra el formulario indicado
 
