@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Vista_PrototipoMenu</RootNamespace>
-    <AssemblyName>Vista_PrototipoMenu</AssemblyName>
+    <AssemblyName>Vista_VentasCxcMenu</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
