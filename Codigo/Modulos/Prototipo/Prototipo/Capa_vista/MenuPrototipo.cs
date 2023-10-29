@@ -21,11 +21,13 @@ namespace Vista_PrototipoMenu
         {
             InitializeComponent();
             //Control para habilitar opciones del menu
-            Button[] apps = {btnaplicaciones};
+            Button[] apps = {btnaplicaciones, btnModulos, btnPerfiles};
             //Llamada metodo de libreria Controlador del modulo de Seguridad
             cn.deshabilitarApps(apps);
             //Llamada metodo de libreria Controlador del modulo de Seguridad
             cn.getAccesoApp(1002, apps[0]);
+            cn.getAccesoApp(1003, apps[1]);
+            cn.getAccesoApp(1004, apps[2]);
 
         }
         
@@ -97,6 +99,22 @@ namespace Vista_PrototipoMenu
         private void btnayuda_Click(object sender, EventArgs e)
         {
             Help.ShowHelp(this, "umg.chm");            
+        }
+
+        private void btnModulos_Click(object sender, EventArgs e)
+        {
+            frmModulos form = new frmModulos();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void btnPerfiles_Click(object sender, EventArgs e)
+        {
+            frmPerfiles form = new frmPerfiles();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
         }
     }
 }

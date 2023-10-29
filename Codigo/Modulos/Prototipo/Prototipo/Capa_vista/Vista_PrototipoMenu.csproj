@@ -69,6 +69,18 @@
     <Compile Include="frmAplicaciones.Designer.cs">
       <DependentUpon>frmAplicaciones.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmModulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModulos.Designer.cs">
+      <DependentUpon>frmModulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPerfiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPerfiles.Designer.cs">
+      <DependentUpon>frmPerfiles.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuPrototipo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +97,12 @@
   <ItemGroup>
     <EmbeddedResource Include="frmAplicaciones.resx">
       <DependentUpon>frmAplicaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModulos.resx">
+      <DependentUpon>frmModulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPerfiles.resx">
+      <DependentUpon>frmPerfiles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrototipo.resx">
       <DependentUpon>MenuPrototipo.cs</DependentUpon>

@@ -34,6 +34,7 @@ namespace Vista_PrototipoMenu
             this.btninicio = new System.Windows.Forms.Button();
             this.btnmanteniminetos = new System.Windows.Forms.Button();
             this.panelTranportes = new System.Windows.Forms.Panel();
+            this.btnModulos = new System.Windows.Forms.Button();
             this.btnaplicaciones = new System.Windows.Forms.Button();
             this.btnProcesos = new System.Windows.Forms.Button();
             this.PanelAuditoria = new System.Windows.Forms.Panel();
@@ -44,6 +45,7 @@ namespace Vista_PrototipoMenu
             this.btnayuda = new System.Windows.Forms.Button();
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btnsalir = new System.Windows.Forms.Button();
+            this.btnPerfiles = new System.Windows.Forms.Button();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelTranportes.SuspendLayout();
@@ -115,6 +117,8 @@ namespace Vista_PrototipoMenu
             // panelTranportes
             // 
             this.panelTranportes.BackColor = System.Drawing.Color.LightSlateGray;
+            this.panelTranportes.Controls.Add(this.btnPerfiles);
+            this.panelTranportes.Controls.Add(this.btnModulos);
             this.panelTranportes.Controls.Add(this.btnaplicaciones);
             this.panelTranportes.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTranportes.Location = new System.Drawing.Point(0, 329);
@@ -123,6 +127,23 @@ namespace Vista_PrototipoMenu
             this.panelTranportes.Size = new System.Drawing.Size(348, 231);
             this.panelTranportes.TabIndex = 3;
             this.panelTranportes.Visible = false;
+            // 
+            // btnModulos
+            // 
+            this.btnModulos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnModulos.FlatAppearance.BorderSize = 0;
+            this.btnModulos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModulos.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.btnModulos.Location = new System.Drawing.Point(0, 53);
+            this.btnModulos.Margin = new System.Windows.Forms.Padding(4);
+            this.btnModulos.Name = "btnModulos";
+            this.btnModulos.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btnModulos.Size = new System.Drawing.Size(348, 36);
+            this.btnModulos.TabIndex = 4;
+            this.btnModulos.Text = "MODULOS";
+            this.btnModulos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModulos.UseVisualStyleBackColor = true;
+            this.btnModulos.Click += new System.EventHandler(this.btnModulos_Click);
             // 
             // btnaplicaciones
             // 
@@ -134,7 +155,7 @@ namespace Vista_PrototipoMenu
             this.btnaplicaciones.Margin = new System.Windows.Forms.Padding(4);
             this.btnaplicaciones.Name = "btnaplicaciones";
             this.btnaplicaciones.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
-            this.btnaplicaciones.Size = new System.Drawing.Size(348, 85);
+            this.btnaplicaciones.Size = new System.Drawing.Size(348, 42);
             this.btnaplicaciones.TabIndex = 3;
             this.btnaplicaciones.Text = "APLICACIONES";
             this.btnaplicaciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -298,6 +319,23 @@ namespace Vista_PrototipoMenu
             this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
+            // btnPerfiles
+            // 
+            this.btnPerfiles.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPerfiles.FlatAppearance.BorderSize = 0;
+            this.btnPerfiles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPerfiles.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.btnPerfiles.Location = new System.Drawing.Point(0, 98);
+            this.btnPerfiles.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPerfiles.Name = "btnPerfiles";
+            this.btnPerfiles.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btnPerfiles.Size = new System.Drawing.Size(348, 36);
+            this.btnPerfiles.TabIndex = 5;
+            this.btnPerfiles.Text = "PERFILES";
+            this.btnPerfiles.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPerfiles.UseVisualStyleBackColor = true;
+            this.btnPerfiles.Click += new System.EventHandler(this.btnPerfiles_Click);
+            // 
             // MenuPrototipo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -334,5 +372,7 @@ namespace Vista_PrototipoMenu
         private System.Windows.Forms.Button btnayuda;
         private System.Windows.Forms.Panel panelSideMenu;
         private System.Windows.Forms.Button btnsalir;
+        private System.Windows.Forms.Button btnModulos;
+        private System.Windows.Forms.Button btnPerfiles;
     }
 }
