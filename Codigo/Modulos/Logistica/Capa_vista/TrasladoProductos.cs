@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+//using Controlador_Seguridad;
 
 namespace Vista_PrototipoMenu
 {
     public partial class TrasladoProductos : Form
     {
+
+        //Controlador cn = new Controlador();
+
         public TrasladoProductos()
         {
             InitializeComponent();
@@ -74,5 +78,24 @@ namespace Vista_PrototipoMenu
                 MessageBox.Show("Seleccione uno o varios datos antes de remover", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        //private void navegador1_Load(object sender, EventArgs e)
+        //{
+            /*
+            
+            NavegadorVista.Navegador.idApp = "4500";  //código aplicación asignado al formulario
+            navegador1.actual = this;
+            navegador1.tabla = dgv_traslaProd;
+            TextBox[] Grupotextbox1 = { txt_idDoc, txt_nombreDoc, txt_destino, txt_fecha };
+            TextBox[] Grupotextbox2 = { txt_idProc, txt_nombreProc, txt_almacen, txt_bodega };
+            TextBox[] Grupotextbox3 = { txt_cantidad, txt_costoTotal, txt_precioTotal, txt_precioUnit };
+            //TextBox[] Idtextbox = { txtIdPerfiles, txtNombre };
+            navegador1.textbox = Grupotextbox;
+            navegador1.textboxi = Idtextbox;
+            navegador1.cargar(dgv_traslaProd, Grupotextbox1, Grupotextbox2, Grupotextbox3, cn.getNombreBd());
+            
+            */
+
+        //}
     }
 }
