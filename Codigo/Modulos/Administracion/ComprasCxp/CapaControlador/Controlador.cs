@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using CapaModelo;
 using System.Data.Odbc;
 using System.Data;
+using System.Windows;
+using System.Windows.Forms;
 
 namespace CapaControlador
 {
@@ -53,7 +55,47 @@ namespace CapaControlador
             return sn.Guardar(tabla, valores);
         }
 
+        public void CargarOpciones2(ComboBox combo)
+        {
+            // Aquí proporciona las opciones al ComboBox
+            combo.Items.Add("Directa");
+            combo.Items.Add("Relacionada");
+        }
 
+        public DataTable llenarTbl2(String tabla)
+        {
+            OdbcDataAdapter dt = sn.llenarTbl2(tabla);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+
+        public int ObtenerUltimoNumeroOrden(String campoid, String tabla)
+        {
+            return sn.ObtenerUltimoNumeroOrden(campoid, tabla);
+        }
+
+        public DataTable enviar()
+        {
+            var dt1 = sn.obtener();
+            return dt1;
+        }
+
+        public string[] items()
+        {
+            string[] Items = sn.llenarCmb2();
+            return Items;
+        }
+
+        public string ObtenerDescripcion(string productId)
+        {
+            return sn.ObtenerDescripcion(productId);
+        }
+
+        public decimal ObtenerPrecioUnitario(string productId)
+        {
+            return sn.ObtenerPrecioUnitario(productId);
+        }
 
 
 

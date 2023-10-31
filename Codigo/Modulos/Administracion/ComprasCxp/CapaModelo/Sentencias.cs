@@ -114,7 +114,112 @@ namespace CapaModelo
             return dt;
         }
 
+        public OdbcDataAdapter llenarTbl2(string tabla)
+        {
+            string sql = "SELECT * FROM " + tabla + ";";
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, con.conexion());
+            return dataTable;
+        }
 
+        public int ObtenerUltimoNumeroOrden(string campoid, string tabla)
+        {
+            int ultimoNumeroOrden = 0;
+            Conexion con = new Conexion();
+            OdbcConnection conn = con.conexion();
+
+            // Conectar a la base de datos utilizando la clase Conexion
+            using (conn)
+            {
+                // Consulta SQL para obtener el último número de orden
+                string query = "SELECT MAX(" + campoid + ") FROM " + tabla + ";";
+                using (OdbcCommand cmd = new OdbcCommand(query, conn))
+                {
+                    object result = cmd.ExecuteScalar();
+                    if (result != DBNull.Value)
+                    {
+                        ultimoNumeroOrden = Convert.ToInt32(result) + 1;
+                    }
+                    else
+                    {
+                        ultimoNumeroOrden++;
+                    }
+                }
+            }
+
+            // 'conn' se cerrará automáticamente
+            return ultimoNumeroOrden;
+        }
+
+        public string[] llenarCmb2()
+        {
+
+            string[] Campos = new string[300];
+            string[] auto = new string[300];
+            int i = 0;
+            string sql = "SELECT id_producto, pro_nombre FROM tbl_productos WHERE pro_disponibilidad='si';";
+
+            try
+            {
+                OdbcCommand command = new OdbcCommand(sql, con.conexion());
+                OdbcDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    Campos[i] = reader.GetValue(0).ToString() + "-" + reader.GetValue(1).ToString();
+                    i++;
+                }
+            }
+            catch (Exception ex) { Console.WriteLine(ex.Message.ToString() + " \nError en asignarCombo"); }
+            return Campos;
+        }
+        public DataTable obtener()
+        {
+
+            string sql = "SELECT id_producto, pro_nombre FROM tbl_productos WHERE pro_disponibilidad='si';";
+
+            OdbcCommand command = new OdbcCommand(sql, con.conexion());
+            OdbcDataAdapter adaptador = new OdbcDataAdapter(command);
+            DataTable dt = new DataTable();
+            adaptador.Fill(dt);
+            return dt;
+        }
+
+        public string ObtenerDescripcion(string productId)
+        {
+            string descripcion = string.Empty;
+            using (OdbcConnection conn = con.conexion())
+            {
+                string query = "SELECT pro_descripcion FROM tbl_productos WHERE id_producto = " + productId + ";";
+                using (OdbcCommand cmd = new OdbcCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("id", productId);
+                    object result = cmd.ExecuteScalar();
+                    if (result != DBNull.Value)
+                    {
+                        descripcion = result.ToString();
+                    }
+                }
+            }
+            return descripcion;
+        }
+
+        public decimal ObtenerPrecioUnitario(string productId)
+        {
+            decimal precioUnitario = 0;
+            using (OdbcConnection conn = con.conexion())
+            {
+                string query = "SELECT pro_preciounitario FROM tbl_productos WHERE id_producto = " + productId + ";";
+                using (OdbcCommand cmd = new OdbcCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("id", productId);
+                    object result = cmd.ExecuteScalar();
+                    if (result != DBNull.Value)
+                    {
+                        precioUnitario = Convert.ToDecimal(result);
+                    }
+                }
+            }
+            return precioUnitario;
+        }
 
     }
 }
