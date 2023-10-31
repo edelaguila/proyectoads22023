@@ -7,10 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-// using Seguridad_Controlador;  // Agregar cuando se vincule la DLL de seguridad 
+
+
+using Seguridad_Controlador;  // Agregar cuando se vincule la DLL de seguridad 
 
 namespace Vista_PrototipoMenu
 {
+    
     public partial class MenuInventarios : Form
     {
 
@@ -77,10 +80,9 @@ namespace Vista_PrototipoMenu
         //Método que muestra el formulario indicado
         private void btnaplicaciones_Click(object sender, EventArgs e)
         {
-           /* frmAplicaciones form = new frmAplicaciones();
-            form.MdiParent = this;
-            form.Show();
-            hideSubMenu(); */
+            MovimientosInventario m = new MovimientosInventario();
+            m.Show();
+
         }
         //Método que muestra el formulario indicado
 
