@@ -29,7 +29,7 @@ namespace Vista_PrototipoMenu
             TextBox[] Idtextbox = { txt_IdCuenta};
             navegador1.textbox = Grupotextbox;
             navegador1.textboxi = Idtextbox;
-            navegador1.cargar(Dgv_tablas, Grupotextbox, cn.getNombreBd());
+            //navegador1.cargar(Dgv_tablas, Grupotextbox, cn.getNombreBd());
 
         }
 
