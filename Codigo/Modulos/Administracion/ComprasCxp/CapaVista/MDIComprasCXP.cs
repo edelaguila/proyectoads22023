@@ -13,6 +13,15 @@ namespace CapaVista
 {
     public partial class MDIComprasCXP : Form
     {
+        private string id = "";
+        private string nombre = "";
+        private string domicilio = "";
+        private string telefono = "";
+        private string idord = "";
+        private string fechaS = "";
+        private string fechaE = "";
+        private string solicitante = "";
+        private string proveedor = "";
         Controlador cn = new Controlador();
         public MDIComprasCXP()
         {
@@ -129,14 +138,14 @@ namespace CapaVista
 
         private void btnordenescompras_Click(object sender, EventArgs e)
         {
-            //Abrir(new "carpeta"."form"());
-            //hideSubMenu();
+            Abrir(new Procedimientos.OrdenesdeCompra(id, nombre, domicilio, telefono));
+            hideSubMenu();
         }
 
         private void btncompra_Click(object sender, EventArgs e)
         {
-            //Abrir(new "carpeta"."form"());
-            //hideSubMenu();
+            Abrir(new Procedimientos.Compras(idord, fechaS, fechaE, solicitante, proveedor));
+            hideSubMenu();
         }
     }
 }
