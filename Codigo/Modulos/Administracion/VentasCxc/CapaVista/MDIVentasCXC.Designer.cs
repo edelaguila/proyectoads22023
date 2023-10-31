@@ -70,7 +70,7 @@ namespace CapaVista
             this.MDI.Location = new System.Drawing.Point(369, 0);
             this.MDI.Margin = new System.Windows.Forms.Padding(4);
             this.MDI.Name = "MDI";
-            this.MDI.Size = new System.Drawing.Size(1113, 770);
+            this.MDI.Size = new System.Drawing.Size(1113, 1055);
             this.MDI.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.MDI.TabIndex = 52;
             this.MDI.TabStop = false;
@@ -96,7 +96,7 @@ namespace CapaVista
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Margin = new System.Windows.Forms.Padding(4);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(369, 770);
+            this.panelSideMenu.Size = new System.Drawing.Size(369, 1055);
             this.panelSideMenu.TabIndex = 51;
             // 
             // btnsalir
@@ -112,7 +112,7 @@ namespace CapaVista
             this.btnsalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
-            this.btnsalir.Size = new System.Drawing.Size(348, 48);
+            this.btnsalir.Size = new System.Drawing.Size(369, 48);
             this.btnsalir.TabIndex = 13;
             this.btnsalir.Text = "SALIR";
             this.btnsalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -132,7 +132,7 @@ namespace CapaVista
             this.btnayuda.Margin = new System.Windows.Forms.Padding(4);
             this.btnayuda.Name = "btnayuda";
             this.btnayuda.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
-            this.btnayuda.Size = new System.Drawing.Size(348, 48);
+            this.btnayuda.Size = new System.Drawing.Size(369, 48);
             this.btnayuda.TabIndex = 12;
             this.btnayuda.Text = "AYUDA";
             this.btnayuda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -146,7 +146,7 @@ namespace CapaVista
             this.panelayuda.Location = new System.Drawing.Point(0, 776);
             this.panelayuda.Margin = new System.Windows.Forms.Padding(4);
             this.panelayuda.Name = "panelayuda";
-            this.panelayuda.Size = new System.Drawing.Size(348, 46);
+            this.panelayuda.Size = new System.Drawing.Size(369, 46);
             this.panelayuda.TabIndex = 11;
             this.panelayuda.Visible = false;
             // 
@@ -163,7 +163,7 @@ namespace CapaVista
             this.btnSeguridad.Margin = new System.Windows.Forms.Padding(4);
             this.btnSeguridad.Name = "btnSeguridad";
             this.btnSeguridad.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
-            this.btnSeguridad.Size = new System.Drawing.Size(348, 48);
+            this.btnSeguridad.Size = new System.Drawing.Size(369, 48);
             this.btnSeguridad.TabIndex = 10;
             this.btnSeguridad.Text = "SEGURIDAD";
             this.btnSeguridad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -177,7 +177,7 @@ namespace CapaVista
             this.panelseguridad.Location = new System.Drawing.Point(0, 685);
             this.panelseguridad.Margin = new System.Windows.Forms.Padding(4);
             this.panelseguridad.Name = "panelseguridad";
-            this.panelseguridad.Size = new System.Drawing.Size(348, 43);
+            this.panelseguridad.Size = new System.Drawing.Size(369, 43);
             this.panelseguridad.TabIndex = 9;
             this.panelseguridad.Visible = false;
             // 
@@ -194,7 +194,7 @@ namespace CapaVista
             this.btnReportes.Margin = new System.Windows.Forms.Padding(4);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
-            this.btnReportes.Size = new System.Drawing.Size(348, 57);
+            this.btnReportes.Size = new System.Drawing.Size(369, 57);
             this.btnReportes.TabIndex = 8;
             this.btnReportes.Text = "REPORTES";
             this.btnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -213,7 +213,7 @@ namespace CapaVista
             this.PanelAuditoria.Location = new System.Drawing.Point(0, 394);
             this.PanelAuditoria.Margin = new System.Windows.Forms.Padding(4);
             this.PanelAuditoria.Name = "PanelAuditoria";
-            this.PanelAuditoria.Size = new System.Drawing.Size(348, 234);
+            this.PanelAuditoria.Size = new System.Drawing.Size(369, 234);
             this.PanelAuditoria.TabIndex = 5;
             this.PanelAuditoria.Visible = false;
             // 
@@ -228,7 +228,7 @@ namespace CapaVista
             this.btnfactura.Margin = new System.Windows.Forms.Padding(4);
             this.btnfactura.Name = "btnfactura";
             this.btnfactura.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
-            this.btnfactura.Size = new System.Drawing.Size(348, 43);
+            this.btnfactura.Size = new System.Drawing.Size(369, 43);
             this.btnfactura.TabIndex = 11;
             this.btnfactura.Text = "FACTURAS";
             this.btnfactura.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -246,7 +246,7 @@ namespace CapaVista
             this.btnpedido.Margin = new System.Windows.Forms.Padding(4);
             this.btnpedido.Name = "btnpedido";
             this.btnpedido.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
-            this.btnpedido.Size = new System.Drawing.Size(348, 43);
+            this.btnpedido.Size = new System.Drawing.Size(369, 43);
             this.btnpedido.TabIndex = 10;
             this.btnpedido.Text = "PEDIDOS";
             this.btnpedido.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -264,7 +264,7 @@ namespace CapaVista
             this.btncotizaciones.Margin = new System.Windows.Forms.Padding(4);
             this.btncotizaciones.Name = "btncotizaciones";
             this.btncotizaciones.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
-            this.btncotizaciones.Size = new System.Drawing.Size(348, 43);
+            this.btncotizaciones.Size = new System.Drawing.Size(369, 43);
             this.btncotizaciones.TabIndex = 9;
             this.btncotizaciones.Text = "COTIZACIONES";
             this.btncotizaciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -282,7 +282,7 @@ namespace CapaVista
             this.btnmovimientoproveedor.Margin = new System.Windows.Forms.Padding(4);
             this.btnmovimientoproveedor.Name = "btnmovimientoproveedor";
             this.btnmovimientoproveedor.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
-            this.btnmovimientoproveedor.Size = new System.Drawing.Size(348, 43);
+            this.btnmovimientoproveedor.Size = new System.Drawing.Size(369, 43);
             this.btnmovimientoproveedor.TabIndex = 7;
             this.btnmovimientoproveedor.Text = "MOVIMIENTO PROVEEDOR";
             this.btnmovimientoproveedor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -300,7 +300,7 @@ namespace CapaVista
             this.btnmovimientocliente.Margin = new System.Windows.Forms.Padding(4);
             this.btnmovimientocliente.Name = "btnmovimientocliente";
             this.btnmovimientocliente.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
-            this.btnmovimientocliente.Size = new System.Drawing.Size(348, 43);
+            this.btnmovimientocliente.Size = new System.Drawing.Size(369, 43);
             this.btnmovimientocliente.TabIndex = 6;
             this.btnmovimientocliente.Text = "MOVIMIENTO CLIENTE";
             this.btnmovimientocliente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -320,7 +320,7 @@ namespace CapaVista
             this.btnProcesos.Margin = new System.Windows.Forms.Padding(4);
             this.btnProcesos.Name = "btnProcesos";
             this.btnProcesos.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
-            this.btnProcesos.Size = new System.Drawing.Size(348, 48);
+            this.btnProcesos.Size = new System.Drawing.Size(369, 48);
             this.btnProcesos.TabIndex = 4;
             this.btnProcesos.Text = "PROCESOS";
             this.btnProcesos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -337,7 +337,7 @@ namespace CapaVista
             this.panelTranportes.Location = new System.Drawing.Point(0, 203);
             this.panelTranportes.Margin = new System.Windows.Forms.Padding(4);
             this.panelTranportes.Name = "panelTranportes";
-            this.panelTranportes.Size = new System.Drawing.Size(348, 143);
+            this.panelTranportes.Size = new System.Drawing.Size(369, 143);
             this.panelTranportes.TabIndex = 3;
             this.panelTranportes.Visible = false;
             // 
@@ -352,7 +352,7 @@ namespace CapaVista
             this.btnconcepto.Margin = new System.Windows.Forms.Padding(4);
             this.btnconcepto.Name = "btnconcepto";
             this.btnconcepto.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
-            this.btnconcepto.Size = new System.Drawing.Size(348, 43);
+            this.btnconcepto.Size = new System.Drawing.Size(369, 43);
             this.btnconcepto.TabIndex = 5;
             this.btnconcepto.Text = "CONCEPTO";
             this.btnconcepto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -370,7 +370,7 @@ namespace CapaVista
             this.btnproveedor.Margin = new System.Windows.Forms.Padding(4);
             this.btnproveedor.Name = "btnproveedor";
             this.btnproveedor.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
-            this.btnproveedor.Size = new System.Drawing.Size(348, 43);
+            this.btnproveedor.Size = new System.Drawing.Size(369, 43);
             this.btnproveedor.TabIndex = 4;
             this.btnproveedor.Text = "PROVEEDOR";
             this.btnproveedor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -388,7 +388,7 @@ namespace CapaVista
             this.btnclientes.Margin = new System.Windows.Forms.Padding(4);
             this.btnclientes.Name = "btnclientes";
             this.btnclientes.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
-            this.btnclientes.Size = new System.Drawing.Size(348, 43);
+            this.btnclientes.Size = new System.Drawing.Size(369, 43);
             this.btnclientes.TabIndex = 3;
             this.btnclientes.Text = "CLIENTES";
             this.btnclientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -408,7 +408,7 @@ namespace CapaVista
             this.btnmanteniminetos.Margin = new System.Windows.Forms.Padding(4);
             this.btnmanteniminetos.Name = "btnmanteniminetos";
             this.btnmanteniminetos.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
-            this.btnmanteniminetos.Size = new System.Drawing.Size(348, 48);
+            this.btnmanteniminetos.Size = new System.Drawing.Size(369, 48);
             this.btnmanteniminetos.TabIndex = 2;
             this.btnmanteniminetos.Text = "MANTENIMIENTOS";
             this.btnmanteniminetos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -428,7 +428,7 @@ namespace CapaVista
             this.btninicio.Margin = new System.Windows.Forms.Padding(4);
             this.btninicio.Name = "btninicio";
             this.btninicio.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
-            this.btninicio.Size = new System.Drawing.Size(348, 48);
+            this.btninicio.Size = new System.Drawing.Size(369, 48);
             this.btninicio.TabIndex = 0;
             this.btninicio.Text = "INICIO";
             this.btninicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -443,7 +443,7 @@ namespace CapaVista
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Margin = new System.Windows.Forms.Padding(4);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(348, 107);
+            this.panelLogo.Size = new System.Drawing.Size(369, 107);
             this.panelLogo.TabIndex = 0;
             // 
             // pictureBox2
@@ -465,7 +465,7 @@ namespace CapaVista
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(348, 107);
+            this.pictureBox1.Size = new System.Drawing.Size(369, 107);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
@@ -473,7 +473,7 @@ namespace CapaVista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1482, 770);
+            this.ClientSize = new System.Drawing.Size(1482, 1055);
             this.Controls.Add(this.MDI);
             this.Controls.Add(this.panelSideMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

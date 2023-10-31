@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CapaVista.Mantenimientos
 {
-    public partial class Vendedores : Form
+    public partial class TransaccionesClientes : Form
     {
-        public Vendedores()
+        public TransaccionesClientes()
         {
             InitializeComponent();
         }

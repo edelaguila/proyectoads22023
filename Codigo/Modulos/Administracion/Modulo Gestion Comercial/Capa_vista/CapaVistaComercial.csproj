@@ -54,6 +54,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mantenimientos\Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Cobradores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Cobradores.Designer.cs">
+      <DependentUpon>Cobradores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Proveedores.Designer.cs">
+      <DependentUpon>Proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\TransaccionesCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\TransaccionesCliente.Designer.cs">
+      <DependentUpon>TransaccionesCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\TransaccionesProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\TransaccionesProveedores.Designer.cs">
+      <DependentUpon>TransaccionesProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Vendedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Vendedores.Designer.cs">
+      <DependentUpon>Vendedores.cs</DependentUpon>
+    </Compile>
     <Compile Include="MDIComprasyCXP.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +110,24 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Mantenimientos\Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Cobradores.resx">
+      <DependentUpon>Cobradores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Proveedores.resx">
+      <DependentUpon>Proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\TransaccionesCliente.resx">
+      <DependentUpon>TransaccionesCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\TransaccionesProveedores.resx">
+      <DependentUpon>TransaccionesProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Vendedores.resx">
+      <DependentUpon>Vendedores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MDIComprasyCXP.resx">
       <DependentUpon>MDIComprasyCXP.cs</DependentUpon>
     </EmbeddedResource>

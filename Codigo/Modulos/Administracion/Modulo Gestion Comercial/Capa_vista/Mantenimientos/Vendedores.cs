@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CapaVista.Mantenimientos
+namespace Vista_PrototipoMenu.Mantenimientos
 {
     public partial class Vendedores : Form
     {
