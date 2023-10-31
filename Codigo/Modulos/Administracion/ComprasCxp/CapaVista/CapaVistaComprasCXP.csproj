@@ -59,11 +59,23 @@
     <Compile Include="MDIComprasCXP.Designer.cs">
       <DependentUpon>MDIComprasCXP.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procedimientos\BuscarOrdenCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procedimientos\BuscarOrdenCompra.Designer.cs">
+      <DependentUpon>BuscarOrdenCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procedimientos\BuscarProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Procedimientos\BuscarProveedor.Designer.cs">
       <DependentUpon>BuscarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procedimientos\Compras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procedimientos\Compras.Designer.cs">
+      <DependentUpon>Compras.cs</DependentUpon>
     </Compile>
     <Compile Include="Procedimientos\Movimiento cliente.cs">
       <SubType>Form</SubType>
@@ -94,8 +106,14 @@
     <EmbeddedResource Include="MDIComprasCXP.resx">
       <DependentUpon>MDIComprasCXP.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Procedimientos\BuscarOrdenCompra.resx">
+      <DependentUpon>BuscarOrdenCompra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Procedimientos\BuscarProveedor.resx">
       <DependentUpon>BuscarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procedimientos\Compras.resx">
+      <DependentUpon>Compras.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procedimientos\Movimiento cliente.resx">
       <DependentUpon>Movimiento cliente.cs</DependentUpon>
