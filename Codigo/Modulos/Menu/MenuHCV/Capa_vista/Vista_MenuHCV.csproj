@@ -7,8 +7,8 @@
     <ProjectGuid>{658EB388-5D42-4CF5-A8AF-5E074861088A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Vista_PrototipoMenu</RootNamespace>
-    <AssemblyName>Vista_PrototipoMenu</AssemblyName>
+    <RootNamespace>Vista_MenuHCV</RootNamespace>
+    <AssemblyName>Vista_MenuHCV</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -31,51 +31,72 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Capa_VistaConsultas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
-    <Reference Include="Controlador_PrototipoMenu, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Capa_controlador\bin\Debug\Controlador_PrototipoMenu.dll</HintPath>
-    </Reference>
     <Reference Include="eCryptography, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Eramake.eCryptography.1.1.6\lib\net45\eCryptography.dll</HintPath>
     </Reference>
     <Reference Include="FontAwesome.Sharp, Version=6.1.1.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
-      <HintPath>..\packages\FontAwesome.Sharp.6.1.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Navegador\Vista\bin\Debug\FontAwesome.Sharp.dll</HintPath>
     </Reference>
-    <Reference Include="NavegadorVista">
-      <HintPath>..\..\..\..\..\..\..\ProyectosdeReferencia\Prototipos\proyectois2k23\Codigo\Componentes\Navegador\Vista\bin\Debug\NavegadorVista.dll</HintPath>
-    </Reference>
-    <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
     <Reference Include="Seguridad_Controlador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\ProyectosdeReferencia\Prototipos\proyectois2k23\Codigo\Componentes\Seguridad\Seguridad\Capa_controlador\bin\Debug\Seguridad_Controlador.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\..\..\Program Files\UMG\Instalador General HSC\Seguridad_Controlador.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="WindowsBase" />
+    <Reference Include="Vista_BancosMenu, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Bancos\Capa_vista\bin\Debug\Vista_BancosMenu.dll</HintPath>
+    </Reference>
+    <Reference Include="Vista_ComprasCxpMenu, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Administracion\ComprasCxp\Capa_vista\bin\Debug\Vista_ComprasCxpMenu.dll</HintPath>
+    </Reference>
+    <Reference Include="Vista_HoteleriaMenu, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Hoteleria\Capa_vista\bin\Debug\Vista_HoteleriaMenu.dll</HintPath>
+    </Reference>
+    <Reference Include="Vista_InventariosMenu, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Logistica\Capa_vista\bin\Debug\Vista_InventariosMenu.dll</HintPath>
+    </Reference>
+    <Reference Include="Vista_NominasMenu, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Nominas\Capa_vista\bin\Debug\Vista_NominasMenu.dll</HintPath>
+    </Reference>
+    <Reference Include="Vista_PrototipoMenu, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Prototipo\Prototipo\Capa_vista\bin\Debug\Vista_PrototipoMenu.dll</HintPath>
+    </Reference>
+    <Reference Include="Vista_Seguridad, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\..\..\Program Files\UMG\Instalador General HSC\Vista_Seguridad.dll</HintPath>
+    </Reference>
+    <Reference Include="Vista_VentasCxcMenu, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Administracion\VentasCxc\Capa_vista\bin\Debug\Vista_VentasCxcMenu.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmAplicaciones.cs">
+    <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAplicaciones.Designer.cs">
-      <DependentUpon>frmAplicaciones.cs</DependentUpon>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuPrototipo.cs">
+    <Compile Include="Menup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuPrototipo.designer.cs">
-      <DependentUpon>MenuPrototipo.cs</DependentUpon>
+    <Compile Include="Menup.designer.cs">
+      <DependentUpon>Menup.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -83,17 +104,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splash.designer.cs">
+      <DependentUpon>splash.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmAplicaciones.resx">
-      <DependentUpon>frmAplicaciones.cs</DependentUpon>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuPrototipo.resx">
-      <DependentUpon>MenuPrototipo.cs</DependentUpon>
+    <EmbeddedResource Include="Menup.resx">
+      <DependentUpon>Menup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splash.resx">
+      <DependentUpon>splash.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -158,25 +188,9 @@
     <None Include="Resources\ic-cancel_97589.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\logo umg.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Logo Bytech.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\LogoSanCarlos1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\prototipo.jfif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\prototipofinal.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\prototipofinal2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
+    <Content Include="Resources\Bitmap1.bmp" />
+    <Content Include="Resources\Logo Bytech.jpeg" />
+    <Content Include="Resources\LogoSanCarlos1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

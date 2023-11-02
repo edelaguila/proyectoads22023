@@ -14,7 +14,6 @@ namespace Vista_PrototipoMenu
     public partial class frmAplicaciones : Form
     {
         Controlador cn = new Controlador();
-
         public frmAplicaciones()
         {
             InitializeComponent();
@@ -22,14 +21,15 @@ namespace Vista_PrototipoMenu
 
         private void navegador1_Load(object sender, EventArgs e)
         {
-            NavegadorVista.Navegador.idApp = "1003";
+            NavegadorVista.Navegador.idApp = "1002";  //código aplicación asignado al formulario
             navegador1.actual = this;
             navegador1.tabla = dataGridView1;
-            TextBox[] Grupotextbox = { txtIdAplicacion, txtNombreAplicacion, txtDescripcionAplicacion, txtEstadoAplicacion };
-            TextBox[] Idtextbox = { txtIdAplicacion, txtNombreAplicacion };
+            TextBox[] Grupotextbox = { txtId, txtNombre, txtDescripcion, txtEstado };
+            TextBox[] Idtextbox = { txtId, txtNombre };
             navegador1.textbox = Grupotextbox;
             navegador1.textboxi = Idtextbox;
             navegador1.cargar(dataGridView1, Grupotextbox, cn.getNombreBd());
+
         }
     }
 }
