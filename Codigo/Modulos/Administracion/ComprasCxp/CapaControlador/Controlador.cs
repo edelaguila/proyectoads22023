@@ -98,6 +98,20 @@ namespace CapaControlador
         }
 
 
+        public string ObtenerNombreProveedor(string proveedorID)
+        {
+            return sn.ObtenerNombreProveedor(proveedorID);
+        }
+
+        public string ObtenerDomicilioProveedor(string proveedorID)
+        {
+            return sn.ObtenerDomicilioProveedor(proveedorID);
+        }
+
+        public string ObtenerTelefonoProveedor(string proveedorID)
+        {
+            return sn.ObtenerTelefonoProveedor(proveedorID);
+        }
 
 
 

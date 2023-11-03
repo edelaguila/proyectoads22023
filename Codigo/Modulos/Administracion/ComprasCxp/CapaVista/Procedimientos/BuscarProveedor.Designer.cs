@@ -85,6 +85,7 @@ namespace CapaVista.Procedimientos
             this.btn_buscarProveedor.Size = new System.Drawing.Size(23, 20);
             this.btn_buscarProveedor.TabIndex = 26;
             this.btn_buscarProveedor.UseVisualStyleBackColor = false;
+            this.btn_buscarProveedor.Click += new System.EventHandler(this.btn_buscarProveedor_Click);
             // 
             // BuscarProveedor
             // 

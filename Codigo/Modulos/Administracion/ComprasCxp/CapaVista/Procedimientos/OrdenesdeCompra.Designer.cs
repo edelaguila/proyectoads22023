@@ -35,6 +35,7 @@ namespace CapaVista.Procedimientos
             this.cmb_orden = new System.Windows.Forms.ComboBox();
             this.txt_numeroorden = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_buscarProveedor = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.txt_nombreProv = new System.Windows.Forms.TextBox();
             this.txt_entregara = new System.Windows.Forms.TextBox();
@@ -54,7 +55,7 @@ namespace CapaVista.Procedimientos
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.cmb_productos = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn_eliminar = new System.Windows.Forms.Button();
             this.btn_agregar = new System.Windows.Forms.Button();
             this.dgv_detalle = new System.Windows.Forms.DataGridView();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -73,15 +74,15 @@ namespace CapaVista.Procedimientos
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.textBox31 = new System.Windows.Forms.TextBox();
+            this.txt_totalLetras = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.txt_total = new System.Windows.Forms.TextBox();
+            this.txt_iva = new System.Windows.Forms.TextBox();
+            this.txt_subtotal = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.btn_buscarProveedor = new System.Windows.Forms.Button();
+            this.btn_confirmar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_detalle)).BeginInit();
@@ -114,7 +115,7 @@ namespace CapaVista.Procedimientos
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(28, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(707, 318);
+            this.groupBox1.Size = new System.Drawing.Size(793, 318);
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de la órden";
@@ -155,6 +156,21 @@ namespace CapaVista.Procedimientos
             this.label1.Size = new System.Drawing.Size(112, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Numero de órden";
+            // 
+            // btn_buscarProveedor
+            // 
+            this.btn_buscarProveedor.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_buscarProveedor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_buscarProveedor.BackgroundImage")));
+            this.btn_buscarProveedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_buscarProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_buscarProveedor.Image = ((System.Drawing.Image)(resources.GetObject("btn_buscarProveedor.Image")));
+            this.btn_buscarProveedor.Location = new System.Drawing.Point(291, 71);
+            this.btn_buscarProveedor.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_buscarProveedor.Name = "btn_buscarProveedor";
+            this.btn_buscarProveedor.Size = new System.Drawing.Size(23, 21);
+            this.btn_buscarProveedor.TabIndex = 19;
+            this.btn_buscarProveedor.UseVisualStyleBackColor = false;
+            this.btn_buscarProveedor.Click += new System.EventHandler(this.btn_buscarProveedor_Click);
             // 
             // label9
             // 
@@ -296,9 +312,10 @@ namespace CapaVista.Procedimientos
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btn_confirmar);
             this.groupBox2.Controls.Add(this.cmb_productos);
             this.groupBox2.Controls.Add(this.label19);
-            this.groupBox2.Controls.Add(this.button3);
+            this.groupBox2.Controls.Add(this.btn_eliminar);
             this.groupBox2.Controls.Add(this.btn_agregar);
             this.groupBox2.Controls.Add(this.dgv_detalle);
             this.groupBox2.Controls.Add(this.txt_totalfila);
@@ -312,7 +329,7 @@ namespace CapaVista.Procedimientos
             this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(28, 336);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(707, 273);
+            this.groupBox2.Size = new System.Drawing.Size(793, 273);
             this.groupBox2.TabIndex = 27;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Descripción de la órden";
@@ -336,20 +353,21 @@ namespace CapaVista.Procedimientos
             this.label19.TabIndex = 11;
             this.label19.Text = "Nombre";
             // 
-            // button3
+            // btn_eliminar
             // 
-            this.button3.Location = new System.Drawing.Point(612, 64);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(64, 23);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_eliminar.Location = new System.Drawing.Point(694, 162);
+            this.btn_eliminar.Name = "btn_eliminar";
+            this.btn_eliminar.Size = new System.Drawing.Size(74, 31);
+            this.btn_eliminar.TabIndex = 10;
+            this.btn_eliminar.Text = "Eliminar";
+            this.btn_eliminar.UseVisualStyleBackColor = true;
+            this.btn_eliminar.Click += new System.EventHandler(this.button3_Click);
             // 
             // btn_agregar
             // 
-            this.btn_agregar.Location = new System.Drawing.Point(612, 29);
+            this.btn_agregar.Location = new System.Drawing.Point(694, 114);
             this.btn_agregar.Name = "btn_agregar";
-            this.btn_agregar.Size = new System.Drawing.Size(64, 23);
+            this.btn_agregar.Size = new System.Drawing.Size(74, 31);
             this.btn_agregar.TabIndex = 9;
             this.btn_agregar.Text = "Agregar";
             this.btn_agregar.UseVisualStyleBackColor = true;
@@ -471,78 +489,77 @@ namespace CapaVista.Procedimientos
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.button4);
-            this.groupBox3.Controls.Add(this.textBox31);
+            this.groupBox3.Controls.Add(this.txt_totalLetras);
             this.groupBox3.Controls.Add(this.label18);
-            this.groupBox3.Controls.Add(this.textBox30);
-            this.groupBox3.Controls.Add(this.textBox29);
-            this.groupBox3.Controls.Add(this.textBox28);
+            this.groupBox3.Controls.Add(this.txt_total);
+            this.groupBox3.Controls.Add(this.txt_iva);
+            this.groupBox3.Controls.Add(this.txt_subtotal);
             this.groupBox3.Controls.Add(this.label16);
             this.groupBox3.Controls.Add(this.label15);
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(28, 615);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(707, 111);
+            this.groupBox3.Size = new System.Drawing.Size(793, 111);
             this.groupBox3.TabIndex = 28;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Totales";
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(625, 37);
+            this.button4.Location = new System.Drawing.Point(704, 56);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(64, 43);
             this.button4.TabIndex = 13;
             this.button4.Text = "Enviar Órden";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // textBox31
+            // txt_totalLetras
             // 
-            this.textBox31.Enabled = false;
-            this.textBox31.Location = new System.Drawing.Point(28, 78);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(302, 21);
-            this.textBox31.TabIndex = 28;
+            this.txt_totalLetras.Location = new System.Drawing.Point(48, 69);
+            this.txt_totalLetras.Name = "txt_totalLetras";
+            this.txt_totalLetras.Size = new System.Drawing.Size(384, 21);
+            this.txt_totalLetras.TabIndex = 28;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(25, 47);
+            this.label18.Location = new System.Drawing.Point(45, 38);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(94, 17);
+            this.label18.Size = new System.Drawing.Size(144, 17);
             this.label18.TabIndex = 27;
-            this.label18.Text = "Total con letra";
+            this.label18.Text = "Notas / Observaciones";
             // 
-            // textBox30
+            // txt_total
             // 
-            this.textBox30.Enabled = false;
-            this.textBox30.Location = new System.Drawing.Point(469, 78);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(100, 21);
-            this.textBox30.TabIndex = 26;
+            this.txt_total.Enabled = false;
+            this.txt_total.Location = new System.Drawing.Point(576, 84);
+            this.txt_total.Name = "txt_total";
+            this.txt_total.Size = new System.Drawing.Size(100, 21);
+            this.txt_total.TabIndex = 26;
             // 
-            // textBox29
+            // txt_iva
             // 
-            this.textBox29.Enabled = false;
-            this.textBox29.Location = new System.Drawing.Point(469, 47);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(100, 21);
-            this.textBox29.TabIndex = 25;
+            this.txt_iva.Enabled = false;
+            this.txt_iva.Location = new System.Drawing.Point(576, 53);
+            this.txt_iva.Name = "txt_iva";
+            this.txt_iva.Size = new System.Drawing.Size(100, 21);
+            this.txt_iva.TabIndex = 25;
             // 
-            // textBox28
+            // txt_subtotal
             // 
-            this.textBox28.Enabled = false;
-            this.textBox28.Location = new System.Drawing.Point(469, 15);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(100, 21);
-            this.textBox28.TabIndex = 24;
+            this.txt_subtotal.Enabled = false;
+            this.txt_subtotal.Location = new System.Drawing.Point(576, 21);
+            this.txt_subtotal.Name = "txt_subtotal";
+            this.txt_subtotal.Size = new System.Drawing.Size(100, 21);
+            this.txt_subtotal.TabIndex = 24;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(385, 80);
+            this.label16.Location = new System.Drawing.Point(492, 86);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(37, 17);
             this.label16.TabIndex = 3;
@@ -552,7 +569,7 @@ namespace CapaVista.Procedimientos
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(385, 47);
+            this.label15.Location = new System.Drawing.Point(492, 53);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(29, 17);
             this.label15.TabIndex = 2;
@@ -562,32 +579,27 @@ namespace CapaVista.Procedimientos
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(385, 17);
+            this.label14.Location = new System.Drawing.Point(492, 23);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(63, 17);
             this.label14.TabIndex = 1;
             this.label14.Text = "Sub-Total";
             // 
-            // btn_buscarProveedor
+            // btn_confirmar
             // 
-            this.btn_buscarProveedor.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btn_buscarProveedor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_buscarProveedor.BackgroundImage")));
-            this.btn_buscarProveedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_buscarProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_buscarProveedor.Image = ((System.Drawing.Image)(resources.GetObject("btn_buscarProveedor.Image")));
-            this.btn_buscarProveedor.Location = new System.Drawing.Point(291, 71);
-            this.btn_buscarProveedor.Margin = new System.Windows.Forms.Padding(0);
-            this.btn_buscarProveedor.Name = "btn_buscarProveedor";
-            this.btn_buscarProveedor.Size = new System.Drawing.Size(23, 21);
-            this.btn_buscarProveedor.TabIndex = 19;
-            this.btn_buscarProveedor.UseVisualStyleBackColor = false;
-            this.btn_buscarProveedor.Click += new System.EventHandler(this.btn_buscarProveedor_Click);
+            this.btn_confirmar.Location = new System.Drawing.Point(694, 209);
+            this.btn_confirmar.Name = "btn_confirmar";
+            this.btn_confirmar.Size = new System.Drawing.Size(74, 31);
+            this.btn_confirmar.TabIndex = 13;
+            this.btn_confirmar.Text = "Confirmar";
+            this.btn_confirmar.UseVisualStyleBackColor = true;
+            this.btn_confirmar.Click += new System.EventHandler(this.btn_confirmar_Click);
             // 
             // OrdenesdeCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(767, 749);
+            this.ClientSize = new System.Drawing.Size(833, 749);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -632,7 +644,7 @@ namespace CapaVista.Procedimientos
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ComboBox cmb_productos;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_eliminar;
         private System.Windows.Forms.Button btn_agregar;
         private System.Windows.Forms.DataGridView dgv_detalle;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
@@ -651,13 +663,14 @@ namespace CapaVista.Procedimientos
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox31;
+        private System.Windows.Forms.TextBox txt_totalLetras;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.TextBox textBox28;
+        private System.Windows.Forms.TextBox txt_total;
+        private System.Windows.Forms.TextBox txt_iva;
+        private System.Windows.Forms.TextBox txt_subtotal;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button btn_confirmar;
     }
 }

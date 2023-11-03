@@ -221,5 +221,62 @@ namespace CapaModelo
             return precioUnitario;
         }
 
+        public string ObtenerNombreProveedor(string proveedorID)
+        {
+            string query = "SELECT pro_Nombre FROM tbl_proveedor WHERE id_proveedor = " + proveedorID + ";";
+
+            using (OdbcConnection conn = con.conexion())
+            {
+                using (OdbcCommand cmd = new OdbcCommand(query, conn))
+                {
+                    object result = cmd.ExecuteScalar();
+                    if (result != DBNull.Value)
+                    {
+                        return result.ToString();
+                    }
+                }
+            }
+
+            return string.Empty; // Se irá aquí en caso de no encontrar al proveedor
+        }
+
+        public string ObtenerDomicilioProveedor(string proveedorID)
+        {
+            string query = "SELECT pro_Domicilio FROM tbl_proveedor WHERE id_proveedor = " + proveedorID + ";";
+
+            using (OdbcConnection conn = con.conexion())
+            {
+                using (OdbcCommand cmd = new OdbcCommand(query, conn))
+                {
+                    object result = cmd.ExecuteScalar();
+                    if (result != DBNull.Value)
+                    {
+                        return result.ToString();
+                    }
+                }
+            }
+
+            return string.Empty;
+        }
+
+        public string ObtenerTelefonoProveedor(string proveedorID)
+        {
+            string query = "SELECT pro_Telefono FROM tbl_proveedor WHERE id_proveedor = " + proveedorID + ";";
+
+            using (OdbcConnection conn = con.conexion())
+            {
+                using (OdbcCommand cmd = new OdbcCommand(query, conn))
+                {
+                    object result = cmd.ExecuteScalar();
+                    if (result != DBNull.Value)
+                    {
+                        return result.ToString();
+                    }
+                }
+            }
+
+            return string.Empty;
+        }
+
     }
 }

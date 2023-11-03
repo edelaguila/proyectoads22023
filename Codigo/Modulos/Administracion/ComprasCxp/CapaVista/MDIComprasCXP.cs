@@ -60,14 +60,14 @@ namespace CapaVista
 
         private void Abrir(object abrirform)
         {
-            if (this.MDI.Controls.Count > 0)
-                this.MDI.Controls.RemoveAt(0);
+            if (this.panelMDI.Controls.Count > 0)
+                this.panelMDI.Controls.RemoveAt(0);
 
             Form fh = abrirform as Form;
             fh.TopLevel = false;
             fh.Dock = DockStyle.None;
-            this.MDI.Controls.Add(fh);
-            this.MDI.Tag = fh;
+            this.panelMDI.Controls.Add(fh);
+            this.panelMDI.Tag = fh;
             fh.Show();
         }
 

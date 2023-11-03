@@ -33,8 +33,8 @@ namespace CapaVista.Procedimientos
             this.btn_seleccionar = new System.Windows.Forms.Button();
             this.dgv_orden = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_Prov = new System.Windows.Forms.TextBox();
-            this.btn_buscarProveedor = new System.Windows.Forms.Button();
+            this.txt_Orden = new System.Windows.Forms.TextBox();
+            this.btn_buscarOrden = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_orden)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,26 +65,27 @@ namespace CapaVista.Procedimientos
             this.label1.TabIndex = 32;
             this.label1.Text = "ID de la órden compra";
             // 
-            // txt_Prov
+            // txt_Orden
             // 
-            this.txt_Prov.Location = new System.Drawing.Point(177, 31);
-            this.txt_Prov.Name = "txt_Prov";
-            this.txt_Prov.Size = new System.Drawing.Size(180, 20);
-            this.txt_Prov.TabIndex = 30;
+            this.txt_Orden.Location = new System.Drawing.Point(177, 31);
+            this.txt_Orden.Name = "txt_Orden";
+            this.txt_Orden.Size = new System.Drawing.Size(180, 20);
+            this.txt_Orden.TabIndex = 30;
             // 
-            // btn_buscarProveedor
+            // btn_buscarOrden
             // 
-            this.btn_buscarProveedor.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btn_buscarProveedor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_buscarProveedor.BackgroundImage")));
-            this.btn_buscarProveedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_buscarProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_buscarProveedor.Image = ((System.Drawing.Image)(resources.GetObject("btn_buscarProveedor.Image")));
-            this.btn_buscarProveedor.Location = new System.Drawing.Point(334, 31);
-            this.btn_buscarProveedor.Margin = new System.Windows.Forms.Padding(0);
-            this.btn_buscarProveedor.Name = "btn_buscarProveedor";
-            this.btn_buscarProveedor.Size = new System.Drawing.Size(23, 20);
-            this.btn_buscarProveedor.TabIndex = 31;
-            this.btn_buscarProveedor.UseVisualStyleBackColor = false;
+            this.btn_buscarOrden.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_buscarOrden.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_buscarOrden.BackgroundImage")));
+            this.btn_buscarOrden.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_buscarOrden.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_buscarOrden.Image = ((System.Drawing.Image)(resources.GetObject("btn_buscarOrden.Image")));
+            this.btn_buscarOrden.Location = new System.Drawing.Point(334, 31);
+            this.btn_buscarOrden.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_buscarOrden.Name = "btn_buscarOrden";
+            this.btn_buscarOrden.Size = new System.Drawing.Size(23, 20);
+            this.btn_buscarOrden.TabIndex = 31;
+            this.btn_buscarOrden.UseVisualStyleBackColor = false;
+            this.btn_buscarOrden.Click += new System.EventHandler(this.btn_buscarOrden_Click);
             // 
             // BuscarOrdenCompra
             // 
@@ -94,8 +95,8 @@ namespace CapaVista.Procedimientos
             this.Controls.Add(this.btn_seleccionar);
             this.Controls.Add(this.dgv_orden);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btn_buscarProveedor);
-            this.Controls.Add(this.txt_Prov);
+            this.Controls.Add(this.btn_buscarOrden);
+            this.Controls.Add(this.txt_Orden);
             this.Name = "BuscarOrdenCompra";
             this.Text = "BuscarOrdenCompra";
             this.Load += new System.EventHandler(this.BuscarOrdenCompra_Load);
@@ -110,7 +111,7 @@ namespace CapaVista.Procedimientos
         private System.Windows.Forms.Button btn_seleccionar;
         private System.Windows.Forms.DataGridView dgv_orden;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_buscarProveedor;
-        private System.Windows.Forms.TextBox txt_Prov;
+        private System.Windows.Forms.Button btn_buscarOrden;
+        private System.Windows.Forms.TextBox txt_Orden;
     }
 }

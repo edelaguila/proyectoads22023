@@ -54,6 +54,7 @@ namespace CapaVista.Procedimientos
             dateTimePickerPedido.Text = fechaS;
             txt_departamentos.Text = solicitante;
             txt_Idprov.Text = proveedor;
+            ObtenerDatosProveedor(proveedor);
         }
 
         private void cmb_orden_SelectedIndexChanged(object sender, EventArgs e)
@@ -153,6 +154,18 @@ namespace CapaVista.Procedimientos
             txt_totalfila.Text = totalprod.ToString();
         }
 
+        private void ObtenerDatosProveedor(string proveedorId)
+        {
+            string nombreProveedor = controller.ObtenerNombreProveedor(proveedorId);
+            string domicilioProveedor = controller.ObtenerDomicilioProveedor(proveedorId);
+            string telefonoProveedor = controller.ObtenerTelefonoProveedor(proveedorId);
+
+            txt_Idprov.Text = proveedorId;
+            txt_nombreprov.Text = nombreProveedor;
+            txt_domicilio.Text = domicilioProveedor;
+            txt_telefonoprov.Text = telefonoProveedor;
+        }
+
         private void btn_agregar_Click(object sender, EventArgs e)
         {
             double precioU = 0;
@@ -193,6 +206,70 @@ namespace CapaVista.Procedimientos
             else
             {
                 MessageBox.Show("Ingrese un precio unitario válido.");
+            }
+        }
+
+        private void btn_eliminar_Click(object sender, EventArgs e)
+        {
+            if (dgv_detalle.SelectedRows.Count > 0)
+            {
+                // Mostrar un cuadro de diálogo de confirmación
+                DialogResult result = MessageBox.Show("¿Está seguro que desea eliminar la fila seleccionada?", "Confirmación de eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (result == DialogResult.Yes)
+                {
+                    // Obtiene la fila seleccionada del dgv_detalle (datagrid)
+                    DataGridViewRow filaSeleccionada = dgv_detalle.SelectedRows[0];
+
+                    // Elimina la fila seleccionada por el usuario
+                    dgv_detalle.Rows.Remove(filaSeleccionada);
+                }
+            }
+            else
+            {
+                MessageBox.Show("No se ha seleccionado ninguna fila para eliminar.");
+            }
+        }
+
+        private void btn_confirmar_Click(object sender, EventArgs e)
+        {
+            // Mostrar un cuadro de diálogo de confirmación
+            DialogResult result = MessageBox.Show("¿Está seguro que desea confirmar la orden?", "Confirmación de orden", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (result == DialogResult.Yes)
+            {
+                dgv_detalle.Enabled = false;
+                txt_cantidad.Enabled = false;
+                txt_descripcion.Enabled = false;
+                cmb_productos.Enabled = false;
+                txt_totalfila.Enabled = false;
+                txt_preciou.Enabled = false;
+
+                double subtotal = 0;
+                double ivaPorcentaje = 0.12;
+
+                foreach (DataGridViewRow fila in dgv_detalle.Rows)
+                {
+                    // Se asegura de que la fila no sea la fila de encabezado.
+                    if (!fila.IsNewRow)
+                    {
+                        // Obtiene el valor de la última celda de la fila.
+                        double valorCelda;
+                        if (double.TryParse(fila.Cells[dgv_detalle.ColumnCount - 1].Value.ToString(), out valorCelda))
+                        {
+                            // Suma el valor al subtotal.
+                            subtotal += valorCelda;
+                        }
+                    }
+                }
+                // Calcula el total con IVA.
+                double totalIva = (subtotal * (1 + ivaPorcentaje)) - subtotal;
+                double total = totalIva + subtotal;
+
+                //Muestra los resultados en los textbox
+                txt_subtotal.Text = subtotal.ToString();
+                txt_iva.Text = totalIva.ToString();
+                txt_total.Text = total.ToString();
             }
         }
     }
