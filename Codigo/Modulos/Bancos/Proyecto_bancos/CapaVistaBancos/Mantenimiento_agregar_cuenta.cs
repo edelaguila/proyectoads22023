@@ -3,6 +3,7 @@ using System.Windows.Forms;
 
 namespace CapaVistaBancos
 {
+
     public partial class Mantenimiento_agregar_cuenta : Form
     {
         public Mantenimiento_agregar_cuenta()
@@ -29,6 +30,11 @@ namespace CapaVistaBancos
             // TODO: esta línea de código carga datos en la tabla 'dataSet4.tbl_monedabanco' Puede moverla o quitarla según sea necesario.
             this.tbl_monedabancoTableAdapter.Fill(this.dataSet4.tbl_monedabanco);
 
+        }
+
+        private void navegador1_Load(object sender, EventArgs e)
+        {
+          
         }
     }
 }
