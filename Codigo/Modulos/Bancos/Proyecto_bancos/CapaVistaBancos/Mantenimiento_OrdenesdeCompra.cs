@@ -8,7 +8,7 @@ namespace CapaVistaBancos
         public Mantenimiento_OrdenesdeCompra()
         {
             InitializeComponent();
-            this.navegador1.config("tbl_mantenimientos_ordenes_compra", this, "");
+           
         }
 
         private void btn_salir_dispo_Click(object sender, EventArgs e)

@@ -51,7 +51,7 @@ namespace CapaVistaBancos
             this.label3 = new System.Windows.Forms.Label();
             this.cb_selectbanco = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.navegador1 = new CapaVista.Navegador();
+            this.navegador1 = new NavegadorVista.Navegador();
             ((System.ComponentModel.ISupportInitialize)(this.tblmonedabancoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblmantenimientosagregarbancosBindingSource)).BeginInit();
@@ -124,7 +124,7 @@ namespace CapaVistaBancos
             // txt_numcuenta
             // 
             this.txt_numcuenta.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_numcuenta.Location = new System.Drawing.Point(242, 216);
+            this.txt_numcuenta.Location = new System.Drawing.Point(243, 268);
             this.txt_numcuenta.Name = "txt_numcuenta";
             this.txt_numcuenta.Size = new System.Drawing.Size(169, 26);
             this.txt_numcuenta.TabIndex = 91;
@@ -134,7 +134,7 @@ namespace CapaVistaBancos
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(58, 258);
+            this.label1.Location = new System.Drawing.Point(59, 310);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(135, 20);
             this.label1.TabIndex = 87;
@@ -143,7 +143,7 @@ namespace CapaVistaBancos
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(59, 337);
+            this.dataGridView1.Location = new System.Drawing.Point(60, 389);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -156,7 +156,7 @@ namespace CapaVistaBancos
             this.cb_tipomoneda.DisplayMember = "mon_nomMoneda";
             this.cb_tipomoneda.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_tipomoneda.FormattingEnabled = true;
-            this.cb_tipomoneda.Location = new System.Drawing.Point(242, 258);
+            this.cb_tipomoneda.Location = new System.Drawing.Point(243, 310);
             this.cb_tipomoneda.Name = "cb_tipomoneda";
             this.cb_tipomoneda.Size = new System.Drawing.Size(169, 28);
             this.cb_tipomoneda.TabIndex = 88;
@@ -165,7 +165,7 @@ namespace CapaVistaBancos
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(58, 216);
+            this.label2.Location = new System.Drawing.Point(59, 268);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(152, 20);
             this.label2.TabIndex = 89;
@@ -175,7 +175,7 @@ namespace CapaVistaBancos
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(500, 219);
+            this.label6.Location = new System.Drawing.Point(501, 271);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(170, 20);
             this.label6.TabIndex = 96;
@@ -184,7 +184,7 @@ namespace CapaVistaBancos
             // txt_alias
             // 
             this.txt_alias.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_alias.Location = new System.Drawing.Point(684, 251);
+            this.txt_alias.Location = new System.Drawing.Point(685, 303);
             this.txt_alias.Name = "txt_alias";
             this.txt_alias.Size = new System.Drawing.Size(169, 26);
             this.txt_alias.TabIndex = 90;
@@ -195,7 +195,7 @@ namespace CapaVistaBancos
             this.cb_tipocuenta.DisplayMember = "manac_tipo_de_cuenta";
             this.cb_tipocuenta.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_tipocuenta.FormattingEnabled = true;
-            this.cb_tipocuenta.Location = new System.Drawing.Point(242, 294);
+            this.cb_tipocuenta.Location = new System.Drawing.Point(243, 346);
             this.cb_tipocuenta.Name = "cb_tipocuenta";
             this.cb_tipocuenta.Size = new System.Drawing.Size(169, 28);
             this.cb_tipocuenta.TabIndex = 95;
@@ -205,7 +205,7 @@ namespace CapaVistaBancos
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(500, 251);
+            this.label3.Location = new System.Drawing.Point(501, 303);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 20);
             this.label3.TabIndex = 92;
@@ -217,7 +217,7 @@ namespace CapaVistaBancos
             this.cb_selectbanco.DisplayMember = "manag_nombre_banco";
             this.cb_selectbanco.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_selectbanco.FormattingEnabled = true;
-            this.cb_selectbanco.Location = new System.Drawing.Point(684, 216);
+            this.cb_selectbanco.Location = new System.Drawing.Point(685, 268);
             this.cb_selectbanco.Name = "cb_selectbanco";
             this.cb_selectbanco.Size = new System.Drawing.Size(169, 28);
             this.cb_selectbanco.TabIndex = 94;
@@ -227,7 +227,7 @@ namespace CapaVistaBancos
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(58, 301);
+            this.label5.Location = new System.Drawing.Point(59, 353);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(122, 20);
             this.label5.TabIndex = 93;
@@ -235,10 +235,10 @@ namespace CapaVistaBancos
             // 
             // navegador1
             // 
-            this.navegador1.Location = new System.Drawing.Point(31, 81);
+            this.navegador1.Location = new System.Drawing.Point(135, 46);
             this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1001, 96);
+            this.navegador1.Size = new System.Drawing.Size(765, 187);
             this.navegador1.TabIndex = 98;
             // 
             // Mantenimiento_agregar_cuenta
@@ -300,6 +300,6 @@ namespace CapaVistaBancos
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cb_selectbanco;
         private System.Windows.Forms.Label label5;
-        private CapaVista.Navegador navegador1;
+        private NavegadorVista.Navegador navegador1;
     }
 }

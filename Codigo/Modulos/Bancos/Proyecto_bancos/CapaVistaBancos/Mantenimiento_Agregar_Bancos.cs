@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Windows.Forms;
+using Seguridad_Controlador;
 
 namespace CapaVistaBancos
 {
     public partial class Mantenimiento_Agregar_Bancos : Form
     {
+        Controlador cn = new Controlador();
         public Mantenimiento_Agregar_Bancos()
         {
-            InitializeComponent();
-            this.navegador1.config("tbl_mantenimientos_agregar_bancos", this, "");
+            InitializeComponent(); 
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -39,6 +40,18 @@ namespace CapaVistaBancos
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void navegador1_Load(object sender, EventArgs e)
+        {
+            NavegadorVista.Navegador.idApp = "5007";  //código aplicación asignado al formulario
+            navegador1.actual = this;
+            navegador1.tabla = dgv_agBancos;
+            TextBox[] Grupotextbox = { txt_id_banco, txt_numbanco, txt_nombrebanco, txt_estadoban };
+            TextBox[] Idtextbox = { txt_id_banco, txt_numbanco };
+            navegador1.textbox = Grupotextbox;
+            navegador1.textboxi = Idtextbox;
+            navegador1.cargar(dgv_agBancos, Grupotextbox, cn.getNombreBd());
         }
     }
 }
