@@ -34,9 +34,8 @@
     <Reference Include="eCryptography, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Eramake.eCryptography.1.1.6\lib\net45\eCryptography.dll</HintPath>
     </Reference>
-    <Reference Include="FontAwesome.Sharp, Version=6.1.1.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Navegador\Vista\bin\Debug\FontAwesome.Sharp.dll</HintPath>
+    <Reference Include="FontAwesome.Sharp">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files\UMG\Instalador General HSC\FontAwesome.Sharp.dll</HintPath>
     </Reference>
     <Reference Include="Seguridad_Controlador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -59,7 +58,7 @@
       <HintPath>..\..\..\..\..\..\..\..\ProyectosFinales\proyectoads22023\Codigo\Modulos\Administracion\ComprasCxp\Capa_vista\bin\Debug\Vista_ComprasCxpMenu.dll</HintPath>
     </Reference>
     <Reference Include="Vista_HoteleriaMenu">
-      <HintPath>..\..\..\..\..\..\..\..\ProyectosFinales\proyectoads22023\Codigo\Modulos\Hoteleria\Capa_vista\bin\Debug\Vista_HoteleriaMenu.dll</HintPath>
+      <HintPath>..\..\..\Hoteleria\Capa_vista\bin\Debug\Vista_HoteleriaMenu.dll</HintPath>
     </Reference>
     <Reference Include="Vista_InventariosMenu, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

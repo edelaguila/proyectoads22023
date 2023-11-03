@@ -32,7 +32,7 @@ namespace Vista_PrototipoMenu
         //Validaciones que si son visibles los panales los oculta
         private void hideSubMenu()
         {
-            
+
             if (panelTranportes.Visible == true)
                 panelTranportes.Visible = false;
             if (PanelAuditoria.Visible == true)
@@ -77,10 +77,10 @@ namespace Vista_PrototipoMenu
         //Método que muestra el formulario indicado
         private void btnaplicaciones_Click(object sender, EventArgs e)
         {
-           /* frmAplicaciones form = new frmAplicaciones();
+            frmTipoHabitacion form = new frmTipoHabitacion();
             form.MdiParent = this;
             form.Show();
-            hideSubMenu(); */
+            hideSubMenu();
         }
         //Método que muestra el formulario indicado
 
@@ -96,7 +96,7 @@ namespace Vista_PrototipoMenu
         //Método que muestra el formulario indicado
         private void btnayuda_Click(object sender, EventArgs e)
         {
-            Help.ShowHelp(this, "umg.chm");            
+            Help.ShowHelp(this, "umg.chm");
         }
     }
 }
