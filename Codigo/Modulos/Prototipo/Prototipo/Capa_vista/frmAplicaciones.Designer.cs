@@ -30,10 +30,10 @@ namespace Vista_PrototipoMenu
         private void InitializeComponent()
         {
             this.navegador1 = new NavegadorVista.Navegador();
-            this.txtIdAplicacion = new System.Windows.Forms.TextBox();
-            this.txtNombreAplicacion = new System.Windows.Forms.TextBox();
-            this.txtDescripcionAplicacion = new System.Windows.Forms.TextBox();
-            this.txtEstadoAplicacion = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,58 +44,58 @@ namespace Vista_PrototipoMenu
             // 
             // navegador1
             // 
-            this.navegador1.Location = new System.Drawing.Point(-3, -1);
+            this.navegador1.Location = new System.Drawing.Point(4, 3);
             this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(765, 193);
+            this.navegador1.Size = new System.Drawing.Size(764, 190);
             this.navegador1.TabIndex = 0;
             this.navegador1.Load += new System.EventHandler(this.navegador1_Load);
             // 
-            // txtIdAplicacion
+            // txtId
             // 
-            this.txtIdAplicacion.Location = new System.Drawing.Point(285, 202);
-            this.txtIdAplicacion.Name = "txtIdAplicacion";
-            this.txtIdAplicacion.Size = new System.Drawing.Size(250, 22);
-            this.txtIdAplicacion.TabIndex = 1;
-            this.txtIdAplicacion.Tag = "pk_id_aplicacion";
+            this.txtId.Location = new System.Drawing.Point(343, 210);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(240, 22);
+            this.txtId.TabIndex = 1;
+            this.txtId.Tag = "pk_id_aplicacion";
             // 
-            // txtNombreAplicacion
+            // txtNombre
             // 
-            this.txtNombreAplicacion.Location = new System.Drawing.Point(285, 230);
-            this.txtNombreAplicacion.Name = "txtNombreAplicacion";
-            this.txtNombreAplicacion.Size = new System.Drawing.Size(250, 22);
-            this.txtNombreAplicacion.TabIndex = 2;
-            this.txtNombreAplicacion.Tag = "nombre_aplicacion";
+            this.txtNombre.Location = new System.Drawing.Point(343, 238);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(240, 22);
+            this.txtNombre.TabIndex = 2;
+            this.txtNombre.Tag = "nombre_aplicacion";
             // 
-            // txtDescripcionAplicacion
+            // txtDescripcion
             // 
-            this.txtDescripcionAplicacion.Location = new System.Drawing.Point(285, 258);
-            this.txtDescripcionAplicacion.Name = "txtDescripcionAplicacion";
-            this.txtDescripcionAplicacion.Size = new System.Drawing.Size(250, 22);
-            this.txtDescripcionAplicacion.TabIndex = 3;
-            this.txtDescripcionAplicacion.Tag = "descripcion_aplicacion";
+            this.txtDescripcion.Location = new System.Drawing.Point(343, 266);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(240, 22);
+            this.txtDescripcion.TabIndex = 3;
+            this.txtDescripcion.Tag = "descripcion_aplicacion";
             // 
-            // txtEstadoAplicacion
+            // txtEstado
             // 
-            this.txtEstadoAplicacion.Location = new System.Drawing.Point(285, 286);
-            this.txtEstadoAplicacion.Name = "txtEstadoAplicacion";
-            this.txtEstadoAplicacion.Size = new System.Drawing.Size(250, 22);
-            this.txtEstadoAplicacion.TabIndex = 4;
-            this.txtEstadoAplicacion.Tag = "estado_aplicacion";
+            this.txtEstado.Location = new System.Drawing.Point(343, 294);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(240, 22);
+            this.txtEstado.TabIndex = 4;
+            this.txtEstado.Tag = "estado_aplicacion";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(34, 200);
+            this.label1.Location = new System.Drawing.Point(180, 210);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 21);
+            this.label1.Size = new System.Drawing.Size(24, 21);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Identificacion";
+            this.label1.Text = "Id";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(34, 235);
+            this.label2.Location = new System.Drawing.Point(180, 238);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 21);
             this.label2.TabIndex = 6;
@@ -104,16 +104,16 @@ namespace Vista_PrototipoMenu
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(34, 263);
+            this.label3.Location = new System.Drawing.Point(180, 266);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 21);
+            this.label3.Size = new System.Drawing.Size(82, 17);
             this.label3.TabIndex = 7;
             this.label3.Text = "Descripcion";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(34, 291);
+            this.label4.Location = new System.Drawing.Point(185, 299);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 21);
             this.label4.TabIndex = 8;
@@ -122,11 +122,11 @@ namespace Vista_PrototipoMenu
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(28, 331);
+            this.dataGridView1.Location = new System.Drawing.Point(55, 337);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(733, 166);
+            this.dataGridView1.Size = new System.Drawing.Size(688, 148);
             this.dataGridView1.TabIndex = 9;
             this.dataGridView1.Tag = "tbl_aplicaciones";
             // 
@@ -134,19 +134,19 @@ namespace Vista_PrototipoMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(812, 503);
+            this.ClientSize = new System.Drawing.Size(800, 499);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtEstadoAplicacion);
-            this.Controls.Add(this.txtDescripcionAplicacion);
-            this.Controls.Add(this.txtNombreAplicacion);
-            this.Controls.Add(this.txtIdAplicacion);
+            this.Controls.Add(this.txtEstado);
+            this.Controls.Add(this.txtDescripcion);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtId);
             this.Controls.Add(this.navegador1);
             this.Name = "frmAplicaciones";
-            this.Text = "frmAplicaciones";
+            this.Text = "1002 Mantenimiento Aplicaciones";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -156,10 +156,10 @@ namespace Vista_PrototipoMenu
         #endregion
 
         private NavegadorVista.Navegador navegador1;
-        private System.Windows.Forms.TextBox txtIdAplicacion;
-        private System.Windows.Forms.TextBox txtNombreAplicacion;
-        private System.Windows.Forms.TextBox txtDescripcionAplicacion;
-        private System.Windows.Forms.TextBox txtEstadoAplicacion;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtDescripcion;
+        private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
