@@ -13,7 +13,7 @@ namespace CapaVista.Procedimientos
 {
     public partial class Movimiento_cliente : Form
     {
-        Controlador cn = new Controlador();
+        ControladorVENTASCXC cn = new ControladorVENTASCXC();
 
         public Movimiento_cliente()
         {
@@ -90,7 +90,7 @@ namespace CapaVista.Procedimientos
         {
             string tabla = "tbl_encabezadoMovimientoCliente";
             Dictionary<string, object> valores = new Dictionary<string, object>();
-            Controlador controlador = new Controlador();
+            ControladorVENTASCXC controlador = new ControladorVENTASCXC();
 
             valores.Add("codigoCliente", int.Parse(cb_busquedaCliente.SelectedItem.ToString()));
             valores.Add("encabezadoCliente_FechaEmision", dtp_fechaEmision.Value.Date);
@@ -106,7 +106,7 @@ namespace CapaVista.Procedimientos
         {
             string tabla = "tbl_detalleMovimientoCliente";
             Dictionary<string, object> valores = new Dictionary<string, object>();
-            Controlador controlador = new Controlador();
+            ControladorVENTASCXC controlador = new ControladorVENTASCXC();
 
             valores.Add("CodigoEncabezadoCliente", IDE);
             valores.Add("CodigoConceptoCliente", int.Parse(cb_busquedaConcepto.SelectedItem.ToString()));

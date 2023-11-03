@@ -39,6 +39,9 @@
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Seguridad_Controlador">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files\UMG\Instalador General HSC\Seguridad_Controlador.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -53,12 +56,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Mantenimientos\Clientes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Mantenimientos\Clientes.Designer.cs">
-      <DependentUpon>Clientes.cs</DependentUpon>
-    </Compile>
     <Compile Include="Mantenimientos\Cobradores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,12 +110,6 @@
     <Compile Include="Procedimientos\Compras.Designer.cs">
       <DependentUpon>Compras.cs</DependentUpon>
     </Compile>
-    <Compile Include="Procedimientos\Movimiento cliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Procedimientos\Movimiento cliente.Designer.cs">
-      <DependentUpon>Movimiento cliente.cs</DependentUpon>
-    </Compile>
     <Compile Include="Procedimientos\Movimiento Proveedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,9 +130,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Mantenimientos\Clientes.resx">
-      <DependentUpon>Clientes.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\Cobradores.resx">
       <DependentUpon>Cobradores.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,9 +156,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Procedimientos\Compras.resx">
       <DependentUpon>Compras.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Procedimientos\Movimiento cliente.resx">
-      <DependentUpon>Movimiento cliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procedimientos\Movimiento Proveedor.resx">
       <DependentUpon>Movimiento Proveedor.cs</DependentUpon>

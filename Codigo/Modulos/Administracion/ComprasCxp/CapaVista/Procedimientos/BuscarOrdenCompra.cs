@@ -16,7 +16,7 @@ namespace CapaVista.Procedimientos
         private Compras Compras;
 
         String tabla1 = "tbl_ordenescompra";
-        Controlador cn = new Controlador();
+        ControladorCOMPRASCXP cn = new ControladorCOMPRASCXP();
         public BuscarOrdenCompra(Compras compra)
         {
             InitializeComponent();

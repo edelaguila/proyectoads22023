@@ -9,7 +9,7 @@ using System.Data;
 
 namespace CapaControlador
 {
-    public class Controlador
+    public class ControladorVENTASCXC
     {
         Sentencias sn = new Sentencias();
 
