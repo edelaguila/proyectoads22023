@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace CapaControlador
 {
-    public class Controlador
+    public class ControladorCOMPRASCXP
     {
         Sentencias sn = new Sentencias();
 

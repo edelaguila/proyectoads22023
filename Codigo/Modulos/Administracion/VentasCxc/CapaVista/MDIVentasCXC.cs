@@ -7,21 +7,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CapaControlador; 
+using CapaControlador;
+using Seguridad_Controlador;
 namespace CapaVista
 {
     public partial class MDIVentasCXC : Form
     {
-        Controlador cn = new Controlador();
+        ControladorVENTASCXC cn = new ControladorVENTASCXC();
+        Controlador cns = new Controlador();
         public MDIVentasCXC()
         {
             InitializeComponent();
             //Control para habilitar opciones del menu
-            //Button[] apps = {btnaplicaciones};
+            Button[] apps = {btnclientes, btnconcepto, btnmovimientocliente, btncotizaciones, btnpedido, btnfactura};
             //Llamada metodo de libreria Controlador del modulo de Seguridad
-            //cn.deshabilitarApps(apps);
+
+            cns.deshabilitarApps(apps);
             //Llamada metodo de libreria Controlador del modulo de Seguridad
-            //cn.getAccesoApp(1002, apps[0]);
+
+            cns.getAccesoApp(3001, apps[1]);
+            cns.getAccesoApp(3002, apps[2]);
+            cns.getAccesoApp(3003, apps[3]);
+            cns.getAccesoApp(3004, apps[4]);
+            cns.getAccesoApp(3005, apps[5]);
+            cns.getAccesoApp(3006, apps[6]);
         }
 
         //Validaciones que si son visibles los panales los oculta
@@ -103,11 +112,6 @@ namespace CapaVista
             //hideSubMenu();
         }
 
-        private void btnproveedor_Click(object sender, EventArgs e)
-        {
-            //Abrir(new "carpeta"."form"());
-            //hideSubMenu();
-        }
 
         private void btnconcepto_Click(object sender, EventArgs e)
         {
@@ -121,11 +125,6 @@ namespace CapaVista
             hideSubMenu();
         }
 
-        private void btnmovimientoproveedor_Click(object sender, EventArgs e)
-        {
-            Abrir(new Procedimientos.Movimiento_Proveedor());
-            hideSubMenu();
-        }
 
         private void btncotizaciones_Click(object sender, EventArgs e)
         {

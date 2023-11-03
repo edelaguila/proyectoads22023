@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaControlador;
-
+using Seguridad_Controlador;
 namespace CapaVista
 {
     public partial class MDIComprasCXP : Form
@@ -22,16 +22,22 @@ namespace CapaVista
         private string fechaE = "";
         private string solicitante = "";
         private string proveedor = "";
-        Controlador cn = new Controlador();
+
+        ControladorCOMPRASCXP cn = new ControladorCOMPRASCXP();
+        Controlador cns = new Controlador(); 
         public MDIComprasCXP()
         {
             InitializeComponent();
             //Control para habilitar opciones del menu
-            //Button[] apps = {btnaplicaciones};
+            Button[] apps = {btnproveedor, btnconcepto, btnmovimientoproveedor, btnordenescompras, btncompra};
             //Llamada metodo de libreria Controlador del modulo de Seguridad
-            //cn.deshabilitarApps(apps);
+            cns.deshabilitarApps(apps);
             //Llamada metodo de libreria Controlador del modulo de Seguridad
-            //cn.getAccesoApp(1002, apps[0]);
+            cns.getAccesoApp(2001, apps[1]);
+            cns.getAccesoApp(2002, apps[2]);
+            cns.getAccesoApp(2003, apps[3]);
+            cns.getAccesoApp(2004, apps[4]);
+            cns.getAccesoApp(2005, apps[5]);
         }
 
         private void hideSubMenu()
@@ -124,11 +130,7 @@ namespace CapaVista
             //hideSubMenu();
         }
 
-        private void btnmovimientocliente_Click(object sender, EventArgs e)
-        {
-            Abrir(new Procedimientos.Movimiento_cliente());
-            hideSubMenu();
-        }
+       
 
         private void btnmovimientoproveedor_Click(object sender, EventArgs e)
         {

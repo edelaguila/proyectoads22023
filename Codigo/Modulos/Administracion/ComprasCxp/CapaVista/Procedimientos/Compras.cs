@@ -13,11 +13,11 @@ namespace CapaVista.Procedimientos
 {
     public partial class Compras : Form
     {
-        private Controlador controller;
+        private ControladorCOMPRASCXP controller;
         public Compras(string idord, string fechaS, string fechaE, string solicitante, string proveedor)
         {
             InitializeComponent();
-            controller = new Controlador();
+            controller = new ControladorCOMPRASCXP();
             llenarse();
             controller.CargarOpciones2(cmb_orden);
             txt_numorden.Text = idord;
