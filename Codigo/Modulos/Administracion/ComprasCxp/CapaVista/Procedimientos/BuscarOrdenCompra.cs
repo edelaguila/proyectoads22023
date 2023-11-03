@@ -43,11 +43,51 @@ namespace CapaVista.Procedimientos
                 Compras.RecibirDatosDesdeBuscarOrdenes(id, fechaS, fechaE, solicitante, proveedor);
                 this.Close();
             }
+            else
+            {
+                MessageBox.Show("Seleccione una fila.", "Selección de Orden", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void BuscarOrdenCompra_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_buscarOrden_Click(object sender, EventArgs e)
+        {
+            if (dgv_orden != null && dgv_orden.Rows.Count > 0)
+            {
+                if (int.TryParse(txt_Orden.Text, out int idOrdenBuscar))
+                {
+                    bool encontrado = false;
+
+                    foreach (DataGridViewRow fila in dgv_orden.Rows)
+                    {
+                        if (!fila.IsNewRow)
+                        {
+                            int idOrdenEnFila = int.Parse(fila.Cells["ord_id"].Value.ToString());
+
+                            if (idOrdenEnFila == idOrdenBuscar)
+                            {
+                                fila.Selected = true;
+                                dgv_orden.CurrentCell = fila.Cells[0];
+                                encontrado = true;
+                                break;
+                            }
+                        }
+                    }
+
+                    if (!encontrado)
+                    {
+                        MessageBox.Show("Orden de compra no encontrada.", "Búsqueda de Orden de Compra", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Ingrese un número de orden válido.", "Búsqueda de Orden de Compra", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
         }
     }
 }
