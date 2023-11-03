@@ -7,8 +7,8 @@
     <ProjectGuid>{A4D75E74-48C1-44B6-A078-2DBEA0B01F71}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Controlador_PrototipoMenu</RootNamespace>
-    <AssemblyName>Controlador_PrototipoMenu</AssemblyName>
+    <RootNamespace>Capa_controlador</RootNamespace>
+    <AssemblyName>Capa_controlador</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -34,9 +34,8 @@
     <Reference Include="eCryptography, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Eramake.eCryptography.1.1.6\lib\net45\eCryptography.dll</HintPath>
     </Reference>
-    <Reference Include="Modelo_PrototipoMenu, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Modelo\bin\Debug\Modelo_PrototipoMenu.dll</HintPath>
+    <Reference Include="Modelo">
+      <HintPath>..\Modelo\bin\Debug\Modelo.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -49,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controlador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
