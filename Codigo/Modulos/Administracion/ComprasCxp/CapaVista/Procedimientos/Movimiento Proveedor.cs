@@ -155,6 +155,47 @@ namespace CapaVista.Procedimientos
 
         }
 
+        public void EliminarDato(string tabla, string columna, string valor)
+        {
+            bool eliminado = cn.Eliminar(tabla, columna, valor);
+            if (eliminado)
+            {
+                MessageBox.Show("Registro eliminado correctamente.");
+            }
+            else
+            {
+                MessageBox.Show($"No se pudo eliminar el registro. Verifique el {columna}.");
+            }
+        }
+
+
+        public void eliminacionEncabezado()
+        {
+
+            string valor = txt_eliminacion.Text;
+
+
+            // Llama a la función de eliminación pasando los parámetros necesarios
+            string tabla = "tbl_encabezadoMovimientoProveedor"; // Nombre de la tabla
+            string columna = "id_EncabezadoProveedor"; // Nombre de la columna
+            EliminarDato(tabla, columna, valor);
+
+        }
+
+        public void eliminacionDetalle()
+        {
+
+            string valor = txt_eliminacion.Text;
+
+
+            // Llama a la función de eliminación pasando los parámetros necesarios
+            string tabla = "tbl_detalleMovimientoProveedor"; // Nombre de la tabla
+            string columna = "id_DetalleProveedor"; // Nombre de la columna
+            EliminarDato(tabla, columna, valor);
+
+        }
+
+
         private void btn_busquedaCliente_Click(object sender, EventArgs e)
         {
             BuscarCliente();
@@ -175,7 +216,9 @@ namespace CapaVista.Procedimientos
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            eliminacionDetalle();
+            eliminacionEncabezado();
+            actualizardatagrid();
         }
     }
 }

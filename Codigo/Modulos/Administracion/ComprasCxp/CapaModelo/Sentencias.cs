@@ -24,6 +24,22 @@ namespace CapaModelo
             return dt;
         }
 
+        public bool Eliminar(string tabla, string columna, string valor)
+        {
+            using (OdbcConnection conn = con.conexion())
+            {
+                string consulta = $"DELETE FROM {tabla} WHERE {columna} = ?";
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("valor", valor);
+                    int filasAfectadas = cmd.ExecuteNonQuery();
+                    return filasAfectadas > 0;
+                }
+            }
+        }
+
+
+
         public OdbcDataAdapter llenarTbl(string tabla)
         {
             // Utiliza INNER JOINs para unir las tablas y obtener los datos necesarios.

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 30-10-2023 a las 23:41:15
+-- Tiempo de generación: 31-10-2023 a las 00:15:03
 -- Versión del servidor: 8.0.31
 -- Versión de PHP: 8.0.26
 
@@ -20,7 +20,9 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `bdgestioncomercial`
 --
-
+DROP DATABASE IF EXISTS bdgestioncomercial;
+CREATE DATABASE IF NOT EXISTS bdgestioncomercial;
+USE bdgestioncomercial;
 -- --------------------------------------------------------
 
 --
@@ -37,17 +39,6 @@ CREATE TABLE IF NOT EXISTS `tbl_cliente` (
   `cli_tipo` varchar(60) NOT NULL,
   PRIMARY KEY (`id_cliente`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `tbl_cliente`
---
-
-INSERT INTO `tbl_cliente` (`id_cliente`, `cli_Nombre`, `cli_Telefono`, `cli_NIT`, `cli_Estado`, `cli_tipo`) VALUES
-(1, 'Cliente 1', 1234567890, 12345, 'Activo', 'Tipo 1'),
-(2, 'Cliente 2', 2147483647, 54321, 'Inactivo', 'Tipo 2'),
-(3, 'Cliente 3', 2147483647, 99999, 'Activo', 'Tipo 3'),
-(4, 'Cliente 4', 1111111111, 77777, 'Inactivo', 'Tipo 1'),
-(5, 'Cliente 5', 2147483647, 22222, 'Activo', 'Tipo 2');
 
 -- --------------------------------------------------------
 
@@ -84,11 +75,9 @@ CREATE TABLE IF NOT EXISTS `tbl_compras` (
   `com_iva` double DEFAULT NULL,
   `com_totalcompra` double DEFAULT NULL,
   `com_totalLetras` varchar(255) DEFAULT NULL,
-  `fk_empleado_id` int NOT NULL,
   `fk_ord_id` int NOT NULL,
   `fk_proveedor_id` int NOT NULL,
   PRIMARY KEY (`com_id`),
-  KEY `fk_tbl_compras_tbl_empleado1` (`fk_empleado_id`),
   KEY `fk_tbl_compras_tbl_ordenesCompra1` (`fk_ord_id`),
   KEY `fk_tbl_compras_tbl_proveedor1` (`fk_proveedor_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
@@ -108,17 +97,6 @@ CREATE TABLE IF NOT EXISTS `tbl_concepto` (
   PRIMARY KEY (`id_concepto`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
---
--- Volcado de datos para la tabla `tbl_concepto`
---
-
-INSERT INTO `tbl_concepto` (`id_concepto`, `con_Descripcion`, `con_Tipo`, `con_SerieConcepto`) VALUES
-(1, 'Concepto 1', 'Tipo A', 1001),
-(2, 'Concepto 2', 'Tipo B', 1002),
-(3, 'Concepto 3', 'Tipo C', 1003),
-(4, 'Concepto 4', 'Tipo A', 1004),
-(5, 'Concepto 5', 'Tipo B', 1005);
-
 -- --------------------------------------------------------
 
 --
@@ -136,14 +114,6 @@ CREATE TABLE IF NOT EXISTS `tbl_detallemovimientocliente` (
   KEY `CodigoConceptoCliente` (`CodigoConceptoCliente`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
---
--- Volcado de datos para la tabla `tbl_detallemovimientocliente`
---
-
-INSERT INTO `tbl_detallemovimientocliente` (`id_DetalleCliente`, `CodigoEncabezadoCliente`, `CodigoConceptoCliente`, `Detalle_valor`) VALUES
-(1, 1, 1, 50),
-(2, 2, 5, 45);
-
 -- --------------------------------------------------------
 
 --
@@ -160,13 +130,6 @@ CREATE TABLE IF NOT EXISTS `tbl_detallemovimientoproveedor` (
   KEY `CodigoEncabezadoProveedor` (`CodigoEncabezadoProveedor`),
   KEY `CodigoConceptoProveedor` (`CodigoConceptoProveedor`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `tbl_detallemovimientoproveedor`
---
-
-INSERT INTO `tbl_detallemovimientoproveedor` (`id_DetalleProveedor`, `CodigoEncabezadoProveedor`, `CodigoConceptoProveedor`, `detalleProveedor_valor`) VALUES
-(1, 1, 3, 1);
 
 -- --------------------------------------------------------
 
@@ -236,14 +199,6 @@ CREATE TABLE IF NOT EXISTS `tbl_encabezadomovimientocliente` (
   KEY `CodigoCliente` (`CodigoCliente`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
---
--- Volcado de datos para la tabla `tbl_encabezadomovimientocliente`
---
-
-INSERT INTO `tbl_encabezadomovimientocliente` (`id_EncabezadoCliente`, `CodigoCliente`, `encabezadoCliente_FechaEmision`, `encabezadoCliente_FechaVencimiento`) VALUES
-(1, 1, '2023-10-27', '2023-10-31'),
-(2, 4, '2023-10-27', '2023-10-27');
-
 -- --------------------------------------------------------
 
 --
@@ -259,13 +214,6 @@ CREATE TABLE IF NOT EXISTS `tbl_encabezadomovimientoproveedor` (
   PRIMARY KEY (`id_EncabezadoProveedor`),
   KEY `CodigoProveedor` (`CodigoProveedor`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `tbl_encabezadomovimientoproveedor`
---
-
-INSERT INTO `tbl_encabezadomovimientoproveedor` (`id_EncabezadoProveedor`, `CodigoProveedor`, `encabezadoProveedor_FechaEmision`, `encabezadoProveedor_FechaVencimiento`) VALUES
-(1, 2, '2023-10-27', '2023-10-27');
 
 -- --------------------------------------------------------
 
@@ -284,11 +232,9 @@ CREATE TABLE IF NOT EXISTS `tbl_ordenescompra` (
   `ord_totalOrden` double NOT NULL,
   `ord_totalLetras` varchar(255) DEFAULT NULL,
   `fk_proveedor_id` int NOT NULL,
-  `fk_empleado_id` int NOT NULL,
   `ord_entregara` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`ord_id`),
-  KEY `fk_tbl_ordenesCompra_tbl_proveedor1` (`fk_proveedor_id`),
-  KEY `fk_tbl_ordenesCompra_tbl_empleado1` (`fk_empleado_id`)
+  KEY `fk_tbl_ordenesCompra_tbl_proveedor1` (`fk_proveedor_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
 -- --------------------------------------------------------
@@ -329,17 +275,6 @@ CREATE TABLE IF NOT EXISTS `tbl_proveedor` (
   PRIMARY KEY (`id_proveedor`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
---
--- Volcado de datos para la tabla `tbl_proveedor`
---
-
-INSERT INTO `tbl_proveedor` (`id_proveedor`, `pro_Nombre`, `pro_Domicilio`, `pro_Nit`, `pro_Telefono`, `pro_Tipo`, `pro_Estado`, `pro_RepresentanteLegal`, `pro_Empresa`) VALUES
-(1, 'Proveedor 1', 'Domicilio 1', 2147483647, 2147483647, 'Tipo 1', 'Activo', 'Representante 1', 'Empresa 1'),
-(2, 'Proveedor 2', 'Domicilio 2', 2147483647, 2147483647, 'Tipo 2', 'Inactivo', 'Representante 2', 'Empresa 2'),
-(3, 'Proveedor 3', 'Domicilio 3', 2147483647, 2147483647, 'Tipo 3', 'Activo', 'Representante 3', 'Empresa 3'),
-(4, 'Proveedor 4', 'Domicilio 4', 2147483647, 2147483647, 'Tipo 4', 'Inactivo', 'Representante 4', 'Empresa 4'),
-(5, 'Proveedor 5', 'Domicilio 5', 2147483647, 2147483647, 'Tipo 5', 'Activo', 'Representante 5', 'Empresa 5');
-
 -- --------------------------------------------------------
 
 --
@@ -364,7 +299,6 @@ CREATE TABLE IF NOT EXISTS `tbl_vendedor` (
 -- Filtros para la tabla `tbl_compras`
 --
 ALTER TABLE `tbl_compras`
-  ADD CONSTRAINT `fk_tbl_compras_tbl_empleado1` FOREIGN KEY (`fk_empleado_id`) REFERENCES `tbl_empleado` (`emp_id`),
   ADD CONSTRAINT `fk_tbl_compras_tbl_ordenesCompra1` FOREIGN KEY (`fk_ord_id`) REFERENCES `tbl_ordenescompra` (`ord_id`),
   ADD CONSTRAINT `fk_tbl_compras_tbl_proveedor1` FOREIGN KEY (`fk_proveedor_id`) REFERENCES `tbl_proveedor` (`id_proveedor`);
 
@@ -412,7 +346,6 @@ ALTER TABLE `tbl_encabezadomovimientoproveedor`
 -- Filtros para la tabla `tbl_ordenescompra`
 --
 ALTER TABLE `tbl_ordenescompra`
-  ADD CONSTRAINT `fk_tbl_ordenesCompra_tbl_empleado1` FOREIGN KEY (`fk_empleado_id`) REFERENCES `tbl_empleado` (`emp_id`),
   ADD CONSTRAINT `fk_tbl_ordenesCompra_tbl_proveedor1` FOREIGN KEY (`fk_proveedor_id`) REFERENCES `tbl_proveedor` (`id_proveedor`);
 COMMIT;
 

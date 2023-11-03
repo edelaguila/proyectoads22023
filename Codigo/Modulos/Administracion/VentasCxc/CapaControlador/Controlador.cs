@@ -54,7 +54,10 @@ namespace CapaControlador
         }
 
 
-
+        public bool Eliminar(string tabla, string columna, string valor)
+        {
+            return sn.Eliminar(tabla, columna, valor);
+        }
 
 
 

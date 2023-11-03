@@ -64,6 +64,8 @@ namespace CapaVista.Procedimientos
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.dtTabla = new System.Windows.Forms.DataGridView();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txt_eliminacion = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -429,11 +431,31 @@ namespace CapaVista.Procedimientos
             this.dtTabla.Size = new System.Drawing.Size(864, 248);
             this.dtTabla.TabIndex = 42;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(895, 445);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(96, 17);
+            this.label12.TabIndex = 43;
+            this.label12.Text = "ID movimiento";
+            // 
+            // txt_eliminacion
+            // 
+            this.txt_eliminacion.Location = new System.Drawing.Point(898, 479);
+            this.txt_eliminacion.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_eliminacion.Name = "txt_eliminacion";
+            this.txt_eliminacion.Size = new System.Drawing.Size(96, 22);
+            this.txt_eliminacion.TabIndex = 44;
+            // 
             // Movimiento_cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1010, 710);
+            this.Controls.Add(this.txt_eliminacion);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.dtTabla);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.label9);
@@ -489,5 +511,7 @@ namespace CapaVista.Procedimientos
         private System.Windows.Forms.Button btn_busquedaCliente;
         private System.Windows.Forms.DateTimePicker dtp_fechaEmision;
         private System.Windows.Forms.DateTimePicker dtp_fechaVencimiento;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txt_eliminacion;
     }
 }

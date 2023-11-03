@@ -54,6 +54,8 @@ namespace CapaVista.Procedimientos
             this.txt_concepto = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_empresa = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.dtp_fechaEmision = new System.Windows.Forms.DateTimePicker();
             this.dtp_fechaVencimiento = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
@@ -64,8 +66,8 @@ namespace CapaVista.Procedimientos
             this.label2 = new System.Windows.Forms.Label();
             this.txt_nombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txt_empresa = new System.Windows.Forms.TextBox();
+            this.txt_eliminacion = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtTabla)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -337,6 +339,24 @@ namespace CapaVista.Procedimientos
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dato cliente";
             // 
+            // txt_empresa
+            // 
+            this.txt_empresa.Location = new System.Drawing.Point(433, 84);
+            this.txt_empresa.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_empresa.Name = "txt_empresa";
+            this.txt_empresa.Size = new System.Drawing.Size(192, 22);
+            this.txt_empresa.TabIndex = 33;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(325, 87);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(64, 17);
+            this.label12.TabIndex = 32;
+            this.label12.Text = "Empresa";
+            // 
             // dtp_fechaEmision
             // 
             this.dtp_fechaEmision.Location = new System.Drawing.Point(750, 87);
@@ -427,29 +447,31 @@ namespace CapaVista.Procedimientos
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre";
             // 
-            // label12
+            // txt_eliminacion
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(325, 87);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(64, 17);
-            this.label12.TabIndex = 32;
-            this.label12.Text = "Empresa";
+            this.txt_eliminacion.Location = new System.Drawing.Point(900, 472);
+            this.txt_eliminacion.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_eliminacion.Name = "txt_eliminacion";
+            this.txt_eliminacion.Size = new System.Drawing.Size(96, 22);
+            this.txt_eliminacion.TabIndex = 53;
             // 
-            // txt_empresa
+            // label14
             // 
-            this.txt_empresa.Location = new System.Drawing.Point(433, 84);
-            this.txt_empresa.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_empresa.Name = "txt_empresa";
-            this.txt_empresa.Size = new System.Drawing.Size(192, 22);
-            this.txt_empresa.TabIndex = 33;
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(897, 438);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(96, 17);
+            this.label14.TabIndex = 52;
+            this.label14.Text = "ID movimiento";
             // 
             // Movimiento_Proveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1010, 688);
+            this.Controls.Add(this.txt_eliminacion);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.dtTabla);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.label9);
@@ -507,5 +529,7 @@ namespace CapaVista.Procedimientos
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_nombre;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txt_eliminacion;
+        private System.Windows.Forms.Label label14;
     }
 }
