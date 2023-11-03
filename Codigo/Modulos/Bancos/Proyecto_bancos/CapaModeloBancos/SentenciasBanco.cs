@@ -46,17 +46,7 @@ namespace CapaModeloBancos
                         }
                     }
                 }
-
-
-
-
-
-
             }
-
-
-
-
         }
 
         public DataTable llenarTbl(string tabla) //Llenar tabla de reportes
