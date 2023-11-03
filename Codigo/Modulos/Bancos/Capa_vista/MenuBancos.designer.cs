@@ -309,12 +309,7 @@ namespace Vista_PrototipoMenu
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MenuBancos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-<<<<<<< HEAD:Codigo/Modulos/Prototipo/Prototipo/Capa_vista/MenuSeguridad.designer.cs
-            this.Text = "Menu Prototipo";
-            this.Load += new System.EventHandler(this.MenuSeguridad_Load);
-=======
             this.Text = "Menu de Bancos";
->>>>>>> 647540d65cd01ed63eca76ebcfb1bc752e8444ec:Codigo/Modulos/Bancos/Capa_vista/MenuBancos.designer.cs
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelTranportes.ResumeLayout(false);

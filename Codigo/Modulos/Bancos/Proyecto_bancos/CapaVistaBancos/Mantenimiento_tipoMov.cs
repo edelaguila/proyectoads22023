@@ -8,7 +8,6 @@ namespace CapaVistaBancos
         public Mantenimiento_tipoMov()
         {
             InitializeComponent();
-            this.navegador1.config("tbl_mantenimientos_tipo_movimiento", this, "");
         }
 
         private void label4_Click(object sender, EventArgs e)
