@@ -21,6 +21,11 @@ namespace CapaControlador
            
         }
 
+        public bool Eliminar(string tabla, string columna, string valor)
+        {
+            return sn.Eliminar(tabla, columna, valor);
+        }
+
         public DataTable BuscarE(string tabla, string columna)
         {
             return sn.BuscarUltimoID(tabla, columna);
