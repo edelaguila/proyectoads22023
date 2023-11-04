@@ -42,7 +42,7 @@ namespace CapaVistaBancos
             this.tbl_mantenimientos_agregar_cuentaTableAdapter = new CapaVistaBancos.DataSet6TableAdapters.tbl_mantenimientos_agregar_cuentaTableAdapter();
             this.txt_numcuenta = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_agCuentas = new System.Windows.Forms.DataGridView();
             this.cb_tipomoneda = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -52,13 +52,16 @@ namespace CapaVistaBancos
             this.cb_selectbanco = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.navegador1 = new NavegadorVista.Navegador();
+            this.txt_id_agCuenta = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txt_tipo_mon = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.tblmonedabancoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblmantenimientosagregarbancosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblmantenimientosagregarcuentaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_agCuentas)).BeginInit();
             this.SuspendLayout();
             // 
             // tblmonedabancoBindingSource
@@ -140,15 +143,16 @@ namespace CapaVistaBancos
             this.label1.TabIndex = 87;
             this.label1.Text = "Tipo de moneda: ";
             // 
-            // dataGridView1
+            // dgv_agCuentas
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(60, 389);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(951, 174);
-            this.dataGridView1.TabIndex = 97;
+            this.dgv_agCuentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_agCuentas.Location = new System.Drawing.Point(63, 355);
+            this.dgv_agCuentas.Name = "dgv_agCuentas";
+            this.dgv_agCuentas.RowHeadersWidth = 51;
+            this.dgv_agCuentas.RowTemplate.Height = 24;
+            this.dgv_agCuentas.Size = new System.Drawing.Size(951, 174);
+            this.dgv_agCuentas.TabIndex = 97;
+            this.dgv_agCuentas.Tag = "tbl_mantenimientos_agregar_cuenta";
             // 
             // cb_tipomoneda
             // 
@@ -175,7 +179,7 @@ namespace CapaVistaBancos
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(501, 271);
+            this.label6.Location = new System.Drawing.Point(653, 271);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(170, 20);
             this.label6.TabIndex = 96;
@@ -184,7 +188,7 @@ namespace CapaVistaBancos
             // txt_alias
             // 
             this.txt_alias.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_alias.Location = new System.Drawing.Point(685, 303);
+            this.txt_alias.Location = new System.Drawing.Point(837, 303);
             this.txt_alias.Name = "txt_alias";
             this.txt_alias.Size = new System.Drawing.Size(169, 26);
             this.txt_alias.TabIndex = 90;
@@ -195,7 +199,7 @@ namespace CapaVistaBancos
             this.cb_tipocuenta.DisplayMember = "manac_tipo_de_cuenta";
             this.cb_tipocuenta.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_tipocuenta.FormattingEnabled = true;
-            this.cb_tipocuenta.Location = new System.Drawing.Point(243, 346);
+            this.cb_tipocuenta.Location = new System.Drawing.Point(837, 224);
             this.cb_tipocuenta.Name = "cb_tipocuenta";
             this.cb_tipocuenta.Size = new System.Drawing.Size(169, 28);
             this.cb_tipocuenta.TabIndex = 95;
@@ -205,7 +209,7 @@ namespace CapaVistaBancos
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(501, 303);
+            this.label3.Location = new System.Drawing.Point(653, 303);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 20);
             this.label3.TabIndex = 92;
@@ -217,7 +221,7 @@ namespace CapaVistaBancos
             this.cb_selectbanco.DisplayMember = "manag_nombre_banco";
             this.cb_selectbanco.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_selectbanco.FormattingEnabled = true;
-            this.cb_selectbanco.Location = new System.Drawing.Point(685, 268);
+            this.cb_selectbanco.Location = new System.Drawing.Point(837, 268);
             this.cb_selectbanco.Name = "cb_selectbanco";
             this.cb_selectbanco.Size = new System.Drawing.Size(169, 28);
             this.cb_selectbanco.TabIndex = 94;
@@ -227,7 +231,7 @@ namespace CapaVistaBancos
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(59, 353);
+            this.label5.Location = new System.Drawing.Point(653, 231);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(122, 20);
             this.label5.TabIndex = 93;
@@ -235,11 +239,39 @@ namespace CapaVistaBancos
             // 
             // navegador1
             // 
-            this.navegador1.Location = new System.Drawing.Point(135, 46);
+            this.navegador1.Location = new System.Drawing.Point(135, 27);
             this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.navegador1.Name = "navegador1";
             this.navegador1.Size = new System.Drawing.Size(765, 187);
             this.navegador1.TabIndex = 98;
+            this.navegador1.Load += new System.EventHandler(this.navegador1_Load);
+            // 
+            // txt_id_agCuenta
+            // 
+            this.txt_id_agCuenta.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_id_agCuenta.Location = new System.Drawing.Point(243, 231);
+            this.txt_id_agCuenta.Name = "txt_id_agCuenta";
+            this.txt_id_agCuenta.Size = new System.Drawing.Size(169, 26);
+            this.txt_id_agCuenta.TabIndex = 100;
+            this.txt_id_agCuenta.Tag = "pk_manac_id_cuenta";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(59, 231);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(85, 20);
+            this.label4.TabIndex = 99;
+            this.label4.Text = "Id cuenta:";
+            // 
+            // txt_tipo_mon
+            // 
+            this.txt_tipo_mon.Location = new System.Drawing.Point(439, 313);
+            this.txt_tipo_mon.Name = "txt_tipo_mon";
+            this.txt_tipo_mon.Size = new System.Drawing.Size(127, 22);
+            this.txt_tipo_mon.TabIndex = 101;
+            this.txt_tipo_mon.Tag = "fk_manac_tipo_de_moneda";
             // 
             // Mantenimiento_agregar_cuenta
             // 
@@ -247,10 +279,13 @@ namespace CapaVistaBancos
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(161)))), ((int)(((byte)(116)))));
             this.ClientSize = new System.Drawing.Size(1069, 803);
+            this.Controls.Add(this.txt_tipo_mon);
+            this.Controls.Add(this.txt_id_agCuenta);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.navegador1);
             this.Controls.Add(this.txt_numcuenta);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgv_agCuentas);
             this.Controls.Add(this.cb_tipomoneda);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label6);
@@ -272,7 +307,7 @@ namespace CapaVistaBancos
             ((System.ComponentModel.ISupportInitialize)(this.dataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblmantenimientosagregarcuentaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_agCuentas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -291,7 +326,7 @@ namespace CapaVistaBancos
         private DataSet6TableAdapters.tbl_mantenimientos_agregar_cuentaTableAdapter tbl_mantenimientos_agregar_cuentaTableAdapter;
         private System.Windows.Forms.TextBox txt_numcuenta;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_agCuentas;
         private System.Windows.Forms.ComboBox cb_tipomoneda;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
@@ -301,5 +336,8 @@ namespace CapaVistaBancos
         private System.Windows.Forms.ComboBox cb_selectbanco;
         private System.Windows.Forms.Label label5;
         private NavegadorVista.Navegador navegador1;
+        private System.Windows.Forms.TextBox txt_id_agCuenta;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txt_tipo_mon;
     }
 }
