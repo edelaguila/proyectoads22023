@@ -15,9 +15,18 @@ namespace Vista_PrototipoMenu
     public partial class frm_nomina : Form
     {
         Controlador ctrl = new Controlador();
+        string tabla = "tbl_nomina";
         public frm_nomina()
         {
             InitializeComponent();
+            llenar();
+        }
+
+        public void llenar()
+        {
+            DataTable dt = ctrl.llenartabla(tabla);
+            dataGridView1.DataSource = dt;
+
         }
 
         private void btn_buscar_Click(object sender, EventArgs e)
@@ -26,13 +35,13 @@ namespace Vista_PrototipoMenu
             {
                 if (int.TryParse(txt_id_empleado.Text, out int idEmpleado))
                 {
+                    // Obtén los datos del empleado
                     Empleado empleadoEncontrado = ctrl.BuscarEmpleadoPorID(idEmpleado);
                     string departamentoEncontrado = ctrl.ObtenerDepartamento(idEmpleado);
-                    string deduccionTotalEncontrada = ctrl.ObtenerDeduccionTotal(idEmpleado);
-                    string percepcionTotalEncontrada = ctrl.ObtenerPercepcionTotal(idEmpleado);
 
                     if (empleadoEncontrado != null)
                     {
+                        // Llena los campos con los datos del empleado
                         foreach (Control control in groupBox3.Controls)
                         {
                             if (control is TextBox)
@@ -65,17 +74,33 @@ namespace Vista_PrototipoMenu
                                     {
                                         textBox.Text = departamentoEncontrado;
                                     }
-                                    else if (campo == "tbl_empleado_Pk_id_empleado")  // Corrección aquí
-                                    {
-                                        textBox.Text = deduccionTotalEncontrada; // Asignar el total de deducciones
-                                    }
-                                    else if (campo == "tbl_empleado_Pk_id_empleado")
-                                    {
-                                        textBox.Text = percepcionTotalEncontrada;
-                                    }
                                 }
                             }
                         }
+
+                     
+                        string deduccionTotalEncontrada = ctrl.ObtenerDeduccionTotal(idEmpleado);
+                        txt_totalDeducciones.Text = deduccionTotalEncontrada;
+                        //MessageBox.Show("Valor de deduccionTotalEncontrada: " + deduccionTotalEncontrada);
+                        string percepcionTotalEncontrada = ctrl.ObtenerPercepcionTotal(idEmpleado);
+                        txt_totalPercepciones.Text = percepcionTotalEncontrada;
+                        //MessageBox.Show("Valor de percepcion: " + percepcionTotalEncontrada);
+                        if (double.TryParse(empleadoEncontrado.Sueldo, out double sueldoBase) &&
+                            double.TryParse(percepcionTotalEncontrada, out double totalPercepciones) &&
+                            double.TryParse(deduccionTotalEncontrada, out double totalDeducciones)
+                            )
+                        {
+                            double sueldoFinal = sueldoBase + totalPercepciones - totalDeducciones;
+                            txt_sueldoFinal.Text = sueldoFinal.ToString();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Faltan datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            
+                        }
+
+
+
                     }
                     else
                     {
@@ -91,6 +116,24 @@ namespace Vista_PrototipoMenu
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
+        }
+
+        private void btn_guardar_nomina_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(txt_id_empleado.Text, out int idEmpleado) &&
+        double.TryParse(txt_totalDeducciones.Text, out double totalDeducciones) &&
+        double.TryParse(txt_sueldoB_empleado.Text, out double sueldoBase) &&
+        double.TryParse(txt_totalPercepciones.Text, out double totalPercepciones) &&
+        double.TryParse(txt_sueldoFinal.Text, out double sueldoFinal))
+            {
+                ctrl.InsertarNomina(idEmpleado, sueldoBase.ToString(), totalPercepciones.ToString(), totalDeducciones.ToString(), sueldoFinal.ToString()); // Convierte sueldoFinal a cadena
+                MessageBox.Show("Nómina guardada ");
+            }
+            else
+            {
+                MessageBox.Show("Datos Incorrectos");
+            }
+            llenar();
         }
     }
 }
