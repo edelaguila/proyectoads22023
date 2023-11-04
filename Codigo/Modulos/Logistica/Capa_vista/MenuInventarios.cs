@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-
 using Seguridad_Controlador;  // Agregar cuando se vincule la DLL de seguridad 
 
 namespace Vista_PrototipoMenu
@@ -17,19 +15,19 @@ namespace Vista_PrototipoMenu
     public partial class MenuInventarios : Form
     {
 
-        // Controlador cn = new Controlador();  // Agregar cuando se vincule la DLL de seguridad 
+        Controlador cn = new Controlador();  // Agregar cuando se vincule la DLL de seguridad 
 
         //Método que guarda en un arreglo de tipo botón los botones que se tienen en el formulario. Se les da permiso a los diferentes botones de acuerdo a la función que realice este
         public MenuInventarios()
         {
             InitializeComponent();
             //Control para habilitar opciones del menu
-            // Button[] apps = {btnaplicaciones}; // Agregar cuando se vincule la DLL de seguridad 
+            //Button[] apps = {btnaplicaciones, btnPerfiles}; // Agregar cuando se vincule la DLL de seguridad 
             //Llamada metodo de libreria Controlador del modulo de Seguridad
             //cn.deshabilitarApps(apps); // Agregar cuando se vincule la DLL de seguridad 
             //Llamada metodo de libreria Controlador del modulo de Seguridad
-            // cn.getAccesoApp(1002, apps[0]); // Agregar cuando se vincule la DLL de seguridad 
-
+            //cn.getAccesoApp(4001, apps[0]); // Agregar cuando se vincule la DLL de seguridad 
+            //cn.getAccesoApp(4002, apps[1]);
         }
 
         //Validaciones que si son visibles los panales los oculta
@@ -80,9 +78,7 @@ namespace Vista_PrototipoMenu
         //Método que muestra el formulario indicado
         private void btnaplicaciones_Click(object sender, EventArgs e)
         {
-            MovimientosInventario m = new MovimientosInventario();
-            m.Show();
-
+           
         }
         //Método que muestra el formulario indicado
 
@@ -99,6 +95,48 @@ namespace Vista_PrototipoMenu
         private void btnayuda_Click(object sender, EventArgs e)
         {
             Help.ShowHelp(this, "umg.chm");            
+        }
+
+       
+
+        private void btn_movimientos_Click(object sender, EventArgs e)
+        {
+            MovimientosInventario m = new MovimientosInventario();
+            m.MdiParent = this;
+            m.Show();
+            hideSubMenu();
+        }
+
+        private void btn_mantenimientos_Click(object sender, EventArgs e)
+        {
+            Mantenimiento form = new Mantenimiento();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void btn_traslados_Click(object sender, EventArgs e)
+        {
+            TrasladoProductos form = new TrasladoProductos();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void btn_muestreo_Click(object sender, EventArgs e)
+        {
+            Muestreo form = new Muestreo();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void btn_auditoria_Click(object sender, EventArgs e)
+        {
+            Auditoria form = new Auditoria();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
         }
     }
 }

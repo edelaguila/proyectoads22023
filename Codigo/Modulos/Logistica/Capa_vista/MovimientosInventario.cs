@@ -8,14 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Seguridad_Controlador;
-//using Controlador_InventariosMenu();
+
 
 
 namespace Vista_PrototipoMenu
 {
-   // Controlador cn = new Controlador();
+   
     public partial class MovimientosInventario : Form
     {
+        Controlador cn = new Controlador();
         public MovimientosInventario()
         {
             InitializeComponent();
@@ -78,20 +79,30 @@ namespace Vista_PrototipoMenu
             }
         }
 
-        private void navegador1_Load(object sender, EventArgs e)
+    
+
+         private void navegador2_Load(object sender, EventArgs e)
         {
 
-            NavegadorVista.Navegador.idApp = "4100";  //código aplicación asignado al formulario
-            navegador1.actual = this;
-            navegador1.tabla = dgv_inventario;
-            TextBox[] Grupotextbox = { txt_id, txt_almacen, txt_movimiento, txt_doc, txt_fecha, txt_codigos, txt_medida,txt_cantidad,txt_cantidad,
+            NavegadorVista.Navegador.idApp = "4001";  //código aplicación asignado al formulario
+            navegador2.actual = this;
+            navegador2.tabla = dgv_inventario;
+            TextBox[] Grupotextbox = { txt_id, txt_almacen, txt_movimiento, txt_doc, txt_fecha, txt_codigos, txt_medida,txt_cantidad,
             txt_costo, txt_precio};
-            TextBox[] Idtextbox = { txt_id, txt_codigos };
-            navegador1.textbox = Grupotextbox;
-            navegador1.textboxi = Idtextbox;
-           // navegador1.cargar(dgv_inventario, Grupotextbox, cn.getNombreBd());
+            TextBox[] Idtextbox = { txt_id, txt_codigos};
+            navegador2.textbox = Grupotextbox;
+            navegador2.textboxi = Idtextbox;
+            navegador2.cargar(dgv_inventario, Grupotextbox, cn.getNombreBd());
+        
+        }
 
+        private void txt_doc_TextChanged(object sender, EventArgs e)
+        {
 
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
 
         }
     }

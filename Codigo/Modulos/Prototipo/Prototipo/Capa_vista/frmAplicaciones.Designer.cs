@@ -29,7 +29,7 @@ namespace Vista_PrototipoMenu
         /// </summary>
         private void InitializeComponent()
         {
-            this.navegador1 = new NavegadorVista.Navegador();
+            
             this.txtId = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
@@ -155,7 +155,6 @@ namespace Vista_PrototipoMenu
 
         #endregion
 
-        private NavegadorVista.Navegador navegador1;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtDescripcion;

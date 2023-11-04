@@ -203,6 +203,16 @@ namespace Vista_PrototipoMenu.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap InventarioLogo2 {
+            get {
+                object obj = ResourceManager.GetObject("InventarioLogo2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LOGISTICA {
             get {
                 object obj = ResourceManager.GetObject("LOGISTICA", resourceCulture);
