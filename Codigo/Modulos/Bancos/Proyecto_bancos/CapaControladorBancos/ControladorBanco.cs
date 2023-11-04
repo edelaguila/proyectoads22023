@@ -11,6 +11,14 @@ namespace CapaControladorBancos
     {
         private SentenciasBanco sentencias ;
 
+        public void InsertarTipoMoneda(string TipoMoneda, string ValorMoneda, string estado)
+        {
+            sentencias.InsertarTipoMoneda(TipoMoneda, ValorMoneda, estado);
+        }
+        public DataTable llenarTblMoneda(string tabla)
+        {
+            return sentencias.llenarTblMoneda(tabla);
+        }
         public ControladorBanco()
         {
             sentencias = new SentenciasBanco();
