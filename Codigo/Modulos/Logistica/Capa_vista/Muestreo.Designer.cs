@@ -34,28 +34,26 @@ namespace Vista_PrototipoMenu
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel18 = new System.Windows.Forms.Panel();
+            this.txtNumero = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboServicios = new System.Windows.Forms.ComboBox();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txt_estado = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
+            this.txtSeguridad = new System.Windows.Forms.TextBox();
+            this.txtMantenimiento = new System.Windows.Forms.TextBox();
+            this.txtInventario = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_id = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.cboTabla = new System.Windows.Forms.ComboBox();
             this.label31 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
@@ -83,10 +81,10 @@ namespace Vista_PrototipoMenu
             this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.button8);
-            this.panel2.Location = new System.Drawing.Point(10, 7);
+            this.panel2.Location = new System.Drawing.Point(13, 11);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1051, 652);
-            this.panel2.TabIndex = 60;
+            this.panel2.Size = new System.Drawing.Size(1051, 642);
+            this.panel2.TabIndex = 61;
             // 
             // button1
             // 
@@ -106,33 +104,39 @@ namespace Vista_PrototipoMenu
             // panel18
             // 
             this.panel18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel18.Controls.Add(this.txtNumero);
             this.panel18.Controls.Add(this.button2);
-            this.panel18.Controls.Add(this.comboBox1);
+            this.panel18.Controls.Add(this.cboServicios);
             this.panel18.Controls.Add(this.button11);
             this.panel18.Controls.Add(this.button10);
             this.panel18.Controls.Add(this.label7);
             this.panel18.Controls.Add(this.label6);
-            this.panel18.Controls.Add(this.txt_estado);
-            this.panel18.Controls.Add(this.textBox3);
-            this.panel18.Controls.Add(this.textBox2);
-            this.panel18.Controls.Add(this.textBox11);
+            this.panel18.Controls.Add(this.txtEstado);
+            this.panel18.Controls.Add(this.txtSeguridad);
+            this.panel18.Controls.Add(this.txtMantenimiento);
+            this.panel18.Controls.Add(this.txtInventario);
             this.panel18.Controls.Add(this.label28);
             this.panel18.Controls.Add(this.label29);
             this.panel18.Controls.Add(this.label30);
             this.panel18.Controls.Add(this.label5);
             this.panel18.Controls.Add(this.dateTimePicker2);
-            this.panel18.Controls.Add(this.textBox1);
             this.panel18.Controls.Add(this.label3);
             this.panel18.Controls.Add(this.txt_id);
-            this.panel18.Controls.Add(this.label2);
             this.panel18.Controls.Add(this.label1);
             this.panel18.Controls.Add(this.dateTimePicker1);
-            this.panel18.Controls.Add(this.cboTabla);
             this.panel18.Controls.Add(this.label31);
             this.panel18.Location = new System.Drawing.Point(663, 162);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(364, 408);
             this.panel18.TabIndex = 99;
+            // 
+            // txtNumero
+            // 
+            this.txtNumero.Location = new System.Drawing.Point(141, 54);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(200, 20);
+            this.txtNumero.TabIndex = 96;
+            this.txtNumero.Tag = "Pk_idClientes";
             // 
             // button2
             // 
@@ -148,15 +152,16 @@ namespace Vista_PrototipoMenu
             this.button2.Text = "Editar";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // comboBox1
+            // cboServicios
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(141, 235);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 21);
-            this.comboBox1.TabIndex = 71;
+            this.cboServicios.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboServicios.FormattingEnabled = true;
+            this.cboServicios.Location = new System.Drawing.Point(141, 210);
+            this.cboServicios.Name = "cboServicios";
+            this.cboServicios.Size = new System.Drawing.Size(200, 21);
+            this.cboServicios.TabIndex = 71;
             // 
             // button11
             // 
@@ -171,6 +176,7 @@ namespace Vista_PrototipoMenu
             this.button11.Text = "Refrescar";
             this.button11.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button10
             // 
@@ -185,11 +191,12 @@ namespace Vista_PrototipoMenu
             this.button10.Text = "Buscar";
             this.button10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(87, 295);
+            this.label7.Location = new System.Drawing.Point(87, 270);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(40, 13);
             this.label7.TabIndex = 68;
@@ -198,54 +205,54 @@ namespace Vista_PrototipoMenu
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(72, 266);
+            this.label6.Location = new System.Drawing.Point(72, 241);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(55, 13);
             this.label6.TabIndex = 67;
             this.label6.Text = "Seguridad";
             // 
-            // txt_estado
+            // txtEstado
             // 
-            this.txt_estado.Location = new System.Drawing.Point(141, 292);
-            this.txt_estado.Name = "txt_estado";
-            this.txt_estado.Size = new System.Drawing.Size(200, 20);
-            this.txt_estado.TabIndex = 66;
-            this.txt_estado.Tag = "Pk_id_estados";
+            this.txtEstado.Location = new System.Drawing.Point(141, 267);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(200, 20);
+            this.txtEstado.TabIndex = 66;
+            this.txtEstado.Tag = "Pk_id_estados";
             // 
-            // textBox3
+            // txtSeguridad
             // 
-            this.textBox3.Location = new System.Drawing.Point(141, 263);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 20);
-            this.textBox3.TabIndex = 65;
+            this.txtSeguridad.Location = new System.Drawing.Point(141, 238);
+            this.txtSeguridad.Name = "txtSeguridad";
+            this.txtSeguridad.Size = new System.Drawing.Size(200, 20);
+            this.txtSeguridad.TabIndex = 65;
             // 
-            // textBox2
+            // txtMantenimiento
             // 
-            this.textBox2.Location = new System.Drawing.Point(141, 171);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 20);
-            this.textBox2.TabIndex = 64;
+            this.txtMantenimiento.Location = new System.Drawing.Point(141, 146);
+            this.txtMantenimiento.Name = "txtMantenimiento";
+            this.txtMantenimiento.Size = new System.Drawing.Size(200, 20);
+            this.txtMantenimiento.TabIndex = 64;
             // 
-            // textBox11
+            // txtInventario
             // 
-            this.textBox11.Location = new System.Drawing.Point(141, 203);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(200, 20);
-            this.textBox11.TabIndex = 62;
+            this.txtInventario.Location = new System.Drawing.Point(141, 178);
+            this.txtInventario.Name = "txtInventario";
+            this.txtInventario.Size = new System.Drawing.Size(200, 20);
+            this.txtInventario.TabIndex = 62;
             // 
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(11, 206);
+            this.label28.Location = new System.Drawing.Point(69, 181);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(116, 13);
+            this.label28.Size = new System.Drawing.Size(58, 13);
             this.label28.TabIndex = 61;
-            this.label28.Text = "Inventario y suministros";
+            this.label28.Text = "suministros";
             // 
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(51, 178);
+            this.label29.Location = new System.Drawing.Point(51, 153);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(76, 13);
             this.label29.TabIndex = 60;
@@ -254,7 +261,7 @@ namespace Vista_PrototipoMenu
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(15, 236);
+            this.label30.Location = new System.Drawing.Point(15, 211);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(112, 13);
             this.label30.TabIndex = 59;
@@ -276,13 +283,6 @@ namespace Vista_PrototipoMenu
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker2.TabIndex = 48;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(141, 143);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 20);
-            this.textBox1.TabIndex = 47;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -300,15 +300,6 @@ namespace Vista_PrototipoMenu
             this.txt_id.TabIndex = 44;
             this.txt_id.Tag = "Pk_idClientes";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(97, 146);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 13);
-            this.label2.TabIndex = 42;
-            this.label2.Text = "Hora";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -324,15 +315,6 @@ namespace Vista_PrototipoMenu
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 39;
-            // 
-            // cboTabla
-            // 
-            this.cboTabla.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboTabla.FormattingEnabled = true;
-            this.cboTabla.Location = new System.Drawing.Point(141, 54);
-            this.cboTabla.Name = "cboTabla";
-            this.cboTabla.Size = new System.Drawing.Size(200, 21);
-            this.cboTabla.TabIndex = 28;
             // 
             // label31
             // 
@@ -350,6 +332,7 @@ namespace Vista_PrototipoMenu
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(631, 475);
             this.dataGridView1.TabIndex = 98;
+            this.dataGridView1.Tag = "tbl_muestreo";
             // 
             // label4
             // 
@@ -374,6 +357,7 @@ namespace Vista_PrototipoMenu
             this.button8.Text = "Eliminar";
             this.button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // Muestreo
             // 
@@ -399,28 +383,26 @@ namespace Vista_PrototipoMenu
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel18;
+        private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboServicios;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txt_estado;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtEstado;
+        private System.Windows.Forms.TextBox txtSeguridad;
+        private System.Windows.Forms.TextBox txtMantenimiento;
+        private System.Windows.Forms.TextBox txtInventario;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_id;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox cboTabla;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label4;
