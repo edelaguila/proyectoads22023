@@ -32,6 +32,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Capa_VistaConsultas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Controlador_InventariosMenu">
+      <HintPath>..\Capa_controlador\bin\Debug\Controlador_InventariosMenu.dll</HintPath>
+    </Reference>
     <Reference Include="FontAwesome.Sharp">
       <HintPath>C:\Program Files\UMG\Instalador General HSC\FontAwesome.Sharp.dll</HintPath>
     </Reference>
