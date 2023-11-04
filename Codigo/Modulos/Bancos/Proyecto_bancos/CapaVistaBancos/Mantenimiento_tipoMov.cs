@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Windows.Forms;
+using Seguridad_Controlador;
 
 namespace CapaVistaBancos
 {
     public partial class Mantenimiento_tipoMov : Form
     {
+        Controlador cn = new Controlador();
         public Mantenimiento_tipoMov()
         {
             InitializeComponent();
@@ -49,6 +51,24 @@ namespace CapaVistaBancos
             {
                 ((TextBox)sender).Text = "1";
             }
+        }
+
+        private void navegador1_Load(object sender, EventArgs e)
+        {
+            NavegadorVista.Navegador.idApp = "5008";  //código aplicación asignado al formulario
+            navegador1.actual = this;
+            navegador1.tabla = dgv_tipoMov;
+            TextBox[] Grupotextbox = { txt_idtras, txt_transexiten, txt_estado};
+            TextBox[] Idtextbox = { txt_idtras, txt_transexiten };
+            navegador1.textbox = Grupotextbox;
+            navegador1.textboxi = Idtextbox;
+            navegador1.cargar(dgv_tipoMov, Grupotextbox, cn.getNombreBd());
+        }
+
+        private void btn_transa_Click(object sender, EventArgs e)
+        {
+            vertransaccion trans = new vertransaccion();
+            trans.Show();
         }
     }
 }
