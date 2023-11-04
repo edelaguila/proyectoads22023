@@ -31,14 +31,28 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Controlador_NominasMenu">
+      <HintPath>..\Capa_controlador\bin\Debug\Controlador_NominasMenu.dll</HintPath>
+    </Reference>
     <Reference Include="eCryptography, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Eramake.eCryptography.1.1.6\lib\net45\eCryptography.dll</HintPath>
     </Reference>
     <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
+    <Reference Include="Modelo_NominasMenu">
+      <HintPath>..\Capa_controlador\bin\Debug\Modelo_NominasMenu.dll</HintPath>
+    </Reference>
+    <Reference Include="NavegadorVista, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files\UMG\Instalador General HSC\NavegadorVista.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="Seguridad_Controlador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files\UMG\Instalador General HSC\Seguridad_Controlador.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -53,6 +67,42 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_deduccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_deduccion.designer.cs">
+      <DependentUpon>frm_deduccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_mantenimiento_deducciones_percepciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_mantenimiento_deducciones_percepciones.Designer.cs">
+      <DependentUpon>frm_mantenimiento_deducciones_percepciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_mantenimiento_departamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_mantenimiento_departamento.Designer.cs">
+      <DependentUpon>frm_mantenimiento_departamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_mantenimiento_empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_mantenimiento_empleado.Designer.cs">
+      <DependentUpon>frm_mantenimiento_empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_nomina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_nomina.Designer.cs">
+      <DependentUpon>frm_nomina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_percepciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_percepciones.Designer.cs">
+      <DependentUpon>frm_percepciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuNominas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +117,24 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frm_deduccion.resx">
+      <DependentUpon>frm_deduccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_mantenimiento_deducciones_percepciones.resx">
+      <DependentUpon>frm_mantenimiento_deducciones_percepciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_mantenimiento_departamento.resx">
+      <DependentUpon>frm_mantenimiento_departamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_mantenimiento_empleado.resx">
+      <DependentUpon>frm_mantenimiento_empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_nomina.resx">
+      <DependentUpon>frm_nomina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_percepciones.resx">
+      <DependentUpon>frm_percepciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuNominas.resx">
       <DependentUpon>MenuNominas.cs</DependentUpon>
     </EmbeddedResource>
