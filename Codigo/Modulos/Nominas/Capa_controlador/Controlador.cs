@@ -74,6 +74,18 @@ namespace Controlador_PrototipoMenu
             return descripcion;
         }
 
+        public void InsertarNomina(int idEmpleado, string sueldoBase, string totalPercepciones, string totalDeducciones, string sueldoFinal)
+        {
+            sn.InsertarNomina(idEmpleado, sueldoBase, totalPercepciones, totalDeducciones, sueldoFinal);
+
+        }
+
+        public void InsertarDeduccion(int idEmpleado, string dedperc_nombre, float dedperc_monto, int dedperc_movimiento)
+        {
+            sn.InsertarDeduccion(idEmpleado, dedperc_nombre, dedperc_monto, dedperc_movimiento);
+
+        }
+
 
     }
 }

@@ -9,7 +9,6 @@ using System.Data;
 
 namespace Modelo_PrototipoMenu
 {
-
     public class Empleado
     {
         public int ID { get; set; }
@@ -21,6 +20,7 @@ namespace Modelo_PrototipoMenu
         public string Moneda { get; set; }
     }
 
+    /*
     public class Departamento
     {
         public int ID { get; set; }
@@ -37,7 +37,7 @@ namespace Modelo_PrototipoMenu
     {
         public int tbl_empleado_Pk_id_empleado { get; set; }
         public string perc_totales { get; set; }
-    }
+    }*/
 
     public class Sentencias
     {
@@ -222,23 +222,16 @@ namespace Modelo_PrototipoMenu
 
         public string ObtenerDeduccionTotal(int idDedEmp)
         {
-
-            using (OdbcConnection connection = con.connection())
+            using (OdbcConnection cone = new OdbcConnection(conec))
             {
-                if (connection != null)
+                cone.Open();
+                using (OdbcCommand cmd = new OdbcCommand("SELECT ded_deducciones_totales FROM tbl_deducciones WHERE tbl_empleado_Pk_id_empleado = ?", cone))
                 {
-                    using (OdbcCommand cmd = new OdbcCommand("SELECT SUM(ded_deducciones_totales) FROM tbl_deducciones WHERE tbl_empleado_Pk_id_empleado = ?", connection))
-                    {
-                        cmd.Parameters.AddWithValue("tbl_empleado_Pk_id_empleado", idDedEmp);
-                        object result = cmd.ExecuteScalar();
-                        if (result != null && result != DBNull.Value)
-                        {
-                            return result.ToString();
-                        }
-                    }
+                    cmd.Parameters.Add(new OdbcParameter("tbl_empleado_Pk_id_empleado", idDedEmp));
+                    string descripcion = cmd.ExecuteScalar()?.ToString();
+                    return descripcion;
                 }
             }
-            return "0"; 
         }
 
         public string ObtenerPercepcionTotal(int idPercEmp)
@@ -274,6 +267,39 @@ namespace Modelo_PrototipoMenu
             return null;
         }
 
+        public void InsertarNomina(int idEmpleado, string sueldoBase, string totalPercepciones, string totalDeducciones, string sueldoFinal)
+        {
+            using (OdbcConnection connection = con.connection())
+            {
+                if (connection != null)
+                {
+                    using (OdbcTransaction transaction = connection.BeginTransaction())
+                    {
+                        try
+                        {
+                            string insertQuery = "INSERT INTO tbl_nomina (nomi_sueldo_base, nomi_total_percepciones, nomi_total_deducciones, nomi_sueldo_final, tbl_empleado_Pk_id_empleado) VALUES (?,?, ?, ?, ?)";
+                            using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
+                            {
+                                cmd.Parameters.AddWithValue("@nomi_sueldo_base", sueldoBase);
+                                cmd.Parameters.AddWithValue("@nomi_total_percepciones", totalPercepciones);
+                                cmd.Parameters.AddWithValue("@nomi_total_deducciones", totalDeducciones);
+                                cmd.Parameters.AddWithValue("@nomi_sueldo_final", sueldoFinal);
+                                cmd.Parameters.AddWithValue("@tbl_empleado_Pk_id_empleado", idEmpleado);
+
+                                cmd.ExecuteNonQuery();
+                            }
+
+                            transaction.Commit();
+                        }
+                        catch (Exception ex)
+                        {
+                            transaction.Rollback();
+                            Console.WriteLine($"Error al guardar la nómina: {ex.Message}");
+                        }
+                    }
+                }
+            }
+        }
 
 
 

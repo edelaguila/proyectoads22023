@@ -203,9 +203,7 @@ namespace CapaVistaNomina
             txt_deduccion_descripcion.Clear();
             txt_deduccion_valor.Clear();
 
-
-            Sentencias sentencias = new Sentencias(); 
-            sentencias.InsertarDeduccion(idEmpleado, dedperc_nombre, dedperc_monto, dedperc_movimiento);
+            ctrl.InsertarDeduccion(idEmpleado, dedperc_nombre, dedperc_monto, dedperc_movimiento);
             dataGridView1.Refresh();
             llenar();
             LlenarComboBoxDeduPerc();

@@ -54,7 +54,7 @@ namespace Vista_PrototipoMenu
             this.txt_totalPercepciones = new System.Windows.Forms.TextBox();
             this.txt_totalDeducciones = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_guardar_nomina = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -277,7 +277,7 @@ namespace Vista_PrototipoMenu
             this.txt_sueldoFinal.ReadOnly = true;
             this.txt_sueldoFinal.Size = new System.Drawing.Size(234, 34);
             this.txt_sueldoFinal.TabIndex = 94;
-            this.txt_sueldoFinal.Tag = "sueldo_final";
+            this.txt_sueldoFinal.Tag = "nomi_sueldo_final";
             // 
             // label12
             // 
@@ -307,7 +307,7 @@ namespace Vista_PrototipoMenu
             this.txt_totalPercepciones.ReadOnly = true;
             this.txt_totalPercepciones.Size = new System.Drawing.Size(234, 34);
             this.txt_totalPercepciones.TabIndex = 90;
-            this.txt_totalPercepciones.Tag = "tbl_empleado_Pk_id_empleado";
+            this.txt_totalPercepciones.Tag = "tbl_percepciones_Pk_id_percepciones";
             // 
             // txt_totalDeducciones
             // 
@@ -317,7 +317,7 @@ namespace Vista_PrototipoMenu
             this.txt_totalDeducciones.ReadOnly = true;
             this.txt_totalDeducciones.Size = new System.Drawing.Size(234, 34);
             this.txt_totalDeducciones.TabIndex = 89;
-            this.txt_totalDeducciones.Tag = "tbl_empleado_Pk_id_empleado";
+            this.txt_totalDeducciones.Tag = "tbl_deducciones_Pk_id_ded";
             // 
             // dataGridView1
             // 
@@ -330,14 +330,15 @@ namespace Vista_PrototipoMenu
             this.dataGridView1.TabIndex = 131;
             this.dataGridView1.Tag = "tbl_nomina";
             // 
-            // button1
+            // btn_guardar_nomina
             // 
-            this.button1.Location = new System.Drawing.Point(728, 461);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 86);
-            this.button1.TabIndex = 132;
-            this.button1.Text = "Guardar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_guardar_nomina.Location = new System.Drawing.Point(698, 427);
+            this.btn_guardar_nomina.Name = "btn_guardar_nomina";
+            this.btn_guardar_nomina.Size = new System.Drawing.Size(140, 86);
+            this.btn_guardar_nomina.TabIndex = 132;
+            this.btn_guardar_nomina.Text = "Guardar";
+            this.btn_guardar_nomina.UseVisualStyleBackColor = true;
+            this.btn_guardar_nomina.Click += new System.EventHandler(this.btn_guardar_nomina_Click);
             // 
             // frm_nomina
             // 
@@ -345,7 +346,7 @@ namespace Vista_PrototipoMenu
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tan;
             this.ClientSize = new System.Drawing.Size(1398, 913);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_guardar_nomina);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
@@ -387,6 +388,6 @@ namespace Vista_PrototipoMenu
         private System.Windows.Forms.TextBox txt_totalPercepciones;
         private System.Windows.Forms.TextBox txt_totalDeducciones;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_guardar_nomina;
     }
 }
