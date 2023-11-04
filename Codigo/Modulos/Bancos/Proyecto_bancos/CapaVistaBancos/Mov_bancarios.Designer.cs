@@ -43,7 +43,6 @@ namespace CapaVistaBancos
             this.btn_salir_dispo = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txt_ttransaccion = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.txt_estado = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataSet1 = new CapaVistaBancos.DataSet1();
@@ -153,6 +152,7 @@ namespace CapaVistaBancos
             this.btn_cancelarTransaccion.TabIndex = 13;
             this.btn_cancelarTransaccion.Text = "Cancelar transacción";
             this.btn_cancelarTransaccion.UseVisualStyleBackColor = true;
+            this.btn_cancelarTransaccion.Click += new System.EventHandler(this.btn_cancelarTransaccion_Click);
             // 
             // btn_salir_dispo
             // 
@@ -175,7 +175,6 @@ namespace CapaVistaBancos
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txt_ttransaccion);
-            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txt_estado);
             this.groupBox1.Controls.Add(this.txt_descripcionTransferencia);
             this.groupBox1.Controls.Add(this.label2);
@@ -200,21 +199,17 @@ namespace CapaVistaBancos
             this.txt_ttransaccion.Size = new System.Drawing.Size(214, 22);
             this.txt_ttransaccion.TabIndex = 16;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(533, 187);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 17);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Estado: ";
-            // 
             // txt_estado
             // 
+            this.txt_estado.Enabled = false;
             this.txt_estado.Location = new System.Drawing.Point(536, 207);
             this.txt_estado.Name = "txt_estado";
-            this.txt_estado.Size = new System.Drawing.Size(214, 22);
+            this.txt_estado.ReadOnly = true;
+            this.txt_estado.Size = new System.Drawing.Size(41, 22);
             this.txt_estado.TabIndex = 14;
+            this.txt_estado.Text = "1";
+            this.txt_estado.Visible = false;
+            this.txt_estado.TextChanged += new System.EventHandler(this.txt_estado_TextChanged);
             // 
             // groupBox2
             // 
@@ -321,7 +316,6 @@ namespace CapaVistaBancos
         private DataSet3 dataSet3;
         private System.Windows.Forms.BindingSource tblmantenimientostipomovimientoBindingSource2;
         private DataSet3TableAdapters.tbl_mantenimientos_tipo_movimientoTableAdapter tbl_mantenimientos_tipo_movimientoTableAdapter2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_estado;
         private System.Windows.Forms.TextBox txt_ttransaccion;
     }

@@ -166,6 +166,7 @@ namespace CapaVistaBancos
             this.txt_estado.Size = new System.Drawing.Size(199, 26);
             this.txt_estado.TabIndex = 98;
             this.txt_estado.Tag = "movtm_status";
+            this.txt_estado.TextChanged += new System.EventHandler(this.txt_estado_TextChanged_1);
             // 
             // txt_transexiten
             // 

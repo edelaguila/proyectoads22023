@@ -70,5 +70,10 @@ namespace CapaVistaBancos
             vertransaccion trans = new vertransaccion();
             trans.Show();
         }
+
+        private void txt_estado_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

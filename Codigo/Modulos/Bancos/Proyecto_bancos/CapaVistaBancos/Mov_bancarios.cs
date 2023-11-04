@@ -58,7 +58,7 @@ namespace CapaVistaBancos
         private void btn_rtrans_Click(object sender, EventArgs e)
         {
             string estado = "1";
-            DialogResult result = MessageBox.Show("¿Desea guardar el archivo?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question); //OTTO ADRIAN LOPEZ VENTURA 0901-20-1069 
+            DialogResult result = MessageBox.Show("¿Desea realizar la transacción?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question); //OTTO ADRIAN LOPEZ VENTURA 0901-20-1069 
 
             if (result == DialogResult.Yes) 
             {
@@ -89,7 +89,38 @@ namespace CapaVistaBancos
                 txt_descripcionTransferencia.Clear();
 
                 // Mostrar un mensaje informativo
-                MessageBox.Show("No se guardó el archivo.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);//OTTO ADRIAN LOPEZ VENTURA 0901-20-1069 
+                MessageBox.Show("No se realizó la transacción.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void txt_estado_TextChanged(object sender, EventArgs e)
+        {
+            TextBox textBox = (TextBox)sender;
+            if (string.IsNullOrEmpty(textBox.Text))
+            {
+                ((TextBox)sender).Text = "1";
+            }
+        }
+
+        private void btn_cancelarTransaccion_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Desea guardar el archivo?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question); 
+
+            if (result == DialogResult.Yes)
+            {
+                txt_ttransaccion.Clear();
+                txt_estado.Clear();
+                txt_numeroCuenta.Clear();
+                txt_valorTransferencia.Clear();
+                txt_descripcionTransferencia.Clear();
+
+
+                // Mostrar un mensaje de éxito
+                MessageBox.Show("Transacción cancelada correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("No se canceló la transaccion.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }
