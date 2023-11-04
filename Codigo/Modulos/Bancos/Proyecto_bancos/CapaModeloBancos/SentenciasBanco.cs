@@ -68,6 +68,59 @@ namespace CapaModeloBancos
             }
         }
 
+        public DataTable llenarTblMoneda(string tabla) //Llenar tabla de reportes
+        {
+            using (OdbcConnection connection = con.AbrirConexion())
+            {
+                if (connection != null)
+                {
+                    string sql = "SELECT regmon_id_Moneda, regmon_Tipo_moneda, regmon_Valor_moneda, regmon_fecha_de_registro, regmon_status FROM  " + tabla + ";";
+                    OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, connection);
+                    DataTable table = new DataTable();
+                    dataTable.Fill(table);
+                    return table;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
+        public void InsertarTipoMoneda(string TipoMoneda, string ValorMoneda, string estado)
+        {
+            using (OdbcConnection connection = con.AbrirConexion())
+            {
+                if (connection != null)
+                {
+                    using (OdbcTransaction transaction = connection.BeginTransaction())
+                    {
+                        try
+                        {
+                            string insertQuery = "INSERT INTO tbl_registro_moneda (regmon_Tipo_moneda, regmon_Valor_moneda, regmon_fecha_de_registro, regmon_status) VALUES (?, ?, ?, ?)";
+                            using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
+                            {
+                                cmd.Parameters.AddWithValue("@regmon_Tipo_moneda", TipoMoneda);
+                                cmd.Parameters.AddWithValue("@regmon_Valor_moneda", ValorMoneda);
+                                cmd.Parameters.AddWithValue("@regmon_fecha_de_registro", DateTime.Now);
+                                cmd.Parameters.AddWithValue("@regmon_status", estado);
+                        
+
+
+                                cmd.ExecuteNonQuery();
+                            }
+
+                            transaction.Commit();
+                        }
+                        catch (Exception ex)
+                        {
+                            transaction.Rollback();
+                            Console.WriteLine($"Error al insertar el registro: {ex.Message}");
+                        }
+                    }
+                }
+            }
+        }
+
 
     }
 }
