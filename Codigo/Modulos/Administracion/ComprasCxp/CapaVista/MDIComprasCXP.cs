@@ -31,13 +31,13 @@ namespace CapaVista
             //Control para habilitar opciones del menu
             Button[] apps = {btnproveedor, btnconcepto, btnmovimientoproveedor, btnordenescompras, btncompra};
             //Llamada metodo de libreria Controlador del modulo de Seguridad
-            cns.deshabilitarApps(apps);
+            //cns.deshabilitarApps(apps);
             //Llamada metodo de libreria Controlador del modulo de Seguridad
-            cns.getAccesoApp(2001, apps[1]);
-            cns.getAccesoApp(2002, apps[2]);
-            cns.getAccesoApp(2003, apps[3]);
-            cns.getAccesoApp(2004, apps[4]);
-            cns.getAccesoApp(2005, apps[5]);
+            //cns.getAccesoApp(2001, apps[1]);
+            //cns.getAccesoApp(2002, apps[2]);
+            //cns.getAccesoApp(2003, apps[3]);
+            //cns.getAccesoApp(2004, apps[4]);
+            //cns.getAccesoApp(2005, apps[5]);
         }
 
         private void hideSubMenu()
