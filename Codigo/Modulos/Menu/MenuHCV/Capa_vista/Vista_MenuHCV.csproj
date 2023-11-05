@@ -57,8 +57,9 @@
     <Reference Include="Vista_ComprasCxpMenu">
       <HintPath>..\..\..\..\..\..\..\..\ProyectosFinales\proyectoads22023\Codigo\Modulos\Administracion\ComprasCxp\Capa_vista\bin\Debug\Vista_ComprasCxpMenu.dll</HintPath>
     </Reference>
-    <Reference Include="Vista_HoteleriaMenu">
-      <HintPath>..\..\..\Hoteleria\Capa_vista\bin\Debug\Vista_HoteleriaMenu.dll</HintPath>
+    <Reference Include="Vista_HoteleriaMenu, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Hoteleria\Capa_vista\bin\Release\Vista_HoteleriaMenu.dll</HintPath>
     </Reference>
     <Reference Include="Vista_InventariosMenu, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

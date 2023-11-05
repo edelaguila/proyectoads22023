@@ -7,26 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Seguridad_Controlador;
-
 
 namespace Vista_PrototipoMenu
 {
-    public partial class frmTipoHabitacion : Form
+    public partial class frmGestionHuespedes : Form
     {
-        Seguridad_Controlador.Controlador cn;
-        public frmTipoHabitacion()
-        {
-            this.cn = new Seguridad_Controlador.Controlador();
-            InitializeComponent();
-        }
 
-        private void _navegador_Load(object sender, EventArgs e)
+        Seguridad_Controlador.Controlador cn = new Seguridad_Controlador.Controlador();
+        public frmGestionHuespedes()
         {
-            NavegadorVista.Navegador.idApp = "1003";
+            InitializeComponent();
+            NavegadorVista.Navegador.idApp = "1004";
             _navegador.actual = this;
             _navegador.tabla = dataGridView1;
-            TextBox[] Grupotextbox = { txt_id, txt_nombre, txt_descripcion, txt_precio, txt_capacidad };
+            TextBox[] Grupotextbox = { txt_id, txt_nombre, txt_apellido, txt_correo, txt_telefono, txt_nit };
             TextBox[] Idtextbox = { txt_id, txt_nombre };
             _navegador.textbox = Grupotextbox;
             _navegador.textboxi = Idtextbox;

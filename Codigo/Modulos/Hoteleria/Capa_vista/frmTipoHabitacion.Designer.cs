@@ -31,7 +31,6 @@ namespace Vista_PrototipoMenu
         {
             this._navegador = new NavegadorVista.Navegador();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.navegador1 = new NavegadorVista.Navegador();
             this.txt_id = new System.Windows.Forms.TextBox();
             this.txt_nombre = new System.Windows.Forms.TextBox();
             this.txt_descripcion = new System.Windows.Forms.TextBox();
@@ -57,14 +56,6 @@ namespace Vista_PrototipoMenu
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.Tag = "tbl_tipohabitacion";
             // 
-            // navegador1
-            // 
-            this.navegador1.Location = new System.Drawing.Point(100, 12);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(572, 152);
-            this.navegador1.TabIndex = 0;
-            this.navegador1.Load += new System.EventHandler(this._navegador_Load);
-            // 
             // txt_id
             // 
             this.txt_id.Location = new System.Drawing.Point(53, 183);
@@ -75,7 +66,7 @@ namespace Vista_PrototipoMenu
             // 
             // txt_nombre
             // 
-            this.txt_nombre.Location = new System.Drawing.Point(53, 234);
+            this.txt_nombre.Location = new System.Drawing.Point(186, 183);
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Size = new System.Drawing.Size(100, 20);
             this.txt_nombre.TabIndex = 3;
@@ -83,7 +74,7 @@ namespace Vista_PrototipoMenu
             // 
             // txt_descripcion
             // 
-            this.txt_descripcion.Location = new System.Drawing.Point(213, 183);
+            this.txt_descripcion.Location = new System.Drawing.Point(325, 183);
             this.txt_descripcion.Name = "txt_descripcion";
             this.txt_descripcion.Size = new System.Drawing.Size(100, 20);
             this.txt_descripcion.TabIndex = 4;
@@ -91,7 +82,7 @@ namespace Vista_PrototipoMenu
             // 
             // txt_precio
             // 
-            this.txt_precio.Location = new System.Drawing.Point(213, 234);
+            this.txt_precio.Location = new System.Drawing.Point(456, 183);
             this.txt_precio.Name = "txt_precio";
             this.txt_precio.Size = new System.Drawing.Size(100, 20);
             this.txt_precio.TabIndex = 5;
@@ -99,7 +90,7 @@ namespace Vista_PrototipoMenu
             // 
             // txt_capacidad
             // 
-            this.txt_capacidad.Location = new System.Drawing.Point(364, 183);
+            this.txt_capacidad.Location = new System.Drawing.Point(581, 183);
             this.txt_capacidad.Name = "txt_capacidad";
             this.txt_capacidad.Size = new System.Drawing.Size(100, 20);
             this.txt_capacidad.TabIndex = 6;
@@ -116,7 +107,6 @@ namespace Vista_PrototipoMenu
             this.Controls.Add(this.txt_nombre);
             this.Controls.Add(this.txt_id);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.navegador1);
             this.Controls.Add(this._navegador);
             this.Name = "frmTipoHabitacion";
             this.Text = "frmTipoHabitacion";
@@ -130,7 +120,6 @@ namespace Vista_PrototipoMenu
 
         private NavegadorVista.Navegador _navegador;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private NavegadorVista.Navegador navegador1;
         private System.Windows.Forms.TextBox txt_id;
         private System.Windows.Forms.TextBox txt_nombre;
         private System.Windows.Forms.TextBox txt_descripcion;
