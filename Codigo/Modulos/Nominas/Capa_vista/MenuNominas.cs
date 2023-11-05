@@ -131,5 +131,10 @@ namespace Vista_PrototipoMenu
             nomi.Show();
             hideSubMenu();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -17,5 +17,10 @@ namespace CapaVistaNomina
         {
             InitializeComponent();
         }
+
+        private void txt_id_empleado_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

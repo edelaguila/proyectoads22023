@@ -242,6 +242,7 @@ namespace CapaVistaNomina
             this.txt_id_empleado.Size = new System.Drawing.Size(127, 34);
             this.txt_id_empleado.TabIndex = 89;
             this.txt_id_empleado.Tag = "Pk_id_empleado";
+            this.txt_id_empleado.TextChanged += new System.EventHandler(this.txt_id_empleado_TextChanged);
             // 
             // groupBox2
             // 

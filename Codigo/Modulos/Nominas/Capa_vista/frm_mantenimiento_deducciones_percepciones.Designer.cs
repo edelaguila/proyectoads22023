@@ -44,6 +44,9 @@ namespace Vista_PrototipoMenu
             // 
             // navegador1
             // 
+            this.navegador1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.navegador1.Location = new System.Drawing.Point(168, 13);
             this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.navegador1.Name = "navegador1";
@@ -53,6 +56,9 @@ namespace Vista_PrototipoMenu
             // 
             // txt_dedperc_nombre
             // 
+            this.txt_dedperc_nombre.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_dedperc_nombre.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_dedperc_nombre.Location = new System.Drawing.Point(520, 319);
             this.txt_dedperc_nombre.Name = "txt_dedperc_nombre";
@@ -62,6 +68,9 @@ namespace Vista_PrototipoMenu
             // 
             // txt_id_dedu_perc
             // 
+            this.txt_id_dedu_perc.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_id_dedu_perc.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_id_dedu_perc.Location = new System.Drawing.Point(520, 260);
             this.txt_id_dedu_perc.Name = "txt_id_dedu_perc";
@@ -71,28 +80,37 @@ namespace Vista_PrototipoMenu
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(78, 318);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(401, 30);
+            this.label2.Size = new System.Drawing.Size(279, 21);
             this.label2.TabIndex = 87;
             this.label2.Tag = "";
             this.label2.Text = "Nombre deduccion_percepcion";
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(78, 254);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(383, 30);
+            this.label1.Size = new System.Drawing.Size(269, 21);
             this.label1.TabIndex = 86;
             this.label1.Tag = "Pk_id_departamento";
             this.label1.Text = "Id_deducciones_percepciones";
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(145, 473);
             this.dataGridView1.Name = "dataGridView1";
@@ -104,6 +122,9 @@ namespace Vista_PrototipoMenu
             // 
             // txt_dedperc_monto
             // 
+            this.txt_dedperc_monto.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_dedperc_monto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_dedperc_monto.Location = new System.Drawing.Point(520, 370);
             this.txt_dedperc_monto.Name = "txt_dedperc_monto";
@@ -113,28 +134,37 @@ namespace Vista_PrototipoMenu
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(78, 364);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 30);
+            this.label3.Size = new System.Drawing.Size(66, 21);
             this.label3.TabIndex = 91;
             this.label3.Tag = "";
             this.label3.Text = "Monto";
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(78, 412);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(158, 30);
+            this.label4.Size = new System.Drawing.Size(109, 21);
             this.label4.TabIndex = 93;
             this.label4.Tag = "";
             this.label4.Text = "Movimiento";
             // 
             // txt_dedperc_movimiento
             // 
+            this.txt_dedperc_movimiento.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_dedperc_movimiento.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_dedperc_movimiento.Location = new System.Drawing.Point(520, 418);
             this.txt_dedperc_movimiento.Name = "txt_dedperc_movimiento";
@@ -146,6 +176,7 @@ namespace Vista_PrototipoMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(161)))), ((int)(((byte)(116)))));
             this.ClientSize = new System.Drawing.Size(1400, 754);
             this.Controls.Add(this.txt_dedperc_movimiento);

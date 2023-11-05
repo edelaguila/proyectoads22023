@@ -336,6 +336,7 @@ namespace CapaVistaNomina
             this.txt_id_empleado.Name = "txt_id_empleado";
             this.txt_id_empleado.Size = new System.Drawing.Size(127, 34);
             this.txt_id_empleado.TabIndex = 84;
+            this.txt_id_empleado.TextChanged += new System.EventHandler(this.txt_id_empleado_TextChanged);
             // 
             // dataGridView1
             // 
