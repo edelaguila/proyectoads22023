@@ -202,7 +202,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(660, 153);
+            this.dataGridView1.Size = new System.Drawing.Size(1073, 153);
             this.dataGridView1.TabIndex = 108;
             this.dataGridView1.Tag = "tbl_empleado";
             // 
@@ -327,7 +327,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Name = "frm_mantenimiento_empleado";
-            this.Text = "frm_mantenimiento_empleado";
+            this.Text = "6002-frm_mantenimiento_empleado";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

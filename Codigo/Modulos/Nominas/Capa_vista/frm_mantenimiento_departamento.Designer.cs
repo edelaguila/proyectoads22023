@@ -102,6 +102,7 @@ namespace CapaVistaNomina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(161)))), ((int)(((byte)(116)))));
             this.ClientSize = new System.Drawing.Size(1064, 614);
             this.Controls.Add(this.navegador1);
             this.Controls.Add(this.txt_nombre_empleado);
@@ -110,7 +111,7 @@ namespace CapaVistaNomina
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "frm_mantenimiento_departamento";
-            this.Text = "frm_mantenimiento_departamento";
+            this.Text = "6001-frm_mantenimiento_departamento";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

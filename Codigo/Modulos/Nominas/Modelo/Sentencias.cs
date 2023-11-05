@@ -267,7 +267,7 @@ namespace Modelo_PrototipoMenu
             return null;
         }
 
-        public void InsertarNomina(int idEmpleado, string sueldoBase, string totalPercepciones, string totalDeducciones, string sueldoFinal)
+        public void InsertarNomina(int idEmpleado, string tipoMoneda, string sueldoBase, string totalPercepciones, string totalDeducciones, string sueldoFinal)
         {
             using (OdbcConnection connection = con.connection())
             {
@@ -277,9 +277,10 @@ namespace Modelo_PrototipoMenu
                     {
                         try
                         {
-                            string insertQuery = "INSERT INTO tbl_nomina (nomi_sueldo_base, nomi_total_percepciones, nomi_total_deducciones, nomi_sueldo_final, tbl_empleado_Pk_id_empleado) VALUES (?,?, ?, ?, ?)";
+                            string insertQuery = "INSERT INTO tbl_nomina (nomi_tipo_moneda, nomi_sueldo_base, nomi_total_percepciones, nomi_total_deducciones, nomi_sueldo_final, tbl_empleado_Pk_id_empleado) VALUES (?,?,?, ?, ?, ?)";
                             using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
                             {
+                                cmd.Parameters.AddWithValue("@nomi_tipo_moneda", tipoMoneda);
                                 cmd.Parameters.AddWithValue("@nomi_sueldo_base", sueldoBase);
                                 cmd.Parameters.AddWithValue("@nomi_total_percepciones", totalPercepciones);
                                 cmd.Parameters.AddWithValue("@nomi_total_deducciones", totalDeducciones);

@@ -21,7 +21,7 @@ namespace Vista_PrototipoMenu
 
         private void navegador1_Load(object sender, EventArgs e)
         {
-            NavegadorVista.Navegador.idApp = "1000";  //código aplicación asignado al formulario
+            NavegadorVista.Navegador.idApp = "6003";  //código aplicación asignado al formulario
             navegador1.actual = this;
             navegador1.tabla = dataGridView1;
             TextBox[] Grupotextbox = { txt_id_dedu_perc, txt_dedperc_nombre, txt_dedperc_monto, txt_dedperc_movimiento};

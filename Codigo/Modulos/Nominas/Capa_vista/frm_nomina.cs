@@ -121,12 +121,15 @@ namespace Vista_PrototipoMenu
         private void btn_guardar_nomina_Click(object sender, EventArgs e)
         {
             if (int.TryParse(txt_id_empleado.Text, out int idEmpleado) &&
-        double.TryParse(txt_totalDeducciones.Text, out double totalDeducciones) &&
-        double.TryParse(txt_sueldoB_empleado.Text, out double sueldoBase) &&
-        double.TryParse(txt_totalPercepciones.Text, out double totalPercepciones) &&
-        double.TryParse(txt_sueldoFinal.Text, out double sueldoFinal))
+                double.TryParse(txt_totalDeducciones.Text, out double totalDeducciones) &&
+                double.TryParse(txt_sueldoB_empleado.Text, out double sueldoBase) &&
+                double.TryParse(txt_totalPercepciones.Text, out double totalPercepciones) &&
+                double.TryParse(txt_sueldoFinal.Text, out double sueldoFinal)
+                )
             {
-                ctrl.InsertarNomina(idEmpleado, sueldoBase.ToString(), totalPercepciones.ToString(), totalDeducciones.ToString(), sueldoFinal.ToString()); // Convierte sueldoFinal a cadena
+
+                string tipoMoneda = txt_emp_tipo_moneda.Text;
+                ctrl.InsertarNomina(idEmpleado, tipoMoneda, sueldoBase.ToString(), totalPercepciones.ToString(), totalDeducciones.ToString(), sueldoFinal.ToString()); // Convierte sueldoFinal a cadena
                 MessageBox.Show("Nómina guardada ");
             }
             else
