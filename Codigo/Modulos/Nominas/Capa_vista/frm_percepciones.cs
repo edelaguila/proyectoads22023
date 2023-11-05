@@ -7,20 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CapaVistaNomina;
+using Controlador_PrototipoMenu;
+using Modelo_PrototipoMenu;
+using System.Data.Odbc;
 
 namespace CapaVistaNomina
 {
     public partial class frm_percepciones : Form
     {
-        public frm_percepciones()
-        {
-            InitializeComponent();
-        }
 
-        private void txt_id_empleado_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
+
+
+    
+

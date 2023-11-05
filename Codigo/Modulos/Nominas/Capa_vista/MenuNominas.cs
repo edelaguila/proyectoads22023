@@ -134,6 +134,10 @@ namespace Vista_PrototipoMenu
 
         private void button2_Click(object sender, EventArgs e)
         {
+            CapaVistaNomina.frm_percepciones ded = new CapaVistaNomina.frm_percepciones();
+            ded.MdiParent = this;
+            ded.Show();
+            hideSubMenu();
 
         }
     }
