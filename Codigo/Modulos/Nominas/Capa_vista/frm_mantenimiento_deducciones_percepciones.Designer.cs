@@ -117,7 +117,7 @@ namespace Vista_PrototipoMenu
             this.label3.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(78, 364);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 38);
+            this.label3.Size = new System.Drawing.Size(91, 30);
             this.label3.TabIndex = 91;
             this.label3.Tag = "";
             this.label3.Text = "Monto";
@@ -128,7 +128,7 @@ namespace Vista_PrototipoMenu
             this.label4.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(78, 412);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(198, 38);
+            this.label4.Size = new System.Drawing.Size(158, 30);
             this.label4.TabIndex = 93;
             this.label4.Tag = "";
             this.label4.Text = "Movimiento";
@@ -146,6 +146,7 @@ namespace Vista_PrototipoMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(161)))), ((int)(((byte)(116)))));
             this.ClientSize = new System.Drawing.Size(1400, 754);
             this.Controls.Add(this.txt_dedperc_movimiento);
             this.Controls.Add(this.label4);
@@ -158,7 +159,7 @@ namespace Vista_PrototipoMenu
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "frm_mantenimiento_deducciones_percepciones";
-            this.Text = "frm_mantenimiento_deducciones";
+            this.Text = "6003-frm_mantenimiento_deducciones";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

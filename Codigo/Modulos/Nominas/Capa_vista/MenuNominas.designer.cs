@@ -57,6 +57,7 @@ namespace Vista_PrototipoMenu
             // 
             // panelLogo
             // 
+            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(161)))), ((int)(((byte)(116)))));
             this.panelLogo.Controls.Add(this.pictureBox1);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
@@ -80,7 +81,7 @@ namespace Vista_PrototipoMenu
             // 
             // btninicio
             // 
-            this.btninicio.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btninicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(161)))), ((int)(((byte)(116)))));
             this.btninicio.Cursor = System.Windows.Forms.Cursors.Default;
             this.btninicio.Dock = System.Windows.Forms.DockStyle.Top;
             this.btninicio.FlatAppearance.BorderSize = 0;
@@ -100,7 +101,7 @@ namespace Vista_PrototipoMenu
             // 
             // btnmanteniminetos
             // 
-            this.btnmanteniminetos.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnmanteniminetos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(161)))), ((int)(((byte)(116)))));
             this.btnmanteniminetos.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnmanteniminetos.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnmanteniminetos.FlatAppearance.BorderSize = 0;
@@ -185,7 +186,7 @@ namespace Vista_PrototipoMenu
             // 
             // btnProcesos
             // 
-            this.btnProcesos.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnProcesos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(161)))), ((int)(((byte)(116)))));
             this.btnProcesos.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnProcesos.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnProcesos.FlatAppearance.BorderSize = 0;
@@ -252,7 +253,7 @@ namespace Vista_PrototipoMenu
             // 
             // btnReportes
             // 
-            this.btnReportes.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnReportes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(161)))), ((int)(((byte)(116)))));
             this.btnReportes.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnReportes.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnReportes.FlatAppearance.BorderSize = 0;
@@ -283,7 +284,7 @@ namespace Vista_PrototipoMenu
             // 
             // btnSeguridad
             // 
-            this.btnSeguridad.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnSeguridad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(161)))), ((int)(((byte)(116)))));
             this.btnSeguridad.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnSeguridad.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSeguridad.FlatAppearance.BorderSize = 0;
@@ -314,7 +315,7 @@ namespace Vista_PrototipoMenu
             // 
             // btnayuda
             // 
-            this.btnayuda.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnayuda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(161)))), ((int)(((byte)(116)))));
             this.btnayuda.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnayuda.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnayuda.FlatAppearance.BorderSize = 0;
@@ -358,7 +359,7 @@ namespace Vista_PrototipoMenu
             // 
             // btnsalir
             // 
-            this.btnsalir.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnsalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(161)))), ((int)(((byte)(116)))));
             this.btnsalir.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnsalir.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnsalir.FlatAppearance.BorderSize = 0;
@@ -380,7 +381,7 @@ namespace Vista_PrototipoMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1668, 1325);
+            this.ClientSize = new System.Drawing.Size(2036, 1325);
             this.Controls.Add(this.panelSideMenu);
             this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

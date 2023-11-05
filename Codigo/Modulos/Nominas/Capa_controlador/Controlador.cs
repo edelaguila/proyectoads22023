@@ -74,9 +74,9 @@ namespace Controlador_PrototipoMenu
             return descripcion;
         }
 
-        public void InsertarNomina(int idEmpleado, string sueldoBase, string totalPercepciones, string totalDeducciones, string sueldoFinal)
+        public void InsertarNomina(int idEmpleado, string tipoMoneda, string sueldoBase, string totalPercepciones, string totalDeducciones, string sueldoFinal)
         {
-            sn.InsertarNomina(idEmpleado, sueldoBase, totalPercepciones, totalDeducciones, sueldoFinal);
+            sn.InsertarNomina(idEmpleado, tipoMoneda, sueldoBase, totalPercepciones, totalDeducciones, sueldoFinal);
 
         }
 

@@ -41,7 +41,7 @@ namespace CapaVistaNomina
 
         private void navegador1_Load_1(object sender, EventArgs e)
         {
-         NavegadorVista.Navegador.idApp = "1000";  //código aplicación asignado al formulario
+         NavegadorVista.Navegador.idApp = "6002";  //código aplicación asignado al formulario
             navegador1.actual = this;
             navegador1.tabla = dataGridView1;
             TextBox[] Grupotextbox = {txt_id_empleado, txt_nombre_empleado, txt_apellido_empleado, txt_tipo_moneda, txt_emp_sueldo, txt_cargo_empleado, txt_correo_empleado, txt_telefono_empleado, txt_fecha__contratacion, txt_empleado_dept };

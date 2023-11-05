@@ -30,6 +30,7 @@ namespace CapaVistaNomina
         private void InitializeComponent()
         {
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txt_emp_tipo_moneda = new System.Windows.Forms.TextBox();
             this.txt_departamento_empleado = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txt_cargo_empleado = new System.Windows.Forms.TextBox();
@@ -63,7 +64,6 @@ namespace CapaVistaNomina
             this.btn_Guardar_calculo = new System.Windows.Forms.Button();
             this.btn_calcular = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.txt_emp_tipo_moneda = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -93,6 +93,16 @@ namespace CapaVistaNomina
             this.groupBox3.TabIndex = 128;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "groupBox3";
+            // 
+            // txt_emp_tipo_moneda
+            // 
+            this.txt_emp_tipo_moneda.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_emp_tipo_moneda.Location = new System.Drawing.Point(787, 167);
+            this.txt_emp_tipo_moneda.Name = "txt_emp_tipo_moneda";
+            this.txt_emp_tipo_moneda.ReadOnly = true;
+            this.txt_emp_tipo_moneda.Size = new System.Drawing.Size(50, 34);
+            this.txt_emp_tipo_moneda.TabIndex = 121;
+            this.txt_emp_tipo_moneda.Tag = "emp_tipo_moneda";
             // 
             // txt_departamento_empleado
             // 
@@ -429,21 +439,11 @@ namespace CapaVistaNomina
             this.dataGridView1.Size = new System.Drawing.Size(1038, 220);
             this.dataGridView1.TabIndex = 122;
             // 
-            // txt_emp_tipo_moneda
-            // 
-            this.txt_emp_tipo_moneda.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_emp_tipo_moneda.Location = new System.Drawing.Point(787, 167);
-            this.txt_emp_tipo_moneda.Name = "txt_emp_tipo_moneda";
-            this.txt_emp_tipo_moneda.ReadOnly = true;
-            this.txt_emp_tipo_moneda.Size = new System.Drawing.Size(50, 34);
-            this.txt_emp_tipo_moneda.TabIndex = 121;
-            this.txt_emp_tipo_moneda.Tag = "emp_tipo_moneda";
-            // 
             // frm_deduccion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(161)))), ((int)(((byte)(116)))));
             this.ClientSize = new System.Drawing.Size(1369, 915);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);

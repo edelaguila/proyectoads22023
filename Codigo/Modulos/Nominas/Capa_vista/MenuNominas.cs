@@ -13,7 +13,8 @@ namespace Vista_PrototipoMenu
 {
     public partial class MenuNominas : Form
     {
-
+        Seguridad_Controlador.Controlador cn = new Seguridad_Controlador.Controlador();
+        Controlador_PrototipoMenu.Controlador ctrl = new Controlador_PrototipoMenu.Controlador();
         // Controlador cn = new Controlador();  // Agregar cuando se vincule la DLL de seguridad 
 
         //Método que guarda en un arreglo de tipo botón los botones que se tienen en el formulario. Se les da permiso a los diferentes botones de acuerdo a la función que realice este
@@ -21,11 +22,11 @@ namespace Vista_PrototipoMenu
         {
             InitializeComponent();
             //Control para habilitar opciones del menu
-             //Button[] apps = {btn_mantenimiento_empleados}; // Agregar cuando se vincule la DLL de seguridad 
+             //Button[] apps = {btn_Deducciones_Percepciones, btn_mantenimiento_departamentos, btn_mantenimiento_empleados, btn_nominas}; // Agregar cuando se vincule la DLL de seguridad 
             //Llamada metodo de libreria Controlador del modulo de Seguridad
             //cn.deshabilitarApps(apps); // Agregar cuando se vincule la DLL de seguridad 
             //Llamada metodo de libreria Controlador del modulo de Seguridad
-            // cn.getAccesoApp(1002, apps[0]); // Agregar cuando se vincule la DLL de seguridad 
+           // cn.getAccesoApp(1002, apps[0]); // Agregar cuando se vincule la DLL de seguridad 
 
         }
 
