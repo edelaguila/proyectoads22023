@@ -36,6 +36,11 @@ namespace Vista_PrototipoMenu
             this.txt_descripcion = new System.Windows.Forms.TextBox();
             this.txt_precio = new System.Windows.Forms.TextBox();
             this.txt_capacidad = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,7 +63,7 @@ namespace Vista_PrototipoMenu
             // 
             // txt_id
             // 
-            this.txt_id.Location = new System.Drawing.Point(53, 183);
+            this.txt_id.Location = new System.Drawing.Point(121, 198);
             this.txt_id.Name = "txt_id";
             this.txt_id.Size = new System.Drawing.Size(100, 20);
             this.txt_id.TabIndex = 2;
@@ -66,7 +71,7 @@ namespace Vista_PrototipoMenu
             // 
             // txt_nombre
             // 
-            this.txt_nombre.Location = new System.Drawing.Point(186, 183);
+            this.txt_nombre.Location = new System.Drawing.Point(241, 198);
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Size = new System.Drawing.Size(100, 20);
             this.txt_nombre.TabIndex = 3;
@@ -74,15 +79,16 @@ namespace Vista_PrototipoMenu
             // 
             // txt_descripcion
             // 
-            this.txt_descripcion.Location = new System.Drawing.Point(325, 183);
+            this.txt_descripcion.Location = new System.Drawing.Point(370, 198);
+            this.txt_descripcion.Multiline = true;
             this.txt_descripcion.Name = "txt_descripcion";
-            this.txt_descripcion.Size = new System.Drawing.Size(100, 20);
+            this.txt_descripcion.Size = new System.Drawing.Size(258, 74);
             this.txt_descripcion.TabIndex = 4;
             this.txt_descripcion.Tag = "thab_descripcion";
             // 
             // txt_precio
             // 
-            this.txt_precio.Location = new System.Drawing.Point(456, 183);
+            this.txt_precio.Location = new System.Drawing.Point(124, 252);
             this.txt_precio.Name = "txt_precio";
             this.txt_precio.Size = new System.Drawing.Size(100, 20);
             this.txt_precio.TabIndex = 5;
@@ -90,17 +96,67 @@ namespace Vista_PrototipoMenu
             // 
             // txt_capacidad
             // 
-            this.txt_capacidad.Location = new System.Drawing.Point(581, 183);
+            this.txt_capacidad.Location = new System.Drawing.Point(241, 252);
             this.txt_capacidad.Name = "txt_capacidad";
             this.txt_capacidad.Size = new System.Drawing.Size(100, 20);
             this.txt_capacidad.TabIndex = 6;
             this.txt_capacidad.Tag = "thab_capacidad";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(121, 179);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(18, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "ID";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(238, 179);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Nombre";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(121, 233);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(37, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Precio";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(367, 179);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(63, 13);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Descripcion";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(238, 233);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(58, 13);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Capacidad";
             // 
             // frmTipoHabitacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_capacidad);
             this.Controls.Add(this.txt_precio);
             this.Controls.Add(this.txt_descripcion);
@@ -109,7 +165,9 @@ namespace Vista_PrototipoMenu
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this._navegador);
             this.Name = "frmTipoHabitacion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmTipoHabitacion";
+            this.Load += new System.EventHandler(this.frmTipoHabitacion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -125,5 +183,10 @@ namespace Vista_PrototipoMenu
         private System.Windows.Forms.TextBox txt_descripcion;
         private System.Windows.Forms.TextBox txt_precio;
         private System.Windows.Forms.TextBox txt_capacidad;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }

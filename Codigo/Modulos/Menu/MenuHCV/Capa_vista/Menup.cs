@@ -107,7 +107,6 @@ namespace MenuHCV
         {
             cn.setBtitacora("8000", "Ingreso Prototipo");
         }
-        //Método que ingresa un valor a la bitacora de acuerdo el módulo
 
     }
 }

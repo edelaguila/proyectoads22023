@@ -32,5 +32,10 @@ namespace Vista_PrototipoMenu
             _navegador.textboxi = Idtextbox;
             _navegador.cargar(dataGridView1, Grupotextbox, cn.getNombreBd());
         }
+
+        private void frmTipoHabitacion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
