@@ -52,12 +52,12 @@ namespace CapaVistaBancos
             this.txt_sect_banco = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txt_estado = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.txt_tipo_mon = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnMonedaexistente = new System.Windows.Forms.Button();
-            this.btn_bancoexistente = new System.Windows.Forms.Button();
             this.btn_salir_dispo = new System.Windows.Forms.Button();
+            this.cb_tipoMoneda = new System.Windows.Forms.ComboBox();
+            this.cb_Banco = new System.Windows.Forms.ComboBox();
+            this.cb_tipocuenta = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.tblmonedabancoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblmantenimientosagregarbancosBindingSource)).BeginInit();
@@ -142,7 +142,7 @@ namespace CapaVistaBancos
             // txt_alias
             // 
             this.txt_alias.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_alias.Location = new System.Drawing.Point(760, 265);
+            this.txt_alias.Location = new System.Drawing.Point(744, 265);
             this.txt_alias.Name = "txt_alias";
             this.txt_alias.Size = new System.Drawing.Size(169, 26);
             this.txt_alias.TabIndex = 90;
@@ -152,7 +152,7 @@ namespace CapaVistaBancos
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(632, 274);
+            this.label3.Location = new System.Drawing.Point(616, 274);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 20);
             this.label3.TabIndex = 92;
@@ -162,7 +162,7 @@ namespace CapaVistaBancos
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(632, 234);
+            this.label5.Location = new System.Drawing.Point(616, 234);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(122, 20);
             this.label5.TabIndex = 93;
@@ -198,21 +198,28 @@ namespace CapaVistaBancos
             // 
             // txt_tipocuenta
             // 
+            this.txt_tipocuenta.Enabled = false;
             this.txt_tipocuenta.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tipocuenta.Location = new System.Drawing.Point(760, 231);
+            this.txt_tipocuenta.Location = new System.Drawing.Point(919, 234);
             this.txt_tipocuenta.Name = "txt_tipocuenta";
-            this.txt_tipocuenta.Size = new System.Drawing.Size(169, 26);
+            this.txt_tipocuenta.ReadOnly = true;
+            this.txt_tipocuenta.Size = new System.Drawing.Size(149, 26);
             this.txt_tipocuenta.TabIndex = 102;
             this.txt_tipocuenta.Tag = "manac_tipo_de_cuenta";
+            this.txt_tipocuenta.Visible = false;
+            this.txt_tipocuenta.TextChanged += new System.EventHandler(this.txt_tipocuenta_TextChanged);
             // 
             // txt_sect_banco
             // 
+            this.txt_sect_banco.Enabled = false;
             this.txt_sect_banco.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_sect_banco.Location = new System.Drawing.Point(253, 336);
+            this.txt_sect_banco.Location = new System.Drawing.Point(431, 332);
             this.txt_sect_banco.Name = "txt_sect_banco";
+            this.txt_sect_banco.ReadOnly = true;
             this.txt_sect_banco.Size = new System.Drawing.Size(169, 26);
             this.txt_sect_banco.TabIndex = 105;
             this.txt_sect_banco.Tag = "fk_manac_selec_banco";
+            this.txt_sect_banco.Visible = false;
             // 
             // label9
             // 
@@ -228,31 +235,27 @@ namespace CapaVistaBancos
             // 
             this.txt_estado.Enabled = false;
             this.txt_estado.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_estado.Location = new System.Drawing.Point(760, 303);
+            this.txt_estado.Location = new System.Drawing.Point(744, 303);
             this.txt_estado.Name = "txt_estado";
-            this.txt_estado.Size = new System.Drawing.Size(169, 26);
+            this.txt_estado.ReadOnly = true;
+            this.txt_estado.Size = new System.Drawing.Size(26, 26);
             this.txt_estado.TabIndex = 107;
             this.txt_estado.Tag = "manac_status";
             this.txt_estado.Text = "1";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(632, 312);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(62, 20);
-            this.label10.TabIndex = 108;
-            this.label10.Text = "Estado:";
+            this.txt_estado.Visible = false;
+            this.txt_estado.TextChanged += new System.EventHandler(this.txt_estado_TextChanged);
             // 
             // txt_tipo_mon
             // 
+            this.txt_tipo_mon.Enabled = false;
             this.txt_tipo_mon.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tipo_mon.Location = new System.Drawing.Point(255, 304);
+            this.txt_tipo_mon.Location = new System.Drawing.Point(431, 300);
             this.txt_tipo_mon.Name = "txt_tipo_mon";
+            this.txt_tipo_mon.ReadOnly = true;
             this.txt_tipo_mon.Size = new System.Drawing.Size(169, 26);
             this.txt_tipo_mon.TabIndex = 101;
             this.txt_tipo_mon.Tag = "fk_manac_tipo_de_moneda";
+            this.txt_tipo_mon.Visible = false;
             // 
             // label7
             // 
@@ -263,28 +266,6 @@ namespace CapaVistaBancos
             this.label7.Size = new System.Drawing.Size(187, 20);
             this.label7.TabIndex = 103;
             this.label7.Text = "Escriba tipo de moneda:";
-            // 
-            // btnMonedaexistente
-            // 
-            this.btnMonedaexistente.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMonedaexistente.Location = new System.Drawing.Point(430, 306);
-            this.btnMonedaexistente.Name = "btnMonedaexistente";
-            this.btnMonedaexistente.Size = new System.Drawing.Size(163, 25);
-            this.btnMonedaexistente.TabIndex = 109;
-            this.btnMonedaexistente.Text = "Monedas Existentes";
-            this.btnMonedaexistente.UseVisualStyleBackColor = true;
-            this.btnMonedaexistente.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btn_bancoexistente
-            // 
-            this.btn_bancoexistente.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_bancoexistente.Location = new System.Drawing.Point(428, 333);
-            this.btn_bancoexistente.Name = "btn_bancoexistente";
-            this.btn_bancoexistente.Size = new System.Drawing.Size(156, 26);
-            this.btn_bancoexistente.TabIndex = 111;
-            this.btn_bancoexistente.Text = "Bancos existentes";
-            this.btn_bancoexistente.UseVisualStyleBackColor = true;
-            this.btn_bancoexistente.Click += new System.EventHandler(this.button3_Click);
             // 
             // btn_salir_dispo
             // 
@@ -304,16 +285,46 @@ namespace CapaVistaBancos
             this.btn_salir_dispo.UseVisualStyleBackColor = false;
             this.btn_salir_dispo.Click += new System.EventHandler(this.btn_salir_dispo_Click);
             // 
+            // cb_tipoMoneda
+            // 
+            this.cb_tipoMoneda.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_tipoMoneda.FormattingEnabled = true;
+            this.cb_tipoMoneda.Location = new System.Drawing.Point(252, 300);
+            this.cb_tipoMoneda.Name = "cb_tipoMoneda";
+            this.cb_tipoMoneda.Size = new System.Drawing.Size(172, 28);
+            this.cb_tipoMoneda.TabIndex = 112;
+            this.cb_tipoMoneda.SelectedIndexChanged += new System.EventHandler(this.cb_tipoMoneda_SelectedIndexChanged_1);
+            // 
+            // cb_Banco
+            // 
+            this.cb_Banco.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_Banco.FormattingEnabled = true;
+            this.cb_Banco.Location = new System.Drawing.Point(252, 332);
+            this.cb_Banco.Name = "cb_Banco";
+            this.cb_Banco.Size = new System.Drawing.Size(172, 28);
+            this.cb_Banco.TabIndex = 113;
+            this.cb_Banco.SelectedIndexChanged += new System.EventHandler(this.cb_Banco_SelectedIndexChanged);
+            // 
+            // cb_tipocuenta
+            // 
+            this.cb_tipocuenta.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_tipocuenta.FormattingEnabled = true;
+            this.cb_tipocuenta.Location = new System.Drawing.Point(741, 231);
+            this.cb_tipocuenta.Name = "cb_tipocuenta";
+            this.cb_tipocuenta.Size = new System.Drawing.Size(172, 28);
+            this.cb_tipocuenta.TabIndex = 114;
+            this.cb_tipocuenta.SelectedIndexChanged += new System.EventHandler(this.cb_tipocuenta_SelectedIndexChanged);
+            // 
             // Mantenimiento_agregar_cuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(161)))), ((int)(((byte)(116)))));
             this.ClientSize = new System.Drawing.Size(1069, 803);
-            this.Controls.Add(this.btn_bancoexistente);
-            this.Controls.Add(this.btnMonedaexistente);
+            this.Controls.Add(this.cb_tipocuenta);
+            this.Controls.Add(this.cb_Banco);
+            this.Controls.Add(this.cb_tipoMoneda);
             this.Controls.Add(this.txt_estado);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txt_sect_banco);
             this.Controls.Add(this.label7);
@@ -371,10 +382,10 @@ namespace CapaVistaBancos
         private System.Windows.Forms.TextBox txt_sect_banco;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txt_estado;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txt_tipo_mon;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btnMonedaexistente;
-        private System.Windows.Forms.Button btn_bancoexistente;
+        private System.Windows.Forms.ComboBox cb_tipoMoneda;
+        private System.Windows.Forms.ComboBox cb_Banco;
+        private System.Windows.Forms.ComboBox cb_tipocuenta;
     }
 }

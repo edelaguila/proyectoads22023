@@ -37,7 +37,6 @@ namespace CapaVistaBancos
             this.txt_estadoban = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.navegador1 = new NavegadorVista.Navegador();
-            this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_id_banco = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_agBancos)).BeginInit();
@@ -117,10 +116,12 @@ namespace CapaVistaBancos
             this.txt_estadoban.Enabled = false;
             this.txt_estadoban.Location = new System.Drawing.Point(815, 301);
             this.txt_estadoban.Name = "txt_estadoban";
+            this.txt_estadoban.ReadOnly = true;
             this.txt_estadoban.Size = new System.Drawing.Size(43, 22);
             this.txt_estadoban.TabIndex = 92;
             this.txt_estadoban.Tag = "manag_status";
             this.txt_estadoban.Text = "1";
+            this.txt_estadoban.Visible = false;
             this.txt_estadoban.TextChanged += new System.EventHandler(this.txt_estadoban_TextChanged);
             // 
             // label3
@@ -145,19 +146,6 @@ namespace CapaVistaBancos
             this.navegador1.Size = new System.Drawing.Size(765, 187);
             this.navegador1.TabIndex = 95;
             this.navegador1.Load += new System.EventHandler(this.navegador1_Load);
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(721, 303);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 20);
-            this.label1.TabIndex = 96;
-            this.label1.Text = "Estado:";
             // 
             // label4
             // 
@@ -190,7 +178,6 @@ namespace CapaVistaBancos
             this.ClientSize = new System.Drawing.Size(1069, 659);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txt_id_banco);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.navegador1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txt_estadoban);
@@ -220,7 +207,6 @@ namespace CapaVistaBancos
         private System.Windows.Forms.TextBox txt_estadoban;
         private System.Windows.Forms.Label label3;
         private NavegadorVista.Navegador navegador1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txt_id_banco;
     }

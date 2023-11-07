@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Windows.Forms;
 using Seguridad_Controlador;
+using System.Data;
+using CapaControladorBancos;
 
 namespace CapaVistaBancos
 {
     public partial class Mantenimiento_tipoMov : Form
     {
         Controlador cn = new Controlador();
+        ControladorBanco con = new ControladorBanco();
         public Mantenimiento_tipoMov()
         {
             InitializeComponent();
@@ -42,6 +45,14 @@ namespace CapaVistaBancos
             // TODO: esta línea de código carga datos en la tabla 'dataSet7.tbl_mantenimientos_tipo_movimiento' Puede moverla o quitarla según sea necesario.
             this.tbl_mantenimientos_tipo_movimientoTableAdapter.Fill(this.dataSet7.tbl_mantenimientos_tipo_movimiento);
 
+            DataTable tcuenta = con.ObtenerTipoCuenta();
+            if (tcuenta != null)
+            {
+                foreach (DataRow row in tcuenta.Rows)
+                {
+                    cb_transaccionex.Items.Add(row["movtm_transacciones_existentes"].ToString());
+                }
+            }
         }
 
         private void txt_estado_TextChanged(object sender, EventArgs e)
@@ -65,15 +76,24 @@ namespace CapaVistaBancos
             navegador1.cargar(dgv_tipoMov, Grupotextbox, cn.getNombreBd());
         }
 
-        private void btn_transa_Click(object sender, EventArgs e)
-        {
-            vertransaccion trans = new vertransaccion();
-            trans.Show();
-        }
+        
 
         private void txt_estado_TextChanged_1(object sender, EventArgs e)
         {
+            TextBox textBox = (TextBox)sender;
+            if (string.IsNullOrEmpty(textBox.Text))
+            {
+                ((TextBox)sender).Text = "1";
+            }
+        }
 
+        private void cb_transaccionex_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cb_transaccionex.SelectedItem != null)
+            {
+                string tipoMonedaSeleccionada = cb_transaccionex.SelectedItem.ToString();
+                txt_transexiten.Text = tipoMonedaSeleccionada; // Muestra la selección en el TextBox txt_tipo_mon
+            }
         }
     }
 }
