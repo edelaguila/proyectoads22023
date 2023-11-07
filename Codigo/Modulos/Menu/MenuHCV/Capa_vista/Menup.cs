@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Seguridad_Controlador;
 using Vista_Seguridad;
-using Vista_PrototipoMenu;
+//using Vista_PrototipoMenu;
 
 //Comentado por George Mayén 25/02/2023
 namespace MenuHCV
