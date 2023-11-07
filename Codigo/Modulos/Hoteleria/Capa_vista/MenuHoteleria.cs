@@ -122,7 +122,7 @@ namespace Vista_PrototipoMenu
 
         private void button4_Click(object sender, EventArgs e)
         {
-            this.showForm(new frmChequeo());
+            this.showForm(new frmEvaluacion());
             hideSubMenu();
         }
     }

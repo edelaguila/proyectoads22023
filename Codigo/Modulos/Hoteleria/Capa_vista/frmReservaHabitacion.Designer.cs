@@ -31,7 +31,7 @@ namespace Vista_PrototipoMenu
         {
             this.txt_idempleado = new System.Windows.Forms.TextBox();
             this.txt_idcliente = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lbl_precio = new System.Windows.Forms.Label();
             this.date2 = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.date1 = new System.Windows.Forms.DateTimePicker();
@@ -73,16 +73,16 @@ namespace Vista_PrototipoMenu
             this.txt_idcliente.Tag = "res_id_cliente";
             this.txt_idcliente.Visible = false;
             // 
-            // label4
+            // lbl_precio
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label4.Location = new System.Drawing.Point(419, 261);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(252, 56);
-            this.label4.TabIndex = 68;
-            this.label4.Text = "Q.1025.75";
+            this.lbl_precio.AutoSize = true;
+            this.lbl_precio.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_precio.ForeColor = System.Drawing.Color.SteelBlue;
+            this.lbl_precio.Location = new System.Drawing.Point(419, 261);
+            this.lbl_precio.Name = "lbl_precio";
+            this.lbl_precio.Size = new System.Drawing.Size(252, 56);
+            this.lbl_precio.TabIndex = 68;
+            this.lbl_precio.Text = "Q.1025.75";
             // 
             // date2
             // 
@@ -298,7 +298,7 @@ namespace Vista_PrototipoMenu
             this.Controls.Add(this.txt_date1);
             this.Controls.Add(this.txt_idempleado);
             this.Controls.Add(this.txt_idcliente);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lbl_precio);
             this.Controls.Add(this.date2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.date1);
@@ -323,7 +323,7 @@ namespace Vista_PrototipoMenu
 
         private System.Windows.Forms.TextBox txt_idempleado;
         private System.Windows.Forms.TextBox txt_idcliente;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbl_precio;
         private System.Windows.Forms.DateTimePicker date2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker date1;

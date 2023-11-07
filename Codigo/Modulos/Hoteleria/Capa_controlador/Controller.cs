@@ -83,13 +83,14 @@ namespace Controlador_PrototipoMenu
             txt.Text = id_seleccionado.ToString();
         }
 
-        public void fillComboHabitaciones(ComboBox cmb, string selected)
+        public void fillComboHabitaciones(ComboBox cmb, string selected, Label lbl)
         {
             int id_seleccionado = 0;
             foreach (TipoHabitacion th in thabs)
             {
                 if (th.thab_nombre.Equals(selected))
                 {
+                    lbl.Text = "Q." + th.thab_precio.ToString() + ".00";
                     id_seleccionado = th.thab_id;
                 }
             }

@@ -38,7 +38,7 @@ namespace Vista_PrototipoMenu
         private void comboTipo_SelectedIndexChanged(object sender, EventArgs e)
         {
             comboHabitacion.Items.Clear();
-            this.ctrl.fillComboHabitaciones(this.comboHabitacion, this.comboTipo.SelectedItem.ToString());
+            this.ctrl.fillComboHabitaciones(this.comboHabitacion, this.comboTipo.SelectedItem.ToString(), lbl_precio);
         }
 
         private void comboHabitacion_SelectedIndexChanged(object sender, EventArgs e)
