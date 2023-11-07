@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 using Seguridad_Controlador;
+using CapaControladorBancos;
+using System.Data;
 
 namespace CapaVistaBancos
 {
@@ -8,7 +11,7 @@ namespace CapaVistaBancos
     public partial class Mantenimiento_agregar_cuenta : Form
     {
         Controlador cn = new Controlador();
-        
+        ControladorBanco con = new ControladorBanco();
         public Mantenimiento_agregar_cuenta()
         {
             InitializeComponent();
@@ -34,7 +37,33 @@ namespace CapaVistaBancos
             this.tbl_mantenimientos_agregar_bancosTableAdapter.Fill(this.dataSet5.tbl_mantenimientos_agregar_bancos);
             // TODO: esta línea de código carga datos en la tabla 'dataSet4.tbl_monedabanco' Puede moverla o quitarla según sea necesario.
             this.tbl_monedabancoTableAdapter.Fill(this.dataSet4.tbl_monedabanco);
+            // Obtener tipos de moneda y cargar en el ComboBox
+            DataTable tiposMoneda = con.ObtenerTiposMoneda();
+            if (tiposMoneda != null)
+            {
+                foreach (DataRow row in tiposMoneda.Rows)
+                {
+                    cb_tipoMoneda.Items.Add(row["mon_nomMoneda"].ToString());
+                }
+            }
 
+            DataTable Bancos = con.ObtenerBancos();
+            if (Bancos != null)
+            {
+                foreach (DataRow row in Bancos.Rows)
+                {
+                    cb_Banco.Items.Add(row["manag_nombre_banco"].ToString());
+                }
+            }
+
+            DataTable tcuenta = con.ObtenerTipoCuenta();
+            if (tcuenta != null)
+            {
+                foreach (DataRow row in tcuenta.Rows)
+                {
+                    cb_tipocuenta.Items.Add(row["movtm_transacciones_existentes"].ToString());
+                }
+            }
         }
 
         private void navegador1_Load(object sender, EventArgs e)
@@ -54,21 +83,45 @@ namespace CapaVistaBancos
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void txt_estado_TextChanged(object sender, EventArgs e)
         {
-            vermoneda moneda = new vermoneda();
-            moneda.Show();
+            TextBox textBox = (TextBox)sender;
+            if (string.IsNullOrEmpty(textBox.Text))
+            {
+                ((TextBox)sender).Text = "1";
+            }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void cb_tipoMoneda_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            verbanco banco = new verbanco();
-            banco.Show();
+            if (cb_tipoMoneda.SelectedItem != null)
+            {
+                string tipoMonedaSeleccionada = cb_tipoMoneda.SelectedItem.ToString();
+                txt_tipo_mon.Text = tipoMonedaSeleccionada; // Muestra la selección en el TextBox txt_tipo_mon
+            }
         }
 
-        private void btn_cuentaexis_Click(object sender, EventArgs e)
+        private void cb_Banco_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            if (cb_Banco.SelectedItem != null)
+            {
+                string bancoSeleccionado = cb_Banco.SelectedItem.ToString();
+                txt_sect_banco.Text = bancoSeleccionado; // Muestra la selección en el TextBox txt_tipo_mon
+            }
+        }
+
+        private void txt_tipocuenta_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cb_tipocuenta_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cb_tipocuenta.SelectedItem != null)
+            {
+                string bancoSeleccionado = cb_tipocuenta.SelectedItem.ToString();
+                txt_tipocuenta.Text = bancoSeleccionado; // Muestra la selección en el TextBox txt_tipo_mon
+            }
         }
     }
 }

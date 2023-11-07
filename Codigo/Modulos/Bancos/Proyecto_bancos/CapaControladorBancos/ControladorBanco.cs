@@ -32,5 +32,20 @@ namespace CapaControladorBancos
         {
             return sentencias.llenarTbl(tabla);
         }
+
+        public DataTable ObtenerTiposMoneda()
+        {
+            return sentencias.ObtenerTiposMoneda();
+        }
+
+        public DataTable ObtenerBancos()
+        {
+            return sentencias.ObtenerBancos();
+        }
+
+        public DataTable ObtenerTipoCuenta()
+        {
+            return sentencias.ObtenerTipoCuenta();
+        }
     }
 }

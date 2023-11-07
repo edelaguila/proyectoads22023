@@ -49,7 +49,6 @@ namespace CapaVistaBancos
             this.navegador1 = new NavegadorVista.Navegador();
             this.txt_id_ordenCom = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Man_ordenesCompra)).BeginInit();
             this.SuspendLayout();
             // 
@@ -250,10 +249,12 @@ namespace CapaVistaBancos
             this.txt_estado.Enabled = false;
             this.txt_estado.Location = new System.Drawing.Point(654, 434);
             this.txt_estado.Name = "txt_estado";
-            this.txt_estado.Size = new System.Drawing.Size(177, 22);
+            this.txt_estado.ReadOnly = true;
+            this.txt_estado.Size = new System.Drawing.Size(42, 22);
             this.txt_estado.TabIndex = 103;
             this.txt_estado.Tag = "manoc_status";
             this.txt_estado.Text = "1";
+            this.txt_estado.Visible = false;
             this.txt_estado.TextChanged += new System.EventHandler(this.txt_estado_TextChanged);
             // 
             // txt_descripcion
@@ -297,26 +298,12 @@ namespace CapaVistaBancos
             this.label8.TabIndex = 107;
             this.label8.Text = "Id Orden de compra:";
             // 
-            // label9
-            // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(518, 437);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(62, 20);
-            this.label9.TabIndex = 108;
-            this.label9.Text = "Estado:";
-            // 
             // Mantenimiento_OrdenesdeCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(161)))), ((int)(((byte)(116)))));
             this.ClientSize = new System.Drawing.Size(1069, 803);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txt_id_ordenCom);
             this.Controls.Add(this.navegador1);
@@ -369,6 +356,5 @@ namespace CapaVistaBancos
         private NavegadorVista.Navegador navegador1;
         private System.Windows.Forms.TextBox txt_id_ordenCom;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
     }
 }
