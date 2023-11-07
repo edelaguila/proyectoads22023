@@ -121,6 +121,45 @@ namespace CapaModeloBancos
             }
         }
 
+        public DataTable ObtenerCuentas()
+        {
+            using (OdbcConnection connection = con.AbrirConexion())
+            {
+                if (connection != null)
+                {
+                    string sql = "SELECT manac_numero_de_cuenta FROM tbl_mantenimientos_agregar_cuenta;";
+                    OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, connection);
+                    DataTable table = new DataTable();
+                    dataTable.Fill(table);
+                    return table;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
+
+
+        public DataTable TipoTransaccionBancaria()
+        {
+            using (OdbcConnection connection = con.AbrirConexion())
+            {
+                if (connection != null)
+                {
+                    string sql = "SELECT movtm_transacciones_existentes FROM tbl_mantenimientos_tipo_movimiento;";
+                    OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, connection);
+                    DataTable table = new DataTable();
+                    dataTable.Fill(table);
+                    return table;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
+
 
     }
 }

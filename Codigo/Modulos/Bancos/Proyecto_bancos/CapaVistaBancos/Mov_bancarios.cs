@@ -53,6 +53,25 @@ namespace CapaVistaBancos
             // TODO: esta línea de código carga datos en la tabla 'dataSet2.tbl_mantenimientos_tipo_movimiento' Puede moverla o quitarla según sea necesario.
             this.tbl_mantenimientos_tipo_movimientoTableAdapter1.Fill(this.dataSet2.tbl_mantenimientos_tipo_movimiento);
 
+            // Obtener tipos de moneda y cargar en el ComboBox
+            DataTable Cuentas = cn.ObtenerCuentas();
+            DataTable TipoTrans = cn.ObtenerTipoDeTransacciones();
+            if (Cuentas != null)
+            {
+                foreach (DataRow row in Cuentas.Rows)
+                {
+                    cb_nCuenta.Items.Add(row["manac_numero_de_cuenta"].ToString());
+                }
+            }
+            if (Cuentas != null)
+            {
+                foreach (DataRow row in TipoTrans.Rows)
+                {
+                    cb_tipoTrans.Items.Add(row["movtm_valor_transacción"].ToString());
+                }
+            }
+
+
         }
 
         private void btn_rtrans_Click(object sender, EventArgs e)
@@ -121,6 +140,24 @@ namespace CapaVistaBancos
             else
             {
                 MessageBox.Show("No se canceló la transaccion.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void cb_nCuenta_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cb_nCuenta.SelectedItem != null)
+            {
+                string tipoMonedaSeleccionada = cb_nCuenta.SelectedItem.ToString();
+                txt_numeroCuenta.Text = tipoMonedaSeleccionada; // Muestra la selección en el TextBox txt_tipo_mon
+            }
+        }
+
+        private void cb_tipoTrans_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cb_tipoTrans.SelectedItem != null)
+            {
+                string tipotransaccion = cb_tipoTrans.SelectedItem.ToString();
+                txt_ttransaccion.Text = tipotransaccion; // Muestra la selección en el TextBox txt_tipo_mon
             }
         }
     }

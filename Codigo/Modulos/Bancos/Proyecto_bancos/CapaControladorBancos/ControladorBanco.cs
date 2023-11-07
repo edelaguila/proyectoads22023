@@ -32,5 +32,14 @@ namespace CapaControladorBancos
         {
             return sentencias.llenarTbl(tabla);
         }
+        public DataTable ObtenerCuentas()
+        {
+            return sentencias.ObtenerCuentas();
+        }
+
+        public DataTable ObtenerTipoDeTransacciones()
+        {
+            return sentencias.TipoTransaccionBancaria();
+        }
     }
 }
