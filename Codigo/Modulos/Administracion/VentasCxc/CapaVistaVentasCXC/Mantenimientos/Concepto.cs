@@ -11,26 +11,26 @@ using Seguridad_Controlador;
 
 namespace CapaVistaVentasCXC.Mantenimientos
 {
-    public partial class Clientes : Form
+    public partial class Concepto : Form
     {
         Controlador cn = new Controlador();
-        public Clientes()
+        public Concepto()
         {
             InitializeComponent();
         }
 
-        private void Clientes_Load(object sender, EventArgs e)
+        private void Concepto_Load(object sender, EventArgs e)
         {
 
         }
 
         private void navegador1_Load(object sender, EventArgs e)
         {
-            NavegadorVista.Navegador.idApp = "3007";  //código aplicación asignado al formulario
+            NavegadorVista.Navegador.idApp = "1003";  //código aplicación asignado al formulario
             navegador1.actual = this;
             navegador1.tabla = dataGridView1;
-            TextBox[] Grupotextbox = { txtid, txtnombre, txttelefono, txtnit, txtestado, txttipo };
-            TextBox[] Idtextbox = { txtid, txtnombre };
+            TextBox[] Grupotextbox = { txtidconcepto, txtdescripcion, txttipo, txtserie };
+            TextBox[] Idtextbox = { txtidconcepto, txtdescripcion };
             navegador1.textbox = Grupotextbox;
             navegador1.textboxi = Idtextbox;
             navegador1.cargar(dataGridView1, Grupotextbox, cn.getNombreBd());
