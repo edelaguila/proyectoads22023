@@ -21,18 +21,18 @@ namespace CapaVistaVentasCXC
             InitializeComponent();
 
             //Control para habilitar opciones del menu
-           Button[] apps = { btnclientes, btnconcepto, btnmovimientocliente, btncotizaciones, btnpedido, btnfactura };
+            //Button[] apps = { btnclientes, btnconcepto, btnmovimientocliente, btncotizaciones, btnpedido, btnfactura };
             //Llamada metodo de libreria Controlador del modulo de Seguridad
 
-           cns.deshabilitarApps(apps);
+            //cns.deshabilitarApps(apps);
             //Llamada metodo de libreria Controlador del modulo de Seguridad
 
-            cns.getAccesoApp(3001, apps[1]);
-            cns.getAccesoApp(3002, apps[2]);
-            cns.getAccesoApp(3003, apps[3]);
-            cns.getAccesoApp(3004, apps[4]);
-            cns.getAccesoApp(3005, apps[5]);
-            cns.getAccesoApp(3006, apps[6]);
+            //cns.getAccesoApp(3001, apps[1]);
+            //cns.getAccesoApp(3002, apps[2]);
+            //cns.getAccesoApp(3003, apps[3]);
+            //cns.getAccesoApp(3004, apps[4]);
+            //cns.getAccesoApp(3005, apps[5]);
+            //cns.getAccesoApp(3006, apps[6]);
         }
 
         //Validaciones que si son visibles los panales los oculta
