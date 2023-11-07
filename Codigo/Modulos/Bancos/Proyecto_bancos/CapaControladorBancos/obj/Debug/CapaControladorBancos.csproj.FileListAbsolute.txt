@@ -1,9 +1,0 @@
-C:\Users\DELL\Desktop\labo analisis\banco\modulo_bancos\modulo_bancos\Codigo\Modulos\Bancos\Proyecto_bancos\CapaControladorBancos\obj\Debug\CapaControladorBancos.csproj.AssemblyReference.cache
-C:\Users\DELL\Desktop\labo analisis\banco\modulo_bancos\modulo_bancos\Codigo\Modulos\Bancos\Proyecto_bancos\CapaControladorBancos\obj\Debug\CapaControladorBancos.csproj.CoreCompileInputs.cache
-C:\Users\DELL\Desktop\labo analisis\banco\modulo_bancos\modulo_bancos\Codigo\Modulos\Bancos\Proyecto_bancos\CapaControladorBancos\bin\Debug\CapaControladorBancos.dll
-C:\Users\DELL\Desktop\labo analisis\banco\modulo_bancos\modulo_bancos\Codigo\Modulos\Bancos\Proyecto_bancos\CapaControladorBancos\bin\Debug\CapaControladorBancos.pdb
-C:\Users\DELL\Desktop\labo analisis\banco\modulo_bancos\modulo_bancos\Codigo\Modulos\Bancos\Proyecto_bancos\CapaControladorBancos\bin\Debug\CapaModeloBancos.dll
-C:\Users\DELL\Desktop\labo analisis\banco\modulo_bancos\modulo_bancos\Codigo\Modulos\Bancos\Proyecto_bancos\CapaControladorBancos\bin\Debug\CapaModeloBancos.pdb
-C:\Users\DELL\Desktop\labo analisis\banco\modulo_bancos\modulo_bancos\Codigo\Modulos\Bancos\Proyecto_bancos\CapaControladorBancos\obj\Debug\CapaControladorBancos.csproj.CopyComplete
-C:\Users\DELL\Desktop\labo analisis\banco\modulo_bancos\modulo_bancos\Codigo\Modulos\Bancos\Proyecto_bancos\CapaControladorBancos\obj\Debug\CapaControladorBancos.dll
-C:\Users\DELL\Desktop\labo analisis\banco\modulo_bancos\modulo_bancos\Codigo\Modulos\Bancos\Proyecto_bancos\CapaControladorBancos\obj\Debug\CapaControladorBancos.pdb

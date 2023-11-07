@@ -1,6 +1,0 @@
-C:\Users\DELL\Desktop\labo analisis\banco\modulo_bancos\modulo_bancos\Codigo\Modulos\Bancos\Proyecto_bancos\CapaModeloBancos\bin\Debug\CapaModeloBancos.dll
-C:\Users\DELL\Desktop\labo analisis\banco\modulo_bancos\modulo_bancos\Codigo\Modulos\Bancos\Proyecto_bancos\CapaModeloBancos\bin\Debug\CapaModeloBancos.pdb
-C:\Users\DELL\Desktop\labo analisis\banco\modulo_bancos\modulo_bancos\Codigo\Modulos\Bancos\Proyecto_bancos\CapaModeloBancos\obj\Debug\CapaModeloBancos.csproj.AssemblyReference.cache
-C:\Users\DELL\Desktop\labo analisis\banco\modulo_bancos\modulo_bancos\Codigo\Modulos\Bancos\Proyecto_bancos\CapaModeloBancos\obj\Debug\CapaModeloBancos.csproj.CoreCompileInputs.cache
-C:\Users\DELL\Desktop\labo analisis\banco\modulo_bancos\modulo_bancos\Codigo\Modulos\Bancos\Proyecto_bancos\CapaModeloBancos\obj\Debug\CapaModeloBancos.dll
-C:\Users\DELL\Desktop\labo analisis\banco\modulo_bancos\modulo_bancos\Codigo\Modulos\Bancos\Proyecto_bancos\CapaModeloBancos\obj\Debug\CapaModeloBancos.pdb
