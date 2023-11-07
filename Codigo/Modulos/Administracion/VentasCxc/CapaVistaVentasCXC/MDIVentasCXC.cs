@@ -21,10 +21,10 @@ namespace CapaVistaVentasCXC
             InitializeComponent();
 
             //Control para habilitar opciones del menu
-            Button[] apps = { btnclientes, btnconcepto, btnmovimientocliente, btncotizaciones, btnpedido, btnfactura };
+           Button[] apps = { btnclientes, btnconcepto, btnmovimientocliente, btncotizaciones, btnpedido, btnfactura };
             //Llamada metodo de libreria Controlador del modulo de Seguridad
 
-            cns.deshabilitarApps(apps);
+           cns.deshabilitarApps(apps);
             //Llamada metodo de libreria Controlador del modulo de Seguridad
 
             cns.getAccesoApp(3001, apps[1]);
