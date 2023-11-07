@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
+
 using CapaControladorBancos;
+
 namespace CapaVistaBancos
 {
     public partial class Ordenes_compra : Form
@@ -175,6 +177,24 @@ namespace CapaVistaBancos
         private void btn_salir_dispo_Click(object sender, EventArgs e)
         {
 
+        }
+    }
+}
+
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_salir_dispo_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

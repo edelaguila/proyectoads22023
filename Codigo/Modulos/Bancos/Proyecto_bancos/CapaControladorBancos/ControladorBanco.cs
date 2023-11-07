@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
-using CapaModeloBancos;
+
 using System.Data.Odbc;
 
-namespace CapaControladorBancos
+
 {
     public class ControladorBanco
     {
@@ -34,6 +34,7 @@ namespace CapaControladorBancos
         {
             return sentencias.llenarTbl(tabla);
         }
+
 
         public static OdbcConnection ObtenerConexion()
         {
@@ -154,6 +155,10 @@ namespace CapaControladorBancos
                 comando.ExecuteNonQuery(); // Ejecución del query para realizar la actualización
             }
         }
+    }
+}
+
+
     }
 }
 
