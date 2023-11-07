@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Seguridad_Controlador;
 using Vista_Seguridad;
 using CapaVistaVentasCXC;
+using CapaVistaComprasCXP;
 
 //Comentado por George Mayén 25/02/2023
 namespace MenuHCV
@@ -64,9 +65,9 @@ namespace MenuHCV
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
         private void btncompras_Click(object sender, EventArgs e)
         {
-            //Vista_PrototipoMenu.MenuComprasCxp form = new Vista_PrototipoMenu.MenuComprasCxp();
-            //form.Show();
-            //cn.setBtitacora("3000", "Ingreso Compras");
+            CapaVistaComprasCXP.MDIComprasCXP form = new CapaVistaComprasCXP.MDIComprasCXP();
+            form.Show();
+            cn.setBtitacora("2000", "Ingreso Compras");
         }
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
 
