@@ -51,19 +51,19 @@ namespace CapaVistaNomina
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.txt_deduccion_total = new System.Windows.Forms.TextBox();
+            this.txt_percepcion_total = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label18 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txt_deduccion_descripcion = new System.Windows.Forms.TextBox();
+            this.txt_percepcion_descripcion = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.txt_id_deduccion = new System.Windows.Forms.TextBox();
+            this.txt_id_percepcion = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.txt_deduccion_valor = new System.Windows.Forms.TextBox();
-            this.btn_guardar_deduccion = new System.Windows.Forms.Button();
+            this.txt_percepcion_valor = new System.Windows.Forms.TextBox();
+            this.btn_guardar_percepcion = new System.Windows.Forms.Button();
             this.btn_Guardar_calculo = new System.Windows.Forms.Button();
             this.btn_calcular = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -278,7 +278,7 @@ namespace CapaVistaNomina
             // 
             this.groupBox2.Controls.Add(this.comboBox1);
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.txt_deduccion_total);
+            this.groupBox2.Controls.Add(this.txt_percepcion_total);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.dateTimePicker1);
             this.groupBox2.Controls.Add(this.label18);
@@ -305,18 +305,18 @@ namespace CapaVistaNomina
             this.label9.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(22, 41);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(135, 30);
+            this.label9.Size = new System.Drawing.Size(108, 30);
             this.label9.TabIndex = 115;
-            this.label9.Text = "Descontar";
+            this.label9.Text = "Agregar";
             // 
-            // txt_deduccion_total
+            // txt_percepcion_total
             // 
-            this.txt_deduccion_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_deduccion_total.Location = new System.Drawing.Point(686, 42);
-            this.txt_deduccion_total.Name = "txt_deduccion_total";
-            this.txt_deduccion_total.ReadOnly = true;
-            this.txt_deduccion_total.Size = new System.Drawing.Size(234, 34);
-            this.txt_deduccion_total.TabIndex = 110;
+            this.txt_percepcion_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_percepcion_total.Location = new System.Drawing.Point(686, 42);
+            this.txt_percepcion_total.Name = "txt_percepcion_total";
+            this.txt_percepcion_total.ReadOnly = true;
+            this.txt_percepcion_total.Size = new System.Drawing.Size(234, 34);
+            this.txt_percepcion_total.TabIndex = 110;
             // 
             // label10
             // 
@@ -324,9 +324,9 @@ namespace CapaVistaNomina
             this.label10.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(432, 41);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(208, 30);
+            this.label10.Size = new System.Drawing.Size(212, 30);
             this.label10.TabIndex = 109;
-            this.label10.Text = "Deduccion total";
+            this.label10.Text = "Percepcion total";
             // 
             // dateTimePicker1
             // 
@@ -349,13 +349,13 @@ namespace CapaVistaNomina
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txt_deduccion_descripcion);
+            this.groupBox1.Controls.Add(this.txt_percepcion_descripcion);
             this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.txt_id_deduccion);
+            this.groupBox1.Controls.Add(this.txt_id_percepcion);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.txt_deduccion_valor);
+            this.groupBox1.Controls.Add(this.txt_percepcion_valor);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(23, 339);
             this.groupBox1.Name = "groupBox1";
@@ -364,13 +364,13 @@ namespace CapaVistaNomina
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Deducciones";
             // 
-            // txt_deduccion_descripcion
+            // txt_percepcion_descripcion
             // 
-            this.txt_deduccion_descripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_deduccion_descripcion.Location = new System.Drawing.Point(440, 60);
-            this.txt_deduccion_descripcion.Name = "txt_deduccion_descripcion";
-            this.txt_deduccion_descripcion.Size = new System.Drawing.Size(233, 34);
-            this.txt_deduccion_descripcion.TabIndex = 101;
+            this.txt_percepcion_descripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_percepcion_descripcion.Location = new System.Drawing.Point(440, 60);
+            this.txt_percepcion_descripcion.Name = "txt_percepcion_descripcion";
+            this.txt_percepcion_descripcion.Size = new System.Drawing.Size(233, 34);
+            this.txt_percepcion_descripcion.TabIndex = 101;
             // 
             // label12
             // 
@@ -382,13 +382,13 @@ namespace CapaVistaNomina
             this.label12.TabIndex = 111;
             this.label12.Text = "Decripcion";
             // 
-            // txt_id_deduccion
+            // txt_id_percepcion
             // 
-            this.txt_id_deduccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_id_deduccion.Location = new System.Drawing.Point(206, 57);
-            this.txt_id_deduccion.Name = "txt_id_deduccion";
-            this.txt_id_deduccion.Size = new System.Drawing.Size(66, 34);
-            this.txt_id_deduccion.TabIndex = 100;
+            this.txt_id_percepcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_id_percepcion.Location = new System.Drawing.Point(206, 57);
+            this.txt_id_percepcion.Name = "txt_id_percepcion";
+            this.txt_id_percepcion.Size = new System.Drawing.Size(66, 34);
+            this.txt_id_percepcion.TabIndex = 100;
             // 
             // label8
             // 
@@ -406,9 +406,9 @@ namespace CapaVistaNomina
             this.label13.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(19, 56);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(181, 30);
+            this.label13.Size = new System.Drawing.Size(189, 30);
             this.label13.TabIndex = 98;
-            this.label13.Text = "ID_deduccion";
+            this.label13.Text = "ID_percepcion";
             // 
             // label14
             // 
@@ -420,22 +420,22 @@ namespace CapaVistaNomina
             this.label14.TabIndex = 97;
             this.label14.Text = "Percepciones";
             // 
-            // txt_deduccion_valor
+            // txt_percepcion_valor
             // 
-            this.txt_deduccion_valor.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_deduccion_valor.Location = new System.Drawing.Point(772, 60);
-            this.txt_deduccion_valor.Name = "txt_deduccion_valor";
-            this.txt_deduccion_valor.Size = new System.Drawing.Size(234, 34);
-            this.txt_deduccion_valor.TabIndex = 102;
+            this.txt_percepcion_valor.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_percepcion_valor.Location = new System.Drawing.Point(772, 60);
+            this.txt_percepcion_valor.Name = "txt_percepcion_valor";
+            this.txt_percepcion_valor.Size = new System.Drawing.Size(234, 34);
+            this.txt_percepcion_valor.TabIndex = 102;
             // 
-            // btn_guardar_deduccion
+            // btn_guardar_percepcion
             // 
-            this.btn_guardar_deduccion.Location = new System.Drawing.Point(1070, 365);
-            this.btn_guardar_deduccion.Name = "btn_guardar_deduccion";
-            this.btn_guardar_deduccion.Size = new System.Drawing.Size(123, 65);
-            this.btn_guardar_deduccion.TabIndex = 138;
-            this.btn_guardar_deduccion.Text = "Guardar Deduccion";
-            this.btn_guardar_deduccion.UseVisualStyleBackColor = true;
+            this.btn_guardar_percepcion.Location = new System.Drawing.Point(1070, 365);
+            this.btn_guardar_percepcion.Name = "btn_guardar_percepcion";
+            this.btn_guardar_percepcion.Size = new System.Drawing.Size(123, 65);
+            this.btn_guardar_percepcion.TabIndex = 138;
+            this.btn_guardar_percepcion.Text = "Guardar Percepcion";
+            this.btn_guardar_percepcion.UseVisualStyleBackColor = true;
             // 
             // btn_Guardar_calculo
             // 
@@ -465,7 +465,7 @@ namespace CapaVistaNomina
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btn_guardar_deduccion);
+            this.Controls.Add(this.btn_guardar_percepcion);
             this.Controls.Add(this.btn_Guardar_calculo);
             this.Controls.Add(this.btn_calcular);
             this.Controls.Add(this.label17);
@@ -507,19 +507,19 @@ namespace CapaVistaNomina
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txt_deduccion_total;
+        private System.Windows.Forms.TextBox txt_percepcion_total;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txt_deduccion_descripcion;
+        private System.Windows.Forms.TextBox txt_percepcion_descripcion;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox txt_id_deduccion;
+        private System.Windows.Forms.TextBox txt_id_percepcion;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox txt_deduccion_valor;
-        private System.Windows.Forms.Button btn_guardar_deduccion;
+        private System.Windows.Forms.TextBox txt_percepcion_valor;
+        private System.Windows.Forms.Button btn_guardar_percepcion;
         private System.Windows.Forms.Button btn_Guardar_calculo;
         private System.Windows.Forms.Button btn_calcular;
     }
