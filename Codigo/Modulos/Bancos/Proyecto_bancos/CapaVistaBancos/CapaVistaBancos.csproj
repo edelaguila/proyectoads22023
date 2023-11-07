@@ -178,24 +178,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="verbanco.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="verbanco.Designer.cs">
-      <DependentUpon>verbanco.cs</DependentUpon>
-    </Compile>
-    <Compile Include="vermoneda.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="vermoneda.Designer.cs">
-      <DependentUpon>vermoneda.cs</DependentUpon>
-    </Compile>
-    <Compile Include="vertransaccion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="vertransaccion.Designer.cs">
-      <DependentUpon>vertransaccion.cs</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Con_bancaria.resx">
@@ -231,15 +213,6 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="verbanco.resx">
-      <DependentUpon>verbanco.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="vermoneda.resx">
-      <DependentUpon>vermoneda.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="vertransaccion.resx">
-      <DependentUpon>vertransaccion.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

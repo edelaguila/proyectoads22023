@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.Odbc;
-
+using System.Collections.Generic;
 namespace CapaModeloBancos
 {
     public class SentenciasBanco
@@ -121,6 +121,63 @@ namespace CapaModeloBancos
             }
         }
 
+        public DataTable ObtenerTiposMoneda()
+        {
+            using (OdbcConnection connection = con.AbrirConexion())
+            {
+                if (connection != null)
+                {
+                    string sql = "SELECT mon_nomMoneda FROM tbl_monedabanco;";
+                    OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, connection);
+                    DataTable table = new DataTable();
+                    dataTable.Fill(table);
+                    return table;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
 
+        public DataTable ObtenerBancos()
+        {
+            using (OdbcConnection connection = con.AbrirConexion())
+            {
+                if (connection != null)
+                {
+                    string sql = "SELECT manag_nombre_banco FROM tbl_mantenimientos_agregar_bancos;";
+                    OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, connection);
+                    DataTable table = new DataTable();
+                    dataTable.Fill(table);
+                    return table;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
+
+
+
+        public DataTable ObtenerTipoCuenta()
+        {
+            using (OdbcConnection connection = con.AbrirConexion())
+            {
+                if (connection != null)
+                {
+                    string sql = "SELECT movtm_transacciones_existentes FROM tbl_mantenimientos_tipo_movimiento;";
+                    OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, connection);
+                    DataTable table = new DataTable();
+                    dataTable.Fill(table);
+                    return table;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
     }
 }
