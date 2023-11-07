@@ -34,15 +34,14 @@
     <Reference Include="CapaVistaComprasCXP">
       <HintPath>..\..\..\Administracion\ComprasCxp\CapaVistaComprasCXP\bin\Debug\CapaVistaComprasCXP.dll</HintPath>
     </Reference>
-    <Reference Include="CapaVistaVentasCXC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="CapaVistaVentasCXC">
       <HintPath>..\..\..\Administracion\VentasCxc\CapaVistaVentasCXC\bin\Debug\CapaVistaVentasCXC.dll</HintPath>
     </Reference>
     <Reference Include="eCryptography, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Eramake.eCryptography.1.1.6\lib\net45\eCryptography.dll</HintPath>
     </Reference>
     <Reference Include="FontAwesome.Sharp">
-      <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files\UMG\Instalador General HSC\FontAwesome.Sharp.dll</HintPath>
+      <HintPath>..\..\..\Administracion\VentasCxc\CapaVistaVentasCXC\bin\Debug\FontAwesome.Sharp.dll</HintPath>
     </Reference>
     <Reference Include="Seguridad_Controlador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
