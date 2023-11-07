@@ -59,11 +59,35 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmChequeo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChequeo.Designer.cs">
+      <DependentUpon>frmChequeo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGestionHabitacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGestionHabitacion.Designer.cs">
+      <DependentUpon>frmGestionHabitacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmGestionHuespedes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmGestionHuespedes.Designer.cs">
       <DependentUpon>frmGestionHuespedes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGestionSalon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGestionSalon.Designer.cs">
+      <DependentUpon>frmGestionSalon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReservaHabitacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReservaHabitacion.Designer.cs">
+      <DependentUpon>frmReservaHabitacion.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTipoHabitacion.cs">
       <SubType>Form</SubType>
@@ -85,8 +109,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmChequeo.resx">
+      <DependentUpon>frmChequeo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGestionHabitacion.resx">
+      <DependentUpon>frmGestionHabitacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmGestionHuespedes.resx">
       <DependentUpon>frmGestionHuespedes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGestionSalon.resx">
+      <DependentUpon>frmGestionSalon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReservaHabitacion.resx">
+      <DependentUpon>frmReservaHabitacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTipoHabitacion.resx">
       <DependentUpon>frmTipoHabitacion.cs</DependentUpon>

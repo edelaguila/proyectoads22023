@@ -101,5 +101,29 @@ namespace Vista_PrototipoMenu
             this.showForm(new frmGestionHuespedes());
             hideSubMenu();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.showForm(new frmGestionSalon());
+            hideSubMenu();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.showForm(new frmGestionHabitacion());
+            hideSubMenu();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.showForm(new frmReservaHabitacion());
+            hideSubMenu();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.showForm(new frmChequeo());
+            hideSubMenu();
+        }
     }
 }
