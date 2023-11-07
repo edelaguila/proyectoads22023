@@ -131,6 +131,9 @@
     <Compile Include="Con_bancaria.Designer.cs">
       <DependentUpon>Con_bancaria.cs</DependentUpon>
     </Compile>
+
+    <Compile Include="negocios.cs" />
+
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
