@@ -26,7 +26,7 @@ namespace CapaVistaVentasCXC.Mantenimientos
 
         private void navegador1_Load(object sender, EventArgs e)
         {
-            NavegadorVista.Navegador.idApp = "1003";  //código aplicación asignado al formulario
+            NavegadorVista.Navegador.idApp = "3008";  //código aplicación asignado al formulario
             navegador1.actual = this;
             navegador1.tabla = dataGridView1;
             TextBox[] Grupotextbox = { txtidconcepto, txtdescripcion, txttipo, txtserie };
