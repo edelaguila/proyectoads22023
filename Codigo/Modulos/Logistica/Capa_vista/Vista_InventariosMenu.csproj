@@ -31,23 +31,29 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Capa_VistaConsultas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Capa_VistaConsultas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\..\..\..\Proyecto ads logistica 1\proyectoads22023\Codigo\Modulos\Logistica\Capa_vista\bin\Debug\Capa_VistaConsultas.dll</HintPath>
+    </Reference>
     <Reference Include="Controlador_InventariosMenu">
       <HintPath>..\Capa_controlador\bin\Debug\Controlador_InventariosMenu.dll</HintPath>
     </Reference>
     <Reference Include="FontAwesome.Sharp">
       <HintPath>C:\Program Files\UMG\Instalador General HSC\FontAwesome.Sharp.dll</HintPath>
     </Reference>
-    <Reference Include="NavegadorControlador, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
-    <Reference Include="NavegadorVista, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\NavegadorVista.dll</HintPath>
+    <Reference Include="Modelo_InventariosMenu">
+      <HintPath>..\Capa_controlador\bin\Debug\Modelo_InventariosMenu.dll</HintPath>
+    </Reference>
+    <Reference Include="NavegadorControlador, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\..\..\..\Proyecto ads logistica 1\proyectoads22023\Codigo\Modulos\Logistica\Capa_vista\bin\Debug\NavegadorControlador.dll</HintPath>
+    </Reference>
+    <Reference Include="NavegadorVista">
+      <HintPath>..\..\..\..\..\..\..\..\..\Debug\Debug\NavegadorVista.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="Seguridad_Controlador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\UMG\Instalador General HSC\Seguridad_Controlador.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Proyecto ads logistica 1\proyectoads22023\Codigo\Modulos\Logistica\Capa_vista\bin\Debug\Seguridad_Controlador.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
