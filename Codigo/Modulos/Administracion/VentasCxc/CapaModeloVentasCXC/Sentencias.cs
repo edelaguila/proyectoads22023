@@ -128,6 +128,35 @@ namespace CapaModeloVentasCXC
             }
         }
 
+        public int ObtenerSumaDetalleValor()
+        {
+            string sql = "SELECT SUM(Detalle_valor) FROM tbl_detallemovimientocliente";
+            OdbcCommand cmd = new OdbcCommand(sql, con.conexion());
+
+            try
+            {
+                object result = cmd.ExecuteScalar();
+                if (result != null && result != DBNull.Value)
+                {
+                    int suma = Convert.ToInt32(result);
+                    return suma;
+                }
+                else
+                {
+                    // Manejo de caso en el que no se obtiene un valor válido
+                    // Puedes retornar un valor predeterminado o manejar la situación según tus necesidades.
+                    return 0; // Por ejemplo, se retorna 0 si no se encontraron resultados.
+                }
+            }
+            catch (Exception ex)
+            {
+                // Manejo de excepciones
+                // Puedes registrar el error, lanzar una excepción personalizada o manejarlo de otra manera.
+                Console.WriteLine("Error en ObtenerSumaDetalleValor: " + ex.Message);
+                return 0; // Retorno 0 en caso de error.
+            }
+        }
+
 
     }
 }

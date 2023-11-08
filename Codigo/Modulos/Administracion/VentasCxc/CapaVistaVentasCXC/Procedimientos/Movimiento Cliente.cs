@@ -20,6 +20,8 @@ namespace CapaVistaVentasCXC.Procedimientos
             LlenarComboCliente();
             LlenarComboConcepto();
             actualizardatagrid();
+            dtTabla.CellClick += dataGridView1_CellClick;
+            ActualizarSaldoTotal();
         }
 
         public void actualizardatagrid()
@@ -27,6 +29,12 @@ namespace CapaVistaVentasCXC.Procedimientos
             string tabla = "tbl_encabezadoMovimientoCliente";
             DataTable dt = cn.llenarTbl(tabla);
             dtTabla.DataSource = dt;
+        }
+
+        public void ActualizarSaldoTotal()
+        {
+            int suma = cn.ObtenerSumaDetalleValor();
+            lbl_saldoTotal.Text = suma.ToString();
         }
 
 
@@ -93,6 +101,7 @@ namespace CapaVistaVentasCXC.Procedimientos
             valores.Add("codigoCliente", int.Parse(cb_busquedaCliente.SelectedItem.ToString()));
             valores.Add("encabezadoCliente_FechaEmision", dtp_fechaEmision.Value.Date);
             valores.Add("encabezadoCliente_FechaVencimiento", dtp_fechaVencimiento.Value.Date);
+            valores.Add("encabezadoCliente_Factura", int.Parse(txt_factura.Text));
 
 
             cn.GuardarDatos(tabla, valores);
@@ -108,6 +117,7 @@ namespace CapaVistaVentasCXC.Procedimientos
             valores.Add("CodigoEncabezadoCliente", IDE);
             valores.Add("CodigoConceptoCliente", int.Parse(cb_busquedaConcepto.SelectedItem.ToString()));
             valores.Add("Detalle_valor", int.Parse(txt_conceptoValor.Text));
+            valores.Add("CodigoClienteDetalle", int.Parse(cb_busquedaCliente.SelectedItem.ToString()));
 
 
             cn.GuardarDatos(tabla, valores);
@@ -190,6 +200,21 @@ namespace CapaVistaVentasCXC.Procedimientos
 
         }
 
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0) // Verifica que se haya hecho clic en una fila válida
+            {
+                DataGridViewRow selectedRow = dtTabla.Rows[e.RowIndex];
+
+                if (selectedRow.Cells["id_EncabezadoCliente"].Value != null)
+                {
+                    txt_eliminacion.Text = selectedRow.Cells["id_EncabezadoCliente"].Value.ToString();
+                }
+            }
+        }
+
+
+
         private void btn_busquedaCliente_Click(object sender, EventArgs e)
         {
             BuscarCliente();
@@ -206,6 +231,7 @@ namespace CapaVistaVentasCXC.Procedimientos
             BuscarUltimoIDEncabezado();
             insertDetalle();
             actualizardatagrid();
+            ActualizarSaldoTotal();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -213,6 +239,12 @@ namespace CapaVistaVentasCXC.Procedimientos
             eliminacionDetalle();
             eliminacionEncabezado();
             actualizardatagrid();
+            ActualizarSaldoTotal();
+        }
+
+        private void dtTabla_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
