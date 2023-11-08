@@ -71,6 +71,12 @@ namespace CapaControladorComprasCXP
             return table;
         }
 
+        public int ObtenerSumaDetalleValor()
+        {
+            return sn.ObtenerSumaDetalleValor();
+        }
+
+
         public int ObtenerUltimoNumeroOrden(String campoid, String tabla)
         {
             return sn.ObtenerUltimoNumeroOrden(campoid, tabla);
