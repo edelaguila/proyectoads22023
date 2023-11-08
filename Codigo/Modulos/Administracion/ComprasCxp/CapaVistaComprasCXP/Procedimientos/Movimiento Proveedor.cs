@@ -21,6 +21,8 @@ namespace CapaVistaComprasCXP.Procedimientos
             LlenarComboCliente();
             LlenarComboConcepto();
             actualizardatagrid();
+            dtTabla.CellClick += dataGridView1_CellClick;
+            ActualizarSaldoTotal();
         }
 
         public void actualizardatagrid()
@@ -96,7 +98,7 @@ namespace CapaVistaComprasCXP.Procedimientos
             valores.Add("CodigoProveedor", int.Parse(cb_busquedaProveedor.SelectedItem.ToString()));
             valores.Add("encabezadoProveedor_FechaEmision", dtp_fechaEmision.Value.Date);
             valores.Add("encabezadoProveedor_FechaVencimiento", dtp_fechaVencimiento.Value.Date);
-
+            valores.Add("encabezadoProveedor_Factura", int.Parse(txt_Factura.Text));
 
             controlador.GuardarDatos(tabla, valores);
         }
@@ -194,6 +196,47 @@ namespace CapaVistaComprasCXP.Procedimientos
 
         }
 
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0) // Verifica que se haya hecho clic en una fila válida
+            {
+                DataGridViewRow selectedRow = dtTabla.Rows[e.RowIndex];
+
+                if (selectedRow.Cells["id_EncabezadoProveedor"].Value != null)
+                {
+                    txt_eliminacion.Text = selectedRow.Cells["id_EncabezadoProveedor"].Value.ToString();
+                }
+
+            }
+        }
+
+        public void ActualizarSaldoTotal()
+        {
+            int suma = cn.ObtenerSumaDetalleValor();
+            lbl_saldoTotal.Text = suma.ToString();
+        }
+
+
+        public void limpieza()
+        {
+            txt_concepto.Text = "";
+            txt_conceptoValor.Text = "";
+            txt_eliminacion.Text = "";
+            txt_empresa.Text = "";
+            txt_estado.Text = "";
+            txt_Factura.Text = "";
+            txt_nombre.Text = "";
+            txt_serieConcepto.Text = "";
+            txt_tipo.Text = "";
+            txt_tipoConcepto.Text = "";
+            cb_busquedaConcepto.SelectedIndex = -1;
+            cb_busquedaProveedor.SelectedIndex = -1;
+            dtp_fechaEmision.Value = DateTime.Now;
+            dtp_fechaVencimiento.Value = DateTime.Now; 
+
+        }
+
+
         private void btn_busquedaProveedor_Click(object sender, EventArgs e)
         {
             BuscarCliente();
@@ -210,6 +253,8 @@ namespace CapaVistaComprasCXP.Procedimientos
             BuscarUltimoIDEncabezado();
             insertDetalle();
             actualizardatagrid();
+            ActualizarSaldoTotal();
+            limpieza();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -217,6 +262,33 @@ namespace CapaVistaComprasCXP.Procedimientos
             eliminacionDetalle();
             eliminacionEncabezado();
             actualizardatagrid();
+            ActualizarSaldoTotal();
+            limpieza();
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtp_fechaVencimiento_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_saldoTotal_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

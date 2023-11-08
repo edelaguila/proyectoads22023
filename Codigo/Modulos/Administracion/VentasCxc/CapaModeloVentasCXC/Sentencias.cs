@@ -7,7 +7,7 @@ using System.Data;
 using System.Data.Odbc;
 
 namespace CapaModeloVentasCXC
-{
+{// Carlos Enrique Guzman Cabrera
     public class Sentencias
     {
         Conexion con = new Conexion();
@@ -26,12 +26,12 @@ namespace CapaModeloVentasCXC
         public OdbcDataAdapter llenarTbl(string tabla)
         {
             // Utiliza INNER JOINs para unir las tablas y obtener los datos necesarios.
-            string sql = "SELECT e.id_EncabezadoCliente, e.encabezadoCliente_FechaEmision, e.encabezadoCliente_FechaVencimiento, c.cli_nombre, co.con_Descripcion, co.con_SerieConcepto " +
-             "FROM tbl_encabezadoMovimientoCliente e " +
-             "INNER JOIN tbl_detalleMovimientoCliente d ON e.id_EncabezadoCliente = d.CodigoEncabezadoCliente " +
+            string sql = "SELECT e.id_EncabezadoCliente, c.id_cliente, c.cli_Nombre, e.encabezadoCliente_Factura, co.con_Descripcion, co.con_Tipo, co.con_SerieConcepto, " +
+             "e.encabezadoCliente_FechaEmision, e.encabezadoCliente_FechaVencimiento, d.Detalle_valor " +
+             "FROM tbl_encabezadomovimientocliente e " +
+             "INNER JOIN tbl_detallemovimientocliente d ON e.id_EncabezadoCliente = d.CodigoEncabezadoCliente " +
              "INNER JOIN tbl_cliente c ON e.CodigoCliente = c.id_cliente " +
              "INNER JOIN tbl_concepto co ON d.CodigoConceptoCliente = co.id_concepto;";
-
 
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, con.conexion());
             return dataTable;
@@ -156,7 +156,7 @@ namespace CapaModeloVentasCXC
                 return 0; // Retorno 0 en caso de error.
             }
         }
-
+        // aqui finaliza mi codificacion
 
     }
 }

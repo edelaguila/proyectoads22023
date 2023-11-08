@@ -51,6 +51,8 @@ namespace CapaVistaVentasCXC.Procedimientos
             this.txt_concepto = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_factura = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.dtp_fechaEmision = new System.Windows.Forms.DateTimePicker();
             this.dtp_fechaVencimiento = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
@@ -62,11 +64,7 @@ namespace CapaVistaVentasCXC.Procedimientos
             this.txt_nombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dtTabla = new System.Windows.Forms.DataGridView();
-            this.txt_factura = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
             this.lbl_saldoTotal = new System.Windows.Forms.Label();
-            this.lbl_SaldoCliente = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -76,17 +74,18 @@ namespace CapaVistaVentasCXC.Procedimientos
             // txt_eliminacion
             // 
             this.txt_eliminacion.Enabled = false;
-            this.txt_eliminacion.Location = new System.Drawing.Point(967, 676);
+            this.txt_eliminacion.Location = new System.Drawing.Point(1046, 614);
             this.txt_eliminacion.Margin = new System.Windows.Forms.Padding(4);
             this.txt_eliminacion.Name = "txt_eliminacion";
             this.txt_eliminacion.Size = new System.Drawing.Size(35, 22);
             this.txt_eliminacion.TabIndex = 53;
+            this.txt_eliminacion.Visible = false;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(21, 662);
+            this.label9.Location = new System.Drawing.Point(455, 661);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(162, 20);
@@ -97,7 +96,7 @@ namespace CapaVistaVentasCXC.Procedimientos
             // 
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(944, 482);
+            this.button3.Location = new System.Drawing.Point(1094, 486);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(50, 44);
             this.button3.TabIndex = 48;
@@ -112,11 +111,11 @@ namespace CapaVistaVentasCXC.Procedimientos
             this.groupBox3.Controls.Add(this.cb_busquedaCliente);
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.label13);
-            this.groupBox3.Location = new System.Drawing.Point(13, 13);
+            this.groupBox3.Location = new System.Drawing.Point(25, 13);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(981, 79);
+            this.groupBox3.Size = new System.Drawing.Size(1056, 79);
             this.groupBox3.TabIndex = 47;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Busqueda de datos";
@@ -190,11 +189,11 @@ namespace CapaVistaVentasCXC.Procedimientos
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.txt_concepto);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Location = new System.Drawing.Point(13, 265);
+            this.groupBox2.Location = new System.Drawing.Point(25, 265);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(981, 110);
+            this.groupBox2.Size = new System.Drawing.Size(1056, 110);
             this.groupBox2.TabIndex = 46;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Detalle del movimiento";
@@ -296,14 +295,32 @@ namespace CapaVistaVentasCXC.Procedimientos
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txt_nombre);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(13, 123);
+            this.groupBox1.Location = new System.Drawing.Point(25, 123);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(981, 134);
+            this.groupBox1.Size = new System.Drawing.Size(1056, 134);
             this.groupBox1.TabIndex = 45;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dato cliente";
+            // 
+            // txt_factura
+            // 
+            this.txt_factura.Location = new System.Drawing.Point(400, 80);
+            this.txt_factura.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_factura.Name = "txt_factura";
+            this.txt_factura.Size = new System.Drawing.Size(192, 22);
+            this.txt_factura.TabIndex = 33;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(325, 82);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(56, 17);
+            this.label14.TabIndex = 32;
+            this.label14.Text = "Factura";
             // 
             // dtp_fechaEmision
             // 
@@ -399,82 +416,40 @@ namespace CapaVistaVentasCXC.Procedimientos
             // 
             this.dtTabla.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtTabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtTabla.Location = new System.Drawing.Point(12, 383);
+            this.dtTabla.Location = new System.Drawing.Point(25, 383);
             this.dtTabla.Margin = new System.Windows.Forms.Padding(4);
             this.dtTabla.MultiSelect = false;
             this.dtTabla.Name = "dtTabla";
             this.dtTabla.RowHeadersWidth = 51;
             this.dtTabla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtTabla.Size = new System.Drawing.Size(908, 253);
+            this.dtTabla.Size = new System.Drawing.Size(1056, 253);
             this.dtTabla.TabIndex = 54;
             this.dtTabla.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtTabla_CellContentClick);
-            // 
-            // txt_factura
-            // 
-            this.txt_factura.Location = new System.Drawing.Point(400, 80);
-            this.txt_factura.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_factura.Name = "txt_factura";
-            this.txt_factura.Size = new System.Drawing.Size(192, 22);
-            this.txt_factura.TabIndex = 33;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(325, 82);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(56, 17);
-            this.label14.TabIndex = 32;
-            this.label14.Text = "Factura";
             // 
             // lbl_saldoTotal
             // 
             this.lbl_saldoTotal.AutoSize = true;
             this.lbl_saldoTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_saldoTotal.Location = new System.Drawing.Point(204, 658);
+            this.lbl_saldoTotal.Location = new System.Drawing.Point(638, 657);
             this.lbl_saldoTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_saldoTotal.Name = "lbl_saldoTotal";
             this.lbl_saldoTotal.Size = new System.Drawing.Size(37, 29);
             this.lbl_saldoTotal.TabIndex = 57;
             this.lbl_saldoTotal.Text = "---";
             // 
-            // lbl_SaldoCliente
-            // 
-            this.lbl_SaldoCliente.AutoSize = true;
-            this.lbl_SaldoCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_SaldoCliente.Location = new System.Drawing.Point(482, 658);
-            this.lbl_SaldoCliente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_SaldoCliente.Name = "lbl_SaldoCliente";
-            this.lbl_SaldoCliente.Size = new System.Drawing.Size(37, 29);
-            this.lbl_SaldoCliente.TabIndex = 58;
-            this.lbl_SaldoCliente.Text = "---";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(299, 662);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(155, 20);
-            this.label12.TabIndex = 59;
-            this.label12.Text = "Saldo Total Cliente:";
-            // 
             // Movimiento_Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1015, 711);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.lbl_SaldoCliente);
+            this.ClientSize = new System.Drawing.Size(1156, 711);
             this.Controls.Add(this.lbl_saldoTotal);
             this.Controls.Add(this.dtTabla);
-            this.Controls.Add(this.txt_eliminacion);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.txt_eliminacion);
             this.Name = "Movimiento_Cliente";
             this.Text = "Movimiento_Cliente";
             this.groupBox3.ResumeLayout(false);
@@ -526,7 +501,5 @@ namespace CapaVistaVentasCXC.Procedimientos
         private System.Windows.Forms.TextBox txt_factura;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label lbl_saldoTotal;
-        private System.Windows.Forms.Label lbl_SaldoCliente;
-        private System.Windows.Forms.Label label12;
     }
 }

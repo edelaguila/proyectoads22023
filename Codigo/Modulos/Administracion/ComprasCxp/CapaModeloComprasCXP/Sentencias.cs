@@ -57,9 +57,10 @@ namespace CapaModeloComprasCXP
         public OdbcDataAdapter llenarTblP(string tabla1)
         {
             // Utiliza INNER JOINs para unir las tablas y obtener los datos necesarios.
-            string sql = "SELECT e.id_EncabezadoProveedor, e.encabezadoProveedor_FechaEmision, e.encabezadoProveedor_FechaVencimiento, p.pro_Nombre, co.con_Descripcion, co.con_SerieConcepto " +
-              "FROM tbl_encabezadoMovimientoProveedor e " +
-              "INNER JOIN tbl_detalleMovimientoProveedor d ON e.id_EncabezadoProveedor = d.CodigoEncabezadoProveedor " +
+            string sql = "SELECT e.id_EncabezadoProveedor, p.id_proveedor, p.pro_Nombre, e.encabezadoProveedor_Factura, co.con_Descripcion, co.con_Tipo, co.con_SerieConcepto, " +
+              "e.encabezadoProveedor_FechaEmision, e.encabezadoProveedor_FechaVencimiento, d.detalleProveedor_valor " +
+              "FROM tbl_encabezadomovimientoproveedor e " +
+              "INNER JOIN tbl_detallemovimientoproveedor d ON e.id_EncabezadoProveedor = d.CodigoEncabezadoProveedor " +
               "INNER JOIN tbl_proveedor p ON e.CodigoProveedor = p.id_proveedor " +
               "INNER JOIN tbl_concepto co ON d.CodigoConceptoProveedor = co.id_concepto;";
 
@@ -135,6 +136,36 @@ namespace CapaModeloComprasCXP
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, con.conexion());
             return dataTable;
         }
+
+        public int ObtenerSumaDetalleValor()
+        {
+            string sql = "SELECT SUM(DetalleProveedor_valor) FROM tbl_detallemovimientoproveedor";
+            OdbcCommand cmd = new OdbcCommand(sql, con.conexion());
+
+            try
+            {
+                object result = cmd.ExecuteScalar();
+                if (result != null && result != DBNull.Value)
+                {
+                    int suma = Convert.ToInt32(result);
+                    return suma;
+                }
+                else
+                {
+                    // Manejo de caso en el que no se obtiene un valor válido
+                    // Puedes retornar un valor predeterminado o manejar la situación según tus necesidades.
+                    return 0; // Por ejemplo, se retorna 0 si no se encontraron resultados.
+                }
+            }
+            catch (Exception ex)
+            {
+                // Manejo de excepciones
+                // Puedes registrar el error, lanzar una excepción personalizada o manejarlo de otra manera.
+                Console.WriteLine("Error en ObtenerSumaDetalleValor: " + ex.Message);
+                return 0; // Retorno 0 en caso de error.
+            }
+        }
+        // aqui finaliza mi codificacion
 
         public int ObtenerUltimoNumeroOrden(string campoid, string tabla)
         {

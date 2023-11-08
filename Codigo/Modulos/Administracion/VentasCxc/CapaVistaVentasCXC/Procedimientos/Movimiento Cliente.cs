@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using CapaControladorVentasCXC;
 
 namespace CapaVistaVentasCXC.Procedimientos
-{
+{ // Carlos Enrique guzman Cabrera
     public partial class Movimiento_Cliente : Form
     {
         Controlador_VentasCXC cn = new Controlador_VentasCXC();
@@ -117,7 +117,7 @@ namespace CapaVistaVentasCXC.Procedimientos
             valores.Add("CodigoEncabezadoCliente", IDE);
             valores.Add("CodigoConceptoCliente", int.Parse(cb_busquedaConcepto.SelectedItem.ToString()));
             valores.Add("Detalle_valor", int.Parse(txt_conceptoValor.Text));
-            valores.Add("CodigoClienteDetalle", int.Parse(cb_busquedaCliente.SelectedItem.ToString()));
+            
 
 
             cn.GuardarDatos(tabla, valores);
@@ -210,9 +210,26 @@ namespace CapaVistaVentasCXC.Procedimientos
                 {
                     txt_eliminacion.Text = selectedRow.Cells["id_EncabezadoCliente"].Value.ToString();
                 }
+            
             }
         }
 
+        public void limpieza()
+        {
+            txt_concepto.Text = "";
+            txt_conceptoValor.Text = "";
+            txt_eliminacion.Text = "";
+            txt_estado.Text = "";
+            txt_factura.Text = "";
+            txt_nombre.Text = "";
+            txt_serieConcepto.Text = "";
+            txt_tipo.Text = "";
+            txt_tipoConcepto.Text = "";
+            cb_busquedaConcepto.SelectedIndex = -1;
+            cb_busquedaCliente.SelectedIndex = -1;
+            dtp_fechaEmision.Value = DateTime.Now;
+            dtp_fechaVencimiento.Value = DateTime.Now;
+        }
 
 
         private void btn_busquedaCliente_Click(object sender, EventArgs e)
@@ -232,6 +249,7 @@ namespace CapaVistaVentasCXC.Procedimientos
             insertDetalle();
             actualizardatagrid();
             ActualizarSaldoTotal();
+            limpieza();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -240,6 +258,7 @@ namespace CapaVistaVentasCXC.Procedimientos
             eliminacionEncabezado();
             actualizardatagrid();
             ActualizarSaldoTotal();
+            limpieza();
         }
 
         private void dtTabla_CellContentClick(object sender, DataGridViewCellEventArgs e)

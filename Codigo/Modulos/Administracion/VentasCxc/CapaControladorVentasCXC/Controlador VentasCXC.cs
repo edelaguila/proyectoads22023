@@ -8,7 +8,7 @@ using System.Data.Odbc;
 using System.Data;
 
 namespace CapaControladorVentasCXC
-{
+{// Carlos Enrique Guzman Cabrera
     public class Controlador_VentasCXC
     {
         Sentencias sn = new Sentencias();
@@ -63,6 +63,8 @@ namespace CapaControladorVentasCXC
         {
             return sn.ObtenerSumaDetalleValor();
         }
+
+// aqui finaliza mi codigo (Carlos Enrique Guzman Cabrera)
 
 
     }
