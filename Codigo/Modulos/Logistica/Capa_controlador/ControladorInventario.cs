@@ -12,472 +12,377 @@ namespace Controlador_PrototipoMenu
 {
     public class ControladorInventario
     {
-        Modelo_PrototipoMenu.SentenciasInventario sn = new Modelo_PrototipoMenu.SentenciasInventario();
-        public DataTable llenartb3(string condicion)
-        {
-            string consulta = "select * from tbl_consultainteligente where nombre_consulta= " + '"' + condicion + '"';
-            OdbcDataAdapter dt = sn.llenartb2(consulta);
-            DataTable table = new DataTable();
-            dt.Fill(table);
-            return table;
-        }
-        //CREA UN DOCUMENTO PARA REFERENCIAR LA AUDITORIA
-
-        public bool crearDocAuditoria(int no_audito, int cod_Bodega, string fecha, string descripcion)
+        //----------------------------------Auditoria--------------------------------------//
+        public bool Insertaudit(float _Pk, float _nUm, float _nom, string _Fech, string _FechS, float _Tip, float _Resev, float _Con, float _Rec, float _Check, float _Serv, float _Tot, float _Man, float _Seg, float _Est)
         {
             try
             {
-                using (var conn = new OdbcConnection("dsn=colchoneria"))
+                using (OdbcConnection con = new OdbcConnection("FIL=MS Access;DSN=Muestra"))
                 {
-                    conn.Open();
-                    int estado = 0;
+                    OdbcCommand cmd = new OdbcCommand();
+                    con.Open();
+                    cmd.Connection = con;
 
-                    using (var cmd = conn.CreateCommand())
-                    {
-                        cmd.CommandText = "INSERT INTO TBL_Doc_Auditoria VALUES('" + no_audito + "','" + cod_Bodega + "','" + fecha + "','" + descripcion + "','" + estado + "')";
-                        cmd.ExecuteNonQuery();
-                        conn.Close();
-                        return true;
-                    }
-
+                    #region Query
+                    string query = @"INSERT INTO tbl_auditoria (pk_id_auditoria,numero_habitacion,nombre_huesped,fechaentrada_habitacion,fechsalidada_habitacion,tipo_habitacion,reservas_habitacion,consumo_habitacion,recepcion_habitacion,checkin_habitacion,serviciosadi_habitacion,total_gasto,mantenimiento_habitacion,seguridad_habitacion,estado_habitacion)VALUE(?,?,?,?,?,?,?,?,?,?,?,?,?,?);";
+                    #endregion
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.Add("@pk_id_auditoria", OdbcType.Double).Value = _Pk;
+                    cmd.Parameters.Add("@numero_habitacion", OdbcType.Double).Value = _nUm;
+                    cmd.Parameters.Add("@nombre_huesped", OdbcType.Double).Value = _nom;
+                    cmd.Parameters.Add("@fechaentrada_habitacion", OdbcType.Date).Value = _Fech;
+                    cmd.Parameters.Add("@fechsalidada_habitacion", OdbcType.Date).Value = _FechS;
+                    cmd.Parameters.Add("@tipo_habitacion", OdbcType.Double).Value = _Tip;
+                    cmd.Parameters.Add("@reservas_habitacion", OdbcType.Double).Value = _Resev;
+                    cmd.Parameters.Add("@consumo_habitacion", OdbcType.Double).Value = _Con;
+                    cmd.Parameters.Add("@recepcion_habitacion", OdbcType.Double).Value = _Rec;
+                    cmd.Parameters.Add("@checkin_habitacion", OdbcType.Double).Value = _Check;
+                    cmd.Parameters.Add("@serviciosadi_habitacion", OdbcType.Double).Value = _Serv;
+                    cmd.Parameters.Add("@total_Gasto", OdbcType.Double).Value = _Tot;
+                    cmd.Parameters.Add("@mantenimiento_habitacion", OdbcType.Double).Value = _Man;
+                    cmd.Parameters.Add("@seguridad_habitacion", OdbcType.Double).Value = _Seg;
+                    cmd.Parameters.Add("@Pk_id_estados", OdbcType.Double).Value = _Est;
+                    cmd.ExecuteNonQuery();
+                    cmd.Parameters.Clear();
+                    con.Close();
                 }
+                return true;
             }
             catch (Exception ex)
             {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+        }
+        public bool UpdateAudi(string PKid, string Num, string Nombre, string _Fech, string _FechS, string Tipo, string Reserva, string Consumo, string Recepcion, string CheckIn, string Servicios, string Total, string Mantenimiento, string Seguridad, string Estado)
+        {
+            try
+            {
+                using (OdbcConnection con = new OdbcConnection("FIL=MS Access;DSN=Muestra"))
+                {
+                    OdbcCommand cmd = new OdbcCommand();
+                    con.Open();
+                    cmd.Connection = con;
+
+                    #region Query
+                    string query = @"INSERT INTO tbl_auditoria (pk_id_auditoria,numero_habitacion,nombre_huesped,fechaentrada_habitacion,fechsalidada_habitacion,tipo_habitacion,reservas_habitacion,consumo_habitacion,recepcion_habitacion,recepcion_habitacion,checkin_habitacion,serviciosadi_habitacion,total_factura,mantenimiento_habitacion,seguridad_habitacion,Pk_id_estados)VALUE(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);";
+                    #endregion
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.Add("@pk_id_auditoria", OdbcType.Int).Value = PKid;
+                    cmd.Parameters.Add("@numero_habitacion", OdbcType.Double).Value = Num;
+                    cmd.Parameters.Add("@nombre_huesped", OdbcType.Date).Value = Nombre;
+                    cmd.Parameters.Add("@fechaentrada_habitacion", OdbcType.Date).Value = _Fech;
+                    cmd.Parameters.Add("@fechsalidada_habitacion", OdbcType.Date).Value = _FechS;
+                    cmd.Parameters.Add("@tipo_habitacion", OdbcType.VarChar).Value = Tipo;
+                    cmd.Parameters.Add("@reservas_habitacion", OdbcType.VarChar).Value = Reserva;
+                    cmd.Parameters.Add("@consumo_habitacion", OdbcType.VarChar).Value = Consumo;
+                    cmd.Parameters.Add("@recepcion_habitacion", OdbcType.VarChar).Value = Recepcion;
+                    cmd.Parameters.Add("@checkin_habitacion", OdbcType.VarChar).Value = CheckIn;
+                    cmd.Parameters.Add("@serviciosadi_habitacion", OdbcType.VarChar).Value = Servicios;
+                    cmd.Parameters.Add("@total_factura", OdbcType.Double).Value = Total;
+                    cmd.Parameters.Add("@mantenimiento_habitacion", OdbcType.VarChar).Value = Mantenimiento;
+                    cmd.Parameters.Add("@seguridad_habitacion", OdbcType.VarChar).Value = Seguridad;
+                    cmd.Parameters.Add("@Pk_id_estados", OdbcType.VarChar).Value = Estado;
+                    cmd.ExecuteNonQuery();
+                    cmd.Parameters.Clear();
+                    con.Close();
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
                 return false;
             }
         }
 
-
-        //ACTUALIZA DOCUMENTO PARA REFERENCIAR LA AUDITORIA
-        public bool actualizarDocAuditoria(int no_audito, int cod_bodega, string fecha, string descripcion)
+        public bool DeleteAudi(string _FechM)
         {
             try
             {
-                using (var conn = new OdbcConnection("dsn=colchoneria"))
+                using (OdbcConnection con = new OdbcConnection("FIL=MS Access;DSN=Muestra"))
                 {
-                    conn.Open();
+                    OdbcCommand cmd = new OdbcCommand();
+                    con.Open();
+                    cmd.Connection = con;
+                    #region Query
+                    string query = @"DELETE FROM tbl_auditoria WHERE tbl_auditoria.pk_id_auditoria = ?;";
+                    #endregion
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.Add("@pk_id_auditoria", OdbcType.Date).Value = _FechM;
+                    cmd.ExecuteNonQuery();
 
-                    using (var cmd = conn.CreateCommand())
-                    {
-                        cmd.CommandText = "UPDATE TBL_Doc_Auditoria SET FK_Codigo_bodega = '" + cod_bodega + "', Fecha = '" + fecha + "',  Descripcion = '" + descripcion + "'  WHERE PK_Id_Doc_Auditoria = '" + no_audito + "'";
-                        cmd.ExecuteNonQuery();
-                        conn.Close();
-                        return true;
-                    }
-
+                    cmd.Parameters.Clear();
+                    con.Close();
                 }
+                return true;
             }
             catch (Exception ex)
             {
+                MessageBox.Show(ex.Message);
                 return false;
             }
         }
-
-
-
-
-        //INSETAR DETALLE
-        public bool insertaDetalle(int doc_audito, int cod_prod, int cantLogica, int cantFisica, int Diferencia)
-        {
-            try
-            {
-                using (var conn = new OdbcConnection("dsn=colchoneria"))
-                {
-                    conn.Open();
-
-                    using (var cmd = conn.CreateCommand())
-                    {
-                        cmd.CommandText = "INSERT INTO  TBL_muestra_auditoria VALUES('" + doc_audito + "','" + cod_prod + "','" + cantLogica + "','" + cantFisica + "','" + Diferencia + "')";
-                        cmd.ExecuteNonQuery();
-                        conn.Close();
-                        return true;
-                    }
-
-                }
-            }
-            catch (Exception ex)
-            {
-                return false;
-            }
-        }
-
-
-        //GENERA COPIA DE INVENTARIO SEGUN BODEGA
-        public bool generarCopiaInventario(int cod_Auditoria)
-        {
-            OdbcDataReader dr = null;
-
-
-            try
-            {
-                using (var conn = new OdbcConnection("dsn=colchoneria"))
-                {
-                    conn.Open();
-
-                    using (var cmd = conn.CreateCommand())
-                    {
-                        cmd.CommandText = "SELECT * FROM TBL_detalleinventariobodega";
-                        dr = cmd.ExecuteReader();
-
-                        while (dr.Read())
-                        {
-
-                            int code = Convert.ToInt32(dr["FK_Codigo_Producto"].ToString());
-                            int logica = Convert.ToInt32(dr["stock"].ToString());
-                            int valDef = 0;
-
-                            //INSERT DETALLES
-                            insertaDetalle(cod_Auditoria, code, logica, valDef, valDef);
-
-
-
-                        }
-
-                        dr.Close();
-                        conn.Close();
-                        return true;
-                    }
-
-                }
-            }
-            catch (Exception ex)
-            {
-                return false;
-            }
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-        //OBTIENE EL NUMERO DE DOCUMENTO SIGUIENTE
-        public int getNoDoc()
-        {
-            OdbcDataReader dr = null;
-
-            int no = -1;
-            try
-            {
-                using (var conn = new OdbcConnection("dsn=colchoneria"))
-                {
-                    conn.Open();
-
-                    using (var cmd = conn.CreateCommand())
-                    {
-                        cmd.CommandText = "SELECT PK_Id_Doc_Auditoria FROM TBL_Doc_Auditoria";
-                        dr = cmd.ExecuteReader();
-
-                        while (dr.Read())
-                        {
-                            no = Convert.ToInt32(dr["PK_Id_Doc_Auditoria"].ToString());
-                        }
-
-                        dr.Close();
-                        conn.Close();
-
-                        if (no == -1)
-                        {
-                            no = 0;
-                        }
-                        return no + 1;
-                    }
-
-                }
-            }
-            catch (Exception ex)
-            {
-                return no;
-            }
-        }
-
-
-
-        //GET BODEGAS
-        public DataTable getBodegas()
+        public DataTable SelectAudi()
         {
             DataTable dt = new DataTable();
-
+            using (OdbcDataAdapter adapter = new OdbcDataAdapter("SELECT * FROM tbl_auditoria;", "FIL=MS Access;DSN=Muestra"))
+            {
+                adapter.SelectCommand.CommandType = CommandType.Text;
+                adapter.Fill(dt);
+            }
+            return dt;
+        }
+        public DataTable BuscarAud(string data, string col, DataTable dt)
+        {
+            OdbcConnection con = new OdbcConnection("Dsn=Muestra");
             try
             {
-                using (var conn = new OdbcConnection("dsn=colchoneria"))
+                //DataTable dt = new DataTable();
+                String cadenaB = "";
+                con.Open();
+                cadenaB = " SELECT * FROM tbl_muestreo WHERE " + col + " LIKE ('%" + data.Trim() + "%')";
+                OdbcDataAdapter datos = new OdbcDataAdapter(cadenaB, con);
+                datos.Fill(dt);
+                OdbcCommand comando = new OdbcCommand(cadenaB, con);
+                OdbcDataReader leer;
+                leer = comando.ExecuteReader();
+            }
+            catch
+            {
+                String textalert = " El dato : " + data + " No se encontro ";
+                MessageBox.Show(textalert);
+            }
+            con.Close();
+            return dt;
+        }
+        public DataTable ActualizarAudi(string table, DataTable dt)
+        {
+            try
+            {
+                OdbcConnection con = new OdbcConnection("Dsn=Muestra");
+                String cadena = "";
+                con.Open();
+                cadena = "SELECT * FROM " + table;
+                OdbcDataAdapter datos = new OdbcDataAdapter(cadena, con);
+                datos.Fill(dt);
+                OdbcCommand comando = new OdbcCommand(cadena, con);
+                OdbcDataReader leer;
+                leer = comando.ExecuteReader();
+                con.Close();
+            }
+            catch
+            {
+                String textalert = " Error al actualizar datos, puede que no haya datos que mostrar ";
+                MessageBox.Show(textalert);
+            }
+            return dt;
+        }
+        public DataTable BuscarDatoA(string data, string col, DataTable dt)
+        {
+            OdbcConnection con = new OdbcConnection("Dsn=Muestra");
+            try
+            {
+                //DataTable dt = new DataTable();
+                String cadenaB = "";
+                con.Open();
+                cadenaB = " SELECT * FROM tbl_auditoria WHERE " + col + " LIKE ('%" + data.Trim() + "%')";
+                OdbcDataAdapter datos = new OdbcDataAdapter(cadenaB, con);
+                datos.Fill(dt);
+                OdbcCommand comando = new OdbcCommand(cadenaB, con);
+                OdbcDataReader leer;
+                leer = comando.ExecuteReader();
+            }
+            catch
+            {
+                String textalert = " El dato : " + data + " No se encontro ";
+                MessageBox.Show(textalert);
+            }
+            con.Close();
+            return dt;
+        }
+        //----------------------------------Muestra-------------------------------------//
+        public bool InsertMues(string PKid, string NumM, string _Fech, string _FechS, string Mantenimiento, string Inventario, string Servicios, string Seguridad, string Estado)
+        {
+            try
+            {
+                using (OdbcConnection con = new OdbcConnection("FIL=MS Access;DSN=Muestra"))
                 {
-                    OdbcDataReader dr;
-                    conn.Open();
-                    {
-                        using (var cmd = conn.CreateCommand())
-                        {
-                            cmd.CommandText = "SELECT * FROM TBL_Bodega";
-                            dt.Columns.Add("name");
-                            dr = cmd.ExecuteReader();
+                    OdbcCommand cmd = new OdbcCommand();
+                    con.Open();
+                    cmd.Connection = con;
 
-                            while (dr.Read())
-                            {
-                                DataRow row = dt.NewRow();
-                                row["name"] = dr["Nombre_Bodega"];
-                                dt.Rows.Add(row);
-                            }
-
-                            dr.Close();
-                            conn.Close();
-                            return dt;
-
-                        }
-                    }
-
+                    #region Query
+                    string query = @"INSERT INTO tbl_muestreo (pk_id_muestreo,numerohabitacion_muestra,fechaentrada_muestra,fechsalidada_muestra,mantenimientohabitacion_muestra,Inventario_suministros,servicioshabitacion_muestra,seguridadhabitacion_muestra,Pk_id_estados)VALUE(?,?,?,?,?,?,?,?);";
+                    #endregion
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.Add("@pk_id_muestreo", OdbcType.Int).Value = PKid;
+                    cmd.Parameters.Add("@numerohabitacion_muestra", OdbcType.Int).Value = NumM;
+                    cmd.Parameters.Add("@fechaentrada_muestra", OdbcType.Date).Value = _Fech;
+                    cmd.Parameters.Add("@fechsalidada_muestra", OdbcType.Date).Value = _FechS;
+                    cmd.Parameters.Add("@mantenimientohabitacion_muestra", OdbcType.VarChar).Value = Mantenimiento;
+                    cmd.Parameters.Add("@Inventario_suministros", OdbcType.VarChar).Value = Inventario;
+                    cmd.Parameters.Add("@servicioshabitacion_muestra", OdbcType.VarChar).Value = Servicios;
+                    cmd.Parameters.Add("@seguridadhabitacion_muestra", OdbcType.VarChar).Value = Seguridad;
+                    cmd.Parameters.Add("@Pk_id_estados", OdbcType.VarChar).Value = Estado;
+                    cmd.ExecuteNonQuery();
+                    cmd.Parameters.Clear();
+                    con.Close();
                 }
+                return true;
             }
             catch (Exception ex)
             {
-                return dt;
+                MessageBox.Show(ex.Message);
+                return false;
             }
         }
+        public bool UpdateMues(string PKid, string NumM, string _Fech, string _FechS, string Mantenimiento, string Inventario, string Servicios, string Seguridad, string Estado)
+        {
+            try
+            {
+                using (OdbcConnection con = new OdbcConnection("FIL=MS Access;DSN=Muestra"))
+                {
+                    OdbcCommand cmd = new OdbcCommand();
+                    con.Open();
+                    cmd.Connection = con;
 
+                    #region Query
+                    string query = @"INSERT INTO tbl_muestreo (pk_id_muestreo,numerohabitacion_muestra,fechaentrada_muestra,fechsalidada_muestra,mantenimientohabitacion_muestra,Inventario_suministros,servicioshabitacion_muestra,seguridadhabitacion_muestra,Pk_id_estados)VALUE(?,?,?,?,?,?,?,?);";
+                    #endregion
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.Add("@pk_id_muestreo", OdbcType.Int).Value = PKid;
+                    cmd.Parameters.Add("@numerohabitacion_muestra", OdbcType.Double).Value = NumM;
+                    cmd.Parameters.Add("@fechaentrada_muestra", OdbcType.Date).Value = _Fech;
+                    cmd.Parameters.Add("@fechsalidada_muestra", OdbcType.Date).Value = _FechS;
+                    cmd.Parameters.Add("@mantenimientohabitacion_muestra", OdbcType.VarChar).Value = Mantenimiento;
+                    cmd.Parameters.Add("@Inventario_suministros", OdbcType.VarChar).Value = Inventario;
+                    cmd.Parameters.Add("@servicioshabitacion_muestra", OdbcType.VarChar).Value = Servicios;
+                    cmd.Parameters.Add("@seguridadhabitacion_muestra", OdbcType.VarChar).Value = Seguridad;
+                    cmd.Parameters.Add("@Pk_id_estados", OdbcType.VarChar).Value = Estado;
+                    cmd.ExecuteNonQuery();
+                    cmd.Parameters.Clear();
+                    con.Close();
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+        }
+        public bool DeleteMues(string _FechM)
+        {
+            try
+            {
+                using (OdbcConnection con = new OdbcConnection("FIL=MS Access;DSN=Muestra"))
+                {
+                    OdbcCommand cmd = new OdbcCommand();
+                    con.Open();
+                    cmd.Connection = con;
+                    #region Query
+                    string query = @"DELETE FROM tbl_muestreo WHERE tbl_muestreo.pk_id_muestreo = ?;";
+                    #endregion
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.Add("@pk_id_muestreo", OdbcType.Date).Value = _FechM;
+                    cmd.ExecuteNonQuery();
 
-
-
-        //GET DATOS AUDITORIA
-        public DataTable getDatosAudit()
+                    cmd.Parameters.Clear();
+                    con.Close();
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+        }
+        public DataTable Selectmues()
         {
             DataTable dt = new DataTable();
-
-            int a = 0;
+            using (OdbcDataAdapter adapter = new OdbcDataAdapter("SELECT * FROM tbl_muestreo;", "FIL=MS Access;DSN=Muestra"))
+            {
+                adapter.SelectCommand.CommandType = CommandType.Text;
+                adapter.Fill(dt);
+            }
+            return dt;
+        }
+        public DataTable Buscarmues(string data, string col, DataTable dt)
+        {
+            OdbcConnection con = new OdbcConnection("Dsn=Muestra");
             try
             {
-                using (var conn = new OdbcConnection("dsn=colchoneria"))
-                {
-                    OdbcDataReader dr;
-                    conn.Open();
-                    {
-                        using (var cmd = conn.CreateCommand())
-                        {
-                            cmd.CommandText = "SELECT * FROM TBL_Doc_Auditoria";
-                            dt.Columns.Add("Id_Doc");
-                            dt.Columns.Add("Id_Bodega");
-                            dt.Columns.Add("Descripcion");
-                            dt.Columns.Add("Fecha");
-
-                            dr = cmd.ExecuteReader();
-
-                            while (dr.Read())
-                            {
-                                DataRow row = dt.NewRow();
-                                row["Id_Doc"] = dr["PK_Id_Doc_Auditoria"].ToString();
-                                row["Id_Bodega"] = dr["FK_Codigo_bodega"].ToString();
-                                row["Fecha"] = dr["Fecha"].ToString();
-                                row["Descripcion"] = dr["Descripcion"].ToString();
-
-
-                                dt.Rows.Add(row);
-                            }
-
-                            dr.Close();
-                            conn.Close();
-                            return dt;
-
-                        }
-                    }
-
-                }
+                //DataTable dt = new DataTable();
+                String cadenaB = "";
+                con.Open();
+                cadenaB = " SELECT * FROM tbl_muestreo WHERE " + col + " LIKE ('%" + data.Trim() + "%')";
+                OdbcDataAdapter datos = new OdbcDataAdapter(cadenaB, con);
+                datos.Fill(dt);
+                OdbcCommand comando = new OdbcCommand(cadenaB, con);
+                OdbcDataReader leer;
+                leer = comando.ExecuteReader();
             }
-            catch (Exception ex)
+            catch
             {
-                return dt;
+                String textalert = " El dato : " + data + " No se encontro ";
+                MessageBox.Show(textalert);
             }
+            con.Close();
+            return dt;
         }
-
-
-
-
-        //GET DETALLE AUDITORIA
-        public DataTable getDetalleAudit(int no_Audit)
+        public DataTable Actualizarmues(string table, DataTable dt)
         {
-            DataTable dt = new DataTable();
-
-
             try
             {
-                using (var conn = new OdbcConnection("dsn=colchoneria"))
-                {
-                    OdbcDataReader dr;
-                    conn.Open();
-                    {
-                        using (var cmd = conn.CreateCommand())
-                        {
-                            cmd.CommandText = "SELECT * FROM TBL_Muestra_Auditoria WHERE PK_Id_Doc_Auditoria = '" + no_Audit + "'";
-                            dt.Columns.Add("Id_Doc");
-                            dt.Columns.Add("Cod_Producto");
-                            dt.Columns.Add("Cantidad_Logica");
-                            dt.Columns.Add("Cantidad_Fisica");
-                            dt.Columns.Add("Diferencia");
-
-                            dr = cmd.ExecuteReader();
-
-                            while (dr.Read())
-                            {
-                                DataRow row = dt.NewRow();
-                                row["Id_Doc"] = dr["PK_Id_Doc_Auditoria"].ToString();
-                                row["Cod_Producto"] = dr["PK_Codigo_Producto"].ToString();
-                                row["Cantidad_Logica"] = dr["Cantidad_Logica"].ToString();
-                                row["Cantidad_Fisica"] = dr["Cantidad_Fisica"].ToString();
-                                row["Diferencia"] = dr["Diferencia"].ToString();
-                                dt.Rows.Add(row);
-                            }
-
-                            dr.Close();
-                            conn.Close();
-                            return dt;
-
-                        }
-                    }
-
-                }
+                OdbcConnection con = new OdbcConnection("Dsn=Muestra");
+                String cadena = "";
+                con.Open();
+                cadena = "SELECT * FROM " + table;
+                OdbcDataAdapter datos = new OdbcDataAdapter(cadena, con);
+                datos.Fill(dt);
+                OdbcCommand comando = new OdbcCommand(cadena, con);
+                OdbcDataReader leer;
+                leer = comando.ExecuteReader();
+                con.Close();
             }
-            catch (Exception ex)
+            catch
             {
-                return dt;
+                String textalert = " Error al actualizar datos, puede que no haya datos que mostrar ";
+                MessageBox.Show(textalert);
             }
+            return dt;
         }
-
-
-
-
-        //OBTIENE EL NUMERO INDICE
-        public int getIndexBodega(int ID)
+        public DataTable BuscarDato(string data, string col, DataTable dt)
         {
-            OdbcDataReader dr = null;
-            int no = -1;
-            int cont = -1;
-            int value = 0;
+            OdbcConnection con = new OdbcConnection("Dsn=Muestra");
             try
             {
-                using (var conn = new OdbcConnection("dsn=colchoneria"))
-                {
-                    conn.Open();
-
-                    using (var cmd = conn.CreateCommand())
-                    {
-                        cmd.CommandText = "SELECT PK_Codigo_bodega FROM TBL_Bodega";
-                        dr = cmd.ExecuteReader();
-
-                        while (dr.Read())
-                        {
-                            cont++;
-
-                            no = Convert.ToInt32(dr["PK_Codigo_bodega"].ToString());
-
-                            if (no == ID)
-                            {
-                                value = cont;
-                            }
-                        }
-
-                        dr.Close();
-                        conn.Close();
-                        return value;
-                    }
-
-                }
+                //DataTable dt = new DataTable();
+                String cadenaB = "";
+                con.Open();
+                cadenaB = " SELECT * FROM tbl_muestreo WHERE " + col + " LIKE ('%" + data.Trim() + "%')";
+                OdbcDataAdapter datos = new OdbcDataAdapter(cadenaB, con);
+                datos.Fill(dt);
+                OdbcCommand comando = new OdbcCommand(cadenaB, con);
+                OdbcDataReader leer;
+                leer = comando.ExecuteReader();
             }
-            catch (Exception ex)
+            catch
             {
-                return value;
+                String textalert = " El dato : " + data + " No se encontro ";
+                MessageBox.Show(textalert);
             }
-        }
-
-        //OBTIENE CODIGO DE BODEGA
-        public int getCodBodega(string name)
-        {
-            OdbcDataReader dr = null;
-            int cod = 0;
-
-
-            try
-            {
-                using (var conn = new OdbcConnection("dsn=colchoneria"))
-                {
-                    conn.Open();
-
-                    using (var cmd = conn.CreateCommand())
-                    {
-                        cmd.CommandText = "SELECT PK_Codigo_bodega FROM TBL_Bodega WHERE Nombre_Bodega = '" + name + "'";
-                        dr = cmd.ExecuteReader();
-
-                        while (dr.Read())
-                        {
-                            cod = Convert.ToInt32(dr["PK_Codigo_bodega"].ToString());
-                        }
-
-                        dr.Close();
-                        conn.Close();
-                        return cod;
-                    }
-
-                }
-            }
-            catch (Exception ex)
-            {
-                return cod;
-            }
-        }
-
-
-
-
-        //OBTIENE CODIGO Encabezado
-        public int getCodigoEncabezado(int codBodega)
-        {
-            OdbcDataReader dr = null;
-            int cod = 0;
-
-
-            try
-            {
-                using (var conn = new OdbcConnection("dsn=colchoneria"))
-                {
-                    conn.Open();
-
-                    using (var cmd = conn.CreateCommand())
-                    {
-                        cmd.CommandText = "SELECT PK_cod_Enca FROM TBL_encainventariobodega WHERE FK_Codigo_bodega = '" + codBodega + "'";
-                        dr = cmd.ExecuteReader();
-
-                        while (dr.Read())
-                        {
-                            cod = Convert.ToInt32(dr["PK_cod_Enca"].ToString());
-                        }
-
-                        dr.Close();
-                        conn.Close();
-                        return cod;
-                    }
-
-                }
-            }
-            catch (Exception ex)
-            {
-                return cod;
-            }
-        }
-        public void CargarComboCtas(ComboBox cbo_boxctas)
-        {
-            OdbcConnection con = new OdbcConnection("Dsn=colchoneria");
-            con.Open();
-            OdbcCommand comando = new OdbcCommand("SELECT nombre_cuenta FROM tbl_cuentas", con);
-            OdbcDataReader leer = comando.ExecuteReader();
-            while (leer.Read())
-            {
-                cbo_boxctas.Items.Add(leer["nombre_cuenta"].ToString());
-            }
+            con.Close();
+            return dt;
         }
     }
 }
-
 
