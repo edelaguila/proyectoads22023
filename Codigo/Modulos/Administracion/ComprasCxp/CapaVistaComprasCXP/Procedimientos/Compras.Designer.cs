@@ -31,8 +31,8 @@ namespace CapaVistaComprasCXP.Procedimientos
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Compras));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.txt_totalLetras = new System.Windows.Forms.TextBox();
+            this.btn_enviar = new System.Windows.Forms.Button();
+            this.txt_notas = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.txt_total = new System.Windows.Forms.TextBox();
             this.txt_iva = new System.Windows.Forms.TextBox();
@@ -93,8 +93,8 @@ namespace CapaVistaComprasCXP.Procedimientos
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button4);
-            this.groupBox3.Controls.Add(this.txt_totalLetras);
+            this.groupBox3.Controls.Add(this.btn_enviar);
+            this.groupBox3.Controls.Add(this.txt_notas);
             this.groupBox3.Controls.Add(this.label18);
             this.groupBox3.Controls.Add(this.txt_total);
             this.groupBox3.Controls.Add(this.txt_iva);
@@ -110,21 +110,22 @@ namespace CapaVistaComprasCXP.Procedimientos
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Totales";
             // 
-            // button4
+            // btn_enviar
             // 
-            this.button4.Location = new System.Drawing.Point(711, 35);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(64, 43);
-            this.button4.TabIndex = 29;
-            this.button4.Text = "Enviar Compra";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_enviar.Location = new System.Drawing.Point(711, 35);
+            this.btn_enviar.Name = "btn_enviar";
+            this.btn_enviar.Size = new System.Drawing.Size(64, 43);
+            this.btn_enviar.TabIndex = 29;
+            this.btn_enviar.Text = "Enviar Compra";
+            this.btn_enviar.UseVisualStyleBackColor = true;
+            this.btn_enviar.Click += new System.EventHandler(this.btn_enviar_Click);
             // 
-            // txt_totalLetras
+            // txt_notas
             // 
-            this.txt_totalLetras.Location = new System.Drawing.Point(55, 71);
-            this.txt_totalLetras.Name = "txt_totalLetras";
-            this.txt_totalLetras.Size = new System.Drawing.Size(395, 21);
-            this.txt_totalLetras.TabIndex = 28;
+            this.txt_notas.Location = new System.Drawing.Point(55, 71);
+            this.txt_notas.Name = "txt_notas";
+            this.txt_notas.Size = new System.Drawing.Size(395, 21);
+            this.txt_notas.TabIndex = 28;
             // 
             // label18
             // 
@@ -638,8 +639,8 @@ namespace CapaVistaComprasCXP.Procedimientos
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox txt_totalLetras;
+        private System.Windows.Forms.Button btn_enviar;
+        private System.Windows.Forms.TextBox txt_notas;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox txt_total;
         private System.Windows.Forms.TextBox txt_iva;
