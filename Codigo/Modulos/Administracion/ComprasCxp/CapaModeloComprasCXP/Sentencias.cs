@@ -323,5 +323,172 @@ namespace CapaModeloComprasCXP
 
             return string.Empty;
         }
+
+        public bool InsertarOrdenCompra(int codigo, string fechasolicitud, string fechaentrega, string depa, double subtotal, double iva, double total, string notas, int codProv, string entregara)
+        {
+            string insertQueryOrden = getQueryOrden(codigo, fechasolicitud, fechaentrega, depa, subtotal, iva, total, notas, codProv, entregara);
+            using (OdbcConnection conn = con.conexion())
+            {
+                using (OdbcCommand cmd = new OdbcCommand(insertQueryOrden, conn))
+                {
+                    try
+                    {
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        return rowsAffected > 0;
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("Error: " + ex.Message);
+                        return false;
+                    }
+                }
+            }
+        }
+
+        public string getQueryOrden(int codigo, string fechasolicitud, string fechaentrega, string depa, double subtotal, double iva, double total, string notas, int codProv, string entregara)
+        {
+            string sql = "insert into tbl_ordenescompra(ord_id,ord_FechaSolicitud,ord_FechaEntrega,ord_deptosolicitante,ord_subtotal,ord_iva,ord_totalOrden,ord_totalLetras,fk_proveedor_id,ord_entregara) values ('" + codigo + "', '" + fechasolicitud + "', '" + fechaentrega + "', '" + depa + "', '" + subtotal + "', '" + iva + "', '" + total + "', '" + notas + "', '" + codProv + "', '" + entregara + "')";
+            return sql;
+        }
+
+        public bool InsertarDatosDetalle(int codDetalle, int cantidad, double totalfila, int codigo, int idproducto)
+        {
+            string insertQueryDetalle = getQueryDetalle(codDetalle, cantidad, totalfila, codigo, idproducto);
+            using (OdbcConnection conn = con.conexion())
+            {
+                using (OdbcCommand cmd = new OdbcCommand(insertQueryDetalle, conn))
+                {
+                    try
+                    {
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        return rowsAffected > 0;
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("Error: " + ex.Message);
+                        return false;
+                    }
+                }
+            }
+        }
+
+        public string getQueryDetalle(int codDetalle, int cantidad, double totalfila, int codigo, int idproducto)
+        {
+            string sql = "insert into tbl_detalleordenescompra(det_id_ordenes,det_cantidad_orde,det_totalPorProducto,fk_det_ord_id,fk_det_producto_id) values ('" + codDetalle + "', '" + cantidad + "', '" + totalfila + "', '" + codigo + "', '" + idproducto + "')";
+            return sql;
+        }
+
+        public bool InsertarCompra(int codigo, string fechas, string fechae, string departamento, string recibido, double subtotal, double iva, double totalOrden, string notas, int codorden, int codigoprov)
+        {
+            string insertQueryCompra = getQueryCompra(codigo, fechas, fechae, departamento, recibido, subtotal, iva, totalOrden, notas, codorden, codigoprov);
+            using (OdbcConnection conn = con.conexion())
+            {
+                using (OdbcCommand cmd = new OdbcCommand(insertQueryCompra, conn))
+                {
+                    try
+                    {
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        return rowsAffected > 0;
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("Error: " + ex.Message);
+                        return false;
+                    }
+                }
+            }
+        }
+
+        public string getQueryCompra(int codigo, string fechas, string fechae, string departamento, string recibido, double subtotal, double iva, double totalOrden, string notas, int codorden, int codigoprov)
+        {
+            string sql = "insert into tbl_compras(com_id,com_fechasolicitud,com_fechaentrega,com_deptosolicitante, com_recibidopor,com_subtotal,com_iva,com_totalcompra,com_totalLetras,fk_ord_id,fk_proveedor_id) values ('" + codigo + "', '" + fechas + "', '" + fechae + "', '" + departamento + "', '" + recibido + "', '" + subtotal + "', '" + iva + "', '" + totalOrden + "', '" + notas + "', '" + codorden + "', '" + codigoprov + "')";
+            return sql;
+        }
+
+        public bool InsertarDatosDetalleCompra(int codDetalle, int cantidad, double totalfila, int codigo, int idproducto)
+        {
+            string insertQueryDetalleCompra = getQueryDetalleCompra(codDetalle, cantidad, totalfila, codigo, idproducto);
+            using (OdbcConnection conn = con.conexion())
+            {
+                using (OdbcCommand cmd = new OdbcCommand(insertQueryDetalleCompra, conn))
+                {
+                    try
+                    {
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        return rowsAffected > 0;
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("Error: " + ex.Message);
+                        return false;
+                    }
+                }
+            }
+        }
+
+        public string getQueryDetalleCompra(int codDetalle, int cantidad, double totalfila, int codigo, int idproducto)
+        {
+            string sql = "insert into tbl_detalle_compras(det_id,det_cantidad_compra,det_totalPorProducto,fk_det_compras_id,fk_det_producto_id) values ('" + codDetalle + "', '" + cantidad + "', '" + totalfila + "', '" + codigo + "', '" + idproducto + "')";
+            return sql;
+        }
+
+        public bool EsCodigoProveedorValido(int codigoProveedor)
+        {
+            using (OdbcConnection conn = con.conexion())
+            {
+                string query = "SELECT COUNT(*) FROM tbl_proveedor WHERE id_proveedor = ?";
+                using (OdbcCommand cmd = new OdbcCommand(query, conn))
+                {
+                    cmd.Parameters.Add("codigoProveedor", OdbcType.Int).Value = codigoProveedor;
+                    int count = Convert.ToInt32(cmd.ExecuteScalar());
+                    return count > 0;
+                }
+            }
+        }
+
+        public DataTable ObtenerProveedorPorID(int id)
+        {
+            DataTable proveedorData = new DataTable();
+
+            using (OdbcConnection conn = con.conexion())
+            {
+                string consulta = "SELECT pro_Nombre, pro_Domicilio, pro_Telefono FROM tbl_proveedor WHERE id_proveedor = ?";
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("id", id);
+                    using (OdbcDataAdapter adapter = new OdbcDataAdapter(cmd))
+                    {
+                        adapter.Fill(proveedorData);
+                    }
+                }
+            }
+
+            return proveedorData;
+        }
+
+        public DataTable ObtenerOrdenPorID(int id)
+        {
+            DataTable ordenData = new DataTable();
+
+            using (OdbcConnection conn = con.conexion())
+            {
+                string consulta = "SELECT ord_FechaSolicitud, ord_FechaEntrega,ord_deptosolicitante,fk_proveedor_id FROM tbl_ordenescompra WHERE ord_id = ?";
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("id", id);
+                    using (OdbcDataAdapter adapter = new OdbcDataAdapter(cmd))
+                    {
+                        adapter.Fill(ordenData);
+                    }
+                }
+            }
+
+            return ordenData;
+        }
+
+
+
+
+
     }
 }

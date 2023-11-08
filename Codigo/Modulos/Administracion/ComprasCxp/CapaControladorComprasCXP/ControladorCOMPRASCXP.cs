@@ -120,5 +120,41 @@ namespace CapaControladorComprasCXP
             return sn.ObtenerTelefonoProveedor(proveedorID);
         }
 
+        public bool InsertarOrdenCompra(int codigo, string fechasolicitud, string fechaentrega, string depa, double subtotal, double iva, double total, string notas, int codProv, string entregara)
+        {
+            return sn.InsertarOrdenCompra(codigo, fechasolicitud, fechaentrega, depa, subtotal, iva, total, notas, codProv, entregara);
+        }
+
+        public void InsertarDatosDetalle(int codDetalle, int cantidad, double totalfila, int codigo, int idproducto)
+        {
+            sn.InsertarDatosDetalle(codDetalle, cantidad, totalfila, codigo, idproducto);
+        }
+
+        public bool InsertarCompra(int codigo, string fechas, string fechae, string departamento, string recibido, double subtotal, double iva, double totalOrden, string notas, int codorden, int codigoprov)
+        {
+            return sn.InsertarCompra(codigo, fechas, fechae, departamento, recibido, subtotal, iva, totalOrden, notas, codorden, codigoprov);
+        }
+
+        public void InsertarDatosDetalleCompra(int codDetalle, int cantidad, double totalfila, int codigo, int idproducto)
+        {
+            sn.InsertarDatosDetalleCompra(codDetalle, cantidad, totalfila, codigo, idproducto);
+        }
+
+        public bool EsCodigoProveedorValido(int codigoProveedor)
+        {
+            return sn.EsCodigoProveedorValido(codigoProveedor);
+        }
+
+        public DataTable ObtenerProveedorPorID(int id)
+        {
+            return sn.ObtenerProveedorPorID(id);
+        }
+
+        public DataTable ObtenerOrdenPorID(int id)
+        {
+            return sn.ObtenerOrdenPorID(id);
+        }
+
+
     }
 }

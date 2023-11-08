@@ -32,7 +32,7 @@ namespace CapaVistaComprasCXP.Procedimientos
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrdenesdeCompra));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.txt_totalLetras = new System.Windows.Forms.TextBox();
+            this.txt_notas = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.txt_total = new System.Windows.Forms.TextBox();
             this.txt_iva = new System.Windows.Forms.TextBox();
@@ -92,7 +92,7 @@ namespace CapaVistaComprasCXP.Procedimientos
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.button4);
-            this.groupBox3.Controls.Add(this.txt_totalLetras);
+            this.groupBox3.Controls.Add(this.txt_notas);
             this.groupBox3.Controls.Add(this.label18);
             this.groupBox3.Controls.Add(this.txt_total);
             this.groupBox3.Controls.Add(this.txt_iva);
@@ -116,13 +116,14 @@ namespace CapaVistaComprasCXP.Procedimientos
             this.button4.TabIndex = 13;
             this.button4.Text = "Enviar Órden";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // txt_totalLetras
+            // txt_notas
             // 
-            this.txt_totalLetras.Location = new System.Drawing.Point(48, 69);
-            this.txt_totalLetras.Name = "txt_totalLetras";
-            this.txt_totalLetras.Size = new System.Drawing.Size(384, 21);
-            this.txt_totalLetras.TabIndex = 28;
+            this.txt_notas.Location = new System.Drawing.Point(48, 69);
+            this.txt_notas.Name = "txt_notas";
+            this.txt_notas.Size = new System.Drawing.Size(384, 21);
+            this.txt_notas.TabIndex = 28;
             // 
             // label18
             // 
@@ -622,7 +623,7 @@ namespace CapaVistaComprasCXP.Procedimientos
 
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox txt_totalLetras;
+        private System.Windows.Forms.TextBox txt_notas;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox txt_total;
         private System.Windows.Forms.TextBox txt_iva;
