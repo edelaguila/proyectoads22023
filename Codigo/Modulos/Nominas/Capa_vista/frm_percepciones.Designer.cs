@@ -49,7 +49,7 @@ namespace CapaVistaNomina
             this.txt_nombre_empleado = new System.Windows.Forms.TextBox();
             this.txt_id_empleado = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxperc = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txt_percepcion_total = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -184,6 +184,7 @@ namespace CapaVistaNomina
             this.btn_buscar.TabIndex = 106;
             this.btn_buscar.Text = "Buscar";
             this.btn_buscar.UseVisualStyleBackColor = true;
+            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
             // 
             // label2
             // 
@@ -276,7 +277,7 @@ namespace CapaVistaNomina
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.comboBoxperc);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.txt_percepcion_total);
             this.groupBox2.Controls.Add(this.label10);
@@ -290,14 +291,15 @@ namespace CapaVistaNomina
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Calculo Percepciones";
             // 
-            // comboBox1
+            // comboBoxperc
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(182, 42);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(232, 31);
-            this.comboBox1.TabIndex = 116;
+            this.comboBoxperc.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxperc.FormattingEnabled = true;
+            this.comboBoxperc.Location = new System.Drawing.Point(182, 42);
+            this.comboBoxperc.Name = "comboBoxperc";
+            this.comboBoxperc.Size = new System.Drawing.Size(232, 31);
+            this.comboBoxperc.TabIndex = 116;
+            this.comboBoxperc.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label9
             // 
@@ -317,6 +319,7 @@ namespace CapaVistaNomina
             this.txt_percepcion_total.ReadOnly = true;
             this.txt_percepcion_total.Size = new System.Drawing.Size(234, 34);
             this.txt_percepcion_total.TabIndex = 110;
+            this.txt_percepcion_total.TextChanged += new System.EventHandler(this.txt_percepcion_total_TextChanged);
             // 
             // label10
             // 
@@ -436,6 +439,7 @@ namespace CapaVistaNomina
             this.btn_guardar_percepcion.TabIndex = 138;
             this.btn_guardar_percepcion.Text = "Guardar Percepcion";
             this.btn_guardar_percepcion.UseVisualStyleBackColor = true;
+            this.btn_guardar_percepcion.Click += new System.EventHandler(this.btn_guardar_percepcion_Click);
             // 
             // btn_Guardar_calculo
             // 
@@ -445,6 +449,7 @@ namespace CapaVistaNomina
             this.btn_Guardar_calculo.TabIndex = 137;
             this.btn_Guardar_calculo.Text = "Guardar Calculo";
             this.btn_Guardar_calculo.UseVisualStyleBackColor = true;
+            this.btn_Guardar_calculo.Click += new System.EventHandler(this.btn_Guardar_calculo_Click_1);
             // 
             // btn_calcular
             // 
@@ -454,6 +459,7 @@ namespace CapaVistaNomina
             this.btn_calcular.TabIndex = 136;
             this.btn_calcular.Text = "Calcular";
             this.btn_calcular.UseVisualStyleBackColor = true;
+            this.btn_calcular.Click += new System.EventHandler(this.btn_calcular_Click);
             // 
             // frm_percepciones
             // 
@@ -505,7 +511,7 @@ namespace CapaVistaNomina
         private System.Windows.Forms.TextBox txt_nombre_empleado;
         private System.Windows.Forms.TextBox txt_id_empleado;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxperc;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txt_percepcion_total;
         private System.Windows.Forms.Label label10;

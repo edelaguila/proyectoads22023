@@ -61,6 +61,12 @@ namespace Controlador_PrototipoMenu
             string query = "SELECT dedperc_nombre FROM tbl_dedu_perc WHERE dedperc_movimiento = 1";
             return sn.ObtenerDatosDedPerc(query);
         }
+        public DataTable ObtenerDatosPerc()
+        {
+            string query = "SELECT dedperc_nombre FROM tbl_dedu_perc WHERE dedperc_movimiento = 2";
+            return sn.ObtenerDatosDedPerc(query);
+        }
+
 
         public string ObtenerDeduccionTotal(int idDedEmp)
         {
@@ -83,6 +89,19 @@ namespace Controlador_PrototipoMenu
         public void InsertarDeduccion(int idEmpleado, string dedperc_nombre, float dedperc_monto, int dedperc_movimiento)
         {
             sn.InsertarDeduccion(idEmpleado, dedperc_nombre, dedperc_monto, dedperc_movimiento);
+
+        }
+
+        public double CalcularPercepcion(string percepcionMonto, double sueldoBase)
+        {
+            double montoPercepcion = sn.MontoPercepcion(percepcionMonto);
+            return montoPercepcion;
+        }
+
+
+        public void InsertarPercepcion(int idEmpleado, string dedperc_nombre, float dedperc_monto, int dedperc_movimiento)
+        {
+            sn.InsertarPercepcion(idEmpleado, dedperc_nombre, dedperc_monto, dedperc_movimiento);
 
         }
 

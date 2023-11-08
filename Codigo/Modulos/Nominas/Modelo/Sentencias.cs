@@ -143,6 +143,39 @@ namespace Modelo_PrototipoMenu
             }
         }
 
+        public void InsertarPercepcion(int idEmpleado, string dedperc_nombre, float dedperc_monto, int dedperc_movimiento)
+        {
+            using (OdbcConnection connection = con.connection())
+            {
+                if (connection != null)
+                {
+                    using (OdbcTransaction transaction = connection.BeginTransaction())
+                    {
+                        try
+                        {
+                            string insertQuery = "INSERT INTO tbl_dedu_perc (`Pk_id_dedu_perc`, `dedperc_nombre`, `dedperc_monto`, `dedperc_movimiento`) VALUES (?, ?, ?, ?)";
+                            using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
+                            {
+                                cmd.Parameters.AddWithValue("@Pk_id_dedu_perc", idEmpleado);
+                                cmd.Parameters.AddWithValue("@dedperc_nombre", dedperc_nombre);
+                                cmd.Parameters.AddWithValue("@dedperc_monto", dedperc_monto);
+                                cmd.Parameters.AddWithValue("@dedperc_movimiento", dedperc_movimiento);
+
+                                cmd.ExecuteNonQuery();
+                            }
+
+                            transaction.Commit();
+                        }
+                        catch (Exception ex)
+                        {
+                            transaction.Rollback();
+                            Console.WriteLine($"Error al Guardar la percepcion: {ex.Message}");
+                        }
+                    }
+                }
+            }
+        }
+
         public void GuardarDeduccionTotal(int idEmpleado, DateTime fecha, string deduccionTotal)
         {
             using (OdbcConnection connection = con.connection())
@@ -158,6 +191,39 @@ namespace Modelo_PrototipoMenu
                             {
                                 cmd.Parameters.AddWithValue("@ded_deducciones_totales", deduccionTotal);
                                 cmd.Parameters.AddWithValue("@ded_fecha_ded", fecha.ToString("yyyy-MM-dd HH:mm:ss"));
+                                cmd.Parameters.AddWithValue("@tbl_empleado_Pk_id_empleado", idEmpleado);
+
+                                cmd.ExecuteNonQuery();
+                            }
+
+                            transaction.Commit();
+                        }
+                        catch (Exception ex)
+                        {
+                            transaction.Rollback();
+                            Console.WriteLine($"Error al Guardar el resultado: {ex.Message}");
+                        }
+                    }
+                }
+            }
+        }
+
+
+        public void GuardarPercepcionTotal(int idEmpleado, DateTime fecha, string percepcionTotal)
+        {
+            using (OdbcConnection connection = con.connection())
+            {
+                if (connection != null)
+                {
+                    using (OdbcTransaction transaction = connection.BeginTransaction())
+                    {
+                        try
+                        {
+                            string insertQuery = "INSERT INTO tbl_deducciones (`perc_totales`, `perc_fecha_perc`, `tbl_empleado_Pk_id_empleado`) VALUES (?, ?, ?)";
+                            using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
+                            {
+                                cmd.Parameters.AddWithValue("@perc_totales", percepcionTotal);
+                                cmd.Parameters.AddWithValue("@perc_fecha_perc", fecha.ToString("yyyy-MM-dd HH:mm:ss"));
                                 cmd.Parameters.AddWithValue("@tbl_empleado_Pk_id_empleado", idEmpleado);
 
                                 cmd.ExecuteNonQuery();
@@ -192,6 +258,31 @@ namespace Modelo_PrototipoMenu
                     using (OdbcCommand cmd = new OdbcCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("dedperc_nombre", deduccionMonto);
+                        monto = Convert.ToDouble(cmd.ExecuteScalar());
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex);
+            }
+            return monto;
+        }
+
+
+        public double MontoPercepcion(string percepcionMonto)
+        {
+            double monto = 0.0;
+            try
+            {
+                using (OdbcConnection conn = new OdbcConnection(conec))
+                {
+                    conn.Open();
+
+                    string query = "SELECT dedperc_monto FROM tbl_dedu_perc WHERE dedperc_nombre = ?";
+                    using (OdbcCommand cmd = new OdbcCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("dedperc_nombre", percepcionMonto);
                         monto = Convert.ToDouble(cmd.ExecuteScalar());
                     }
                 }
