@@ -8,14 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Vista_PrototipoMenu
+namespace EjecucionConsultaInteligente
 {
-    public partial class Ejemplo : Form
+    public partial class Form1 : Form
     {
-        public Ejemplo()
+        public Form1()
         {
             InitializeComponent();
-            this.navegador1.config("ejemplo", this, "Ejemplo2");
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -31,14 +31,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Capa_VistaConsultas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Capa_VistaConsultas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\..\..\..\Proyecto ads logistica 1 - copia\proyectoads22023\Codigo\Modulos\Logistica\Capa_vista\bin\Debug\Capa_VistaConsultas.dll</HintPath>
+    </Reference>
     <Reference Include="Controlador_InventariosMenu">
       <HintPath>..\Capa_controlador\bin\Debug\Controlador_InventariosMenu.dll</HintPath>
     </Reference>
     <Reference Include="FontAwesome.Sharp">
       <HintPath>C:\Program Files\UMG\Instalador General HSC\FontAwesome.Sharp.dll</HintPath>
     </Reference>
-    <Reference Include="NavegadorControlador, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Modelo_InventariosMenu">
+      <HintPath>..\Capa_controlador\bin\Debug\Modelo_InventariosMenu.dll</HintPath>
+    </Reference>
+    <Reference Include="NavegadorControlador, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\..\..\..\Proyecto ads logistica 1 - copia\proyectoads22023\Codigo\Modulos\Logistica\Capa_vista\bin\Debug\NavegadorControlador.dll</HintPath>
+    </Reference>
     <Reference Include="NavegadorVista, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\NavegadorVista.dll</HintPath>
@@ -47,7 +54,7 @@
     <Reference Include="PresentationFramework" />
     <Reference Include="Seguridad_Controlador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\UMG\Instalador General HSC\Seguridad_Controlador.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Proyecto ads logistica 1 - copia\proyectoads22023\Codigo\Modulos\Logistica\Capa_vista\bin\Debug\Seguridad_Controlador.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -60,6 +67,10 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="Vista_InventariosMenu, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Vista_InventariosMenu.dll</HintPath>
+    </Reference>
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
@@ -68,6 +79,12 @@
     </Compile>
     <Compile Include="Auditoria.Designer.cs">
       <DependentUpon>Auditoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dato.Designer.cs">
+      <DependentUpon>Dato.cs</DependentUpon>
     </Compile>
     <Compile Include="Mantenimiento.cs">
       <SubType>Form</SubType>
@@ -109,6 +126,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Auditoria.resx">
       <DependentUpon>Auditoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dato.resx">
+      <DependentUpon>Dato.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimiento.resx">
       <DependentUpon>Mantenimiento.cs</DependentUpon>
@@ -212,10 +232,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\InventarioLogo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Analyzer Include="C:\Program Files\UMG\Instalador General HSC\NavegadorVista.dll" />
-    <Analyzer Include="C:\Program Files\UMG\Instalador General HSC\Seguridad_Controlador.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
