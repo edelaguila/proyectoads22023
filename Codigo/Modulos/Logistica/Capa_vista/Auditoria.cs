@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Controlador_PrototipoMenu;
+//using Controlador_PrototipoMenu;
 
 namespace Vista_PrototipoMenu
 {
