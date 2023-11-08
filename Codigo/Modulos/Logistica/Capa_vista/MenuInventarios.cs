@@ -7,12 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Vista_PrototipoMenu;
 using Seguridad_Controlador;  // Agregar cuando se vincule la DLL de seguridad 
 
 namespace Vista_PrototipoMenu
 {
-
+    
     public partial class MenuInventarios : Form
     {
 
@@ -34,7 +33,7 @@ namespace Vista_PrototipoMenu
         //Validaciones que si son visibles los panales los oculta
         private void hideSubMenu()
         {
-
+            
             if (panelTranportes.Visible == true)
                 panelTranportes.Visible = false;
             if (PanelAuditoria.Visible == true)
@@ -64,7 +63,6 @@ namespace Vista_PrototipoMenu
         private void btnProcesos_Click(object sender, EventArgs e)
         {
             showSubMenu(PanelAuditoria);
-            
         }
         //Método que muestra el panel indicado
         private void btnSeguridad_Click(object sender, EventArgs e)
@@ -80,7 +78,7 @@ namespace Vista_PrototipoMenu
         //Método que muestra el formulario indicado
         private void btnaplicaciones_Click(object sender, EventArgs e)
         {
-
+           
         }
         //Método que muestra el formulario indicado
 
@@ -96,10 +94,10 @@ namespace Vista_PrototipoMenu
         //Método que muestra el formulario indicado
         private void btnayuda_Click(object sender, EventArgs e)
         {
-            Help.ShowHelp(this, "umg.chm");
+            Help.ShowHelp(this, "umg.chm");            
         }
 
-
+       
 
         private void btn_movimientos_Click(object sender, EventArgs e)
         {
@@ -127,8 +125,7 @@ namespace Vista_PrototipoMenu
 
         private void btn_muestreo_Click(object sender, EventArgs e)
         {
-            DataGridView dgv = new DataGridView();
-            Muestreo form = new Muestreo(dgv);
+            Muestreo form = new Muestreo();
             form.MdiParent = this;
             form.Show();
             hideSubMenu();
@@ -137,11 +134,9 @@ namespace Vista_PrototipoMenu
         private void btn_auditoria_Click(object sender, EventArgs e)
         {
             Auditoria form = new Auditoria();
-            form.MdiParent = this; // 'this' se refiere al formulario actual como el formulario principal
+            form.MdiParent = this;
             form.Show();
             hideSubMenu();
-
         }
     }
 }
-
