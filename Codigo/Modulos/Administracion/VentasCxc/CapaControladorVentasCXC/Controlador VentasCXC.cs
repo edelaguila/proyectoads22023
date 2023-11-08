@@ -59,6 +59,11 @@ namespace CapaControladorVentasCXC
             return sn.Eliminar(tabla, columna, valor);
         }
 
+        public int ObtenerSumaDetalleValor()
+        {
+            return sn.ObtenerSumaDetalleValor();
+        }
+
 
     }
 }

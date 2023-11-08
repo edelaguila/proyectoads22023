@@ -29,13 +29,8 @@ namespace CapaVistaVentasCXC.Procedimientos
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Movimiento_Cliente));
             this.txt_eliminacion = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.dtTabla = new System.Windows.Forms.DataGridView();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -66,88 +61,43 @@ namespace CapaVistaVentasCXC.Procedimientos
             this.label2 = new System.Windows.Forms.Label();
             this.txt_nombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dtTabla)).BeginInit();
+            this.dtTabla = new System.Windows.Forms.DataGridView();
+            this.txt_factura = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.lbl_saldoTotal = new System.Windows.Forms.Label();
+            this.lbl_SaldoCliente = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtTabla)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_eliminacion
             // 
-            this.txt_eliminacion.Location = new System.Drawing.Point(898, 479);
+            this.txt_eliminacion.Enabled = false;
+            this.txt_eliminacion.Location = new System.Drawing.Point(967, 676);
             this.txt_eliminacion.Margin = new System.Windows.Forms.Padding(4);
             this.txt_eliminacion.Name = "txt_eliminacion";
-            this.txt_eliminacion.Size = new System.Drawing.Size(96, 22);
+            this.txt_eliminacion.Size = new System.Drawing.Size(35, 22);
             this.txt_eliminacion.TabIndex = 53;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(895, 445);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(96, 17);
-            this.label12.TabIndex = 52;
-            this.label12.Text = "ID movimiento";
-            // 
-            // dtTabla
-            // 
-            this.dtTabla.AllowUserToAddRows = false;
-            this.dtTabla.AllowUserToDeleteRows = false;
-            this.dtTabla.AllowUserToResizeColumns = false;
-            this.dtTabla.AllowUserToResizeRows = false;
-            this.dtTabla.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtTabla.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtTabla.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtTabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtTabla.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dtTabla.Location = new System.Drawing.Point(13, 396);
-            this.dtTabla.Margin = new System.Windows.Forms.Padding(4);
-            this.dtTabla.Name = "dtTabla";
-            this.dtTabla.ReadOnly = true;
-            this.dtTabla.RowHeadersVisible = false;
-            this.dtTabla.RowHeadersWidth = 51;
-            this.dtTabla.Size = new System.Drawing.Size(864, 248);
-            this.dtTabla.TabIndex = 51;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Enabled = false;
-            this.textBox9.Location = new System.Drawing.Point(426, 673);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(71, 22);
-            this.textBox9.TabIndex = 50;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(378, 673);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(21, 662);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(40, 17);
+            this.label9.Size = new System.Drawing.Size(162, 20);
             this.label9.TabIndex = 49;
-            this.label9.Text = "Total";
+            this.label9.Text = "Saldo Total General:";
             // 
             // button3
             // 
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(913, 520);
+            this.button3.Location = new System.Drawing.Point(944, 482);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(50, 44);
             this.button3.TabIndex = 48;
@@ -271,7 +221,7 @@ namespace CapaVistaVentasCXC.Procedimientos
             // 
             this.btn_aceptar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_aceptar.BackgroundImage")));
             this.btn_aceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_aceptar.Location = new System.Drawing.Point(900, 29);
+            this.btn_aceptar.Location = new System.Drawing.Point(924, 40);
             this.btn_aceptar.Name = "btn_aceptar";
             this.btn_aceptar.Size = new System.Drawing.Size(50, 47);
             this.btn_aceptar.TabIndex = 28;
@@ -334,6 +284,8 @@ namespace CapaVistaVentasCXC.Procedimientos
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txt_factura);
+            this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.dtp_fechaEmision);
             this.groupBox1.Controls.Add(this.dtp_fechaVencimiento);
             this.groupBox1.Controls.Add(this.label6);
@@ -355,7 +307,7 @@ namespace CapaVistaVentasCXC.Procedimientos
             // 
             // dtp_fechaEmision
             // 
-            this.dtp_fechaEmision.Location = new System.Drawing.Point(432, 82);
+            this.dtp_fechaEmision.Location = new System.Drawing.Point(781, 83);
             this.dtp_fechaEmision.Name = "dtp_fechaEmision";
             this.dtp_fechaEmision.Size = new System.Drawing.Size(193, 22);
             this.dtp_fechaEmision.TabIndex = 31;
@@ -363,9 +315,9 @@ namespace CapaVistaVentasCXC.Procedimientos
             // 
             // dtp_fechaVencimiento
             // 
-            this.dtp_fechaVencimiento.Location = new System.Drawing.Point(735, 39);
+            this.dtp_fechaVencimiento.Location = new System.Drawing.Point(781, 39);
             this.dtp_fechaVencimiento.Name = "dtp_fechaVencimiento";
-            this.dtp_fechaVencimiento.Size = new System.Drawing.Size(200, 22);
+            this.dtp_fechaVencimiento.Size = new System.Drawing.Size(193, 22);
             this.dtp_fechaVencimiento.TabIndex = 30;
             this.dtp_fechaVencimiento.Value = new System.DateTime(2023, 10, 27, 0, 0, 0, 0);
             // 
@@ -382,7 +334,7 @@ namespace CapaVistaVentasCXC.Procedimientos
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(325, 82);
+            this.label3.Location = new System.Drawing.Point(643, 83);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 17);
@@ -391,7 +343,7 @@ namespace CapaVistaVentasCXC.Procedimientos
             // 
             // txt_tipo
             // 
-            this.txt_tipo.Location = new System.Drawing.Point(433, 39);
+            this.txt_tipo.Location = new System.Drawing.Point(400, 37);
             this.txt_tipo.Margin = new System.Windows.Forms.Padding(4);
             this.txt_tipo.Name = "txt_tipo";
             this.txt_tipo.Size = new System.Drawing.Size(192, 22);
@@ -443,15 +395,81 @@ namespace CapaVistaVentasCXC.Procedimientos
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre";
             // 
+            // dtTabla
+            // 
+            this.dtTabla.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtTabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtTabla.Location = new System.Drawing.Point(12, 383);
+            this.dtTabla.Margin = new System.Windows.Forms.Padding(4);
+            this.dtTabla.MultiSelect = false;
+            this.dtTabla.Name = "dtTabla";
+            this.dtTabla.RowHeadersWidth = 51;
+            this.dtTabla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtTabla.Size = new System.Drawing.Size(908, 253);
+            this.dtTabla.TabIndex = 54;
+            this.dtTabla.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtTabla_CellContentClick);
+            // 
+            // txt_factura
+            // 
+            this.txt_factura.Location = new System.Drawing.Point(400, 80);
+            this.txt_factura.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_factura.Name = "txt_factura";
+            this.txt_factura.Size = new System.Drawing.Size(192, 22);
+            this.txt_factura.TabIndex = 33;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(325, 82);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(56, 17);
+            this.label14.TabIndex = 32;
+            this.label14.Text = "Factura";
+            // 
+            // lbl_saldoTotal
+            // 
+            this.lbl_saldoTotal.AutoSize = true;
+            this.lbl_saldoTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_saldoTotal.Location = new System.Drawing.Point(204, 658);
+            this.lbl_saldoTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_saldoTotal.Name = "lbl_saldoTotal";
+            this.lbl_saldoTotal.Size = new System.Drawing.Size(37, 29);
+            this.lbl_saldoTotal.TabIndex = 57;
+            this.lbl_saldoTotal.Text = "---";
+            // 
+            // lbl_SaldoCliente
+            // 
+            this.lbl_SaldoCliente.AutoSize = true;
+            this.lbl_SaldoCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_SaldoCliente.Location = new System.Drawing.Point(482, 658);
+            this.lbl_SaldoCliente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_SaldoCliente.Name = "lbl_SaldoCliente";
+            this.lbl_SaldoCliente.Size = new System.Drawing.Size(37, 29);
+            this.lbl_SaldoCliente.TabIndex = 58;
+            this.lbl_SaldoCliente.Text = "---";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(299, 662);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(155, 20);
+            this.label12.TabIndex = 59;
+            this.label12.Text = "Saldo Total Cliente:";
+            // 
             // Movimiento_Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1031, 711);
-            this.Controls.Add(this.txt_eliminacion);
+            this.ClientSize = new System.Drawing.Size(1015, 711);
             this.Controls.Add(this.label12);
+            this.Controls.Add(this.lbl_SaldoCliente);
+            this.Controls.Add(this.lbl_saldoTotal);
             this.Controls.Add(this.dtTabla);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.txt_eliminacion);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.groupBox3);
@@ -459,13 +477,13 @@ namespace CapaVistaVentasCXC.Procedimientos
             this.Controls.Add(this.groupBox1);
             this.Name = "Movimiento_Cliente";
             this.Text = "Movimiento_Cliente";
-            ((System.ComponentModel.ISupportInitialize)(this.dtTabla)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtTabla)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -474,9 +492,6 @@ namespace CapaVistaVentasCXC.Procedimientos
         #endregion
 
         private System.Windows.Forms.TextBox txt_eliminacion;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.DataGridView dtTabla;
-        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.GroupBox groupBox3;
@@ -507,5 +522,11 @@ namespace CapaVistaVentasCXC.Procedimientos
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_nombre;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dtTabla;
+        private System.Windows.Forms.TextBox txt_factura;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lbl_saldoTotal;
+        private System.Windows.Forms.Label lbl_SaldoCliente;
+        private System.Windows.Forms.Label label12;
     }
 }
