@@ -11,7 +11,7 @@ using System.IO;
 using CapaControladorBancos;
 
 namespace CapaVistaBancos
-{
+{ //Codigo Escrito por Luis Franco
     public partial class Mov_bancarios : Form
     {
         ControladorBanco cn = new ControladorBanco();
@@ -77,7 +77,6 @@ namespace CapaVistaBancos
                 foreach (DataRow row in tipoTrans.Rows)
                 {
                     cb_tipoTrans.Items.Add(row["movtm_transacciones_existentes"].ToString());
-                    txt_ttransaccion.Text = "movtm_valor_transaccion";
                 }
             }
 
@@ -100,8 +99,7 @@ namespace CapaVistaBancos
             if (result == DialogResult.Yes)
             {
                 // Actualiza y muestra el saldo total después de cada transacción
-                decimal saldoTotal = cn.ObtenerSaldoTotal();
-                label6.Text = "Q. " + saldoTotal.ToString();
+
 
 
 
@@ -111,7 +109,9 @@ namespace CapaVistaBancos
                 // Actualizar el DataGridView con los datos actualizados
                 actualizardatagridView();
 
-                // Limpiar los TextBox
+                // Limpiar los TextBox y combobox
+                cb_nCuenta.SelectedIndex = -1;
+                cb_tipoTrans.SelectedIndex = -1;
                 txt_ttransaccion.Clear();
                 txt_estado.Clear();
                 txt_numeroCuenta.Clear();
@@ -120,16 +120,24 @@ namespace CapaVistaBancos
 
                 // Mostrar un mensaje de éxito
                 MessageBox.Show("Movimiento realizado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                decimal saldoTotal = cn.ObtenerSaldoTotal();
+                label6.Text = "Q. " + saldoTotal.ToString();
             }
             else
             {
-                // Limpiar los TextBox si el usuario elige "No"
+                // Limpiar los TextBox y combobox
+                cb_nCuenta.SelectedIndex = -1;
+                cb_tipoTrans.SelectedIndex = -1;
+                txt_ttransaccion.Clear();
+                txt_estado.Clear();
                 txt_numeroCuenta.Clear();
                 txt_valorTransferencia.Clear();
                 txt_descripcionTransferencia.Clear();
 
                 // Mostrar un mensaje informativo
                 MessageBox.Show("No se realizó la transacción.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                decimal saldoTotal = cn.ObtenerSaldoTotal();
+                label6.Text = "Q. " + saldoTotal.ToString();
             }
         }
 
@@ -148,6 +156,9 @@ namespace CapaVistaBancos
 
             if (result == DialogResult.Yes)
             {
+                // Limpiar los TextBox y combobox
+                cb_nCuenta.SelectedIndex = -1;
+                cb_tipoTrans.SelectedIndex = -1;
                 txt_ttransaccion.Clear();
                 txt_estado.Clear();
                 txt_numeroCuenta.Clear();

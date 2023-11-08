@@ -7,7 +7,7 @@ using System.Data;
 
 namespace CapaVistaBancos
 {
-
+    //Codigo escrito por Andrea Corado
     public partial class Mantenimiento_agregar_cuenta : Form
     {
         Controlador cn = new Controlador();

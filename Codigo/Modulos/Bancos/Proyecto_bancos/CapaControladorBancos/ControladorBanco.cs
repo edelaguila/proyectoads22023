@@ -8,7 +8,7 @@ using CapaModeloBancos;
 namespace CapaControladorBancos
 {
     public class ControladorBanco
-    {
+    { //Codigo escrito por Luis Franco, Andrea Corado, Jonathan Arriaga e Isabel Aguirre
         private SentenciasBanco sentencias;
 
         public void InsertarTipoMoneda(string TipoMoneda, string ValorMoneda, string estado)

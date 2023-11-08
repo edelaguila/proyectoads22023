@@ -6,6 +6,7 @@ using CapaControladorBancos;
 
 namespace CapaVistaBancos
 {
+    //Codigo escrito por Andrea Corado
     public partial class Mantenimiento_tipoMov : Form
     {
         Controlador cn = new Controlador();

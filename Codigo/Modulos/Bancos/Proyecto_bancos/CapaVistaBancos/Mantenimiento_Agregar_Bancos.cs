@@ -6,6 +6,7 @@ namespace CapaVistaBancos
 {
     public partial class Mantenimiento_Agregar_Bancos : Form
     {
+        //Codigo escrito por Andrea Corado
         Controlador cn = new Controlador();
         public Mantenimiento_Agregar_Bancos()
         {

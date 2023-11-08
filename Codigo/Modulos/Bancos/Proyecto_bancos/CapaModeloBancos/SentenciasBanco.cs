@@ -3,7 +3,7 @@ using System.Data;
 using System.Data.Odbc;
 using System.Collections.Generic;
 namespace CapaModeloBancos
-{
+{ //Codigo escrito por Luis Franco, Jonathan Arriaga e Isabel Aguirre
     public class SentenciasBanco
     {
         private ConexionBanco con;

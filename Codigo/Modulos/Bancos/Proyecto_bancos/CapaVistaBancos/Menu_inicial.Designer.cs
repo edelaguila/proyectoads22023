@@ -362,6 +362,7 @@ namespace CapaVistaBancos
             this.pnl_childForm.Name = "pnl_childForm";
             this.pnl_childForm.Size = new System.Drawing.Size(932, 803);
             this.pnl_childForm.TabIndex = 4;
+            this.pnl_childForm.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_childForm_Paint);
             // 
             // pictureBox2
             // 
