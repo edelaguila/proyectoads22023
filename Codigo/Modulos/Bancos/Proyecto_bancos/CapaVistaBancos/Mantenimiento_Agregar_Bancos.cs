@@ -53,5 +53,14 @@ namespace CapaVistaBancos
             navegador1.textboxi = Idtextbox;
             navegador1.cargar(dgv_agBancos, Grupotextbox, cn.getNombreBd());
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            TextBox textBox = (TextBox)sender;
+            if (string.IsNullOrEmpty(textBox.Text))
+            {
+                ((TextBox)sender).Text = "0";
+            }
+        }
     }
 }

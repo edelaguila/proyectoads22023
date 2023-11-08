@@ -13,7 +13,7 @@ namespace CapaModeloBancos
             con = new ConexionBanco();
         }
 
-        public void InsertarMovimiento(string valorMovimiento, string descripcionMovimiento,  string numCuenta, string tipoTransaccion, string estado)
+        public void InsertarMovimiento(string valorMovimiento, string descripcionMovimiento,  string numCuenta, string tipoTransaccion, string estado, string valorTrans, string estadoConciliacion)
         {
             using (OdbcConnection connection = con.AbrirConexion())
             {
@@ -23,15 +23,17 @@ namespace CapaModeloBancos
                     {
                         try
                         {
-                            string insertQuery = "INSERT INTO tbl_movimientosbancarios (movban_valor_transaccion, movban_descripcion_transaccion, fk_movban_num_cuenta, fk_movban_tipo_transaccion, movban_status, movban_fecha_de_ingreso) VALUES (?, ?, ?, ?, ?, ?)";
+                            string insertQuery = "INSERT INTO tbl_movimientosbancarios (movban_valor_transaccion, movban_descripcion_transaccion, fk_movban_num_cuenta, fk_movban_tipo_transaccion, fk_movban_valorTrans, movban_status, movban_fecha_de_ingreso, manag_status_conciliacion) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
                             using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
                             {
                                 cmd.Parameters.AddWithValue("@movban_valor_transaccion", valorMovimiento);
                                 cmd.Parameters.AddWithValue("@movban_descripcion_transaccion", descripcionMovimiento);
                                 cmd.Parameters.AddWithValue("@fk_movban_num_cuenta", numCuenta);
                                 cmd.Parameters.AddWithValue("@fk_movban_tipo_transaccion", tipoTransaccion);
+                                cmd.Parameters.AddWithValue("@fk_movban_valorTrans", valorTrans);
                                 cmd.Parameters.AddWithValue("@movban_status", estado);
                                 cmd.Parameters.AddWithValue("@movban_fecha_de_ingreso", DateTime.Now);
+                                cmd.Parameters.AddWithValue("@manag_status_conciliacion", estadoConciliacion);
 
 
                                 cmd.ExecuteNonQuery();
@@ -49,13 +51,48 @@ namespace CapaModeloBancos
             }
         }
 
+        public decimal CalcularSaldoTotal()
+        {
+            using (OdbcConnection connection = con.AbrirConexion())
+            {
+                if (connection != null)
+                {
+                    string sql = "SELECT movban_valor_transaccion FROM tbl_movimientosbancarios;";
+                    using (OdbcCommand cmd = new OdbcCommand(sql, connection))
+                    {
+                        OdbcDataReader reader = cmd.ExecuteReader();
+                        decimal saldoTotal = 0;
+                        if (reader.HasRows) // Verificar si la consulta tiene resultados
+                        {
+                            while (reader.Read())
+                            {
+                                if (reader.IsDBNull(0))
+                                {
+                                    continue; // Salta si el valor es nulo
+                                }
+                                string valorStr = reader[0].ToString();
+                                if (decimal.TryParse(valorStr, out decimal valorDecimal))
+                                {
+                                    saldoTotal += valorDecimal;
+                                }
+                            }
+                        }
+                        return saldoTotal;
+                    }
+                }
+                return 0; // Devuelve 0 si no se puede conectar a la base de datos
+            }
+        }
+
+
+
         public DataTable llenarTbl(string tabla) //Llenar tabla de reportes
         {
             using (OdbcConnection connection = con.AbrirConexion())
             {
                 if (connection != null)
                 {
-                    string sql = "SELECT pk_movban_id_transaccion, movban_valor_transaccion, movban_descripcion_transaccion, fk_movban_num_cuenta, fk_movban_tipo_transaccion, movban_status, movban_fecha_de_ingreso FROM  " + tabla + ";";
+                    string sql = "SELECT pk_movban_id_transaccion, movban_valor_transaccion, movban_descripcion_transaccion,fk_movban_valorTrans, fk_movban_num_cuenta, fk_movban_tipo_transaccion, movban_status, movban_fecha_de_ingreso, manag_status_conciliacion FROM  " + tabla + ";";
                     OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, connection);
                     DataTable table = new DataTable();
                     dataTable.Fill(table);
@@ -121,21 +158,20 @@ namespace CapaModeloBancos
             }
         }
 
-<<<<<<< HEAD
-        public DataTable ObtenerCuentas()
-=======
+
+
+
         public DataTable ObtenerTiposMoneda()
->>>>>>> a83717176d203d868d4df89e1ddd063b2894287c
+
         {
             using (OdbcConnection connection = con.AbrirConexion())
             {
                 if (connection != null)
                 {
-<<<<<<< HEAD
-                    string sql = "SELECT manac_numero_de_cuenta FROM tbl_mantenimientos_agregar_cuenta;";
-=======
+
+
                     string sql = "SELECT mon_nomMoneda FROM tbl_monedabanco;";
->>>>>>> a83717176d203d868d4df89e1ddd063b2894287c
+
                     OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, connection);
                     DataTable table = new DataTable();
                     dataTable.Fill(table);
@@ -147,7 +183,29 @@ namespace CapaModeloBancos
                 }
             }
         }
-<<<<<<< HEAD
+        public DataTable ObtenerCuentas()
+
+        {
+            using (OdbcConnection connection = con.AbrirConexion())
+            {
+                if (connection != null)
+                {
+
+
+                    string sql = "SELECT manac_numero_de_cuenta FROM tbl_mantenimientos_agregar_cuenta;";
+
+                    OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, connection);
+                    DataTable table = new DataTable();
+                    dataTable.Fill(table);
+                    return table;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
+
 
 
         public DataTable TipoTransaccionBancaria()
@@ -156,7 +214,7 @@ namespace CapaModeloBancos
             {
                 if (connection != null)
                 {
-                    string sql = "SELECT movtm_transacciones_existentes FROM tbl_mantenimientos_tipo_movimiento;";
+                    string sql = "SELECT movtm_transacciones_existentes  FROM tbl_mantenimientos_tipo_movimiento;";
                     OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, connection);
                     DataTable table = new DataTable();
                     dataTable.Fill(table);
@@ -169,8 +227,27 @@ namespace CapaModeloBancos
             }
         }
 
-=======
->>>>>>> a83717176d203d868d4df89e1ddd063b2894287c
+        public DataTable valorTransaccion()
+        {
+            using (OdbcConnection connection = con.AbrirConexion())
+            {
+                if (connection != null)
+                {
+                    string sql = "SELECT movtm_valor_transaccion FROM tbl_mantenimientos_tipo_movimiento;";
+                    OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, connection);
+                    DataTable table = new DataTable();
+                    dataTable.Fill(table);
+                    return table;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
+
+
+
 
         public DataTable ObtenerBancos()
         {
@@ -211,5 +288,32 @@ namespace CapaModeloBancos
                 }
             }
         }
+
+
+
+        public int ObtenerValorTransaccion(string tipoTransaccion)
+        {
+            int valorTransaccion = 0; // Valor predeterminado (por ejemplo, pasivo)
+
+            using (OdbcConnection connection = con.AbrirConexion())
+            {
+                if (connection != null)
+                {
+                    string query = "SELECT movtm_valor_transaccion FROM tbl_mantenimientos_tipo_movimiento WHERE movtm_transacciones_existentes = ?";
+                    using (OdbcCommand cmd = new OdbcCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("?", tipoTransaccion);
+                        OdbcDataReader reader = cmd.ExecuteReader();
+                        if (reader.Read())
+                        {
+                            valorTransaccion = reader.GetInt32(0);
+                        }
+                    }
+                }
+            }
+
+            return valorTransaccion;
+        }
+
     }
 }

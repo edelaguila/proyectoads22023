@@ -42,6 +42,10 @@ namespace CapaVistaBancos
             this.txt_estado = new System.Windows.Forms.TextBox();
             this.txt_transexiten = new System.Windows.Forms.TextBox();
             this.cb_transaccionex = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cb_tipoMov = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_valorTrans = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.tblmantenimientostipomovimientoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_tipoMov)).BeginInit();
@@ -99,7 +103,7 @@ namespace CapaVistaBancos
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_tipoMov.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_tipoMov.GridColor = System.Drawing.Color.White;
-            this.dgv_tipoMov.Location = new System.Drawing.Point(70, 373);
+            this.dgv_tipoMov.Location = new System.Drawing.Point(70, 437);
             this.dgv_tipoMov.Name = "dgv_tipoMov";
             this.dgv_tipoMov.RowHeadersWidth = 51;
             this.dgv_tipoMov.RowTemplate.Height = 24;
@@ -113,7 +117,7 @@ namespace CapaVistaBancos
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_idtras.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_idtras.Location = new System.Drawing.Point(278, 262);
+            this.txt_idtras.Location = new System.Drawing.Point(321, 263);
             this.txt_idtras.Name = "txt_idtras";
             this.txt_idtras.Size = new System.Drawing.Size(199, 26);
             this.txt_idtras.TabIndex = 90;
@@ -148,7 +152,7 @@ namespace CapaVistaBancos
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_estado.Enabled = false;
             this.txt_estado.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_estado.Location = new System.Drawing.Point(814, 247);
+            this.txt_estado.Location = new System.Drawing.Point(544, 263);
             this.txt_estado.Name = "txt_estado";
             this.txt_estado.ReadOnly = true;
             this.txt_estado.Size = new System.Drawing.Size(35, 26);
@@ -163,25 +167,75 @@ namespace CapaVistaBancos
             this.txt_transexiten.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_transexiten.Enabled = false;
             this.txt_transexiten.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_transexiten.Location = new System.Drawing.Point(488, 313);
+            this.txt_transexiten.Location = new System.Drawing.Point(321, 344);
             this.txt_transexiten.Name = "txt_transexiten";
-            this.txt_transexiten.ReadOnly = true;
             this.txt_transexiten.Size = new System.Drawing.Size(199, 26);
             this.txt_transexiten.TabIndex = 99;
             this.txt_transexiten.Tag = "movtm_transacciones_existentes";
-            this.txt_transexiten.Visible = false;
             // 
             // cb_transaccionex
             // 
             this.cb_transaccionex.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_transaccionex.FormattingEnabled = true;
-            this.cb_transaccionex.Location = new System.Drawing.Point(278, 310);
+            this.cb_transaccionex.Location = new System.Drawing.Point(321, 310);
             this.cb_transaccionex.Name = "cb_transaccionex";
             this.cb_transaccionex.Size = new System.Drawing.Size(199, 28);
             this.cb_transaccionex.TabIndex = 100;
             this.cb_transaccionex.SelectedIndexChanged += new System.EventHandler(this.cb_transaccionex_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(81, 348);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(237, 20);
+            this.label1.TabIndex = 101;
+            this.label1.Text = "Escriba transacción si no existe:";
+            // 
+            // cb_tipoMov
+            // 
+            this.cb_tipoMov.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_tipoMov.FormattingEnabled = true;
+            this.cb_tipoMov.Items.AddRange(new object[] {
+            "Activo",
+            "Pasivo"});
+            this.cb_tipoMov.Location = new System.Drawing.Point(321, 376);
+            this.cb_tipoMov.Name = "cb_tipoMov";
+            this.cb_tipoMov.Size = new System.Drawing.Size(199, 28);
+            this.cb_tipoMov.TabIndex = 103;
+            this.cb_tipoMov.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(81, 379);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(155, 20);
+            this.label3.TabIndex = 102;
+            this.label3.Text = "Tipo de movimiento:";
+            // 
+            // txt_valorTrans
+            // 
+            this.txt_valorTrans.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_valorTrans.Enabled = false;
+            this.txt_valorTrans.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_valorTrans.Location = new System.Drawing.Point(544, 375);
+            this.txt_valorTrans.Name = "txt_valorTrans";
+            this.txt_valorTrans.ReadOnly = true;
+            this.txt_valorTrans.Size = new System.Drawing.Size(35, 26);
+            this.txt_valorTrans.TabIndex = 104;
+            this.txt_valorTrans.Tag = "movtm_valor_transaccion";
             // 
             // Mantenimiento_tipoMov
             // 
@@ -189,6 +243,10 @@ namespace CapaVistaBancos
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(161)))), ((int)(((byte)(116)))));
             this.ClientSize = new System.Drawing.Size(1069, 756);
+            this.Controls.Add(this.txt_valorTrans);
+            this.Controls.Add(this.cb_tipoMov);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.cb_transaccionex);
             this.Controls.Add(this.txt_transexiten);
             this.Controls.Add(this.txt_estado);
@@ -225,5 +283,9 @@ namespace CapaVistaBancos
         private System.Windows.Forms.TextBox txt_estado;
         private System.Windows.Forms.TextBox txt_transexiten;
         private System.Windows.Forms.ComboBox cb_transaccionex;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cb_tipoMov;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txt_valorTrans;
     }
 }

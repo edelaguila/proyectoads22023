@@ -9,7 +9,7 @@ namespace CapaControladorBancos
 {
     public class ControladorBanco
     {
-        private SentenciasBanco sentencias ;
+        private SentenciasBanco sentencias;
 
         public void InsertarTipoMoneda(string TipoMoneda, string ValorMoneda, string estado)
         {
@@ -22,27 +22,32 @@ namespace CapaControladorBancos
         public ControladorBanco()
         {
             sentencias = new SentenciasBanco();
-           
+
         }
-        public void InsertarMovimiento(string valorMovimiento, string descripcionMovimiento, string numCuenta, string tipoTransaccion, string estado)
+        public void InsertarMovimiento(string valorMovimiento, string descripcionMovimiento, string numCuenta, string tipoTransaccion, string estado, string valorTrans, string estadoConciliacion)
         {
-            sentencias.InsertarMovimiento(valorMovimiento, descripcionMovimiento, numCuenta, tipoTransaccion, estado);
+            sentencias.InsertarMovimiento(valorMovimiento, descripcionMovimiento, numCuenta, tipoTransaccion, estado, valorTrans, estadoConciliacion);
         }
         public DataTable llenarTbl(string tabla)
         {
             return sentencias.llenarTbl(tabla);
         }
-<<<<<<< HEAD
+
         public DataTable ObtenerCuentas()
         {
             return sentencias.ObtenerCuentas();
         }
+        public decimal ObtenerSaldoTotal()
+        {
+            return sentencias.CalcularSaldoTotal();
+        }
+
 
         public DataTable ObtenerTipoDeTransacciones()
         {
             return sentencias.TipoTransaccionBancaria();
-=======
 
+        }
         public DataTable ObtenerTiposMoneda()
         {
             return sentencias.ObtenerTiposMoneda();
@@ -56,7 +61,20 @@ namespace CapaControladorBancos
         public DataTable ObtenerTipoCuenta()
         {
             return sentencias.ObtenerTipoCuenta();
->>>>>>> a83717176d203d868d4df89e1ddd063b2894287c
+
         }
+
+        public DataTable valorTrans()
+        {
+            return sentencias.valorTransaccion();
+
+        }
+
+        public int ObtenerValorTransaccion(string tipoTransaccion)
+        {
+            return sentencias.ObtenerValorTransaccion(tipoTransaccion);
+        }
+
     }
 }
+
