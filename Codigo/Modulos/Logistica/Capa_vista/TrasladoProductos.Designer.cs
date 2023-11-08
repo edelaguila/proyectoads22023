@@ -29,8 +29,14 @@ namespace Vista_PrototipoMenu
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrasladoProductos));
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.lbl_costoTotal = new System.Windows.Forms.Label();
+            this.lbl_precioTotal = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dgv_traslaProd = new System.Windows.Forms.DataGridView();
+            this.btn_remover = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txt_nombreProc = new System.Windows.Forms.TextBox();
             this.txt_idProc = new System.Windows.Forms.TextBox();
@@ -44,6 +50,7 @@ namespace Vista_PrototipoMenu
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_aceptar = new System.Windows.Forms.Button();
             this.txt_fecha = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_nombreDoc = new System.Windows.Forms.TextBox();
@@ -60,9 +67,50 @@ namespace Vista_PrototipoMenu
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(71, 801);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(101, 19);
+            this.label13.TabIndex = 15;
+            this.label13.Text = "COSTO TOTAL:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(423, 801);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(105, 19);
+            this.label14.TabIndex = 16;
+            this.label14.Text = "PRECIO TOTAL:";
+            // 
+            // lbl_costoTotal
+            // 
+            this.lbl_costoTotal.AutoSize = true;
+            this.lbl_costoTotal.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_costoTotal.Location = new System.Drawing.Point(97, 828);
+            this.lbl_costoTotal.Name = "lbl_costoTotal";
+            this.lbl_costoTotal.Size = new System.Drawing.Size(21, 19);
+            this.lbl_costoTotal.TabIndex = 17;
+            this.lbl_costoTotal.Text = "...";
+            // 
+            // lbl_precioTotal
+            // 
+            this.lbl_precioTotal.AutoSize = true;
+            this.lbl_precioTotal.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_precioTotal.Location = new System.Drawing.Point(446, 828);
+            this.lbl_precioTotal.Name = "lbl_precioTotal";
+            this.lbl_precioTotal.Size = new System.Drawing.Size(21, 19);
+            this.lbl_precioTotal.TabIndex = 18;
+            this.lbl_precioTotal.Text = "...";
+            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.dgv_traslaProd);
+            this.groupBox4.Controls.Add(this.btn_remover);
             this.groupBox4.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(31, 434);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -81,9 +129,25 @@ namespace Vista_PrototipoMenu
             this.dgv_traslaProd.Name = "dgv_traslaProd";
             this.dgv_traslaProd.RowHeadersWidth = 51;
             this.dgv_traslaProd.RowTemplate.Height = 24;
-            this.dgv_traslaProd.Size = new System.Drawing.Size(951, 304);
+            this.dgv_traslaProd.Size = new System.Drawing.Size(853, 304);
             this.dgv_traslaProd.TabIndex = 0;
-            this.dgv_traslaProd.Tag = "tbl_detallesmovimiento";
+            this.dgv_traslaProd.Tag = "tbl_pruebatraslado";
+            // 
+            // btn_remover
+            // 
+            this.btn_remover.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.btn_remover.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_remover.Image = ((System.Drawing.Image)(resources.GetObject("btn_remover.Image")));
+            this.btn_remover.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_remover.Location = new System.Drawing.Point(896, 30);
+            this.btn_remover.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_remover.Name = "btn_remover";
+            this.btn_remover.Size = new System.Drawing.Size(87, 71);
+            this.btn_remover.TabIndex = 14;
+            this.btn_remover.Text = "Remover";
+            this.btn_remover.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btn_remover.UseVisualStyleBackColor = false;
+            this.btn_remover.Click += new System.EventHandler(this.btn_remover_Click);
             // 
             // groupBox2
             // 
@@ -96,26 +160,26 @@ namespace Vista_PrototipoMenu
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(496, 108);
+            this.groupBox2.Size = new System.Drawing.Size(480, 123);
             this.groupBox2.TabIndex = 20;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Productos";
             // 
             // txt_nombreProc
             // 
-            this.txt_nombreProc.Location = new System.Drawing.Point(253, 59);
+            this.txt_nombreProc.Location = new System.Drawing.Point(188, 57);
             this.txt_nombreProc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_nombreProc.Name = "txt_nombreProc";
-            this.txt_nombreProc.Size = new System.Drawing.Size(221, 23);
+            this.txt_nombreProc.Size = new System.Drawing.Size(269, 23);
             this.txt_nombreProc.TabIndex = 5;
             this.txt_nombreProc.Tag = "Prod_Nombre";
             // 
             // txt_idProc
             // 
-            this.txt_idProc.Location = new System.Drawing.Point(253, 29);
+            this.txt_idProc.Location = new System.Drawing.Point(188, 28);
             this.txt_idProc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_idProc.Name = "txt_idProc";
-            this.txt_idProc.Size = new System.Drawing.Size(221, 23);
+            this.txt_idProc.Size = new System.Drawing.Size(269, 23);
             this.txt_idProc.TabIndex = 4;
             this.txt_idProc.Tag = "Pk_ProductoID";
             // 
@@ -158,19 +222,18 @@ namespace Vista_PrototipoMenu
             // 
             // txt_precioUnit
             // 
-            this.txt_precioUnit.Location = new System.Drawing.Point(188, 58);
+            this.txt_precioUnit.Location = new System.Drawing.Point(188, 86);
             this.txt_precioUnit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_precioUnit.Name = "txt_precioUnit";
             this.txt_precioUnit.Size = new System.Drawing.Size(269, 22);
             this.txt_precioUnit.TabIndex = 7;
-            this.txt_precioUnit.Tag = "Prod_PrecioUnitario";
+            this.txt_precioUnit.Tag = "txt_precioUnit";
             // 
             // txt_costoTotal
             // 
-            this.txt_costoTotal.Location = new System.Drawing.Point(189, 86);
+            this.txt_costoTotal.Location = new System.Drawing.Point(188, 57);
             this.txt_costoTotal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_costoTotal.Name = "txt_costoTotal";
-            this.txt_costoTotal.ReadOnly = true;
             this.txt_costoTotal.Size = new System.Drawing.Size(269, 22);
             this.txt_costoTotal.TabIndex = 5;
             this.txt_costoTotal.Tag = "Det_MovCostoTotal";
@@ -187,7 +250,7 @@ namespace Vista_PrototipoMenu
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(29, 63);
+            this.label9.Location = new System.Drawing.Point(29, 91);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(105, 17);
             this.label9.TabIndex = 3;
@@ -196,7 +259,7 @@ namespace Vista_PrototipoMenu
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(30, 91);
+            this.label11.Location = new System.Drawing.Point(29, 62);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(80, 17);
             this.label11.TabIndex = 1;
@@ -213,6 +276,7 @@ namespace Vista_PrototipoMenu
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btn_aceptar);
             this.groupBox1.Controls.Add(this.txt_fecha);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txt_nombreDoc);
@@ -223,18 +287,34 @@ namespace Vista_PrototipoMenu
             this.groupBox1.Controls.Add(this.txt_idDoc);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.groupBox1.Location = new System.Drawing.Point(151, 206);
+            this.groupBox1.Location = new System.Drawing.Point(31, 213);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(841, 90);
+            this.groupBox1.Size = new System.Drawing.Size(1005, 90);
             this.groupBox1.TabIndex = 22;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Documentación";
             // 
+            // btn_aceptar
+            // 
+            this.btn_aceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.btn_aceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_aceptar.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_aceptar.Image = ((System.Drawing.Image)(resources.GetObject("btn_aceptar.Image")));
+            this.btn_aceptar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_aceptar.Location = new System.Drawing.Point(791, 18);
+            this.btn_aceptar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_aceptar.Name = "btn_aceptar";
+            this.btn_aceptar.Size = new System.Drawing.Size(192, 66);
+            this.btn_aceptar.TabIndex = 3;
+            this.btn_aceptar.Text = "Aceptar";
+            this.btn_aceptar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btn_aceptar.UseVisualStyleBackColor = false;
+            // 
             // txt_fecha
             // 
-            this.txt_fecha.Location = new System.Drawing.Point(590, 53);
+            this.txt_fecha.Location = new System.Drawing.Point(543, 52);
             this.txt_fecha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_fecha.Name = "txt_fecha";
             this.txt_fecha.Size = new System.Drawing.Size(175, 23);
@@ -253,7 +333,7 @@ namespace Vista_PrototipoMenu
             // 
             // txt_nombreDoc
             // 
-            this.txt_nombreDoc.Location = new System.Drawing.Point(590, 23);
+            this.txt_nombreDoc.Location = new System.Drawing.Point(543, 23);
             this.txt_nombreDoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_nombreDoc.Name = "txt_nombreDoc";
             this.txt_nombreDoc.Size = new System.Drawing.Size(175, 23);
@@ -282,10 +362,10 @@ namespace Vista_PrototipoMenu
             // 
             // txt_destino
             // 
-            this.txt_destino.Location = new System.Drawing.Point(195, 53);
+            this.txt_destino.Location = new System.Drawing.Point(147, 53);
             this.txt_destino.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_destino.Name = "txt_destino";
-            this.txt_destino.Size = new System.Drawing.Size(241, 23);
+            this.txt_destino.Size = new System.Drawing.Size(289, 23);
             this.txt_destino.TabIndex = 8;
             this.txt_destino.Tag = "Pk_AlmacenID";
             // 
@@ -301,10 +381,10 @@ namespace Vista_PrototipoMenu
             // 
             // txt_idDoc
             // 
-            this.txt_idDoc.Location = new System.Drawing.Point(195, 25);
+            this.txt_idDoc.Location = new System.Drawing.Point(147, 25);
             this.txt_idDoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_idDoc.Name = "txt_idDoc";
-            this.txt_idDoc.Size = new System.Drawing.Size(241, 23);
+            this.txt_idDoc.Size = new System.Drawing.Size(289, 23);
             this.txt_idDoc.TabIndex = 6;
             this.txt_idDoc.Tag = "Pk_DocumentoID";
             // 
@@ -322,12 +402,16 @@ namespace Vista_PrototipoMenu
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
-            this.ClientSize = new System.Drawing.Size(1064, 800);
+            this.ClientSize = new System.Drawing.Size(1064, 900);
             this.Controls.Add(this.navegador1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.lbl_precioTotal);
+            this.Controls.Add(this.lbl_costoTotal);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
             this.Name = "TrasladoProductos";
             this.Text = "TrasladoProductos";
             this.groupBox4.ResumeLayout(false);
@@ -339,12 +423,18 @@ namespace Vista_PrototipoMenu
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lbl_costoTotal;
+        private System.Windows.Forms.Label lbl_precioTotal;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dgv_traslaProd;
+        private System.Windows.Forms.Button btn_remover;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox txt_nombreProc;
         private System.Windows.Forms.TextBox txt_idProc;
@@ -358,6 +448,7 @@ namespace Vista_PrototipoMenu
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btn_aceptar;
         private System.Windows.Forms.TextBox txt_fecha;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txt_nombreDoc;

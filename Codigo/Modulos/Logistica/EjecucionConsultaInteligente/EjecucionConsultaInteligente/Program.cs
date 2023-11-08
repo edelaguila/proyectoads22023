@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CapaVidts;
+using Vista_PrototipoMenu;
+using Vista_PrototipoMenu;
 
 
 namespace EjecucionConsultaInteligente
@@ -19,7 +20,7 @@ namespace EjecucionConsultaInteligente
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
           //  Application.Run(new Capa_VistaConsultas.Busqueda());
-            Application.Run(new CapaVidts.Auditoria());
+            Application.Run(mainForm: new Muestreo());
         }
     }
 }
