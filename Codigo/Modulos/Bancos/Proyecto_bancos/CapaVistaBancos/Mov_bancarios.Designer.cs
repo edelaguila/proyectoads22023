@@ -42,6 +42,7 @@ namespace CapaVistaBancos
             this.btn_cancelarTransaccion = new System.Windows.Forms.Button();
             this.btn_salir_dispo = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_stCon = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txt_valorTrans = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -59,7 +60,6 @@ namespace CapaVistaBancos
             this.dataSet3 = new CapaVistaBancos.DataSet3();
             this.tblmantenimientostipomovimientoBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.tbl_mantenimientos_tipo_movimientoTableAdapter2 = new CapaVistaBancos.DataSet3TableAdapters.tbl_mantenimientos_tipo_movimientoTableAdapter();
-            this.txt_stCon = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_vistaTransacciones)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -204,6 +204,18 @@ namespace CapaVistaBancos
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ingresar transacciones";
             // 
+            // txt_stCon
+            // 
+            this.txt_stCon.Enabled = false;
+            this.txt_stCon.Location = new System.Drawing.Point(690, 119);
+            this.txt_stCon.Name = "txt_stCon";
+            this.txt_stCon.ReadOnly = true;
+            this.txt_stCon.Size = new System.Drawing.Size(41, 22);
+            this.txt_stCon.TabIndex = 90;
+            this.txt_stCon.Text = "0";
+            this.txt_stCon.Visible = false;
+            this.txt_stCon.TextChanged += new System.EventHandler(this.txt_stCon_TextChanged);
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -222,6 +234,7 @@ namespace CapaVistaBancos
             this.txt_valorTrans.ReadOnly = true;
             this.txt_valorTrans.Size = new System.Drawing.Size(41, 22);
             this.txt_valorTrans.TabIndex = 89;
+            this.txt_valorTrans.Visible = false;
             this.txt_valorTrans.TextChanged += new System.EventHandler(this.txt_valorTrans_TextChanged);
             // 
             // label1
@@ -267,6 +280,7 @@ namespace CapaVistaBancos
             this.txt_estado.Size = new System.Drawing.Size(41, 22);
             this.txt_estado.TabIndex = 14;
             this.txt_estado.Text = "1";
+            this.txt_estado.Visible = false;
             this.txt_estado.TextChanged += new System.EventHandler(this.txt_estado_TextChanged);
             // 
             // groupBox2
@@ -320,17 +334,6 @@ namespace CapaVistaBancos
             // tbl_mantenimientos_tipo_movimientoTableAdapter2
             // 
             this.tbl_mantenimientos_tipo_movimientoTableAdapter2.ClearBeforeFill = true;
-            // 
-            // txt_stCon
-            // 
-            this.txt_stCon.Enabled = false;
-            this.txt_stCon.Location = new System.Drawing.Point(690, 119);
-            this.txt_stCon.Name = "txt_stCon";
-            this.txt_stCon.ReadOnly = true;
-            this.txt_stCon.Size = new System.Drawing.Size(41, 22);
-            this.txt_stCon.TabIndex = 90;
-            this.txt_stCon.Text = "0";
-            this.txt_stCon.TextChanged += new System.EventHandler(this.txt_stCon_TextChanged);
             // 
             // Mov_bancarios
             // 
