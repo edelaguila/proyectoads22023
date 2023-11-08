@@ -38,9 +38,6 @@
     <Reference Include="FontAwesome.Sharp">
       <HintPath>C:\Program Files\UMG\Instalador General HSC\FontAwesome.Sharp.dll</HintPath>
     </Reference>
-    <Reference Include="Modelo_InventariosMenu">
-      <HintPath>..\Capa_controlador\bin\Debug\Modelo_InventariosMenu.dll</HintPath>
-    </Reference>
     <Reference Include="NavegadorControlador, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="NavegadorVista, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -215,6 +212,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\InventarioLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Program Files\UMG\Instalador General HSC\NavegadorVista.dll" />
+    <Analyzer Include="C:\Program Files\UMG\Instalador General HSC\Seguridad_Controlador.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
