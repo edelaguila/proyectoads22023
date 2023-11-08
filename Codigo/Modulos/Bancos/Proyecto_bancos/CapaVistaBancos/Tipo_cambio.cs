@@ -6,20 +6,20 @@ namespace CapaVistaBancos
 {
     public partial class Tipo_cambio : Form
     {
-        ControladorBanco cn = new ControladorBanco();
-        string mon = "tbl_registro_moneda";
+        Seguridad_Controlador.Controlador cn = new Seguridad_Controlador.Controlador();
 
-        public void actualizardatagridView()
-        {
-            DataTable dt = cn.llenarTblMoneda(mon);
-            dataGridView1.DataSource = dt;
-
-        }
-
+        
         public Tipo_cambio()
         {
             InitializeComponent();
-            actualizardatagridView();
+            NavegadorVista.Navegador.idApp = "1003";
+            _navegador.actual = this;
+            _navegador.tabla = dataGridView1;
+            TextBox[] Grupotextbox = { txt_id, txt_tipo_moneda, txt_valor_moneda, txt_fecha, txt_estado  };
+            TextBox[] Idtextbox = { txt_id, txt_tipo_moneda };
+            _navegador.textbox = Grupotextbox;
+            _navegador.textboxi = Idtextbox;
+            _navegador.cargar(dataGridView1, Grupotextbox, cn.getNombreBd());
         }
 
         private void btn_salir_dispo_Click(object sender, EventArgs e)
@@ -39,42 +39,23 @@ namespace CapaVistaBancos
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            TextBox textBox = (TextBox)sender;
-            if (string.IsNullOrEmpty(textBox.Text))
-            {
-                ((TextBox)sender).Text = "1";
-            }
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("¿Desea guardar el archivo?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question); //OTTO ADRIAN LOPEZ VENTURA 0901-20-1069
+           
+        }
 
-            if (result == DialogResult.Yes)
-            {
-                //LUIS ALBERTO FRANCO MORAN 0901-20-23979
-                // Llamar al Controlador para insertar el movimiento en la base de datos
-                cn.InsertarTipoMoneda(textBox4.Text, textBox1.Text, textBox3.Text);
+        private void txt_estado_TextChanged(object sender, EventArgs e)
+        {
+            txt_estado.Text = "1";
+        }
 
-                // Actualizar el DataGridView con los datos actualizados
-                actualizardatagridView();
-
-                // Limpiar los TextBox
-               
-
-
-                // Mostrar un mensaje de éxito
-                MessageBox.Show("Movimiento realizado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                //LUIS ALBERTO FRANCO MORAN 0901-20-23979
-                // Limpiar los TextBox si el usuario elige "No"
-                
-
-                // Mostrar un mensaje informativo
-                MessageBox.Show("No se guardó el archivo.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);//OTTO ADRIAN LOPEZ VENTURA 0901-20-1069 
-            }
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            string fechaSeleccionada = ((DateTimePicker)sender).Value.ToString("yyyy-MM-dd"); // Convierte la fecha al formato deseado
+            txt_fecha.Text = fechaSeleccionada;
         }
     }
 }

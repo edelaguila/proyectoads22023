@@ -179,5 +179,35 @@ namespace CapaModeloBancos
                 }
             }
         }
+
+        public List<Banco> ObtenerBanco()
+        {
+            List<Banco> bancos = new List<Banco>();
+
+            using (OdbcConnection connection = con.AbrirConexion())
+            {
+                connection.Open();
+
+                string query = "SELECT ban_id_Banco, fk_ban_Nombre_banco, ban_status FROM tbl_banco";
+                using (OdbcCommand command = new OdbcCommand(query, connection))
+                {
+                    using (OdbcDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Banco banco = new Banco
+                            (
+                                reader.GetInt32(0),
+                                reader.GetString(1),
+                                reader.GetString(2)
+                            );
+                            bancos.Add(banco);
+                        }
+                    }
+                }
+            }
+
+            return bancos;
+        }
     }
 }
