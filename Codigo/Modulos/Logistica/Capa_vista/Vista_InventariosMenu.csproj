@@ -31,17 +31,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Capa_VistaConsultas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="Controlador_InventariosMenu">
       <HintPath>..\Capa_controlador\bin\Debug\Controlador_InventariosMenu.dll</HintPath>
     </Reference>
     <Reference Include="FontAwesome.Sharp">
       <HintPath>C:\Program Files\UMG\Instalador General HSC\FontAwesome.Sharp.dll</HintPath>
     </Reference>
-    <Reference Include="NavegadorControlador, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
-    <Reference Include="NavegadorVista, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\NavegadorVista.dll</HintPath>
+    <Reference Include="NavegadorVista">
+      <HintPath>C:\Program Files\UMG\Instalador General HSC\NavegadorVista.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
