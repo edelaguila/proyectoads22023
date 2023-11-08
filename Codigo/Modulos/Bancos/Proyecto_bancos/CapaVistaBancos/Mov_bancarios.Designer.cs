@@ -120,6 +120,7 @@ namespace CapaVistaBancos
             this.txt_numeroCuenta.Name = "txt_numeroCuenta";
             this.txt_numeroCuenta.Size = new System.Drawing.Size(214, 22);
             this.txt_numeroCuenta.TabIndex = 7;
+            this.txt_numeroCuenta.Visible = false;
             // 
             // txt_descripcionTransferencia
             // 
@@ -270,6 +271,7 @@ namespace CapaVistaBancos
             this.txt_ttransaccion.Name = "txt_ttransaccion";
             this.txt_ttransaccion.Size = new System.Drawing.Size(214, 22);
             this.txt_ttransaccion.TabIndex = 16;
+            this.txt_ttransaccion.Visible = false;
             // 
             // txt_estado
             // 
