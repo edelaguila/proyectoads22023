@@ -186,7 +186,6 @@ namespace CapaModeloBancos
 
             using (OdbcConnection connection = con.AbrirConexion())
             {
-                connection.Open();
 
                 string query = "SELECT ban_id_Banco, fk_ban_Nombre_banco, ban_status FROM tbl_banco";
                 using (OdbcCommand command = new OdbcCommand(query, connection))
@@ -198,8 +197,10 @@ namespace CapaModeloBancos
                             Banco banco = new Banco
                             (
                                 reader.GetInt32(0),
-                                reader.GetString(1),
-                                reader.GetString(2)
+                                reader.GetInt32(1),
+                                reader.GetString(2),
+                                reader.GetInt32(3),
+                                reader.GetBoolean(4)
                             );
                             bancos.Add(banco);
                         }

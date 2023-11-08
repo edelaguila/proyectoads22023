@@ -8,16 +8,19 @@ namespace CapaModeloBancos
 {
     public class Banco
     {
-        public int ban_id_Banco { get; set; }
-        public string fk_ban_Nombre_banco { get; set; }
-        public string ban_status { get; set; }
+        public int pk_manag_id_ban { get; set; }
+        public int manag_id_bancoag { get; set; }
+        public string manag_nombre_banco { get; set; }
+        public int manag_status { get; set; }
+        public int manag_status_conciliacion { get; set; }
 
-        // Constructor
-        public Banco(int idBanco, string nombreBanco, string status)
+        public Banco(int pk_manag_id_ban, int manag_id_bancoag, string manag_nombre_banco, int manag_status, int manag_status_conciliacion)
         {
-            ban_id_Banco = idBanco;
-            fk_ban_Nombre_banco = nombreBanco;
-            ban_status = status;
+            this.pk_manag_id_ban = pk_manag_id_ban;
+            this.manag_id_bancoag = manag_id_bancoag;
+            this.manag_nombre_banco = manag_nombre_banco;
+            this.manag_status = manag_status;
+            this.manag_status_conciliacion = manag_status_conciliacion;
         }
     }
 
