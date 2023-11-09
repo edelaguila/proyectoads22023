@@ -63,5 +63,10 @@ namespace CapaVistaBancos
                 ((TextBox)sender).Text = "0";
             }
         }
+
+        private void btn_Ayuda_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "AyudasBancos/AyudasBancos.chm", "Mantenimientos.html");
+        }
     }
 }

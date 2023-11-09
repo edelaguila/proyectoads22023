@@ -30,6 +30,7 @@ namespace CapaVistaBancos
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mantenimiento_tipoMov));
             this.tblmantenimientostipomovimientoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet7 = new CapaVistaBancos.DataSet7();
             this.btn_salir_dispo = new System.Windows.Forms.Button();
@@ -46,6 +47,7 @@ namespace CapaVistaBancos
             this.cb_tipoMov = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_valorTrans = new System.Windows.Forms.TextBox();
+            this.btn_Ayuda = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tblmantenimientostipomovimientoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_tipoMov)).BeginInit();
@@ -237,12 +239,27 @@ namespace CapaVistaBancos
             this.txt_valorTrans.TabIndex = 104;
             this.txt_valorTrans.Tag = "movtm_valor_transaccion";
             // 
+            // btn_Ayuda
+            // 
+            this.btn_Ayuda.FlatAppearance.BorderSize = 0;
+            this.btn_Ayuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Ayuda.Image = ((System.Drawing.Image)(resources.GetObject("btn_Ayuda.Image")));
+            this.btn_Ayuda.Location = new System.Drawing.Point(762, 146);
+            this.btn_Ayuda.Name = "btn_Ayuda";
+            this.btn_Ayuda.Size = new System.Drawing.Size(93, 85);
+            this.btn_Ayuda.TabIndex = 105;
+            this.btn_Ayuda.Text = "Ayuda";
+            this.btn_Ayuda.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_Ayuda.UseVisualStyleBackColor = false;
+            this.btn_Ayuda.Click += new System.EventHandler(this.btn_Ayuda_Click);
+            // 
             // Mantenimiento_tipoMov
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(161)))), ((int)(((byte)(116)))));
             this.ClientSize = new System.Drawing.Size(1069, 756);
+            this.Controls.Add(this.btn_Ayuda);
             this.Controls.Add(this.txt_valorTrans);
             this.Controls.Add(this.cb_tipoMov);
             this.Controls.Add(this.label3);
@@ -287,5 +304,6 @@ namespace CapaVistaBancos
         private System.Windows.Forms.ComboBox cb_tipoMov;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_valorTrans;
+        private System.Windows.Forms.Button btn_Ayuda;
     }
 }
