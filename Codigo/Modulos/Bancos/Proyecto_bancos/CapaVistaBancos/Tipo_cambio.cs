@@ -57,5 +57,15 @@ namespace CapaVistaBancos
             string fechaSeleccionada = ((DateTimePicker)sender).Value.ToString("yyyy-MM-dd"); // Convierte la fecha al formato deseado
             txt_fecha.Text = fechaSeleccionada;
         }
+
+        private void txt_id_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void _navegador_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
