@@ -132,7 +132,7 @@ namespace CapaVistaVentasCXC.Mantenimientos
             this.txtserie.Name = "txtserie";
             this.txtserie.Size = new System.Drawing.Size(223, 22);
             this.txtserie.TabIndex = 9;
-            this.txtserie.Tag = "con_Serieconcepto";
+            this.txtserie.Tag = "con_SerieConcepto";
             // 
             // Concepto
             // 

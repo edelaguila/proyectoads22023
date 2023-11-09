@@ -35,7 +35,7 @@
       <HintPath>..\CapaControladorComprasCXP\bin\Debug\CapaControladorComprasCXP.dll</HintPath>
     </Reference>
     <Reference Include="NavegadorVista">
-      <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files\UMG\Instalador General HSC\NavegadorVista.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files\UMG\Instalador General HSC\NavegadorVista.dll</HintPath>
     </Reference>
     <Reference Include="Seguridad_Controlador">
       <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files\UMG\Instalador General HSC\Seguridad_Controlador.dll</HintPath>
@@ -57,6 +57,12 @@
     </Compile>
     <Compile Include="Mantenimientos\Cobradores.Designer.cs">
       <DependentUpon>Cobradores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Concepto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Concepto.Designer.cs">
+      <DependentUpon>Concepto.cs</DependentUpon>
     </Compile>
     <Compile Include="Mantenimientos\Proveedores.cs">
       <SubType>Form</SubType>
@@ -126,6 +132,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Mantenimientos\Cobradores.resx">
       <DependentUpon>Cobradores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Concepto.resx">
+      <DependentUpon>Concepto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\Proveedores.resx">
       <DependentUpon>Proveedores.cs</DependentUpon>

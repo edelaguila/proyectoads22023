@@ -67,17 +67,19 @@ namespace CapaVistaComprasCXP
             this.panelMDI.AutoScroll = true;
             this.panelMDI.Controls.Add(this.MDI);
             this.panelMDI.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMDI.Location = new System.Drawing.Point(277, 0);
+            this.panelMDI.Location = new System.Drawing.Point(369, 0);
+            this.panelMDI.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelMDI.Name = "panelMDI";
-            this.panelMDI.Size = new System.Drawing.Size(612, 450);
+            this.panelMDI.Size = new System.Drawing.Size(816, 554);
             this.panelMDI.TabIndex = 57;
             // 
             // MDI
             // 
             this.MDI.Image = ((System.Drawing.Image)(resources.GetObject("MDI.Image")));
-            this.MDI.Location = new System.Drawing.Point(341, 176);
+            this.MDI.Location = new System.Drawing.Point(455, 217);
+            this.MDI.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MDI.Name = "MDI";
-            this.MDI.Size = new System.Drawing.Size(145, 175);
+            this.MDI.Size = new System.Drawing.Size(193, 215);
             this.MDI.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.MDI.TabIndex = 54;
             this.MDI.TabStop = false;
@@ -101,8 +103,9 @@ namespace CapaVistaComprasCXP
             this.panelSideMenu.Controls.Add(this.panelLogo);
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelSideMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(277, 450);
+            this.panelSideMenu.Size = new System.Drawing.Size(369, 554);
             this.panelSideMenu.TabIndex = 56;
             // 
             // btnsalir
@@ -114,10 +117,11 @@ namespace CapaVistaComprasCXP
             this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsalir.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsalir.ForeColor = System.Drawing.Color.Black;
-            this.btnsalir.Location = new System.Drawing.Point(0, 609);
+            this.btnsalir.Location = new System.Drawing.Point(0, 751);
+            this.btnsalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnsalir.Name = "btnsalir";
-            this.btnsalir.Padding = new System.Windows.Forms.Padding(51, 0, 0, 0);
-            this.btnsalir.Size = new System.Drawing.Size(260, 39);
+            this.btnsalir.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btnsalir.Size = new System.Drawing.Size(348, 48);
             this.btnsalir.TabIndex = 13;
             this.btnsalir.Text = "SALIR";
             this.btnsalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -133,10 +137,11 @@ namespace CapaVistaComprasCXP
             this.btnayuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnayuda.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnayuda.ForeColor = System.Drawing.Color.Black;
-            this.btnayuda.Location = new System.Drawing.Point(0, 570);
+            this.btnayuda.Location = new System.Drawing.Point(0, 703);
+            this.btnayuda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnayuda.Name = "btnayuda";
-            this.btnayuda.Padding = new System.Windows.Forms.Padding(51, 0, 0, 0);
-            this.btnayuda.Size = new System.Drawing.Size(260, 39);
+            this.btnayuda.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btnayuda.Size = new System.Drawing.Size(348, 48);
             this.btnayuda.TabIndex = 12;
             this.btnayuda.Text = "AYUDA";
             this.btnayuda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -147,9 +152,10 @@ namespace CapaVistaComprasCXP
             // 
             this.panelayuda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(183)))), ((int)(((byte)(159)))));
             this.panelayuda.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelayuda.Location = new System.Drawing.Point(0, 533);
+            this.panelayuda.Location = new System.Drawing.Point(0, 657);
+            this.panelayuda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelayuda.Name = "panelayuda";
-            this.panelayuda.Size = new System.Drawing.Size(260, 37);
+            this.panelayuda.Size = new System.Drawing.Size(348, 46);
             this.panelayuda.TabIndex = 11;
             this.panelayuda.Visible = false;
             // 
@@ -162,10 +168,11 @@ namespace CapaVistaComprasCXP
             this.btnSeguridad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeguridad.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSeguridad.ForeColor = System.Drawing.Color.Black;
-            this.btnSeguridad.Location = new System.Drawing.Point(0, 494);
+            this.btnSeguridad.Location = new System.Drawing.Point(0, 609);
+            this.btnSeguridad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSeguridad.Name = "btnSeguridad";
-            this.btnSeguridad.Padding = new System.Windows.Forms.Padding(51, 0, 0, 0);
-            this.btnSeguridad.Size = new System.Drawing.Size(260, 39);
+            this.btnSeguridad.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btnSeguridad.Size = new System.Drawing.Size(348, 48);
             this.btnSeguridad.TabIndex = 10;
             this.btnSeguridad.Text = "SEGURIDAD";
             this.btnSeguridad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -176,9 +183,10 @@ namespace CapaVistaComprasCXP
             // 
             this.panelseguridad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(183)))), ((int)(((byte)(159)))));
             this.panelseguridad.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelseguridad.Location = new System.Drawing.Point(0, 459);
+            this.panelseguridad.Location = new System.Drawing.Point(0, 566);
+            this.panelseguridad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelseguridad.Name = "panelseguridad";
-            this.panelseguridad.Size = new System.Drawing.Size(260, 35);
+            this.panelseguridad.Size = new System.Drawing.Size(348, 43);
             this.panelseguridad.TabIndex = 9;
             this.panelseguridad.Visible = false;
             // 
@@ -191,10 +199,11 @@ namespace CapaVistaComprasCXP
             this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReportes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportes.ForeColor = System.Drawing.Color.Black;
-            this.btnReportes.Location = new System.Drawing.Point(0, 413);
+            this.btnReportes.Location = new System.Drawing.Point(0, 509);
+            this.btnReportes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Padding = new System.Windows.Forms.Padding(51, 0, 0, 0);
-            this.btnReportes.Size = new System.Drawing.Size(260, 46);
+            this.btnReportes.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btnReportes.Size = new System.Drawing.Size(348, 57);
             this.btnReportes.TabIndex = 8;
             this.btnReportes.Text = "REPORTES";
             this.btnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -208,9 +217,10 @@ namespace CapaVistaComprasCXP
             this.PanelAuditoria.Controls.Add(this.btnordenescompras);
             this.PanelAuditoria.Controls.Add(this.btnmovimientoproveedor);
             this.PanelAuditoria.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelAuditoria.Location = new System.Drawing.Point(0, 293);
+            this.PanelAuditoria.Location = new System.Drawing.Point(0, 361);
+            this.PanelAuditoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PanelAuditoria.Name = "PanelAuditoria";
-            this.PanelAuditoria.Size = new System.Drawing.Size(260, 120);
+            this.PanelAuditoria.Size = new System.Drawing.Size(348, 148);
             this.PanelAuditoria.TabIndex = 5;
             this.PanelAuditoria.Visible = false;
             // 
@@ -221,10 +231,11 @@ namespace CapaVistaComprasCXP
             this.btncompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncompra.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.btncompra.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btncompra.Location = new System.Drawing.Point(0, 70);
+            this.btncompra.Location = new System.Drawing.Point(0, 86);
+            this.btncompra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btncompra.Name = "btncompra";
-            this.btncompra.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.btncompra.Size = new System.Drawing.Size(260, 35);
+            this.btncompra.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btncompra.Size = new System.Drawing.Size(348, 43);
             this.btncompra.TabIndex = 13;
             this.btncompra.Text = "COMPRA";
             this.btncompra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -238,10 +249,11 @@ namespace CapaVistaComprasCXP
             this.btnordenescompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnordenescompras.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.btnordenescompras.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnordenescompras.Location = new System.Drawing.Point(0, 35);
+            this.btnordenescompras.Location = new System.Drawing.Point(0, 43);
+            this.btnordenescompras.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnordenescompras.Name = "btnordenescompras";
-            this.btnordenescompras.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.btnordenescompras.Size = new System.Drawing.Size(260, 35);
+            this.btnordenescompras.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btnordenescompras.Size = new System.Drawing.Size(348, 43);
             this.btnordenescompras.TabIndex = 12;
             this.btnordenescompras.Text = "ORDENES DE COMPRA";
             this.btnordenescompras.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -256,9 +268,10 @@ namespace CapaVistaComprasCXP
             this.btnmovimientoproveedor.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.btnmovimientoproveedor.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnmovimientoproveedor.Location = new System.Drawing.Point(0, 0);
+            this.btnmovimientoproveedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnmovimientoproveedor.Name = "btnmovimientoproveedor";
-            this.btnmovimientoproveedor.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.btnmovimientoproveedor.Size = new System.Drawing.Size(260, 35);
+            this.btnmovimientoproveedor.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btnmovimientoproveedor.Size = new System.Drawing.Size(348, 43);
             this.btnmovimientoproveedor.TabIndex = 7;
             this.btnmovimientoproveedor.Text = "MOVIMIENTO PROVEEDOR";
             this.btnmovimientoproveedor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -274,10 +287,11 @@ namespace CapaVistaComprasCXP
             this.btnProcesos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProcesos.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProcesos.ForeColor = System.Drawing.Color.Black;
-            this.btnProcesos.Location = new System.Drawing.Point(0, 254);
+            this.btnProcesos.Location = new System.Drawing.Point(0, 313);
+            this.btnProcesos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnProcesos.Name = "btnProcesos";
-            this.btnProcesos.Padding = new System.Windows.Forms.Padding(51, 0, 0, 0);
-            this.btnProcesos.Size = new System.Drawing.Size(260, 39);
+            this.btnProcesos.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btnProcesos.Size = new System.Drawing.Size(348, 48);
             this.btnProcesos.TabIndex = 4;
             this.btnProcesos.Text = "PROCESOS";
             this.btnProcesos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -290,9 +304,10 @@ namespace CapaVistaComprasCXP
             this.panelTranportes.Controls.Add(this.btnconcepto);
             this.panelTranportes.Controls.Add(this.btnproveedor);
             this.panelTranportes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTranportes.Location = new System.Drawing.Point(0, 165);
+            this.panelTranportes.Location = new System.Drawing.Point(0, 203);
+            this.panelTranportes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelTranportes.Name = "panelTranportes";
-            this.panelTranportes.Size = new System.Drawing.Size(260, 89);
+            this.panelTranportes.Size = new System.Drawing.Size(348, 110);
             this.panelTranportes.TabIndex = 3;
             this.panelTranportes.Visible = false;
             // 
@@ -303,10 +318,11 @@ namespace CapaVistaComprasCXP
             this.btnconcepto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnconcepto.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.btnconcepto.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnconcepto.Location = new System.Drawing.Point(0, 35);
+            this.btnconcepto.Location = new System.Drawing.Point(0, 43);
+            this.btnconcepto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnconcepto.Name = "btnconcepto";
-            this.btnconcepto.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.btnconcepto.Size = new System.Drawing.Size(260, 35);
+            this.btnconcepto.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btnconcepto.Size = new System.Drawing.Size(348, 43);
             this.btnconcepto.TabIndex = 5;
             this.btnconcepto.Text = "CONCEPTO";
             this.btnconcepto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -321,13 +337,15 @@ namespace CapaVistaComprasCXP
             this.btnproveedor.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.btnproveedor.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnproveedor.Location = new System.Drawing.Point(0, 0);
+            this.btnproveedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnproveedor.Name = "btnproveedor";
-            this.btnproveedor.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.btnproveedor.Size = new System.Drawing.Size(260, 35);
+            this.btnproveedor.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btnproveedor.Size = new System.Drawing.Size(348, 43);
             this.btnproveedor.TabIndex = 4;
             this.btnproveedor.Text = "PROVEEDOR";
             this.btnproveedor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnproveedor.UseVisualStyleBackColor = true;
+            this.btnproveedor.Click += new System.EventHandler(this.btnproveedor_Click);
             // 
             // btnmanteniminetos
             // 
@@ -338,10 +356,11 @@ namespace CapaVistaComprasCXP
             this.btnmanteniminetos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnmanteniminetos.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnmanteniminetos.ForeColor = System.Drawing.Color.Black;
-            this.btnmanteniminetos.Location = new System.Drawing.Point(0, 126);
+            this.btnmanteniminetos.Location = new System.Drawing.Point(0, 155);
+            this.btnmanteniminetos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnmanteniminetos.Name = "btnmanteniminetos";
-            this.btnmanteniminetos.Padding = new System.Windows.Forms.Padding(51, 0, 0, 0);
-            this.btnmanteniminetos.Size = new System.Drawing.Size(260, 39);
+            this.btnmanteniminetos.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btnmanteniminetos.Size = new System.Drawing.Size(348, 48);
             this.btnmanteniminetos.TabIndex = 2;
             this.btnmanteniminetos.Text = "MANTENIMIENTOS";
             this.btnmanteniminetos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -357,10 +376,11 @@ namespace CapaVistaComprasCXP
             this.btninicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btninicio.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btninicio.ForeColor = System.Drawing.Color.Black;
-            this.btninicio.Location = new System.Drawing.Point(0, 87);
+            this.btninicio.Location = new System.Drawing.Point(0, 107);
+            this.btninicio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btninicio.Name = "btninicio";
-            this.btninicio.Padding = new System.Windows.Forms.Padding(51, 0, 0, 0);
-            this.btninicio.Size = new System.Drawing.Size(260, 39);
+            this.btninicio.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btninicio.Size = new System.Drawing.Size(348, 48);
             this.btninicio.TabIndex = 0;
             this.btninicio.Text = "INICIO";
             this.btninicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -373,17 +393,19 @@ namespace CapaVistaComprasCXP
             this.panelLogo.Controls.Add(this.pictureBox1);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(260, 87);
+            this.panelLogo.Size = new System.Drawing.Size(348, 107);
             this.panelLogo.TabIndex = 0;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(148)))), ((int)(((byte)(116)))));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(37, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(49, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(188, 82);
+            this.pictureBox2.Size = new System.Drawing.Size(251, 101);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
@@ -393,18 +415,20 @@ namespace CapaVistaComprasCXP
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(148)))), ((int)(((byte)(116)))));
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(260, 87);
+            this.pictureBox1.Size = new System.Drawing.Size(348, 107);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
             // MDIComprasCXP
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(889, 450);
+            this.ClientSize = new System.Drawing.Size(1185, 554);
             this.Controls.Add(this.panelMDI);
             this.Controls.Add(this.panelSideMenu);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MDIComprasCXP";
             this.Text = "MDIComprasCXP";
             this.panelMDI.ResumeLayout(false);
