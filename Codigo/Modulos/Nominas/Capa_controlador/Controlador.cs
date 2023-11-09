@@ -105,6 +105,18 @@ namespace Controlador_PrototipoMenu
 
         }
 
+        public void GuardarDeduccionTotal(int idEmpleado, DateTime fecha, string deduccionTotal)
+        {
+     
+            sn.GuardarDeduccionTotal(idEmpleado, fecha, deduccionTotal);
+        }
+
+        public void GuardarPercepcionTotal(int idEmpleado, DateTime fecha, string percepcionTotal)
+        {
+
+            sn.GuardarPercepcionTotal(idEmpleado, fecha, percepcionTotal);
+        }
+
 
     }
 }

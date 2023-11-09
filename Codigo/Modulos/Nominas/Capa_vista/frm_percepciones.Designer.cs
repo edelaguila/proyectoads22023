@@ -29,6 +29,7 @@ namespace CapaVistaNomina
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_percepciones));
             this.label17 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -66,10 +67,12 @@ namespace CapaVistaNomina
             this.btn_guardar_percepcion = new System.Windows.Forms.Button();
             this.btn_Guardar_calculo = new System.Windows.Forms.Button();
             this.btn_calcular = new System.Windows.Forms.Button();
+            this.picBox_ayuda = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_ayuda)).BeginInit();
             this.SuspendLayout();
             // 
             // label17
@@ -461,12 +464,24 @@ namespace CapaVistaNomina
             this.btn_calcular.UseVisualStyleBackColor = true;
             this.btn_calcular.Click += new System.EventHandler(this.btn_calcular_Click);
             // 
+            // picBox_ayuda
+            // 
+            this.picBox_ayuda.Image = ((System.Drawing.Image)(resources.GetObject("picBox_ayuda.Image")));
+            this.picBox_ayuda.Location = new System.Drawing.Point(1248, 12);
+            this.picBox_ayuda.Name = "picBox_ayuda";
+            this.picBox_ayuda.Size = new System.Drawing.Size(59, 54);
+            this.picBox_ayuda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBox_ayuda.TabIndex = 143;
+            this.picBox_ayuda.TabStop = false;
+            this.picBox_ayuda.Click += new System.EventHandler(this.picBox_ayuda_Click);
+            // 
             // frm_percepciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(161)))), ((int)(((byte)(116)))));
             this.ClientSize = new System.Drawing.Size(1319, 971);
+            this.Controls.Add(this.picBox_ayuda);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -485,6 +500,7 @@ namespace CapaVistaNomina
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_ayuda)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -528,5 +544,6 @@ namespace CapaVistaNomina
         private System.Windows.Forms.Button btn_guardar_percepcion;
         private System.Windows.Forms.Button btn_Guardar_calculo;
         private System.Windows.Forms.Button btn_calcular;
+        private System.Windows.Forms.PictureBox picBox_ayuda;
     }
 }

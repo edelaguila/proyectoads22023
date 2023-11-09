@@ -29,6 +29,7 @@ namespace Vista_PrototipoMenu
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_nomina));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txt_emp_tipo_moneda = new System.Windows.Forms.TextBox();
             this.txt_departamento_empleado = new System.Windows.Forms.TextBox();
@@ -55,9 +56,11 @@ namespace Vista_PrototipoMenu
             this.txt_totalDeducciones = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btn_guardar_nomina = new System.Windows.Forms.Button();
+            this.picBox_ayuda = new System.Windows.Forms.PictureBox();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_ayuda)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox3
@@ -340,12 +343,24 @@ namespace Vista_PrototipoMenu
             this.btn_guardar_nomina.UseVisualStyleBackColor = true;
             this.btn_guardar_nomina.Click += new System.EventHandler(this.btn_guardar_nomina_Click);
             // 
+            // picBox_ayuda
+            // 
+            this.picBox_ayuda.Image = ((System.Drawing.Image)(resources.GetObject("picBox_ayuda.Image")));
+            this.picBox_ayuda.Location = new System.Drawing.Point(1254, 34);
+            this.picBox_ayuda.Name = "picBox_ayuda";
+            this.picBox_ayuda.Size = new System.Drawing.Size(59, 54);
+            this.picBox_ayuda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBox_ayuda.TabIndex = 144;
+            this.picBox_ayuda.TabStop = false;
+            this.picBox_ayuda.Click += new System.EventHandler(this.picBox_ayuda_Click);
+            // 
             // frm_nomina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(161)))), ((int)(((byte)(116)))));
             this.ClientSize = new System.Drawing.Size(1398, 913);
+            this.Controls.Add(this.picBox_ayuda);
             this.Controls.Add(this.btn_guardar_nomina);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
@@ -357,6 +372,7 @@ namespace Vista_PrototipoMenu
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_ayuda)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -389,5 +405,6 @@ namespace Vista_PrototipoMenu
         private System.Windows.Forms.TextBox txt_totalDeducciones;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btn_guardar_nomina;
+        private System.Windows.Forms.PictureBox picBox_ayuda;
     }
 }

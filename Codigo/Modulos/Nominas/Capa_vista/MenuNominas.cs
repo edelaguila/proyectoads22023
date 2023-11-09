@@ -97,7 +97,7 @@ namespace Vista_PrototipoMenu
         //Método que muestra el formulario indicado
         private void btnayuda_Click(object sender, EventArgs e)
         {
-            Help.ShowHelp(this, "umg.chm");            
+            Help.ShowHelp(this, "AyudasNomina/AyudaNominasHSC.chm", "MenuNominas.html");
         }
 
         private void btn_mantenimiento_empleados_Click(object sender, EventArgs e)

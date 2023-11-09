@@ -412,7 +412,7 @@ namespace Vista_PrototipoMenu
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Margin = new System.Windows.Forms.Padding(4);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(576, 625);
+            this.panelSideMenu.Size = new System.Drawing.Size(576, 872);
             this.panelSideMenu.TabIndex = 46;
             // 
             // pictureBox5
@@ -458,7 +458,7 @@ namespace Vista_PrototipoMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1099, 625);
+            this.ClientSize = new System.Drawing.Size(1478, 872);
             this.Controls.Add(this.panelSideMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;

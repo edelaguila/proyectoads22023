@@ -216,14 +216,14 @@ namespace CapaVistaNomina
         private void btn_Guardar_calculo_Click_1(object sender, EventArgs e)
         {
             if (int.TryParse(txt_id_empleado.Text, out int idEmpleado) &&
-             DateTime.TryParse(dateTimePicker1.Text, out DateTime fecha) &&
-             double.TryParse(txt_percepcion_total.Text, out double percepcionTotal))
-
+                    DateTime.TryParse(dateTimePicker1.Text, out DateTime fecha) &&
+                    double.TryParse(txt_percepcion_total.Text, out double percepcionTotal))
             {
+                string percepcionTotalF = percepcionTotal.ToString("N5");
 
-                string percepciontotal = percepcionTotal.ToString("N5");
-                Sentencias sentencias = new Sentencias();
-                sentencias.GuardarPercepcionTotal(idEmpleado, fecha, percepciontotal);
+
+                ctrl.GuardarPercepcionTotal(idEmpleado, fecha, percepcionTotalF);
+
                 MessageBox.Show("Datos guardados con éxito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
@@ -249,6 +249,11 @@ namespace CapaVistaNomina
         private void txt_percepcion_total_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void picBox_ayuda_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "AyudasNomina/AyudaNominasHSC.chm", "Percepcion.html");
         }
     }
 }

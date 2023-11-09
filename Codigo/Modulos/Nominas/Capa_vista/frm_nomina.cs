@@ -138,5 +138,10 @@ namespace Vista_PrototipoMenu
             }
             llenar();
         }
+
+        private void picBox_ayuda_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "AyudasNomina/AyudaNominasHSC.chm", "Nomina.html");
+        }
     }
 }
