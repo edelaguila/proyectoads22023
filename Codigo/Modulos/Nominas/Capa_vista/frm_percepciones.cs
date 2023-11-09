@@ -111,15 +111,8 @@ namespace CapaVistaNomina
 
         double percepcionTotal = 0.0;
 
-        private Dictionary<string, double> tasasPercepciones = new Dictionary<string, double>
-{
-        { "Bono", 0.10 }, // Ejemplo: un bono del 10% del sueldo base
-        { "Horas Extras", 0.20 }, // Ejemplo: 20% del sueldo base para horas extras
-        { "Incentivos", 0.05 }, // Ejemplo: 5% del sueldo base como incentivo
-        { "Gratificaciones", 0.15 }, // Ejemplo: 15% del sueldo base como gratificación
-        { "Pagos de Vacaciones", 0.25 }, // Ejemplo: 25% del sueldo base como pago de vacaciones
         
-};
+
 
         private void btn_calcular_Click(object sender, EventArgs e)
         {
@@ -127,27 +120,27 @@ namespace CapaVistaNomina
             {
                 decimal sueldo = Convert.ToDecimal(txt_sueldoB_empleado.Text);
                 string percepcionSeleccionada = comboBoxperc.SelectedValue.ToString();
+                double percepcionMonto = ctrl.CalcularDeduccion(percepcionSeleccionada, (double)sueldo);
 
-                if (tasasPercepciones.ContainsKey(percepcionSeleccionada))
+                 
+                if (percepcionMonto % 1 == 0)
                 {
-                    double tasa = tasasPercepciones[percepcionSeleccionada];
-                    decimal percepcion = sueldo * (decimal)tasa;
-
-
-                    percepcionTotal += (double) percepcion;
+                    //si es entero va a sumar
+                    percepcionTotal += (int)percepcionMonto;
                     txt_percepcion_total.Text = percepcionTotal.ToString("N5");
                 }
                 else
                 {
-                    MessageBox.Show("La percepción seleccionada no está en la lista de tasas.");
+                    //  si no es entero se va a multiplicar
+                    decimal deduccion = sueldo * (decimal)percepcionMonto;
+                    percepcionTotal += (double)deduccion;
+                    txt_percepcion_total.Text = percepcionTotal.ToString("N5");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message);
+                MessageBox.Show("Error: " + ex);
             }
-
-
 
 
 
@@ -220,7 +213,7 @@ namespace CapaVistaNomina
             }
         }
 
-        private void btn_Guardar_calculo_Click(object sender, EventArgs e)
+        private void btn_Guardar_calculo_Click_1(object sender, EventArgs e)
         {
             if (int.TryParse(txt_id_empleado.Text, out int idEmpleado) &&
              DateTime.TryParse(dateTimePicker1.Text, out DateTime fecha) &&
@@ -246,10 +239,7 @@ namespace CapaVistaNomina
 
         
 
-        private void btn_Guardar_calculo_Click_1(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {

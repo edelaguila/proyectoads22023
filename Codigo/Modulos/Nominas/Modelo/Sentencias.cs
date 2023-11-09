@@ -219,7 +219,7 @@ namespace Modelo_PrototipoMenu
                     {
                         try
                         {
-                            string insertQuery = "INSERT INTO tbl_deducciones (`perc_totales`, `perc_fecha_perc`, `tbl_empleado_Pk_id_empleado`) VALUES (?, ?, ?)";
+                            string insertQuery = "INSERT INTO tbl_percepciones (`perc_totales`, `perc_fecha_perc`, `tbl_empleado_Pk_id_empleado`) VALUES (?, ?, ?)";
                             using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
                             {
                                 cmd.Parameters.AddWithValue("@perc_totales", percepcionTotal);
