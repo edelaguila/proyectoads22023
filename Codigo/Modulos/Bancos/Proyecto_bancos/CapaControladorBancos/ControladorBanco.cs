@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using CapaModeloBancos;
+using System.Windows.Forms;
+
 namespace CapaControladorBancos
 {
     public class ControladorBanco
@@ -52,6 +54,16 @@ namespace CapaControladorBancos
         {
             return sentencias.ObtenerTiposMoneda();
         }
+
+
+        /*public void fillBanco(ComboBox cmb)
+        {
+            List<Banco> bancos = sentencias.ObtenerBanco();
+            foreach(Banco b in bancos)
+            {
+                cmb.Items.Add(b.manag_nombre_banco);
+            }
+        }*/
 
         public DataTable ObtenerBancos()
         {

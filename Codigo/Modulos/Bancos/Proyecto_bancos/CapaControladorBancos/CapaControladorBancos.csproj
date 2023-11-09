@@ -31,11 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CapaModeloBancos">
-      <HintPath>..\CapaModeloBancos\bin\Debug\CapaModeloBancos.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +44,12 @@
   <ItemGroup>
     <Compile Include="ControladorBanco.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaModeloBancos\CapaModeloBancos.csproj">
+      <Project>{dcdf7bdd-ed7f-4d8c-afa5-ec5d024b046a}</Project>
+      <Name>CapaModeloBancos</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
