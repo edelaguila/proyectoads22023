@@ -228,14 +228,14 @@ namespace CapaVistaNomina
         private void btn_Guardar_calculo_Click(object sender, EventArgs e)
         {
             if (int.TryParse(txt_id_empleado.Text, out int idEmpleado) &&
-             DateTime.TryParse(dateTimePicker1.Text, out DateTime fecha) &&
-             double.TryParse(txt_deduccion_total.Text, out double deduccionTotal))
-
+                    DateTime.TryParse(dateTimePicker1.Text, out DateTime fecha) &&
+                    double.TryParse(txt_deduccion_total.Text, out double deduccionTotal))
             {
+                string deduccionTotalF = deduccionTotal.ToString("N5");
 
-                string deducciontotal = deduccionTotal.ToString("N5");
-                Sentencias sentencias = new Sentencias();
-                sentencias.GuardarDeduccionTotal(idEmpleado, fecha, deducciontotal);
+               
+                ctrl.GuardarDeduccionTotal(idEmpleado, fecha, deduccionTotalF); 
+
                 MessageBox.Show("Datos guardados con éxito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
@@ -251,7 +251,10 @@ namespace CapaVistaNomina
 
         private void picBox_ayuda_Click(object sender, EventArgs e)
         {
-            Help.ShowHelp(this, "Ayudas/AyudaNominas.chm", "Deduccion.html");
+
+                Help.ShowHelp(this, "AyudasNomina/AyudaNominasHSC.chm", "Deduccion.html");
+                
+  
         }
     }
 }

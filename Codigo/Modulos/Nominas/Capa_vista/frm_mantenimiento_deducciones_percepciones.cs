@@ -24,11 +24,13 @@ namespace Vista_PrototipoMenu
             NavegadorVista.Navegador.idApp = "6003";  //código aplicación asignado al formulario
             navegador1.actual = this;
             navegador1.tabla = dataGridView1;
+            navegador1.nombreAyuda = "Percepcion.html";
             TextBox[] Grupotextbox = { txt_id_dedu_perc, txt_dedperc_nombre, txt_dedperc_monto, txt_dedperc_movimiento};
             TextBox[] Idtextbox = { txt_id_dedu_perc, txt_dedperc_nombre };
             navegador1.textbox = Grupotextbox;
             navegador1.textboxi = Idtextbox;
             navegador1.cargar(dataGridView1, Grupotextbox, cn.getNombreBd());
+            
         }
     }
 }
