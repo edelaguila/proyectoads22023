@@ -52,10 +52,10 @@ namespace CapaVistaNomina
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(99, 260);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(225, 30);
+            this.label1.Size = new System.Drawing.Size(163, 21);
             this.label1.TabIndex = 80;
             this.label1.Tag = "Pk_id_departamento";
             this.label1.Text = "ID_Departamento";
@@ -63,29 +63,29 @@ namespace CapaVistaNomina
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(99, 319);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(296, 30);
+            this.label2.Size = new System.Drawing.Size(211, 21);
             this.label2.TabIndex = 81;
             this.label2.Tag = "";
             this.label2.Text = "Nombre_departamento";
             // 
             // txt_id_departamento
             // 
-            this.txt_id_departamento.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_id_departamento.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_id_departamento.Location = new System.Drawing.Point(412, 261);
             this.txt_id_departamento.Name = "txt_id_departamento";
-            this.txt_id_departamento.Size = new System.Drawing.Size(366, 32);
+            this.txt_id_departamento.Size = new System.Drawing.Size(366, 28);
             this.txt_id_departamento.TabIndex = 82;
             this.txt_id_departamento.Tag = "Pk_id_departamento";
             // 
             // txt_nombre_empleado
             // 
-            this.txt_nombre_empleado.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nombre_empleado.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_nombre_empleado.Location = new System.Drawing.Point(412, 320);
             this.txt_nombre_empleado.Name = "txt_nombre_empleado";
-            this.txt_nombre_empleado.Size = new System.Drawing.Size(366, 32);
+            this.txt_nombre_empleado.Size = new System.Drawing.Size(366, 28);
             this.txt_nombre_empleado.TabIndex = 83;
             this.txt_nombre_empleado.Tag = "dpt_nombre";
             // 

@@ -248,5 +248,10 @@ namespace CapaVistaNomina
         {
 
         }
+
+        private void picBox_ayuda_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "Ayudas/AyudaNominas.chm", "Deduccion.html");
+        }
     }
 }

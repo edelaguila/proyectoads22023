@@ -91,12 +91,6 @@
     <Compile Include="frm_mantenimiento_empleado.Designer.cs">
       <DependentUpon>frm_mantenimiento_empleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_mantenimiento_nominas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_mantenimiento_nominas.Designer.cs">
-      <DependentUpon>frm_mantenimiento_nominas.cs</DependentUpon>
-    </Compile>
     <Compile Include="frm_nomina.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,9 +128,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_mantenimiento_empleado.resx">
       <DependentUpon>frm_mantenimiento_empleado.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_mantenimiento_nominas.resx">
-      <DependentUpon>frm_mantenimiento_nominas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_nomina.resx">
       <DependentUpon>frm_nomina.cs</DependentUpon>
