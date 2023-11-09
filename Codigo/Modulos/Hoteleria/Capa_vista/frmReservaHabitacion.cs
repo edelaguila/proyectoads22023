@@ -21,7 +21,7 @@ namespace Vista_PrototipoMenu
             NavegadorVista.Navegador.idApp = "1004";
             navegador1.actual = this;
             navegador1.tabla = data_grid;
-            TextBox[] Grupotextbox = { txt_id, txt_idhabitacion, txt_idcliente, txt_date1, txt_idempleado, txt_date2 };
+            TextBox[] Grupotextbox = { txt_id, txt_idhabitacion, txt_idcliente, txt_date1, txt_idempleado, txt_date2, txt_estado };
             TextBox[] Idtextbox = { txt_id, txt_idhabitacion };
             navegador1.textbox = Grupotextbox;
             navegador1.textboxi = Idtextbox;
@@ -97,6 +97,11 @@ namespace Vista_PrototipoMenu
         private void frmReservaHabitacion_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void txt_estado_TextChanged(object sender, EventArgs e)
+        {
+            txt_estado.Text = "1";
         }
     }
 }

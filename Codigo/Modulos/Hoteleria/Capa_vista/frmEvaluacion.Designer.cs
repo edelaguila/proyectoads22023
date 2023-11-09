@@ -108,7 +108,7 @@ namespace Vista_PrototipoMenu
             // 
             this.lbl_descripcion.AutoSize = true;
             this.lbl_descripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_descripcion.Location = new System.Drawing.Point(434, 186);
+            this.lbl_descripcion.Location = new System.Drawing.Point(399, 188);
             this.lbl_descripcion.Name = "lbl_descripcion";
             this.lbl_descripcion.Size = new System.Drawing.Size(74, 13);
             this.lbl_descripcion.TabIndex = 40;
@@ -170,7 +170,7 @@ namespace Vista_PrototipoMenu
             this.comboEmpleados.TabIndex = 47;
             this.comboEmpleados.SelectedIndexChanged += new System.EventHandler(this.comboEmpleados_SelectedIndexChanged);
             // 
-            // frmChequeo
+            // frmEvaluacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -188,7 +188,7 @@ namespace Vista_PrototipoMenu
             this.Controls.Add(this.lbl_empleados);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.lbl_descripcion);
-            this.Name = "frmChequeo";
+            this.Name = "frmEvaluacion";
             this.Text = "frmChequeo";
             ((System.ComponentModel.ISupportInitialize)(this.data_grid)).EndInit();
             this.ResumeLayout(false);

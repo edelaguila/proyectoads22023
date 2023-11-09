@@ -59,6 +59,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmChequeo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChequeo.Designer.cs">
+      <DependentUpon>frmChequeo.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmEvaluacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmChequeo.resx">
+      <DependentUpon>frmChequeo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmEvaluacion.resx">
       <DependentUpon>frmEvaluacion.cs</DependentUpon>
     </EmbeddedResource>

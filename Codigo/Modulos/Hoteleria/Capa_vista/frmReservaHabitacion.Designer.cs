@@ -52,6 +52,7 @@ namespace Vista_PrototipoMenu
             this.label1 = new System.Windows.Forms.Label();
             this.txt_id = new System.Windows.Forms.TextBox();
             this.txt_idhabitacion = new System.Windows.Forms.TextBox();
+            this.txt_estado = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.data_grid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -283,11 +284,23 @@ namespace Vista_PrototipoMenu
             this.txt_idhabitacion.Tag = "res_id_habitacion";
             this.txt_idhabitacion.Visible = false;
             // 
+            // txt_estado
+            // 
+            this.txt_estado.Location = new System.Drawing.Point(383, 182);
+            this.txt_estado.Name = "txt_estado";
+            this.txt_estado.Size = new System.Drawing.Size(27, 20);
+            this.txt_estado.TabIndex = 80;
+            this.txt_estado.Tag = "estado";
+            this.txt_estado.Text = "1";
+            this.txt_estado.Visible = false;
+            this.txt_estado.TextChanged += new System.EventHandler(this.txt_estado_TextChanged);
+            // 
             // frmReservaHabitacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(704, 487);
+            this.Controls.Add(this.txt_estado);
             this.Controls.Add(this.txt_idhabitacion);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_id);
@@ -345,5 +358,6 @@ namespace Vista_PrototipoMenu
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_id;
         private System.Windows.Forms.TextBox txt_idhabitacion;
+        private System.Windows.Forms.TextBox txt_estado;
     }
 }

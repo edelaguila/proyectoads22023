@@ -86,7 +86,6 @@ namespace Controlador_PrototipoMenu
         public void fillComboHabitaciones(ComboBox cmb, string selected, Label lbl)
         {
 
-            MessageBox.Show("Habiaciones: " + habitaciones.Count.ToString());
             int id_seleccionado = 0;
             foreach (TipoHabitacion th in thabs)
             {
@@ -131,6 +130,100 @@ namespace Controlador_PrototipoMenu
                 habitaciones = habitaciones_desocupadas;
                 this.fillComboHabitaciones(cmb, selected, lbl);
             }
+        }
+
+
+        public void fillComboReservacion(ComboBox cmb, int id_client)
+        {
+            List<Reservacion> rs = sn.ObtenerTodasLasReservaciones();
+            List<Cliente> _clientes = sn.GetClientes();
+            foreach (Reservacion res in rs)
+            {
+                foreach (Cliente cl in _clientes)
+                {
+                    if (cl.CliId.Equals(res.Res_id_cliente) && cl.CliId.Equals(id_client) && res.estado == 1)
+                    {
+                        cmb.Items.Add(res.Res_fecha);
+                    }
+                }
+            }
+        }
+
+        public int getIdResSelected(int idClient)
+        {
+            List<Reservacion> rs = sn.ObtenerTodasLasReservaciones();
+            foreach (Reservacion r in rs)
+            {
+                if (r.Res_id_cliente.Equals(idClient)) return r.Res_id;
+            }
+            return -1;
+        }
+
+        public int getHabIdByRes(int resId)
+        {
+            List<Reservacion> rs = sn.ObtenerTodasLasReservaciones();
+            List<Habitacion> _habs = sn.getHabitaciones();
+            foreach (Reservacion r in rs)
+            {
+                foreach (Habitacion h in _habs)
+                {
+                    if (h.id.Equals(r.Res_id_habitacion) && r.Res_id.Equals(resId)) return h.id;
+                }
+            }
+            return -1;
+        }
+
+        public int getIdEmpSelectedByRes(int resId)
+        {
+
+            List<Reservacion> rs = sn.ObtenerTodasLasReservaciones();
+            List<Empleado> emps = sn.GetEmpleados();
+            foreach (Empleado em in emps)
+            {
+                foreach (Reservacion r in rs)
+                {
+                    if (r.Res_id_empleado.Equals(em.EmpId) && r.Res_id.Equals(resId))
+                    {
+                        return em.EmpId;
+                    }
+                }
+            }
+            return -1;
+        }
+        public int getIdEmpSelected(string reference)
+        {
+            List<Empleado> emps = sn.GetEmpleados();
+            foreach (Empleado em in emps)
+            {
+                if (reference.Equals(em.EmpNombre)) return em.EmpId;
+            }
+            return -1;
+        }
+
+
+        public void saveEva(DateTime fecha, string descripcion, int estadoCalidad, int idEmpleado)
+        {
+            this.sn.InsertarEvaluacion(fecha, descripcion, estadoCalidad, idEmpleado);
+        }
+
+        public void saveEntrada(int idEvaluacion, int idCliente, int idHabitacion)
+        {
+            this.sn.InsertarEntrada(idEvaluacion, idCliente, idHabitacion);
+        }
+
+        public void saveSalida(int idEvaluacion, int idCliente, int idHabitacion)
+        {
+            this.sn.InsertarSalida(idEvaluacion, idCliente, idHabitacion);
+        }
+
+        public int lastEvaId()
+        {
+            return this.sn.ObtenerUltimoIdDeEvaluacion();
+        }
+
+        public void changeReservStatus(int idRef)
+        {
+            this.sn.CambiarEstadoReservacion(idRef);
         }
 
 

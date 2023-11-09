@@ -125,5 +125,11 @@ namespace Vista_PrototipoMenu
             this.showForm(new frmEvaluacion());
             hideSubMenu();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.showForm(new frmChequeo());
+            hideSubMenu();
+        }
     }
 }
