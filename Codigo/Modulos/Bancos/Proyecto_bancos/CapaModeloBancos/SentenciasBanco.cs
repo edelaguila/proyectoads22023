@@ -289,6 +289,31 @@ namespace CapaModeloBancos
             }
         }
 
+<<<<<<< HEAD
+        /*public List<Banco> ObtenerBanco()
+        {
+            List<Banco> bancos = new List<Banco>();
+
+            using (OdbcConnection connection = con.AbrirConexion())
+            {
+
+                string query = "SELECT ban_id_Banco, fk_ban_Nombre_banco, ban_status FROM tbl_banco";
+                using (OdbcCommand command = new OdbcCommand(query, connection))
+                {
+                    using (OdbcDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Banco banco = new Banco
+                            (
+                                reader.GetInt32(0),
+                                reader.GetInt32(1),
+                                reader.GetString(2),
+                                reader.GetInt32(3),
+                                reader.GetBoolean(4)
+                            );
+                            bancos.Add(banco);
+=======
 
 
         public int ObtenerValorTransaccion(string tipoTransaccion)
@@ -307,16 +332,22 @@ namespace CapaModeloBancos
                         if (reader.Read())
                         {
                             valorTransaccion = reader.GetInt32(0);
+>>>>>>> 62b080ce388d820e5af1487483ce90748af95f9e
                         }
                     }
                 }
             }
 
+<<<<<<< HEAD
+            return bancos;
+        }*/
+=======
             return valorTransaccion;
         }
 
 
      
 
+>>>>>>> 62b080ce388d820e5af1487483ce90748af95f9e
     }
 }

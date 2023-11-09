@@ -20,13 +20,6 @@ namespace Vista_PrototipoMenu
         public MenuBancos()
         {
             InitializeComponent();
-            //Control para habilitar opciones del menu
-            // Button[] apps = {btnaplicaciones}; // Agregar cuando se vincule la DLL de seguridad 
-            //Llamada metodo de libreria Controlador del modulo de Seguridad
-            //cn.deshabilitarApps(apps); // Agregar cuando se vincule la DLL de seguridad 
-            //Llamada metodo de libreria Controlador del modulo de Seguridad
-            // cn.getAccesoApp(1002, apps[0]); // Agregar cuando se vincule la DLL de seguridad 
-
         }
 
         //Validaciones que si son visibles los panales los oculta

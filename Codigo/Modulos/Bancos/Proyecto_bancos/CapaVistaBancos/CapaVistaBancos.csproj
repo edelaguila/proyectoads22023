@@ -31,9 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CapaControladorBancos">
-      <HintPath>..\CapaControladorBancos\bin\Debug\CapaControladorBancos.dll</HintPath>
-    </Reference>
     <Reference Include="NavegadorVista">
       <HintPath>..\..\..\..\..\..\..\..\..\..\..\..\..\Program Files\UMG\Instalador General HSC\NavegadorVista.dll</HintPath>
     </Reference>
@@ -379,6 +376,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\signin_login_in_log_icon_255971.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaControladorBancos\CapaControladorBancos.csproj">
+      <Project>{e60161b7-5f88-4697-bef1-034c8fd7ea02}</Project>
+      <Name>CapaControladorBancos</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
