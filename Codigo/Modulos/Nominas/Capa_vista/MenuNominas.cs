@@ -116,7 +116,7 @@ namespace Vista_PrototipoMenu
             hideSubMenu();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_deducciones_Click(object sender, EventArgs e)
         {
             CapaVistaNomina.frm_deduccion ded = new CapaVistaNomina.frm_deduccion();
             ded.MdiParent = this;
@@ -132,7 +132,7 @@ namespace Vista_PrototipoMenu
             hideSubMenu();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_percepciones_Click(object sender, EventArgs e)
         {
             CapaVistaNomina.frm_percepciones ded = new CapaVistaNomina.frm_percepciones();
             ded.MdiParent = this;

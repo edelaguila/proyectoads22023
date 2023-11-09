@@ -126,7 +126,7 @@ namespace CapaVistaNomina
             try
             {
                 decimal sueldo = Convert.ToDecimal(txt_sueldoB_empleado.Text);
-                string percepcionSeleccionada = comboBoxperc.SelectedItem.ToString();
+                string percepcionSeleccionada = comboBoxperc.SelectedValue.ToString();
 
                 if (tasasPercepciones.ContainsKey(percepcionSeleccionada))
                 {
@@ -183,6 +183,7 @@ namespace CapaVistaNomina
 
         private void btn_guardar_percepcion_Click(object sender, EventArgs e)
         {
+            try { 
             int idEmpleado = Convert.ToInt32(txt_id_percepcion.Text);
             string dedperc_nombre = txt_percepcion_descripcion.Text;
             float dedperc_monto = Convert.ToSingle(txt_percepcion_valor.Text);
@@ -196,6 +197,11 @@ namespace CapaVistaNomina
             dataGridView1.Refresh();
             llenar();
             LlenarComboBoxDeduPerc();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("id duplicada" + ex);
+            }
         }
 
         private void LlenarComboBoxDeduPerc()
