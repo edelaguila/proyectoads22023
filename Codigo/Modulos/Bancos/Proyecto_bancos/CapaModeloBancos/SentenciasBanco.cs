@@ -315,5 +315,8 @@ namespace CapaModeloBancos
             return valorTransaccion;
         }
 
+
+     
+
     }
 }
