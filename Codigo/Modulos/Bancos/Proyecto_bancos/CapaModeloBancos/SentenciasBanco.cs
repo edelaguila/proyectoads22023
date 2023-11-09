@@ -289,7 +289,6 @@ namespace CapaModeloBancos
             }
         }
 
-<<<<<<< HEAD
         /*public List<Banco> ObtenerBanco()
         {
             List<Banco> bancos = new List<Banco>();
@@ -313,7 +312,7 @@ namespace CapaModeloBancos
                                 reader.GetBoolean(4)
                             );
                             bancos.Add(banco);
-=======
+*/
 
 
         public int ObtenerValorTransaccion(string tipoTransaccion)
@@ -332,22 +331,13 @@ namespace CapaModeloBancos
                         if (reader.Read())
                         {
                             valorTransaccion = reader.GetInt32(0);
->>>>>>> 62b080ce388d820e5af1487483ce90748af95f9e
                         }
                     }
                 }
             }
 
-<<<<<<< HEAD
-            return bancos;
-        }*/
-=======
+
             return valorTransaccion;
         }
-
-
-     
-
->>>>>>> 62b080ce388d820e5af1487483ce90748af95f9e
     }
 }

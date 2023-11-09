@@ -123,5 +123,10 @@ namespace CapaVistaBancos
                 txt_tipocuenta.Text = bancoSeleccionado; // Muestra la selección en el TextBox txt_tipo_mon
             }
         }
+
+        private void btn_Ayuda_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "AyudasBancos/AyudasBancos.chm", "Mantenimientos.html");
+        }
     }
 }
