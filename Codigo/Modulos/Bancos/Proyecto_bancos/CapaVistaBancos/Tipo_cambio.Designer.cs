@@ -67,6 +67,7 @@ namespace CapaVistaBancos
             this.txt_id.Size = new System.Drawing.Size(162, 20);
             this.txt_id.TabIndex = 97;
             this.txt_id.Tag = "regmon_id_Moneda";
+            this.txt_id.TextChanged += new System.EventHandler(this.txt_id_TextChanged);
             // 
             // dataGridView1
             // 
@@ -166,6 +167,7 @@ namespace CapaVistaBancos
             this._navegador.Name = "_navegador";
             this._navegador.Size = new System.Drawing.Size(574, 152);
             this._navegador.TabIndex = 101;
+            this._navegador.Load += new System.EventHandler(this._navegador_Load);
             // 
             // datepicker
             // 
