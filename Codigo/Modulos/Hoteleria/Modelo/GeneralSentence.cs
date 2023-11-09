@@ -160,8 +160,9 @@ namespace Modelo_PrototipoMenu
                     int res_id_cliente = Convert.ToInt32(reader["res_id_cliente"]);
                     DateTime res_fecha = Convert.ToDateTime(reader["res_fecha"]);
                     int res_id_empleado = Convert.ToInt32(reader["res_id_empleado"]);
+                    int estado = Convert.ToInt32(reader["estado"]);
 
-                    Reservacion reservacion = new Reservacion(res_id, res_id_habitacion, res_id_cliente, res_fecha, res_id_empleado);
+                    Reservacion reservacion = new Reservacion(res_id, res_id_habitacion, res_id_cliente, res_fecha, res_id_empleado, estado);
                     reservaciones.Add(reservacion);
                 }
 
@@ -174,6 +175,148 @@ namespace Modelo_PrototipoMenu
 
             return reservaciones;
         }
+
+
+        public List<Reservacion> ObtenerTodasLasReservaciones()
+        {
+            List<Reservacion> reservaciones = new List<Reservacion>();
+            try
+            {
+                string query = "SELECT * FROM tbl_reservacion";
+                OdbcCommand command = new OdbcCommand(query, this.conn.connection());
+                OdbcDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    int res_id = Convert.ToInt32(reader["res_id"]);
+                    int res_id_habitacion = Convert.ToInt32(reader["res_id_habitacion"]);
+                    int res_id_cliente = Convert.ToInt32(reader["res_id_cliente"]);
+                    DateTime res_fecha = Convert.ToDateTime(reader["res_fecha"]);
+                    int res_id_empleado = Convert.ToInt32(reader["res_id_empleado"]);
+                    int estado = Convert.ToInt32(reader["estado"]);
+
+                    Reservacion reservacion = new Reservacion(res_id, res_id_habitacion, res_id_cliente, res_fecha, res_id_empleado, estado);
+                    reservaciones.Add(reservacion);
+                }
+
+                reader.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            return reservaciones;
+        }
+
+        public int ObtenerUltimoIdDeEvaluacion()
+        {
+            int ultimoId = 0;
+            try
+            {
+                string query = "SELECT eva_id FROM tbl_evaluacion ORDER BY eva_id DESC LIMIT 1";
+                OdbcCommand command = new OdbcCommand(query, this.conn.connection());
+                OdbcDataReader reader = command.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    ultimoId = Convert.ToInt32(reader["id"]);
+                }
+
+                reader.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            return ultimoId;
+        }
+
+
+        public void InsertarEvaluacion(DateTime fecha, string descripcion, int estadoCalidad, int idEmpleado)
+        {
+            try
+            {
+                string query = "INSERT INTO tbl_Evaluacion (eva_fecha, eva_descripcion, eva_estado_calidad, eva_id_empleado) " +
+                               "VALUES (?, ?, ?, ?)";
+                OdbcCommand command = new OdbcCommand(query, this.conn.connection());
+
+                command.Parameters.AddWithValue("@fecha", fecha);
+                command.Parameters.AddWithValue("@descripcion", descripcion);
+                command.Parameters.AddWithValue("@estadoCalidad", estadoCalidad);
+                command.Parameters.AddWithValue("@idEmpleado", idEmpleado);
+
+                command.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
+
+        public void InsertarEntrada(int idEvaluacion, int idCliente, int idHabitacion)
+        {
+            try
+            {
+                string query = "INSERT INTO tbl_Entrada (in_id_evaluacion, in_id_cliente, in_id_habitacion) " +
+                               "VALUES (?, ?, ?)";
+                OdbcCommand command = new OdbcCommand(query, this.conn.connection());
+
+                command.Parameters.AddWithValue("@idEvaluacion", idEvaluacion);
+                command.Parameters.AddWithValue("@idCliente", idCliente);
+                command.Parameters.AddWithValue("@idHabitacion", idHabitacion);
+
+                command.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
+
+        public void InsertarSalida(int idEvaluacion, int idCliente, int idHabitacion)
+        {
+            try
+            {
+                string query = "INSERT INTO tbl_Salida (in_id_evaluacion, in_id_cliente, in_id_habitacion) " +
+                               "VALUES (?, ?, ?)";
+                OdbcCommand command = new OdbcCommand(query, this.conn.connection());
+
+                command.Parameters.AddWithValue("@idEvaluacion", idEvaluacion);
+                command.Parameters.AddWithValue("@idCliente", idCliente);
+                command.Parameters.AddWithValue("@idHabitacion", idHabitacion);
+
+                command.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
+
+        public void CambiarEstadoReservacion(int resId)
+        {
+            try
+            {
+                string query = "UPDATE tbl_Reservacion SET estado = 0 WHERE res_id = ?";
+                OdbcCommand command = new OdbcCommand(query, this.conn.connection());
+
+                command.Parameters.AddWithValue("@resId", resId);
+
+                command.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
+
+
+
+
+
+
 
 
 
