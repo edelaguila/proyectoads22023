@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Modelo_PrototipoMenu.templates;
 using System.Data.Odbc;
+using System.Windows.Forms;
 
 namespace Modelo_PrototipoMenu
 {
@@ -133,6 +134,48 @@ namespace Modelo_PrototipoMenu
             }
             return listaClientes;
         }
+        public List<Reservacion> ObtenerReservacionesEntreFechas(DateTime fechaInicio, DateTime fechaFin)
+        {
+            MessageBox.Show(fechaInicio.ToString("yyyy-MM-dd"));
+            List<Reservacion> reservaciones = new List<Reservacion>();
+            try
+            {
+                /*string query = "SELECT * FROM tbl_Reservacion " +
+                               "WHERE (res_fecha >= ? AND res_fecha <= ?) OR (res_fecha_salida >= ? AND res_fecha_salida <= ?)";
+                */
+                string sql = "SELECT * FROM tbl_Reservacion WHERE(res_fecha BETWEEN ? AND ?) OR(res_fecha_s BETWEEN ? AND ?)";
+                OdbcCommand command = new OdbcCommand(sql, this.conn.connection());
+
+                command.Parameters.AddWithValue("@fechaInicio", fechaInicio);
+                command.Parameters.AddWithValue("@fechaFin", fechaFin);
+                command.Parameters.AddWithValue("@fechaInicio", fechaInicio);
+                command.Parameters.AddWithValue("@fechaFin", fechaFin);
+
+                OdbcDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    int res_id = Convert.ToInt32(reader["res_id"]);
+                    int res_id_habitacion = Convert.ToInt32(reader["res_id_habitacion"]);
+                    int res_id_cliente = Convert.ToInt32(reader["res_id_cliente"]);
+                    DateTime res_fecha = Convert.ToDateTime(reader["res_fecha"]);
+                    int res_id_empleado = Convert.ToInt32(reader["res_id_empleado"]);
+
+                    Reservacion reservacion = new Reservacion(res_id, res_id_habitacion, res_id_cliente, res_fecha, res_id_empleado);
+                    reservaciones.Add(reservacion);
+                }
+
+                reader.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            return reservaciones;
+        }
+
+
 
     }
 }

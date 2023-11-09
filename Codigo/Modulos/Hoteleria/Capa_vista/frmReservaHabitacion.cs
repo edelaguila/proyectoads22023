@@ -38,7 +38,7 @@ namespace Vista_PrototipoMenu
         private void comboTipo_SelectedIndexChanged(object sender, EventArgs e)
         {
             comboHabitacion.Items.Clear();
-            this.ctrl.fillComboHabitaciones(this.comboHabitacion, this.comboTipo.SelectedItem.ToString(), lbl_precio);
+            this.ctrl.fillHabitacionesByDate(comboHabitacion, date1, date2, lbl_precio, comboTipo.SelectedItem.ToString()); ;
         }
 
         private void comboHabitacion_SelectedIndexChanged(object sender, EventArgs e)
@@ -53,15 +53,32 @@ namespace Vista_PrototipoMenu
 
         private void date1_ValueChanged(object sender, EventArgs e)
         {
+
             string fechaSeleccionada = ((DateTimePicker)sender).Value.ToString("yyyy-MM-dd"); // Convierte la fecha al formato deseado
             txt_date1.Text = fechaSeleccionada;
         }
 
         private void date2_ValueChanged(object sender, EventArgs e)
         {
-            string fechaSeleccionada = ((DateTimePicker)sender).Value.ToString("yyyy-MM-dd"); // Convierte la fecha al formato deseado
-            txt_date2.Text = fechaSeleccionada;
+            DateTime fechaSeleccionada = ((DateTimePicker)sender).Value;
+            DateTime entradaDate = date1.Value;
+
+            if (fechaSeleccionada > entradaDate)
+            {
+                string fechaSeleccionadaString = fechaSeleccionada.ToString("yyyy-MM-dd"); // Convierte la fecha al formato deseado
+                txt_date2.Text = fechaSeleccionadaString;
+            }
+            else
+            {
+                MessageBox.Show("(Error) La fecha de salida no puede ser menor a la de entrada");
+                DateTime nuevaFecha = entradaDate.AddDays(1); // Agrega un día a la fecha de entrada
+                string nuevaFechaString = nuevaFecha.ToString("yyyy-MM-dd"); // Convierte la nueva fecha al formato deseado
+                ((DateTimePicker)sender).Value = nuevaFecha;
+                txt_date2.Text = nuevaFechaString;
+            }
         }
+
+
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -75,6 +92,11 @@ namespace Vista_PrototipoMenu
                 btn_status.BackColor = Color.Green;
                 txt_idcliente.Text = id.ToString();
             }
+        }
+
+        private void frmReservaHabitacion_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

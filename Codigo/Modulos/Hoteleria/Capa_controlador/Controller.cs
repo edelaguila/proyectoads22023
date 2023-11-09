@@ -85,6 +85,8 @@ namespace Controlador_PrototipoMenu
 
         public void fillComboHabitaciones(ComboBox cmb, string selected, Label lbl)
         {
+
+            MessageBox.Show("Habiaciones: " + habitaciones.Count.ToString());
             int id_seleccionado = 0;
             foreach (TipoHabitacion th in thabs)
             {
@@ -102,7 +104,37 @@ namespace Controlador_PrototipoMenu
                     cmb.Items.Add(_h.numero.ToString());
                 }
             }
+            this.habitaciones = sn.getHabitaciones();
         }
+
+        public void fillHabitacionesByDate(ComboBox cmb, DateTimePicker d1, DateTimePicker d2, Label lbl, string selected)
+        {
+            List<Reservacion> reservaciones = sn.ObtenerReservacionesEntreFechas(d1.Value, d2.Value);
+            if (reservaciones.Count == 0)
+            {
+                this.fillComboHabitaciones(cmb, selected, lbl);
+            }
+            else
+            {
+
+                List<Habitacion> habitaciones_desocupadas = new List<Habitacion>();
+                foreach (Habitacion hab in habitaciones)
+                {
+                    foreach (Reservacion res in reservaciones)
+                    {
+                        if (!res.Res_id_habitacion.Equals(hab.id))
+                        {
+                            habitaciones_desocupadas.Add(hab);
+                        }
+                    }
+                }
+                habitaciones = habitaciones_desocupadas;
+                this.fillComboHabitaciones(cmb, selected, lbl);
+            }
+        }
+
+
+
 
 
     }
