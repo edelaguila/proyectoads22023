@@ -58,6 +58,7 @@ namespace CapaVistaBancos
             this.dataGridView1.Size = new System.Drawing.Size(545, 220);
             this.dataGridView1.TabIndex = 80;
             this.dataGridView1.Tag = "tbl_mantenimientos_agregar_bancos";
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btn_salir_dispo
             // 
@@ -68,7 +69,7 @@ namespace CapaVistaBancos
             this.btn_salir_dispo.Image = global::CapaVistaBancos.Properties.Resources.signin_login_in_log_icon_255971;
             this.btn_salir_dispo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_salir_dispo.Location = new System.Drawing.Point(738, -1);
-            this.btn_salir_dispo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_salir_dispo.Margin = new System.Windows.Forms.Padding(2);
             this.btn_salir_dispo.Name = "btn_salir_dispo";
             this.btn_salir_dispo.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
             this.btn_salir_dispo.Size = new System.Drawing.Size(63, 38);

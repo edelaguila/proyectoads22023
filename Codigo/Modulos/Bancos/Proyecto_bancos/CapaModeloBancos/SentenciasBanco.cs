@@ -180,7 +180,7 @@ namespace CapaModeloBancos
             }
         }
 
-        public List<Banco> ObtenerBanco()
+        /*public List<Banco> ObtenerBanco()
         {
             List<Banco> bancos = new List<Banco>();
 
@@ -209,6 +209,6 @@ namespace CapaModeloBancos
             }
 
             return bancos;
-        }
+        }*/
     }
 }

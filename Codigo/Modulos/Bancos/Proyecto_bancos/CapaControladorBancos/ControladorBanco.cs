@@ -41,14 +41,14 @@ namespace CapaControladorBancos
         }
 
 
-        public void fillBanco(ComboBox cmb)
+        /*public void fillBanco(ComboBox cmb)
         {
             List<Banco> bancos = sentencias.ObtenerBanco();
             foreach(Banco b in bancos)
             {
                 cmb.Items.Add(b.manag_nombre_banco);
             }
-        }
+        }*/
 
         public DataTable ObtenerBancos()
         {
