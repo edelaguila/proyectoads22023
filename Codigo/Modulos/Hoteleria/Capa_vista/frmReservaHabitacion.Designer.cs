@@ -78,7 +78,7 @@ namespace Vista_PrototipoMenu
             this.lbl_precio.AutoSize = true;
             this.lbl_precio.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_precio.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lbl_precio.Location = new System.Drawing.Point(419, 261);
+            this.lbl_precio.Location = new System.Drawing.Point(419, 287);
             this.lbl_precio.Name = "lbl_precio";
             this.lbl_precio.Size = new System.Drawing.Size(252, 56);
             this.lbl_precio.TabIndex = 68;
@@ -87,7 +87,7 @@ namespace Vista_PrototipoMenu
             // date2
             // 
             this.date2.CalendarMonthBackground = System.Drawing.SystemColors.InactiveCaption;
-            this.date2.Location = new System.Drawing.Point(542, 235);
+            this.date2.Location = new System.Drawing.Point(224, 235);
             this.date2.Name = "date2";
             this.date2.Size = new System.Drawing.Size(129, 20);
             this.date2.TabIndex = 67;
@@ -98,7 +98,7 @@ namespace Vista_PrototipoMenu
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(539, 216);
+            this.label3.Location = new System.Drawing.Point(221, 216);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 13);
             this.label3.TabIndex = 66;
@@ -107,7 +107,7 @@ namespace Vista_PrototipoMenu
             // date1
             // 
             this.date1.CalendarMonthBackground = System.Drawing.SystemColors.InactiveCaption;
-            this.date1.Location = new System.Drawing.Point(384, 235);
+            this.date1.Location = new System.Drawing.Point(66, 235);
             this.date1.Name = "date1";
             this.date1.Size = new System.Drawing.Size(129, 20);
             this.date1.TabIndex = 65;
@@ -118,7 +118,7 @@ namespace Vista_PrototipoMenu
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(212, 216);
+            this.label9.Location = new System.Drawing.Point(380, 219);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(115, 13);
             this.label9.TabIndex = 64;
@@ -141,7 +141,7 @@ namespace Vista_PrototipoMenu
             this.comboHabitacion.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.comboHabitacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboHabitacion.FormattingEnabled = true;
-            this.comboHabitacion.Location = new System.Drawing.Point(57, 230);
+            this.comboHabitacion.Location = new System.Drawing.Point(549, 232);
             this.comboHabitacion.Margin = new System.Windows.Forms.Padding(2);
             this.comboHabitacion.Name = "comboHabitacion";
             this.comboHabitacion.Size = new System.Drawing.Size(129, 21);
@@ -154,7 +154,7 @@ namespace Vista_PrototipoMenu
             this.comboTipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboTipo.ForeColor = System.Drawing.SystemColors.WindowText;
             this.comboTipo.FormattingEnabled = true;
-            this.comboTipo.Location = new System.Drawing.Point(215, 231);
+            this.comboTipo.Location = new System.Drawing.Point(383, 234);
             this.comboTipo.Margin = new System.Windows.Forms.Padding(2);
             this.comboTipo.Name = "comboTipo";
             this.comboTipo.Size = new System.Drawing.Size(143, 21);
@@ -175,7 +175,7 @@ namespace Vista_PrototipoMenu
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(381, 216);
+            this.label6.Location = new System.Drawing.Point(63, 216);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(51, 13);
             this.label6.TabIndex = 58;
@@ -185,7 +185,7 @@ namespace Vista_PrototipoMenu
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(54, 214);
+            this.label5.Location = new System.Drawing.Point(546, 216);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(115, 13);
             this.label5.TabIndex = 57;
@@ -260,7 +260,7 @@ namespace Vista_PrototipoMenu
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(58, 166);
+            this.label1.Location = new System.Drawing.Point(65, 166);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(18, 13);
             this.label1.TabIndex = 78;
@@ -268,7 +268,7 @@ namespace Vista_PrototipoMenu
             // 
             // txt_id
             // 
-            this.txt_id.Location = new System.Drawing.Point(58, 182);
+            this.txt_id.Location = new System.Drawing.Point(65, 182);
             this.txt_id.Name = "txt_id";
             this.txt_id.Size = new System.Drawing.Size(100, 20);
             this.txt_id.TabIndex = 77;
@@ -313,6 +313,7 @@ namespace Vista_PrototipoMenu
             this.Controls.Add(this.label2);
             this.Name = "frmReservaHabitacion";
             this.Text = "frmReservaHabitacion";
+            this.Load += new System.EventHandler(this.frmReservaHabitacion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.data_grid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
