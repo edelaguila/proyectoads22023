@@ -329,6 +329,7 @@ namespace CapaVistaBancos
             this.MinimumSize = new System.Drawing.Size(888, 659);
             this.Name = "Mantenimiento_OrdenesdeCompra";
             this.Text = "Mantenimiento Ordenes de Compra";
+            this.Load += new System.EventHandler(this.Mantenimiento_OrdenesdeCompra_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Man_ordenesCompra)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

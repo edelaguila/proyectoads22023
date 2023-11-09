@@ -39,6 +39,7 @@ namespace CapaVistaBancos
             this.navegador1 = new NavegadorVista.Navegador();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_id_banco = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_agBancos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -114,7 +115,7 @@ namespace CapaVistaBancos
             // txt_estadoban
             // 
             this.txt_estadoban.Enabled = false;
-            this.txt_estadoban.Location = new System.Drawing.Point(815, 301);
+            this.txt_estadoban.Location = new System.Drawing.Point(725, 301);
             this.txt_estadoban.Name = "txt_estadoban";
             this.txt_estadoban.ReadOnly = true;
             this.txt_estadoban.Size = new System.Drawing.Size(43, 22);
@@ -170,12 +171,26 @@ namespace CapaVistaBancos
             this.txt_id_banco.Tag = "pk_manag_id_ban";
             this.txt_id_banco.Text = "1";
             // 
+            // textBox1
+            // 
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(799, 301);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(43, 22);
+            this.textBox1.TabIndex = 99;
+            this.textBox1.Tag = "manag_status_conciliacion";
+            this.textBox1.Text = "0";
+            this.textBox1.Visible = false;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // Mantenimiento_Agregar_Bancos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(161)))), ((int)(((byte)(116)))));
             this.ClientSize = new System.Drawing.Size(1069, 659);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txt_id_banco);
             this.Controls.Add(this.navegador1);
@@ -209,5 +224,6 @@ namespace CapaVistaBancos
         private NavegadorVista.Navegador navegador1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txt_id_banco;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

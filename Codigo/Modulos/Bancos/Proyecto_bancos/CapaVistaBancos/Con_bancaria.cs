@@ -27,30 +27,17 @@ namespace CapaVistaBancos
             dgv_movimientos_conciliacion.DataSource = dt;
 
         }
-        public void limpiardatagridView()
-        {
-            DataTable dt = cn.llenarTbl(mov);
-            dt.Rows.Clear();
-            dgv_movimientos_conciliacion.Refresh();
-        }
-        private void Con_bancaria_Load(object sender, EventArgs e)
-        {
 
-        }
 
         private void btn_salir_dispo_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
 
         private void btn_asignar_Click(object sender, EventArgs e)
         {
-
+            //ASIGNACION DE VALOR EN LABEL.
             string strSaldoInicial = txt_saldoinicial.Text;
             int bandera = 0;
             if (strSaldoInicial.Equals("") || strSaldoInicial.Equals(" "))
@@ -65,7 +52,7 @@ namespace CapaVistaBancos
 
                     if (strSaldoInicial.Substring(i, 1).Equals("."))
                     {
-                        lbl_valbanco.Text = ("Q." + txt_saldoinicial.Text.ToString());
+                        lbl_valbanco.Text = (txt_saldoinicial.Text.ToString());
                         bandera = 1;
                         Habilitar();
                         CargardgvMovimientos();
@@ -75,11 +62,17 @@ namespace CapaVistaBancos
 
                 if (bandera != 1)
                 {
-                    lbl_valbanco.Text = ("Q." + txt_saldoinicial.Text.ToString() + ".00");
+                    lbl_valbanco.Text = (txt_saldoinicial.Text.ToString() + ".00");
                     Habilitar();
                     CargardgvMovimientos();
                 }
             }
+            decimal saldoTotal = cn.ObtenerSaldoTotal();
+            lbl_vallibro.Text = saldoTotal.ToString();
+            //CONFIGURACION DE DIFERENCIA.
+            DiferenciaLbl();
+
+
         }
 
         private void btn_cancelar_Click(object sender, EventArgs e)
@@ -91,11 +84,9 @@ namespace CapaVistaBancos
         {
             txt_transaccion.Enabled = true;
             txt_valor.Enabled = true;
-            cb_cuenta.Enabled = true;
-            txt_banco.Enabled = true;
-            cb_tipo_pago.Enabled = true;
-            rb_correcta.Enabled = true;
-            rb_incorrecta.Enabled = true;
+            txt_cuenta.Enabled = true;
+            txt_fecha.Enabled = true;
+            txt_tipo_pago.Enabled = true;
             dgv_conciliado.Enabled = true;
             dgv_movimientos_conciliacion.Enabled = true;
             btn_conciliar.Enabled = true;
@@ -112,11 +103,9 @@ namespace CapaVistaBancos
             //bloquea los componentes
             txt_transaccion.Enabled = false;
             txt_valor.Enabled = false;
-            cb_cuenta.Enabled = false;
-            txt_banco.Enabled = false;
-            cb_tipo_pago.Enabled = false;
-            rb_correcta.Enabled = false;
-            rb_incorrecta.Enabled = false;
+            txt_cuenta.Enabled = false;
+            txt_fecha.Enabled = false;
+            txt_tipo_pago.Enabled = false;
             dgv_conciliado.Enabled = false;
             dgv_movimientos_conciliacion.Enabled = false;
             btn_conciliar.Enabled = false;
@@ -127,13 +116,16 @@ namespace CapaVistaBancos
             //limpia los componentes
             txt_transaccion.Clear();
             txt_valor.Clear();
-            txt_banco.Clear();
-            cb_tipo_pago.SelectedIndex = -1;
-            cb_cuenta.SelectedIndex = -1;
-            dgv_conciliado.Rows.Clear();
+            txt_fecha.Clear();
+            txt_tipo_pago.Clear();
+            txt_cuenta.Clear();
+            dgv_movimientos_conciliacion.DataSource = null;
+            dgv_conciliado.DataSource = null;
 
             txt_saldoinicial.Clear();
             lbl_valbanco.Text = "0.00";
+            lbl_vallibro.Text = "0.00";
+            lbl_diferencia.Text = "0.00";
 
             //Limpiza y foco a saldo inicial
 
@@ -155,14 +147,47 @@ namespace CapaVistaBancos
             dgv_movimientos_conciliacion.Columns[6].HeaderText = "Fecha de ingreso";
         }
 
-        private void btn_conciliar_Click(object sender, EventArgs e)
+        public void DiferenciaLbl()
         {
-
+            double lblvbanco = Convert.ToDouble(lbl_valbanco.Text);
+            double lblvlibro = Convert.ToDouble(lbl_vallibro.Text);
+            lbl_diferencia.Text = (lblvbanco - lblvlibro).ToString();
         }
+
 
         private void btn_cancelar_Click_1(object sender, EventArgs e)
         {
             Deshabilitar();
+        }
+
+
+
+        private void dgv_movimientos_conciliacion_CellDoubleClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                int id = Convert.ToInt32(this.dgv_movimientos_conciliacion.SelectedRows[0].Cells[0].Value);
+                double dblvalor = Convert.ToDouble(this.dgv_movimientos_conciliacion.SelectedRows[0].Cells[1].Value);
+                int cuenta = Convert.ToInt32(this.dgv_movimientos_conciliacion.SelectedRows[0].Cells[4].Value);
+                string tipo = Convert.ToString(this.dgv_movimientos_conciliacion.SelectedRows[0].Cells[5].Value);
+                string fecha = Convert.ToString(this.dgv_movimientos_conciliacion.SelectedRows[0].Cells[7].Value);
+
+                txt_transaccion.Text = id.ToString();
+                txt_valor.Text = dblvalor.ToString();
+                txt_cuenta.Text = cuenta.ToString();
+                txt_tipo_pago.Text = tipo.ToString();
+                txt_fecha.Text = fecha.Substring(0, 9).ToString();
+            }
+            catch (Exception)
+            {
+
+                return;
+            }
+        }
+
+        private void btn_conciliar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Windows.Forms;
 
 namespace CapaVistaBancos
 {
+    ////Codigo escrito por Luis Franco
     public partial class Menu_inicial : Form
     {
         public Menu_inicial()
@@ -162,5 +163,9 @@ namespace CapaVistaBancos
             childForm.Show();
         }
 
+        private void pnl_childForm_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -9,6 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Seguridad_Controlador;
 using Vista_Seguridad;
+<<<<<<< HEAD
+=======
+//using Vista_PrototipoMenu;
+>>>>>>> 62b080ce388d820e5af1487483ce90748af95f9e
 
 //Comentado por George Mayén 25/02/2023
 namespace MenuHCV

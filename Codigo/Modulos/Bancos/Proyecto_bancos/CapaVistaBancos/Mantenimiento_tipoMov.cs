@@ -6,6 +6,7 @@ using CapaControladorBancos;
 
 namespace CapaVistaBancos
 {
+    //Codigo escrito por Andrea Corado
     public partial class Mantenimiento_tipoMov : Form
     {
         Controlador cn = new Controlador();
@@ -69,7 +70,7 @@ namespace CapaVistaBancos
             NavegadorVista.Navegador.idApp = "5008";  //código aplicación asignado al formulario
             navegador1.actual = this;
             navegador1.tabla = dgv_tipoMov;
-            TextBox[] Grupotextbox = { txt_idtras, txt_transexiten, txt_estado};
+            TextBox[] Grupotextbox = { txt_idtras, txt_transexiten, txt_estado, txt_valorTrans};
             TextBox[] Idtextbox = { txt_idtras, txt_transexiten };
             navegador1.textbox = Grupotextbox;
             navegador1.textboxi = Idtextbox;
@@ -93,6 +94,21 @@ namespace CapaVistaBancos
             {
                 string tipoMonedaSeleccionada = cb_transaccionex.SelectedItem.ToString();
                 txt_transexiten.Text = tipoMonedaSeleccionada; // Muestra la selección en el TextBox txt_tipo_mon
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cb_tipoMov.SelectedItem != null)
+            {
+                if (cb_tipoMov.SelectedItem.ToString().Equals( "Activo"))
+                {
+                    txt_valorTrans.Text = "1";
+                }
+                else
+                {
+                    txt_valorTrans.Text = "0";
+                }
             }
         }
     }

@@ -7,6 +7,7 @@ using System.Data.Odbc;
 
 namespace CapaModeloBancos
 {
+    //Codigo escrito por Luis Franco
     class ConexionBanco
     {
         private string connectionString;

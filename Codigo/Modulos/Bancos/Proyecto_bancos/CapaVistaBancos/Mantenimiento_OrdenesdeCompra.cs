@@ -4,6 +4,7 @@ using Seguridad_Controlador;
 
 namespace CapaVistaBancos
 {
+    //Codigo escrito por Andrea Corado
     public partial class Mantenimiento_OrdenesdeCompra : Form
     {
         Controlador cn = new Controlador();
@@ -37,6 +38,11 @@ namespace CapaVistaBancos
             navegador1.textbox = Grupotextbox;
             navegador1.textboxi = Idtextbox;
             navegador1.cargar(dgv_Man_ordenesCompra, Grupotextbox, cn.getNombreBd());
+        }
+
+        private void Mantenimiento_OrdenesdeCompra_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

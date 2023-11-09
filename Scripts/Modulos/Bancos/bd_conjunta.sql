@@ -208,7 +208,8 @@ VIEW BD_Hoteleria_Pruebas1.vista_perfil_usuario AS
 -- -----MODULOS
 
 INSERT INTO `tbl_modulos` VALUES
-('1000', 'SEGURIDAD', 'Seguridad', 1)
+('1000', 'SEGURIDAD', 'Seguridad', 1),
+('5000', 'SEGURIDAD', 'Seguridad', 1)
 ;
 
 -- -----APLICACIONES
@@ -224,7 +225,17 @@ INSERT INTO `tbl_aplicaciones` VALUES
 ('1102', 'Asign. Aplicacion Perfil', 'PARA SEGURIDAD', '1'),
 ('1103', 'Asign. Perfil Usuario', 'PARA SEGURIDAD', '1'),
 ('1201', 'Pcs. Cambio Contraseña', 'PARA SEGURIDAD', '1'),
-('1301', 'Pcs. BITACORA', 'PARA SEGURIDAD', '1')
+('1301', 'Pcs. BITACORA', 'PARA SEGURIDAD', '1'),
+('5000', 'MDI BANCOS', 'PARA BANCOS', '1'),
+('5001', 'Movimientos Bancarios', 'PARA BANCOS', '1'),
+('5002', 'Conciliacion Bancaria', 'PARA BANCOS', '1'),
+('5003', 'Tipo de cambio', 'PARA BANCOS', '1'),
+('5004', 'Disponibilidad diaria', 'PARA BANCOS', '1'),
+('5005', 'Autorizacion de ordenes de compras', 'PARA BANCOS', '1'),
+('5006', 'Mant. Ag.Bancos', 'PARA BANCOS', '1'),
+('5007', 'Mant. Ag.Cuentas', 'PARA BANCOS', '1'),
+('5008', 'Mant. Ag.Movimiento', 'PARA BANCOS', '1'),
+('5009', 'Mant. Ordenes de compra', 'PARA BANCOS', '1')
 ;
 
 -- -----USUARIOS
@@ -248,7 +259,17 @@ INSERT INTO `tbl_asignacionmoduloaplicacion` VALUES
 ('1000', '1102'),
 ('1000', '1103'),
 ('1000', '1201'),
-('1000', '1301')
+('1000', '1301'),
+('5000', '5000'),
+('5000', '5001'),
+('5000', '5002'),
+('5000', '5003'),
+('5000', '5004'),
+('5000', '5005'),
+('5000', '5006'),
+('5000', '5007'),
+('5000', '5008'),
+('5000', '5009')
 ;
 
 -- -----PERMISOS DE APLICACIONES A PERFILES
@@ -262,7 +283,17 @@ INSERT INTO `tbl_permisosAplicacionPerfil` VALUES
 ('1', '1102', '1', '1', '1', '1', '1'),
 ('1', '1103', '1', '1', '1', '1', '1'),
 ('1', '1201', '1', '1', '1', '1', '1'),
-('1', '1301', '1', '1', '1', '1', '1')
+('1', '1301', '1', '1', '1', '1', '1'),
+('1', '5000', '1', '1', '1', '1', '1'),
+('1', '5001', '1', '1', '1', '1', '1'),
+('1', '5002', '1', '1', '1', '1', '1'),
+('1', '5003', '1', '1', '1', '1', '1'),
+('1', '5004', '1', '1', '1', '1', '1'),
+('1', '5005', '1', '1', '1', '1', '1'),
+('1', '5006', '1', '1', '1', '1', '1'),
+('1', '5007', '1', '1', '1', '1', '1'),
+('1', '5008', '1', '1', '1', '1', '1'),
+('1', '5009', '1', '1', '1', '1', '1')
 ;
 
 -- -----ASIGNACIÓN DE PERFIL A USUARIO
@@ -310,7 +341,8 @@ foreign key (fk_manac_tipo_de_moneda) references tbl_monedaBanco(mon_nomMoneda)
 create table tbl_mantenimientos_tipo_movimiento(
 pk_movtm_id_transaccion int auto_increment primary key,
 movtm_transacciones_existentes varchar(100) unique,
-movtm_status int
+movtm_status int,
+movtm_valor_transaccion int NOT NULL
 );
 
 -- CREAR OTRA TABLA PARA LOS TIPOS DE MOVIMIENTOS EXISTENTES QUE SOLO LOS ALMACENE
@@ -318,12 +350,14 @@ movtm_status int
 
 CREATE TABLE tbl_movimientosBancarios(
 pk_movban_id_transaccion int auto_increment primary key,
-movban_valor_transaccion float,
+movban_valor_transaccion float NOT NULL,
 movban_descripcion_transaccion varchar(100),
 fk_movban_num_cuenta int,
 fk_movban_tipo_transaccion varchar(50),
+fk_movban_valorTrans int NOT NULL,
 movban_status int,
 movban_fecha_de_ingreso datetime,
+manag_status_conciliacion int NOT NULL,
 foreign key(fk_movban_num_cuenta) references tbl_mantenimientos_agregar_cuenta(manac_numero_de_cuenta),
 foreign key(fk_movban_tipo_transaccion) references tbl_mantenimientos_tipo_movimiento(movtm_transacciones_existentes)
 );
@@ -338,13 +372,16 @@ create table tbl_conciliacion_bancaria(
 
     conb_mes_conciliacion varchar(100),
 
-    fk_conb_mov_libro float,
+    fk_conb_mov_libro float NOT NULL,
+    
+    fk_conb_estatusConc int NOT NULL, 
 
     conb_mov_conciliacion float,
 
     conb_saldo_final float,
     
     conb_status int
+    
 );
 
 
@@ -435,9 +472,9 @@ insert into tbl_mantenimientos_agregar_bancos (pk_manag_id_ban, manag_id_bancoag
  (1, 111, 'Banco industrial', 1),
  (2, 222, 'Banrural', 1);
  
-insert into tbl_mantenimientos_tipo_movimiento(pk_movtm_id_transaccion, movtm_transacciones_existentes,  movtm_status) values 
-(1, 'Debito',  1),
-(2, 'Credito', 1);
+insert into tbl_mantenimientos_tipo_movimiento(pk_movtm_id_transaccion, movtm_transacciones_existentes,  movtm_status, movtm_valor_transaccion) values 
+(1, 'Debito',  1, 0),
+(2, 'Credito', 1, 1);
 
 
 insert into tbl_mantenimientos_agregar_cuenta (pk_manac_id_cuenta, manac_numero_de_cuenta, fk_manac_tipo_de_moneda, manac_tipo_de_cuenta, fk_manac_selec_banco, manac_alias, manac_status) values 
