@@ -32,7 +32,6 @@ namespace Vista_PrototipoMenu
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuNominas));
             this.panelLogo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.btninicio = new System.Windows.Forms.Button();
             this.btnmanteniminetos = new System.Windows.Forms.Button();
             this.panelTranportes = new System.Windows.Forms.Panel();
@@ -41,9 +40,7 @@ namespace Vista_PrototipoMenu
             this.btn_mantenimiento_empleados = new System.Windows.Forms.Button();
             this.btnProcesos = new System.Windows.Forms.Button();
             this.PanelAuditoria = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btn_percepciones = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btn_deducciones = new System.Windows.Forms.Button();
             this.btn_nominas = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
@@ -52,18 +49,23 @@ namespace Vista_PrototipoMenu
             this.panelayuda = new System.Windows.Forms.Panel();
             this.btnayuda = new System.Windows.Forms.Button();
             this.panelSideMenu = new System.Windows.Forms.Panel();
+            this.btnsalir = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btnsalir = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.btn_mant_deducciones = new System.Windows.Forms.Button();
+            this.btn_mant_perc = new System.Windows.Forms.Button();
             this.panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panelTranportes.SuspendLayout();
             this.PanelAuditoria.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelSideMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // panelLogo
@@ -87,15 +89,6 @@ namespace Vista_PrototipoMenu
             this.label1.Size = new System.Drawing.Size(212, 49);
             this.label1.TabIndex = 48;
             this.label1.Text = "NOMINAS";
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(91, 98);
-            this.pictureBox6.TabIndex = 50;
-            this.pictureBox6.TabStop = false;
             // 
             // btninicio
             // 
@@ -140,6 +133,8 @@ namespace Vista_PrototipoMenu
             // panelTranportes
             // 
             this.panelTranportes.BackColor = System.Drawing.Color.LightSlateGray;
+            this.panelTranportes.Controls.Add(this.btn_mant_perc);
+            this.panelTranportes.Controls.Add(this.btn_mant_deducciones);
             this.panelTranportes.Controls.Add(this.btn_Deducciones_Percepciones);
             this.panelTranportes.Controls.Add(this.btn_mantenimiento_departamentos);
             this.panelTranportes.Controls.Add(this.btn_mantenimiento_empleados);
@@ -147,7 +142,7 @@ namespace Vista_PrototipoMenu
             this.panelTranportes.Location = new System.Drawing.Point(0, 283);
             this.panelTranportes.Margin = new System.Windows.Forms.Padding(4);
             this.panelTranportes.Name = "panelTranportes";
-            this.panelTranportes.Size = new System.Drawing.Size(555, 255);
+            this.panelTranportes.Size = new System.Drawing.Size(555, 293);
             this.panelTranportes.TabIndex = 3;
             this.panelTranportes.Visible = false;
             // 
@@ -211,7 +206,7 @@ namespace Vista_PrototipoMenu
             this.btnProcesos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProcesos.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProcesos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnProcesos.Location = new System.Drawing.Point(0, 538);
+            this.btnProcesos.Location = new System.Drawing.Point(0, 576);
             this.btnProcesos.Margin = new System.Windows.Forms.Padding(4);
             this.btnProcesos.Name = "btnProcesos";
             this.btnProcesos.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
@@ -231,21 +226,12 @@ namespace Vista_PrototipoMenu
             this.PanelAuditoria.Controls.Add(this.btn_deducciones);
             this.PanelAuditoria.Controls.Add(this.btn_nominas);
             this.PanelAuditoria.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelAuditoria.Location = new System.Drawing.Point(0, 613);
+            this.PanelAuditoria.Location = new System.Drawing.Point(0, 651);
             this.PanelAuditoria.Margin = new System.Windows.Forms.Padding(4);
             this.PanelAuditoria.Name = "PanelAuditoria";
             this.PanelAuditoria.Size = new System.Drawing.Size(555, 277);
             this.PanelAuditoria.TabIndex = 5;
             this.PanelAuditoria.Visible = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(0, 144);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(50, 51);
-            this.pictureBox3.TabIndex = 52;
-            this.pictureBox3.TabStop = false;
             // 
             // btn_percepciones
             // 
@@ -263,15 +249,6 @@ namespace Vista_PrototipoMenu
             this.btn_percepciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_percepciones.UseVisualStyleBackColor = true;
             this.btn_percepciones.Click += new System.EventHandler(this.btn_percepciones_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(3, 75);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(50, 51);
-            this.pictureBox2.TabIndex = 51;
-            this.pictureBox2.TabStop = false;
             // 
             // btn_deducciones
             // 
@@ -316,7 +293,7 @@ namespace Vista_PrototipoMenu
             this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReportes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnReportes.Location = new System.Drawing.Point(0, 890);
+            this.btnReportes.Location = new System.Drawing.Point(0, 928);
             this.btnReportes.Margin = new System.Windows.Forms.Padding(4);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
@@ -331,7 +308,7 @@ namespace Vista_PrototipoMenu
             // 
             this.panelseguridad.BackColor = System.Drawing.Color.LightSlateGray;
             this.panelseguridad.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelseguridad.Location = new System.Drawing.Point(0, 965);
+            this.panelseguridad.Location = new System.Drawing.Point(0, 1003);
             this.panelseguridad.Margin = new System.Windows.Forms.Padding(4);
             this.panelseguridad.Name = "panelseguridad";
             this.panelseguridad.Size = new System.Drawing.Size(555, 86);
@@ -347,7 +324,7 @@ namespace Vista_PrototipoMenu
             this.btnSeguridad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeguridad.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSeguridad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnSeguridad.Location = new System.Drawing.Point(0, 1051);
+            this.btnSeguridad.Location = new System.Drawing.Point(0, 1089);
             this.btnSeguridad.Margin = new System.Windows.Forms.Padding(4);
             this.btnSeguridad.Name = "btnSeguridad";
             this.btnSeguridad.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
@@ -362,7 +339,7 @@ namespace Vista_PrototipoMenu
             // 
             this.panelayuda.BackColor = System.Drawing.Color.LightSlateGray;
             this.panelayuda.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelayuda.Location = new System.Drawing.Point(0, 1126);
+            this.panelayuda.Location = new System.Drawing.Point(0, 1164);
             this.panelayuda.Margin = new System.Windows.Forms.Padding(4);
             this.panelayuda.Name = "panelayuda";
             this.panelayuda.Size = new System.Drawing.Size(555, 79);
@@ -378,7 +355,7 @@ namespace Vista_PrototipoMenu
             this.btnayuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnayuda.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnayuda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnayuda.Location = new System.Drawing.Point(0, 1205);
+            this.btnayuda.Location = new System.Drawing.Point(0, 1243);
             this.btnayuda.Margin = new System.Windows.Forms.Padding(4);
             this.btnayuda.Name = "btnayuda";
             this.btnayuda.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
@@ -415,6 +392,26 @@ namespace Vista_PrototipoMenu
             this.panelSideMenu.Size = new System.Drawing.Size(576, 872);
             this.panelSideMenu.TabIndex = 46;
             // 
+            // btnsalir
+            // 
+            this.btnsalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(161)))), ((int)(((byte)(116)))));
+            this.btnsalir.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnsalir.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnsalir.FlatAppearance.BorderSize = 0;
+            this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsalir.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsalir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
+            this.btnsalir.Location = new System.Drawing.Point(0, 1318);
+            this.btnsalir.Margin = new System.Windows.Forms.Padding(4);
+            this.btnsalir.Name = "btnsalir";
+            this.btnsalir.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btnsalir.Size = new System.Drawing.Size(555, 75);
+            this.btnsalir.TabIndex = 13;
+            this.btnsalir.Text = "SALIR";
+            this.btnsalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsalir.UseVisualStyleBackColor = false;
+            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
+            // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
@@ -434,25 +431,66 @@ namespace Vista_PrototipoMenu
             this.pictureBox4.TabIndex = 53;
             this.pictureBox4.TabStop = false;
             // 
-            // btnsalir
+            // pictureBox3
             // 
-            this.btnsalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(161)))), ((int)(((byte)(116)))));
-            this.btnsalir.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnsalir.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnsalir.FlatAppearance.BorderSize = 0;
-            this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnsalir.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsalir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnsalir.Location = new System.Drawing.Point(0, 1280);
-            this.btnsalir.Margin = new System.Windows.Forms.Padding(4);
-            this.btnsalir.Name = "btnsalir";
-            this.btnsalir.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
-            this.btnsalir.Size = new System.Drawing.Size(555, 75);
-            this.btnsalir.TabIndex = 13;
-            this.btnsalir.Text = "SALIR";
-            this.btnsalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnsalir.UseVisualStyleBackColor = false;
-            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(0, 144);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(50, 51);
+            this.pictureBox3.TabIndex = 52;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(3, 75);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(50, 51);
+            this.pictureBox2.TabIndex = 51;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(91, 98);
+            this.pictureBox6.TabIndex = 50;
+            this.pictureBox6.TabStop = false;
+            // 
+            // btn_mant_deducciones
+            // 
+            this.btn_mant_deducciones.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_mant_deducciones.FlatAppearance.BorderSize = 0;
+            this.btn_mant_deducciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_mant_deducciones.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_mant_deducciones.Location = new System.Drawing.Point(0, 167);
+            this.btn_mant_deducciones.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_mant_deducciones.Name = "btn_mant_deducciones";
+            this.btn_mant_deducciones.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btn_mant_deducciones.Size = new System.Drawing.Size(555, 58);
+            this.btn_mant_deducciones.TabIndex = 6;
+            this.btn_mant_deducciones.Text = "Deducciones";
+            this.btn_mant_deducciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_mant_deducciones.UseVisualStyleBackColor = true;
+            this.btn_mant_deducciones.Click += new System.EventHandler(this.btn_mant_deducciones_Click);
+            // 
+            // btn_mant_perc
+            // 
+            this.btn_mant_perc.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_mant_perc.FlatAppearance.BorderSize = 0;
+            this.btn_mant_perc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_mant_perc.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_mant_perc.Location = new System.Drawing.Point(0, 225);
+            this.btn_mant_perc.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_mant_perc.Name = "btn_mant_perc";
+            this.btn_mant_perc.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btn_mant_perc.Size = new System.Drawing.Size(555, 58);
+            this.btn_mant_perc.TabIndex = 7;
+            this.btn_mant_perc.Text = "Percepciones";
+            this.btn_mant_perc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_mant_perc.UseVisualStyleBackColor = true;
+            this.btn_mant_perc.Click += new System.EventHandler(this.btn_mant_perc_Click);
             // 
             // MenuNominas
             // 
@@ -468,14 +506,14 @@ namespace Vista_PrototipoMenu
             this.Text = "Menu de Nominas";
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panelTranportes.ResumeLayout(false);
             this.PanelAuditoria.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelSideMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -507,5 +545,7 @@ namespace Vista_PrototipoMenu
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button btn_mant_deducciones;
+        private System.Windows.Forms.Button btn_mant_perc;
     }
 }

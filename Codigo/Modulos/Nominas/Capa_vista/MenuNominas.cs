@@ -140,5 +140,21 @@ namespace Vista_PrototipoMenu
             hideSubMenu();
 
         }
+
+        private void btn_mant_deducciones_Click(object sender, EventArgs e)
+        {
+            Vista_PrototipoMenu.frm_mantenimientoDeduccion dedMant = new Vista_PrototipoMenu.frm_mantenimientoDeduccion();
+            dedMant.MdiParent = this;
+            dedMant.Show();
+            hideSubMenu();
+        }
+
+        private void btn_mant_perc_Click(object sender, EventArgs e)
+        {
+            Vista_PrototipoMenu.frm_mantenimientoPercepcion percMant = new Vista_PrototipoMenu.frm_mantenimientoPercepcion();
+            percMant.MdiParent = this;
+            percMant.Show();
+            hideSubMenu();
+        }
     }
 }

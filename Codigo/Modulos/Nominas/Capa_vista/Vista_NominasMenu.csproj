@@ -73,6 +73,18 @@
     <Compile Include="frm_deduccion.designer.cs">
       <DependentUpon>frm_deduccion.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_mantenimientoDeduccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_mantenimientoDeduccion.Designer.cs">
+      <DependentUpon>frm_mantenimientoDeduccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_mantenimientoPercepcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_mantenimientoPercepcion.Designer.cs">
+      <DependentUpon>frm_mantenimientoPercepcion.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_mantenimiento_deducciones_percepciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +131,12 @@
   <ItemGroup>
     <EmbeddedResource Include="frm_deduccion.resx">
       <DependentUpon>frm_deduccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_mantenimientoDeduccion.resx">
+      <DependentUpon>frm_mantenimientoDeduccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_mantenimientoPercepcion.resx">
+      <DependentUpon>frm_mantenimientoPercepcion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_mantenimiento_deducciones_percepciones.resx">
       <DependentUpon>frm_mantenimiento_deducciones_percepciones.cs</DependentUpon>
