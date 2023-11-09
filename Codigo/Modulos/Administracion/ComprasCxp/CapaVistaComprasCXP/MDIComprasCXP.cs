@@ -111,8 +111,8 @@ namespace CapaVistaComprasCXP
 
         private void btnconcepto_Click(object sender, EventArgs e)
         {
-            //Abrir(new "carpeta"."form"());
-            //hideSubMenu();
+            Abrir(new Mantenimientos.Concepto());
+            hideSubMenu();
         }
 
         private void btnmovimientoproveedor_Click(object sender, EventArgs e)
@@ -130,6 +130,12 @@ namespace CapaVistaComprasCXP
         private void btncompra_Click(object sender, EventArgs e)
         {
             Abrir(new Procedimientos.Compras(idord, fechaS, fechaE, solicitante, proveedor));
+            hideSubMenu();
+        }
+
+        private void btnproveedor_Click(object sender, EventArgs e)
+        {
+            Abrir(new Mantenimientos.Proveedores());
             hideSubMenu();
         }
     }
