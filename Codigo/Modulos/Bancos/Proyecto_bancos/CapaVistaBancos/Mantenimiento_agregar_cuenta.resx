@@ -123,23 +123,14 @@
   <metadata name="dataSet4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="dataSet4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <metadata name="tblmantenimientosagregarbancosBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>791, 17</value>
   </metadata>
   <metadata name="dataSet5.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>675, 17</value>
   </metadata>
-  <metadata name="dataSet5.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>675, 17</value>
-  </metadata>
   <metadata name="tblmantenimientosagregarcuentaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>530, 60</value>
-  </metadata>
-  <metadata name="dataSet6.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>414, 60</value>
   </metadata>
   <metadata name="dataSet6.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>414, 60</value>
@@ -153,4 +144,18 @@
   <metadata name="tbl_mantenimientos_agregar_cuentaTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>912, 60</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btn_Ayuda.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        xAAADsQBlSsOGwAAAaZJREFUSEul1j0vBUEUxvGrERKFzkdAoZQgPodIKLRoNCJRSbTiIwhaiVajUupI
+        RE0jUdBovATPf7KzGbvP3dlrT/LL5M6ZPffuzsveXiZGZElO5E7e5Lto+Uw/+VEZOIZlW57lpwXGMZ7r
+        WsW03IorlnMjk9IYC/IqrkBbLzInNriDrl8Q8UW1O+JZ5h7RpSwLv5KWz25cxKP7M0dMmhsY7YsL+t34
+        iLohWKZNq+hahgobci7rQtBH3l0H6lI/rHM3INoSYlXS/hUhyKf9VdQPG8olozUhjiTtPxSC+Un7q6gf
+        dq5LRk9yKu9J36csCrEn6fgq6ocjwiX7eZS4D8aEz25cRP1wFrmk8yEzQozLhbhxKeoPdCdnQkzIg7gx
+        VeFOcnOS2hViU1zeCXOSW12pHSFoXd4Jqyu3T1L3wpKmdXkn7JPcju+i3PFE7uyKvoRjhNblq8qzi2hz
+        CuNACFqXT1Gv9qacktz75Epmi9blI+pQz8a8dH1xcT11GoNf8N93PNf1vYNq8CyZtLarjnGMr81Bm4j/
+        u46FncsR4f53lcu0Hr3eL7XqvmrLVR9pAAAAAElFTkSuQmCC
+</value>
+  </data>
 </root>

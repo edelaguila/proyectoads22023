@@ -30,6 +30,7 @@ namespace CapaVistaBancos
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mantenimiento_agregar_cuenta));
             this.tblmonedabancoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet4 = new CapaVistaBancos.DataSet4();
             this.tblmantenimientosagregarbancosBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -58,6 +59,7 @@ namespace CapaVistaBancos
             this.cb_tipoMoneda = new System.Windows.Forms.ComboBox();
             this.cb_Banco = new System.Windows.Forms.ComboBox();
             this.cb_tipocuenta = new System.Windows.Forms.ComboBox();
+            this.btn_Ayuda = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tblmonedabancoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblmantenimientosagregarbancosBindingSource)).BeginInit();
@@ -315,12 +317,27 @@ namespace CapaVistaBancos
             this.cb_tipocuenta.TabIndex = 114;
             this.cb_tipocuenta.SelectedIndexChanged += new System.EventHandler(this.cb_tipocuenta_SelectedIndexChanged);
             // 
+            // btn_Ayuda
+            // 
+            this.btn_Ayuda.FlatAppearance.BorderSize = 0;
+            this.btn_Ayuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Ayuda.Image = ((System.Drawing.Image)(resources.GetObject("btn_Ayuda.Image")));
+            this.btn_Ayuda.Location = new System.Drawing.Point(791, 119);
+            this.btn_Ayuda.Name = "btn_Ayuda";
+            this.btn_Ayuda.Size = new System.Drawing.Size(93, 85);
+            this.btn_Ayuda.TabIndex = 115;
+            this.btn_Ayuda.Text = "Ayuda";
+            this.btn_Ayuda.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_Ayuda.UseVisualStyleBackColor = false;
+            this.btn_Ayuda.Click += new System.EventHandler(this.btn_Ayuda_Click);
+            // 
             // Mantenimiento_agregar_cuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(161)))), ((int)(((byte)(116)))));
             this.ClientSize = new System.Drawing.Size(1069, 803);
+            this.Controls.Add(this.btn_Ayuda);
             this.Controls.Add(this.cb_tipocuenta);
             this.Controls.Add(this.cb_Banco);
             this.Controls.Add(this.cb_tipoMoneda);
@@ -387,5 +404,6 @@ namespace CapaVistaBancos
         private System.Windows.Forms.ComboBox cb_tipoMoneda;
         private System.Windows.Forms.ComboBox cb_Banco;
         private System.Windows.Forms.ComboBox cb_tipocuenta;
+        private System.Windows.Forms.Button btn_Ayuda;
     }
 }

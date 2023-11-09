@@ -29,6 +29,7 @@ namespace CapaVistaBancos
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mantenimiento_OrdenesdeCompra));
             this.btn_salir_dispo = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,6 +50,7 @@ namespace CapaVistaBancos
             this.navegador1 = new NavegadorVista.Navegador();
             this.txt_id_ordenCom = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.btn_Ayuda = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Man_ordenesCompra)).BeginInit();
             this.SuspendLayout();
             // 
@@ -298,12 +300,27 @@ namespace CapaVistaBancos
             this.label8.TabIndex = 107;
             this.label8.Text = "Id Orden de compra:";
             // 
+            // btn_Ayuda
+            // 
+            this.btn_Ayuda.FlatAppearance.BorderSize = 0;
+            this.btn_Ayuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Ayuda.Image = ((System.Drawing.Image)(resources.GetObject("btn_Ayuda.Image")));
+            this.btn_Ayuda.Location = new System.Drawing.Point(784, 141);
+            this.btn_Ayuda.Name = "btn_Ayuda";
+            this.btn_Ayuda.Size = new System.Drawing.Size(93, 85);
+            this.btn_Ayuda.TabIndex = 108;
+            this.btn_Ayuda.Text = "Ayuda";
+            this.btn_Ayuda.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_Ayuda.UseVisualStyleBackColor = false;
+            this.btn_Ayuda.Click += new System.EventHandler(this.btn_Ayuda_Click);
+            // 
             // Mantenimiento_OrdenesdeCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(161)))), ((int)(((byte)(116)))));
             this.ClientSize = new System.Drawing.Size(1069, 803);
+            this.Controls.Add(this.btn_Ayuda);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txt_id_ordenCom);
             this.Controls.Add(this.navegador1);
@@ -357,5 +374,6 @@ namespace CapaVistaBancos
         private NavegadorVista.Navegador navegador1;
         private System.Windows.Forms.TextBox txt_id_ordenCom;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btn_Ayuda;
     }
 }
