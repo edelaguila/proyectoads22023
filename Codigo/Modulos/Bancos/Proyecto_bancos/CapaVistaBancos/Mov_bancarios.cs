@@ -9,12 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using CapaControladorBancos;
+using Seguridad_Controlador;
 
 namespace CapaVistaBancos
 { //Codigo Escrito por Luis Franco
     public partial class Mov_bancarios : Form
     {
         ControladorBanco cn = new ControladorBanco();
+        Controlador con = new Controlador();
         string mov = "tbl_movimientosbancarios";
 
         public Mov_bancarios()
@@ -90,14 +92,40 @@ namespace CapaVistaBancos
 
         private void btn_rtrans_Click(object sender, EventArgs e)
         {
+            con.setBtitacora("5001", "Realizando transaccion");
             string estado = "1";
+            decimal saldoTotal = cn.ObtenerSaldoTotal();
+
             DialogResult result = MessageBox.Show("¿Desea realizar la transacción?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes)
             {
-                // Actualiza y muestra el saldo total después de cada transacción
+                // LUIS ALBERTO FRANCO MORAN 0901-20-23979
+       
 
+                // Convierte el valor de la transacción desde la base de datos
+                decimal valorTransaccion = cn.ObtenerValorTransaccion(txt_ttransaccion.Text);
 
+                // Convierte el valor del TextBox a decimal
+                if (decimal.TryParse(txt_valorTransferencia.Text, out decimal valorTransferencia))
+                {
+                    // Suma o resta según el tipo de transacción
+                    if (valorTransaccion == 1)
+                    {
+                        saldoTotal += valorTransferencia;
+                    }
+                    else if (valorTransaccion == 0)
+                    {
+                        saldoTotal -= valorTransferencia;
+                    }
+
+                    // Actualiza el Label
+                    label6.Text = "Saldo total: " + saldoTotal.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("El valor de la transferencia no es válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
 
 
                 // Llamar al Controlador para insertar el movimiento en la base de datos
@@ -117,7 +145,7 @@ namespace CapaVistaBancos
 
                 // Mostrar un mensaje de éxito
                 MessageBox.Show("Movimiento realizado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                decimal saldoTotal = cn.ObtenerSaldoTotal();
+
                 label6.Text = "Q. " + saldoTotal.ToString();
             }
             else
@@ -133,7 +161,6 @@ namespace CapaVistaBancos
 
                 // Mostrar un mensaje informativo
                 MessageBox.Show("No se realizó la transacción.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                decimal saldoTotal = cn.ObtenerSaldoTotal();
                 label6.Text = "Q. " + saldoTotal.ToString();
             }
         }
@@ -149,6 +176,7 @@ namespace CapaVistaBancos
 
         private void btn_cancelarTransaccion_Click(object sender, EventArgs e)
         {
+            con.setBtitacora("5001", "Cancelacion de transaccion");
             DialogResult result = MessageBox.Show("¿Desea guardar el archivo?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question); 
 
             if (result == DialogResult.Yes)
