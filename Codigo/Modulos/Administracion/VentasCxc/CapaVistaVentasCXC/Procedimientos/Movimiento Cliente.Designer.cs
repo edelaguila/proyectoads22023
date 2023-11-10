@@ -74,7 +74,7 @@ namespace CapaVistaVentasCXC.Procedimientos
             // txt_eliminacion
             // 
             this.txt_eliminacion.Enabled = false;
-            this.txt_eliminacion.Location = new System.Drawing.Point(1046, 614);
+            this.txt_eliminacion.Location = new System.Drawing.Point(1111, 676);
             this.txt_eliminacion.Margin = new System.Windows.Forms.Padding(4);
             this.txt_eliminacion.Name = "txt_eliminacion";
             this.txt_eliminacion.Size = new System.Drawing.Size(35, 22);
@@ -441,7 +441,7 @@ namespace CapaVistaVentasCXC.Procedimientos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1156, 711);
+            this.ClientSize = new System.Drawing.Size(1159, 711);
             this.Controls.Add(this.lbl_saldoTotal);
             this.Controls.Add(this.dtTabla);
             this.Controls.Add(this.label9);

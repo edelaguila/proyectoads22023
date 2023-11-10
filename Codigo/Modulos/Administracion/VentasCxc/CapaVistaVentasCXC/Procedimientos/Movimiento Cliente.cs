@@ -26,7 +26,7 @@ namespace CapaVistaVentasCXC.Procedimientos
 
         public void actualizardatagrid()
         {
-            string tabla = "tbl_encabezadoMovimientoCliente";
+            string tabla = "tbl_encabezadomovimientocliente";
             DataTable dt = cn.llenarTbl(tabla);
             dtTabla.DataSource = dt;
         }
@@ -95,7 +95,7 @@ namespace CapaVistaVentasCXC.Procedimientos
 
         public void insertEncabezado()
         {
-            string tabla = "tbl_encabezadoMovimientoCliente";
+            string tabla = "tbl_encabezadomovimientocliente";
             Dictionary<string, object> valores = new Dictionary<string, object>();
            
             valores.Add("codigoCliente", int.Parse(cb_busquedaCliente.SelectedItem.ToString()));
@@ -111,7 +111,7 @@ namespace CapaVistaVentasCXC.Procedimientos
 
         public void insertDetalle()
         {
-            string tabla = "tbl_detalleMovimientoCliente";
+            string tabla = "tbl_detallemovimientocliente";
             Dictionary<string, object> valores = new Dictionary<string, object>();
 
             valores.Add("CodigoEncabezadoCliente", IDE);
@@ -127,7 +127,7 @@ namespace CapaVistaVentasCXC.Procedimientos
 
         public void BuscarUltimoIDEncabezado()
         {
-            string tabla = "tbl_encabezadoMovimientoCliente";
+            string tabla = "tbl_encabezadomovimientocliente";
             string columna = "id_EncabezadoCliente";
             DataTable dt = cn.BuscarE(tabla, columna);
 
@@ -164,7 +164,7 @@ namespace CapaVistaVentasCXC.Procedimientos
 
 
             // Llama a la función de eliminación pasando los parámetros necesarios
-            string tabla = "tbl_encabezadoMovimientoCliente"; // Nombre de la tabla
+            string tabla = "tbl_encabezadomovimientocliente"; // Nombre de la tabla
             string columna = "id_EncabezadoCliente"; // Nombre de la columna
             EliminarDato(tabla, columna, valor);
 
@@ -177,7 +177,7 @@ namespace CapaVistaVentasCXC.Procedimientos
 
 
             // Llama a la función de eliminación pasando los parámetros necesarios
-            string tabla = "tbl_detalleMovimientoCliente"; // Nombre de la tabla
+            string tabla = "tbl_detallemovimientocliente"; // Nombre de la tabla
             string columna = "id_DetalleCliente"; // Nombre de la columna
             EliminarDato(tabla, columna, valor);
 
