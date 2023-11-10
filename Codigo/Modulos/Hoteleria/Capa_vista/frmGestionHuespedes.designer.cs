@@ -85,6 +85,7 @@ namespace Vista_PrototipoMenu
             this.txt_id.Size = new System.Drawing.Size(100, 20);
             this.txt_id.TabIndex = 10;
             this.txt_id.Tag = "cli_id";
+            
             // 
             // dataGridView1
             // 
@@ -101,6 +102,7 @@ namespace Vista_PrototipoMenu
             this._navegador.Name = "_navegador";
             this._navegador.Size = new System.Drawing.Size(571, 152);
             this._navegador.TabIndex = 15;
+          
             // 
             // txt_nit
             // 

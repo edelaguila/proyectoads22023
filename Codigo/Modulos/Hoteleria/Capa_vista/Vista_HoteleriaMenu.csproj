@@ -74,13 +74,13 @@
     <Compile Include="frmGestionHabitacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGestionHabitacion.Designer.cs">
+    <Compile Include="frmGestionHabitacion.designer.cs">
       <DependentUpon>frmGestionHabitacion.cs</DependentUpon>
     </Compile>
     <Compile Include="frmGestionHuespedes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGestionHuespedes.Designer.cs">
+    <Compile Include="frmGestionHuespedes.designer.cs">
       <DependentUpon>frmGestionHuespedes.cs</DependentUpon>
     </Compile>
     <Compile Include="frmGestionSalon.cs">
