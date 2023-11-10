@@ -20,7 +20,7 @@ namespace Vista_PrototipoMenu
         {
             this.cn = new Seguridad_Controlador.Controlador();
             InitializeComponent();
-            NavegadorVista.Navegador.idApp = "1003";
+            NavegadorVista.Navegador.idApp = "7005";
             _navegador.actual = this;
             _navegador.tabla = dataGridView1;
             TextBox[] Grupotextbox = { txt_id, txt_numero, txt_tipo, txt_estado };

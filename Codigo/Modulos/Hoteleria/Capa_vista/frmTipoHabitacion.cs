@@ -23,7 +23,7 @@ namespace Vista_PrototipoMenu
 
         private void _navegador_Load(object sender, EventArgs e)
         {
-            NavegadorVista.Navegador.idApp = "1003";
+            NavegadorVista.Navegador.idApp = "7001";
             _navegador.actual = this;
             _navegador.tabla = dataGridView1;
             TextBox[] Grupotextbox = { txt_id, txt_nombre, txt_descripcion, txt_precio, txt_capacidad };

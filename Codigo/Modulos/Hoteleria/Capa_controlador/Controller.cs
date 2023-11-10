@@ -141,9 +141,12 @@ namespace Controlador_PrototipoMenu
             {
                 foreach (Cliente cl in _clientes)
                 {
-                    if (cl.CliId.Equals(res.Res_id_cliente) && cl.CliId.Equals(id_client) && res.estado == 1)
+                    if (cl.CliId.Equals(res.Res_id_cliente) && cl.CliId.Equals(id_client))
                     {
-                        cmb.Items.Add(res.Res_fecha);
+                        if (res.estado != 3)
+                        {
+                            cmb.Items.Add(res.Res_fecha);
+                        }
                     }
                 }
             }
@@ -221,9 +224,9 @@ namespace Controlador_PrototipoMenu
             return this.sn.ObtenerUltimoIdDeEvaluacion();
         }
 
-        public void changeReservStatus(int idRef)
+        public void changeReservStatus(int idRef, int estado)
         {
-            this.sn.CambiarEstadoReservacion(idRef);
+            this.sn.CambiarEstadoReservacion(idRef, estado);
         }
 
 

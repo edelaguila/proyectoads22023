@@ -16,7 +16,7 @@ namespace Vista_PrototipoMenu
         public frmGestionSalon()
         {
             InitializeComponent();
-            NavegadorVista.Navegador.idApp = "1004";
+            NavegadorVista.Navegador.idApp = "7003";
             navegador1.actual = this;
             navegador1.tabla = dataGridView1;
             TextBox[] Grupotextbox = { txt_id, txt_nombre, txt_desc, txt_capacidad, txt_precio };

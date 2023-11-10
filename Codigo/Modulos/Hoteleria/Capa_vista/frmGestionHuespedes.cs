@@ -17,7 +17,7 @@ namespace Vista_PrototipoMenu
         public frmGestionHuespedes()
         {
             InitializeComponent();
-            NavegadorVista.Navegador.idApp = "1004";
+            NavegadorVista.Navegador.idApp = "7004";
             _navegador.actual = this;
             _navegador.tabla = dataGridView1;
             TextBox[] Grupotextbox = { txt_id, txt_nombre, txt_apellido, txt_correo, txt_telefono, txt_nit };

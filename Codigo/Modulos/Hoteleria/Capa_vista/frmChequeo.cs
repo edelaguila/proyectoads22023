@@ -49,7 +49,7 @@ namespace Vista_PrototipoMenu
         {
             this.ctrl.saveEva(dateTimePicker1.Value, txt_descripcion.Text, Convert.ToInt32(txt_estado_c.Text), id_emp);
             this.ctrl.saveEntrada(this.ctrl.lastEvaId() + 1, id_client, id_hab);
-            this.ctrl.changeReservStatus(id_res);
+            this.ctrl.changeReservStatus(id_res, 1);
             MessageBox.Show("Chequeo de entrada realizado correctamente!");
         }
 
@@ -58,6 +58,7 @@ namespace Vista_PrototipoMenu
 
             this.ctrl.saveEva(dateTimePicker1.Value, txt_descripcion.Text, Convert.ToInt32(txt_estado_c.Text), id_emp);
             this.ctrl.saveSalida(this.ctrl.lastEvaId() + 1, id_client, id_hab);
+            this.ctrl.changeReservStatus(id_res, 3);
             MessageBox.Show("Chequeo de salida realizado correctamente!");
         }
 

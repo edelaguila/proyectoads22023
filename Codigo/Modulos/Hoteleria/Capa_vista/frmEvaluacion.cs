@@ -19,7 +19,7 @@ namespace Vista_PrototipoMenu
         public frmEvaluacion()
         {
             InitializeComponent();
-            NavegadorVista.Navegador.idApp = "1004";
+            NavegadorVista.Navegador.idApp = "7006";
             navegador1.actual = this;
             navegador1.tabla = data_grid;
             TextBox[] Grupotextbox = { txtid, txt_fecha, txt_descripcion, txt_estado, txt_id_empleado };

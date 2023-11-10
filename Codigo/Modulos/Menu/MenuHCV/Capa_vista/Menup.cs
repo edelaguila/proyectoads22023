@@ -87,7 +87,7 @@ namespace MenuHCV
 
         private void btnHoteleria_Click(object sender, EventArgs e)
         {
-            cn.setBtitacora("7000", "Ingreso Ventas");
+            cn.setBtitacora("7000", "Ingreso Hoteleria");
             Vista_PrototipoMenu.MenuHoteleria frm = new Vista_PrototipoMenu.MenuHoteleria();
             frm.Show();
         }

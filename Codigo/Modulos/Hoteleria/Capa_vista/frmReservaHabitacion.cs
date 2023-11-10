@@ -18,7 +18,7 @@ namespace Vista_PrototipoMenu
         public frmReservaHabitacion()
         {
             InitializeComponent();
-            NavegadorVista.Navegador.idApp = "1004";
+            NavegadorVista.Navegador.idApp = "7002";
             navegador1.actual = this;
             navegador1.tabla = data_grid;
             TextBox[] Grupotextbox = { txt_id, txt_idhabitacion, txt_idcliente, txt_date1, txt_idempleado, txt_date2, txt_estado };
@@ -38,6 +38,7 @@ namespace Vista_PrototipoMenu
         private void comboTipo_SelectedIndexChanged(object sender, EventArgs e)
         {
             comboHabitacion.Items.Clear();
+            comboHabitacion.Text = "";
             this.ctrl.fillHabitacionesByDate(comboHabitacion, date1, date2, lbl_precio, comboTipo.SelectedItem.ToString()); ;
         }
 

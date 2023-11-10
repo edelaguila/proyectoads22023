@@ -295,13 +295,14 @@ namespace Modelo_PrototipoMenu
             }
         }
 
-        public void CambiarEstadoReservacion(int resId)
+        public void CambiarEstadoReservacion(int resId, int estado)
         {
             try
             {
-                string query = "UPDATE tbl_Reservacion SET estado = 0 WHERE res_id = ?";
+                string query = "UPDATE tbl_Reservacion SET estado = ? WHERE res_id = ?";
                 OdbcCommand command = new OdbcCommand(query, this.conn.connection());
 
+                command.Parameters.AddWithValue("@estado", estado);
                 command.Parameters.AddWithValue("@resId", resId);
 
                 command.ExecuteNonQuery();
