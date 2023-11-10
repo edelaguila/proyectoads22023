@@ -44,7 +44,8 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Vista_MenuHCV">
+    <Reference Include="Vista_MenuHCV, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\MenuHCV\Capa_vista\bin\Debug\Vista_MenuHCV.dll</HintPath>
     </Reference>
   </ItemGroup>
