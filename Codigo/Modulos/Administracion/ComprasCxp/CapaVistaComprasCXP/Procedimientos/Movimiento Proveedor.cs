@@ -91,7 +91,7 @@ namespace CapaVistaComprasCXP.Procedimientos
 
         public void insertEncabezado()
         {
-            string tabla = "tbl_encabezadoMovimientoProveedor";
+            string tabla = "tbl_encabezadomovimientoproveedor";
             Dictionary<string, object> valores = new Dictionary<string, object>();
             ControladorCOMPRASCXP controlador = new ControladorCOMPRASCXP();
 
@@ -107,7 +107,7 @@ namespace CapaVistaComprasCXP.Procedimientos
 
         public void insertDetalle()
         {
-            string tabla = "tbl_detalleMovimientoProveedor";
+            string tabla = "tbl_detallemovimientoproveedor";
             Dictionary<string, object> valores = new Dictionary<string, object>();
             ControladorCOMPRASCXP controlador = new ControladorCOMPRASCXP();
 
@@ -123,7 +123,7 @@ namespace CapaVistaComprasCXP.Procedimientos
 
         public void BuscarUltimoIDEncabezado()
         {
-            string tabla = "tbl_encabezadoMovimientoProveedor";
+            string tabla = "tbl_encabezadomovimientoproveedor";
             string columna = "id_EncabezadoProveedor";
             DataTable dt = cn.BuscarE(tabla, columna);
 
@@ -177,7 +177,7 @@ namespace CapaVistaComprasCXP.Procedimientos
 
 
             // Llama a la función de eliminación pasando los parámetros necesarios
-            string tabla = "tbl_encabezadoMovimientoProveedor"; // Nombre de la tabla
+            string tabla = "tbl_encabezadomovimientoproveedor"; // Nombre de la tabla
             string columna = "id_EncabezadoProveedor"; // Nombre de la columna
             EliminarDato(tabla, columna, valor);
 
@@ -190,7 +190,7 @@ namespace CapaVistaComprasCXP.Procedimientos
 
 
             // Llama a la función de eliminación pasando los parámetros necesarios
-            string tabla = "tbl_detalleMovimientoProveedor"; // Nombre de la tabla
+            string tabla = "tbl_detallemovimientoproveedor"; // Nombre de la tabla
             string columna = "id_DetalleProveedor"; // Nombre de la columna
             EliminarDato(tabla, columna, valor);
 
