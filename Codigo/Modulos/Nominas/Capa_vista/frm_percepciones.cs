@@ -11,6 +11,8 @@ using Controlador_PrototipoMenu;
 using Modelo_PrototipoMenu;
 using System.Data.Odbc;
 
+
+//Codigo hecho por Otto Adrian Lopez Ventura
 namespace CapaVistaNomina
 {
     public partial class frm_percepciones : Form
@@ -254,6 +256,10 @@ namespace CapaVistaNomina
         private void picBox_ayuda_Click(object sender, EventArgs e)
         {
             Help.ShowHelp(this, "AyudasNomina/AyudaNominasHSC.chm", "Percepcion.html");
+            
+                
+                
+                
         }
     }
 }

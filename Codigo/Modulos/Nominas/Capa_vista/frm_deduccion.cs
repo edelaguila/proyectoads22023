@@ -11,6 +11,7 @@ using Controlador_PrototipoMenu;
 using Modelo_PrototipoMenu;
 using System.Data.Odbc;
 
+//Codigo hecho por David Alejandro Carrillo de la Roca
 
 namespace CapaVistaNomina
 {
