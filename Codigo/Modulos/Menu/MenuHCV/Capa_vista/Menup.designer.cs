@@ -31,6 +31,7 @@ namespace MenuHCV
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menup));
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.btnPrototipo = new System.Windows.Forms.Button();
             this.btnHoteleria = new System.Windows.Forms.Button();
             this.btnNominas = new System.Windows.Forms.Button();
             this.btnBancos = new System.Windows.Forms.Button();
@@ -43,7 +44,6 @@ namespace MenuHCV
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnseguridad = new System.Windows.Forms.Button();
-            this.btnPrototipo = new System.Windows.Forms.Button();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelSideMenu.SuspendLayout();
@@ -67,6 +67,25 @@ namespace MenuHCV
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(318, 595);
             this.panelLogo.TabIndex = 0;
+            // 
+            // btnPrototipo
+            // 
+            this.btnPrototipo.BackColor = System.Drawing.Color.DarkGray;
+            this.btnPrototipo.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnPrototipo.FlatAppearance.BorderSize = 0;
+            this.btnPrototipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrototipo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrototipo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
+            this.btnPrototipo.Location = new System.Drawing.Point(0, 408);
+            this.btnPrototipo.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPrototipo.Name = "btnPrototipo";
+            this.btnPrototipo.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btnPrototipo.Size = new System.Drawing.Size(303, 38);
+            this.btnPrototipo.TabIndex = 19;
+            this.btnPrototipo.Text = "PROTOTIPO";
+            this.btnPrototipo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrototipo.UseVisualStyleBackColor = false;
+            this.btnPrototipo.Click += new System.EventHandler(this.btnPrototipo_Click);
             // 
             // btnHoteleria
             // 
@@ -136,6 +155,7 @@ namespace MenuHCV
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnInventario
             // 
@@ -288,25 +308,6 @@ namespace MenuHCV
             this.btnseguridad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnseguridad.UseVisualStyleBackColor = false;
             this.btnseguridad.Click += new System.EventHandler(this.btnlogout_Click);
-            // 
-            // btnPrototipo
-            // 
-            this.btnPrototipo.BackColor = System.Drawing.Color.DarkGray;
-            this.btnPrototipo.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnPrototipo.FlatAppearance.BorderSize = 0;
-            this.btnPrototipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrototipo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrototipo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnPrototipo.Location = new System.Drawing.Point(0, 408);
-            this.btnPrototipo.Margin = new System.Windows.Forms.Padding(4);
-            this.btnPrototipo.Name = "btnPrototipo";
-            this.btnPrototipo.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
-            this.btnPrototipo.Size = new System.Drawing.Size(303, 38);
-            this.btnPrototipo.TabIndex = 19;
-            this.btnPrototipo.Text = "PROTOTIPO";
-            this.btnPrototipo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPrototipo.UseVisualStyleBackColor = false;
-            this.btnPrototipo.Click += new System.EventHandler(this.btnPrototipo_Click);
             // 
             // Menup
             // 

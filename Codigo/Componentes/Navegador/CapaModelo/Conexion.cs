@@ -12,7 +12,7 @@ namespace CapaModelo
 
         public OdbcConnection connection()
         {
-            OdbcConnection conn = new OdbcConnection("Dsn=navegador");
+            OdbcConnection conn = new OdbcConnection("Dsn=HotelSConexion");
             try
             {
                 conn.Open();
@@ -23,7 +23,6 @@ namespace CapaModelo
             }
             return conn;
         }
-
 
         public void disconnect(OdbcConnection conn)
         {

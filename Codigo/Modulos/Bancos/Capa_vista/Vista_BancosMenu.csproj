@@ -37,8 +37,15 @@
     <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
+    <Reference Include="NavegadorVista">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\UMG\Instalador General HSC\NavegadorVista.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="Seguridad_Controlador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\UMG\Instalador General HSC\Seguridad_Controlador.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -53,6 +60,30 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mantenimiento_Agregar_Bancos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_Agregar_Bancos.Designer.cs">
+      <DependentUpon>Mantenimiento_Agregar_Bancos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento_agregar_cuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_agregar_cuenta.Designer.cs">
+      <DependentUpon>Mantenimiento_agregar_cuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento_OrdenesdeCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_OrdenesdeCompra.Designer.cs">
+      <DependentUpon>Mantenimiento_OrdenesdeCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento_tipoMov.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_tipoMov.Designer.cs">
+      <DependentUpon>Mantenimiento_tipoMov.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuBancos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +98,18 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Mantenimiento_Agregar_Bancos.resx">
+      <DependentUpon>Mantenimiento_Agregar_Bancos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_agregar_cuenta.resx">
+      <DependentUpon>Mantenimiento_agregar_cuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_OrdenesdeCompra.resx">
+      <DependentUpon>Mantenimiento_OrdenesdeCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_tipoMov.resx">
+      <DependentUpon>Mantenimiento_tipoMov.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuBancos.resx">
       <DependentUpon>MenuBancos.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,6 +196,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\prototipofinal2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Capa_controlador\Controlador_BancosMenu.csproj">
+      <Project>{a4d75e74-48c1-44b6-a078-2dbea0b01f71}</Project>
+      <Name>Controlador_BancosMenu</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
