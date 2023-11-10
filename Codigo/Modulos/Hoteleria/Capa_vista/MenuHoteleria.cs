@@ -98,7 +98,8 @@ namespace Vista_PrototipoMenu
 
         private void button1_Click(object sender, EventArgs e)
         {
-          
+            this.showForm(new frmGestionHuespedes());
+            hideSubMenu();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -109,7 +110,8 @@ namespace Vista_PrototipoMenu
 
         private void button5_Click(object sender, EventArgs e)
         {
-       
+            this.showForm(new frmGestionHabitacion());
+            hideSubMenu();
         }
 
         private void button3_Click(object sender, EventArgs e)
