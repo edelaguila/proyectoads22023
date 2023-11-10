@@ -9,7 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Seguridad_Controlador;
 using Vista_Seguridad;
-using Vista_PrototipoMenu;
+using CapaVistaVentasCXC;
+using CapaVistaComprasCXP;
 
 //Comentado por George Mayén 25/02/2023
 namespace MenuHCV
@@ -49,9 +50,9 @@ namespace MenuHCV
 
         public void btnVentas_Click(object sender, EventArgs e)
         {
-            Vista_PrototipoMenu.MenuVentasCxc form = new Vista_PrototipoMenu.MenuVentasCxc();
+            CapaVistaVentasCXC.MDIVentasCXC form = new CapaVistaVentasCXC.MDIVentasCXC();
             form.Show();
-            cn.setBtitacora("2000", "Ingreso Ventas");
+            cn.setBtitacora("3000", "Ingreso Ventas");
         }
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
         private void btnLogout_Click_1(object sender, EventArgs e)
@@ -64,17 +65,17 @@ namespace MenuHCV
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
         private void btncompras_Click(object sender, EventArgs e)
         {
-            Vista_PrototipoMenu.MenuComprasCxp form = new Vista_PrototipoMenu.MenuComprasCxp();
+            CapaVistaComprasCXP.MDIComprasCXP form = new CapaVistaComprasCXP.MDIComprasCXP();
             form.Show();
-            cn.setBtitacora("3000", "Ingreso Compras");
+            cn.setBtitacora("2000", "Ingreso Compras");
         }
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
 
         private void btnInventario_Click(object sender, EventArgs e)
         {
-            Vista_PrototipoMenu.MenuInventarios form = new Vista_PrototipoMenu.MenuInventarios();
-            form.Show();
-            cn.setBtitacora("4000", "Ingreso Inventarios");
+            //Vista_PrototipoMenu.MenuInventarios form = new Vista_PrototipoMenu.MenuInventarios();
+            //form.Show();
+            //cn.setBtitacora("4000", "Ingreso Inventarios");
             /*CapaVistaInventario.menu_inventario b = new CapaVistaInventario.menu_inventario();
             b.Show();
             cn.setBtitacora("4000", "Ingreso Inventario");*/
@@ -82,23 +83,23 @@ namespace MenuHCV
 
         private void btnBancos_Click(object sender, EventArgs e)
         {
-            Vista_PrototipoMenu.MenuBancos form = new Vista_PrototipoMenu.MenuBancos();
-            form.Show();
-            cn.setBtitacora("5000", "Ingreso Ventas");
+           // Vista_PrototipoMenu.MenuBancos form = new Vista_PrototipoMenu.MenuBancos();
+           // form.Show();
+           // cn.setBtitacora("5000", "Ingreso Ventas");
         }
 
         private void btnNominas_Click_1(object sender, EventArgs e)
         {
-            Vista_PrototipoMenu.MenuNominas form = new Vista_PrototipoMenu.MenuNominas();
-            form.Show();
-            cn.setBtitacora("6000", "Ingreso Ventas");
+           // Vista_PrototipoMenu.MenuNominas form = new Vista_PrototipoMenu.MenuNominas();
+           // form.Show();
+           // cn.setBtitacora("6000", "Ingreso Ventas");
         }
 
         private void btnHoteleria_Click(object sender, EventArgs e)
         {
-            Vista_PrototipoMenu.MenuHoteleria form = new Vista_PrototipoMenu.MenuHoteleria();
-            form.Show();
-            cn.setBtitacora("7000", "Ingreso Ventas");
+           // Vista_PrototipoMenu.MenuHoteleria form = new Vista_PrototipoMenu.MenuHoteleria();
+           // form.Show();
+           // cn.setBtitacora("7000", "Ingreso Ventas");
         }
 
         private void btnCxC_Click(object sender, EventArgs e)
@@ -113,9 +114,9 @@ namespace MenuHCV
 
         private void btnPrototipo_Click(object sender, EventArgs e)
         {
-            Vista_PrototipoMenu.MenuPrototipo form = new Vista_PrototipoMenu.MenuPrototipo();
-            form.Show();
-            cn.setBtitacora("8000", "Ingreso Prototipo");
+            //Vista_PrototipoMenu.MenuPrototipo form = new Vista_PrototipoMenu.MenuPrototipo();
+            //form.Show();
+            //cn.setBtitacora("8000", "Ingreso Prototipo");
         }
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
 

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6E91E47C-5116-48BC-B282-F79CAF9F7424}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapaVistaVentasCXC</RootNamespace>
+    <AssemblyName>CapaVistaVentasCXC</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CapaControladorVentasCXC">
+      <HintPath>..\CapaControladorVentasCXC\bin\Debug\CapaControladorVentasCXC.dll</HintPath>
+    </Reference>
+    <Reference Include="NavegadorVista">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files\UMG\Instalador General HSC\NavegadorVista.dll</HintPath>
+    </Reference>
+    <Reference Include="Seguridad_Controlador">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files\UMG\Instalador General HSC\Seguridad_Controlador.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Mantenimientos\Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Cobradores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Cobradores.Designer.cs">
+      <DependentUpon>Cobradores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Concepto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Concepto.Designer.cs">
+      <DependentUpon>Concepto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Proveedores.Designer.cs">
+      <DependentUpon>Proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\TransaccionesClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\TransaccionesClientes.Designer.cs">
+      <DependentUpon>TransaccionesClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\TransaccionesProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\TransaccionesProveedores.Designer.cs">
+      <DependentUpon>TransaccionesProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Vendedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Vendedores.Designer.cs">
+      <DependentUpon>Vendedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIVentasCXC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIVentasCXC.Designer.cs">
+      <DependentUpon>MDIVentasCXC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procedimientos\Cotizaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procedimientos\Cotizaciones.Designer.cs">
+      <DependentUpon>Cotizaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procedimientos\Factura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procedimientos\Factura.Designer.cs">
+      <DependentUpon>Factura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procedimientos\Movimiento Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procedimientos\Movimiento Cliente.Designer.cs">
+      <DependentUpon>Movimiento Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procedimientos\Pedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procedimientos\Pedidos.Designer.cs">
+      <DependentUpon>Pedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\cliente.png" />
+    <None Include="Resources\generar factura.ico" />
+    <None Include="Resources\Eliminar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mantenimientos\Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Cobradores.resx">
+      <DependentUpon>Cobradores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Concepto.resx">
+      <DependentUpon>Concepto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Proveedores.resx">
+      <DependentUpon>Proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\TransaccionesClientes.resx">
+      <DependentUpon>TransaccionesClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\TransaccionesProveedores.resx">
+      <DependentUpon>TransaccionesProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Vendedores.resx">
+      <DependentUpon>Vendedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIVentasCXC.resx">
+      <DependentUpon>MDIVentasCXC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procedimientos\Cotizaciones.resx">
+      <DependentUpon>Cotizaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procedimientos\Factura.resx">
+      <DependentUpon>Factura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procedimientos\Movimiento Cliente.resx">
+      <DependentUpon>Movimiento Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procedimientos\Pedidos.resx">
+      <DependentUpon>Pedidos.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
