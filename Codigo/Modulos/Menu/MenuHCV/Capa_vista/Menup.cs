@@ -113,9 +113,9 @@ namespace MenuHCV
 
         private void btnPrototipo_Click(object sender, EventArgs e)
         {
-            Vista_PrototipoMenu.MenuPrototipo form = new Vista_PrototipoMenu.MenuPrototipo();
-            form.Show();
-            cn.setBtitacora("8000", "Ingreso Prototipo");
+            //Vista_PrototipoMenu.MenuPrototipo form = new Vista_PrototipoMenu.MenuPrototipo();
+            //form.Show();
+            //cn.setBtitacora("8000", "Ingreso Prototipo");
         }
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
 
