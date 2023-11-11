@@ -11,6 +11,8 @@ using Modelo_PrototipoMenu;
 using Controlador_PrototipoMenu;
 using Seguridad_Controlador;
 
+//Codigo submodulo deducciones creado por David Alejandro Carrillo de la Roca
+
 namespace CapaVistaNomina
 {
     public partial class frm_mantenimiento_empleado : Form
@@ -49,6 +51,11 @@ namespace CapaVistaNomina
             navegador1.textbox = Grupotextbox;
             navegador1.textboxi = Idtextbox;
             navegador1.cargar(dataGridView1, Grupotextbox, cn.getNombreBd());
+        }
+
+        private void txt_id_empleado_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

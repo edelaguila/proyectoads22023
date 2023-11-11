@@ -79,6 +79,7 @@ namespace CapaVistaNomina
             this.txt_id_departamento.Size = new System.Drawing.Size(366, 28);
             this.txt_id_departamento.TabIndex = 82;
             this.txt_id_departamento.Tag = "Pk_id_departamento";
+            this.txt_id_departamento.TextChanged += new System.EventHandler(this.txt_id_departamento_TextChanged);
             // 
             // txt_nombre_empleado
             // 

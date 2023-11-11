@@ -7,6 +7,9 @@ using System.Data.Odbc;
 using System.Data;
 using Modelo_PrototipoMenu;
 
+//Codigo submodulo deducciones creado por David Alejandro Carrillo de la Roca
+//Codigo submodulo percepciones creado por Otto Adrian Lopez Ventura
+
 namespace Controlador_PrototipoMenu
 {
     public class Controlador

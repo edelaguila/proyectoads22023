@@ -68,6 +68,7 @@ namespace Vista_PrototipoMenu
             this.txt_id_ded.Size = new System.Drawing.Size(366, 28);
             this.txt_id_ded.TabIndex = 88;
             this.txt_id_ded.Tag = "Pk_id_ded";
+            this.txt_id_ded.TextChanged += new System.EventHandler(this.txt_id_ded_TextChanged);
             // 
             // label2
             // 
@@ -75,7 +76,7 @@ namespace Vista_PrototipoMenu
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(128, 334);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(185, 26);
+            this.label2.Size = new System.Drawing.Size(148, 21);
             this.label2.TabIndex = 87;
             this.label2.Tag = "";
             this.label2.Text = "Deduccion Total";
@@ -86,7 +87,7 @@ namespace Vista_PrototipoMenu
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(128, 275);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(161, 26);
+            this.label1.Size = new System.Drawing.Size(129, 21);
             this.label1.TabIndex = 86;
             this.label1.Tag = "";
             this.label1.Text = "ID_Deduccion";
@@ -108,7 +109,7 @@ namespace Vista_PrototipoMenu
             this.label3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(128, 377);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(199, 26);
+            this.label3.Size = new System.Drawing.Size(159, 21);
             this.label3.TabIndex = 91;
             this.label3.Tag = "";
             this.label3.Text = "Deduccion Fecha";
@@ -119,7 +120,7 @@ namespace Vista_PrototipoMenu
             this.label4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(128, 417);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(155, 26);
+            this.label4.Size = new System.Drawing.Size(124, 21);
             this.label4.TabIndex = 92;
             this.label4.Tag = "";
             this.label4.Text = "ID_empleado";

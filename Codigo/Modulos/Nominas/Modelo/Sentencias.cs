@@ -7,6 +7,9 @@ using System.Data.Odbc;
 using System.Windows.Forms;
 using System.Data;
 
+
+//Codigo submodulo deducciones creado por David Alejandro Carrillo de la Roca
+//Codigo submodulo percepciones creado por Otto Adrian Lopez Ventura
 namespace Modelo_PrototipoMenu
 {
     public class Empleado

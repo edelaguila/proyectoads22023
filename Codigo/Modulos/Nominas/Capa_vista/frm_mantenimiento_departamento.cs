@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+//Codigo submodulo deducciones creado por David Alejandro Carrillo de la Roca
+
 namespace CapaVistaNomina
 {
     public partial class frm_mantenimiento_departamento : Form
@@ -36,6 +39,11 @@ namespace CapaVistaNomina
             navegador1.textbox = Grupotextbox;
             navegador1.textboxi = Idtextbox;
             navegador1.cargar(dataGridView1, Grupotextbox, cn.getNombreBd());
+        }
+
+        private void txt_id_departamento_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

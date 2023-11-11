@@ -183,6 +183,7 @@
             this.txt_id_empleado.Size = new System.Drawing.Size(366, 32);
             this.txt_id_empleado.TabIndex = 99;
             this.txt_id_empleado.Tag = "Pk_id_empleado";
+            this.txt_id_empleado.TextChanged += new System.EventHandler(this.txt_id_empleado_TextChanged);
             // 
             // label2
             // 

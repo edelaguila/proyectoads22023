@@ -77,6 +77,7 @@ namespace Vista_PrototipoMenu
             this.txt_id_dedu_perc.Size = new System.Drawing.Size(366, 32);
             this.txt_id_dedu_perc.TabIndex = 88;
             this.txt_id_dedu_perc.Tag = "Pk_id_dedu_perc";
+            this.txt_id_dedu_perc.TextChanged += new System.EventHandler(this.txt_id_dedu_perc_TextChanged);
             // 
             // label2
             // 
