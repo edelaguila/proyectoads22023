@@ -35,13 +35,12 @@ namespace Vista_PrototipoMenu
             {
                 if (int.TryParse(txt_id_empleado.Text, out int idEmpleado))
                 {
-                    // Obtén los datos del empleado
+
                     Empleado empleadoEncontrado = ctrl.BuscarEmpleadoPorID(idEmpleado);
-                    string departamentoEncontrado = ctrl.ObtenerDepartamento(idEmpleado);
+
 
                     if (empleadoEncontrado != null)
                     {
-                        // Llena los campos con los datos del empleado
                         foreach (Control control in groupBox3.Controls)
                         {
                             if (control is TextBox)
@@ -72,35 +71,16 @@ namespace Vista_PrototipoMenu
                                     }
                                     else if (campo == "tbl_departamento_Pk_id_departamento")
                                     {
+                                        textBox.Text = empleadoEncontrado.Departamento;
+                                        string dept = txt_departamento_empleado.Text;
+                                        int.TryParse(dept, out int iddept);
+                                        string departamentoEncontrado = ctrl.ObtenerDepartamento(iddept);
                                         textBox.Text = departamentoEncontrado;
                                     }
+
                                 }
                             }
                         }
-
-                     
-                        string deduccionTotalEncontrada = ctrl.ObtenerDeduccionTotal(idEmpleado);
-                        txt_totalDeducciones.Text = deduccionTotalEncontrada;
-                        //MessageBox.Show("Valor de deduccionTotalEncontrada: " + deduccionTotalEncontrada);
-                        string percepcionTotalEncontrada = ctrl.ObtenerPercepcionTotal(idEmpleado);
-                        txt_totalPercepciones.Text = percepcionTotalEncontrada;
-                        //MessageBox.Show("Valor de percepcion: " + percepcionTotalEncontrada);
-                        if (double.TryParse(empleadoEncontrado.Sueldo, out double sueldoBase) &&
-                            double.TryParse(percepcionTotalEncontrada, out double totalPercepciones) &&
-                            double.TryParse(deduccionTotalEncontrada, out double totalDeducciones)
-                            )
-                        {
-                            double sueldoFinal = sueldoBase + totalPercepciones - totalDeducciones;
-                            txt_sueldoFinal.Text = sueldoFinal.ToString();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Faltan datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            
-                        }
-
-
-
                     }
                     else
                     {
@@ -114,7 +94,7 @@ namespace Vista_PrototipoMenu
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message);
+                MessageBox.Show("Error" + ex);
             }
         }
 
