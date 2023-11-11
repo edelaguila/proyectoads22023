@@ -54,8 +54,9 @@ namespace CapaVistaNomina
             {
                 if (int.TryParse(txt_id_empleado.Text, out int idEmpleado))
                 {
+                   
                     Empleado empleadoEncontrado = ctrl.BuscarEmpleadoPorID(idEmpleado);
-                    string departamentoEncontrado = ctrl.ObtenerDepartamento(idEmpleado);
+                   
 
                     if (empleadoEncontrado != null)
                     {
@@ -89,8 +90,13 @@ namespace CapaVistaNomina
                                     }
                                     else if (campo == "tbl_departamento_Pk_id_departamento")
                                     {
+                                        textBox.Text = empleadoEncontrado.Departamento;
+                                        string dept = txt_departamento_empleado.Text;
+                                        int.TryParse(dept, out int iddept);
+                                        string departamentoEncontrado = ctrl.ObtenerDepartamento(iddept);
                                         textBox.Text = departamentoEncontrado;
                                     }
+                                   
                                 }
                             }
                         }
