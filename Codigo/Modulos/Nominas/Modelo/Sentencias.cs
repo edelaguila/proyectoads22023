@@ -23,13 +23,13 @@ namespace Modelo_PrototipoMenu
         public string Moneda { get; set; }
     }
 
-    /*
+    
     public class Departamento
     {
         public int ID { get; set; }
         public string Nombre { get; set; }
     }
-
+    /*
     public class DeduccionTotal
     {
         public int tbl_empleado_Pk_id_empleado { get; set; }
@@ -64,7 +64,7 @@ namespace Modelo_PrototipoMenu
                 {
                     conn.Open();
 
-                    string consulta = "SELECT emp_nombre, emp_apellido, emp_sueldo, emp_cargo, emp_tipo_moneda FROM tbl_empleado WHERE Pk_id_empleado = ?";
+                    string consulta = "SELECT emp_nombre, emp_apellido, emp_sueldo, emp_cargo, emp_tipo_moneda,tbl_departamento_Pk_id_departamento FROM tbl_empleado WHERE Pk_id_empleado = ?";
                     using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
                     {
                         cmd.Parameters.AddWithValue("@ID", idEmpleado);
@@ -81,6 +81,7 @@ namespace Modelo_PrototipoMenu
                                     Sueldo = reader["emp_sueldo"].ToString(),
                                     Cargo = reader["emp_cargo"].ToString(),
                                     Moneda = reader["emp_tipo_moneda"].ToString(),
+                                    Departamento= reader["tbl_departamento_Pk_id_departamento"].ToString(),
                                 };
                             }
                         }
