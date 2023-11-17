@@ -13,7 +13,8 @@ namespace Vista_PrototipoMenu
 {
     public partial class MenuNominas : Form
     {
-
+        Seguridad_Controlador.Controlador cn = new Seguridad_Controlador.Controlador();
+        Controlador_PrototipoMenu.Controlador ctrl = new Controlador_PrototipoMenu.Controlador();
         // Controlador cn = new Controlador();  // Agregar cuando se vincule la DLL de seguridad 
 
         //Método que guarda en un arreglo de tipo botón los botones que se tienen en el formulario. Se les da permiso a los diferentes botones de acuerdo a la función que realice este
@@ -21,11 +22,11 @@ namespace Vista_PrototipoMenu
         {
             InitializeComponent();
             //Control para habilitar opciones del menu
-            // Button[] apps = {btnaplicaciones}; // Agregar cuando se vincule la DLL de seguridad 
+             //Button[] apps = {btn_Deducciones_Percepciones, btn_mantenimiento_departamentos, btn_mantenimiento_empleados, btn_nominas}; // Agregar cuando se vincule la DLL de seguridad 
             //Llamada metodo de libreria Controlador del modulo de Seguridad
             //cn.deshabilitarApps(apps); // Agregar cuando se vincule la DLL de seguridad 
             //Llamada metodo de libreria Controlador del modulo de Seguridad
-            // cn.getAccesoApp(1002, apps[0]); // Agregar cuando se vincule la DLL de seguridad 
+           // cn.getAccesoApp(1002, apps[0]); // Agregar cuando se vincule la DLL de seguridad 
 
         }
 
@@ -75,14 +76,14 @@ namespace Vista_PrototipoMenu
         }
         //Método que muestra el formulario indicado
         //Método que muestra el formulario indicado
-        private void btnaplicaciones_Click(object sender, EventArgs e)
+        private void btn_Deducciones_Percepciones_Click(object sender, EventArgs e)
         {
-           /* frmAplicaciones form = new frmAplicaciones();
-            form.MdiParent = this;
-            form.Show();
-            hideSubMenu(); */
+            Vista_PrototipoMenu.frm_mantenimiento_deducciones_percepciones mantpercded = new Vista_PrototipoMenu.frm_mantenimiento_deducciones_percepciones();
+            mantpercded.MdiParent = this;
+            mantpercded.Show();
+            hideSubMenu(); 
         }
-        //Método que muestra el formulario indicado
+        
 
         private void btninicio_Click(object sender, EventArgs e)
         {
@@ -96,7 +97,64 @@ namespace Vista_PrototipoMenu
         //Método que muestra el formulario indicado
         private void btnayuda_Click(object sender, EventArgs e)
         {
-            Help.ShowHelp(this, "umg.chm");            
+            Help.ShowHelp(this, "AyudasNomina/AyudaNominasHSC.chm", "MenuNominas.html");
+        }
+
+        private void btn_mantenimiento_empleados_Click(object sender, EventArgs e)
+        {
+            CapaVistaNomina.frm_mantenimiento_empleado mant = new CapaVistaNomina.frm_mantenimiento_empleado();
+            mant.MdiParent = this;
+            mant.Show();
+            hideSubMenu();
+        }
+
+        private void btn_mantenimiento_departamentos_Click(object sender, EventArgs e)
+        {
+            CapaVistaNomina.frm_mantenimiento_departamento mantdep = new CapaVistaNomina.frm_mantenimiento_departamento();
+            mantdep.MdiParent = this;
+            mantdep.Show();
+            hideSubMenu();
+        }
+
+        private void btn_deducciones_Click(object sender, EventArgs e)
+        {
+            CapaVistaNomina.frm_deduccion ded = new CapaVistaNomina.frm_deduccion();
+            ded.MdiParent = this;
+            ded.Show();
+            hideSubMenu();
+        }
+
+        private void btn_nominas_Click(object sender, EventArgs e)
+        {
+            Vista_PrototipoMenu.frm_nomina nomi = new Vista_PrototipoMenu.frm_nomina();
+            nomi.MdiParent = this;
+            nomi.Show();
+            hideSubMenu();
+        }
+
+        private void btn_percepciones_Click(object sender, EventArgs e)
+        {
+            CapaVistaNomina.frm_percepciones ded = new CapaVistaNomina.frm_percepciones();
+            ded.MdiParent = this;
+            ded.Show();
+            hideSubMenu();
+
+        }
+
+        private void btn_mant_deducciones_Click(object sender, EventArgs e)
+        {
+            Vista_PrototipoMenu.frm_mantenimientoDeduccion dedMant = new Vista_PrototipoMenu.frm_mantenimientoDeduccion();
+            dedMant.MdiParent = this;
+            dedMant.Show();
+            hideSubMenu();
+        }
+
+        private void btn_mant_perc_Click(object sender, EventArgs e)
+        {
+            Vista_PrototipoMenu.frm_mantenimientoPercepcion percMant = new Vista_PrototipoMenu.frm_mantenimientoPercepcion();
+            percMant.MdiParent = this;
+            percMant.Show();
+            hideSubMenu();
         }
     }
 }
