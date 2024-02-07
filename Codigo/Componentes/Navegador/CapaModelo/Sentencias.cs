@@ -11,7 +11,7 @@ namespace CapaModelo
     public class Sentencias : SentenciasGenerales
     {
  
-        private string tabla = "tbl_inventario";
+        private string tabla = "";
   
         public Sentencias()
         {

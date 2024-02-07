@@ -12,7 +12,7 @@ namespace CapaVista.Componentes.Utilidades
     public class utilidadesConsultasI
     {
         public Controlador ctrl;
-        public string tabla = "andrea";
+        public string tabla = "";
         DataGridViewRow selected = new DataGridViewRow();
         public utilidadesConsultasI()
         {
