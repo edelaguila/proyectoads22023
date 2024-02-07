@@ -26,37 +26,20 @@ namespace CapaVista
         public DataTable mydata = new DataTable();
         public Seguridad_Controlador.Controlador ctrl_seguridad = new Controlador();
         public Form parent;
-        public string idApp;
-        public Navegador()
+        public string idApp = "1000";
+        public Navegador(string id = "1000")
         {
             InitializeComponent();
+            this.idApp = id;
             this.parent = new Form();
             this.utilConsultasI = new utilidadesConsultasI();
             this.cambiarEstado(false);
-            //string encriptado = this.SetHash("12345");
-            //bool login = ctrl_seguridad.validarLogin("admin", encriptado);
-            //ctrl_seguridad.setBtitacora("7003", "actualizando");
-            //ctrl_seguridad.setBtitacora("1000", "actualizando");
-            //MessageBox.Show("Realizando bitacora");
-        }
-
-        public void _initSeguridad(string idApp = "1000", string user = "admin", string pass = "12345", string idUser = null)
-        {
-            if (idUser != null)
-            {
-                Seguridad_Controlador.Controlador.idUser = idUser;
-                return;
-            }
-            this.idApp = idApp;
-            string encriptado = this.SetHash(pass);
-            bool login = ctrl_seguridad.validarLogin(user, encriptado);
-            if (!login)
-            {
-                MessageBox.Show("Error, se ha denegado el accesso departe de seguridad");
-                return;
-            }
             this.loadButtons();
         }
+
+
+
+
 
         public void loadButtons()
         {
@@ -68,28 +51,13 @@ namespace CapaVista
                     Button mybutton = (Button)c;
                     if (mybutton.Tag == null || mybutton.Tag.Equals("")) continue;
                     int index = Convert.ToInt32(mybutton.Tag) - 1;
-                    if (idApp.Equals("1000"))
-                    {
-                        mybutton.Enabled = true; continue;
-                    }
                     mybutton.Enabled = !Convert.ToBoolean(arr[index]);
                 }
             }
         }
 
 
-        public string SetHash(string inputString)
-        {
-            string hash = "x2";
-            byte[] bytes = UTF8Encoding.UTF8.GetBytes(inputString);
-            MD5 mD5 = MD5.Create();
-            TripleDES tripleDES = TripleDES.Create();
-            tripleDES.Key = mD5.ComputeHash(UTF8Encoding.UTF8.GetBytes(hash));
-            tripleDES.Mode = CipherMode.ECB;
-            ICryptoTransform transform = tripleDES.CreateEncryptor();
-            byte[] output = transform.TransformFinalBlock(bytes, 0, bytes.Length);
-            return Convert.ToBase64String(output);
-        }
+
 
         public void fillCombo()
         {
@@ -138,6 +106,9 @@ namespace CapaVista
             gd.CellClick += this.data_Click;
             this.utilConsultasI.refrescar(this.parent);
             this.cambiarEstado(false);
+            gd.AllowUserToAddRows = false;
+            gd.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            gd.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
         }
 
 
@@ -391,7 +362,6 @@ namespace CapaVista
                 filaActual++;
                 gd.Rows[filaActual].Selected = true;
                 focusData((DataTable)gd.DataSource);
-
             }
             else
             {
