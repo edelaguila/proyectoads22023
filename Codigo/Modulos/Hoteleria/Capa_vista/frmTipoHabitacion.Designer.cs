@@ -29,7 +29,6 @@ namespace Vista_PrototipoMenu
         /// </summary>
         private void InitializeComponent()
         {
-            this._navegador = new NavegadorVista.Navegador();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txt_id = new System.Windows.Forms.TextBox();
             this.txt_nombre = new System.Windows.Forms.TextBox();
@@ -41,16 +40,9 @@ namespace Vista_PrototipoMenu
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.navegador1 = new CapaVista.Navegador();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // _navegador
-            // 
-            this._navegador.Location = new System.Drawing.Point(109, 12);
-            this._navegador.Name = "_navegador";
-            this._navegador.Size = new System.Drawing.Size(572, 152);
-            this._navegador.TabIndex = 0;
-            this._navegador.Load += new System.EventHandler(this._navegador_Load);
             // 
             // dataGridView1
             // 
@@ -147,11 +139,19 @@ namespace Vista_PrototipoMenu
             this.label5.TabIndex = 11;
             this.label5.Text = "Capacidad";
             // 
+            // navegador1
+            // 
+            this.navegador1.Location = new System.Drawing.Point(25, 40);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(751, 78);
+            this.navegador1.TabIndex = 12;
+            // 
             // frmTipoHabitacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -163,9 +163,9 @@ namespace Vista_PrototipoMenu
             this.Controls.Add(this.txt_nombre);
             this.Controls.Add(this.txt_id);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this._navegador);
             this.Name = "frmTipoHabitacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Tag = "1000";
             this.Text = "frmTipoHabitacion";
             this.Load += new System.EventHandler(this.frmTipoHabitacion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -175,8 +175,6 @@ namespace Vista_PrototipoMenu
         }
 
         #endregion
-
-        private NavegadorVista.Navegador _navegador;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txt_id;
         private System.Windows.Forms.TextBox txt_nombre;
@@ -188,5 +186,6 @@ namespace Vista_PrototipoMenu
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private CapaVista.Navegador navegador1;
     }
 }

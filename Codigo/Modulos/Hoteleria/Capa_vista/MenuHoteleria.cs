@@ -98,38 +98,28 @@ namespace Vista_PrototipoMenu
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.showForm(new frmGestionHuespedes());
+            this.showForm(new frmTipoHabitacion());
             hideSubMenu();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.showForm(new frmGestionSalon());
-            hideSubMenu();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            this.showForm(new frmGestionHabitacion());
-            hideSubMenu();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.showForm(new frmReservaHabitacion());
-            hideSubMenu();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            this.showForm(new frmEvaluacion());
-            hideSubMenu();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            this.showForm(new frmChequeo());
-            hideSubMenu();
         }
     }
 }
