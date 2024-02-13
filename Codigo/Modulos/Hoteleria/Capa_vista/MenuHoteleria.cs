@@ -13,26 +13,27 @@ namespace Vista_PrototipoMenu
 {
     public partial class MenuHoteleria : Form
     {
-
-        // Controlador cn = new Controlador();  // Agregar cuando se vincule la DLL de seguridad 
-
-        //Método que guarda en un arreglo de tipo botón los botones que se tienen en el formulario. Se les da permiso a los diferentes botones de acuerdo a la función que realice este
+        Form currentForm = null;
         public MenuHoteleria()
         {
             InitializeComponent();
-            //Control para habilitar opciones del menu
-            // Button[] apps = {btnaplicaciones}; // Agregar cuando se vincule la DLL de seguridad 
-            //Llamada metodo de libreria Controlador del modulo de Seguridad
-            //cn.deshabilitarApps(apps); // Agregar cuando se vincule la DLL de seguridad 
-            //Llamada metodo de libreria Controlador del modulo de Seguridad
-            // cn.getAccesoApp(1002, apps[0]); // Agregar cuando se vincule la DLL de seguridad 
+        }
 
+        public void showForm(Form newForm)
+        {
+            if (currentForm != null)
+            {
+                currentForm.Close();
+            }
+            newForm.MdiParent = this;
+            currentForm = newForm;
+            newForm.Show();
         }
 
         //Validaciones que si son visibles los panales los oculta
         private void hideSubMenu()
         {
-            
+
             if (panelTranportes.Visible == true)
                 panelTranportes.Visible = false;
             if (PanelAuditoria.Visible == true)
@@ -77,10 +78,8 @@ namespace Vista_PrototipoMenu
         //Método que muestra el formulario indicado
         private void btnaplicaciones_Click(object sender, EventArgs e)
         {
-           /* frmAplicaciones form = new frmAplicaciones();
-            form.MdiParent = this;
-            form.Show();
-            hideSubMenu(); */
+            this.showForm(new frmTipoHabitacion());
+            hideSubMenu();
         }
         //Método que muestra el formulario indicado
 
@@ -88,15 +87,39 @@ namespace Vista_PrototipoMenu
         {
             this.Close();
         }
-        //Método que oculta el formulario
         private void btnsalir_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-        //Método que muestra el formulario indicado
         private void btnayuda_Click(object sender, EventArgs e)
         {
-            Help.ShowHelp(this, "umg.chm");            
+            Help.ShowHelp(this, "umg.chm");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.showForm(new frmTipoHabitacion());
+            hideSubMenu();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
         }
     }
 }

@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Odbc;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Odbc;
 
-namespace CapaModelo
+namespace Modelo_PrototipoMenu
 {
     public class Conexion
     {
-
         public OdbcConnection connection()
         {
             OdbcConnection conn = new OdbcConnection("Dsn=HotelSConexion");
@@ -19,7 +18,7 @@ namespace CapaModelo
             }
             catch (OdbcException)
             {
-                Console.WriteLine("No Conectó");
+                Console.WriteLine("Error en la conexion");
             }
             return conn;
         }
@@ -33,7 +32,7 @@ namespace CapaModelo
             }
             catch (OdbcException)
             {
-                Console.WriteLine("No Conectó");
+                Console.WriteLine("Error al desconectar");
             }
         }
     }
